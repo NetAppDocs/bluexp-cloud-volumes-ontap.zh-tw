@@ -18,5 +18,5 @@
 請注意、您必須使用ONTAP NetApp CLI或System Manager、在單一節點系統上建立儲存VM。
 
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#storage-vm-limits["深入瞭解Google Cloud中的儲存VM限制"^]
-* link:task-managing-svms-gcp.html["瞭解如何在Cloud Volumes ONTAP Google Cloud中建立資料服務儲存VM以供其使用"]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["瞭解如何在Cloud Volumes ONTAP Google Cloud中建立資料服務儲存VM以供其使用"]
 

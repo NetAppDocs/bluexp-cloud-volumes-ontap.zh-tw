@@ -95,11 +95,11 @@ HA配對需要四個VPC。每個VPC都可以是共享的或獨立的。例如、
 
 共享 VPC 可讓您設定及集中管理多個專案中的虛擬網路。您可以在 _ 主機專案 _ 中設定共享 VPC 網路、並在 Cloud Volumes ONTAP _ 服務專案 _ 中部署連接器與支援虛擬機器執行個體。 https://cloud.google.com/vpc/docs/shared-vpc["Google Cloud 文件：共享 VPC 總覽"^]。
 
-link:task-creating-connectors-gcp.html#shared-vpc-permissions["檢閱Connector部署所涵蓋的必要共享VPC權限"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#shared-vpc-permissions["檢閱Connector部署所涵蓋的必要共享VPC權限"^]
 
 --
 VPC中的封包鏡射:: https://cloud.google.com/vpc/docs/packet-mirroring["封包鏡射"^] 必須在部署Cloud Volumes ONTAP 了下列項目的Google Cloud VPC中停用。啟用封包鏡射時、無法正常運作。Cloud Volumes ONTAP
-輸出網際網路存取 Cloud Volumes ONTAP 功能:: 支援向 NetApp 支援部門傳送訊息、以便主動監控儲存設備的健全狀況。 Cloud Volumes ONTAP AutoSupport
+輸出網際網路存取 Cloud Volumes ONTAP 功能:: NetApp支援需要外傳網際網路存取功能、才能主動監控系統健全狀況、並將訊息傳送給NetApp技術支援部門。Cloud Volumes ONTAP AutoSupport
 +
 --
 路由和防火牆原則必須允許將 HTTP / HTTPS 流量傳送至下列端點、 Cloud Volumes ONTAP 才能讓下列端點傳送 AutoSupport 動態訊息：
@@ -107,7 +107,13 @@ VPC中的封包鏡射:: https://cloud.google.com/vpc/docs/packet-mirroring["封�
 * \https://support.netapp.com/aods/asupmessage
 * \https://support.netapp.com/asupprod/post/1.0/postAsup
 +
-link:task-verify-autosupport.html["瞭解如何驗AutoSupport 證功能"]。
+如果無法使用傳出網際網路連線來傳送AutoSupport 不穩定的訊息、Cloud Manager會自動將Cloud Volumes ONTAP 您的還原系統設定為使用Connector做為Proxy伺服器。唯一的需求是確保連接器的防火牆允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。
+
++
+如果您定義了Cloud Volumes ONTAP 嚴格的出站規則以供支援、那麼您也必須確保Cloud Volumes ONTAP 透過連接埠3128建立的支援_出站_連線。
+
++
+在您確認可以存取傳出網際網路之後、您可以測試AutoSupport 以確保能夠傳送訊息。如需相關指示、請參閱 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["文件：設定檔ONTAP AutoSupport"^]。
 
 +
 
@@ -220,9 +226,7 @@ Cloud Manager 會建立 GCP 防火牆規則、其中包含 Cloud Volumes ONTAP �
 
 === 傳入規則
 
-對於HA配對、預先定義的防火牆原則中傳入流量的來源篩選器為0.00.0.0/0。
-
-對於單一節點系統、您可以在部署期間、為預先定義的防火牆原則選擇來源篩選器：
+建立工作環境時、您可以在部署期間選擇預先定義防火牆原則的來源篩選器：
 
 * *限選定VPC *：傳入流量的來源篩選器為VPC的子網路範圍、Cloud Volumes ONTAP 適用於該系統、以及連接器所在VPC的子網路範圍。這是建議的選項。
 * *所有VPC*：傳入流量的來源篩選器為0.00.0.0/0 IP範圍。
@@ -402,10 +406,13 @@ NOTE: 來源是 Cloud Volumes ONTAP 指在整個系統上的介面（ IP 位址�
 | TCP | 749 | 資料 LIF （ NFS 、 CIFS ） | Active Directory 樹系 | Kerberos V 變更及設定密碼（ RPCSEC_GSS ） 
 
 
-.2+| AutoSupport | HTTPS | 443.. | 節點管理 LIF | support.netapp.com | 支援（預設為HTTPS）AutoSupport 
+.3+| AutoSupport | HTTPS | 443.. | 節點管理 LIF | support.netapp.com | 支援（預設為HTTPS）AutoSupport 
 
 
 | HTTP | 80 | 節點管理 LIF | support.netapp.com | 僅當傳輸傳輸傳輸傳輸傳輸協定從HTTPS變更為HTTP時、AutoSupport 
+
+
+| TCP | 3128 | 節點管理 LIF | 連接器 | 如果無法使用傳出的網際網路連線、請透過Connector上的Proxy伺服器傳送AutoSupport 功能介紹訊息 
 
 
 | 叢集 | 所有流量 | 所有流量 | 一個節點上的所有 LIF | 其他節點上的所有 LIF | 叢集間通訊（ Cloud Volumes ONTAP 僅限不含 HA ） 
@@ -478,6 +485,9 @@ HA節點與HA中介器之間的通訊會透過連接埠3260（iSCSI）進行。
 
 
 | HTTPS | 443.. | 提供 HTTPS 存取、從用戶端網頁瀏覽器存取本機使用者介面 
+
+
+| TCP | 3128 | 提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport部署Connector之後、您必須手動開啟此連接埠。 
 |===
 
 

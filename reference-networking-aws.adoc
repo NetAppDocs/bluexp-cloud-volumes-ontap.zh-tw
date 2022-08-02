@@ -26,9 +26,9 @@ AWS 必須符合下列要求。
 
 === 對節點的輸出網際網路存取 Cloud Volumes ONTAP
 
-支援不需透過外部網際網路存取、即可將訊息傳送至 NetApp 解決方案、以主動監控儲存設備的健全狀況。 Cloud Volumes ONTAP AutoSupport
+支援NetApp功能的支援節點需要外傳網際網路存取功能、此功能可主動監控系統健全狀況、並將訊息傳送給NetApp技術支援部門。Cloud Volumes ONTAP AutoSupport
 
-路由和防火牆原則必須允許 AWS HTTP / HTTPS 流量傳輸至下列端點、 Cloud Volumes ONTAP 才能讓下列端點傳送 AutoSupport 動態訊息：
+路由和防火牆原則必須允許將 HTTP / HTTPS 流量傳送至下列端點、 Cloud Volumes ONTAP 才能讓下列端點傳送 AutoSupport 動態訊息：
 
 * \https://support.netapp.com/aods/asupmessage
 * \https://support.netapp.com/asupprod/post/1.0/postAsup
@@ -36,7 +36,11 @@ AWS 必須符合下列要求。
 
 如果您有 NAT 執行個體、則必須定義傳入安全性群組規則、以允許 HTTPS 流量從私有子網路傳入網際網路。
 
-link:task-verify-autosupport.html["瞭解如何設定 AutoSupport 功能"]。
+如果無法使用傳出網際網路連線來傳送AutoSupport 不穩定的訊息、Cloud Manager會自動將Cloud Volumes ONTAP 您的還原系統設定為使用Connector做為Proxy伺服器。唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。
+
+如果您定義了Cloud Volumes ONTAP 嚴格的傳出規則以供支援、那麼Cloud Volumes ONTAP 您也必須確保支援透過連接埠3128建立_Outbound _連線的安全性群組。
+
+在您確認可以存取傳出網際網路之後、您可以測試AutoSupport 以確保能夠傳送訊息。如需相關指示、請參閱 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["文件：設定檔ONTAP AutoSupport"^]。
 
 
 

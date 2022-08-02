@@ -94,14 +94,28 @@ TIP: 如果多位 IAM 使用者使用相同的 AWS 帳戶、則每位使用者�
 
 . *位置與連線*：輸入您在中記錄的網路資訊 link:task-planning-your-config.html#aws-network-information-worksheet["AWS工作表"]。
 +
-如果您有 AWS Outpost 、 Cloud Volumes ONTAP 您可以選擇 Outpost VPC 、在該 Outpost 中部署單一節點的一套系統。體驗與 AWS 中的任何其他 VPC 相同。
+下表說明您可能需要指導的欄位：
 
 +
-下圖顯示已填寫的頁面：
+[cols="25,75"]
+|===
+| 欄位 | 說明 
 
-+
-image:screenshot_cot_vpc.gif["螢幕擷取畫面：顯示已填寫的 VPC 頁面、以供新 Cloud Volumes ONTAP 的執行個體使用。"]
 
+| VPC | 如果您有 AWS Outpost 、 Cloud Volumes ONTAP 您可以選擇 Outpost VPC 、在該 Outpost 中部署單一節點的一套系統。體驗與 AWS 中的任何其他 VPC 相同。 
+
+
+| 產生的安全性群組  a| 
+如果讓Cloud Manager為您產生安全群組、您必須選擇允許流量的方式：
+
+** 如果您選擇*僅限VPC*、則傳入流量的來源為所選VPC的子網路範圍、以及連接器所在VPC的子網路範圍。這是建議的選項。
+** 如果您選擇*所有VPC*、則傳入流量的來源為0.00.0.0/0 IP範圍。
+
+
+
+
+| 使用現有的安全性群組 | 如果您使用現有的防火牆原則、請確定其中包含必要的規則。 link:reference-security-groups.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的防火牆規則"]。 
+|===
 . * 資料加密 * ：不選擇資料加密或 AWS 管理的加密。
 +
 對於 AWS 管理的加密、您可以從帳戶或其他 AWS 帳戶中選擇不同的客戶主金鑰（ CMK ）。
@@ -309,13 +323,27 @@ TIP: 如果多位 IAM 使用者使用相同的 AWS 帳戶、則每位使用者�
 +
 如需部署模型的總覽、請參閱 link:concept-ha.html["適用於 AWS 的 HA Cloud Volumes ONTAP"]。
 
-. * 地區與 VPC* ：輸入您在 AWS 工作表中記錄的網路資訊。
+. *位置與連線*（單一AZ）或*地區與VPC*（多個AZ）：輸入您在AWS工作表中記錄的網路資訊。
 +
-下圖顯示為多個 AZ 組態填寫的頁面：
+下表說明您可能需要指導的欄位：
 
 +
-image:screenshot_cot_vpc_ha.gif["螢幕擷取畫面：顯示針對 HA 組態所填寫的 VPC 頁面。每個執行個體都會選取不同的可用度區域。"]
+[cols="25,75"]
+|===
+| 欄位 | 說明 
 
+
+| 產生的安全性群組  a| 
+如果讓Cloud Manager為您產生安全群組、您必須選擇允許流量的方式：
+
+** 如果您選擇*僅限VPC*、則傳入流量的來源為所選VPC的子網路範圍、以及連接器所在VPC的子網路範圍。這是建議的選項。
+** 如果您選擇*所有VPC*、則傳入流量的來源為0.00.0.0/0 IP範圍。
+
+
+
+
+| 使用現有的安全性群組 | 如果您使用現有的防火牆原則、請確定其中包含必要的規則。 link:reference-security-groups.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的防火牆規則"]。 
+|===
 . * 連線能力與 SSH 驗證 * ：選擇 HA 配對與中介器的連線方法。
 . * 浮動 IPS* ：如果您選擇多個 AZs 、請指定浮動 IP 位址。
 +

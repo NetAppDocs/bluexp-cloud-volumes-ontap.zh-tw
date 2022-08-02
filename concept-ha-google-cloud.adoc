@@ -24,9 +24,6 @@ Google Cloud的NetApp HA組態包括下列元件：Cloud Volumes ONTAP
 
 * 兩 Cloud Volumes ONTAP 個彼此同步鏡射資料的鏡射節點。
 * 一種中介執行個體、可在節點之間提供通訊通道、以協助儲存接管和恢復程序。
-+
-中介程序在 F1-Micro 執行個體上執行 Linux 作業系統、並使用兩個標準持續磁碟、每個磁碟 10 GB 。
-
 * 一個區域或三個區域（建議）。
 +
 如果您選擇三個區域、則兩個節點和中介器位於不同的Google Cloud區域。
@@ -50,8 +47,8 @@ image:diagram_gcp_ha.png[""]
 
 以下是Google Cloud中介執行個體的一些重要詳細資料：
 
-執行個體類型:: F1-micro
-磁碟:: 兩個標準持續磁碟、每個10 GiB。
+執行個體類型:: E2-Micro（先前使用F1-Micro執行個體）
+磁碟:: 兩個標準持續磁碟、每個10 GiB
 作業系統:: DEBIAN11
 +
 --

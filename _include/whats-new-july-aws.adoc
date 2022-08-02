@@ -8,7 +8,7 @@
 
 Cloud Manager現在可在Cloud Volumes ONTAP 使用者介面建立運作環境時、支援Amazon EBS Elastic Volumes功能。使用GP3或IO1磁碟時、預設會啟用彈性磁碟區功能。您可以根據儲存需求來選擇初始容量、Cloud Volumes ONTAP 並在部署完畢後加以修改。
 
-link:concept-aws-elastic-volumes.html["深入瞭解AWS對彈性磁碟區的支援"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["深入瞭解AWS對彈性磁碟區的支援"]。
 
 
 

@@ -26,7 +26,7 @@ Azure 必須符合下列網路需求。
 
 === 傳出網際網路存取
 
-支援向 NetApp 支援部門傳送訊息、以便主動監控儲存設備的健全狀況。 Cloud Volumes ONTAP AutoSupport
+支援NetApp功能的支援節點需要外傳網際網路存取功能、此功能可主動監控系統健全狀況、並將訊息傳送給NetApp技術支援部門。Cloud Volumes ONTAP AutoSupport
 
 路由和防火牆原則必須允許將 HTTP / HTTPS 流量傳送至下列端點、 Cloud Volumes ONTAP 才能讓下列端點傳送 AutoSupport 動態訊息：
 
@@ -34,7 +34,11 @@ Azure 必須符合下列網路需求。
 * \https://support.netapp.com/asupprod/post/1.0/postAsup
 
 
-link:task-verify-autosupport["瞭解如何驗AutoSupport 證功能"]。
+如果無法使用傳出網際網路連線來傳送AutoSupport 不穩定的訊息、Cloud Manager會自動將Cloud Volumes ONTAP 您的還原系統設定為使用Connector做為Proxy伺服器。唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。
+
+如果您定義了Cloud Volumes ONTAP 嚴格的傳出規則以供支援、那麼Cloud Volumes ONTAP 您也必須確保支援透過連接埠3128建立_Outbound _連線的安全性群組。
+
+在您確認可以存取傳出網際網路之後、您可以測試AutoSupport 以確保能夠傳送訊息。如需相關指示、請參閱 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["文件：設定檔ONTAP AutoSupport"^]。
 
 
 
@@ -105,7 +109,11 @@ Cloud Manager 會建立 Azure 安全性群組、其中包括 Cloud Volumes ONTAP
 
 ==== 單一節點系統的傳入規則
 
-下列規則會允許流量、除非說明中註明會封鎖特定的傳入流量。
+當您建立工作環境並選擇預先定義的安全性群組時、可以選擇允許下列其中一項的流量：
+
+* *僅限所選vnet*：傳入流量的來源是vnet的子網路範圍、Cloud Volumes ONTAP 以及連接器所在vnet的子網路範圍。這是建議的選項。
+* *所有VNet*：傳入流量的來源為0.00.0.0/0 IP範圍。
+
 
 [cols="4*"]
 |===
@@ -187,7 +195,11 @@ Cloud Manager 會建立 Azure 安全性群組、其中包括 Cloud Volumes ONTAP
 
 ==== HA 系統的傳入規則
 
-下列規則會允許流量、除非說明中註明會封鎖特定的傳入流量。
+當您建立工作環境並選擇預先定義的安全性群組時、可以選擇允許下列其中一項的流量：
+
+* *僅限所選vnet*：傳入流量的來源是vnet的子網路範圍、Cloud Volumes ONTAP 以及連接器所在vnet的子網路範圍。這是建議的選項。
+* *所有VNet*：傳入流量的來源為0.00.0.0/0 IP範圍。
+
 
 
 NOTE: HA 系統的傳入規則少於單一節點系統、因為傳入資料流量會流經 Azure Standard Load Balancer 。因此、來自負載平衡器的流量應開啟、如「 AllowAzureLoadBalancerInBound 」規則所示。
@@ -310,10 +322,13 @@ NOTE: 來源是 Cloud Volumes ONTAP 指在整個系統上的介面（ IP 位址�
 | 749 | TCP | 資料 LIF （ NFS 、 CIFS ） | Active Directory 樹系 | Kerberos V 變更及設定密碼（ RPCSEC_GSS ） 
 
 
-.2+| AutoSupport | HTTPS | 443.. | 節點管理 LIF | support.netapp.com | 支援（預設為HTTPS）AutoSupport 
+.3+| AutoSupport | HTTPS | 443.. | 節點管理 LIF | support.netapp.com | 支援（預設為HTTPS）AutoSupport 
 
 
 | HTTP | 80 | 節點管理 LIF | support.netapp.com | 僅當傳輸傳輸傳輸傳輸傳輸協定從HTTPS變更為HTTP時、AutoSupport 
+
+
+| TCP | 3128 | 節點管理 LIF | 連接器 | 如果無法使用傳出的網際網路連線、請透過Connector上的Proxy伺服器傳送AutoSupport 功能介紹訊息 
 
 
 | DHCP | 68 | UDP | 節點管理 LIF | DHCP | 第一次設定的 DHCP 用戶端 
@@ -409,6 +424,9 @@ Connector 的安全性群組需要傳入和傳出規則。
 
 
 | 443.. | HTTPS | 提供 HTTPS 存取、從用戶端網頁瀏覽器存取本機使用者介面 
+
+
+| TCP | 3128 | 提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport部署Connector之後、您必須手動開啟此連接埠。 
 |===
 
 

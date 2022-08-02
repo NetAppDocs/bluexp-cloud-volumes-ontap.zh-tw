@@ -65,6 +65,26 @@ NetApp Cloud Volumes ONTAP 免費提供所有的支援功能（仍需支付雲�
 
 
 
+ifdef::azure[]
+
+
+
+==== 最佳化
+
+單獨支付已配置的容量和I/O作業費用。
+
+* 單一節點或HA Cloud Volumes ONTAP
+* 充電是根據兩個成本元件：儲存與使用（I/O）
++
+請注意、用於資料複寫的I/O並不會計入收費的I/O使用量。
+
+* 僅在Azure Marketplace中以隨用隨付方案或年度合約形式提供
+* 支援所選VM類型：E4s_v3、E4ds_v4、DS4_v2、DS13_v2、E8s_v3、 和E8ds_v4
+* 以額外成本附加任何NetApp的雲端資料服務
+
+
+endif::azure[]
+
 
 
 ==== 基礎知識
@@ -94,6 +114,25 @@ NetApp Cloud Volumes ONTAP 免費提供所有的支援功能（仍需支付雲�
 * 以額外成本附加任何NetApp的雲端資料服務
 
 
+ifdef::azure[]
+
+
+
+==== 邊際快取
+
+提供Cloud Volumes Edge Cache授權。
+
+* 與Professional套件相同的功能、可為分散式企業提供營運不中斷和資料保護
+* 智慧型邊緣快取功能、可透過每個位置佔用空間較小的Windows VM進行快取
+* 至少30個TiB、含六個邊緣節點
+* 每購買3個階層、就有一個邊緣節點、每購買3個階層的額外容量
+* 僅在Azure Marketplace中以隨用隨付方案或年度合約形式提供
+
+
+https://cloud.netapp.com/cloud-volumes-edge-cache["深入瞭解Cloud Volumes Edge Cache如何協助您的企業發展"^]
+
+endif::azure[]
+
 
 
 === 消費模式
@@ -101,6 +140,14 @@ NetApp Cloud Volumes ONTAP 免費提供所有的支援功能（仍需支付雲�
 下列消費模式提供容量型授權套件：
 
 * * BYOL*：向NetApp購買的授權、可用於在Cloud Volumes ONTAP 任何雲端供應商中部署
+
+
+ifdef::azure[]
+
++請注意、最佳化和邊緣快取套件無法搭配BYOL使用。
+
+endif::azure[]
+
 * * PAYGO*：每小時向雲端供應商的市場訂購一次。
 * *年度*：雲端供應商市場的年度合約。
 
@@ -121,9 +168,17 @@ NetApp Cloud Volumes ONTAP 免費提供所有的支援功能（仍需支付雲�
 
 
 
+=== 變更套件
+
+部署完成後、您可以變更Cloud Volumes ONTAP 使用容量型授權的一套功能、以利執行一套功能。例如、如果您部署Cloud Volumes ONTAP 的是含有Essentials套件的功能完善的系統、則當您的業務需求改變時、可以將其變更為Professional套件。
+
+link:task-manage-capacity-licenses.html["瞭解如何變更充電方法"]。
+
+
+
 === 定價
 
-如需定價的詳細資訊、請前往 https://cloud.netapp.com/ontap-cloud["NetApp Cloud Central"^]。
+如需定價的詳細資訊、請前往 https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp Cloud Central"^]。
 
 
 

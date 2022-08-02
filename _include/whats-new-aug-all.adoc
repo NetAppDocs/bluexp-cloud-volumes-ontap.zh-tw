@@ -1,0 +1,39 @@
+= MTEKM授權
+:allow-uri-read: 
+
+
+
+
+=== MTEKM授權
+
+多租戶加密金鑰管理（MNEKM）授權現已隨Cloud Volumes ONTAP 附於執行9.11.1版或更新版本的全新和現有的支援系統中。
+
+使用NetApp Volume Encryption時、多租戶外部金鑰管理可讓個別儲存VM（SVM）透過KMIP伺服器維護自己的金鑰。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["瞭解如何使用NetApp加密解決方案來加密磁碟區"]。
+
+
+
+=== Proxy伺服器
+
+Cloud Manager現在會自動將Cloud Volumes ONTAP 您的還原系統設定為使用Connector做為Proxy伺服器、如果無法使用傳出的網際網路連線來傳送AutoSupport 還原訊息。
+
+可主動監控系統健全狀況、並傳送訊息給NetApp技術支援部門。AutoSupport
+
+唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。
+
+
+
+=== 變更充電方法
+
+您現在可以變更Cloud Volumes ONTAP 使用容量型授權的功能、以供選用的功能。例如、如果您部署Cloud Volumes ONTAP 的是含有Essentials套件的功能完善的系統、則當您的業務需求改變時、可以將其變更為Professional套件。此功能可從Digital Wallet取得。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["瞭解如何變更充電方法"]。
+
+
+
+=== 安全性群組增強功能
+
+當您建立Cloud Volumes ONTAP 一個運作環境時、使用者介面現在可讓您選擇是否要讓預先定義的安全性群組僅允許所選網路（建議）或所有網路內的流量。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-allow-traffic.png["顯示在工作環境精靈中選取安全性群組時可用之「允許內部流量」選項的快照。"]

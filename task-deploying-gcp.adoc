@@ -325,6 +325,26 @@ link:concept-ha-google-cloud.html["深入瞭解 HA 部署模式"]。
 +
 link:reference-networking-gcp.html["深入瞭解網路需求"]。
 
++
+下表說明您可能需要指導的欄位：
+
++
+[cols="25,75"]
+|===
+| 欄位 | 說明 
+
+
+| 產生的原則  a| 
+如果讓Cloud Manager為您產生防火牆原則、您必須選擇允許流量的方式：
+
+** 如果您選擇*選取的VPC only（僅VPC）*、則傳入流量的來源篩選器為所選VPC的子網路範圍、以及連接器所在VPC的子網路範圍。這是建議的選項。
+** 如果您選擇*所有VPC*、傳入流量的來源篩選器為0.00.0.0/0 IP範圍。
+
+
+
+
+| 使用現有的 | 如果您使用現有的防火牆原則、請確定其中包含必要的規則。 link:reference-networking-gcp.html#firewall-rules-for-cloud-volumes-ontap["深入瞭Cloud Volumes ONTAP 解適用於此功能的防火牆規則"]。 
+|===
 . *充電方法與NSS帳戶*：指定您要搭配此系統使用的收費選項、然後指定NetApp支援網站帳戶。
 +
 ** link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的授權選項"]。

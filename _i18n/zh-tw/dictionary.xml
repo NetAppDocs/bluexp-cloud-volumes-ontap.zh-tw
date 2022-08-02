@@ -117,7 +117,6 @@
   <block id="01cc3f2faf08762df2ba5632863fa9b9" category="section-title">規則 Cloud Volumes ONTAP</block>
   <block id="4f4194111f63429efd99a405e5d8ec85" category="paragraph">適用於此功能的安全性群組 Cloud Volumes ONTAP 需要傳入和傳出規則。</block>
   <block id="1b3884b38c271fe13c8142e1355e4523" category="section-title">傳入規則</block>
-  <block id="4a0ed8041426b30c39ae888d3e61bd7e" category="paragraph">預先定義之安全性群組中的傳入規則來源為 0.00.0.0/0 。</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">傳輸協定</block>
   <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">連接埠</block>
   <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
@@ -266,7 +265,6 @@
   <block id="e41468f89241b53dc9a8cebeff010b25" category="cell">提供HTTP存取、從用戶端網頁瀏覽器存取本機使用者介面、以及從Cloud Data Sense連線</block>
   <block id="2f0c197eb73a7c6da10b03384f241025" category="cell">提供 HTTPS 存取、從用戶端網頁瀏覽器存取本機使用者介面</block>
   <block id="dff8e9c2ac33381546d96deea9922999" category="cell">3128</block>
-  <block id="187604dd1244abc6ff03471775e9f32d" category="cell">如果您的AWS網路不使用NAT或Proxy、則可提供Cloud Data Sense執行個體以存取網際網路</block>
   <block id="f27967c4c8769094dfb727988a22cbfa" category="paragraph">Connector 的預先定義安全性群組會開啟所有傳出流量。如果可以接受、請遵循基本的傳出規則。如果您需要更嚴格的規則、請使用進階的傳出規則。</block>
   <block id="422c84262f431352e9da45084016a52c" category="paragraph">Connector 的預先定義安全性群組包括下列傳出規則。</block>
   <block id="4c7e4350b2ac4e79ecdf1d8f33b2d41e" category="paragraph">如果您需要嚴格的傳出流量規則、可以使用下列資訊、僅開啟連接器傳出通訊所需的連接埠。</block>
@@ -411,12 +409,9 @@
   <block id="72928bd9aacf64df0eb1285c03f5f5c0" category="section-title">需求 Cloud Volumes ONTAP</block>
   <block id="098d8cb8c4a1291e10ee07b333610f24" category="paragraph">Azure 必須符合下列網路需求。</block>
   <block id="c8f224037ea295aeec347c94779d9932" category="section-title">傳出網際網路存取</block>
-  <block id="5558be4010db9853d7ae70d1751b4223" category="paragraph">支援向 NetApp 支援部門傳送訊息、以便主動監控儲存設備的健全狀況。 Cloud Volumes ONTAP AutoSupport</block>
   <block id="a882b8d486f84abfbb2472c835d49dbf" category="paragraph">路由和防火牆原則必須允許將 HTTP / HTTPS 流量傳送至下列端點、 Cloud Volumes ONTAP 才能讓下列端點傳送 AutoSupport 動態訊息：</block>
   <block id="ea42efb0eb933b55c2c4a89d521450df" category="list-text">\https://support.netapp.com/aods/asupmessage</block>
   <block id="139bae98c3a8ead645c078cb26b93bd1" category="list-text">\https://support.netapp.com/asupprod/post/1.0/postAsup</block>
-  <block id="c69996d91acca6afe1c33117a5a9fda1" category="inline-link-macro">瞭解如何驗AutoSupport 證功能</block>
-  <block id="98f9a1d240aa10fa6d33fe47800f1928" category="paragraph"><block ref="63a4bc19361b5cf6516e2fe555a9d3db" category="inline-link-macro-rx"></block>。</block>
   <block id="1d9e509ddb93a176b7d369a91ad7deaf" category="section-title">IP位址</block>
   <block id="0607fcfa6c6be84dd2b604cfb69f20c0" category="paragraph">Cloud Manager 會將下列 IP 位址分配給 Cloud Volumes ONTAP Azure 中的功能：</block>
   <block id="cceb8f7ed659db95ecee6b568724f01a" category="list-text">單一節點： 5 個 IP 位址</block>
@@ -441,7 +436,6 @@
   <block id="390a3dfacd9551e05363b9eb09a0464c" category="section-title">安全性群組規則</block>
   <block id="3e6c8dc9303c2f38ff34d61b2015d240" category="paragraph">Cloud Manager 會建立 Azure 安全性群組、其中包括 Cloud Volumes ONTAP 需要順利運作的傳入和傳出規則。您可能需要參照連接埠進行測試、或是偏好使用自己的安全性群組。</block>
   <block id="4d6ace52affbdd48b9198aac825d4a2c" category="section-title">單一節點系統的傳入規則</block>
-  <block id="858abc6f4e6f4c8e250c4d7fbbae8db5" category="paragraph">下列規則會允許流量、除非說明中註明會封鎖特定的傳入流量。</block>
   <block id="c42224c337274e7fec977a288d37b9e7" category="cell">優先順序和名稱</block>
   <block id="61d97465e73d077d903ed05e56b55172" category="cell">連接埠與傳輸協定</block>
   <block id="f7fadb9ea6f0f7f74a2adcb14ed1502a" category="cell">來源與目的地</block>
@@ -839,12 +833,10 @@
   <block id="e7654a639cfe016ac3f5047f52f87c75" category="inline-link">Google Cloud 文件：共享 VPC 總覽</block>
   <block id="f28d7231806e634c25dd18c690acf69d" category="paragraph">共享 VPC 可讓您設定及集中管理多個專案中的虛擬網路。您可以在 _ 主機專案 _ 中設定共享 VPC 網路、並在 Cloud Volumes ONTAP _ 服務專案 _ 中部署連接器與支援虛擬機器執行個體。<block ref="415c6368db149e27aa23722d9aeafade" category="inline-link-rx"></block>。</block>
   <block id="9bbb7f4f51c49edeb24f8a9b17a2d5f4" category="inline-link-macro">檢閱Connector部署所涵蓋的必要共享VPC權限</block>
-  <block id="79ead8c87cfd1662612cedcf5dbfd0c3" category="paragraph"><block ref="c04355bfa1cd768f01b43074b42d51cc" category="inline-link-macro-rx"></block>。</block>
   <block id="0d8050524ef140aadb3a681481890b39" category="list-text">VPC中的封包鏡射</block>
   <block id="4d6aebef0af2c2c1118b467bdf0dadf0" category="inline-link">封包鏡射</block>
   <block id="7c0126eb5fa57fb86ccb4cf44811856d" category="list-text"><block ref="581f54bac504640f66f842676676be03" category="inline-link-rx"></block> 必須在部署Cloud Volumes ONTAP 了下列項目的Google Cloud VPC中停用。啟用封包鏡射時、無法正常運作。Cloud Volumes ONTAP</block>
   <block id="d3d79704bb54117545a4635e1d22fc65" category="list-text">輸出網際網路存取 Cloud Volumes ONTAP 功能</block>
-  <block id="0da96f2feb7789b80105a2a9de6c2876" category="paragraph"><block ref="ff4064bf7ea0ef6a5de7ecf5d1a47eb6" category="inline-link-macro-rx"></block>。</block>
   <block id="4c896c50345c5252f4b0e8fc4bf10723" category="admonition">如果您使用 HA 配對、 HA 中介器不需要傳出網際網路存取。</block>
   <block id="af5123aa908861af9755bea4400d279c" category="list-text">私有IP位址</block>
   <block id="6c0c0f02dbc1bb2b2e19a272f5785eec" category="list-text">Cloud Manager會在Cloud Volumes ONTAP GCP中分配下列數量的私有IP位址給各個方面：</block>
@@ -877,8 +869,6 @@
   <block id="fe49f2913a4b13b0a1c8c251eba351ed" category="paragraph">Cloud Manager 會建立 GCP 防火牆規則、其中包含 Cloud Volumes ONTAP 運作成功所需的傳入和傳出規則。您可能需要參照連接埠進行測試、或是偏好使用自己的防火牆規則。</block>
   <block id="4907f0fb8777892173f7e34fa56bfcdb" category="paragraph">適用於此功能的防火牆規則 Cloud Volumes ONTAP 需要傳入和傳出規則。</block>
   <block id="bcf66fd73f27e271725271d68f4723a9" category="paragraph">如果您要部署 HA 組態、 Cloud Volumes ONTAP 以下是 VPC-0 中的防火牆規則。</block>
-  <block id="7c631216018c939fdeeed5e8807fc718" category="paragraph">對於HA配對、預先定義的防火牆原則中傳入流量的來源篩選器為0.00.0.0/0。</block>
-  <block id="cd2edcd7e3c4d8236b1a1ff235d1b803" category="paragraph">對於單一節點系統、您可以在部署期間、為預先定義的防火牆原則選擇來源篩選器：</block>
   <block id="62978cf670cdcd284392400fa0cb70a9" category="list-text">*限選定VPC *：傳入流量的來源篩選器為VPC的子網路範圍、Cloud Volumes ONTAP 適用於該系統、以及連接器所在VPC的子網路範圍。這是建議的選項。</block>
   <block id="ba2e1bf50371835f50d77c05a977d80c" category="list-text">*所有VPC*：傳入流量的來源篩選器為0.00.0.0/0 IP範圍。</block>
   <block id="1147a9bceab35dc98b14493a462a8f27" category="inline-link">Google Cloud文件：負載平衡器防火牆規則</block>
@@ -1194,7 +1184,6 @@
   <block id="36e4d5ff70cec517180ae18f1c34d2fd" category="list-text">如果您有市場的年度合約、Cloud Volumes ONTAP 您所部署的_all_系統將根據該合約付費。您無法與BYOL混搭一年一度的市場合約。</block>
   <block id="e22ac25b066b201473de7aa700ef5d92" category="section-title">定價</block>
   <block id="49fc376ed35249f3841846ede4dab884" category="inline-link">NetApp Cloud Central</block>
-  <block id="48ad756d03abbc6e0fe01e9831a6e964" category="paragraph">如需定價的詳細資訊、請前往<block ref="073c3927129b02897890200010eee524" category="inline-link-rx"></block>。</block>
   <block id="25b035aed2fdd6599b8102a76363fdec" category="section-title">免費試用</block>
   <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">支援的組態</block>
   <block id="4e4c431843fe55f93c074808800bf7d0" category="paragraph">以容量為基礎的授權套件可搭配Cloud Volumes ONTAP 使用於NetApp 9.7及更新版本。</block>
@@ -2045,7 +2034,6 @@
   <block id="60ea35784e9124871c8660254244462f" category="list-text">如果您使用自己的安全群組Cloud Volumes ONTAP 來執行功能、請確定傳出規則允許HTTP連線Cloud Volumes ONTAP 、以便讓畫面能夠存取軟體映像。</block>
   <block id="f5de24cfcd33a2271ffc824aa8782176" category="admonition">預設情況下、預先定義Cloud Volumes ONTAP 的「支援HTTP連線」安全群組會允許傳出HTTP連線。</block>
   <block id="a0b1807d647c5ece7bc49bd539f7dcc6" category="inline-link">NetApp 支援網站</block>
-  <block id="8695397faff7d05d9f1c0033d043e173" category="list-text">從取得軟體映像<block ref="70d20994fb787313c0b72e7369b667db" category="inline-link-rx"></block>。</block>
   <block id="3e3318ff6382b95c2c0c29be3a83b97d" category="list-text">將軟體映像複製到Connector上的目錄、或是將從其中提供檔案的HTTP伺服器上。</block>
   <block id="622d340226a193aeab33f4890e2110c9" category="paragraph">例如、您可以將軟體映像複製到Connector上的下列路徑：</block>
   <block id="1b19ae48e0693419e1e905991459c290" category="paragraph">「/opt/application/netapp/cloudmanager/dock_occm/data/ontap / imes/」</block>
@@ -2108,11 +2096,7 @@
   <block id="a1a264e616e24563d4b8f8b5795ea403" category="section-title">一般要求</block>
   <block id="3091fa13c48831b4d7d6e8b6cb4b5bb1" category="paragraph">AWS 必須符合下列要求。</block>
   <block id="5908bdfb58aef23bebf7df36d49b9dfb" category="section-title">對節點的輸出網際網路存取 Cloud Volumes ONTAP</block>
-  <block id="b5f56557a73320f7b6812655c44ec6e7" category="paragraph">支援不需透過外部網際網路存取、即可將訊息傳送至 NetApp 解決方案、以主動監控儲存設備的健全狀況。 Cloud Volumes ONTAP AutoSupport</block>
-  <block id="333cacedc7e8f6e8e3f0638337eed133" category="paragraph">路由和防火牆原則必須允許 AWS HTTP / HTTPS 流量傳輸至下列端點、 Cloud Volumes ONTAP 才能讓下列端點傳送 AutoSupport 動態訊息：</block>
   <block id="478c1991e02e68a88a4f2e550c670a76" category="paragraph">如果您有 NAT 執行個體、則必須定義傳入安全性群組規則、以允許 HTTPS 流量從私有子網路傳入網際網路。</block>
-  <block id="683f646f6e5507593f5fcc04e80ed15c" category="inline-link-macro">瞭解如何設定 AutoSupport 功能</block>
-  <block id="87a7fccd38150fe70605e12fc964f911" category="paragraph"><block ref="87c7a9fe36f8ac16bd3a925052a238d9" category="inline-link-macro-rx"></block>。</block>
   <block id="06606cd8200a61c1bae33d7388ecad3e" category="section-title">HA 中介器的傳出網際網路存取</block>
   <block id="af02a1d35914a788c9da7b1c26185fae" category="paragraph">HA 中介執行個體必須具有 AWS EC2 服務的傳出連線、才能協助進行儲存容錯移轉。若要提供連線、您可以新增公用 IP 位址、指定 Proxy 伺服器或使用手動選項。</block>
   <block id="cbdf0e4a6b992dae978b69b70468f5fe" category="inline-link">AWS 文件：介面 VPC 端點（ AWS Private Link ）</block>
@@ -2486,7 +2470,6 @@
   <block id="5d9066844099b50724376b6fc6fe9e2d" category="paragraph">您必須先建立連接器、才能變更 Cloud Manager 設定。<block ref="6adc711df7a4bb947306215e1a5d6256" category="inline-link-rx"></block>。</block>
   <block id="5d7d393103e631a9504fcc5405e11df7" category="list-text">在* Azure *下、按一下* Azure CIFS Locks for Azure HA工作環境*。</block>
   <block id="92a186c5aba7b8e6286c41ea529a4b1b" category="list-text">按一下核取方塊以啟用此功能、然後按一下「*儲存*」。</block>
-  <block id="027dae3b418c53f12cff1ce4f431fcbc" category="paragraph">中介程序在 F1-Micro 執行個體上執行 Linux 作業系統、並使用兩個標準持續磁碟、每個磁碟 10 GB 。</block>
   <block id="fb60cc8b1c07b3747a72dcf7ce2f2f58" category="list-text">一個區域或三個區域（建議）。</block>
   <block id="0f3118cdf0606432dbda8dd0e39d7d10" category="paragraph">如果您選擇三個區域、則兩個節點和中介器位於不同的Google Cloud區域。</block>
   <block id="57634383537fa922f1a5f4ab683aa664" category="list-text">四個虛擬私有雲端（VPC）。</block>
@@ -2496,8 +2479,6 @@
   <block id="fa82d38edfafbee1bb2495dc75783c94" category="paragraph"><block ref="55406c74e90bdab2257c25eee887aa79" category="inline-link-macro-rx"></block>，包括有關負載平衡器、VPC、內部IP位址、子網路等的詳細資訊。</block>
   <block id="b176654c993f9caf39e56971d244d457" category="paragraph">下列概念性影像顯示Cloud Volumes ONTAP 出一套功能不整的HA配對及其元件：</block>
   <block id="1ed4ce2b9693ec306d333d8aa7807aa9" category="paragraph">以下是Google Cloud中介執行個體的一些重要詳細資料：</block>
-  <block id="2da66e5268eebc2356295c3045a1d710" category="list-text">F1-micro</block>
-  <block id="af8d2091eeb01ec487c6fe8d98a2b3f3" category="list-text">兩個標準持續磁碟、每個10 GiB。</block>
   <block id="48c4b347a69acc97f71ef6775bf6260d" category="list-text">對於Debian、預設的雲端使用者是「admin」。當透過Google Cloud主控台或gCloud命令列要求SSH存取時、Google Cloud會建立並新增「admin」使用者的憑證。您可以指定「show」以取得root權限。</block>
   <block id="b9c7a6d43bec359b40ab04efb944c7c4" category="list-text">恢復點目標（ RPO ）為 0 秒。</block>
   <block id="bf7c76034279e30c18d14dc7990ee330" category="paragraph">您的資料交易一致、不會遺失任何資料。</block>
@@ -2549,14 +2530,11 @@
   <block id="2314a962fc7e0ac7dda6195c6f360f4b" category="list-text"><block ref="db77ce175669fb218596bba2e453e02d" category="inline-link-rx"></block>。</block>
   <block id="445dc7bb8ccc81428483cecee1404d6b" category="inline-link">深入瞭解監控服務</block>
   <block id="4e03233e36e923a0d7f74b1004629370" category="list-text"><block ref="8a3d5c1ba6867422d22c39f174678452" category="inline-link-rx"></block>。</block>
-  <block id="60a25406d79caadf1f174203c28605a0" category="list-text">*位置與連線*：選取位置、資源群組、安全性群組、然後選取核取方塊以確認連接器與目標位置之間的網路連線。</block>
-  <block id="ce5bf551379459c1c61d2a204061c455" category="cell">位置</block>
   <block id="528bcd2ec74d12fe449b36e916b83f02" category="cell">對於單一節點系統、您可以選擇要部署 Cloud Volumes ONTAP 的可用度區域。如果您未選擇 AZ 、 Cloud Manager 會為您選擇一個。</block>
   <block id="dd23acac46f17cbfd4d5541f8ee3c7a1" category="cell">資源群組</block>
   <block id="2d6e88c43d1b87d3d042cce1773371b7" category="paragraph">建立Cloud Volumes ONTAP 新的資源群組以供使用、或使用現有的資源群組。最佳實務做法是使用全新的資源群組 Cloud Volumes ONTAP 來進行支援。雖然可以在Cloud Volumes ONTAP 現有的共享資源群組中部署功能、但由於資料遺失的風險、不建議這麼做。如需詳細資料、請參閱上述警告。</block>
   <block id="c9187ee1a002f195f99a19e00d1b9596" category="paragraph">您必須使用專屬的資源群組來處理Cloud Volumes ONTAP 您在Azure中部署的每個「EHA配對」。資源群組僅支援一個HA配對。如果您嘗試在Cloud Volumes ONTAP Azure資源群組中部署第二個「功能組」配對、Cloud Manager會發生連線問題。</block>
   <block id="21c199e82e474a9a5607a2b9ccb8e66f" category="inline-link">必要權限</block>
-  <block id="338578acf7e0dc54ebcd8c3592f0b022" category="cell">安全性群組</block>
   <block id="aeba611d332bf85ad8d5a14dd92fa935" category="inline-link-macro">檢視預設的安全性群組</block>
   <block id="44651ffc55fe78607ad39789f43eab9b" category="cell">如果您選擇現有的安全群組、則必須符合Cloud Volumes ONTAP 下列需求： <block ref="f88b68abd6e0fcb97b26739e6dccf3c6" category="inline-link-macro-rx"></block>。</block>
   <block id="045ab321baf13520d6d643ff584cda4b" category="list-text">*充電方法與NSS帳戶*：指定您要搭配此系統使用的收費選項、然後指定NetApp支援網站帳戶。</block>
@@ -2659,9 +2637,6 @@
   <block id="6101eef8fd3b11affed5baa0379eb7b5" category="inline-link-macro">AWS工作表</block>
   <block id="c333af2368ba1204c1886470cc3a6275" category="list-text">*位置與連線*：輸入您在中記錄的網路資訊 <block ref="d659a2562f8cbd6b4b774d087092f457" category="inline-link-macro-rx"></block>。</block>
   <block id="6f27ddf091b10f1dfd4ab13be0759ec7" category="paragraph">如果您有 AWS Outpost 、 Cloud Volumes ONTAP 您可以選擇 Outpost VPC 、在該 Outpost 中部署單一節點的一套系統。體驗與 AWS 中的任何其他 VPC 相同。</block>
-  <block id="bfe0eea2027cb3091ff6951f343f7ca5" category="paragraph">下圖顯示已填寫的頁面：</block>
-  <block id="800800a47f4a26dcd93a9a0cf14de3df" category="inline-image-macro">螢幕擷取畫面：顯示已填寫的 VPC 頁面、以供新 Cloud Volumes ONTAP 的執行個體使用。</block>
-  <block id="019f12b9309f57da6e180e443b629a1a" category="paragraph"><block ref="019f12b9309f57da6e180e443b629a1a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="94b720129da1fad395a78adb9dd8004f" category="list-text">* 資料加密 * ：不選擇資料加密或 AWS 管理的加密。</block>
   <block id="8d4e0ae3c5be71d9c725659a6203fb6f" category="paragraph">對於 AWS 管理的加密、您可以從帳戶或其他 AWS 帳戶中選擇不同的客戶主金鑰（ CMK ）。</block>
   <block id="7238e3ed6732433c6a3fc43c882f2749" category="inline-link-macro">瞭解如何設定 AWS KMS for Cloud Volumes ONTAP the 功能</block>
@@ -2693,10 +2668,6 @@
   <block id="3dc0546ee23c197fd25bc3ef988c8a30" category="list-text">* HA 部署模式 * ：選擇 HA 組態。</block>
   <block id="9e31e4f9e8f37fa86acefdb611c2e044" category="inline-link-macro">適用於 AWS 的 HA Cloud Volumes ONTAP</block>
   <block id="fdf00fa5f9f4609b595b4c51f6ee33e9" category="paragraph">如需部署模型的總覽、請參閱 <block ref="ed2ce72ffe8bc52d52047e3f4134a246" category="inline-link-macro-rx"></block>。</block>
-  <block id="deac3e946d45fe083cb525ba5711f1b6" category="list-text">* 地區與 VPC* ：輸入您在 AWS 工作表中記錄的網路資訊。</block>
-  <block id="1324514f4164c64fbc53bffc0b8ee036" category="paragraph">下圖顯示為多個 AZ 組態填寫的頁面：</block>
-  <block id="c64d86e84e1786d33e7bfe37abf58592" category="inline-image-macro">螢幕擷取畫面：顯示針對 HA 組態所填寫的 VPC 頁面。每個執行個體都會選取不同的可用度區域。</block>
-  <block id="9d3d383901a1ec722aaa434b01aea6fa" category="paragraph"><block ref="9d3d383901a1ec722aaa434b01aea6fa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f98a5304a879db170932a941d6782d7c" category="list-text">* 連線能力與 SSH 驗證 * ：選擇 HA 配對與中介器的連線方法。</block>
   <block id="7f09e4815f5de7673aaab2126613b950" category="list-text">* 浮動 IPS* ：如果您選擇多個 AZs 、請指定浮動 IP 位址。</block>
   <block id="33b13cf0139beac8e5ee5b05deaa6127" category="paragraph">該地區所有 VPC 的 IP 位址必須位於 CIDR 區塊之外。如需其他詳細資料、請參閱 <block ref="f5127e7e3006bcff7058d08df580da25" category="inline-link-macro-rx"></block>。</block>
@@ -2962,11 +2933,8 @@
   <block id="2336f58a2a46308c188101459c63fb8b" category="admonition">關閉動作時、會保留每個區塊的溫度、直到您重新啟動系統為止。Cloud Volumes ONTAP例如、當您關閉系統時、如果區塊的溫度為5、則當您重新開啟系統時、溫度仍為5。</block>
   <block id="3f0a47d5e00d1740ceca3815cf7bf9b4" category="section-title">設定資料分層</block>
   <block id="ac50ed5a6f154224bf044f6797accc8c" category="paragraph">如需相關指示及支援組態清單、請參閱 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
-  <block id="4289ae12bb06fa5bc1a703b903e13d7f" category="summary">可主動監控系統健全狀況、並傳送訊息給NetApp技術支援部門。AutoSupport根據預設、AutoSupport 每個節點上都會啟用支援功能、以便使用HTTPS傳輸傳輸傳輸協定將訊息傳送給技術支援。</block>
   <block id="f6e43df1ac65ed84364d47e2313ea212" category="doc">驗AutoSupport 證此設定</block>
   <block id="57f882d4d9318a77bccc1fe367a42ab5" category="paragraph">可主動監控系統健全狀況、並傳送訊息給NetApp技術支援部門。AutoSupport根據預設、AutoSupport 每個節點上都會啟用支援功能、以便使用HTTPS傳輸傳輸傳輸協定將訊息傳送給技術支援。最好驗證AutoSupport 此資訊是否能傳送。</block>
-  <block id="ca44d887da8f0d2b0c21e31874f2f11b" category="paragraph">如果Cloud Manager帳戶管理員在您啟動執行個體之前、已將Proxy伺服器新增至Cloud Manager、Cloud Volumes ONTAP 則會將此代理伺服器設定為使用AutoSupport 該代理伺服器來接收消息。</block>
-  <block id="9c8a47badbd17e6a1cb9539b9b0ceefb" category="paragraph">唯一必要的組態步驟是確保Cloud Volumes ONTAP 透過NAT執行個體或環境的Proxy服務、實現出站網際網路連線。如需詳細資料、請參閱雲端供應商的網路需求。</block>
   <block id="abf5b5a005179d4c9f5ca821865c42bc" category="inline-link-macro">AWS網路需求</block>
   <block id="68f8afb64bf315ecd826b59e29a3471b" category="list-text"><block ref="68f8afb64bf315ecd826b59e29a3471b" category="inline-link-macro-rx"></block></block>
   <block id="daf41a49145010c540b7cc18af1c579b" category="inline-link-macro">Azure網路需求</block>
@@ -3786,7 +3754,6 @@
   <block id="129cb997dac90f5eb582bd49d3cae82c" category="paragraph">如果您需要執行Cloud Volumes ONTAP 進階的支援管理功能、可以使用ONTAP 支援ONTAP 此功能的支援功能、這個功能是隨附於一個系統的管理介面。我們直接在Cloud Manager中加入System Manager介面、讓您不需要離開Cloud Manager進行進階管理。</block>
   <block id="07bba549da0c5d9af2f0531199cb73e0" category="paragraph">此「進階檢視」可作為Cloud Volumes ONTAP Preview搭配使用的版本（含E59.10.0及更新版本）。我們計畫改善這項體驗、並在即將推出的版本中加入增強功能。請使用產品內建聊天功能、向我們傳送意見反應。</block>
   <block id="f303a87fe6efba259b752f5a9e11064b" category="inline-link-macro">深入瞭解進階檢視</block>
-  <block id="0c6e9220b6dd38f763ce6082c0125be9" category="paragraph"><block ref="cf41d716430563f350a841f38af568db" category="inline-link-macro-rx"></block>。</block>
   <block id="18f1ba3764c7c45f17295cada3f1b2ff" category="section-title">支援Amazon EBS彈性Volume</block>
   <block id="2e2c03493705dc64283827f16a01fab5" category="paragraph">支援Amazon EBS Elastic Volumes功能搭配Cloud Volumes ONTAP 使用支援的不只是一個可提供更好的效能和額外容量、同時Cloud Manager還能視需要自動增加基礎磁碟容量。</block>
   <block id="1fb2d1e9760db598bc140d6df5875a5f" category="paragraph">從_new _ Cloud Volumes ONTAP 版本-zhustr9.11.0系統、以及GP3和IO1 EBS磁碟類型開始、即可支援彈性磁碟區。</block>
@@ -3800,7 +3767,6 @@
   <block id="b58bf50dd57317d50ce59551de45158f" category="section-title">使用服務端點時網路存取受限</block>
   <block id="982c0b0bc19727a7a5017f464489da09" category="paragraph">Cloud Manager現在使用vnet服務端點來連線Cloud Volumes ONTAP 到各種不同的解決方法、限制網路存取。如果您停用Azure Private Link連線、Cloud Manager會使用服務端點。</block>
   <block id="e020ad0693308c5d73b7fe4c7bafd660" category="inline-link-macro">深入瞭解Azure Private Link與Cloud Volumes ONTAP NetApp的連線功能</block>
-  <block id="572f029bc460b235b79bf593e07bce0a" category="paragraph"><block ref="11d2e9af90a503c65edc8ce2e258f040" category="inline-link-macro-rx"></block>。</block>
   <block id="aace3e8a265fffb87e8d7fbd81d6adb9" category="section-title">支援在Google Cloud中建立儲存VM</block>
   <block id="c248c01b69af03d24d1cd7a6b9ee8e7b" category="paragraph">從9.11.1版開始、Cloud Volumes ONTAP Google Cloud現在支援多個使用支援的儲存VM。從本版Connector開始、Cloud Manager可讓您Cloud Volumes ONTAP 使用API、在Google Cloud的「以雙埠HA配對」上建立儲存VM。</block>
   <block id="33fdc8eb46b228d804c2bf216d7ab788" category="paragraph">若要支援建立儲存VM、Connector需要新的Google Cloud權限：</block>
@@ -3808,7 +3774,6 @@
   <block id="ab9d588372f30d162e50dbbed45980eb" category="inline-link">深入瞭解Google Cloud中的儲存VM限制</block>
   <block id="7859fc06f13ff8714740aa72213f86e7" category="list-text"><block ref="7859fc06f13ff8714740aa72213f86e7" category="inline-link-rx"></block></block>
   <block id="3a7eebf972f838daafe4ea7948002b3d" category="inline-link-macro">瞭解如何在Cloud Volumes ONTAP Google Cloud中建立資料服務儲存VM以供其使用</block>
-  <block id="4d4f80e19da50b86ec7f247f81baedf7" category="list-text"><block ref="4d4f80e19da50b86ec7f247f81baedf7" category="inline-link-macro-rx"></block></block>
   <block id="a4b1f03cb2371b278489814c31e9785d" category="list-text">選用：建立測試Volume以驗證NVE的功能。</block>
   <block id="e683d2190ea99600c0a7bda058b93d36" category="paragraph">「vol create -vserver _Svm_name_-volume _volVolume _name_-Aggregate _aggr _-size _size_-state online -policy default」</block>
   <block id="652f5bb57cb09b4930d22c8b8241e77c" category="summary">利用此功能、您可以執行所有的管理命令、這是進階工作或使用CLI時的最佳選擇。Cloud Volumes ONTAP您可以使用SSH連線至CLI。</block>
@@ -4111,7 +4076,6 @@
   <block id="d9c05beb7c27c53dc1cb952afddea3ac" category="section-title">彈性磁碟區增強功能</block>
   <block id="119ffefd11e6681de49e316bc16a471d" category="paragraph">Cloud Manager現在可在Cloud Volumes ONTAP 使用者介面建立運作環境時、支援Amazon EBS Elastic Volumes功能。使用GP3或IO1磁碟時、預設會啟用彈性磁碟區功能。您可以根據儲存需求來選擇初始容量、Cloud Volumes ONTAP 並在部署完畢後加以修改。</block>
   <block id="0c5741d0ec0127a10c28f7c82579da32" category="inline-link-macro">深入瞭解AWS對彈性磁碟區的支援</block>
-  <block id="3cc8cd9bef921086f444d55cf1ea25c6" category="paragraph"><block ref="a2865c7bad4b206df6582ad55cba915e" category="inline-link-macro-rx"></block>。</block>
   <block id="7fb4d101a5e000398c4d5b4c48b802a6" category="section-title">AWS中的SS3授權ONTAP</block>
   <block id="c86d179c90248acd6ebdba05bd94320c" category="section-title">全新Azure Cloud區域支援</block>
   <block id="c55cc410beff8f86afc3ba8027b681f7" category="paragraph">從9.10.1版開始、Cloud Volumes ONTAP 現在Azure West US 3地區支援了整套功能。</block>
@@ -4246,4 +4210,102 @@
   <block id="6459a9ada2e38351f8beba8f79c30a5f" category="paragraph">如果您偏好使用自己的原則、就必須符合 <block ref="f5cab54abdefb42b27e2bac59f2262c2" category="inline-link-macro-rx"></block>。</block>
   <block id="e26c5d07fc30848902a99c95897441b4" category="sidebar">設定IAM角色</block>
   <block id="15cbb1f16ecbbcee7df3dcd252b9d2ef" category="paragraph">如果資料分層已啟用、則無法啟用 WORM 。</block>
+  <block id="99123ff1f286571f4f132406bca18925" category="paragraph"><block ref="11c4f2829711a4e26e15905edcd472ba" category="inline-link-rx"></block>。</block>
+  <block id="100be8dcbbcc59f2ebf3f8adc67c339e" category="paragraph"><block ref="d66c222d0debdee1d122564fd1972ee2" category="inline-link-rx"></block>。</block>
+  <block id="a40bd5ac4324e93c0e2ae46a5e2a5a11" category="list-text"><block ref="a40bd5ac4324e93c0e2ae46a5e2a5a11" category="inline-link-rx"></block></block>
+  <block id="03d0e3d377c8f72f85a65849b2c14989" category="paragraph"><block ref="201cdfb67db3458b44b5103e61a586f5" category="inline-link-rx"></block>。</block>
+  <block id="1bbedbfdc08c3ed9498540dc734fa96a" category="doc">MTEKM授權</block>
+  <block id="6412f38167d8bd5882b37955a102350e" category="paragraph">多租戶加密金鑰管理（MNEKM）授權現已隨Cloud Volumes ONTAP 附於執行9.11.1版或更新版本的全新和現有的支援系統中。</block>
+  <block id="c43a4aedaaa96e7a4c838a24978b6052" category="paragraph">使用NetApp Volume Encryption時、多租戶外部金鑰管理可讓個別儲存VM（SVM）透過KMIP伺服器維護自己的金鑰。</block>
+  <block id="6b8afb72156ec7e5aff9808d22a9eb10" category="inline-link">瞭解如何使用NetApp加密解決方案來加密磁碟區</block>
+  <block id="58d699d73838a8f3d0660e52bb5df744" category="paragraph"><block ref="c9a99e5900c97d829a142b9eef78ba06" category="inline-link-rx"></block>。</block>
+  <block id="824f455afa0ae197e5e7156988b6dc50" category="section-title">Proxy伺服器</block>
+  <block id="f0823a7c4bb0823970669d0756fceb8a" category="paragraph">Cloud Manager現在會自動將Cloud Volumes ONTAP 您的還原系統設定為使用Connector做為Proxy伺服器、如果無法使用傳出的網際網路連線來傳送AutoSupport 還原訊息。</block>
+  <block id="80f5caa6fde5a9410197e8753e6f4625" category="paragraph">可主動監控系統健全狀況、並傳送訊息給NetApp技術支援部門。AutoSupport</block>
+  <block id="5fc25795a93f92bfee952eef3220d9e5" category="paragraph">唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
+  <block id="b69737a8aa6d54e160fd215ef53825b5" category="section-title">變更充電方法</block>
+  <block id="2ce6294ffa35428110be8d048560952f" category="paragraph">您現在可以變更Cloud Volumes ONTAP 使用容量型授權的功能、以供選用的功能。例如、如果您部署Cloud Volumes ONTAP 的是含有Essentials套件的功能完善的系統、則當您的業務需求改變時、可以將其變更為Professional套件。此功能可從Digital Wallet取得。</block>
+  <block id="63b54c0d3b4fb8e35270bfdf7b2bdcbb" category="inline-link">瞭解如何變更充電方法</block>
+  <block id="41bfdfd8eb98d1c3acb217f5420b6818" category="paragraph"><block ref="895cb871a858d35efad6129a7ae888ab" category="inline-link-rx"></block>。</block>
+  <block id="41b5565824d562a55cfa454b5b57da3d" category="section-title">安全性群組增強功能</block>
+  <block id="68519dd54d9e3922e66ec5b7a67c39e0" category="paragraph">當您建立Cloud Volumes ONTAP 一個運作環境時、使用者介面現在可讓您選擇是否要讓預先定義的安全性群組僅允許所選網路（建議）或所有網路內的流量。</block>
+  <block id="2261cc540df38326c53234c3d2d87794" category="inline-image-macro">顯示在工作環境精靈中選取安全性群組時可用之「允許內部流量」選項的快照。</block>
+  <block id="4c4a915707766fae320a6c1004e2969d" category="paragraph"><block ref="4c4a915707766fae320a6c1004e2969d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3ae1886c49dab0e65e020c2758daff67" category="paragraph"><block ref="6f81c4ca34877706a163afe91c466abd" category="inline-link-rx"></block>。</block>
+  <block id="662442d32a5fd91298fcf8b6391fdf17" category="section-title">變更充電方法</block>
+  <block id="a117b4a94f6f90aef089573b1f002d26" category="paragraph">您可以變更Cloud Volumes ONTAP 使用容量型授權的一套適用於整個系統的充電方法。例如、如果您部署Cloud Volumes ONTAP 的是含有Essentials套件的功能完善的系統、則當您的業務需求改變時、可以將其變更為Professional套件。</block>
+  <block id="856fccc2c5d9211dbd784e97c60dd9bc" category="paragraph">目前不支援改用最佳化的充電方法。</block>
+  <block id="3397777d22d2d5f746157ca31f0d8460" category="list-text">在* Cloud Volumes ONTAP 《*》索引標籤上、按一下「*變更充電方法*」。</block>
+  <block id="731d5463e4c6962d26d5b5d4b345930e" category="inline-image-macro">數位錢包中的「更新收費方法」按鈕位於Cloud Volumes ONTAP 表格上方的「資訊」頁面快照。</block>
+  <block id="e98a6fb0343d664e817b1f922b7a92f1" category="paragraph"><block ref="e98a6fb0343d664e817b1f922b7a92f1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="de4b4e176958ea7181911ce715504321" category="list-text">選取工作環境、選擇新的充電方法、然後確認您瞭解變更套件類型將會影響服務費用。</block>
+  <block id="b0d246ceb3cd290ace3abd509e982f73" category="inline-image-macro">「變更充電方法」對話方塊的快照、可讓您為Cloud Volumes ONTAP 運作中的環境選擇新的充電方法。</block>
+  <block id="6e594f7cd72195c88515a50fcfc2397e" category="paragraph"><block ref="6e594f7cd72195c88515a50fcfc2397e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5331b4ea3bd1ef32d06c003e7e8f1c3d" category="list-text">按一下*變更收費方法*。</block>
+  <block id="f3c1e05bbe0f90b6a71543aa541c175f" category="paragraph">Cloud Manager改變Cloud Volumes ONTAP 了對此系統的充電方法。</block>
+  <block id="41687868b5d65bd96b455ce93a771517" category="paragraph">您可能也會注意到、Digital Wallet會重新整理每種套件類型的耗用容量、以因應您剛做的變更。</block>
+  <block id="ee738151c1f4fb3d95f9f37c55f51f67" category="cell">產生的安全性群組</block>
+  <block id="9706edb1b3def1f358ab8bac741ca122" category="paragraph">如果讓Cloud Manager為您產生安全群組、您必須選擇允許流量的方式：</block>
+  <block id="736117f693040571db69267153b2d26c" category="list-text">如果您選擇*僅限VPC*、則傳入流量的來源為所選VPC的子網路範圍、以及連接器所在VPC的子網路範圍。這是建議的選項。</block>
+  <block id="deb6808c65d1809351087abd4e05656f" category="list-text">如果您選擇*所有VPC*、則傳入流量的來源為0.00.0.0/0 IP範圍。</block>
+  <block id="078c55f3ef3238d9472d9b211da498b5" category="cell">使用現有的安全性群組</block>
+  <block id="d71f3f48867a1eec8f01c7982cfcf5b9" category="cell">如果您使用現有的防火牆原則、請確定其中包含必要的規則。 <block ref="52a4fffcb589b84d48cb7d2cc71fba3f" category="inline-link-macro-rx"></block>。</block>
+  <block id="ceade9f8bf2ef85c7b37aed2340a9d2b" category="list-text">*位置與連線*（單一AZ）或*地區與VPC*（多個AZ）：輸入您在AWS工作表中記錄的網路資訊。</block>
+  <block id="d9b6015407c2f35cf98a557256370e83" category="list-text">E2-Micro（先前使用F1-Micro執行個體）</block>
+  <block id="0982661f22694d2c8b62e37a8cbea7d6" category="list-text">兩個標準持續磁碟、每個10 GiB</block>
+  <block id="6ebde9b80ea03f71d125a635cb158add" category="cell">產生的原則</block>
+  <block id="0b392f872171569e5244ad16ea2616d4" category="cell">使用現有的</block>
+  <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="section-title">最佳化</block>
+  <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">單獨支付已配置的容量和I/O作業費用。</block>
+  <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">單一節點或HA Cloud Volumes ONTAP</block>
+  <block id="ac8875b922d75fca71aa495c421855a6" category="list-text">充電是根據兩個成本元件：儲存與使用（I/O）</block>
+  <block id="5bf349d9a4df0ebb199c8dedb951539e" category="paragraph">請注意、用於資料複寫的I/O並不會計入收費的I/O使用量。</block>
+  <block id="050a8b75e1382967bf1140508c5b62b6" category="list-text">僅在Azure Marketplace中以隨用隨付方案或年度合約形式提供</block>
+  <block id="cd709b16b7a535f5ecfcfbe3f849b353" category="list-text">支援所選VM類型：E4s_v3、E4ds_v4、DS4_v2、DS13_v2、E8s_v3、 和E8ds_v4</block>
+  <block id="98b2954d7b26ad04d4f74c70881d3ece" category="section-title">邊際快取</block>
+  <block id="0e6fc7a8a0a2e83eed1877313299a807" category="paragraph">提供Cloud Volumes Edge Cache授權。</block>
+  <block id="cbea577daebf267793d8d7234ee50729" category="list-text">與Professional套件相同的功能、可為分散式企業提供營運不中斷和資料保護</block>
+  <block id="90083db3dbad73e69a817501be172673" category="list-text">智慧型邊緣快取功能、可透過每個位置佔用空間較小的Windows VM進行快取</block>
+  <block id="c42bae5dc6b1d94a8229aa520a055d09" category="list-text">至少30個TiB、含六個邊緣節點</block>
+  <block id="9228e835b818682287047b781e3a92b5" category="list-text">每購買3個階層、就有一個邊緣節點、每購買3個階層的額外容量</block>
+  <block id="7c4c7c30514b4cc21e76f21acfaacf2a" category="inline-link">深入瞭解Cloud Volumes Edge Cache如何協助您的企業發展</block>
+  <block id="20044e95e1ba41fb44c428898ee01dc2" category="paragraph"><block ref="20044e95e1ba41fb44c428898ee01dc2" category="inline-link-rx"></block></block>
+  <block id="54dcd2c31a61414eef44d6ac931b8f57" category="paragraph">+請注意、最佳化和邊緣快取套件無法搭配BYOL使用。</block>
+  <block id="69ab7c49a4285d04bdc7e75b51a4a476" category="section-title">變更套件</block>
+  <block id="5bdd4028830bea76f4939d67baa460ff" category="paragraph">部署完成後、您可以變更Cloud Volumes ONTAP 使用容量型授權的一套功能、以利執行一套功能。例如、如果您部署Cloud Volumes ONTAP 的是含有Essentials套件的功能完善的系統、則當您的業務需求改變時、可以將其變更為Professional套件。</block>
+  <block id="ec3e25d80cfc0e5561493729eadecef7" category="paragraph"><block ref="ea19fa0e06a6047bcaabb9af62b066c3" category="inline-link-macro-rx"></block>。</block>
+  <block id="489518be96f533be752ec89389b6c58b" category="paragraph">如需定價的詳細資訊、請前往<block ref="24b216641bc5543dd17dac9f0e1e68f7" category="inline-link-rx"></block>。</block>
+  <block id="43cd867e31d6181725d728349aa4babc" category="paragraph">當您建立工作環境並選擇預先定義的安全性群組時、可以選擇允許下列其中一項的流量：</block>
+  <block id="7fc4193225022c993e7d4bb64422ca5c" category="list-text">*僅限選定VPC *：傳入流量的來源是VPC的子網路範圍（適用於Cloud Volumes ONTAP 整個系統）、以及連接器所在VPC的子網路範圍。這是建議的選項。</block>
+  <block id="156399d98a61244bd71cdb8ff85e53cd" category="list-text">*所有VPC*：傳入流量的來源為0.00.0.0/0 IP範圍。</block>
+  <block id="f8ee8582a6b700d886898642f29f7b30" category="paragraph">支援NetApp功能的支援節點需要外傳網際網路存取功能、此功能可主動監控系統健全狀況、並將訊息傳送給NetApp技術支援部門。Cloud Volumes ONTAP AutoSupport</block>
+  <block id="779df8e7551940abf87bd694b09b95ad" category="paragraph">如果無法使用傳出網際網路連線來傳送AutoSupport 不穩定的訊息、Cloud Manager會自動將Cloud Volumes ONTAP 您的還原系統設定為使用Connector做為Proxy伺服器。唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
+  <block id="0e3e7ba11a5d193853da473b9d805b91" category="paragraph">如果您定義了Cloud Volumes ONTAP 嚴格的傳出規則以供支援、那麼Cloud Volumes ONTAP 您也必須確保支援透過連接埠3128建立_Outbound _連線的安全性群組。</block>
+  <block id="f0eca0b63b34e521acec088180836948" category="paragraph">唯一必要的組態步驟是確保Cloud Volumes ONTAP 使用者能夠連線到傳出的網際網路。如需詳細資料、請參閱雲端供應商的網路需求。</block>
+  <block id="88683f91a600720f22d2f3542a3af2ea" category="list-text">*位置*：選取區域、可用度區域、vnet和子網路、然後選取核取方塊以確認連接器與目標位置之間的網路連線。</block>
+  <block id="de908965dc022756e01253bb2ab070dc" category="list-text">*連線能力*：選擇新的或現有的資源群組、然後選擇是使用預先定義的安全性群組、還是使用自己的。</block>
+  <block id="e95464b98c902ebad35546ca12a620a4" category="cell">可用度區域</block>
+  <block id="c62cb6ffba40dfccd9137c53e13ffa06" category="list-text">如果您選擇*選取的vnet only *、則傳入流量的來源是所選vnet的子網路範圍、以及連接器所在vnet的子網路範圍。這是建議的選項。</block>
+  <block id="af5480ae1c406371c200cbecf7ae3ae3" category="list-text">如果您選擇*所有VNet*、則傳入流量的來源為0.00.0.0/0 IP範圍。</block>
+  <block id="37fce366f49fadbb4cd779195ad526fd" category="list-text">多租戶加密金鑰管理（MTEKM）、從Cloud Volumes ONTAP 版本號的E9.11.1開始</block>
+  <block id="8f2c4dcc319947ae616fd10e4743c3f2" category="paragraph"><block ref="8f2c4dcc319947ae616fd10e4743c3f2" category="inline-link-rx"></block></block>
+  <block id="99ac8cc27f368522d020a76c65551219" category="list-text">NetApp支援需要外傳網際網路存取功能、才能主動監控系統健全狀況、並將訊息傳送給NetApp技術支援部門。Cloud Volumes ONTAP AutoSupport</block>
+  <block id="faa229c0646aedb8542a9360e9a5d558" category="paragraph">如果無法使用傳出網際網路連線來傳送AutoSupport 不穩定的訊息、Cloud Manager會自動將Cloud Volumes ONTAP 您的還原系統設定為使用Connector做為Proxy伺服器。唯一的需求是確保連接器的防火牆允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
+  <block id="20df81b10ec53f3723942b914b6125f2" category="paragraph">如果您定義了Cloud Volumes ONTAP 嚴格的出站規則以供支援、那麼您也必須確保Cloud Volumes ONTAP 透過連接埠3128建立的支援_出站_連線。</block>
+  <block id="72d5371b4a8014dbf2df076044553ab6" category="paragraph">建立工作環境時、您可以在部署期間選擇預先定義防火牆原則的來源篩選器：</block>
+  <block id="6cf46adb3fb6177f186428a0cac9190b" category="cell">如果無法使用傳出的網際網路連線、請透過Connector上的Proxy伺服器傳送AutoSupport 功能介紹訊息</block>
+  <block id="2fcfd53faae8a46d655bdd5bf49e4324" category="cell">提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport部署Connector之後、您必須手動開啟此連接埠。</block>
+  <block id="84d78cb2b5253a0b7912f4b35a0a5276" category="list-text">從取得軟體映像<block ref="66da4490d1acc2c130b3158cd12dade2" category="inline-link-rx"></block>。</block>
+  <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
+  <block id="5d95d03306d738eddc1fcb7b61b6151a" category="paragraph">以下是3.9.21版Connector的變更。</block>
+  <block id="cb8e43d2f95cb40206b28ff3def0b89c" category="section-title">2022年7月18日</block>
+  <block id="98ec171ea5a9061794734313fc3bfc8a" category="section-title">Azure中的新授權方案</block>
+  <block id="84b9d69f0957a24ce7fbed46c5b0ab12" category="paragraph">當您透過Azure Marketplace訂閱付費時、Azure上有兩個Cloud Volumes ONTAP 全新的容量型授權套件可供使用：</block>
+  <block id="99c581fb257fff513bc65272d605290f" category="list-text">*最佳化*：分別為資源配置的容量和I/O作業付費</block>
+  <block id="e4bdb4038975db929f91098fe2d7ec12" category="inline-link">Cloud Volumes Edge快取</block>
+  <block id="acc34707a7642d8ca31b72c25ca50920" category="list-text">*邊緣快取*：授權<block ref="1bc1fd590dd203d9bb10cdd372d8de71" category="inline-link-rx"></block></block>
+  <block id="2d66a0b2e45838b2ebcec83efd6c765c" category="inline-link">深入瞭解這些授權套件</block>
+  <block id="ee76810836e6a3bb9dd07dfba26221a1" category="paragraph"><block ref="ddf7de7bfe14bcbf78a072c21440c1a8" category="inline-link-rx"></block>。</block>
+  <block id="c3c41ceeecb96e561c7ec71ffc1c62fe" category="list-text">*僅限所選vnet*：傳入流量的來源是vnet的子網路範圍、Cloud Volumes ONTAP 以及連接器所在vnet的子網路範圍。這是建議的選項。</block>
+  <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">*所有VNet*：傳入流量的來源為0.00.0.0/0 IP範圍。</block>
 </blocks>

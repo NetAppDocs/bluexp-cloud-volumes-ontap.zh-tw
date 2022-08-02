@@ -20,6 +20,68 @@ summary: 瞭Cloud Volumes ONTAP 解Cloud Manager的更新功能。
 
 
 
+== 2022年7月31日
+
+以下是3.9.21版Connector的變更。
+
+
+
+=== MTEKM授權
+
+多租戶加密金鑰管理（MNEKM）授權現已隨Cloud Volumes ONTAP 附於執行9.11.1版或更新版本的全新和現有的支援系統中。
+
+使用NetApp Volume Encryption時、多租戶外部金鑰管理可讓個別儲存VM（SVM）透過KMIP伺服器維護自己的金鑰。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["瞭解如何使用NetApp加密解決方案來加密磁碟區"]。
+
+
+
+=== Proxy伺服器
+
+Cloud Manager現在會自動將Cloud Volumes ONTAP 您的還原系統設定為使用Connector做為Proxy伺服器、如果無法使用傳出的網際網路連線來傳送AutoSupport 還原訊息。
+
+可主動監控系統健全狀況、並傳送訊息給NetApp技術支援部門。AutoSupport
+
+唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。
+
+
+
+=== 變更充電方法
+
+您現在可以變更Cloud Volumes ONTAP 使用容量型授權的功能、以供選用的功能。例如、如果您部署Cloud Volumes ONTAP 的是含有Essentials套件的功能完善的系統、則當您的業務需求改變時、可以將其變更為Professional套件。此功能可從Digital Wallet取得。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["瞭解如何變更充電方法"]。
+
+
+
+=== 安全性群組增強功能
+
+當您建立Cloud Volumes ONTAP 一個運作環境時、使用者介面現在可讓您選擇是否要讓預先定義的安全性群組僅允許所選網路（建議）或所有網路內的流量。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-allow-traffic.png["顯示在工作環境精靈中選取安全性群組時可用之「允許內部流量」選項的快照。"]
+
+ifdef::azure[]
+
+
+
+== 2022年7月18日
+
+
+
+=== Azure中的新授權方案
+
+當您透過Azure Marketplace訂閱付費時、Azure上有兩個Cloud Volumes ONTAP 全新的容量型授權套件可供使用：
+
+* *最佳化*：分別為資源配置的容量和I/O作業付費
+* *邊緣快取*：授權 https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volumes Edge快取"^]
+
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["深入瞭解這些授權套件"]。
+
+endif::azure[]
+
+
+
 == 2022年7月3日
 
 以下是3.9.20版Connector的變更。
@@ -40,7 +102,7 @@ ifdef::aws[]
 
 Cloud Manager現在可在Cloud Volumes ONTAP 使用者介面建立運作環境時、支援Amazon EBS Elastic Volumes功能。使用GP3或IO1磁碟時、預設會啟用彈性磁碟區功能。您可以根據儲存需求來選擇初始容量、Cloud Volumes ONTAP 並在部署完畢後加以修改。
 
-link:concept-aws-elastic-volumes.html["深入瞭解AWS對彈性磁碟區的支援"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["深入瞭解AWS對彈性磁碟區的支援"]。
 
 
 
@@ -100,7 +162,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["深入瞭Cloud Volum
 
 此「進階檢視」可作為Cloud Volumes ONTAP Preview搭配使用的版本（含E59.10.0及更新版本）。我們計畫改善這項體驗、並在即將推出的版本中加入增強功能。請使用產品內建聊天功能、向我們傳送意見反應。
 
-link:task-administer-advanced-view.html["深入瞭解進階檢視"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-administer-advanced-view.html["深入瞭解進階檢視"]。
 
 ifdef::aws[]
 
@@ -112,7 +174,7 @@ ifdef::aws[]
 
 從_new _ Cloud Volumes ONTAP 版本-zhustr9.11.0系統、以及GP3和IO1 EBS磁碟類型開始、即可支援彈性磁碟區。
 
-link:concept-aws-elastic-volumes.html["深入瞭解彈性磁碟區的支援"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["深入瞭解彈性磁碟區的支援"]。
 
 請注意、若要支援彈性磁碟區、連接器需要新的AWS權限：
 
@@ -141,7 +203,7 @@ ifdef::azure[]
 
 Cloud Manager現在使用vnet服務端點來連線Cloud Volumes ONTAP 到各種不同的解決方法、限制網路存取。如果您停用Azure Private Link連線、Cloud Manager會使用服務端點。
 
-link:task-enabling-private-link.html["深入瞭解Azure Private Link與Cloud Volumes ONTAP NetApp的連線功能"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["深入瞭解Azure Private Link與Cloud Volumes ONTAP NetApp的連線功能"]。
 
 endif::azure[]
 
@@ -163,7 +225,7 @@ ifdef::gcp[]
 請注意、您必須使用ONTAP NetApp CLI或System Manager、在單一節點系統上建立儲存VM。
 
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#storage-vm-limits["深入瞭解Google Cloud中的儲存VM限制"^]
-* link:task-managing-svms-gcp.html["瞭解如何在Cloud Volumes ONTAP Google Cloud中建立資料服務儲存VM以供其使用"]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["瞭解如何在Cloud Volumes ONTAP Google Cloud中建立資料服務儲存VM以供其使用"]
 
 
 endif::gcp[]

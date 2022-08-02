@@ -18,4 +18,4 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["深入瞭Cloud Volum
 
 此「進階檢視」可作為Cloud Volumes ONTAP Preview搭配使用的版本（含E59.10.0及更新版本）。我們計畫改善這項體驗、並在即將推出的版本中加入增強功能。請使用產品內建聊天功能、向我們傳送意見反應。
 
-link:task-administer-advanced-view.html["深入瞭解進階檢視"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-administer-advanced-view.html["深入瞭解進階檢視"]。

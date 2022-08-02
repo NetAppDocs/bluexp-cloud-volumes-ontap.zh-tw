@@ -26,7 +26,11 @@ Cloud Manager 會建立 AWS 安全性群組、其中包含 Connector 和 Cloud V
 
 === 傳入規則
 
-預先定義之安全性群組中的傳入規則來源為 0.00.0.0/0 。
+當您建立工作環境並選擇預先定義的安全性群組時、可以選擇允許下列其中一項的流量：
+
+* *僅限選定VPC *：傳入流量的來源是VPC的子網路範圍（適用於Cloud Volumes ONTAP 整個系統）、以及連接器所在VPC的子網路範圍。這是建議的選項。
+* *所有VPC*：傳入流量的來源為0.00.0.0/0 IP範圍。
+
 
 [cols="10,10,80"]
 |===
@@ -197,10 +201,13 @@ NOTE: 來源是 Cloud Volumes ONTAP 指在整個系統上的介面（ IP 位址�
 | TCP | 749 | 資料 LIF （ NFS 、 CIFS ） | Active Directory 樹系 | Kerberos V 變更及設定密碼（ RPCSEC_GSS ） 
 
 
-.2+| AutoSupport | HTTPS | 443.. | 節點管理 LIF | support.netapp.com | 支援（預設為HTTPS）AutoSupport 
+.3+| AutoSupport | HTTPS | 443.. | 節點管理 LIF | support.netapp.com | 支援（預設為HTTPS）AutoSupport 
 
 
 | HTTP | 80 | 節點管理 LIF | support.netapp.com | 僅當傳輸傳輸傳輸傳輸傳輸協定從HTTPS變更為HTTP時、AutoSupport 
+
+
+| TCP | 3128 | 節點管理 LIF | 連接器 | 如果無法使用傳出的網際網路連線、請透過Connector上的Proxy伺服器傳送AutoSupport 功能介紹訊息 
 
 
 | 備份至 S3 | TCP | 5010. | 叢集間 LIF | 備份端點或還原端點 | 備份與還原備份至 S3 功能的作業 
@@ -374,7 +381,7 @@ Connector 的安全性群組需要傳入和傳出規則。
 | HTTPS | 443.. | 提供 HTTPS 存取、從用戶端網頁瀏覽器存取本機使用者介面 
 
 
-| TCP | 3128 | 如果您的AWS網路不使用NAT或Proxy、則可提供Cloud Data Sense執行個體以存取網際網路 
+| TCP | 3128 | 提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport部署Connector之後、您必須手動開啟此連接埠。 
 |===
 
 

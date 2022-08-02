@@ -111,6 +111,35 @@ image:screenshot-digital-wallet-packages.png["螢幕快照顯示專業、最佳�
 
 
 
+== 變更充電方法
+
+您可以變更Cloud Volumes ONTAP 使用容量型授權的一套適用於整個系統的充電方法。例如、如果您部署Cloud Volumes ONTAP 的是含有Essentials套件的功能完善的系統、則當您的業務需求改變時、可以將其變更為Professional套件。
+
+ifdef::azure[]
+
+目前不支援改用最佳化的充電方法。
+
+endif::azure[]
+
+.步驟
+. 從左側導覽功能表中、選取* Digital Wallet *。
+. 在* Cloud Volumes ONTAP 《*》索引標籤上、按一下「*變更充電方法*」。
++
+image:screenshot-digital-wallet-charging-method-button.png["數位錢包中的「更新收費方法」按鈕位於Cloud Volumes ONTAP 表格上方的「資訊」頁面快照。"]
+
+. 選取工作環境、選擇新的充電方法、然後確認您瞭解變更套件類型將會影響服務費用。
++
+image:screenshot-digital-wallet-charging-method.png["「變更充電方法」對話方塊的快照、可讓您為Cloud Volumes ONTAP 運作中的環境選擇新的充電方法。"]
+
+. 按一下*變更收費方法*。
+
+
+Cloud Manager改變Cloud Volumes ONTAP 了對此系統的充電方法。
+
+您可能也會注意到、Digital Wallet會重新整理每種套件類型的耗用容量、以因應您剛做的變更。
+
+
+
 == 移除容量型授權
 
 如果容量型授權過期且不再使用、您可以隨時將其移除。

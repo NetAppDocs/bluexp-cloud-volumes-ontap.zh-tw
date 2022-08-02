@@ -82,7 +82,11 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 ** https://docs.netapp.com/us-en/cloud-manager-monitoring/concept-monitoring.html["深入瞭解監控服務"^]。
 
 
-. *位置與連線*：選取位置、資源群組、安全性群組、然後選取核取方塊以確認連接器與目標位置之間的網路連線。
+. *位置*：選取區域、可用度區域、vnet和子網路、然後選取核取方塊以確認連接器與目標位置之間的網路連線。
++
+對於單一節點系統、您可以選擇要部署 Cloud Volumes ONTAP 的可用度區域。如果您未選擇 AZ 、 Cloud Manager 會為您選擇一個。
+
+. *連線能力*：選擇新的或現有的資源群組、然後選擇是使用預先定義的安全性群組、還是使用自己的。
 +
 下表說明您可能需要指導的欄位：
 
@@ -92,7 +96,7 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 | 欄位 | 說明 
 
 
-| 位置 | 對於單一節點系統、您可以選擇要部署 Cloud Volumes ONTAP 的可用度區域。如果您未選擇 AZ 、 Cloud Manager 會為您選擇一個。 
+| 可用度區域 | 對於單一節點系統、您可以選擇要部署 Cloud Volumes ONTAP 的可用度區域。如果您未選擇 AZ 、 Cloud Manager 會為您選擇一個。 
 
 
 | 資源群組  a| 
@@ -105,7 +109,16 @@ TIP: 如果您使用的Azure帳戶具有 https://docs.netapp.com/us-en/cloud-man
 
 
 
-| 安全性群組 | 如果您選擇現有的安全群組、則必須符合Cloud Volumes ONTAP 下列需求： link:reference-networking-azure.html#security-group-rules-for-cloud-volumes-ontap["檢視預設的安全性群組"]。 
+| 產生的安全性群組  a| 
+如果讓Cloud Manager為您產生安全群組、您必須選擇允許流量的方式：
+
+** 如果您選擇*選取的vnet only *、則傳入流量的來源是所選vnet的子網路範圍、以及連接器所在vnet的子網路範圍。這是建議的選項。
+** 如果您選擇*所有VNet*、則傳入流量的來源為0.00.0.0/0 IP範圍。
+
+
+
+
+| 使用現有的 | 如果您選擇現有的安全群組、則必須符合Cloud Volumes ONTAP 下列需求： link:reference-networking-azure.html#security-group-rules-for-cloud-volumes-ontap["檢視預設的安全性群組"]。 
 |===
 . *充電方法與NSS帳戶*：指定您要搭配此系統使用的收費選項、然後指定NetApp支援網站帳戶。
 +
