@@ -24,7 +24,7 @@ summary: 您應該一律從Cloud Volumes ONTAP Cloud Manager刪除不適用的�
 NOTE: Cloud Manager在Cloud Volumes ONTAP 雲端供應商部署時、可在執行個體上提供終止保護。此選項有助於防止意外終止。
 
 .步驟
-. 如果您在工作環境中啟用Cloud Backup、請先判斷是否仍需要備份資料、然後再決定 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-managing-backups.html#deleting-backups["如有必要、請刪除備份"^]。
+. 如果您在工作環境中啟用Cloud Backup、請先判斷是否仍需要備份資料、然後再決定 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-ontap.html#deleting-backups["如有必要、請刪除備份"^]。
 +
 Cloud Backup Cloud Volumes ONTAP 的設計與不受依賴。當您刪除Cloud Volumes ONTAP 一個還原系統時、Cloud Backup不會自動刪除備份、而且UI目前不支援刪除系統後的備份。
 

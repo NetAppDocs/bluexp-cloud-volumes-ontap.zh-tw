@@ -673,7 +673,6 @@
   <block id="1b044bb64b9bbe28f6c0512f65cdaa86" category="paragraph">刪除工作環境時、不會刪除由其他服務（例如雲端備份與雲端資料感測與監控執行個體）管理的資源。您必須自行手動刪除。如果您沒有、您將繼續收取這些資源的費用。</block>
   <block id="a4b6dd7a7574be8d2cc8a2fe53d10bd1" category="admonition">Cloud Manager在Cloud Volumes ONTAP 雲端供應商部署時、可在執行個體上提供終止保護。此選項有助於防止意外終止。</block>
   <block id="ab3fdba113c7d85bf4272c78761ef0b8" category="inline-link">如有必要、請刪除備份</block>
-  <block id="8e7b1963d43e3f3ba3b7bfa84c9d8060" category="list-text">如果您在工作環境中啟用Cloud Backup、請先判斷是否仍需要備份資料、然後再決定<block ref="05162ddbcf131729dac461924d397f23" category="inline-link-rx"></block>。</block>
   <block id="a06dfc814bad1cf7d8af36ecb8d7caf2" category="paragraph">Cloud Backup Cloud Volumes ONTAP 的設計與不受依賴。當您刪除Cloud Volumes ONTAP 一個還原系統時、Cloud Backup不會自動刪除備份、而且UI目前不支援刪除系統後的備份。</block>
   <block id="953135468f926ef23950412ea3483834" category="list-text">如果您在此工作環境中啟用「雲端資料感應」或「監控」功能、而其他工作環境並未使用這些服務、則您必須刪除這些服務的執行個體。</block>
   <block id="7121e7b9f702c61fbd2b509d05e53715" category="inline-link">深入瞭解Cloud Data Sense執行個體</block>
@@ -4308,4 +4307,5 @@
   <block id="ee76810836e6a3bb9dd07dfba26221a1" category="paragraph"><block ref="ddf7de7bfe14bcbf78a072c21440c1a8" category="inline-link-rx"></block>。</block>
   <block id="c3c41ceeecb96e561c7ec71ffc1c62fe" category="list-text">*僅限所選vnet*：傳入流量的來源是vnet的子網路範圍、Cloud Volumes ONTAP 以及連接器所在vnet的子網路範圍。這是建議的選項。</block>
   <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">*所有VNet*：傳入流量的來源為0.00.0.0/0 IP範圍。</block>
+  <block id="4c6b5df3fe9b762b973dc2bdcbd77ada" category="list-text">如果您在工作環境中啟用Cloud Backup、請先判斷是否仍需要備份資料、然後再決定<block ref="a63fe511bda1d904c92110dce9e2b88b" category="inline-link-rx"></block>。</block>
 </blocks>
