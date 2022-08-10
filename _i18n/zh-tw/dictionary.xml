@@ -4233,7 +4233,6 @@
   <block id="3ae1886c49dab0e65e020c2758daff67" category="paragraph"><block ref="6f81c4ca34877706a163afe91c466abd" category="inline-link-rx"></block>。</block>
   <block id="662442d32a5fd91298fcf8b6391fdf17" category="section-title">變更充電方法</block>
   <block id="a117b4a94f6f90aef089573b1f002d26" category="paragraph">您可以變更Cloud Volumes ONTAP 使用容量型授權的一套適用於整個系統的充電方法。例如、如果您部署Cloud Volumes ONTAP 的是含有Essentials套件的功能完善的系統、則當您的業務需求改變時、可以將其變更為Professional套件。</block>
-  <block id="856fccc2c5d9211dbd784e97c60dd9bc" category="paragraph">目前不支援改用最佳化的充電方法。</block>
   <block id="3397777d22d2d5f746157ca31f0d8460" category="list-text">在* Cloud Volumes ONTAP 《*》索引標籤上、按一下「*變更充電方法*」。</block>
   <block id="731d5463e4c6962d26d5b5d4b345930e" category="inline-image-macro">數位錢包中的「更新收費方法」按鈕位於Cloud Volumes ONTAP 表格上方的「資訊」頁面快照。</block>
   <block id="e98a6fb0343d664e817b1f922b7a92f1" category="paragraph"><block ref="e98a6fb0343d664e817b1f922b7a92f1" category="inline-image-macro-rx" type="image"></block></block>
@@ -4258,7 +4257,6 @@
   <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">單獨支付已配置的容量和I/O作業費用。</block>
   <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">單一節點或HA Cloud Volumes ONTAP</block>
   <block id="ac8875b922d75fca71aa495c421855a6" category="list-text">充電是根據兩個成本元件：儲存與使用（I/O）</block>
-  <block id="5bf349d9a4df0ebb199c8dedb951539e" category="paragraph">請注意、用於資料複寫的I/O並不會計入收費的I/O使用量。</block>
   <block id="050a8b75e1382967bf1140508c5b62b6" category="list-text">僅在Azure Marketplace中以隨用隨付方案或年度合約形式提供</block>
   <block id="cd709b16b7a535f5ecfcfbe3f849b353" category="list-text">支援所選VM類型：E4s_v3、E4ds_v4、DS4_v2、DS13_v2、E8s_v3、 和E8ds_v4</block>
   <block id="98b2954d7b26ad04d4f74c70881d3ece" category="section-title">邊際快取</block>
@@ -4308,4 +4306,8 @@
   <block id="c3c41ceeecb96e561c7ec71ffc1c62fe" category="list-text">*僅限所選vnet*：傳入流量的來源是vnet的子網路範圍、Cloud Volumes ONTAP 以及連接器所在vnet的子網路範圍。這是建議的選項。</block>
   <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">*所有VNet*：傳入流量的來源為0.00.0.0/0 IP範圍。</block>
   <block id="4c6b5df3fe9b762b973dc2bdcbd77ada" category="list-text">如果您在工作環境中啟用Cloud Backup、請先判斷是否仍需要備份資料、然後再決定<block ref="a63fe511bda1d904c92110dce9e2b88b" category="inline-link-rx"></block>。</block>
+  <block id="af54c7f362b7672b7ad2b66397fd230c" category="list-text">不支援改用最佳化的充電方法。</block>
+  <block id="990da7f1ae0e8fb8294bff04c936ecaa" category="list-text">不支援變更Edge Cache授權。</block>
+  <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">如果您有來自雲端供應商市場的私人優惠或合約、改用未包含在合約中的收費方法、將會導致依BYOL（如果您向NetApp購買授權）或PAYGO收取費用。</block>
+  <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">您將不需支付與資料複寫（SnapMirror）或NDMP相關的I/O費用。</block>
 </blocks>

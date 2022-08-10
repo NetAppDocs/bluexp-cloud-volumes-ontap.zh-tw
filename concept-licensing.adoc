@@ -76,7 +76,7 @@ ifdef::azure[]
 * 單一節點或HA Cloud Volumes ONTAP
 * 充電是根據兩個成本元件：儲存與使用（I/O）
 +
-請注意、用於資料複寫的I/O並不會計入收費的I/O使用量。
+您將不需支付與資料複寫（SnapMirror）或NDMP相關的I/O費用。
 
 * 僅在Azure Marketplace中以隨用隨付方案或年度合約形式提供
 * 支援所選VM類型：E4s_v3、E4ds_v4、DS4_v2、DS13_v2、E8s_v3、 和E8ds_v4

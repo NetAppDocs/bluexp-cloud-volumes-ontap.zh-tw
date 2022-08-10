@@ -117,9 +117,14 @@ image:screenshot-digital-wallet-packages.png["螢幕快照顯示專業、最佳�
 
 ifdef::azure[]
 
-目前不支援改用最佳化的充電方法。
+.限制
+* 不支援改用最佳化的充電方法。
+* 不支援變更Edge Cache授權。
+
 
 endif::azure[]
+
+如果您有來自雲端供應商市場的私人優惠或合約、改用未包含在合約中的收費方法、將會導致依BYOL（如果您向NetApp購買授權）或PAYGO收取費用。
 
 .步驟
 . 從左側導覽功能表中、選取* Digital Wallet *。
