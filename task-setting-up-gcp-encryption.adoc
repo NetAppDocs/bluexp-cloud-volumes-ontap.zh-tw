@@ -27,7 +27,7 @@ summary: 雖然 Google Cloud Storage 會在資料寫入磁碟之前先加密資�
 +
 [source, yaml]
 ----
-- cloudkms.cryptoKeyVersions.list
+- cloudkms.cryptoKeyVersions.useToEncrypt
 - cloudkms.cryptoKeys.get
 - cloudkms.cryptoKeys.list
 - cloudkms.keyRings.list
