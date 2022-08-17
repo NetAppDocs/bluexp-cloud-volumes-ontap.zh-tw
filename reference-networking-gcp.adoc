@@ -245,7 +245,7 @@ Cloud Manager 會建立 GCP 防火牆規則、其中包含 Cloud Volumes ONTAP �
 | HTTP | 80 | 使用叢集管理 LIF 的 IP 位址、以 HTTP 存取 System Manager Web 主控台 
 
 
-| HTTPS | 443.. | 使用叢集管理 LIF 的 IP 位址、以 HTTPS 存取 System Manager 網路主控台 
+| HTTPS | 443.. | 使用叢集管理LIF的IP位址、連線到Connector和HTTPS、存取System Manager Web主控台 
 
 
 | SSH | 22 | SSH 存取叢集管理 LIF 的 IP 位址或節點管理 LIF 

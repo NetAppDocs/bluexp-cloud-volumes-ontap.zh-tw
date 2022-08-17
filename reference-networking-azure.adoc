@@ -141,7 +141,7 @@ Cloud Manager 會建立 Azure 安全性群組、其中包括 Cloud Volumes ONTAP
 | 1006 inbound （傳入） _161-162 _udp | 161-162 udp | 任意 | 簡單的網路管理傳輸協定 
 
 
-| 1007 inbound _443 | 443 TCP | 任意 | 使用叢集管理 LIF 的 IP 位址、以 HTTPS 存取 System Manager 網路主控台 
+| 1007 inbound _443 | 443 TCP | 任意 | 使用叢集管理LIF的IP位址、連線到Connector和HTTPS、存取System Manager Web主控台 
 
 
 | 1008 inbound _445 | 445 TCP | 任意 | Microsoft SMB/CIFS over TCP 搭配 NetBios 架構 
@@ -209,7 +209,7 @@ NOTE: HA 系統的傳入規則少於單一節點系統、因為傳入資料流�
 | 優先順序和名稱 | 連接埠與傳輸協定 | 來源與目的地 | 說明 
 
 
-| 100 inbound （傳入） _443 | 443 任何傳輸協定 | 任意 | 使用叢集管理 LIF 的 IP 位址、以 HTTPS 存取 System Manager 網路主控台 
+| 100 inbound （傳入） _443 | 443 任何傳輸協定 | 任意 | 使用叢集管理LIF的IP位址、連線到Connector和HTTPS、存取System Manager Web主控台 
 
 
 | 101 inbound （傳入） _111_TCP | 111 任何傳輸協定 | 任意 | 遠端程序需要 NFS 

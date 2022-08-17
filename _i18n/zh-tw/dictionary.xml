@@ -4310,4 +4310,5 @@
   <block id="990da7f1ae0e8fb8294bff04c936ecaa" category="list-text">不支援變更Edge Cache授權。</block>
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">如果您有來自雲端供應商市場的私人優惠或合約、改用未包含在合約中的收費方法、將會導致依BYOL（如果您向NetApp購買授權）或PAYGO收取費用。</block>
   <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">您將不需支付與資料複寫（SnapMirror）或NDMP相關的I/O費用。</block>
+  <block id="240bee2f94d72e6a18a1263f971266c2" category="cell">使用叢集管理LIF的IP位址、連線到Connector和HTTPS、存取System Manager Web主控台</block>
 </blocks>
