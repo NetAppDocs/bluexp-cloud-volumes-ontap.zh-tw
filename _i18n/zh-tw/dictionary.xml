@@ -818,7 +818,6 @@
   <block id="0261295cde80bd785c1bd9b9ad6ffa17" category="paragraph">建立 HA 配對時、 Cloud Manager 會提示您選擇四個 VPC ：</block>
   <block id="d05ee1603902a8831c88a7a4e2d05592" category="list-text">VPC-0 用於資料和節點的傳入連線</block>
   <block id="420f5bde5fe8d88334d70c6e271fafb1" category="list-text">VPC-1 、 VPC-2 和 VPC-3 用於節點與 HA 中介器之間的內部通訊</block>
-  <block id="e957cab16552d6fdb00d1af0f33ad800" category="paragraph"><block ref="e957cab16552d6fdb00d1af0f33ad800" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3d13cafcfa05e263c4df4bafb6f8f947" category="list-text">HA配對的子網路</block>
   <block id="8a8c42c41cee152d79d679a14f70eab6" category="list-text">每個VPC都需要私有子網路。</block>
   <block id="79dd843cdbd0a98276c26f29bded2257" category="paragraph">如果您將Connector放在VPC-0中、則必須在子網路上啟用私有Google Access、才能存取API並啟用資料分層。</block>
@@ -3260,7 +3259,6 @@
   <block id="bc41c927b050313fabe4e7bfa9c82224" category="paragraph">此範本應能讓您的工作更輕鬆、因為範本中已定義了某些Volume參數、例如磁碟類型、大小、傳輸協定、快照原則、雲端供應商、 以及更多資訊。當參數已預先定義時、您只需跳至下一個Volume參數即可。</block>
   <block id="395f4870d887a81edabc6ad40f5a84f0" category="admonition">使用範本時、您只能建立NFS或CIFS磁碟區。</block>
   <block id="3464a6536597fb17300e864f33f6b63d" category="list-text">在「畫版」頁面上、按一下Cloud Volumes ONTAP 您要配置Volume的功能區系統名稱。</block>
-  <block id="5bc96ba8ddc4433dd0df94e6350c496e" category="list-text">按一下 <block ref="a5c9b85c9e509567688aed8106bc419c" category="inline-image-macro-rx" type="image"></block> &gt;*從範本新增Volume *。</block>
   <block id="74099e7b70c30e3a55db543cda9bfc1e" category="inline-image-macro">顯示如何從範本新增磁碟區的快照。</block>
   <block id="2adf96b75ce7acafe3eaaa1d8d3b1b2a" category="paragraph"><block ref="2adf96b75ce7acafe3eaaa1d8d3b1b2a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5b33742921c3a09b3c0916cff2d87632" category="list-text">在「選取範本_」頁面中、選取您要用來建立磁碟區的範本、然後按一下「*下一步*」。</block>
@@ -4311,4 +4309,10 @@
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">如果您有來自雲端供應商市場的私人優惠或合約、改用未包含在合約中的收費方法、將會導致依BYOL（如果您向NetApp購買授權）或PAYGO收取費用。</block>
   <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">您將不需支付與資料複寫（SnapMirror）或NDMP相關的I/O費用。</block>
   <block id="240bee2f94d72e6a18a1263f971266c2" category="cell">使用叢集管理LIF的IP位址、連線到Connector和HTTPS、存取System Manager Web主控台</block>
+  <block id="9de6e01935c802f21691e7efbefa9680" category="inline-image-macro">三個並排點的圖示。</block>
+  <block id="4cd7acfcbb86932901020185b1df1ec0" category="list-text">按一下 <block ref="231de61ef434abbab90a4356a7d32c83" category="inline-image-macro-rx" type="image"></block> &gt;*從範本新增Volume *。</block>
+  <block id="4f9ff6137bed641431cf4f88c0e37ba0" category="inline-image-macro">概念性影像：Cloud Volumes ONTAP 一套概念性影像、顯示出一套關於功能不整的HA配對及其元件。</block>
+  <block id="deec4375ad9dbb52932d049564b46c2c" category="paragraph"><block ref="deec4375ad9dbb52932d049564b46c2c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="59d7031e8dd126031d49f14da3eb9662" category="inline-image-macro">顯示Cloud Volume HA配對和組態所需的四個VPC的概念映像。</block>
+  <block id="5f244177e38ddb1ab2243352007aaca2" category="paragraph"><block ref="5f244177e38ddb1ab2243352007aaca2" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

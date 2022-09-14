@@ -228,7 +228,7 @@ NOTE: 使用範本時、您只能建立NFS或CIFS磁碟區。
 
 .步驟
 . 在「畫版」頁面上、按一下Cloud Volumes ONTAP 您要配置Volume的功能區系統名稱。
-. 按一下 image:screenshot_gallery_options.gif[""] >*從範本新增Volume *。
+. 按一下 image:screenshot_gallery_options.gif["三個並排點的圖示。"] >*從範本新增Volume *。
 +
 image:screenshot_template_add_vol_cvo.png["顯示如何從範本新增磁碟區的快照。"]
 

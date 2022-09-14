@@ -39,7 +39,7 @@ link:reference-networking-gcp.html["深入瞭解網路需求"]，包括有關負
 
 下列概念性影像顯示Cloud Volumes ONTAP 出一套功能不整的HA配對及其元件：
 
-image:diagram_gcp_ha.png[""]
+image:diagram_gcp_ha.png["概念性影像：Cloud Volumes ONTAP 一套概念性影像、顯示出一套關於功能不整的HA配對及其元件。"]
 
 
 

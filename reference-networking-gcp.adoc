@@ -72,7 +72,7 @@ GCP 必須符合下列要求。
 * VPC-0 用於資料和節點的傳入連線
 * VPC-1 、 VPC-2 和 VPC-3 用於節點與 HA 中介器之間的內部通訊
 +
-image:diagram_gcp_ha.png[""]
+image:diagram_gcp_ha.png["顯示Cloud Volume HA配對和組態所需的四個VPC的概念映像。"]
 
 
 
