@@ -137,10 +137,10 @@ Cloud Manager也會在Cloud Volumes ONTAP 升級過程中視需要更新中介�
 
 執行升級之前、您必須先確認系統已就緒、並進行任何必要的組態變更。
 
-* <<Plan for downtime>>
-* <<Verify that automatic giveback is still enabled>>
-* <<Suspend SnapMirror transfers>>
-* <<Verify that aggregates are online>>
+*  for downtime
+*  that automatic giveback is still enabled
+*  SnapMirror transfers
+*  that aggregates are online
 
 
 
@@ -209,9 +209,9 @@ image:screenshot_aggr_state.gif["螢幕擷取畫面：當您檢視 Aggregate 的
 
 == 升級Cloud Volumes ONTAP
 
-Cloud Manager會在有新版本可供升級時通知您。您可以從此通知開始升級程序。如需詳細資訊、請參閱 <<Upgrade from Cloud Manager notifications>>。
+Cloud Manager會在有新版本可供升級時通知您。您可以從此通知開始升級程序。如需詳細資訊、請參閱  from Cloud Manager notifications。
 
-使用外部URL上的映像執行軟體升級的另一種方法。如果 Cloud Manager 無法存取 S3 儲存區來升級軟體、或是您已獲得修補程式、此選項將會很有幫助。如需詳細資訊、請參閱 <<Upgrade from an image available at a URL>>。
+使用外部URL上的映像執行軟體升級的另一種方法。如果 Cloud Manager 無法存取 S3 儲存區來升級軟體、或是您已獲得修補程式、此選項將會很有幫助。如需詳細資訊、請參閱  from an image available at a URL。
 
 
 
@@ -250,7 +250,16 @@ Cloud Manager 會啟動軟體升級。軟體更新完成後、即可在工作環
 
 您可以將Cloud Volumes ONTAP ImageSoft映像放在Connector或HTTP伺服器上、然後從Cloud Manager開始軟體升級。如果 Cloud Manager 無法存取 S3 儲存區來升級軟體、您可以使用此選項。
 
-Cloud Manager作業（例如Volume或Aggregate建立）不得在Cloud Volumes ONTAP 作業系統上進行。
+.開始之前
+* Cloud Manager作業（例如Volume或Aggregate建立）不得在Cloud Volumes ONTAP 作業系統上進行。
+* 如果您使用HTTPS來裝載ONTAP 資訊影像、升級可能會因為SSL驗證問題而失敗、因為遺失憑證。因應措施是產生並安裝CA簽署的憑證、以便ONTAP 在Etricity和Cloud Manager之間進行驗證。
++
+前往NetApp知識庫檢視逐步指示：
+
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/How_to_configure_Cloud_Manager_as_an_HTTPS_server_to_host_upgrade_images["NetApp KB：如何將Cloud Manager設定為HTTPS伺服器、以裝載升級映像"^]
+
+
 
 .步驟
 . 選用：設定HTTP伺服器、以裝載Cloud Volumes ONTAP 支援此功能的軟體映像。

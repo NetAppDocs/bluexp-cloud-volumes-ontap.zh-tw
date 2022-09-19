@@ -122,6 +122,10 @@ TIP: 如果您使用 HA 配對、 HA 中介器不需要傳出網際網路存取�
 
 
 --
+
+
+如果Cloud Manager通知您AutoSupport 無法傳送資訊、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["疑難排解AutoSupport 您的VMware組態"]。
+
 私有IP位址:: Cloud Manager會在Cloud Volumes ONTAP GCP中分配下列數量的私有IP位址給各個方面：
 +
 --
@@ -157,8 +161,8 @@ LIF 是與實體連接埠相關聯的 IP 位址。諸如VMware等管理工具需
 --
 請注意、 HA 組態需要兩組防火牆規則：
 
-* VPC-0 中 HA 元件的一組規則。這些規則可讓您存取 Cloud Volumes ONTAP 資料以存取資料。 <<Firewall rules for Cloud Volumes ONTAP,深入瞭解>>。
-* VPC-1 、 VPC-2 和 VPC-3 中的另一組 HA 元件規則。這些規則可用於 HA 元件之間的傳入和傳出通訊。 <<Firewall rules for Cloud Volumes ONTAP,深入瞭解>>。
+* VPC-0 中 HA 元件的一組規則。這些規則可讓您存取 Cloud Volumes ONTAP 資料以存取資料。  rules for Cloud Volumes ONTAP,深入瞭解。
+* VPC-1 、 VPC-2 和 VPC-3 中的另一組 HA 元件規則。這些規則可用於 HA 元件之間的傳入和傳出通訊。  rules for Cloud Volumes ONTAP,深入瞭解。
 
 
 --
@@ -457,7 +461,7 @@ NOTE: 來源是 Cloud Volumes ONTAP 指在整個系統上的介面（ IP 位址�
 
 == VPC-1 、 VPC-2 和 VPC-3 的防火牆規則
 
-在 GCP 中、 HA 組態會部署在四個 VPC 上。VPC-0 中 HA 組態所需的防火牆規則為 <<Firewall rules for Cloud Volumes ONTAP,以上所列 Cloud Volumes ONTAP 的 for 列舉>>。
+在 GCP 中、 HA 組態會部署在四個 VPC 上。VPC-0 中 HA 組態所需的防火牆規則為  rules for Cloud Volumes ONTAP,以上所列 Cloud Volumes ONTAP 的 for 列舉。
 
 同時、Cloud Manager針對VPC-1、VPC-2和VPC-3中的執行個體所建立的預先定義防火牆規則、可透過_all_傳輸協定和連接埠進行入侵通訊。這些規則可在HA節點之間進行通訊。
 

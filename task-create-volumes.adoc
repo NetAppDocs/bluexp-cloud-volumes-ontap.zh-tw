@@ -18,10 +18,10 @@ summary: 如果您在啟動初始Cloud Volumes ONTAP 的支援功能後需要更
 
 Cloud Manager提供多種建立新磁碟區的方法：
 
-* 指定新磁碟區的詳細資料、讓Cloud Manager為您處理基礎資料集合體。 <<Create a volume,深入瞭解>>。
-* 在您選擇的資料集合體上建立磁碟區。 <<Create a volume,深入瞭解>>。
-* 從範本建立磁碟區、以針對特定應用程式（例如資料庫或串流服務）的工作負載需求、最佳化磁碟區。 <<Create a volume from a template,深入瞭解>>。
-* 在HA組態的第二個節點上建立磁碟區。 <<Create a volume on the second node in an HA configuration,深入瞭解>>。
+* 指定新磁碟區的詳細資料、讓Cloud Manager為您處理基礎資料集合體。  a volume,深入瞭解。
+* 在您選擇的資料集合體上建立磁碟區。  a volume,深入瞭解。
+* 從範本建立磁碟區、以針對特定應用程式（例如資料庫或串流服務）的工作負載需求、最佳化磁碟區。  a volume from a template,深入瞭解。
+* 在HA組態的第二個節點上建立磁碟區。  a volume on the second node in an HA configuration,深入瞭解。
 
 
 
@@ -30,7 +30,7 @@ Cloud Manager提供多種建立新磁碟區的方法：
 
 關於Volume資源配置的幾點注意事項：
 
-* 建立 iSCSI Volume 時、 Cloud Manager 會自動為您建立 LUN 。我們只要在每個磁碟區建立一個 LUN 、就能輕鬆完成工作、因此不需要管理。建立磁碟區之後、 <<Connect a LUN to a host,使用 IQN 從主機連線至 LUN>>。
+* 建立 iSCSI Volume 時、 Cloud Manager 會自動為您建立 LUN 。我們只要在每個磁碟區建立一個 LUN 、就能輕鬆完成工作、因此不需要管理。建立磁碟區之後、  a LUN to a host,使用 IQN 從主機連線至 LUN。
 * 您可以從 System Manager 或 CLI 建立其他 LUN 。
 
 
@@ -247,7 +247,7 @@ image:screenshot_define_cvo_vol_from_template.png["顯示空白範本的螢幕�
 NOTE: 如果您想查看這些參數的值、可以按一下「Show read-only parameters*（顯示唯讀參數*）」核取方塊、以顯示範本已鎖定的所有欄位。根據預設、這些預先定義的欄位會隱藏、只會顯示您需要填寫的欄位。
 
 . 在_context_區域中、工作環境會填入您剛開始使用的工作環境名稱。您需要選擇要在其中建立磁碟區的*儲存VM*。
-. 新增所有非模板硬編碼的參數值。請參閱 <<create a volume,建立Volume>> 如需部署Cloud Volumes ONTAP 一套解決方案的所有必要參數詳細資訊、請參閱。
+. 新增所有非模板硬編碼的參數值。請參閱  a volume,建立Volume 如需部署Cloud Volumes ONTAP 一套解決方案的所有必要參數詳細資訊、請參閱。
 . 如果您不需要定義其他動作（例如、設定Cloud Backup）、請按一下*執行範本*。
 +
 如果還有其他動作、請按一下左窗格中的動作、以顯示您需要完成的參數。

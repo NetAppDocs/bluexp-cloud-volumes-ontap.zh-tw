@@ -20,6 +20,45 @@ summary: 瞭Cloud Volumes ONTAP 解Cloud Manager的更新功能。
 
 
 
+== 2022年9月18日
+
+以下是3.9.22版Connector的變更。
+
+
+
+=== 數位錢包增強功能
+
+* 數位錢包現在會顯示最佳化I/O授權套件的摘要、以及Cloud Volumes ONTAP 整個帳戶中針對各個系統所配置的WORM容量。
++
+這些詳細資料可協助您更深入瞭解如何收取費用、以及是否需要購買額外容量。
+
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["瞭解如何檢視您帳戶中的已用容量"]。
+
+* 您現在可以從單一充電方法變更為最佳化的充電方法。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["瞭解如何變更充電方法"]。
+
+
+
+
+
+=== 最佳化成本與效能
+
+您現在Cloud Volumes ONTAP 可以直接從Canvas.將效能與成本最佳化。
+
+選擇工作環境之後、您可以選擇*最佳化成本與效能*選項、以變更Cloud Volumes ONTAP 執行個體類型以供使用。選擇較小的執行個體有助於降低成本、而改用較大的執行個體則有助於最佳化效能。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-optimize-cost-performance.png["選取工作環境後、可從畫版取得「最佳化成本與安培」選項的快照。"]
+
+
+
+=== 資訊通知AutoSupport
+
+現在、如果Cloud Volumes ONTAP 無法傳送AutoSupport 功能不全的訊息、Cloud Manager將會產生通知。此通知包含可用於疑難排解網路問題的指示連結。
+
+
+
 == 2022年7月31日
 
 以下是3.9.21版Connector的變更。

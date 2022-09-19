@@ -58,7 +58,7 @@ NetApp Cloud Volumes ONTAP 免費提供所有的支援功能（仍需支付雲�
 * 您可以在Cloud Volumes ONTAP 任何雲端供應商中、使用最多10個包含每個NetApp帳戶的Freemium產品的NetApp系統。
 * 如果Cloud Volumes ONTAP 針對某個不符合需求的系統所配置的容量超過500 GiB、Cloud Manager會將系統轉換成Essentials套件。
 +
-一旦系統轉換成Essentials套件 <<Notes about charging,最低收費>> 適用。
+一旦系統轉換成Essentials套件  about charging,最低收費 適用。
 
 +
 任何其他配置容量低於500 GiB的系統、都會留在Freemium上（只要使用Freemium產品進行部署）。
