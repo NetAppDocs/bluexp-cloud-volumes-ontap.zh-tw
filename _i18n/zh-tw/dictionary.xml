@@ -677,7 +677,6 @@
   <block id="deacec910b77251dad4f11490aa93221" category="list-text">在「畫版」頁面上、按兩下Cloud Volumes ONTAP 您要刪除的「紙張工作環境」名稱。</block>
   <block id="ce57c223c9772471dcabe8db7fec79ea" category="list-text">按一下功能表圖示、然後按一下*刪除*。</block>
   <block id="4a9ee4aa88ebf38223ea447fe291d222" category="inline-image-macro">顯示包含「刪除」動作之工作環境中可用功能表的快照。</block>
-  <block id="67b59933503284b540d89d3f2ae03808" category="paragraph"><block ref="67b59933503284b540d89d3f2ae03808" category="inline-image-macro-rx" type="image"></block></block>
   <block id="27bf96ea2dd4c98f397498424680c167" category="list-text">輸入工作環境的名稱、然後按一下 * 刪除 * 。</block>
   <block id="7d73be13421466d5cf5d832329f74c79" category="paragraph">刪除工作環境最多可能需要 5 分鐘。</block>
   <block id="96b6d7d9126b9ae9264c568037532584" category="summary">瞭解 Cloud Volumes ONTAP 如何使用雲端儲存設備、有助於瞭解儲存成本。</block>
@@ -1524,8 +1523,6 @@
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
-  <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">Cloud Manager 3.9 注意事項</block>
-  <block id="c069fcc68c5dfa73ccc99924c836cae9" category="paragraph"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
   <block id="895cc00e0bb322af8ac7b844010b3b11" category="summary">您可以自行建立集合體、或是讓 Cloud Manager 在建立磁碟區時為您執行集合體。自行建立集合體的好處在於、您可以選擇基礎磁碟大小、以便根據所需的容量或效能來調整集合體大小。</block>
   <block id="c165494898bc0fbf27151d6359a27936" category="doc">建立Aggregate</block>
   <block id="67ea3f429e13cb33e66f1359eb85cc04" category="list-text">在「畫版」頁面上、按兩下 Cloud Volumes ONTAP 您要管理集合體的實例名稱。</block>
@@ -2124,7 +2121,6 @@
   <block id="4e1072c8d03d554d91c9ea5beb4a0a35" category="cell">NAS資料</block>
   <block id="0bd553a2f6a75cf87e90b66a190b1601" category="cell">透過NAS傳輸協定進行用戶端存取。</block>
   <block id="2b5d2bf6818bd886c073127322cc2693" category="cell">iSCSI資料</block>
-  <block id="9a21ebc65d84ea40bda91a7e1c5849b5" category="cell">透過iSCSI傳輸協定進行用戶端存取。</block>
   <block id="44ad9619101b8a07619c995d81024ea9" category="cell">叢集連線能力</block>
   <block id="6f1799c861ef34376e02156b71030428" category="cell">eth1</block>
   <block id="583e4b5135a301f1049902ce637a4b4c" category="cell">可讓節點彼此通訊、並在叢集內移動資料。</block>
@@ -3299,7 +3295,6 @@
   <block id="4dbaad4c9dc389d54a40700cf043efae" category="list-text">選擇 Cloud Volumes ONTAP 哪種類型的系統。</block>
   <block id="e5274090bc4227c2e22055ba915c593c" category="list-text">按一下連結以探索現有系統。</block>
   <block id="40017add8025d214a0f7daaa7b0901e1" category="inline-image-macro">顯示連結以探索現有 Cloud Volumes ONTAP 的一套系統的螢幕快照。</block>
-  <block id="d4324b56e309570d8b82ab9a959b9228" category="paragraph"><block ref="d4324b56e309570d8b82ab9a959b9228" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ff41b305e511b8485cd86e974b8b33c3" category="list-text">在「區域」頁面上、選擇執行個體所在的區域、然後選取執行個體。</block>
   <block id="3e46ae3398c8487fda843885c6277e38" category="list-text">在「認證資料」頁面上、輸入 Cloud Volumes ONTAP for the fu位 管理員使用者的密碼、然後按一下「 * 執行 * 」。</block>
   <block id="aa048985cab469f3a8d3545c3be61fab" category="paragraph">Cloud Manager 會將 Cloud Volumes ONTAP 這些不全的執行個體新增至工作區。</block>
@@ -4387,4 +4382,9 @@
   <block id="cb5d65dde5ba628055d30cfdbb698a3d" category="inline-link">NetApp KB：如何將Cloud Manager設定為HTTPS伺服器、以裝載升級映像</block>
   <block id="ab7e8c89ebea2d737c45db6eb8a87508" category="paragraph"><block ref="ab7e8c89ebea2d737c45db6eb8a87508" category="inline-link-rx"></block></block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有Cloud Manager文件</block>
+  <block id="d38645c03f986a35ce2fbd6c505f7cb1" category="cell">透過iSCSI傳輸協定和系統進行用戶端存取、用於重要的網路工作流程。這些生命是必要的、不應刪除。</block>
+  <block id="2d3838f6845c3ac0398071b3ad7e14f5" category="paragraph"><block ref="2d3838f6845c3ac0398071b3ad7e14f5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="99c8d21234f18ca8a3a220793fea2262" category="paragraph">+<block ref="d4324b56e309570d8b82ab9a959b9228" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d14a27b37d19411318313c75f11baf13" category="inline-link">Cloud Manager注意事項</block>
+  <block id="8f4eecef1c8abf547a153a1486d48ab2" category="paragraph"><block ref="8f4eecef1c8abf547a153a1486d48ab2" category="inline-link-rx"></block></block>
 </blocks>

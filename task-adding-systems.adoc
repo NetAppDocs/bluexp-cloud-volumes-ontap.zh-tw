@@ -23,8 +23,13 @@ summary: 您可以探索並新增 Cloud Volumes ONTAP 現有的 NetApp 系統至
 . 選取系統所在的雲端供應商。
 . 選擇 Cloud Volumes ONTAP 哪種類型的系統。
 . 按一下連結以探索現有系統。
-+
-image:screenshot_discover.gif["顯示連結以探索現有 Cloud Volumes ONTAP 的一套系統的螢幕快照。"]
+
+
+ifdef::aws[]
+
++image:screenshot_discover.gif["顯示連結以探索現有 Cloud Volumes ONTAP 的一套系統的螢幕快照。"]
+
+endif::aws[]
 
 . 在「區域」頁面上、選擇執行個體所在的區域、然後選取執行個體。
 . 在「認證資料」頁面上、輸入 Cloud Volumes ONTAP for the fu位 管理員使用者的密碼、然後按一下「 * 執行 * 」。

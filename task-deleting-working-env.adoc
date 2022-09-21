@@ -39,7 +39,7 @@ Cloud Backup Cloud Volumes ONTAP 的設計與不受依賴。當您刪除Cloud Vo
 .. 在「畫版」頁面上、按兩下Cloud Volumes ONTAP 您要刪除的「紙張工作環境」名稱。
 .. 按一下功能表圖示、然後按一下*刪除*。
 +
-image:screenshot_delete_cloud_volumes_ontap.gif["顯示包含「刪除」動作之工作環境中可用功能表的快照。"]
+image:screenshot_delete_cloud_volumes_ontap.png["顯示包含「刪除」動作之工作環境中可用功能表的快照。"]
 
 .. 輸入工作環境的名稱、然後按一下 * 刪除 * 。
 +
