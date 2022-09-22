@@ -99,8 +99,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capa
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-allow-traffic.png["顯示在工作環境精靈中選取安全性群組時可用之「允許內部流量」選項的快照。"]
 
-ifdef::azure[]
-
 
 
 == 2022年7月18日
@@ -117,8 +115,6 @@ ifdef::azure[]
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["深入瞭解這些授權套件"]。
 
-endif::azure[]
-
 
 
 == 2022年7月3日
@@ -132,8 +128,6 @@ endif::azure[]
 數位錢包現在會顯示您帳戶的總使用容量、以及授權套件的使用容量。這有助於瞭解您的收費方式、以及您是否需要購買額外容量。
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-digital-wallet-summary.png["顯示容量型授權的「Digital Wallet」頁面的快照。此頁面概述您帳戶中的已用容量、然後依照授權套件細分已用容量。"]
-
-ifdef::aws[]
 
 
 
@@ -151,10 +145,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elas
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === 全新Azure Cloud區域支援
@@ -170,14 +160,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["檢視Cloud Volumes ONTAP
 Azure中執行9.9.1版或更新版本的全新及現有的支援功能系統、現在已隨附一份支援功能S3的授權。ONTAP Cloud Volumes ONTAP
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-stdin>中未解析的指令-包括：：：_include/new-Jule-Gcp.ado[]
-
-endif::gcp[]
 
 
 
@@ -202,8 +184,6 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["深入瞭Cloud Volum
 此「進階檢視」可作為Cloud Volumes ONTAP Preview搭配使用的版本（含E59.10.0及更新版本）。我們計畫改善這項體驗、並在即將推出的版本中加入增強功能。請使用產品內建聊天功能、向我們傳送意見反應。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-administer-advanced-view.html["深入瞭解進階檢視"]。
-
-ifdef::aws[]
 
 
 
@@ -232,10 +212,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elas
 
 link:task-deploy-aws-shared-vpc.html["瞭解如何在共用子網路中部署HA配對"]。
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === 使用服務端點時網路存取受限
@@ -243,10 +219,6 @@ ifdef::azure[]
 Cloud Manager現在使用vnet服務端點來連線Cloud Volumes ONTAP 到各種不同的解決方法、限制網路存取。如果您停用Azure Private Link連線、Cloud Manager會使用服務端點。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["深入瞭解Azure Private Link與Cloud Volumes ONTAP NetApp的連線功能"]。
-
-endif::azure[]
-
-ifdef::gcp[]
 
 
 
@@ -266,8 +238,6 @@ ifdef::gcp[]
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#storage-vm-limits["深入瞭解Google Cloud中的儲存VM限制"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["瞭解如何在Cloud Volumes ONTAP Google Cloud中建立資料服務儲存VM以供其使用"]
 
-
-endif::gcp[]
 
 
 
@@ -297,8 +267,6 @@ K8s索引標籤已在先前版本中過時、現在已移除。如果您想要�
 
 https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["深入瞭解Cloud Manager中的Kubernetes資料管理"^]
 
-ifdef::azure[]
-
 
 
 === Azure年度合約
@@ -308,10 +276,6 @@ Azure現已透過年度合約提供Essentials與Professional套裝軟體。您�
 NetApp與您分享私人優惠之後、您可以在工作環境建立期間、從Azure Marketplace訂閱年度方案。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["深入瞭解授權"]。
-
-endif::azure[]
-
-ifdef::aws[]
 
 
 
@@ -335,10 +299,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.htm
 現在需要這些權限、才能最佳化Cloud Manager建立放置群組的方式。
 
 請務必為您新增至Cloud Manager的每組AWS認證資料提供這些權限。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["檢視AWS的最新Connector原則"^]。
-
-endif::aws[]
-
-ifdef::gcp[]
 
 
 
@@ -380,8 +340,6 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 當您選擇要搭配Cloud Volumes ONTAP 使用的Google Cloud服務帳戶時、Cloud Manager現在會顯示與每個服務帳戶相關的電子郵件地址。檢視電子郵件地址可讓您更容易區分共用相同名稱的服務帳戶。
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["服務帳戶欄位的快照"]
-
-endif::gcp[]
 
 
 
