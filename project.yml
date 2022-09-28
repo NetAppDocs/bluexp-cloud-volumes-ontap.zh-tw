@@ -298,6 +298,8 @@ homepage:
       url: task-tiering.html
     - title: 利用NetApp加速資料存取FlexCache
       url: task-accelerate-data-access.html
+    - title: SAN主機組態ONTAP
+      url: https://docs.netapp.com/us-en/ontap-sanhost
   - title: 系統管理
     links:
     - title: 升級Cloud Volumes ONTAP
