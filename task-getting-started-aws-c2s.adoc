@@ -353,7 +353,7 @@ CMK 可以是 AWS 託管的 CMK 、也可以是客戶託管的 CMK 。
 
 . 從連線至Connector執行個體的主機設定Cloud Manager：
 +
-.. 開啟網頁瀏覽器並輸入下列 URL ： http://ipaddress:80[]
+.. 開啟網頁瀏覽器並輸入下列 URL ： http://ipaddress[]
 .. 指定用於連線至AWS服務的Proxy伺服器。
 .. 上傳您在步驟1中取得的憑證。
 .. 完成設定精靈中的步驟以設定Cloud Manager。

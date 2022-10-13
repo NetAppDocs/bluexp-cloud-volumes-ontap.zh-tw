@@ -518,7 +518,6 @@
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">端點</block>
   <block id="8963387394e2ee3e2a5a9ba160566a58" category="cell">\https://support.netapp.com</block>
   <block id="db9e137068a05efe5440105c2494b7f1" category="cell">以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。</block>
-  <block id="9e434ddc2ad4b9de005368b77254223d" category="cell">\https://*.cloudmanager.cloud.netapp.com</block>
   <block id="6021edb3dc94e2b4496476a9e46f9e38" category="cell">在Cloud Manager中提供SaaS功能與服務。</block>
   <block id="554841a7559bd190d883de523464d1d1" category="cell">\https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net</block>
   <block id="065880318484084e9bfe33ea9c6a8702" category="cell">升級Connector及其Docker元件。</block>
@@ -1891,7 +1890,6 @@
   <block id="47ef31752bdcdd73b07b1fe8976c82a6" category="list-text">您應該保留預設的儲存選項。</block>
   <block id="b901bc33967dc36bebafa77250edd08b" category="list-text">Connector所需的連線方法如下：SSH、HTTP和HTTPS。</block>
   <block id="2a74a4ca6ca91fb8d3c6b38fc9233a4f" category="list-text">從連線至Connector執行個體的主機設定Cloud Manager：</block>
-  <block id="7ad92db9fd68840a78d3bc935cff8f64" category="list-text">開啟網頁瀏覽器並輸入下列 URL ：<block ref="17a92846c731483b51192cc0d49cf97e" category="inline-link-rx"></block></block>
   <block id="4d0564ff4d1bbd71234a0838722dfc93" category="list-text">指定用於連線至AWS服務的Proxy伺服器。</block>
   <block id="c3e84141ad53b58cc86262388ac9e4a6" category="list-text">上傳您在步驟1中取得的憑證。</block>
   <block id="2d354fadd521725ccc56833965bb4440" category="list-text">完成設定精靈中的步驟以設定Cloud Manager。</block>
@@ -4434,4 +4432,6 @@
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">在此過程中、NetApp應與您聯絡。這是新使用者的一次性就職練習。</block>
   <block id="cc7175a084ebd6e004cb2c751c162569" category="paragraph">一旦擁有NetApp 支援網站 您的不二帳戶、您就可以瀏覽至Cloud Manager、新增此新增的NSS-帳戶以供日後登錄。</block>
   <block id="49265e8ef749144b85748114012266a8" category="cell">透過iSCSI傳輸協定進行用戶端存取。系統也用於其他重要的網路工作流程。這些生命是必要的、不應刪除。</block>
+  <block id="f61e4d929e921b5a3ae0bb6f78fe9b6c" category="cell">\https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com</block>
+  <block id="4df8bb837bc00b990bb9e359a33c532c" category="list-text">開啟網頁瀏覽器並輸入下列 URL ：<block ref="484de961b6aa06a7131bf90e9cc3be46" category="inline-link-rx"></block></block>
 </blocks>
