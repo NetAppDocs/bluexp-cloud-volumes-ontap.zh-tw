@@ -274,10 +274,12 @@ NOTE: 預設情況下、預先定義Cloud Volumes ONTAP 的「支援HTTP連線�
 . 從取得軟體映像 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NetApp 支援網站"^]。
 . 將軟體映像複製到Connector上的目錄、或是將從其中提供檔案的HTTP伺服器上。
 +
-例如、您可以將軟體映像複製到Connector上的下列路徑：
+有兩種路徑可供使用。正確的路徑取決於您的Connector版本。
 
 +
-「/opt/application/netapp/cloudmanager/dock_occm/data/ontap / imes/」
+** 「/opt/application/netapp/cloudmanager/dock_occm/data/ontap / imes/」
+** /`op/application/NetApp/cloudmanager/ontONTAP /映像/`
+
 
 . 在 Cloud Manager 的工作環境中、按一下功能表圖示、然後按一下 * 進階 > 更新 Cloud Volumes ONTAP * 。
 . 在「更新軟體」頁面上輸入URL、然後按一下「*變更映像*」。

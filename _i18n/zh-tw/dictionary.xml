@@ -2022,7 +2022,6 @@
   <block id="f5de24cfcd33a2271ffc824aa8782176" category="admonition">預設情況下、預先定義Cloud Volumes ONTAP 的「支援HTTP連線」安全群組會允許傳出HTTP連線。</block>
   <block id="a0b1807d647c5ece7bc49bd539f7dcc6" category="inline-link">NetApp 支援網站</block>
   <block id="3e3318ff6382b95c2c0c29be3a83b97d" category="list-text">將軟體映像複製到Connector上的目錄、或是將從其中提供檔案的HTTP伺服器上。</block>
-  <block id="622d340226a193aeab33f4890e2110c9" category="paragraph">例如、您可以將軟體映像複製到Connector上的下列路徑：</block>
   <block id="1b19ae48e0693419e1e905991459c290" category="paragraph">「/opt/application/netapp/cloudmanager/dock_occm/data/ontap / imes/」</block>
   <block id="8919f7617af870f4013e0e66ecfec431" category="list-text">在 Cloud Manager 的工作環境中、按一下功能表圖示、然後按一下 * 進階 &gt; 更新 Cloud Volumes ONTAP * 。</block>
   <block id="593130e23abb8f92a3863f44a5070ba6" category="list-text">在「更新軟體」頁面上輸入URL、然後按一下「*變更映像*」。</block>
@@ -4436,4 +4435,6 @@
   <block id="77bdda0b5be7d2725f2b5941d74db0e2" category="paragraph">「支援儀表板」可讓您新增及管理NetApp 支援網站 要搭配Cloud Manager使用的各種不一致帳戶。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您有客戶層級的帳戶、可以新增一或多個NSS帳戶。</block>
   <block id="4fde72c535fd0cd463dbeb49347cdfae" category="list-text">如果您有合作夥伴或經銷商帳戶、您可以新增一或多個NSS帳戶、但這些帳戶無法與客戶層級帳戶一起新增。</block>
+  <block id="752a2c1ba3bb227b061216ee70132a08" category="paragraph">有兩種路徑可供使用。正確的路徑取決於您的Connector版本。</block>
+  <block id="93f9a2aa0331918bf3f1a44fb42f791e" category="list-text">/`op/application/NetApp/cloudmanager/ontONTAP /映像/`</block>
 </blocks>
