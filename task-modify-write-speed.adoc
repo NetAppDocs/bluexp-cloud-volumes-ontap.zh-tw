@@ -14,7 +14,7 @@ summary: 您可能需要在 Cloud Volumes ONTAP 儲存需求改變時、變更�
 
 
 [role="lead"]
-Cloud Manager 可讓您選擇 Cloud Volumes ONTAP 一般或高速寫入速度來執行功能。預設寫入速度為正常。如果工作負載需要快速寫入效能、您可以改為高速寫入。
+BlueXP可讓您選擇Cloud Volumes ONTAP 一般或高速寫入速度來執行功能。預設寫入速度為正常。如果工作負載需要快速寫入效能、您可以改為高速寫入。
 
 所有類型的單一節點系統和部分HA配對組態均支援高速寫入。檢視中支援的組態 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["發行說明 Cloud Volumes ONTAP"^]
 

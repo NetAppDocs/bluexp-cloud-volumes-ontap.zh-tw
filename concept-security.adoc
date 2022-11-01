@@ -78,7 +78,7 @@ ifdef::aws[]
 
 === AWS 金鑰管理服務
 
-當您在 Cloud Volumes ONTAP AWS 中啟動一個支援功能系統時、可以使用啟用資料加密 http://docs.aws.amazon.com/kms/latest/developerguide/overview.html["AWS 金鑰管理服務（ KMS ）"^]。Cloud Manager 會使用客戶主金鑰（ CMK ）要求資料金鑰。
+當您在 Cloud Volumes ONTAP AWS 中啟動一個支援功能系統時、可以使用啟用資料加密 http://docs.aws.amazon.com/kms/latest/developerguide/overview.html["AWS 金鑰管理服務（ KMS ）"^]。BlueXP會使用客戶主金鑰（CMK）要求資料金鑰。
 
 
 TIP: 建立 Cloud Volumes ONTAP 一套系統後、您無法變更 AWS 資料加密方法。
@@ -107,7 +107,7 @@ ifdef::gcp[]
 
 https://cloud.google.com/security/encryption-at-rest/["Google Cloud Platform 閒置資料加密"^] 預設為 Cloud Volumes ONTAP 啟用以供使用。無需設定。
 
-雖然 Google Cloud Storage 會在資料寫入磁碟之前先加密資料、但您可以使用 Cloud Manager API 來建立 Cloud Volumes ONTAP 使用 _ 客戶管理的加密金鑰 _ 的支援系統。這些是您使用 Cloud Key Management Service 在 GCP 中產生及管理的金鑰。 link:task-setting-up-gcp-encryption.html["深入瞭解"]。
+雖然Google Cloud Storage會在資料寫入磁碟之前先加密資料、但您可以使用BlueXP API來建立Cloud Volumes ONTAP 使用_客戶管理的加密金鑰_的支援系統。這些是您使用 Cloud Key Management Service 在 GCP 中產生及管理的金鑰。 link:task-setting-up-gcp-encryption.html["深入瞭解"]。
 
 endif::gcp[]
 
@@ -127,13 +127,13 @@ endif::gcp[]
 
 == 勒索軟體保護
 
-勒索軟體攻擊可能會耗費一定的時間、資源和商譽。Cloud Manager 可讓您針對勒索軟體實作 NetApp 解決方案、提供有效的可見度、偵測及補救工具。
+勒索軟體攻擊可能會耗費一定的時間、資源和商譽。BlueXP可讓您實作NetApp勒索軟體解決方案、提供有效的可見度、偵測及補救工具。
 
-* Cloud Manager 可識別未受 Snapshot 原則保護的磁碟區、並可讓您在這些磁碟區上啟動預設的 Snapshot 原則。
+* BlueXP會識別未受Snapshot原則保護的磁碟區、並可讓您在這些磁碟區上啟動預設的Snapshot原則。
 +
 Snapshot 複本為唯讀、可防止勒索軟體毀損。他們也能提供精細度、以建立單一檔案複本或完整災難恢復解決方案的映像。
 
-* Cloud Manager 也可啟用 ONTAP 的 FPolicy 解決方案、封鎖常見的勒索軟體副檔名。
+* 此外、您也可以啟用ONTAP的FPolicy解決方案、封鎖常見的勒索軟體副檔名。
 
 
 image:screenshot_ransomware_protection.gif["顯示工作環境中可用之勒索軟體保護頁面的快照。畫面會顯示沒有 Snapshot 原則的磁碟區數量、以及封鎖勒索軟體副檔名的能力。"]

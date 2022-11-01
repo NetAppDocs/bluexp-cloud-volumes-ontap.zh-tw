@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-create-volumes.html 
 keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates 
-summary: 如果您在啟動初始Cloud Volumes ONTAP 的支援功能後需要更多儲存設備、可以FlexVol 從Cloud Manager建立新的適用於NFS、CIFS或iSCSI的支援功能。 
+summary: 如果您在啟動初始Cloud Volumes ONTAP 的支援功能後需要更多儲存設備、您可以從FlexVol BlueXP建立新的支援NFS、CIFS或iSCSI的支援功能。 
 ---
 = 建立FlexVol 功能區
 :hardbreaks:
@@ -14,11 +14,11 @@ summary: 如果您在啟動初始Cloud Volumes ONTAP 的支援功能後需要更
 
 
 [role="lead"]
-如果您在啟動初始Cloud Volumes ONTAP 的支援功能後需要更多儲存設備、可以FlexVol 從Cloud Manager建立新的適用於NFS、CIFS或iSCSI的支援功能。
+如果您在啟動初始Cloud Volumes ONTAP 的支援功能後需要更多儲存設備、您可以從FlexVol BlueXP建立新的支援NFS、CIFS或iSCSI的支援功能。
 
-Cloud Manager提供多種建立新磁碟區的方法：
+BlueXP提供多種建立新磁碟區的方法：
 
-* 指定新磁碟區的詳細資料、讓Cloud Manager為您處理基礎資料集合體。  a volume,深入瞭解。
+* 指定新磁碟區的詳細資料、讓BlueXP為您處理基礎資料集合體。  a volume,深入瞭解。
 * 在您選擇的資料集合體上建立磁碟區。  a volume,深入瞭解。
 * 從範本建立磁碟區、以針對特定應用程式（例如資料庫或串流服務）的工作負載需求、最佳化磁碟區。  a volume from a template,深入瞭解。
 * 在HA組態的第二個節點上建立磁碟區。  a volume on the second node in an HA configuration,深入瞭解。
@@ -30,7 +30,7 @@ Cloud Manager提供多種建立新磁碟區的方法：
 
 關於Volume資源配置的幾點注意事項：
 
-* 建立 iSCSI Volume 時、 Cloud Manager 會自動為您建立 LUN 。我們只要在每個磁碟區建立一個 LUN 、就能輕鬆完成工作、因此不需要管理。建立磁碟區之後、  a LUN to a host,使用 IQN 從主機連線至 LUN。
+* 建立iSCSI磁碟區時、BlueXP會自動為您建立LUN。我們只要在每個磁碟區建立一個 LUN 、就能輕鬆完成工作、因此不需要管理。建立磁碟區之後、  a LUN to a host,使用 IQN 從主機連線至 LUN。
 * 您可以從 System Manager 或 CLI 建立其他 LUN 。
 
 
@@ -46,11 +46,12 @@ endif::aws[]
 
 == 建立Volume
 
-建立磁碟區最常見的方法是指定所需的磁碟區類型、然後Cloud Manager會為您處理磁碟配置。但您也可以選擇要在其上建立磁碟區的特定Aggregate。
+建立磁碟區最常見的方法是指定所需的磁碟區類型、然後由BlueXP為您處理磁碟配置。但您也可以選擇要在其上建立磁碟區的特定Aggregate。
 
 .步驟
+. 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . 在「畫版」頁面上、按兩下Cloud Volumes ONTAP 您要在其中配置FlexVol 一份「功能區」的「功能區」系統名稱。
-. 透過Cloud Manager為您處理磁碟配置、或為磁碟區選擇特定的集合體、來建立新的磁碟區。
+. 請讓BlueXP為您處理磁碟配置、或為磁碟區選擇特定的集合體、以建立新的磁碟區。
 +
 只有在您對Cloud Volumes ONTAP 自己的系統上的資料集合體有充分的瞭解時、才建議您選擇特定的集合體。
 
@@ -93,7 +94,7 @@ endif::aws[]
 |===
 .. *傳輸協定*：為磁碟區（NFS、CIFS或iSCSI）選擇傳輸協定、然後提供所需的資訊。
 +
-如果您選取CIFS但未設定伺服器、Cloud Manager會在您按一下*「下一步」*之後提示您設定CIFS連線。
+如果您選取CIFS、但未設定伺服器、則在您按一下*「下一步」*之後、BlueXP會提示您設定CIFS連線功能。
 
 +
 link:concept-client-protocols.html["瞭解支援的用戶端傳輸協定和版本"]。
@@ -107,7 +108,7 @@ link:concept-client-protocols.html["瞭解支援的用戶端傳輸協定和版�
 .NFS
 --
 存取控制:: 選擇自訂匯出原則、讓用戶端可以使用磁碟區。
-匯出原則:: 定義子網路中可存取磁碟區的用戶端。根據預設、 Cloud Manager 會輸入一個值、讓您存取子網路中的所有執行個體。
+匯出原則:: 定義子網路中可存取磁碟區的用戶端。根據預設、BlueXP會輸入一個值、以供存取子網路中的所有執行個體。
 
 
 --
@@ -154,7 +155,7 @@ ifdef::gcp[]
 endif::gcp[]
 
 DNS 網域:: 適用於整個儲存虛擬 Cloud Volumes ONTAP 機器（ SVM ）的 DNS 網域。在大多數情況下、網域與 AD 網域相同。
-NTP 伺服器:: 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Cloud Manager自動化文件"^] 以取得詳細資料。
+NTP 伺服器:: 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["藍圖XP自動化文件"^] 以取得詳細資料。
 +
 --
 請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。
@@ -165,7 +166,7 @@ NTP 伺服器:: 選擇 * 使用 Active Directory 網域 * 來使用 Active Direc
 --
 .iSCSI
 --
-LUN:: iSCSI 儲存目標稱為 LUN （邏輯單元）、以標準區塊裝置的形式呈現給主機。建立 iSCSI Volume 時、 Cloud Manager 會自動為您建立 LUN 。我們只要在每個磁碟區建立一個LUN、就能輕鬆完成工作、因此不需要管理。建立磁碟區之後、 link:task-connect-lun.html["使用 IQN 從主機連線至 LUN"]。
+LUN:: iSCSI 儲存目標稱為 LUN （邏輯單元）、以標準區塊裝置的形式呈現給主機。建立iSCSI磁碟區時、BlueXP會自動為您建立LUN。我們只要在每個磁碟區建立一個LUN、就能輕鬆完成工作、因此不需要管理。建立磁碟區之後、 link:task-connect-lun.html["使用 IQN 從主機連線至 LUN"]。
 啟動器群組:: 啟動器群組（igroup）指定哪些主機可以存取儲存系統上的指定LUN
 主機啟動器（IQN）:: iSCSI 目標可透過標準乙太網路介面卡（ NIC ）、 TCP 卸載引擎（ TOE ）卡（含軟體啟動器）、整合式網路介面卡（ CNA ）或專用主機匯流排介面卡（ HBA ）連線至網路、並由 iSCSI 合格名稱（ IQN ）識別。
 
@@ -213,7 +214,7 @@ endif::gcp[]
 . *審查*：檢閱磁碟區的詳細資料、然後按一下*新增*。
 
 
-Cloud Manager會在Cloud Volumes ONTAP 整個系統上建立磁碟區。
+BlueXP會在Cloud Volumes ONTAP 整個系統上建立磁碟區。
 
 
 
@@ -227,6 +228,7 @@ Cloud Manager會在Cloud Volumes ONTAP 整個系統上建立磁碟區。
 NOTE: 使用範本時、您只能建立NFS或CIFS磁碟區。
 
 .步驟
+. 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . 在「畫版」頁面上、按一下Cloud Volumes ONTAP 您要配置Volume的功能區系統名稱。
 . 按一下 image:screenshot_gallery_options.gif["三個並排點的圖示。"] >*從範本新增Volume *。
 +
@@ -271,18 +273,19 @@ image:screenshot_template_creating_resource_cvo.png["快照顯示從範本建立
 
 == 在HA組態的第二個節點上建立磁碟區
 
-根據預設、 Cloud Manager 會在 HA 組態的第一個節點上建立磁碟區。如果您需要雙節點向用戶端提供資料的雙主動式組態、則必須在第二個節點上建立集合體和磁碟區。
+根據預設、BlueXP會在HA組態的第一個節點上建立磁碟區。如果您需要雙節點向用戶端提供資料的雙主動式組態、則必須在第二個節點上建立集合體和磁碟區。
 
 .步驟
+. 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . 在「畫版」頁面上、按兩下 Cloud Volumes ONTAP 您要管理集合體的運作環境名稱。
 . 按一下功能表圖示、然後按一下 * 進階 > 進階分配 * 。
 . 按一下「 * 新增 Aggregate * 」、然後建立 Aggregate 。
 . 對於主節點、請在 HA 配對中選擇第二個節點。
-. Cloud Manager 建立 Aggregate 之後、選取該集合體、然後按一下「 * 建立 Volume * 」。
+. 在BlueXP建立Aggregate之後、選取該集合體、然後按一下「*建立Volume *」。
 . 輸入新磁碟區的詳細資料、然後按一下「 * 建立 * 」。
 
 
-Cloud Manager會在HA配對的第二個節點上建立磁碟區。
+BlueXP會在HA配對的第二個節點上建立磁碟區。
 
 ifdef::aws[]
 

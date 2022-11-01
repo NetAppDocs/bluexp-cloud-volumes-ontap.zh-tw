@@ -56,7 +56,7 @@ image:diagram_gcp_ha.png["概念性影像：Cloud Volumes ONTAP 一套概念性�
 NOTE: 對於版本更新的版本、在中介器上安裝了DEBIAN10。Cloud Volumes ONTAP
 
 --
-升級:: 升級Cloud Volumes ONTAP 時、Cloud Manager也會視需要更新中介執行個體。
+升級:: 升級Cloud Volumes ONTAP 時、BlueXP也會視需要更新中介執行個體。
 存取執行個體:: 對於Debian、預設的雲端使用者是「admin」。當透過Google Cloud主控台或gCloud命令列要求SSH存取時、Google Cloud會建立並新增「admin」使用者的憑證。您可以指定「show」以取得root權限。
 第三方代理程式:: 中介執行個體不支援協力廠商代理程式或VM延伸。
 
@@ -112,7 +112,7 @@ HA 組態可維持資料的高可用度、如下所示：
 
 === 儲存配置
 
-當您建立新的磁碟區並需要額外的磁碟時、 Cloud Manager 會將相同數量的磁碟分配給兩個節點、建立鏡射的 Aggregate 、然後建立新的磁碟區。例如、如果磁碟區需要兩個磁碟、 Cloud Manager 會為每個節點分配兩個磁碟、總共四個磁碟。
+當您建立新的磁碟區並需要額外的磁碟時、BlueXP會將相同數量的磁碟分配給兩個節點、建立鏡射的Aggregate、然後建立新的磁碟區。例如、如果磁碟區需要兩個磁碟、則BlueXP會在每個節點上配置兩個磁碟、總共四個磁碟。
 
 
 
@@ -141,7 +141,7 @@ HA 組態可維持資料的高可用度、如下所示：
 
 TIP: 如果您在 HA 配對中的節點之間移動磁碟區、則應使用其他節點的 IP 位址來重新掛載磁碟區。否則、您可能會遇到效能降低的情況。如果用戶端支援 NFSv4 轉介或 CIFS 資料夾重新導向、您可以在 Cloud Volumes ONTAP 支撐系統上啟用這些功能、以避免重新掛載磁碟區。如需詳細資料、請參閱 ONTAP 《關於我們的資料》。
 
-您可以從 Cloud Manager 輕鬆識別正確的 IP 位址：
+您可以從BlueXP輕鬆識別正確的IP位址：
 
 image:screenshot_mount.gif["螢幕擷取畫面：顯示選取 Volume 時可用的 Mount Command 。"]
 

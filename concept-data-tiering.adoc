@@ -40,9 +40,9 @@ ifdef::aws[]
 容量層:: 這個系統會將非作用中的資料分層至單一S3儲存區。Cloud Volumes ONTAP
 +
 --
-Cloud Manager 會針對每個工作環境建立單一 S3 儲存區、並將其命名為「網路資源池」、「叢集唯一識別碼」。並不會針對每個 Volume 建立不同的 S3 儲存區。
+BlueXP會針對每個工作環境建立單一S3儲存區、並將其命名為「網路資源池」、「叢集唯一識別碼」。並不會針對每個 Volume 建立不同的 S3 儲存區。
 
-Cloud Manager建立S3儲存區時、會使用下列預設設定：
+當BlueXP建立S3儲存區時、會使用下列預設設定：
 
 * 儲存等級：標準
 * 預設加密：停用
@@ -81,9 +81,9 @@ ifdef::azure[]
 容量層:: 將非作用中資料分層至單一Blob容器。Cloud Volumes ONTAP
 +
 --
-Cloud Manager會為Cloud Volumes ONTAP 每個運作環境建立一個新的儲存帳戶、其中包含一個容器。儲存帳戶名稱為隨機。並不會針對每個 Volume 建立不同的容器。
+BlueXP會建立一個新的儲存帳戶、並為每Cloud Volumes ONTAP 個運作環境建立一個容器。儲存帳戶名稱為隨機。並不會針對每個 Volume 建立不同的容器。
 
-Cloud Manager會以下列設定建立儲存帳戶：
+BlueXP會建立具有下列設定的儲存帳戶：
 
 * 存取層：Hot
 * 效能：標準
@@ -124,9 +124,9 @@ ifdef::gcp[]
 容量層:: 這個系統會將非作用中的資料分層至單一Google Cloud Storage儲存庫。Cloud Volumes ONTAP
 +
 --
-Cloud Manager會為每個工作環境建立一個儲存區、並將其命名為「網路資源池」、「叢集唯一識別碼」。並不會針對每個 Volume 建立不同的儲存區。
+BlueXP會為每個工作環境建立一個儲存區、並將其命名為「網路資源池」、「叢集唯一識別碼」。並不會針對每個 Volume 建立不同的儲存區。
 
-Cloud Manager建立儲存庫時、會使用下列預設設定：
+當BlueXP建立儲存區時、會使用下列預設設定：
 
 * 位置類型：地區
 * 儲存等級：標準
@@ -168,7 +168,7 @@ endif::gcp[]
 
 TIP: 您可以將最小冷卻週期和預設Aggregate臨界值變更為50%（以下詳細資訊）。 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mgng-stor-tier-fp/GUID-AD522711-01F9-4413-A254-929EAE871EBF.html["瞭解如何變更冷卻週期"^] 和 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mgng-stor-tier-fp/GUID-8FC4BFD5-F258-4AA6-9FCB-663D42D92CAA.html["瞭解如何變更臨界值"^]。
 
-Cloud Manager 可讓您在建立或修改 Volume 時、從下列磁碟區分層原則中進行選擇：
+在建立或修改磁碟區時、您可以使用BlueXP從下列磁碟區分層原則中進行選擇：
 
 僅適用於 Snapshot:: 當 Aggregate 達到 50% 容量後、 Cloud Volumes ONTAP 將不會與作用中檔案系統相關聯的 Snapshot 複本的 Cold 使用者資料分層至容量層。冷卻期約為 2 天。
 +
@@ -193,7 +193,7 @@ Cloud Manager 可讓您在建立或修改 Volume 時、從下列磁碟區分層�
 無:: 將磁碟區的資料保留在效能層中、避免移至容量層。
 
 
-複寫磁碟區時、您可以選擇是否要將資料分層至物件儲存設備。如果您這麼做、 Cloud Manager 會將 * 備份 * 原則套用至資料保護磁碟區。從 Sich9.6 開始 Cloud Volumes ONTAP 、 * All （全部）的分層原則將取代備份原則。
+複寫磁碟區時、您可以選擇是否要將資料分層至物件儲存設備。如果您這麼做、BlueXP會將*備份*原則套用至資料保護磁碟區。從 Sich9.6 開始 Cloud Volumes ONTAP 、 * All （全部）的分層原則將取代備份原則。
 
 
 

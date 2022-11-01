@@ -25,7 +25,7 @@ Azure中的資料會使用自動加密Cloud Volumes ONTAP https://azure.microsof
 如果您想要使用客戶管理的支援服務金鑰Cloud Volumes ONTAP 搭配使用、則必須完成下列步驟：
 
 . 從Azure建立金鑰保存庫、然後在該保存庫中產生金鑰
-. 在Cloud Manager中、使用API建立Cloud Volumes ONTAP 一個使用金鑰的功能不全的環境
+. 從BlueXP中、使用API建立Cloud Volumes ONTAP 使用金鑰的功能不受影響的環境
 
 
 
@@ -52,7 +52,7 @@ HA 配對::
 +
 --
 * 所有的Azure儲存帳戶Cloud Volumes ONTAP 均使用客戶管理的金鑰進行加密。
-* 對於根磁碟、開機磁碟和資料磁碟、Cloud Manager使用 https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["磁碟加密集"^]，可透過託管磁碟管理加密金鑰。
+* 對於root、開機和資料磁碟、BlueXP會使用a https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["磁碟加密集"^]，可透過託管磁碟管理加密金鑰。
 * 任何新的資料磁碟也會使用相同的磁碟加密集。
 * NVRAM和核心磁碟是使用Microsoft管理的金鑰來加密、而非使用客戶管理的金鑰。
 
@@ -97,9 +97,9 @@ HA 配對::
 
 == 建立使用加密金鑰的工作環境
 
-建立金鑰庫並產生加密金鑰之後、您可以建立Cloud Volumes ONTAP 新的、設定為使用金鑰的整套系統。使用Cloud Manager API可支援這些步驟。
+建立金鑰庫並產生加密金鑰之後、您可以建立Cloud Volumes ONTAP 新的、設定為使用金鑰的整套系統。使用BlueXP API可支援這些步驟。
 
-如果您想要將客戶管理的金鑰與單一節點Cloud Volumes ONTAP 的作業系統搭配使用、請確定Cloud Manager Connector具有下列權限：
+如果您想將客戶管理的金鑰與單一節點Cloud Volumes ONTAP 的一套系統整合、請確認BlueXP Connector具有下列權限：
 
 [source, json]
 ----
@@ -116,7 +116,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-az
 NOTE: HA配對不需要前三個權限。
 
 .步驟
-. 請使用下列Cloud Manager API呼叫、取得Azure訂閱中的金鑰保存清單。
+. 請使用下列BlueXP API呼叫、取得Azure訂閱中的金鑰保存清單。
 +
 對於HA配對：「Get /azure/ha/mata/Vault」
 
@@ -129,7 +129,7 @@ NOTE: HA配對不需要前三個權限。
 +
 https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["深入瞭解此API呼叫"^]。
 
-. 使用下列Cloud Manager API呼叫、取得資料保險箱內的金鑰清單。
+. 使用下列BlueXP API呼叫取得資料保險箱內的金鑰清單。
 +
 對於HA配對：「Get /azure/ha/matmata/keys/Vault」
 
@@ -142,7 +142,7 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 +
 https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["深入瞭解此API呼叫"^]。
 
-. 使用Cloud Volumes ONTAP 下列Cloud Manager API呼叫建立一套系統。
+. 使用Cloud Volumes ONTAP 下列BlueXP API呼叫建立一個系統。
 +
 .. 對於HA配對：
 +

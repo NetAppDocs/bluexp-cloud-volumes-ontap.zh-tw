@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-getting-started-aws-c2s.html 
-keywords: commercial cloud services, c2s, secret region, aws secret region 
-summary: 與標準AWS區域類似、您可以在AWS商業雲端服務（C2S）環境中使用Cloud Manager來部署Cloud Volumes ONTAP 支援功能、為雲端儲存設備提供企業級功能。AWS C2S是美國專屬的封閉區域智慧社群；本頁的說明僅適用於AWS C2S區域使用者。 
+keywords: commercial cloud services, c2s, secret region, aws secret region, cloud manager 
+summary: 與標準AWS區域類似、您可以在AWS商業雲端服務（C2S）環境中使用BlueXP（前身為Cloud Manager）來部署Cloud Volumes ONTAP 支援功能、為您的雲端儲存設備提供企業級功能。AWS C2S是美國專屬的封閉區域智慧社群；本頁的說明僅適用於AWS C2S區域使用者。 
 ---
 = 開始使用Cloud Volumes ONTAP AWS C2S環境中的功能
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: 與標準AWS區域類似、您可以在AWS商業雲端服務（C2S）�
 
 
 [role="lead"]
-與標準AWS區域類似、您可以在中使用Cloud Manager https://aws.amazon.com/federal/us-intelligence-community/["AWS商業雲端服務（C2S）"] 部署Cloud Volumes ONTAP 的環境、為您的雲端儲存設備提供企業級功能。AWS C2S是美國專屬的封閉區域智慧社群；本頁的說明僅適用於AWS C2S區域使用者。
+與標準AWS區域類似、您可以在中使用BlueXP（前身為Cloud Manager） https://aws.amazon.com/federal/us-intelligence-community/["AWS商業雲端服務（C2S）"] 部署Cloud Volumes ONTAP 的環境、為您的雲端儲存設備提供企業級功能。AWS C2S是美國專屬的封閉區域智慧社群；本頁的說明僅適用於AWS C2S區域使用者。
 
 
 
 == C2S支援的功能
 
-Cloud Manager在C2S環境中提供下列功能：
+在C2S環境中、可從BlueXP取得下列功能：
 
 * Cloud Volumes ONTAP
 * 資料複寫
@@ -35,11 +35,11 @@ Cloud Manager在C2S環境中提供下列功能：
 
 == 限制
 
-* Cloud Manager不提供任何NetApp的雲端服務。
+* 沒有任何NetApp的雲端服務可從BlueXP取得。
 * 由於在C2S環境中無法存取網際網路、因此下列功能也無法使用：
 +
-** 與NetApp Cloud Central整合
-** 從Cloud Manager自動升級軟體
+** 與BlueXP整合
+** 從BlueXP自動升級軟體
 ** NetApp AutoSupport
 ** AWS Cloud Volumes ONTAP 有關資源的成本資訊
 
@@ -57,14 +57,14 @@ Cloud Manager在C2S環境中提供下列功能：
 +
 這包括設定網路、訂閱Cloud Volumes ONTAP 功能、設定權限、以及選擇性設定AWS KMS。
 
-. 安裝Connector並設定Cloud Manager。
+. 安裝Connector並設定BlueXP。
 +
-在開始使用Cloud Manager部署Cloud Volumes ONTAP 功能時、您必須先建立_Connector_。Connector可讓Cloud Manager管理公有雲環境中的資源和程序（包括Cloud Volumes ONTAP
+在開始使用BlueXP部署Cloud Volumes ONTAP 功能時、您必須先建立_Connector_。Connector讓BlueXP能夠管理公有雲環境中的資源和程序（包括Cloud Volumes ONTAP 整個過程）。
 
 +
-您將從安裝在Connector執行個體上的軟體登入Cloud Manager。
+您將從安裝在Connector執行個體上的軟體登入BlueXP。
 
-. 從Cloud Volumes ONTAP Cloud Manager啟動
+. 從Cloud Volumes ONTAP BlueXP啟動
 
 
 以下說明每個步驟。
@@ -94,7 +94,7 @@ Cloud Manager在C2S環境中提供下列功能：
 
 === 訂閱Cloud Volumes ONTAP 此功能
 
-需要訂閱Marketplace才能從Cloud Volumes ONTAP Cloud Manager部署功能。
+需要訂閱Marketplace才能從Cloud Volumes ONTAP BlueXP部署功能。
 
 .步驟
 . 前往AWS Intelligence Community Marketplace搜尋Cloud Volumes ONTAP 功能。
@@ -102,7 +102,7 @@ Cloud Manager在C2S環境中提供下列功能：
 . 檢閱條款、然後按一下*接受*。
 . 如果您打算部署其他產品、請針對這些產品重複上述步驟。
 +
-您必須使用Cloud Manager來啟動Cloud Volumes ONTAP 執行個體。您不得Cloud Volumes ONTAP 從EC2主控台啟動支援的執行個體。
+您必須使用BlueXP來啟動Cloud Volumes ONTAP 實體執行個體。您不得Cloud Volumes ONTAP 從EC2主控台啟動支援的執行個體。
 
 
 
@@ -110,7 +110,7 @@ Cloud Manager在C2S環境中提供下列功能：
 
 === 設定權限
 
-設定IAM原則和角色、為Cloud Manager和Cloud Volumes ONTAP 功能提供他們在AWS商業雲端服務環境中執行行動所需的權限。
+設定IAM原則和角色、為BlueXP和Cloud Volumes ONTAP IXP提供在AWS商業雲端服務環境中執行動作所需的權限。
 
 您需要IAM原則和IAM角色來執行下列各項：
 
@@ -298,7 +298,7 @@ Cloud Manager在C2S環境中提供下列功能：
 啟動Connector執行個體時、您必須選取Connector IAM角色。
 
 +
-從Cloud Manager建立一套可運作的環境時、您可以選擇IAM角色做Cloud Volumes ONTAP 為功能性的部分、以及HA中介器Cloud Volumes ONTAP 。
+從BlueXP建立一個可運作的環境時、您可以選擇IAM角色做Cloud Volumes ONTAP 為功能性的部分、以及HA中介器Cloud Volumes ONTAP 。
 
 
 
@@ -315,28 +315,28 @@ CMK 可以是 AWS 託管的 CMK 、也可以是客戶託管的 CMK 。
 
 . 如果CMK位於AWS帳戶中、而該帳戶與您打算部署Cloud Volumes ONTAP 的帳戶不同、則您需要取得該金鑰的ARN。
 +
-建立Cloud Volumes ONTAP 一套系統時、您必須提供ARN給Cloud Manager。
+建立Cloud Volumes ONTAP 一套系統時、您必須提供ARN給BlueXP。
 
-. 將Cloud Manager執行個體的IAM角色新增至CMK的主要使用者清單。
+. 將BlueXP執行個體的IAM角色新增至CMK的主要使用者清單。
 +
-這讓Cloud Manager有權將CMK搭配Cloud Volumes ONTAP 使用。
+如此一來、BlueXP就有權將CMK搭配Cloud Volumes ONTAP 使用。
 
 
 
 
 
-== 安裝及設定Cloud Manager
+== 安裝並設定BlueXP
 
-您Cloud Volumes ONTAP 必須先從AWS Marketplace啟動Connector執行個體、然後登入並設定Cloud Manager、才能在AWS中啟動此類系統。
+您Cloud Volumes ONTAP 必須先從AWS Marketplace啟動Connector執行個體、然後登入並設定BlueXP、才能在AWS中啟動更新系統。
 
 .步驟
 . 取得由憑證授權單位（CA）簽署的根憑證（採用隱私權增強型郵件（PEF）Base - 64編碼的X．509格式）。請參閱貴組織的原則與程序、以取得該憑證。
 +
-您必須在設定程序期間上傳憑證。Cloud Manager透過HTTPS將要求傳送至AWS時、會使用信任的憑證。
+您必須在設定程序期間上傳憑證。透過HTTPS傳送要求至AWS時、BlueXP會使用信任的憑證。
 
 . 啟動Connector執行個體：
 +
-.. 前往適用於Cloud Manager的AWS Intelligence Community Marketplace頁面。
+.. 前往適用於BlueXP的AWS Intelligence Community Marketplace頁面。
 .. 在「自訂啟動」索引標籤上、選擇從EC2主控台啟動執行個體的選項。
 .. 依照提示設定執行個體。
 +
@@ -351,15 +351,15 @@ CMK 可以是 AWS 託管的 CMK 、也可以是客戶託管的 CMK 。
 
 
 
-. 從連線至Connector執行個體的主機設定Cloud Manager：
+. 從連線至Connector執行個體的主機設定BlueXP：
 +
 .. 開啟網頁瀏覽器並輸入下列 URL ： http://ipaddress[]
 .. 指定用於連線至AWS服務的Proxy伺服器。
 .. 上傳您在步驟1中取得的憑證。
-.. 完成設定精靈中的步驟以設定Cloud Manager。
+.. 完成設定精靈中的步驟以設定BlueXP。
 +
-*** *系統詳細資料*：輸入此Cloud Manager執行個體的名稱、並提供貴公司名稱。
-*** *建立使用者*：建立您將用來管理Cloud Manager的管理使用者。
+*** *系統詳細資料*：輸入此BlueXP執行個體的名稱、並提供您的公司名稱。
+*** *建立使用者*：建立管理使用者、以用於管理BlueXP。
 *** *審查*：檢閱詳細資料並核准終端使用者授權合約。
 
 
@@ -373,7 +373,7 @@ CMK 可以是 AWS 託管的 CMK 、也可以是客戶託管的 CMK 。
 
 == 產品Cloud Volumes ONTAP 發表
 
-您可以Cloud Volumes ONTAP 在Cloud Manager中建立新的工作環境、在AWS商業雲端服務環境中啟動執行個體。
+您可以Cloud Volumes ONTAP 在BlueXP中建立新的工作環境、在AWS商業雲端服務環境中啟動執行個體。
 
 .您需要的是 #8217 ；需要的是什麼
 * 如果您購買授權、則必須擁有從NetApp收到的授權檔案。授權檔案是Json格式的.NLF檔案。
@@ -418,13 +418,13 @@ NOTE: 如果您稍後需要不同的大小、可以使用「進階配置」選�
 
 
 
-Cloud Manager 會啟動 Cloud Volumes ONTAP 此功能。您可以追蹤時間表的進度。
+BlueXP會啟動Cloud Volumes ONTAP 這個執行個體。您可以追蹤時間表的進度。
 
 
 
 == 安全性群組規則
 
-Cloud Manager會建立安全群組、其中包括Cloud Manager和Cloud Volumes ONTAP NetApp在雲端成功運作所需的傳入和傳出規則。您可能想要參照連接埠進行測試、或是想要使用自己的安全性群組。
+BlueXP會建立安全性群組、其中包括BlueXP和Cloud Volumes ONTAP 不必在雲端上順利運作的傳入和傳出規則。您可能想要參照連接埠進行測試、或是想要使用自己的安全性群組。
 
 
 
@@ -618,7 +618,7 @@ HA 中介器的預先定義安全性群組包括下列傳出規則。
 
 === HA中介器的內部安全群組
 
-針對此功能、預先定義 Cloud Volumes ONTAP 的內部安全群組包含下列規則：Cloud Manager 一律會建立這個安全群組。您沒有使用自己的選項。
+針對此功能、預先定義 Cloud Volumes ONTAP 的內部安全群組包含下列規則：BlueXP一律會建立此安全性群組。您沒有使用自己的選項。
 
 
 

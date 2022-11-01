@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-connect-lun.html 
 keywords: lun, connect lun, iscsi lun, target iqn, iqn 
-summary: 建立 iSCSI Volume 時、 Cloud Manager 會自動為您建立 LUN 。我們只要在每個磁碟區建立一個LUN、就能輕鬆完成工作、因此不需要管理。建立磁碟區之後、請使用 IQN 從主機連線至 LUN 。 
+summary: 建立iSCSI磁碟區時、BlueXP會自動為您建立LUN。我們只要在每個磁碟區建立一個LUN、就能輕鬆完成工作、因此不需要管理。建立磁碟區之後、請使用 IQN 從主機連線至 LUN 。 
 ---
 = 將LUN連接至主機
 :hardbreaks:
@@ -14,15 +14,16 @@ summary: 建立 iSCSI Volume 時、 Cloud Manager 會自動為您建立 LUN 。�
 
 
 [role="lead"]
-建立 iSCSI Volume 時、 Cloud Manager 會自動為您建立 LUN 。我們只要在每個磁碟區建立一個LUN、就能輕鬆完成工作、因此不需要管理。建立磁碟區之後、請使用 IQN 從主機連線至 LUN 。
+建立iSCSI磁碟區時、BlueXP會自動為您建立LUN。我們只要在每個磁碟區建立一個LUN、就能輕鬆完成工作、因此不需要管理。建立磁碟區之後、請使用 IQN 從主機連線至 LUN 。
 
 請注意下列事項：
 
-* Cloud Manager 的自動容量管理不適用於 LUN 。Cloud Manager 建立 LUN 時、會停用自動擴充功能。
+* BlueXP的自動容量管理不適用於LUN。當BlueXP建立LUN時、會停用自動擴充功能。
 * 您可以從 System Manager 或 CLI 建立其他 LUN 。
 
 
 .步驟
+. 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . 在「畫版」頁面上、按兩下 Cloud Volumes ONTAP 您要管理磁碟區的「功能區」工作環境。
 . 選取磁碟區、然後按一下「 * 目標 IQN* 」。
 . 按一下「 * 複製 * 」以複製 IQN 名稱。

@@ -76,7 +76,7 @@ HA 系統使用優質網頁。同時、單一節點系統可使用兩種 Azure �
 
 
 --
-Azure 磁碟大小:: 啟動 Cloud Volumes ONTAP 時、您必須選擇集合體的預設磁碟大小。Cloud Manager 會將此磁碟大小用於初始 Aggregate 、以及使用簡易資源配置選項時所建立的任何其他 Aggregate 。您可以建立使用不同於預設磁碟大小的 Aggregate link:task-create-aggregates.html["使用進階配置選項"]。
+Azure 磁碟大小:: 啟動 Cloud Volumes ONTAP 時、您必須選擇集合體的預設磁碟大小。BlueXP會將此磁碟大小用於初始Aggregate、以及當您使用簡易資源配置選項時所建立的任何其他集合體。您可以建立使用不同於預設磁碟大小的 Aggregate link:task-create-aggregates.html["使用進階配置選項"]。
 +
 --
 
@@ -101,7 +101,7 @@ Azure Premium Storage 的效能與磁碟大小有關。較大的磁碟可提供�
 
 == 檢視預設系統磁碟
 
-Cloud Manager除了儲存使用者資料之外、也購買雲端儲存設備來儲存Cloud Volumes ONTAP 作業系統資料（開機資料、根資料、核心資料和NVRAM）。為了規劃目的、在部署Cloud Volumes ONTAP 完更新之前、您可能需要先檢閱這些詳細資料。
+除了儲存使用者資料之外、BlueXP也購買雲端儲存設備來儲存Cloud Volumes ONTAP 作業系統資料（開機資料、根資料、核心資料和NVRAM）。為了規劃目的、在部署Cloud Volumes ONTAP 完更新之前、您可能需要先檢閱這些詳細資料。
 
 link:reference-default-configs.html#azure-single-node["在Cloud Volumes ONTAP Azure中檢視系統資料的預設磁碟"]。
 
@@ -134,13 +134,13 @@ TIP: 連接器也需要系統磁碟。 https://docs.netapp.com/us-en/cloud-manag
 
 == 選擇寫入速度
 
-Cloud Manager 可讓您選擇 Cloud Volumes ONTAP 適合的寫入速度設定。在您選擇寫入速度之前、您應該先瞭解一般與高設定之間的差異、以及使用高速寫入速度時的風險與建議。 link:concept-write-speed.html["深入瞭解寫入速度"]。
+BlueXP可讓您選擇Cloud Volumes ONTAP 適合的寫入速度設定。在您選擇寫入速度之前、您應該先瞭解一般與高設定之間的差異、以及使用高速寫入速度時的風險與建議。 link:concept-write-speed.html["深入瞭解寫入速度"]。
 
 
 
 == 選擇Volume使用設定檔
 
-包含多項儲存效率功能、可減少您所需的總儲存容量。 ONTAP在 Cloud Manager 中建立 Volume 時、您可以選擇啟用這些功能的設定檔、或是停用這些功能的設定檔。您應該深入瞭解這些功能、以協助您決定要使用的設定檔。
+包含多項儲存效率功能、可減少您所需的總儲存容量。 ONTAP在BlueXP中建立磁碟區時、您可以選擇啟用這些功能的設定檔或停用這些功能的設定檔。您應該深入瞭解這些功能、以協助您決定要使用的設定檔。
 
 NetApp 儲存效率功能提供下列效益：
 

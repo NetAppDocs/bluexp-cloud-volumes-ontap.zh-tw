@@ -20,11 +20,11 @@ summary: 瞭解 Cloud Volumes ONTAP 根據預設設定的功能可協助您設�
 
 == 預設設定
 
-* Cloud Manager 部署 Cloud Volumes ONTAP 時會建立一個資料服務儲存 VM 、部分組態支援額外的儲存 VM 。 link:task-managing-svms.html["深入瞭解管理儲存 VM"]。
+* 在部署Cloud Volumes ONTAP 時、BlueXP會建立一個資料服務儲存VM。部分組態支援額外的儲存 VM 。 link:task-managing-svms.html["深入瞭解管理儲存 VM"]。
 +
-從Cloud Manager 3.9.5版本開始、系統會在初始儲存VM上啟用邏輯空間報告功能。以邏輯方式回報空間時ONTAP 、此功能會報告磁碟區空間、讓儲存效率功能所節省的所有實體空間也會報告為已使用。
+從BlueXP 3.9.5版本開始、系統會在初始儲存VM上啟用邏輯空間報告功能。以邏輯方式回報空間時ONTAP 、此功能會報告磁碟區空間、讓儲存效率功能所節省的所有實體空間也會報告為已使用。
 
-* Cloud Manager 會自動在 ONTAP 下列功能授權上安裝 Cloud Volumes ONTAP 於更新：
+* BlueXP會自動在ONTAP 下列功能授權上安裝Cloud Volumes ONTAP 到更新版本：
 +
 ** CIFS
 ** FlexCache
@@ -97,14 +97,14 @@ NOTE: 根據Cloud Volumes ONTAP 雲端供應商的需求、根據預設、LIF容
 +
 可從存取備份 https://ipaddress/occm/offboxconfig/[] 其中 _ipaddress_ 是連接器主機的 IP 位址。
 
-** Cloud Manager 設定的磁碟區屬性與其他管理工具（例如 System Manager 或 CLI ）有所不同。
+** BlueXP會設定一些不同於其他管理工具的Volume屬性（例如System Manager或CLI）。
 +
-下表列出 Cloud Manager 設定的 Volume 屬性與預設值不同：
+下表列出BlueXP設定的Volume屬性與預設值不同：
 
 +
 [cols="15,85"]
 |===
-| 屬性 | Cloud Manager 設定的價值 
+| 屬性 | 由BlueXP設定的值 
 
 
 | 自動調整大小模式 | 成長 
@@ -137,7 +137,7 @@ NOTE: 帳戶管理員可從「設定」頁面修改此值。
 
 == 用於系統資料的內部磁碟
 
-除了使用者資料的儲存設備、 Cloud Manager 也購買雲端儲存設備來儲存系統資料。
+除了儲存使用者資料之外、BlueXP也購買雲端儲存設備來儲存系統資料。
 
 ifdef::aws[]
 
@@ -230,7 +230,7 @@ endif::gcp[]
 
 === 磁碟所在位置
 
-Cloud Manager 的儲存設備如下所示：
+BlueXP將儲存設備配置如下：
 
 * 開機資料位於附加至執行個體或虛擬機器的磁碟上。
 +

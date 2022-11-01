@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-updating-ontap-cloud.html 
 keywords: update, updating, upgrading, upgrade, software, downgrade, downgrading, FTP, HTTP, mediator, local image, revert, reverting, downgrading 
-summary: 從Cloud Volumes ONTAP Cloud Manager升級功能、即可存取最新的功能與增強功能。升級軟體之前、您應該先準備 Cloud Volumes ONTAP 好用的不一樣系統。 
+summary: 從Cloud Volumes ONTAP BlueXP升級以取得最新的新功能與增強功能。升級軟體之前、您應該先準備 Cloud Volumes ONTAP 好用的不一樣系統。 
 ---
 = 升級Cloud Volumes ONTAP 版軟體
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 從Cloud Volumes ONTAP Cloud Manager升級功能、即可存取最新�
 
 
 [role="lead"]
-從Cloud Volumes ONTAP Cloud Manager升級功能、即可存取最新的功能與增強功能。升級軟體之前、您應該先準備 Cloud Volumes ONTAP 好用的不一樣系統。
+從Cloud Volumes ONTAP BlueXP升級以取得最新的新功能與增強功能。升級軟體之前、您應該先準備 Cloud Volumes ONTAP 好用的不一樣系統。
 
 
 
@@ -24,18 +24,18 @@ summary: 從Cloud Volumes ONTAP Cloud Manager升級功能、即可存取最新�
 
 
 
-=== 僅從Cloud Manager升級
+=== 僅從BlueXP升級
 
-必須從 Cloud Manager 完成升級。 Cloud Volumes ONTAP您不應 Cloud Volumes ONTAP 使用 System Manager 或 CLI 來升級功能。這樣做可能會影響系統穩定性。
+必須從BlueXP完成升級。Cloud Volumes ONTAP您不應 Cloud Volumes ONTAP 使用 System Manager 或 CLI 來升級功能。這樣做可能會影響系統穩定性。
 
 
 
 === 如何升級
 
-Cloud Manager提供兩種升級Cloud Volumes ONTAP 方法：
+BlueXP提供兩種升級Cloud Volumes ONTAP 途徑：
 
 * 在工作環境中顯示升級通知之後
-* 將升級映像放在HTTPS位置、然後提供Cloud Manager URL
+* 將升級映像放在HTTPS位置、然後提供URL給BlueXP
 
 
 
@@ -102,7 +102,7 @@ Cloud Manager提供兩種升級Cloud Volumes ONTAP 方法：
 請注意下列事項：
 
 * 支援的升級途徑Cloud Volumes ONTAP 與內部部署ONTAP 的內部部署的更新途徑不同。
-* 如果您依照工作環境中顯示的升級通知進行升級、Cloud Manager會提示您升級至遵循這些支援升級途徑的版本。
+* 如果您依照工作環境中顯示的升級通知進行升級、則BlueXP會提示您升級至遵循這些支援升級途徑的版本。
 * 如果您將升級映像放在HTTPS位置進行升級、請務必遵循這些支援的升級途徑。
 * 在某些情況下、您可能需要升級數次才能達到目標版本。
 +
@@ -123,13 +123,13 @@ Cloud Manager提供兩種升級Cloud Volumes ONTAP 方法：
 必須向 NetApp 支援部門註冊、才能使用本頁所述的任何方法來升級軟體。 Cloud Volumes ONTAP這適用於 PAYGO 和 BYOL 。您需要 link:task-registering.html["手動登錄 PAYGO 系統"]、但 BYOL 系統預設為註冊。
 
 
-TIP: 尚未註冊支援的系統仍會在有新版本可用時收到 Cloud Manager 中顯示的軟體更新通知。但您必須先註冊系統、才能升級軟體。
+TIP: 尚未註冊支援的系統仍會在新版本推出時收到在BlueXP中顯示的軟體更新通知。但您必須先註冊系統、才能升級軟體。
 
 
 
 === HA中介程序的升級
 
-Cloud Manager也會在Cloud Volumes ONTAP 升級過程中視需要更新中介執行個體。
+BlueXP也會在Cloud Volumes ONTAP 更新過程中視需要更新中介執行個體。
 
 
 
@@ -177,7 +177,7 @@ NOTE: 即使Cloud Backup使用SnapMirror實作來建立備份檔案（稱為Snap
 
 +
 
-NOTE: 您要從其中存取 Cloud Manager 的電腦、必須有連至 Cloud Volumes ONTAP NetApp 的網路連線。例如、您可能需要從雲端供應商網路中的跨接主機登入Cloud Manager。
+NOTE: 您要從哪個電腦存取BlueXP、必須有連到Cloud Volumes ONTAP 該系統的網路連線。例如、您可能需要從雲端供應商網路中的跨接主機登入BlueXP。
 
 . 按一下 * 保護 > 關係 * 。
 . 選取關係、然後按一下 * 作業 > 靜止 * 。
@@ -209,24 +209,24 @@ image:screenshot_aggr_state.gif["螢幕擷取畫面：當您檢視 Aggregate 的
 
 == 升級Cloud Volumes ONTAP
 
-Cloud Manager會在有新版本可供升級時通知您。您可以從此通知開始升級程序。如需詳細資訊、請參閱  from Cloud Manager notifications。
+當有新版本可供升級時、BlueXP會通知您。您可以從此通知開始升級程序。如需詳細資訊、請參閱  from BlueXP notifications。
 
-使用外部URL上的映像執行軟體升級的另一種方法。如果 Cloud Manager 無法存取 S3 儲存區來升級軟體、或是您已獲得修補程式、此選項將會很有幫助。如需詳細資訊、請參閱  from an image available at a URL。
+使用外部URL上的映像執行軟體升級的另一種方法。如果BlueXP無法存取S3儲存區來升級軟體、或是您已獲得修補程式、此選項很有幫助。如需詳細資訊、請參閱  from an image available at a URL。
 
 
 
-=== 從Cloud Manager通知升級
+=== 從BlueXP通知升級
 
-Cloud Manager Cloud Volumes ONTAP 會在出現新版 Cloud Volumes ONTAP 的功能時、於不支援功能的環境中顯示通知：
+當Cloud Volumes ONTAP 有新版Cloud Volumes ONTAP 的功能時、BlueXP會在不工作環境中顯示通知：
 
 image:screenshot_cot_upgrade.gif["螢幕擷取畫面：顯示選取工作環境後、在「畫版」頁面中顯示的「可用新版本」通知。"]
 
 您可以從此通知開始升級程序、從 S3 儲存區取得軟體映像、安裝映像、然後重新啟動系統、藉此自動化程序。
 
-Cloud Manager作業（例如Volume或Aggregate建立）不得在Cloud Volumes ONTAP 作業系統上進行。
+在Cloud Volumes ONTAP 這個系統上、不能進行諸如Volume或Aggregate建立等BlueXP作業。
 
 .步驟
-. 從左側導覽功能表中選取* Canvas*。
+. 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . 選取工作環境。
 +
 如果有新版本可用、則右窗格中會出現通知：
@@ -240,7 +240,7 @@ image:screenshot_cot_upgrade.gif["螢幕擷取畫面：顯示選取工作環境�
 . 在「檢閱與核准」頁面中、閱讀重要附註、選取 * 我瞭解 ...* 、然後按一下 * 執行 * 。
 
 
-Cloud Manager 會啟動軟體升級。軟體更新完成後、即可在工作環境中執行動作。
+BlueXP會啟動軟體升級。軟體更新完成後、即可在工作環境中執行動作。
 
 如果您暫停 SnapMirror 傳輸、請使用 System Manager 繼續傳輸。
 
@@ -248,16 +248,16 @@ Cloud Manager 會啟動軟體升級。軟體更新完成後、即可在工作環
 
 === 從URL提供的映像升級
 
-您可以將Cloud Volumes ONTAP ImageSoft映像放在Connector或HTTP伺服器上、然後從Cloud Manager開始軟體升級。如果 Cloud Manager 無法存取 S3 儲存區來升級軟體、您可以使用此選項。
+您可以將Cloud Volumes ONTAP 「更新」軟體映像放在Connector或HTTP伺服器上、然後從BlueXP開始軟體升級。如果BlueXP無法存取S3儲存區來升級軟體、您可以使用此選項。
 
 .開始之前
-* Cloud Manager作業（例如Volume或Aggregate建立）不得在Cloud Volumes ONTAP 作業系統上進行。
-* 如果您使用HTTPS來裝載ONTAP 資訊影像、升級可能會因為SSL驗證問題而失敗、因為遺失憑證。因應措施是產生並安裝CA簽署的憑證、以便ONTAP 在Etricity和Cloud Manager之間進行驗證。
+* 在Cloud Volumes ONTAP 這個系統上、不能進行諸如Volume或Aggregate建立等BlueXP作業。
+* 如果您使用HTTPS來裝載ONTAP 資訊影像、升級可能會因為SSL驗證問題而失敗、因為遺失憑證。因應措施是產生並安裝CA簽署的憑證、以用於ONTAP 在EXP和BlueXP之間進行驗證。
 +
 前往NetApp知識庫檢視逐步指示：
 
 +
-https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/How_to_configure_Cloud_Manager_as_an_HTTPS_server_to_host_upgrade_images["NetApp KB：如何將Cloud Manager設定為HTTPS伺服器、以裝載升級映像"^]
+https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/How_to_configure_Cloud_Manager_as_an_HTTPS_server_to_host_upgrade_images["NetApp KB：如何將BlueXP設定為HTTPS伺服器、以裝載升級映像"^]
 
 
 
@@ -281,7 +281,7 @@ NOTE: 預設情況下、預先定義Cloud Volumes ONTAP 的「支援HTTP連線�
 ** /`op/application/NetApp/cloudmanager/ontONTAP /映像/`
 
 
-. 在 Cloud Manager 的工作環境中、按一下功能表圖示、然後按一下 * 進階 > 更新 Cloud Volumes ONTAP * 。
+. 在BlueXP的工作環境中、按一下功能表圖示、然後按一下*進階>更新Cloud Volumes ONTAP *。
 . 在「更新軟體」頁面上輸入URL、然後按一下「*變更映像*」。
 +
 如果您將軟體映像複製到上述路徑中的Connector、請輸入下列URL：
@@ -292,7 +292,7 @@ NOTE: 預設情況下、預先定義Cloud Volumes ONTAP 的「支援HTTP連線�
 . 按 * Proceed* 確認。
 
 
-Cloud Manager 會啟動軟體更新。軟體更新完成後、即可在工作環境中執行動作。
+BlueXP會啟動軟體更新。軟體更新完成後、即可在工作環境中執行動作。
 
 如果您暫停 SnapMirror 傳輸、請使用 System Manager 繼續傳輸。
 
@@ -302,7 +302,7 @@ ifdef::gcp[]
 
 == 修正使用Google Cloud NAT閘道時的下載失敗
 
-Connector會自動下載Cloud Volumes ONTAP 適用於更新的軟體。如果您的組態使用Google Cloud NAT閘道、下載可能會失敗。您可以限制軟體映像分成的零件數量來修正此問題。此步驟必須使用Cloud Manager API完成。
+Connector會自動下載Cloud Volumes ONTAP 適用於更新的軟體。如果您的組態使用Google Cloud NAT閘道、下載可能會失敗。您可以限制軟體映像分成的零件數量來修正此問題。此步驟必須使用BlueXP API完成。
 
 .步驟
 . 將PUT要求提交至/occm/config、並以下列Json做為本文：

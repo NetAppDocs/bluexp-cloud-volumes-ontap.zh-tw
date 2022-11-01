@@ -30,7 +30,7 @@ summary: 可主動監控系統健全狀況、並傳送訊息給NetApp技術支�
 * \https://support.netapp.com/asupprod/post/1.0/postAsup
 
 
-如果無法使用傳出網際網路連線來傳送AutoSupport 不穩定的訊息、Cloud Manager會自動將Cloud Volumes ONTAP 您的還原系統設定為使用Connector做為Proxy伺服器。唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。
+如果傳出的網際網路連線無法傳送AutoSupport 功能性訊息、則BlueXP會自動將Cloud Volumes ONTAP 您的功能性更新系統設定為使用Connector做為Proxy伺服器。唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。
 
 如果您定義了Cloud Volumes ONTAP 嚴格的傳出規則以供支援、那麼Cloud Volumes ONTAP 您也必須確保支援透過連接埠3128建立_Outbound _連線的安全性群組。
 
@@ -40,7 +40,7 @@ summary: 可主動監控系統健全狀況、並傳送訊息給NetApp技術支�
 
 == 疑難排解AutoSupport 您的VMware組態
 
-如果傳出連線無法使用、且Cloud Manager無法將Cloud Volumes ONTAP 您的作業系統設定為將Connector當成Proxy伺服器、您將會收到Cloud Manager發出的通知、標題為「<工作環境名稱>無法傳送AutoSupport 不完整訊息」。
+如果傳出連線無法使用、且BlueXP無法將Cloud Volumes ONTAP 您的作業系統設定為使用Connector做為Proxy伺服器、您將會收到來自BlueXP的通知、標題為「<工作環境名稱>無法傳送AutoSupport 靜態訊息」。
 
 您很可能因為網路問題而收到此訊息。
 

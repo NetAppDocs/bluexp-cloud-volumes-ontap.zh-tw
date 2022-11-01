@@ -56,7 +56,7 @@ NetApp Cloud Volumes ONTAP 免費提供所有的支援功能（仍需支付雲�
 * 不包括NetApp的支援。
 * 每Cloud Volumes ONTAP 個系統的資源配置容量上限為500 GiB。
 * 您可以在Cloud Volumes ONTAP 任何雲端供應商中、使用最多10個包含每個NetApp帳戶的Freemium產品的NetApp系統。
-* 如果Cloud Volumes ONTAP 針對某個不符合需求的系統所配置的容量超過500 GiB、Cloud Manager會將系統轉換成Essentials套件。
+* 如果Cloud Volumes ONTAP 供應的資料系統容量超過500 GiB、則BlueXP會將系統轉換成Essentials套件。
 +
 一旦系統轉換成Essentials套件  about charging,最低收費 適用。
 
@@ -178,7 +178,7 @@ link:task-manage-capacity-licenses.html["瞭解如何變更充電方法"]。
 
 === 定價
 
-如需定價的詳細資訊、請前往 https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp Cloud Central"^]。
+如需定價的詳細資訊、請前往 https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp BlueXP網站"^]。
 
 
 
@@ -191,7 +191,7 @@ link:task-manage-capacity-licenses.html["瞭解如何變更充電方法"]。
 雖然不收取Cloud Volumes ONTAP 每小時的軟體授權費用、但您的雲端供應商仍需支付基礎架構費用。
 
 
-TIP: 免費試用開始、剩餘7天、以及剩餘1天時、您將會在Cloud Manager中收到通知。例如：image:screenshot-free-trial-notification.png["Cloud Manager介面中通知的螢幕快照顯示、免費試用期僅剩7天。"]
+TIP: 您將會在BlueXP中收到一則通知、告知免費試用開始、剩餘7天、以及剩餘1天。例如：image:screenshot-free-trial-notification.png["BlueXP介面中通知的螢幕快照顯示、免費試用期僅剩7天。"]
 
 
 
@@ -245,7 +245,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.
 
 ==== 最低收費
 
-每個資料服務儲存VM至少要有一個主要（讀寫）磁碟區、至少需支付4 TiB的最低費用。如果主要磁碟區的總和低於4 TiB、Cloud Manager會將4 TiB最低收費套用至該儲存VM。
+每個資料服務儲存VM至少要有一個主要（讀寫）磁碟區、至少需支付4 TiB的最低費用。如果主要磁碟區的總和低於4 TiB、則BlueXP會將4 TiB最低收費套用至該儲存VM。
 
 如果您尚未配置任何磁碟區、則不適用最低收費。
 

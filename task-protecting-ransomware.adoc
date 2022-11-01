@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-protecting-ransomware.html 
 keywords: snapshot policy, ransomware, protection, fpolicy, block, extension, attacks 
-summary: 勒索軟體攻擊可能會耗費一定的時間、資源和商譽。Cloud Manager 可讓您針對勒索軟體實作 NetApp 解決方案、提供有效的可見度、偵測及補救工具。 
+summary: 勒索軟體攻擊可能會耗費一定的時間、資源和商譽。BlueXP可讓您實作NetApp勒索軟體解決方案、提供有效的可見度、偵測及補救工具。 
 ---
 = 改善防範勒索軟體的能力
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 勒索軟體攻擊可能會耗費一定的時間、資源和商譽。Cl
 
 
 [role="lead"]
-勒索軟體攻擊可能會耗費一定的時間、資源和商譽。Cloud Manager 可讓您針對勒索軟體實作 NetApp 解決方案、提供有效的可見度、偵測及補救工具。
+勒索軟體攻擊可能會耗費一定的時間、資源和商譽。BlueXP可讓您實作NetApp勒索軟體解決方案、提供有效的可見度、偵測及補救工具。
 
 .步驟
 . 在工作環境中、按一下 * 勒索軟體 * 圖示。
@@ -39,7 +39,7 @@ NetApp Snapshot 技術提供業界最佳的勒索軟體補救解決方案。成�
 
 +
 
-TIP: Cloud Manager會在Cloud Volumes ONTAP 啟用FPolicy on功能時建立此範圍。此清單是根據常見的勒索軟體檔案類型。您可以使用Cloud Volumes ONTAP 來自於整個CLI的_vserver fpolicy scoon__命令來自訂封鎖的副檔名。
+TIP: 當您啟動Cloud Volumes ONTAP 有關功能的FPolicy時、BlueXP就會建立這個範圍。此清單是根據常見的勒索軟體檔案類型。您可以使用Cloud Volumes ONTAP 來自於整個CLI的_vserver fpolicy scoon__命令來自訂封鎖的副檔名。
 
 
 

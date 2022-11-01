@@ -133,7 +133,7 @@ sidebar:
         url: "/task-manage-capacity-settings.html"
     - title: 儲存VM管理
       entries:
-      - title: 在Cloud Manager中使用儲存VM
+      - title: 在BlueXP中使用儲存VM
         url: "/task-managing-svms.html"
       - title: 在AWS中建立儲存VM
         flavor: aws
@@ -336,11 +336,11 @@ homepage:
     links:
     - title: NetApp社群
       url: https://community.netapp.com/t5/Cloud-Volumes-ONTAP/bd-p/CloudVolumes
-    - title: Cloud Central部落格
+    - title: BlueXP網站部落格
       url: https://cloud.netapp.com/blog/topic/cloud-volumes-ontap
     - title: 雲端網路研討會
       url: https://cloud.netapp.com/events
 product-family:
-  name: Cloud Manager
+  name: BlueXP
   repo: cloud-manager-family
-  sidebar_label: 所有Cloud Manager文件
+  sidebar_label: 所有BlueXP文件

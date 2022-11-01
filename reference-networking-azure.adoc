@@ -34,25 +34,25 @@ Azure 必須符合下列網路需求。
 * \https://support.netapp.com/asupprod/post/1.0/postAsup
 
 
-如果無法使用傳出網際網路連線來傳送AutoSupport 不穩定的訊息、Cloud Manager會自動將Cloud Volumes ONTAP 您的還原系統設定為使用Connector做為Proxy伺服器。唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。
+如果傳出的網際網路連線無法傳送AutoSupport 功能性訊息、則BlueXP會自動將Cloud Volumes ONTAP 您的功能性更新系統設定為使用Connector做為Proxy伺服器。唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。
 
 如果您定義了Cloud Volumes ONTAP 嚴格的傳出規則以供支援、那麼Cloud Volumes ONTAP 您也必須確保支援透過連接埠3128建立_Outbound _連線的安全性群組。
 
 在您確認可以存取傳出網際網路之後、您可以測試AutoSupport 以確保能夠傳送訊息。如需相關指示、請參閱 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["文件：設定檔ONTAP AutoSupport"^]。
 
-如果Cloud Manager通知您AutoSupport 無法傳送資訊、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["疑難排解AutoSupport 您的VMware組態"]。
+如果BlueXP通知您AutoSupport 無法傳送資訊、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["疑難排解AutoSupport 您的VMware組態"]。
 
 
 
 === IP位址
 
-Cloud Manager 會將下列 IP 位址分配給 Cloud Volumes ONTAP Azure 中的功能：
+BlueXP會將下列IP位址分配給Cloud Volumes ONTAP Azure中的功能：
 
 * 單一節點： 5 個 IP 位址
 * HA 配對： 16 個 IP 位址
 
 
-請注意、 Cloud Manager 會在 HA 配對上建立 SVM 管理 LIF 、但不會在 Azure 中的單一節點系統上建立。
+請注意、BlueXP會在HA配對上建立SVM管理LIF、但不會在Azure中的單一節點系統上建立。
 
 
 TIP: LIF 是與實體連接埠相關聯的 IP 位址。諸如 VMware 的管理工具需要 SVM 管理 LIF SnapCenter 。
@@ -61,11 +61,11 @@ TIP: LIF 是與實體連接埠相關聯的 IP 位址。諸如 VMware 的管理�
 
 === 安全連線至Azure服務
 
-根據預設、Cloud Manager會啟用Azure Private Link、以便Cloud Volumes ONTAP 在支援的過程中連接到各個層面和Azure儲存帳戶。
+根據預設、BlueXP會啟用Azure Private Link、以便Cloud Volumes ONTAP 在支援的範圍內連線到Azure儲存帳戶。
 
-在大多數情況下、您完全不需要做任何事——由NetApp Cloud Manager為您管理Azure Private Link。但如果您使用Azure私有DNS、則必須編輯組態檔。您也應該瞭解Azure中的Connector位置需求。
+在大多數情況下、您完全不需要做任何事、而是由NetApp為您管理Azure Private Link。但如果您使用Azure私有DNS、則必須編輯組態檔。您也應該瞭解Azure中的Connector位置需求。
 
-您也可以視業務需求而停用「私有連結」連線。如果您停用連結、Cloud Manager會設定Cloud Volumes ONTAP 使用服務端點的功能。
+您也可以視業務需求而停用「私有連結」連線。如果您停用連結、則BlueXP會設定Cloud Volumes ONTAP 使用服務端點的功能。
 
 link:task-enabling-private-link.html["深入瞭解如何搭配Cloud Volumes ONTAP 使用Azure私有連結或服務端點搭配使用"]。
 
@@ -91,19 +91,19 @@ link:task-enabling-private-link.html["深入瞭解如何搭配Cloud Volumes ONTA
 
 您必須使用_Dedicated資源群組來處理Cloud Volumes ONTAP 您在Azure中部署的每一組EHA。資源群組僅支援一個HA配對。
 
-如果您嘗試在Cloud Volumes ONTAP Azure資源群組中部署第二個「功能組」配對、Cloud Manager會發生連線問題。
+如果您嘗試在Cloud Volumes ONTAP Azure資源群組中部署第二個「鏈接HA配對」、則BlueXP會遇到連線問題。
 
 
 
 === 安全性群組
 
-您不需要建立安全性群組、因為Cloud Manager能幫您建立安全性群組。如果您需要使用自己的安全性群組規則、請參閱下列安全性群組規則。
+您不需要建立安全性群組、因為BlueXP會為您建立安全性群組。如果您需要使用自己的安全性群組規則、請參閱下列安全性群組規則。
 
 
 
 === 安全性群組規則
 
-Cloud Manager 會建立 Azure 安全性群組、其中包括 Cloud Volumes ONTAP 需要順利運作的傳入和傳出規則。您可能需要參照連接埠進行測試、或是偏好使用自己的安全性群組。
+BlueXP會建立Azure安全性群組、其中包含Cloud Volumes ONTAP 了順利運作所需的傳入和傳出規則。您可能需要參照連接埠進行測試、或是偏好使用自己的安全性群組。
 
 適用於此功能的安全性群組 Cloud Volumes ONTAP 需要傳入和傳出規則。
 
@@ -399,7 +399,7 @@ TIP: 如果您的網路使用 Proxy 伺服器來進行所有與網際網路的�
 | \https://support.netapp.com | 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。 
 
 
-| \https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在Cloud Manager中提供SaaS功能與服務。 
+| \https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在BlueXP中提供SaaS功能與服務。 
 
 
 | \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升級Connector及其Docker元件。 
@@ -469,5 +469,5 @@ NOTE: 來源 IP 位址為 Connector 主機。
 | API 呼叫與 AutoSupport 功能 | 443.. | HTTPS | 傳出網際網路和 ONTAP 叢集管理 LIF | API將Azure和ONTAP VMware呼叫、Cloud Data Sense、勒索軟體服務、並將AutoSupport VMware訊息傳送給NetApp 
 
 
-| DNS | 53. | UDP | DNS | 用於 Cloud Manager 的 DNS 解析 
+| DNS | 53. | UDP | DNS | 用於BlueXP的DNS解析 
 |===

@@ -26,8 +26,9 @@ NOTE: 當部署於多個 AZs 時 Cloud Volumes ONTAP 、使用浮動 IP 位址�
 endif::aws[]
 
 .步驟
-. 在 Cloud Manager 中、識別叢集管理介面的 IP 位址：
+. 在BlueXP中、識別叢集管理介面的IP位址：
 +
+.. 從左側導覽功能表中、選取*儲存設備> Canvas*。
 .. 在「畫版」頁面上、選取 Cloud Volumes ONTAP 「系統」。
 .. 複製右窗格中顯示的叢集管理 IP 位址。
 

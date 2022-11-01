@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-getting-started-gcp.html 
-keywords: google cloud platform, gcp, deploy cloud manager, launch cloud manager, create cloud manager, getting started, networking, gcp networking, service account, tiering, data tiering, bucket, fabricpool, cloud backup, storage access key, gcp role, role, iam role, permissions, gcp permissions 
+keywords: google cloud platform, gcp, cloud manager, deploy BlueXP, launch BlueXP, create BlueXP, getting started, networking, gcp networking, service account, tiering, data tiering, bucket, fabricpool, cloud backup, storage access key, gcp role, role, iam role, permissions, gcp permissions 
 summary: 只要幾個步驟、就能開始使用 Cloud Volumes ONTAP 適用於 GCP 的功能。 
 ---
 = 在Google Cloud中快速入門Cloud Volumes ONTAP
@@ -20,10 +20,10 @@ summary: 只要幾個步驟、就能開始使用 Cloud Volumes ONTAP 適用於 G
 如果您沒有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["連接器"^] 然而、帳戶管理員需要建立一個帳戶。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["瞭解如何在 GCP 中建立連接器"^]。
 
 [role="quick-margin-para"]
-當您建立第一個 Cloud Volumes ONTAP 運作環境時、如果您還沒有連接器、 Cloud Manager 會提示您部署連接器。
+建立第一個Cloud Volumes ONTAP 運作環境時、如果您還沒有連接器、則BlueXP（前身為Cloud Manager）會提示您部署連接器。
 
 [role="quick-margin-para"]
-Cloud Manager 提供符合工作負載需求的預先設定套件、您也可以建立自己的組態。如果您選擇自己的組態、應該瞭解可用的選項。
+BlueXP提供符合工作負載需求的預先設定套件、或者您也可以建立自己的組態。如果您選擇自己的組態、應該瞭解可用的選項。
 
 [role="quick-margin-para"]
 link:task-planning-your-config-gcp.html["深入瞭解規劃組態"]。
@@ -65,7 +65,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["在專案中�
 按一下「 * 新增工作環境 * 」、選取您要部署的系統類型、然後完成精靈中的步驟。 link:task-deploying-gcp.html["閱讀逐步指示"]。
 
 .相關連結
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["從 Cloud Manager 建立 Connector"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["從BlueXP建立連接器"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在 Linux 主機上安裝 Connector 軟體"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["Cloud Manager 具備 GCP 權限的功能"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["BlueXP使用GCP權限的功能"^]
 

@@ -75,7 +75,7 @@ EBS 磁碟類型:: EBS磁碟類型之間的差異較高、如下所示。若要�
 --
 * _通用SSD（GP3）_磁碟是成本最低的SSD、可在各種工作負載的成本與效能之間取得平衡。效能是以IOPS和處理量來定義。支援GP3磁碟Cloud Volumes ONTAP 的版本可搭配使用。9.7及更新版本。
 +
-當您選取GP3磁碟時、Cloud Manager會填入預設的IOPS和處理量值、這些值會根據選取的磁碟大小提供相當於gp2磁碟的效能。您可以提高價值、以更高的成本獲得更好的效能、但我們不支援較低的值、因為這樣可能導致效能低落。簡而言之、請保留預設值或增加預設值。請勿降低。 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["深入瞭解GP3磁碟及其效能"^]。
+當您選取GP3磁碟時、BlueXP會填入預設的IOPS和處理量值、這些值會根據選取的磁碟大小提供相當於gp2磁碟的效能。您可以提高價值、以更高的成本獲得更好的效能、但我們不支援較低的值、因為這樣可能導致效能低落。簡而言之、請保留預設值或增加預設值。請勿降低。 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["深入瞭解GP3磁碟及其效能"^]。
 
 +
 請注意Cloud Volumes ONTAP 、此功能可搭配GP3磁碟支援Amazon EBS彈性磁碟區功能。 link:concept-aws-elastic-volumes.html["深入瞭解彈性磁碟區支援"]。
@@ -93,7 +93,7 @@ NOTE: 使用處理量最佳化的HDD（ST1）時、不建議將資料分層至�
 
 
 --
-EBS 磁碟大小:: 如果您選擇不支援的組態 link:concept-aws-elastic-volumes.html["Amazon EBS彈性磁碟區功能"]之後、您需要在啟動Cloud Volumes ONTAP 一套系統時選擇初始磁碟大小。之後、您就可以了 link:concept-storage-management.html["讓 Cloud Manager 為您管理系統容量"]但如果您想要的話 link:task-create-aggregates.html["自行建立集合體"]請注意下列事項：
+EBS 磁碟大小:: 如果您選擇不支援的組態 link:concept-aws-elastic-volumes.html["Amazon EBS彈性磁碟區功能"]之後、您需要在啟動Cloud Volumes ONTAP 一套系統時選擇初始磁碟大小。之後、您就可以了 link:concept-storage-management.html["讓BlueXP為您管理系統容量"]但如果您想要的話 link:task-create-aggregates.html["自行建立集合體"]請注意下列事項：
 +
 --
 * 集合體中的所有磁碟大小必須相同。
@@ -118,7 +118,7 @@ video::GELcXmOuYPw[youtube,width=848,height=480]
 
 == 檢視預設系統磁碟
 
-Cloud Manager除了儲存使用者資料之外、也購買雲端儲存設備來儲存Cloud Volumes ONTAP 作業系統資料（開機資料、根資料、核心資料和NVRAM）。為了規劃目的、在部署Cloud Volumes ONTAP 完更新之前、您可能需要先檢閱這些詳細資料。
+除了儲存使用者資料之外、BlueXP也購買雲端儲存設備來儲存Cloud Volumes ONTAP 作業系統資料（開機資料、根資料、核心資料和NVRAM）。為了規劃目的、在部署Cloud Volumes ONTAP 完更新之前、您可能需要先檢閱這些詳細資料。
 
 link:reference-default-configs.html#aws["在Cloud Volumes ONTAP AWS中檢視系統資料的預設磁碟"]。
 
@@ -218,13 +218,13 @@ TIP: 連接器也需要系統磁碟。 https://docs.netapp.com/us-en/cloud-manag
 
 == 選擇寫入速度
 
-Cloud Manager 可讓您選擇 Cloud Volumes ONTAP 適合的寫入速度設定。在您選擇寫入速度之前、您應該先瞭解一般與高設定之間的差異、以及使用高速寫入速度時的風險與建議。 link:concept-write-speed.html["深入瞭解寫入速度"]。
+BlueXP可讓您選擇Cloud Volumes ONTAP 適合的寫入速度設定。在您選擇寫入速度之前、您應該先瞭解一般與高設定之間的差異、以及使用高速寫入速度時的風險與建議。 link:concept-write-speed.html["深入瞭解寫入速度"]。
 
 
 
 == 選擇Volume使用設定檔
 
-包含多項儲存效率功能、可減少您所需的總儲存容量。 ONTAP在 Cloud Manager 中建立 Volume 時、您可以選擇啟用這些功能的設定檔、或是停用這些功能的設定檔。您應該深入瞭解這些功能、以協助您決定要使用的設定檔。
+包含多項儲存效率功能、可減少您所需的總儲存容量。 ONTAP在BlueXP中建立磁碟區時、您可以選擇啟用這些功能的設定檔或停用這些功能的設定檔。您應該深入瞭解這些功能、以協助您決定要使用的設定檔。
 
 NetApp 儲存效率功能提供下列效益：
 

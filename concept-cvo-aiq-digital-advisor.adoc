@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-cvo-aiq-digital-advisor.html 
 keywords: concepts, active iq digital advisor, cloud volumes ontap 
-summary: 將VMware Data Advisor整合至Cloud Manager UI中、讓您在單一窗口中、將整個VMware叢集的作業、安全性和效能最佳化。Active IQ ONTAP 
+summary: 支援整合到BlueXP UI中、讓您在單一窗口中、將整個叢集的作業、安全性和效能最佳化。Active IQ Digital Advisor ONTAP 
 ---
 = 使用Cloud Volumes ONTAP 「e數位顧問」最佳化您的不實系統Active IQ
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 將VMware Data Advisor整合至Cloud Manager UI中、讓您在單一窗
 
 
 [role="lead"]
-https://www.netapp.com/services/support/active-iq/["《數位顧問》 Active IQ"] 整合至Cloud Manager UI中、讓Cloud Volumes ONTAP 您在單一窗口中、將整個作業系統的作業、安全性和效能最佳化。
+https://www.netapp.com/services/support/active-iq/["《數位顧問》 Active IQ"] 整合至BlueXP（前身為Cloud Manager）UI、讓Cloud Volumes ONTAP 您在單一窗口中最佳化您的VMware系統的作業、安全性和效能。
 
 
 
@@ -38,21 +38,21 @@ https://www.netapp.com/services/support/active-iq/["《數位顧問》 Active IQ
 
 == 成本
 
-透過 Cloud Manager 使用這項服務不需付費。
+透過BlueXP使用此服務不需付費。
 
 
 
-== 如何與Cloud Manager搭配運作Active IQ
+== 如何搭配BlueXP運作Active IQ Digital Advisor
 
-這個功能完全整合在Cloud Manager中。Active IQ
+此功能已完全整合在BlueXP中。Active IQ Digital Advisor
 
-在Cloud Manager中、按一下* Active IQ 《*》服務。
+在BlueXP中、按一下* Active IQ 《*》服務。
 
-* 如果您已在Cloud Manager中註冊現有的NSS帳戶、Active IQ 就像您在的獨立實作中看到的一樣、畫面上會出現這個畫面 https://activeiq.netapp.com/[]。
+* 如果您已在BlueXP中註冊現有的NSS帳戶、Active IQ Digital Advisor 則會像您在的獨立實作中看到的一樣、顯示此UI https://activeiq.netapp.com/[]。
 +
-image:screenshot_aiq_digital_advisor.png["Cloud Manager中的《We Digital Advisor使用者介面》快照Active IQ 。"]
+image:screenshot_aiq_digital_advisor.png["BlueXP中的功能不一的使用者介面快照Active IQ Digital Advisor 。"]
 
-* 如果您尚未在Cloud Manager中註冊某個NSS帳戶、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["立即註冊一個nssnss"^] 接著出現「畫面」畫面、顯示「畫面」Active IQ 。
+* 如果您尚未在BlueXP中註冊某個nssa帳戶、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["立即註冊一個nssnss"^] ，之後隨即出現 Active IQ Digital Advisor UI。
 
 
 

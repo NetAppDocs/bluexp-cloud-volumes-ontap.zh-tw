@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-write-speed.html 
 keywords: write speed, high write speed, normal write speed, nvfail, writing speed, ldm, low durability mode 
-summary: Cloud Manager 可讓您選擇一般或高速寫入速度 Cloud Volumes ONTAP 來執行功能。在您選擇寫入速度之前、您應該先瞭解一般與高設定之間的差異、以及使用高速寫入速度時的風險與建議。 
+summary: BlueXP可讓您選擇Cloud Volumes ONTAP 一般或高速寫入速度來執行效能提升。在您選擇寫入速度之前、您應該先瞭解一般與高設定之間的差異、以及使用高速寫入速度時的風險與建議。 
 ---
 = 寫入速度
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Manager 可讓您選擇一般或高速寫入速度 Cloud Volumes 
 
 
 [role="lead"]
-Cloud Manager可讓您針對Cloud Volumes ONTAP 大多數的功能組態、選擇一般或高速寫入速度。在您選擇寫入速度之前、您應該先瞭解一般與高設定之間的差異、以及使用高速寫入速度時的風險與建議。
+BlueXP可讓您針對大多數Cloud Volumes ONTAP 的功能組態、選擇一般或高速寫入速度。在您選擇寫入速度之前、您應該先瞭解一般與高設定之間的差異、以及使用高速寫入速度時的風險與建議。
 
 
 

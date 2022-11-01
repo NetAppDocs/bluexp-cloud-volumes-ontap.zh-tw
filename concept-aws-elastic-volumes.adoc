@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-aws-elastic-volumes.html 
 keywords: elastic volumes, ev, ebs elastic volumes, ebs, amazon ebs, disk growth 
-summary: 支援Amazon EBS Elastic Volumes功能搭配Cloud Volumes ONTAP 使用支援的不只是一個可提供更好的效能和額外容量、同時Cloud Manager還能視需要自動增加基礎磁碟容量。 
+summary: 支援Amazon EBS Elastic Volumes功能搭配Cloud Volumes ONTAP 使用支援的不只能提供更好的效能和額外容量、還能讓BlueXP自動視需要增加基礎磁碟容量。 
 ---
 = AWS中的彈性Volume
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 支援Amazon EBS Elastic Volumes功能搭配Cloud Volumes ONTAP 使用�
 
 
 [role="lead"]
-支援Amazon EBS Elastic Volumes功能搭配Cloud Volumes ONTAP 使用支援的不只是一個可提供更好的效能和額外容量、同時Cloud Manager還能視需要自動增加基礎磁碟容量。
+支援Amazon EBS Elastic Volumes功能搭配Cloud Volumes ONTAP 使用支援的不只能提供更好的效能和額外容量、還能讓BlueXP自動視需要增加基礎磁碟容量。
 
 
 
@@ -22,7 +22,7 @@ summary: 支援Amazon EBS Elastic Volumes功能搭配Cloud Volumes ONTAP 使用�
 
 * 動態磁碟成長
 +
-Cloud Manager可在Cloud Volumes ONTAP 執行過程中動態增加磁碟大小、同時還能連接磁碟。
+在Cloud Volumes ONTAP 執行過程中、當執行了不同時磁碟仍連接時、BlueXP可以動態增加磁碟大小。
 
 * 更優異的效能
 +
@@ -79,13 +79,13 @@ Amazon EBS彈性磁碟區功能支援特定Cloud Volumes ONTAP 的版本、以�
 
 image:diagram-aws-elastic-volumes-one-raid-group.png["顯示集合體和RAID群組的概念映像、由四個大小相同的磁碟組成。"]
 
-Cloud Manager建立Aggregate時、會從一個RAID群組開始。如果需要額外的容量、Cloud Manager會將RAID群組中所有磁碟的容量增加相同的量、以擴充集合體。容量增加至少為256 GiB或集合體大小的10%。
+當BlueXP建立Aggregate時、它會從一個RAID群組開始。如果需要額外的容量、則BlueXP會將RAID群組中所有磁碟的容量增加相同數量、以擴充集合體。容量增加至少為256 GiB或集合體大小的10%。
 
 例如、如果您有1個TiB Aggregate、則每個磁碟為250 GiB。集合體容量的10%為100 GiB。這低於256 GiB、因此集合體的大小會增加至少256 GiB（每個磁碟64 GiB）。
 
-Cloud Manager可在Cloud Volumes ONTAP 執行不同步系統的情況下、在磁碟仍連接的情況下、增加磁碟的大小。變更不中斷營運。
+在Cloud Volumes ONTAP 執行更新時、由於磁碟仍在連接中、因此BlueXP可增加磁碟的大小。變更不中斷營運。
 
-如果某個Aggregate達到64 TiB（或每個磁碟上有16 TiB）、Cloud Manager會建立第二個RAID群組來增加容量。第二個RAID群組的運作方式與第一個相同：它有四個磁碟具有完全相同的容量、最多可擴充至64 TiB。這表示集合體的最大容量可達128 TiB。
+如果某個Aggregate達到64 TiB（或每個磁碟上有16 TiB）、則BlueXP會建立第二個RAID群組來增加容量。第二個RAID群組的運作方式與第一個相同：它有四個磁碟具有完全相同的容量、最多可擴充至64 TiB。這表示集合體的最大容量可達128 TiB。
 
 以下是兩個RAID群組的集合體範例。第一個RAID群組已達到容量上限、第二個RAID群組中的磁碟則有足夠的可用空間。
 
@@ -95,10 +95,10 @@ image:diagram-aws-elastic-volumes-two-raid-groups.png["概念性映像、顯示�
 
 === 建立Volume時會發生什麼事
 
-如果您建立的磁碟區使用GP3或IO1磁碟、Cloud Manager會在集合上建立磁碟區、如下所示：
+如果您建立的磁碟區使用GP3或IO1磁碟、則BlueXP會在集合上建立磁碟區、如下所示：
 
-* 如果現有GP3或IO1 Aggregate已啟用彈性磁碟區、Cloud Manager會在該Aggregate上建立磁碟區。
-* 如果有多個已啟用彈性磁碟區的GP3或IO1集合體、Cloud Manager會在需要最少資源量的集合體上建立磁碟區。
+* 如果現有GP3或IO1 Aggregate已啟用彈性磁碟區、則BlueXP會在該Aggregate上建立磁碟區。
+* 如果有多個已啟用彈性磁碟區的GP3或IO1集合體、則BlueXP會在需要最少資源量的集合體上建立磁碟區。
 * 如果系統只有GP3或IO1 Aggregate未啟用彈性磁碟區、則會在該Aggregate上建立磁碟區。
 +
 [NOTE]
@@ -110,7 +110,7 @@ image:diagram-aws-elastic-volumes-two-raid-groups.png["概念性映像、顯示�
 
 
 ====
-* 如果現有的Aggregate沒有足夠的容量、Cloud Manager會在啟用彈性磁碟區的情況下建立Aggregate、然後在新的Aggregate上建立磁碟區。
+* 如果現有的Aggregate沒有足夠的容量、則BlueXP會在啟用彈性磁碟區的情況下建立Aggregate、然後在新的Aggregate上建立該磁碟區。
 +
 Aggregate的大小取決於所要求的磁碟區大小加上額外10%的容量。
 
@@ -122,8 +122,8 @@ Aggregate的大小取決於所要求的磁碟區大小加上額外10%的容量�
 
 連接器的容量管理模式可與彈性磁碟區搭配運作、類似於它與其他類型的集合體搭配運作的方式：
 
-* 啟用自動模式（這是預設設定）時、Cloud Manager會在需要額外容量時自動增加集合體的大小。
-* 如果您將容量管理模式變更為手動、Cloud Manager會要求您核准購買額外容量。
+* 啟用自動模式（這是預設設定）時、如果需要額外的容量、BlueXP會自動增加集合體的大小。
+* 如果您將容量管理模式變更為手動、則BlueXP會要求您核准購買額外容量。
 
 
 link:concept-storage-management.html#capacity-management["深入瞭解容量管理模式"]。
@@ -132,13 +132,13 @@ link:concept-storage-management.html#capacity-management["深入瞭解容量管�
 
 == 限制
 
-增加Aggregate的大小最多需要6小時。在此期間、Cloud Manager無法為該Aggregate要求任何額外容量。
+增加Aggregate的大小最多需要6小時。在此期間、BlueXP無法要求該Aggregate的任何額外容量。
 
 
 
 == 如何使用彈性磁碟區
 
-您可以在Cloud Manager中使用Elastic Volumes、如下所示：
+您可以在BlueXP中使用彈性磁碟區、如下所示：
 
 * 使用GP3或IO1磁碟時、請建立在初始Aggregate上啟用「彈性磁碟區」的新系統
 +
@@ -146,7 +146,7 @@ link:task-deploying-otc-aws.html["瞭解如何建立Cloud Volumes ONTAP 一套�
 
 * 在已啟用「彈性磁碟區」的集合體上建立新的磁碟區
 +
-如果您建立的磁碟區使用GP3或IO1磁碟、Cloud Manager會自動在已啟用彈性磁碟區的集合體上建立磁碟區。如需詳細資料、請參閱  happens when you create a volume。
+如果您建立的磁碟區使用GP3或IO1磁碟、則BlueXP會自動在已啟用彈性磁碟區的集合體上建立磁碟區。如需詳細資料、請參閱  happens when you create a volume。
 
 +
 link:task-create-volumes.html["瞭解如何建立Volume"]。
@@ -156,7 +156,7 @@ link:task-create-volumes.html["瞭解如何建立Volume"]。
 只要Cloud Volumes ONTAP 使用GP3或IO1磁碟的新Aggregate系統是從9.11.0版或更新版本建立、就會在新的Aggregate上自動啟用「彈性Volume」。
 
 +
-建立Aggregate時、Cloud Manager會提示您輸入Aggregate的容量大小。這與您選擇磁碟大小和磁碟數目的其他組態不同。
+建立Aggregate時、BlueXP會提示您輸入Aggregate的容量大小。這與您選擇磁碟大小和磁碟數目的其他組態不同。
 
 +
 下列螢幕快照顯示由GP3磁碟組成的新Aggregate範例。
@@ -176,7 +176,7 @@ image:screenshot-elastic-volumes-enabled.png["顯示兩個集合體的快照、�
 
 * 新增容量至Aggregate
 +
-Cloud Manager會自動視需要新增容量以進行集合體、您也可以自行手動增加容量。
+雖然BlueXP會視需要自動新增容量來集合體、但您可以自行手動增加容量。
 
 +
 link:task-manage-aggregates.html["瞭解如何增加Aggregate容量"]。

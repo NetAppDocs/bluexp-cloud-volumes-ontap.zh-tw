@@ -67,7 +67,7 @@ image:screenshot_paygo_licenses.png["一張螢幕快照、顯示「數位錢包�
 . 按一下「 * 新增授權 * 」。
 
 
-Cloud Manager會將授權新增至Digital Wallet。授權將被識別為未指派、直到您將其與新Cloud Volumes ONTAP 的一套系統關聯為止。之後、授權會移至「數位錢包」中的「* BYOL*」索引標籤。
+BlueXP會將授權新增至Digital Wallet。授權將被識別為未指派、直到您將其與新Cloud Volumes ONTAP 的一套系統關聯為止。之後、授權會移至「數位錢包」中的「* BYOL*」索引標籤。
 
 
 
@@ -96,13 +96,13 @@ image:screenshot-exchange-license.png["顯示在「未指派的授權」頁面�
 . 閱讀法律同意書、然後按一下*同意*。
 
 
-Cloud Manager會將未指派的授權轉換成您所選的服務。您可以在「*資料服務授權*」標籤中檢視新授權。
+BlueXP會將未指派的授權轉換成您選取的服務。您可以在「*資料服務授權*」標籤中檢視新授權。
 
 
 
 === 取得系統授權檔案
 
-在大多數情況下、 Cloud Manager 會使用您的 NetApp 支援網站帳戶自動取得授權檔案。但如果無法、則需要手動上傳授權檔案。如果您沒有授權檔案、可以從 netapp.com 取得。
+在大多數情況下、BlueXP可以使用NetApp 支援網站 您的還原帳戶自動取得授權檔案。但如果無法、則需要手動上傳授權檔案。如果您沒有授權檔案、可以從 netapp.com 取得。
 
 .步驟
 . 前往 https://register.netapp.com/register/getlicensefile["NetApp 授權檔案產生器"^] 並使用您的 NetApp 支援網站認證登入。
@@ -120,9 +120,9 @@ image:screenshot_license_generator.gif["螢幕擷取畫面：顯示填寫的 Net
 
 === 更新系統授權
 
-當您透過聯絡 NetApp 代表續約 BYOL 訂閱時、 Cloud Manager 會自動從 NetApp 取得新授權、並將其安裝在 Cloud Volumes ONTAP 該系統上。
+當您透過聯絡NetApp代表續約BYOL訂閱時、BlueXP會自動從NetApp取得新授權、並將其安裝在Cloud Volumes ONTAP 該系統上。
 
-如果 Cloud Manager 無法透過安全的網際網路連線存取授權檔案、您可以自行取得檔案、然後手動將檔案上傳至 Cloud Manager 。
+如果BlueXP無法透過安全的網際網路連線存取授權檔案、您可以自行取得檔案、然後手動將檔案上傳至BluXP。
 
 .步驟
 . 從左側導覽功能表中、選取* Digital Wallet *。
@@ -133,7 +133,7 @@ image:screenshot_license_generator.gif["螢幕擷取畫面：顯示填寫的 Net
 . 按一下 * 更新授權 * 。
 
 
-Cloud Manager 會更新 Cloud Volumes ONTAP 整個作業系統的授權。
+BlueXP會更新Cloud Volumes ONTAP 整個作業系統的授權。
 
 
 
@@ -147,7 +147,7 @@ Cloud Manager 會更新 Cloud Volumes ONTAP 整個作業系統的授權。
 
 ==== 新增容量授權
 
-透過Cloud Manager右下角的聊天圖示聯絡我們、購買額外的容量授權。購買授權後、您可以將其套用Cloud Volumes ONTAP 至一套系統。
+透過BlueXP右下角的聊天圖示聯絡我們、購買額外的容量授權。購買授權後、您可以將其套用Cloud Volumes ONTAP 至一套系統。
 
 .步驟
 . 從左側導覽功能表中、選取* Digital Wallet *。
@@ -162,7 +162,7 @@ Cloud Manager 會更新 Cloud Volumes ONTAP 整個作業系統的授權。
 
 ==== 更新容量授權
 
-如果您延長額外容量授權的期限、則必須在Cloud Manager中更新授權。
+如果您延長額外容量授權的期限、則需要更新BlueXP中的授權。
 
 .步驟
 . 從左側導覽功能表中、選取* Digital Wallet *。
@@ -193,7 +193,7 @@ Cloud Manager 會更新 Cloud Volumes ONTAP 整個作業系統的授權。
 
 試用版授權可提供30天的使用時間。您可以在就地升級的評估授權上套用新的BYOL授權。
 
-當您將試用版授權轉換為BYOL時、Cloud Manager會重新啟動Cloud Volumes ONTAP 該系統。
+當您將試用版授權轉換為BYOL時、BlueXP會重新啟動Cloud Volumes ONTAP 該系統。
 
 * 對於單節點系統、重新啟動會在重新開機程序期間導致I/O中斷。
 * 對於HA配對、重新啟動會啟動接管和恢復、以繼續為用戶端提供I/O服務。
@@ -208,7 +208,7 @@ Cloud Manager 會更新 Cloud Volumes ONTAP 整個作業系統的授權。
 . 按一下*「轉換授權*」。
 
 
-Cloud Manager會開始轉換程序。此程序會自動重新啟動。Cloud Volumes ONTAP備份時、授權資訊會反映出新的授權。
+BlueXP開始轉換程序。此程序會自動重新啟動。Cloud Volumes ONTAP備份時、授權資訊會反映出新的授權。
 
 
 

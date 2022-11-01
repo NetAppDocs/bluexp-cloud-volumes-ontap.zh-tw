@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-deleting-working-env.html 
 keywords: terminate, delete, working environment, remove, terminate working environment, terminate instance, delete cloud volumes ontap, delete instance, delete working environment, delete backups 
-summary: 您應該一律從Cloud Volumes ONTAP Cloud Manager刪除不適用的系統、而不要從雲端供應商的主控台刪除。例如、如果您從Cloud Volumes ONTAP 雲端供應商處終止授權的樣例、則無法將授權金鑰用於其他執行個體。您必須從 Cloud Manager 刪除工作環境、才能釋出授權。 
+summary: 您應該一律從Cloud Volumes ONTAP BlueXP刪除不適用的系統、而不要從雲端供應商的主控台刪除。例如、如果您從Cloud Volumes ONTAP 雲端供應商處終止授權的樣例、則無法將授權金鑰用於其他執行個體。您必須從BlueXP刪除工作環境、才能釋出授權。 
 ---
 = 刪除Cloud Volumes ONTAP 一個系統
 :hardbreaks:
@@ -14,25 +14,23 @@ summary: 您應該一律從Cloud Volumes ONTAP Cloud Manager刪除不適用的�
 
 
 [role="lead"]
-您應該一律從Cloud Volumes ONTAP Cloud Manager刪除不適用的系統、而不要從雲端供應商的主控台刪除。例如、如果您從Cloud Volumes ONTAP 雲端供應商處終止授權的樣例、則無法將授權金鑰用於其他執行個體。您必須從 Cloud Manager 刪除工作環境、才能釋出授權。
+您應該一律從Cloud Volumes ONTAP BlueXP刪除不適用的系統、而不要從雲端供應商的主控台刪除。例如、如果您從Cloud Volumes ONTAP 雲端供應商處終止授權的樣例、則無法將授權金鑰用於其他執行個體。您必須從BlueXP刪除工作環境、才能釋出授權。
 
-刪除工作環境時、Cloud Manager會終止Cloud Volumes ONTAP 執行個體、並刪除磁碟和快照。
+當您刪除工作環境時、BlueXP會終止Cloud Volumes ONTAP 執行個體、並刪除磁碟和快照。
 
 刪除工作環境時、不會刪除由其他服務（例如雲端備份與雲端資料感測與監控執行個體）管理的資源。您必須自行手動刪除。如果您沒有、您將繼續收取這些資源的費用。
 
 
-NOTE: Cloud Manager在Cloud Volumes ONTAP 雲端供應商部署時、可在執行個體上提供終止保護。此選項有助於防止意外終止。
+NOTE: 當您Cloud Volumes ONTAP 的雲端供應商部署了支援功能時、就能在執行個體上提供終止保護。此選項有助於防止意外終止。
 
 .步驟
 . 如果您在工作環境中啟用Cloud Backup、請先判斷是否仍需要備份資料、然後再決定 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-ontap.html#deleting-backups["如有必要、請刪除備份"^]。
 +
 Cloud Backup Cloud Volumes ONTAP 的設計與不受依賴。當您刪除Cloud Volumes ONTAP 一個還原系統時、Cloud Backup不會自動刪除備份、而且UI目前不支援刪除系統後的備份。
 
-. 如果您在此工作環境中啟用「雲端資料感應」或「監控」功能、而其他工作環境並未使用這些服務、則您必須刪除這些服務的執行個體。
+. 如果您在此工作環境中啟用Cloud Data Sense、而沒有其他工作環境使用此服務、則必須刪除此服務的執行個體。
 +
-** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html#the-cloud-data-sense-instance["深入瞭解Cloud Data Sense執行個體"^]。
-** https://docs.netapp.com/us-en/cloud-manager-monitoring/concept-monitoring.html#the-acquisition-unit["深入瞭解監控擷取設備"^]。
-
+https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html#the-cloud-data-sense-instance["深入瞭解Cloud Data Sense執行個體"^]。
 
 . 刪除Cloud Volumes ONTAP 這個作業環境。
 +

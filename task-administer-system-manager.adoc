@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-administer-advanced-view.html 
 keywords: system manager, advanced view, access system manager, load system manager, use system manager 
-summary: 如果您需要執行Cloud Volumes ONTAP 進階的支援管理功能、可以使用ONTAP 支援ONTAP 此功能的支援功能、這個功能是隨附於一個系統的管理介面。我們直接在Cloud Manager中加入System Manager介面、因此您不需要離開Cloud Manager進行進階管理。 
+summary: 如果您需要執行Cloud Volumes ONTAP 進階的支援管理功能、可以使用ONTAP 支援ONTAP 此功能的支援功能、這個功能是隨附於一個系統的管理介面。我們已將System Manager介面直接納入BlueXP、因此您不需要離開BlueXP進行進階管理。 
 ---
 = 使用進階檢視來管理Cloud Volumes ONTAP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 如果您需要執行Cloud Volumes ONTAP 進階的支援管理功能、
 
 
 [role="lead"]
-如果您需要執行Cloud Volumes ONTAP 進階的支援管理功能、可以使用ONTAP 支援ONTAP 此功能的支援功能、這個功能是隨附於一個系統的管理介面。我們直接在Cloud Manager中加入System Manager介面、因此您不需要離開Cloud Manager進行進階管理。
+如果您需要執行Cloud Volumes ONTAP 進階的支援管理功能、可以使用ONTAP 支援ONTAP 此功能的支援功能、這個功能是隨附於一個系統的管理介面。我們已將System Manager介面直接納入BlueXP、因此您不需要離開BlueXP進行進階管理。
 
 此「進階檢視」可作為預覽使用。我們計畫改善這項體驗、並在即將推出的版本中加入增強功能。請使用產品內建聊天功能、向我們傳送意見反應。
 
@@ -22,7 +22,7 @@ summary: 如果您需要執行Cloud Volumes ONTAP 進階的支援管理功能、
 
 == 功能
 
-Cloud Manager的進階檢視可讓您存取其他管理功能：
+BlueXP的進階檢視可讓您存取其他管理功能：
 
 * 進階儲存管理
 +
@@ -62,11 +62,11 @@ Cloud Manager的進階檢視可讓您存取其他管理功能：
 
 * 雲端分層
 +
-不支援Cloud Volumes ONTAP 使用Cloud Tiering服務。建立磁碟區時、必須直接從Cloud Manager的標準檢視設定將資料分層至物件儲存設備。
+不支援Cloud Volumes ONTAP 使用Cloud Tiering服務。建立磁碟區時、必須直接從BlueXP的標準檢視畫面設定將資料分層至物件儲存設備。
 
 * 階層
 +
-System Manager不支援集合管理（包括本機層級和雲端層）。您必須直接從Cloud Manager的「標準檢視」管理集合體。
+System Manager不支援集合管理（包括本機層級和雲端層）。您必須直接從BlueXP的「標準檢視」管理集合體。
 
 * 韌體升級
 +
@@ -83,6 +83,7 @@ System Manager不支援集合管理（包括本機層級和雲端層）。您必
 開啟Cloud Volumes ONTAP 一個運作環境、然後按一下「進階檢視」選項。
 
 .步驟
+. 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . 在「畫版」頁面上、按兩下Cloud Volumes ONTAP 某個系統的名稱。
 . 在右上角、按一下*切換至進階檢視*。
 +
@@ -90,7 +91,7 @@ image:screenshot-cvo-advanced-view.png["顯示「切換至進階檢視」選項�
 
 . 如果出現確認訊息、請仔細閱讀、然後按一下*關閉*。
 . 使用System Manager來管理Cloud Volumes ONTAP 功能。
-. 如有需要、請按一下*切換至標準檢視*、透過Cloud Manager返回標準管理。
+. 如有需要、請按一下*切換至標準檢視*、透過BlueXP返回標準管理。
 +
 image:screenshot-cvo-standard-view.png["顯示「切換至標準檢視」選項的「不工作環境」快照Cloud Volumes ONTAP 。"]
 

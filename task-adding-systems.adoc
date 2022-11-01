@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-systems.html 
 keywords: discover, discovering, add, adding, existing 
-summary: 您可以探索並新增 Cloud Volumes ONTAP 現有的 NetApp 系統至 Cloud Manager 。如果您部署了新的 Cloud Manager 系統、您可以這麼做。 
+summary: 您可以探索並新增Cloud Volumes ONTAP 現有的元件系統至藍圖XP。如果您部署了新的BlueXP系統、您可能會這麼做。 
 ---
-= 將現有 Cloud Volumes ONTAP 的功能系統新增至 Cloud Manager
+= 將現有Cloud Volumes ONTAP 的不只是系統新增至藍圖XP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,12 @@ summary: 您可以探索並新增 Cloud Volumes ONTAP 現有的 NetApp 系統至
 
 
 [role="lead"]
-您可以探索並新增 Cloud Volumes ONTAP 現有的 NetApp 系統至 Cloud Manager 。如果您部署了新的 Cloud Manager 系統、您可以這麼做。
+您可以探索並新增Cloud Volumes ONTAP 現有的元件系統至藍圖XP。如果您部署了新的BlueXP系統、您可能會這麼做。
 
 您必須知道 Cloud Volumes ONTAP 該密碼才能使用此功能。
 
 .步驟
+. 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . 在「畫版」頁面上、按一下「 * 新增工作環境 * 」。
 . 選取系統所在的雲端供應商。
 . 選擇 Cloud Volumes ONTAP 哪種類型的系統。
@@ -35,4 +36,4 @@ endif::aws[]
 . 在「認證資料」頁面上、輸入 Cloud Volumes ONTAP for the fu位 管理員使用者的密碼、然後按一下「 * 執行 * 」。
 
 
-Cloud Manager 會將 Cloud Volumes ONTAP 這些不全的執行個體新增至工作區。
+BlueXP會將Cloud Volumes ONTAP 這個實例新增到工作區。

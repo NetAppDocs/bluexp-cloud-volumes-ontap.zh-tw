@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-setting-up-gcp-encryption.html 
 keywords: encryption, gcp, encryption key, permissions, customer-managed, gcpencryption 
-summary: 雖然 Google Cloud Storage 會在資料寫入磁碟之前先加密資料、但您可以使用 Cloud Manager API 來建立 Cloud Volumes ONTAP 使用客戶管理加密金鑰的功能完善的系統。這些是您使用 Cloud Key Management Service 在 GCP 中產生及管理的金鑰。 
+summary: 雖然Google Cloud Storage會在資料寫入磁碟之前先加密資料、但您可以使用BlueXP API來建立Cloud Volumes ONTAP 使用客戶管理加密金鑰的功能完善的系統。這些是您使用 Cloud Key Management Service 在 GCP 中產生及管理的金鑰。 
 ---
 = 搭配 Cloud Volumes ONTAP 使用客戶管理的加密金鑰
 :hardbreaks:
@@ -14,10 +14,10 @@ summary: 雖然 Google Cloud Storage 會在資料寫入磁碟之前先加密資�
 
 
 [role="lead"]
-雖然Google Cloud Storage會在資料寫入磁碟之前先加密資料、但您可以使用Cloud Manager API來建立Cloud Volumes ONTAP 使用_客戶管理的加密金鑰_的支援系統。這些是您使用 Cloud Key Management Service 在 GCP 中產生及管理的金鑰。
+雖然Google Cloud Storage會在資料寫入磁碟之前先加密資料、但您可以使用BlueXP API來建立Cloud Volumes ONTAP 使用_客戶管理的加密金鑰_的支援系統。這些是您使用 Cloud Key Management Service 在 GCP 中產生及管理的金鑰。
 
 .步驟
-. 確保Cloud Manager Connector服務帳戶在專案層級（儲存金鑰的專案）擁有正確的權限。
+. 確認BlueXP Connector服務帳戶在專案層級（儲存金鑰的專案）擁有正確的權限。
 +
 權限會在中提供 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["連接器服務帳戶權限依預設"^]、但如果您使用雲端金鑰管理服務的替代專案、則可能無法套用。
 
@@ -40,7 +40,7 @@ summary: 雖然 Google Cloud Storage 會在資料寫入磁碟之前先加密資�
 https://cloud.google.com/kms/docs/iam#granting_roles_on_a_resource["Google Cloud文件：使用IAM搭配Cloud KMS使用-授予資源角色"]
 
 . 若要取得金鑰的「ID」、請叫用「/GCP / VSA /中繼資料/ GCP加密金鑰」API呼叫的「Get」命令、或在GCP主控台的金鑰上選擇「Copy Resource Name」（複製資源名稱）。
-. 如果使用客戶管理的加密金鑰和分層資料來物件儲存設備、Cloud Manager會嘗試使用相同的金鑰來加密持續磁碟。但您必須先啟用Google Cloud Storage儲存桶、才能使用這些金鑰：
+. 如果使用客戶管理的加密金鑰和分層資料來物件儲存設備、則BlueXP會嘗試使用相同的金鑰來加密持續磁碟。但您必須先啟用Google Cloud Storage儲存桶、才能使用這些金鑰：
 +
 .. 請依照下列步驟尋找Google Cloud Storage服務代理程式 https://cloud.google.com/storage/docs/getting-service-agent["Google Cloud文件：取得Cloud Storage服務代理程式"^]。
 .. 瀏覽至加密金鑰、並指派具有Cloud KMS Encrypter/Decypter權限的Google Cloud Storage服務代理程式。
@@ -62,4 +62,4 @@ https://cloud.google.com/kms/docs/iam#granting_roles_on_a_resource["Google Cloud
 ----
 
 
-請參閱 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Cloud Manager自動化文件"^] 如需使用「 GcpEncryption 」參數的詳細資訊、
+請參閱 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["藍圖XP自動化文件"^] 如需使用「 GcpEncryption 」參數的詳細資訊、

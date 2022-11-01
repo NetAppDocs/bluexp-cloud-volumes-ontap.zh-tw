@@ -41,8 +41,8 @@ summary: 支援高可用度（ HA ）組態、可提供不中斷營運及容錯�
 NOTE: 對於版本更新的版本、在中介器上安裝了DEBIAN10。Cloud Volumes ONTAP
 
 --
-升級:: 升級Cloud Volumes ONTAP 時、Cloud Manager也會視需要更新中介執行個體。
-存取執行個體:: 當您Cloud Volumes ONTAP 從Cloud Manager建立一個「叢集HA配對」時、系統會提示您提供一個用於中介執行個體的金鑰配對。您可以使用「admin」使用者來使用該金鑰配對進行SSH存取。
+升級:: 升級Cloud Volumes ONTAP 時、BlueXP也會視需要更新中介執行個體。
+存取執行個體:: 當Cloud Volumes ONTAP 您從BlueXP建立一套功能不全的HA配對時、系統會提示您提供一個用於中介執行個體的金鑰配對。您可以使用該金鑰配對來進行SSH存取 `admin` 使用者：
 第三方代理程式:: 中介執行個體不支援協力廠商代理程式或VM延伸。
 
 
@@ -86,7 +86,7 @@ HA 組態可維持資料的高可用度、如下所示：
 
 如果您無法設定傳輸閘道、則 VPC 外部的 NAS 用戶端可使用私有 IP 位址。不過、這些 IP 位址是靜態的、無法在節點之間進行容錯移轉。
 
-在跨多個可用區域部署 HA 組態之前、您應該先檢閱浮動 IP 位址和路由表的需求。部署組態時、您必須指定浮動 IP 位址。私有 IP 位址是由 Cloud Manager 自動建立。
+在跨多個可用區域部署 HA 組態之前、您應該先檢閱浮動 IP 位址和路由表的需求。部署組態時、您必須指定浮動 IP 位址。私有IP位址是由BlueXP自動建立。
 
 如需詳細資訊、請參閱 link:reference-networking-aws.html#aws-networking-requirements-for-cloud-volumes-ontap-ha-in-multiple-azs["AWS 在 Cloud Volumes ONTAP 多個 AZs 中的功能需求"]。
 
@@ -117,7 +117,7 @@ image:diagram_takeover_giveback.png["概念性影像、顯示 Cloud Volumes ONTA
 
 故障節點恢復上線後、請使用原始 IP 位址將用戶端重新掛載至磁碟區。此步驟是為了避免在兩個 HA 節點之間傳輸不必要的資料、這可能會對效能和穩定性造成重大影響。
 
-您可以從 Cloud Manager 輕鬆識別正確的 IP 位址、方法是選取磁碟區、然後按一下 * Mount Command* 。
+選取磁碟區並按一下*掛載Command*、即可從BlueXP輕鬆識別正確的IP位址。
 
 
 
@@ -126,7 +126,7 @@ image:diagram_takeover_giveback.png["概念性影像、顯示 Cloud Volumes ONTA
 在單一可用度區域（ AZ ）中部署 HA 組態、可確保執行 Cloud Volumes ONTAP 此節點的執行個體故障時、資料的高可用度。所有資料均可從 VPC 外部原生存取。
 
 
-NOTE: Cloud Manager 會建立一個 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS 分散配置群組"^] 然後啟動該放置群組中的兩個 HA 節點。放置群組可將執行個體分散到不同的基礎硬體、藉此降低同時發生故障的風險。此功能可從運算角度而非磁碟故障角度改善備援。
+NOTE: BlueXP會建立一個 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS 分散配置群組"^] 然後啟動該放置群組中的兩個 HA 節點。放置群組可將執行個體分散到不同的基礎硬體、藉此降低同時發生故障的風險。此功能可從運算角度而非磁碟故障角度改善備援。
 
 
 
@@ -159,7 +159,7 @@ NOTE: 如需哪些特定主機組態支援 ALUA 的相關資訊、請參閱 http
 
 === 儲存配置
 
-當您建立新的磁碟區並需要額外的磁碟時、 Cloud Manager 會將相同數量的磁碟分配給兩個節點、建立鏡射的 Aggregate 、然後建立新的磁碟區。例如、如果磁碟區需要兩個磁碟、 Cloud Manager 會為每個節點分配兩個磁碟、總共四個磁碟。
+當您建立新的磁碟區並需要額外的磁碟時、BlueXP會將相同數量的磁碟分配給兩個節點、建立鏡射的Aggregate、然後建立新的磁碟區。例如、如果磁碟區需要兩個磁碟、則BlueXP會在每個節點上配置兩個磁碟、總共四個磁碟。
 
 
 
@@ -168,7 +168,7 @@ NOTE: 如需哪些特定主機組態支援 ALUA 的相關資訊、請參閱 http
 您可以使用 HA 配對做為主動 - 主動式組態、讓兩個節點都能將資料提供給用戶端、或做為主動 - 被動式組態、被動節點只有在接管主動節點的儲存設備時、才會回應資料要求。
 
 
-NOTE: 只有在儲存系統檢視中使用 Cloud Manager 時、才能設定雙主動式組態。
+NOTE: 只有在儲存系統檢視中使用BluXP時、才能設定雙主動式組態。
 
 
 
@@ -191,6 +191,6 @@ NOTE: 只有在儲存系統檢視中使用 Cloud Manager 時、才能設定雙�
 
 TIP: 如果您在 HA 配對中的節點之間移動磁碟區、則應使用其他節點的 IP 位址來重新掛載磁碟區。否則、您可能會遇到效能降低的情況。如果用戶端支援 NFSv4 轉介或 CIFS 資料夾重新導向、您可以在 Cloud Volumes ONTAP 支撐系統上啟用這些功能、以避免重新掛載磁碟區。如需詳細資料、請參閱 ONTAP 《關於我們的資料》。
 
-您可以從 Cloud Manager 輕鬆識別正確的 IP 位址：
+您可以從BlueXP輕鬆識別正確的IP位址：
 
 image:screenshot_mount.gif["螢幕擷取畫面：顯示選取 Volume 時可用的 Mount Command 。"]

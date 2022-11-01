@@ -632,4 +632,4 @@ network interface service-policy add-service -vserver <svm-name> -policy default
 
 --
 ====
-在HA配對上建立儲存VM之後、最好先等待12小時、再在該SVM上配置儲存設備。Cloud Manager從Cloud Volumes ONTAP 發行版的《截至目前為止》開始、會在12小時的時間間隔內掃描HA配對負載平衡器的設定。如果有新的SVM、Cloud Manager會啟用可縮短非計畫性容錯移轉的設定。
+在HA配對上建立儲存VM之後、最好先等待12小時、再在該SVM上配置儲存設備。從發行版的《21》開始、BlueXP會以12小時的時間間隔掃描HA配對負載平衡器的設定。Cloud Volumes ONTAP如果有新的SVM、則BlueXP會啟用可縮短非計畫性容錯移轉的設定。

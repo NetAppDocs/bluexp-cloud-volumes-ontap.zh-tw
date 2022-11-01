@@ -26,7 +26,7 @@ link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解不知如何取得�
 
 == 授權您的帳戶
 
-在Cloud Manager中使用及管理Keystone Flex訂閱之前、您必須先聯絡NetApp、以利用Keystone Flex訂閱來授權Cloud Manager使用者帳戶。
+在使用及管理BlueXP中的Keystone Flex訂閱之前、您必須先聯絡NetApp、以利用Keystone Flex訂閱來授權您的BlueXP使用者帳戶。
 
 .步驟
 . 從左側導覽功能表中、選取* Digital Wallet *。
@@ -58,13 +58,13 @@ image:screenshot-keystone-link.png["顯示訂閱連結選項的快照。"]
 
 
 
-訂閱內容現已連結至您的Cloud Manager帳戶、可在建立Cloud Volumes ONTAP 運作環境時選擇。
+訂閱內容現已連結至您的BlueXP帳戶、可在建立Cloud Volumes ONTAP 運作環境時選擇。
 
 
 
 == 申請更多或更少的已認可容量
 
-如果您需要調整訂閱的已提交容量、可以直接從Cloud Manager介面傳送要求。
+如果您需要調整訂閱的已提交容量、可以直接從BlueXP介面傳送要求。
 
 .步驟
 . 從左側導覽功能表中、選取* Digital Wallet *。
@@ -91,4 +91,4 @@ image:screenshot-keystone-request.png["螢幕快照顯示可要求變更訂閱�
 . 若要取消連結訂閱、請按一下 image:icon-action.png["這是三個並排點的圖示"] 然後選取*取消連結*。
 
 
-訂閱會從Cloud Manager帳戶中取消連結、因此在建立Cloud Volumes ONTAP 運作中的環境時、不再可供選擇。
+訂閱內容會從您的BlueXP帳戶中取消連結、因此在建立Cloud Volumes ONTAP 運作中的環境時無法再選取。
