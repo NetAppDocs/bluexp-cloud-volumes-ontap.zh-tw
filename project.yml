@@ -21,7 +21,7 @@ settings:
     - name: Microsoft Azure
       alias: Azure
       id: azure
-  langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr
+  langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr,fr-fr,de-de
 sidebar:
   entries:
   - title: 文件Cloud Volumes ONTAP
