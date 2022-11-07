@@ -510,12 +510,9 @@
   <block id="0ea67820edee1410e568b14bb70835d0" category="section-title">資料加密方式</block>
   <block id="145da5369fc47bfb6b1cd09c08d698b0" category="paragraph">建立Cloud Volumes ONTAP 一個設定為使用客戶管理金鑰的功能完善的支援環境之後Cloud Volumes ONTAP 、即可將下列資料加密。</block>
   <block id="b049fcbe8198301adc6bf87634a02845" category="list-text">HA 配對</block>
-  <block id="6a3d2b5873e00648ba601f7a2af1a7a4" category="list-text">所有的Azure儲存帳戶Cloud Volumes ONTAP 均使用客戶管理的金鑰進行加密。</block>
-  <block id="51037ebff676c4939694e74fa5a85b6e" category="list-text">任何新的儲存帳戶（例如新增磁碟或集合體時）也會使用相同的金鑰。</block>
   <block id="5aabc9069557be7e4aeff466605cbc75" category="list-text">單一節點</block>
   <block id="2301d2b9fcb3fe6f26482aff37ea2c54" category="inline-link">磁碟加密集</block>
   <block id="5dab396463f2f277886102bf78fe661b" category="list-text">任何新的資料磁碟也會使用相同的磁碟加密集。</block>
-  <block id="cfdbba0560e1880e7195e870b6813736" category="list-text">NVRAM和核心磁碟是使用Microsoft管理的金鑰來加密、而非使用客戶管理的金鑰。</block>
   <block id="8764c9ec9f17252b7df37e1710ec9e5a" category="section-title">建立金鑰保存庫並產生金鑰</block>
   <block id="d01b7a4314685f64d972ad7a1fad92aa" category="paragraph">金鑰庫必須位於您計畫建立Cloud Volumes ONTAP 此系統的同一個Azure訂閱和地區。</block>
   <block id="0355ddb77a5b72eb0604153dc1393f12" category="inline-link">在您的Azure訂閱中建立金鑰庫</block>
@@ -525,7 +522,6 @@
   <block id="1be48617ce5825c4bd54ef885eef8a65" category="list-text">應啟用下列選項：</block>
   <block id="ba6db2df53167b0fe62e3b5c762cbbf1" category="list-text">*軟刪除*（此選項預設為啟用、但不可停用）</block>
   <block id="fd08f80d1ec5aa4440248321eace716f" category="list-text">*清除保護*</block>
-  <block id="75914e843b290769c8b2944ccc107c89" category="list-text">* Azure磁碟加密、適用於Volume加密*（Cloud Volumes ONTAP 僅適用於單一節點的整套系統）</block>
   <block id="8079302cfd5fd5ac16a06e331392b172" category="inline-link">在金鑰保存庫中產生金鑰</block>
   <block id="08226457c01755d5b1d666bac6bf1add" category="list-text"><block ref="f3e81382631201ff959343d3ba9dea1c" category="inline-link-rx"></block>。</block>
   <block id="4bad1b88b2d24ff3ad1376a54e1bddbd" category="paragraph">請注意金鑰的下列需求：</block>
@@ -4431,4 +4427,37 @@
   <block id="edeea5f1bc7f7fc7a2966961ec39210e" category="sidebar">在BlueXP中使用儲存VM</block>
   <block id="ff93781ff90bf605d8b3070c1501b28f" category="sidebar">BlueXP網站部落格</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文件</block>
+  <block id="1223a21ec0a7e82e77ac43bd74628f1e" category="list-text">Azure HA單一可用度區域</block>
+  <block id="dcd61ff34229ba534213e8501446885a" category="list-text">所有的Azure儲存帳戶Cloud Volumes ONTAP 均使用客戶管理的金鑰進行加密</block>
+  <block id="08408518b6366a9a8bb69802d83d5e3c" category="list-text">任何新的儲存帳戶（例如新增磁碟或集合體時）也會使用相同的金鑰</block>
+  <block id="efbd2c7930ae2087a4719eb7c262b95d" category="list-text">從適用於NVRAM和核心磁碟的《軟件更新說明（僅供參考）ONTAP<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>，可透過託管磁碟管理加密金鑰。較低版本將使用Microsoft管理的金鑰、而非客戶管理的金鑰。</block>
+  <block id="9dca67fbd1fac23e7aff5774ec0afa2a" category="list-text">所有的Azure儲存帳戶Cloud Volumes ONTAP 均使用客戶管理的金鑰進行加密。^1^</block>
+  <block id="6d69087e8037af0164a0779028792a7b" category="list-text">從適用於NVRAM和核心磁碟的《支援支援支援》（VMware®）9.9.9.1 P7開始ONTAP 、BlueXP使用磁碟加密集來管理受管理磁碟的加密金鑰。較低版本將使用Microsoft管理的金鑰、而非客戶管理的金鑰。</block>
+  <block id="8b213ded385c637758f8c3705eb6386a" category="list-title">註腳</block>
+  <block id="ab9a6656c154c96464d829868998ba40" category="list-text">如果您想在建立儲存帳戶時加密、必須在Cloud Volumes ONTAP 建立資源時建立並提供資源ID。這適用於所有類型的部署。如果您未提供此功能、儲存帳戶仍會加密、但BlueXP會先使用Microsoft管理的金鑰加密來建立儲存帳戶、然後再更新儲存帳戶以使用客戶管理的金鑰。</block>
+  <block id="d07f270590b573e1e499b9c9aed87fb4" category="list-text">* Azure磁碟加密、適用於磁碟區加密*</block>
+  <block id="619dc876da25600cdf36ffbec25d908e" category="summary">支援Azure資源群組移動、但工作流程僅發生在Azure主控台。Cloud Volumes ONTAP</block>
+  <block id="6c2dc09b272a4aed6d56a3438a190129" category="doc">正在移動資源群組</block>
+  <block id="26d9e2ceeedec062543b6a4a27db01a1" category="paragraph">您可以在同一Azure訂閱中、將工作環境從一個資源群組移至Azure中的其他資源群組。不支援在不同Azure訂閱之間移動資源群組。</block>
+  <block id="d88235dd3e716412ac91be3dfa4023a4" category="list-text">從* Canvas*移除工作環境。</block>
+  <block id="02c73c19fdf0f5023f8a72d040197018" category="paragraph">若要瞭解如何移除工作環境、請參閱 <block ref="9dd47557c6bc134ec03be5246bea41e0" category="inline-link-macro-rx"></block>。</block>
+  <block id="2432571dc15a8d67f6eec5f65d85e73f" category="list-text">在Azure主控台執行資源群組搬移。</block>
+  <block id="4593d9667ed2d90debaf928ba5605850" category="inline-link-macro">將資源移至新的資源群組或訂閱Microsoft Azure文件中</block>
+  <block id="341c978d4ed833ff82feb36aba36ade0" category="paragraph">若要完成移動、請參閱 <block ref="252fa4d56b2364e5af99ca61bfb066f4" category="inline-link-macro-rx"></block>。</block>
+  <block id="f2fe5653f91dfb127425583565d157db" category="list-text">在* Canvas*中、探索工作環境。</block>
+  <block id="628dfcbee044de30f5862101a64854ef" category="list-text">在工作環境的資訊中尋找新的資源群組。</block>
+  <block id="268c52a1e1197b595712cb880346cba4" category="paragraph">工作環境及其資源（VM、磁碟、儲存帳戶、網路介面、快照）位於新的資源群組中。</block>
+  <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022年11月6日</block>
+  <block id="2325f561a20765def93d682f14cae306" category="paragraph">下列變更是在版本3.9.23的Connector中提出。</block>
+  <block id="6d5ba1b41fa03c2fdf0d747769a6b053" category="section-title">在Azure中移動資源群組</block>
+  <block id="ea55da5ec5028d99103c938ded49761c" category="paragraph">您現在可以將工作環境從同一個資源群組移至Azure中不同的資源群組、並在同一個Azure訂閱中使用。</block>
+  <block id="d015054d89d4ecbe893f21f5ab9700c0" category="paragraph">如需詳細資訊、請參閱 <block ref="8d94a006f1853b408e5763a514426526" category="inline-link-macro-rx"></block>。</block>
+  <block id="b6a2ac7b66db8e93b936023f17401626" category="section-title">NDMP複製認證</block>
+  <block id="c348c640ca478b45f3a3d9e14bb0695b" category="paragraph">NDMP複本現已通過認證、可搭配Cloud Volume ONTAP 使用。</block>
+  <block id="ab5a83d8e39547c5fb30a1fda984aebb" category="inline-link">NDMP組態總覽</block>
+  <block id="e4b4f60ab9fe08116659a5e12d6db4a8" category="paragraph">如需有關如何設定及使用NDMP的資訊、請參閱<block ref="9c57f7cf04e123991a3c88e286feb189" category="inline-link-rx"></block>。</block>
+  <block id="5e7de773a189ac8974753f9ce70a3dc5" category="section-title">Azure的託管磁碟加密支援</block>
+  <block id="a09181ba1488df77bf9950cb483e97e8" category="paragraph">新增Azure權限、讓您在建立時加密所有託管磁碟。</block>
+  <block id="7343d251ecc72fc362a0ce85cf11a9fe" category="paragraph">如需此新功能的詳細資訊、請參閱<block ref="91da0725d8642ccf887bde4d4604033e" category="inline-link-rx"></block>。</block>
+  <block id="a81c707e35ab82b2b21b18864fb458e9" category="sidebar">移動資源群組</block>
 </blocks>

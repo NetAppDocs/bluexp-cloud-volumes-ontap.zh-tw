@@ -196,6 +196,8 @@ sidebar:
           url: "/task-overriding-cifs-locks.html"
         - title: 使用Azure私有連結或服務端點
           url: "/task-enabling-private-link.html"
+        - title: 移動資源群組
+          url: "/task-moving-resource-groups-azure.html"
       - title: Google Cloud管理
         flavor: gcp
         entries:

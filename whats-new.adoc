@@ -20,6 +20,36 @@ summary: 瞭解Cloud Volumes ONTAP BlueXP（前身為Cloud Manager）的更新�
 
 
 
+== 2022年11月6日
+
+下列變更是在版本3.9.23的Connector中提出。
+
+
+
+=== 在Azure中移動資源群組
+
+您現在可以將工作環境從同一個資源群組移至Azure中不同的資源群組、並在同一個Azure訂閱中使用。
+
+如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-moving-resource-groups-azure.html["正在移動資源群組"]。
+
+
+
+=== NDMP複製認證
+
+NDMP複本現已通過認證、可搭配Cloud Volume ONTAP 使用。
+
+如需有關如何設定及使用NDMP的資訊、請參閱 https://docs.netapp.com/us-en/ontap/ndmp/index.html["NDMP組態總覽"]。
+
+
+
+=== Azure的託管磁碟加密支援
+
+新增Azure權限、讓您在建立時加密所有託管磁碟。
+
+如需此新功能的詳細資訊、請參閱 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-azure-encryption.html["設定Cloud Volumes ONTAP 支援使用Azure中客戶管理的金鑰"]。
+
+
+
 == 2022年9月18日
 
 以下是3.9.22版Connector的變更。
