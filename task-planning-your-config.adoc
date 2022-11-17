@@ -111,9 +111,6 @@ EBS 磁碟大小:: 如果您選擇不支援的組態 link:concept-aws-elastic-vo
 --
 
 
-請觀看下列影片、以瞭解如何在 Cloud Volumes ONTAP AWS 中調整您的更新功能：
-
-video::GELcXmOuYPw[youtube,width=848,height=480]
 
 
 == 檢視預設系統磁碟
