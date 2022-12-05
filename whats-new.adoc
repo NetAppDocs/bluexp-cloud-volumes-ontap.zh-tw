@@ -20,6 +20,24 @@ summary: 瞭解Cloud Volumes ONTAP BlueXP（前身為Cloud Manager）的更新�
 
 
 
+== 2022年12月4日
+
+以下是3.9.24版本的Connector所做的變更。
+
+
+
+=== WORM +雲端備份現在可在Cloud Volumes ONTAP 建立過程中使用
+
+現在、在建立流程的過程中、可以同時啟動一次寫入、多次讀取（WORM）和雲端備份功能Cloud Volumes ONTAP 。
+
+
+
+=== 以色列地區現已在Google Cloud中獲得支援
+
+現在、Israel區域已在Google Cloud for Israel和Cloud Volumes ONTAP Connector for Cloud Volumes ONTAP the E29.11.1 P3及更新版本中受到支援。
+
+
+
 == 2022年11月6日
 
 下列變更是在版本3.9.23的Connector中提出。
