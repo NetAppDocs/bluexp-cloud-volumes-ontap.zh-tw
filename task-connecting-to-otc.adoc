@@ -16,6 +16,7 @@ summary: 利用此功能、您可以執行所有的管理命令、這是進階�
 [role="lead"]
 利用此功能、您可以執行所有的管理命令、這是進階工作或使用CLI時的最佳選擇。Cloud Volumes ONTAP您可以使用 Secure Shell （ SSH ）連線至 CLI 。
 
+.開始之前
 您使用 SSH 連線 Cloud Volumes ONTAP 到 Suse 的主機必須有連至 Cloud Volumes ONTAP Suse 的網路連線。例如、您可能需要從雲端供應商網路中的跨接主機執行SSH。
 
 ifdef::aws[]

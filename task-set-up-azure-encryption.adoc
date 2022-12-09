@@ -49,13 +49,13 @@ Azure HA單一可用度區域::
 
 
 --
-單一節點::
+多個區域中的單一節點或HA配對::
 +
 --
 * 所有的Azure儲存帳戶Cloud Volumes ONTAP 均使用客戶管理的金鑰進行加密。^1^
 * 對於root、開機和資料磁碟、BlueXP會使用a https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["磁碟加密集"^]，可透過託管磁碟管理加密金鑰。
 * 任何新的資料磁碟也會使用相同的磁碟加密集。
-* 從適用於NVRAM和核心磁碟的《支援支援支援》（VMware®）9.9.9.1 P7開始ONTAP 、BlueXP使用磁碟加密集來管理受管理磁碟的加密金鑰。較低版本將使用Microsoft管理的金鑰、而非客戶管理的金鑰。
+* 從適用於NVRAM和核心磁碟的《支援支援支援》9.9、1頁7開始ONTAP 、BlueXP使用磁碟加密集來管理受管理磁碟的加密金鑰。較低版本將使用Microsoft管理的金鑰、而非客戶管理的金鑰。
 
 
 --
@@ -82,7 +82,7 @@ Azure HA單一可用度區域::
 +
 *** *軟刪除*（此選項預設為啟用、但不可停用）
 *** *清除保護*
-*** * Azure磁碟加密、適用於磁碟區加密*
+*** *適用於Volume加密的Azure磁碟加密*（適用於多個區域中的單一節點系統或HA配對）
 
 
 
@@ -104,6 +104,7 @@ Azure HA單一可用度區域::
 
 建立金鑰庫並產生加密金鑰之後、您可以建立Cloud Volumes ONTAP 新的、設定為使用金鑰的整套系統。使用BlueXP API可支援這些步驟。
 
+.必要權限
 如果您想將客戶管理的金鑰與單一節點Cloud Volumes ONTAP 的一套系統整合、請確認BlueXP Connector具有下列權限：
 
 [source, json]
@@ -119,7 +120,7 @@ Azure HA單一可用度區域::
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["檢視最新的權限清單"^]
 
 
-NOTE: HA配對不需要前三個權限。
+NOTE: 單一區域中的HA配對不需要權限。
 
 .步驟
 . 請使用下列BlueXP API呼叫、取得Azure訂閱中的金鑰保存清單。
@@ -192,4 +193,5 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 
 
 
+.結果
 您有一個Cloud Volumes ONTAP 全新的支援系統、可設定使用客戶管理的金鑰進行資料加密。

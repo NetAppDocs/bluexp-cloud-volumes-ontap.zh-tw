@@ -49,6 +49,7 @@ link:task-set-up-licensing-aws.html["瞭解如何設定授權"]。
 
 如果您想Cloud Volumes ONTAP 要在AWS中啟動功能、您需要在BlueXP中建立新的工作環境
 
+.關於這項工作
 在您建立工作環境之後、BlueXP會立即在指定的VPC中啟動測試執行個體、以驗證連線能力。如果成功、BlueXP會立即終止執行個體、然後開始部署Cloud Volumes ONTAP 該系統。如果BlueXP無法驗證連線能力、則無法建立工作環境。測試執行個體為 T2.奈 米（預設 VPC 租賃）或 m3.medium （專屬 VPC 租賃）。
 
 .步驟
@@ -255,6 +256,7 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 
 
 
+.結果
 BlueXP會啟動Cloud Volumes ONTAP 這個執行個體。您可以追蹤時間表的進度。
 
 如果您在啟動 Cloud Volumes ONTAP 該實例時遇到任何問題、請檢閱故障訊息。您也可以選取工作環境、然後按一下重新建立環境。
@@ -275,14 +277,16 @@ BlueXP會啟動Cloud Volumes ONTAP 這個執行個體。您可以追蹤時間表
 
 如果您想要在Cloud Volumes ONTAP AWS中啟動一個「叢集HA配對」、您需要在BlueXP中建立HA工作環境。
 
+.限制
 目前 AWS out貼 文不支援 HA 配對。
 
+.關於這項工作
 在您建立工作環境之後、BlueXP會立即在指定的VPC中啟動測試執行個體、以驗證連線能力。如果成功、BlueXP會立即終止執行個體、然後開始部署Cloud Volumes ONTAP 該系統。如果BlueXP無法驗證連線能力、則無法建立工作環境。測試執行個體為 T2.奈 米（預設 VPC 租賃）或 m3.medium （專屬 VPC 租賃）。
 
 .步驟
 . 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . 在「畫版」頁面上、按一下「 * 新增工作環境 * 」、然後依照提示進行。
-. * 選擇位置 * ：選擇 * Amazon Web Services* 和 * Cloud Volumes ONTAP 《單一節點 * 》。
+. *選擇位置*：選擇* Amazon Web Services*和* Cloud Volumes ONTAP 《*》HA *。
 . * 詳細資料與認證 * ：選擇性地變更 AWS 認證資料與訂閱、輸入工作環境名稱、視需要新增標記、然後輸入密碼。
 +
 本頁中的部分欄位是不知自明的。下表說明您可能需要指導的欄位：
@@ -492,6 +496,7 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 
 
 
+.結果
 BlueXP會啟動Cloud Volumes ONTAP 「更新HA配對」。您可以追蹤時間表的進度。
 
 如果您在啟動 HA 配對時遇到任何問題、請檢閱故障訊息。您也可以選取工作環境、然後按一下重新建立環境。

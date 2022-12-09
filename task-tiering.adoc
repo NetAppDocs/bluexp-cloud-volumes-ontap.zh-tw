@@ -18,37 +18,42 @@ summary: 您可以將熱資料的 SSD 或 HDD 效能層與非作用中資料的�
 
 若要設定資料分層、您需要執行下列動作：
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 選擇支援的組態
 [role="quick-margin-para"]
 支援大部分的組態。如果Cloud Volumes ONTAP 您的系統執行的是最新版本、那麼您應該會很滿意。 link:task-tiering.html#configurations-that-support-data-tiering["深入瞭解"]。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 確保 Cloud Volumes ONTAP 在物件儲存設備與物件儲存設備之間建立連線
 [role="quick-margin-list"]
 ifdef::aws[]
 
-* 對於 AWS 、您需要 VPC 端點對 S3 。  to tier cold data to AWS S3,深入瞭解。
+* 對於 AWS 、您需要 VPC 端點對 S3 。 <<將冷資料分層至 AWS S3 的需求,深入瞭解>>。
 
 
 endif::aws[]
 
 ifdef::azure[]
 
-* 對於Azure而言、只要BlueXP具備必要的權限、您就不需要執行任何操作。  to tier cold data to Azure Blob storage,深入瞭解。
+* 對於Azure而言、只要BlueXP具備必要的權限、您就不需要執行任何操作。 <<將冷資料分層至 Azure Blob 儲存設備的需求,深入瞭解>>。
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-* 若為Google Cloud、您需要設定私有Google Access的子網路、並設定服務帳戶。  to tier cold data to a Google Cloud Storage bucket,深入瞭解。
+* 若為Google Cloud、您需要設定私有Google Access的子網路、並設定服務帳戶。 <<將冷資料分層至 Google Cloud Storage 儲存庫的需求,深入瞭解>>。
 
 
 endif::gcp[]
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 請確定您已啟用分層功能、並有一個 Aggregate
 [role="quick-margin-para"]
-必須在集合體上啟用資料分層、才能在磁碟區上啟用資料分層。您應該瞭解新磁碟區和現有磁碟區的需求。  that tiering is enabled on aggregates,深入瞭解。
+必須在集合體上啟用資料分層、才能在磁碟區上啟用資料分層。您應該瞭解新磁碟區和現有磁碟區的需求。 <<確保在 Aggregate 上啟用分層,深入瞭解>>。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 建立、修改或複寫磁碟區時、請選擇分層原則
 [role="quick-margin-para"]
 在建立、修改或複寫磁碟區時、BlueXP會提示您選擇分層原則。
 
+[role="quick-margin-list"]
 * link:task-tiering.html#tiering-data-from-read-write-volumes["在讀寫磁碟區上分層資料"]
 * link:task-tiering.html#tiering-data-from-data-protection-volumes["在資料保護磁碟區上分層資料"]
 
@@ -60,7 +65,7 @@ endif::gcp[]
 * 您不需要為容量層建立物件存放區。BlueXP能為您實現這項目標。
 * 您不需要在系統層級啟用資料分層。
 +
-在系統建立時、BlueXP會為Cold資料建立物件存放區、  data tiering after implementing the requirements,只要沒有連線或權限問題。之後、您只需要在磁碟區上啟用資料分層功能（在某些情況下、  that tiering is enabled on aggregates,在 Aggregate 上）。
+在系統建立時、BlueXP會為Cold資料建立物件存放區、 <<在實作需求之後啟用資料分層,只要沒有連線或權限問題>>。之後、您只需要在磁碟區上啟用資料分層功能（在某些情況下、 <<確保在 Aggregate 上啟用分層,在 Aggregate 上>>）。
 
 
 
@@ -193,7 +198,7 @@ endif::gcp[]
 只要沒有連線或權限問題、在建立系統時、BlueXP就會建立Cold資料的物件存放區。如果您在建立系統之前未實作上述要求、則必須手動啟用分層、以建立物件存放區。
 
 .步驟
-. ,確保您已符合所有要求。
+. <<需求,確保您已符合所有要求>>。
 . 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . 在「畫版」頁面上、按兩下 Cloud Volumes ONTAP 「實例」的名稱。
 . 按一下功能表圖示、然後選取 * 啟用容量分層 * 。
@@ -204,7 +209,7 @@ image:screenshot_enable_capacity_tiering.gif["當BlueXP嘗試啟用資料分層�
 只有在BlueXP建立系統時無法啟用資料分層功能時、才會看到此選項。
 
 +
-在Google Cloud中、必須先將服務帳戶附加至Cloud Volumes ONTAP 無法顯示此選項的功能。 ,確保您已符合所有要求。
+在Google Cloud中、必須先將服務帳戶附加至Cloud Volumes ONTAP 無法顯示此選項的功能。 <<需求,確保您已符合所有要求>>。
 
 . 按一下「*啟用*」、即可讓BlueXP建立物件存放區、供此Cloud Volumes ONTAP 支援系統用於階層式資料。
 
@@ -240,6 +245,7 @@ image:screenshot_aggr_tiering.gif["快照顯示有關BlueXP中包含分層狀態
 . 選取要附加的雲端層、然後按一下「 * 儲存 * 」。
 
 
+.接下來呢？
 您現在可以在新的和現有的磁碟區上啟用資料分層、如下一節所述。
 
 

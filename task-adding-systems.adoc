@@ -16,6 +16,7 @@ summary: 您可以探索並新增Cloud Volumes ONTAP 現有的元件系統至藍
 [role="lead"]
 您可以探索並新增Cloud Volumes ONTAP 現有的元件系統至藍圖XP。如果您部署了新的BlueXP系統、您可能會這麼做。
 
+.開始之前
 您必須知道 Cloud Volumes ONTAP 該密碼才能使用此功能。
 
 .步驟
@@ -36,4 +37,5 @@ endif::aws[]
 . 在「認證資料」頁面上、輸入 Cloud Volumes ONTAP for the fu位 管理員使用者的密碼、然後按一下「 * 執行 * 」。
 
 
+.結果
 BlueXP會將Cloud Volumes ONTAP 這個實例新增到工作區。

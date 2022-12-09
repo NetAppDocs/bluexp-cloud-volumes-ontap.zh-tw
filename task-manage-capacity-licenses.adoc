@@ -30,7 +30,7 @@ link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解不知如何取得�
 
 在此期間、BlueXP會自動查詢NetApp的授權服務、以取得NetApp 支援網站 與您的帳戶相關之授權的詳細資料。如果沒有錯誤、BlueXP會自動將授權新增至Digital Wallet。
 
-如果BlueXP無法新增授權、您必須自行手動將其新增至Digital Wallet。例如、如果Connector安裝在無法存取網際網路的位置、您就必須自行新增授權。  purchased licenses to your account,瞭解如何將購買的授權新增至您的帳戶。
+如果BlueXP無法新增授權、您必須自行手動將其新增至Digital Wallet。例如、如果Connector安裝在無法存取網際網路的位置、您就必須自行新增授權。 <<將購買的授權新增至您的帳戶,瞭解如何將購買的授權新增至您的帳戶>>。
 
 
 
@@ -77,7 +77,7 @@ image:screenshot-digital-wallet-packages.png["螢幕快照顯示專業、最佳�
 
 如果您在Digital Wallet中沒有看到您購買的授權、您必須將授權新增至BlueXP、才能讓容量Cloud Volumes ONTAP 可供使用。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您需要提供BlueXP授權或授權檔案的序號。
 * 如果您要輸入序號、請先輸入 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["將NetApp 支援網站 您的不更新帳戶新增至藍圖XP"^]。這是獲授權可以存取序號的 NetApp 支援網站帳戶。
 
@@ -100,6 +100,7 @@ image:screenshot-digital-wallet-packages.png["螢幕快照顯示專業、最佳�
 
 不過、如果您在無法存取網際網路的位置部署了BlueXP、則需要手動更新BlueXP中的授權。
 
+.您需要的產品
 授權檔案（如果您有HA配對、則為_file_）。
 
 .步驟
@@ -117,10 +118,12 @@ image:screenshot-digital-wallet-packages.png["螢幕快照顯示專業、最佳�
 
 ifdef::azure[]
 
+.限制
 不支援變更Edge Cache授權。
 
 endif::azure[]
 
+.重要注意事項
 如果您有來自雲端供應商市場的私人優惠或合約、改用未包含在合約中的收費方法、將會導致依BYOL（如果您向NetApp購買授權）或PAYGO收取費用。
 
 .步驟
@@ -136,6 +139,7 @@ image:screenshot-digital-wallet-charging-method.png["「變更充電方法」對
 . 按一下*變更收費方法*。
 
 
+.結果
 BlueXP改變Cloud Volumes ONTAP 了這個系統的充電方法。
 
 您可能也會注意到、Digital Wallet會重新整理每種套件類型的耗用容量、以因應您剛做的變更。

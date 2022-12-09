@@ -20,7 +20,11 @@ summary: 在雲端環境發生故障時、提供企業級的可靠性和持續�
 
 == HA 元件
 
-Azure 中的功能介紹 HA 組態包括下列元件： Cloud Volumes ONTAP
+
+
+=== HA頁面blob組態
+
+Azure中的一套「功能」頁面Blob組態包括下列元件Cloud Volumes ONTAP ：
 
 image:diagram_ha_azure.png["概念性映像顯示負載平衡器、可管理來自BlueXP和用戶端的傳入流量、Cloud Volumes ONTAP 可用度集內的兩個支援節點、開機資料的SSD磁碟、以及客戶資料的Page Blobs。"]
 
@@ -39,6 +43,29 @@ https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-target
 
 * 資料分層至 Azure Blob 儲存設備需要一個儲存帳戶。
 * 從NetApp 9.7開始Cloud Volumes ONTAP 、BlueXP為HA配對建立的儲存帳戶是通用的v2儲存帳戶。
+* 您可以在 Cloud Volumes ONTAP 建立工作環境時、從一個可疑的 9.7 HA 配對啟用 HTTPS 連線至 Azure 儲存帳戶。請注意、啟用此選項可能會影響寫入效能。您無法在建立工作環境之後變更設定。
+
+
+--
+
+
+
+
+=== HA多重可用度區域組態
+
+Azure中的一個支援多種可用度的區域組態包括下列元件Cloud Volumes ONTAP ：
+
+image:diagram_ha_azure_maz.png["概念性映像顯示負載平衡器、可管理來自BlueXP和用戶端的傳入流量、Cloud Volumes ONTAP 兩個可用區域中的兩個支援節點、開機資料的SSD磁碟、以及客戶資料的託管磁碟。"]
+
+請注意以下關於BlueXP部署給您的Azure元件：
+
+Azure 標準負載平衡器:: 負載平衡器負責管理 Cloud Volumes ONTAP 傳入流量至 the ireHA 配對。
+可用度區域:: 將兩Cloud Volumes ONTAP 個靜態節點部署至不同的可用度區域。可用度區域可確保節點位於不同的故障網域中。 https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy["如需Azure儲存設備備援的詳細資訊、請參閱Azure文件"^]。
+磁碟:: 客戶資料位於區域備援儲存設備（ZRS）託管磁碟上。每個節點均可存取其他節點的儲存設備。也需要額外的儲存空間 link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["開機、root、合作夥伴root及核心資料"]。
+儲存帳戶::
++
+--
+* 託管磁碟需要一個儲存帳戶。BlueXP為HA配對建立的儲存帳戶是通用的v2儲存帳戶。
 * 您可以在 Cloud Volumes ONTAP 建立工作環境時、從一個可疑的 9.7 HA 配對啟用 HTTPS 連線至 Azure 儲存帳戶。請注意、啟用此選項可能會影響寫入效能。您無法在建立工作環境之後變更設定。
 
 

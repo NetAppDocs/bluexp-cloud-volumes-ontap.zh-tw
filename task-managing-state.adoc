@@ -57,6 +57,7 @@ image:screenshot_shutdown.gif["螢幕擷取畫面：顯示每 Cloud Volumes ONTA
 . 按一下「 * 儲存 * 」。
 
 
+.結果
 BlueXP會儲存排程。時鐘圖示會變更、表示已設定排程： image:screenshot_shutdown_icon_scheduled.gif["螢幕擷取畫面：在定義排程後顯示自動關機圖示。"]
 
 
@@ -68,6 +69,7 @@ BlueXP會儲存排程。時鐘圖示會變更、表示已設定排程： image:s
 
 NOTE: 為降低成本、BlueXP會定期刪除較舊的根磁碟和開機磁碟快照。根磁碟和開機磁碟只會保留兩個最新的快照。
 
+.關於這項工作
 當您停止HA配對時、BlueXP會關閉兩個節點。
 
 .步驟

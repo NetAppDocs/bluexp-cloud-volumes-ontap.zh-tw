@@ -18,7 +18,7 @@ summary: 部分Cloud Volumes ONTAP 支援的組態包括本機NVMe儲存設備�
 
 
 
-== 什麼是 Flash Cache ？
+== 什麼是Flash Cache？
 
 Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。
 

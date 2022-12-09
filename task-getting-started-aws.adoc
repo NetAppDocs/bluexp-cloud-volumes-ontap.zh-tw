@@ -16,16 +16,19 @@ summary: 只要幾個步驟、就能開始使用 Cloud Volumes ONTAP 適用於 A
 [role="lead"]
 只要幾個步驟、Cloud Volumes ONTAP 就能開始使用AWS的功能。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 建立連接器
 [role="quick-margin-para"]
 如果您沒有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["連接器"^] 然而、帳戶管理員需要建立一個帳戶。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["瞭解如何在 AWS 中建立 Connector"^]。
 
 [role="quick-margin-para"]
 建立第一個Cloud Volumes ONTAP 運作環境時、如果您還沒有連接器、則BlueXP（前身為Cloud Manager）會提示您部署連接器。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 規劃您的組態
 [role="quick-margin-para"]
 BlueXP提供符合工作負載需求的預先設定套件、或者您也可以建立自己的組態。如果您選擇自己的組態、應該瞭解可用的選項。 link:task-planning-your-config.html["深入瞭解"]。
 
-.span class="image"><imgrc="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png"[] alt="there"></span>設定您的網路
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 設定您的網路
+[role="quick-margin-list"]
 . 確保您的 VPC 和子網路支援連接器與 Cloud Volumes ONTAP 支援之間的連線。
 . 啟用從目標 VPC 的傳出網際網路存取、讓 Connector 和 Cloud Volumes ONTAP 支援中心能夠連絡多個端點。
 +
@@ -40,9 +43,11 @@ BlueXP提供符合工作負載需求的預先設定套件、或者您也可以�
 [role="quick-margin-para"]
 link:reference-networking-aws.html["深入瞭解網路需求"]。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 設定 AWS KMS
 [role="quick-margin-para"]
 如果您想搭配 Cloud Volumes ONTAP 使用 Amazon 加密搭配使用、則必須確保存在作用中的客戶主金鑰（ CMK ）。您也必須新增 IAM 角色、將連接器的權限提供給作為 _key 使用者 _ 的連接器、以修改每個 CMK 的金鑰原則。 link:task-setting-up-kms.html["深入瞭解"]。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 使用BlueXP啟動Cloud Volumes ONTAP
 [role="quick-margin-para"]
 按一下「 * 新增工作環境 * 」、選取您要部署的系統類型、然後完成精靈中的步驟。 link:task-deploying-otc-aws.html["閱讀逐步指示"]。
 

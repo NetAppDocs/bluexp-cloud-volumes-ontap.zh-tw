@@ -35,4 +35,5 @@ image:screenshot_menu_registration.gif["螢幕擷取畫面：顯示 Cloud Volume
 . 選擇 NetApp 支援網站帳戶、然後按一下 * 註冊 * 。
 
 
+.結果
 BlueXP向NetApp註冊系統。

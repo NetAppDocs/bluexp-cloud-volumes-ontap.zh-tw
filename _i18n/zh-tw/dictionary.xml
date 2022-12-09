@@ -289,7 +289,6 @@
   <block id="76f915f1735f8e90aeadfbca5bcf13e8" category="paragraph">如果您沒有<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 然而、帳戶管理員需要建立一個帳戶。<block ref="26c29a7306b61a92e3953c6b8ea9ef70" category="inline-link-rx"></block>。</block>
   <block id="2529fbdc4c253bec28669839cfb92bd4" category="inline-link-macro">深入瞭解規劃組態</block>
   <block id="e0bce116621fe62848ab384f3d3a607f" category="paragraph"><block ref="efb0a51bcf2d14d25bf3c3e32647f9b6" category="inline-link-macro-rx"></block>。</block>
-  <block id="96f771366585d23c8ba0a0a05fb1d2d8" category="list-title">span class="image"&gt;&lt;imgrc=<block ref="ddd753dc2858fe3a5582f20b300a0541" category="inline-link-rx"></block> alt="there"&gt;&lt;/span&gt;設定您的網路</block>
   <block id="c5a74d045a159ee12555da1d786bd27c" category="list-text">確保您的 VPC 和子網路支援連接器與 Cloud Volumes ONTAP 支援之間的連線。</block>
   <block id="fba6f9cb71ee82e92d6bad4d9a6a4320" category="inline-link">設定Cloud Volumes ONTAP 私有Google Access的子網路</block>
   <block id="18bc49f7b78f896ce4e7d8b5500b328f" category="list-text">如果您打算啟用資料分層、<block ref="79d3319f0d772940c7bc4dbea4092e64" category="inline-link-rx"></block>。</block>
@@ -343,7 +342,6 @@
   <block id="f5c4745b8a5809c2aa248d1297288719" category="summary">在雲端環境發生故障時、提供企業級的可靠性和持續運作。 Cloud Volumes ONTAP在 Azure 中、儲存設備會在兩個節點之間共享。</block>
   <block id="ca010532511b0575d0c11648404720a6" category="doc">Azure 中的高可用度配對</block>
   <block id="39579c446d8c5e21ff1d2b6c3e65c086" category="section-title">HA 元件</block>
-  <block id="b325f48830dbce9dcd4ac249a0901842" category="paragraph">Azure 中的功能介紹 HA 組態包括下列元件： Cloud Volumes ONTAP</block>
   <block id="957e0d287584ed2cb6cff5c8c76e1be1" category="list-text">Azure 標準負載平衡器</block>
   <block id="5f335a0802726c352400d11608867411" category="list-text">負載平衡器負責管理 Cloud Volumes ONTAP 傳入流量至 the ireHA 配對。</block>
   <block id="30dbcf82b4a8d8d218b60ae7a13974f0" category="list-text">可用度設定</block>
@@ -381,9 +379,6 @@
   <block id="ea42efb0eb933b55c2c4a89d521450df" category="list-text">\https://support.netapp.com/aods/asupmessage</block>
   <block id="139bae98c3a8ead645c078cb26b93bd1" category="list-text">\https://support.netapp.com/asupprod/post/1.0/postAsup</block>
   <block id="1d9e509ddb93a176b7d369a91ad7deaf" category="section-title">IP位址</block>
-  <block id="cceb8f7ed659db95ecee6b568724f01a" category="list-text">單一節點： 5 個 IP 位址</block>
-  <block id="e45828fcc0fec03cf9b9115da2bc9766" category="list-text">HA 配對： 16 個 IP 位址</block>
-  <block id="cf97b7bbcae965edf17dfb032d773d4e" category="admonition">LIF 是與實體連接埠相關聯的 IP 位址。諸如 VMware 的管理工具需要 SVM 管理 LIF SnapCenter 。</block>
   <block id="0af87aead9b1478c9d33afc90cbcbf02" category="section-title">安全連線至Azure服務</block>
   <block id="465b92b3276cc18a4183d48ccf476d6a" category="inline-link-macro">將冷資料分層至低成本物件儲存設備</block>
   <block id="c444761212c29ddb96943c613e011090" category="inline-link-macro">深入瞭解如何搭配 Cloud Volumes ONTAP 使用 Azure 私有 Link 搭配使用功能</block>
@@ -510,7 +505,6 @@
   <block id="0ea67820edee1410e568b14bb70835d0" category="section-title">資料加密方式</block>
   <block id="145da5369fc47bfb6b1cd09c08d698b0" category="paragraph">建立Cloud Volumes ONTAP 一個設定為使用客戶管理金鑰的功能完善的支援環境之後Cloud Volumes ONTAP 、即可將下列資料加密。</block>
   <block id="b049fcbe8198301adc6bf87634a02845" category="list-text">HA 配對</block>
-  <block id="5aabc9069557be7e4aeff466605cbc75" category="list-text">單一節點</block>
   <block id="2301d2b9fcb3fe6f26482aff37ea2c54" category="inline-link">磁碟加密集</block>
   <block id="5dab396463f2f277886102bf78fe661b" category="list-text">任何新的資料磁碟也會使用相同的磁碟加密集。</block>
   <block id="8764c9ec9f17252b7df37e1710ec9e5a" category="section-title">建立金鑰保存庫並產生金鑰</block>
@@ -545,7 +539,6 @@
   <block id="39d127436e271c10e2314bfd36a7dc2b" category="paragraph"><block ref="31cacab875e6dedf675701f1e37084e2" category="inline-link-rx"></block>。</block>
   <block id="c9a9b22c97e2474e63fdb09a6f5f4a75" category="paragraph">您有一個Cloud Volumes ONTAP 全新的支援系統、可設定使用客戶管理的金鑰進行資料加密。</block>
   <block id="5fbc523d8d2ad241522a15100f23bef2" category="doc">Flash 快取</block>
-  <block id="e0c8b3ee252e2f32575e8c863dbc2dd2" category="section-title">什麼是 Flash Cache ？</block>
   <block id="3a36e6b466e0265c25d241c486f64e02" category="paragraph">Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。</block>
   <block id="341cc964e0c52fec40f9705182116dda" category="list-text">所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。</block>
   <block id="405cb575e50b611a22ec99d1abb3f202" category="inline-link">使用 CLI 停用資料壓縮</block>
@@ -1672,7 +1665,6 @@
   <block id="ce844b01a8ab7308a739495c52892c79" category="list-text">若要完成CA簽署憑證的安裝、請從EC2主控台重新啟動Connector執行個體。</block>
   <block id="665230f4bd95f60852b6fc1b7f05c103" category="list-text">重新啟動Connector之後、請使用您在設定精靈中建立的系統管理員使用者帳戶登入。</block>
   <block id="0439cfd9ea85ab415d89910478b93050" category="section-title">產品Cloud Volumes ONTAP 發表</block>
-  <block id="a711863513c11f3a6d86294acc7be0ba" category="list-title">您需要的是 #8217 ；需要的是什麼</block>
   <block id="6f177e279944db659b80f0020df93964" category="list-text">如果您購買授權、則必須擁有從NetApp收到的授權檔案。授權檔案是Json格式的.NLF檔案。</block>
   <block id="4b91157a6d4a5e01b05a5a74492fcdeb" category="list-text">需要金鑰配對、才能對HA中介器啟用金鑰型SSH驗證。</block>
   <block id="41c4defb4c9e45cc91ee861e1c4ca018" category="list-text">在「工作環境」頁面上、按一下「*新增工作環境*」。</block>
@@ -2180,7 +2172,6 @@
   <block id="088426a95c1a721001f3ed56ac2f4ed0" category="admonition-title">資料遺失的可能性</block>
   <block id="72cd91c0deb59fc4b814e6cafc8ff514" category="paragraph">最佳實務做法是針對每Cloud Volumes ONTAP 個系統使用新的專屬資源群組。</block>
   <block id="f153679ad4c5ae5aeae3a0ca4f337a37" category="list-text">[[訂閱]在「畫版」頁面上、按一下「*新增工作環境*」、然後依照提示進行。</block>
-  <block id="6161ef388a32cdaabaede63cd8d044b7" category="list-text">* 選擇位置 * ：選擇 * Microsoft Azure * 與 * Cloud Volumes ONTAP 《單一節點 * 》或 * Cloud Volumes ONTAP 《高可用度 * 》。</block>
   <block id="3c19bc1d7cfc3da0dab6310259e4b2c1" category="inline-link">建立連接器</block>
   <block id="1870c86878dd46336ac6bfc08665eab6" category="list-text">如果出現提示、<block ref="7d165ca08e4106b12a1b93b3149d1a83" category="inline-link-rx"></block>。</block>
   <block id="ceca015ffa0918205a91a8cc0268611c" category="list-text">*詳細資料與認證*：選擇性變更Azure認證與訂閱、指定叢集名稱、視需要新增標籤、然後指定認證資料。</block>
@@ -2256,7 +2247,6 @@
   <block id="7524f7a154d0b13a1e895c56c832c376" category="inline-link">立即註冊一個nssnss</block>
   <block id="48c7c08bdc82dde24c342aee125d0f2f" category="inline-link">如需詳細資料、請參閱此常見問題集</block>
   <block id="c0f65045a034bd8451814ab893994b7b" category="admonition">截至2021年12月3日、NetApp已改用新方法來登錄新的NSS帳戶 認證資料。<block ref="aa125d01c1b555d9e118821165394c02" category="inline-link-rx"></block>。如果您的NSS帳戶使用舊的一組認證資料、您將需要將帳戶更新為新的認證資料。</block>
-  <block id="0a20c90d5270bed19fcaf851778c663b" category="section-title">下一步</block>
   <block id="8aec6a2bcfb78af1fffa4f2c52dfe49d" category="inline-link">《數位顧問》文件 Active IQ</block>
   <block id="e778b936b44de5bd4765be37fb61b14b" category="paragraph">請參閱<block ref="6b8a787f5f28cd8a65ef0852e940136e" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="b5fc4208e494804d1484996e111220af" category="summary">您可以在 Cloud Volumes ONTAP 單一系統組態中或 AWS 中以 HA 配對的形式來啟動執行個體。</block>
@@ -3103,7 +3093,6 @@
   <block id="4acc8f844fb07760f03ee00b38fba80d" category="list-text">當系統提示您選擇充電方法時、請選取Keystone Flex訂閱充電方法。</block>
   <block id="bbf932728988f5056e42fa37db99f7d9" category="inline-image-macro">Keystone Flex訂購選項在建立Cloud Volumes ONTAP 運作環境時的快照。</block>
   <block id="f18bded89e8a20f01b4ae8e4adc206f7" category="paragraph"><block ref="f18bded89e8a20f01b4ae8e4adc206f7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0859113bcaa28e16186a08e28441121a" category="admonition">HA配對不需要前三個權限。</block>
   <block id="050c120c7155ccd2f0ee729008e2ff37" category="doc">在Cloud Volumes ONTAP AWS中設定適用於此功能的授權</block>
   <block id="b1dbd9fd802a136b38f7661ea3dbaa3f" category="list-text">在*詳細資料與認證*頁面上、按一下*編輯認證&gt;新增訂閱*、然後依照提示訂閱AWS Marketplace中的隨用隨付方案。</block>
   <block id="44ec3c7abc7539866144ab119167565c" category="paragraph"><block ref="44ec3c7abc7539866144ab119167565c" category="inline-image-macro-rx" type="image"></block></block>
@@ -3931,11 +3920,8 @@
   <block id="bd143c2af617c5743abf3efb9b36b10a" category="paragraph">當您建立Cloud Volumes ONTAP 一個運作環境時、BlueXP會提示您訂閱Google Cloud Marketplace提供的合約。該訂閱之後會與工作環境建立關聯、以便進行充電。您可以在其他工作環境中使用相同的訂閱。</block>
   <block id="f03e86cc66eb1161cd11073bf0ca84cb" category="list-text">mailto：ng-keystone-success@netapp.com [聯絡NetApp]以一或多個Keystone Flex訂閱授權您的BlueXP使用者帳戶。</block>
   <block id="970e80f52bfaf06fb0516cbd1132f19b" category="paragraph">這些限制僅適用於Cloud Volumes ONTAP BlueXP（前身為Cloud Manager）的內部資料管理。若要檢視Cloud Volumes ONTAP 有關此功能的限制、<block ref="70a3d165b5204ef94ef3f2d7b3d098d2" category="inline-link-rx"></block></block>
-  <block id="fca01bb76e6cdd32f96b30ff94efac21" category="section-title">BlueXP不支援FlexGroup 功能區</block>
   <block id="cc536ef595b8b8d98efa4ac1fce2305e" category="paragraph">雖然支援的是不支援的功能、但BlueXP卻不支援。Cloud Volumes ONTAP FlexGroup如果FlexGroup 您從System Manager或CLI建立一個支援功能區、則應將BlueXP的容量管理模式設為手動。自動模式可能無法與 FlexGroup 功能不全的功能搭配使用。</block>
-  <block id="5075dd4fea27a60dae46435a226722e7" category="section-title">BlueXP不支援Cloud Volumes ONTAP S3搭配使用</block>
   <block id="a719d497acfd7c92ff4bf9224e1de3d0" category="paragraph">雖然在某些雲端供應商中、支援S3作為橫向擴充儲存設備的選項、但BlueXP並未針對此功能提供任何管理功能。Cloud Volumes ONTAP使用CLI是設定S3用戶端從Cloud Volumes ONTAP 功能支援的最佳實務做法。如需詳細資訊、請參閱<block ref="49e8fee748cd4c8d6f01bdb03113fc2a" category="inline-link-rx"></block>。</block>
-  <block id="14ed37106a0272d00de0eeb0d9a650de" category="section-title">BlueXP不支援儲存VM的災難恢復</block>
   <block id="397f1667d1f282be3b879b4e92a63aad" category="paragraph">BlueXP不提供任何儲存VM災難恢復的設定或協調支援。您必須使用 System Manager 或 CLI 。</block>
   <block id="66abe501678500958b330ea34f7f3794" category="admonition">BlueXP會主動啟動接管並等待回饋、一次只能正常變更一個節點。NetApp 的 QA 團隊在這段過程中測試了寫入和讀取檔案的能力、並未發現客戶端有任何問題。隨著連線變更、我們確實看到 I/O 層級的重試次數、但應用程式層卻取代了 NFS/CIFS 連線的這些短「重新連線」。</block>
   <block id="ee8671e0efb5c4ca4bc939aa5f95934e" category="paragraph">當您建立Cloud Volumes ONTAP 不協調作業環境時、BlueXP會自動建立IAM角色、並將其附加至協調者。此角色會假設您在VPC擁有者帳戶中建立的IAM角色、以便變更與HA配對相關的路由表。</block>
@@ -3980,7 +3966,6 @@
   <block id="53b16518a30b773b00426877f83d628f" category="paragraph"><block ref="53b16518a30b773b00426877f83d628f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6cac0d9b831de69a95553112d1d854dc" category="list-text">如果您尚未在BlueXP中註冊某個nssa帳戶、<block ref="bc2c9d3f2e75cd48cb0b55d3477b90f9" category="inline-link-rx"></block> ，之後隨即出現 Active IQ Digital Advisor UI。</block>
   <block id="c88f764485548292578f2128d1953adc" category="paragraph">如果BlueXP通知您AutoSupport 無法傳送資訊、 <block ref="b6432223d87858d9cd4e446578247e88" category="inline-link-macro-rx"></block>。</block>
-  <block id="775c58e7b6f81f9368fe6dab40e681fb" category="paragraph">BlueXP會將下列IP位址分配給Cloud Volumes ONTAP Azure中的功能：</block>
   <block id="a972bcad179af301a93e1049da5fbbbb" category="paragraph">請注意、BlueXP會在HA配對上建立SVM管理LIF、但不會在Azure中的單一節點系統上建立。</block>
   <block id="577b6951c15b466f5924970deafc3651" category="paragraph">根據預設、BlueXP會啟用Azure Private Link、以便Cloud Volumes ONTAP 在支援的範圍內連線到Azure儲存帳戶。</block>
   <block id="794331bacb4698d7019a1d66cb1649e3" category="paragraph">在大多數情況下、您完全不需要做任何事、而是由NetApp為您管理Azure Private Link。但如果您使用Azure私有DNS、則必須編輯組態檔。您也應該瞭解Azure中的Connector位置需求。</block>
@@ -4426,10 +4411,8 @@
   <block id="08408518b6366a9a8bb69802d83d5e3c" category="list-text">任何新的儲存帳戶（例如新增磁碟或集合體時）也會使用相同的金鑰</block>
   <block id="efbd2c7930ae2087a4719eb7c262b95d" category="list-text">從適用於NVRAM和核心磁碟的《軟件更新說明（僅供參考）ONTAP<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>，可透過託管磁碟管理加密金鑰。較低版本將使用Microsoft管理的金鑰、而非客戶管理的金鑰。</block>
   <block id="9dca67fbd1fac23e7aff5774ec0afa2a" category="list-text">所有的Azure儲存帳戶Cloud Volumes ONTAP 均使用客戶管理的金鑰進行加密。^1^</block>
-  <block id="6d69087e8037af0164a0779028792a7b" category="list-text">從適用於NVRAM和核心磁碟的《支援支援支援》（VMware®）9.9.9.1 P7開始ONTAP 、BlueXP使用磁碟加密集來管理受管理磁碟的加密金鑰。較低版本將使用Microsoft管理的金鑰、而非客戶管理的金鑰。</block>
   <block id="8b213ded385c637758f8c3705eb6386a" category="list-title">註腳</block>
   <block id="ab9a6656c154c96464d829868998ba40" category="list-text">如果您想在建立儲存帳戶時加密、必須在Cloud Volumes ONTAP 建立資源時建立並提供資源ID。這適用於所有類型的部署。如果您未提供此功能、儲存帳戶仍會加密、但BlueXP會先使用Microsoft管理的金鑰加密來建立儲存帳戶、然後再更新儲存帳戶以使用客戶管理的金鑰。</block>
-  <block id="d07f270590b573e1e499b9c9aed87fb4" category="list-text">* Azure磁碟加密、適用於磁碟區加密*</block>
   <block id="619dc876da25600cdf36ffbec25d908e" category="summary">支援Azure資源群組移動、但工作流程僅發生在Azure主控台。Cloud Volumes ONTAP</block>
   <block id="6c2dc09b272a4aed6d56a3438a190129" category="doc">正在移動資源群組</block>
   <block id="26d9e2ceeedec062543b6a4a27db01a1" category="paragraph">您可以在同一Azure訂閱中、將工作環境從一個資源群組移至Azure中的其他資源群組。不支援在不同Azure訂閱之間移動資源群組。</block>
@@ -4465,4 +4448,91 @@
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">從「Support Registration（支援註冊）」頁面找到您的帳戶ID序號。</block>
   <block id="50a1dc01b7312307c34a888071586955" category="list-text">複製上述步驟2的帳戶序號、完成安全性檢查、然後確認您已閱讀NetApp的全球資料隱私權政策。</block>
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">請務必複製上述序號欄位使用的帳戶序號（960xxxx）。這將加速帳戶處理。</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
+  <block id="5ad10cfb674234136c181d096cb59522" category="paragraph-title">必要權限</block>
+  <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
+  <block id="d39421b26d8f96d6b63ba8583d57f734" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 選擇支援的組態</block>
+  <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
+  <block id="793656833776421d4fb1944ba40b1677" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 確保 Cloud Volumes ONTAP 在物件儲存設備與物件儲存設備之間建立連線</block>
+  <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三</block>
+  <block id="a4c1999be8e0538c77be98752e1c50d8" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 請確定您已啟用分層功能、並有一個 Aggregate</block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四</block>
+  <block id="bff3909d9110826666bc292c558abc8c" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 建立、修改或複寫磁碟區時、請選擇分層原則</block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">接下來呢？</block>
+  <block id="f3d9abb903127694db460aa9c7f4d7be" category="paragraph-title">限制</block>
+  <block id="6b2eadbbc64d8760da4136e28da230c2" category="list-text">*選擇位置*：選擇* Amazon Web Services*和* Cloud Volumes ONTAP 《*》HA *。</block>
+  <block id="7945e794f4dd8b21c15eebff5d67a416" category="section-title">BlueXP不支援FlexGroup 功能區</block>
+  <block id="56fe439ee061f5bc2e940368c1d73fa3" category="section-title">BlueXP不支援Cloud Volumes ONTAP S3搭配使用</block>
+  <block id="9832e39264a34e4e40dca8449efd019e" category="section-title">BlueXP不支援儲存VM的災難恢復</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">您需要的產品</block>
+  <block id="86f463a1f0f0879749d1274dc94305d9" category="paragraph-title">重要注意事項</block>
+  <block id="ee7f3ee9c125b9b1f24e5bebb3409605" category="list-text">多個區域中的單一節點或HA配對</block>
+  <block id="fdee261787c8d28a1d5af5c07b8580d6" category="list-text">從適用於NVRAM和核心磁碟的《支援支援支援》9.9、1頁7開始ONTAP 、BlueXP使用磁碟加密集來管理受管理磁碟的加密金鑰。較低版本將使用Microsoft管理的金鑰、而非客戶管理的金鑰。</block>
+  <block id="d01b00b7df0dd6620e8ab49fb88f67b9" category="list-text">*適用於Volume加密的Azure磁碟加密*（適用於多個區域中的單一節點系統或HA配對）</block>
+  <block id="6337ff9e523cd4d0c21d00ce582cb8ca" category="admonition">單一區域中的HA配對不需要權限。</block>
+  <block id="d1432d772b2382ef2395e1eed551d5bb" category="paragraph-title">必要的Google Cloud權限</block>
+  <block id="675d38d552c49bbf67606b2c5f1d5bed" category="section-title">什麼是Flash Cache？</block>
+  <block id="78d0efd6b2c71cba47286de0ff16747c" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 建立連接器</block>
+  <block id="6edf31dd35d697c82c7b82a3275383c9" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 規劃您的組態</block>
+  <block id="957d6fa40cd2448f616bce2c695e57cf" category="list-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 設定您的網路</block>
+  <block id="ce307cd0ec17360c89f4cee135813d3a" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 設定服務帳戶</block>
+  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">五</block>
+  <block id="91f5721735e87c3888022376ff4ee935" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 啟用 Google Cloud API</block>
+  <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">六</block>
+  <block id="b251b1d8bf96f666a018d6d8517138ae" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> 使用BlueXP啟動Cloud Volumes ONTAP</block>
+  <block id="06e1f23900e79570eee02e1c5acec75a" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 使用BlueXP啟動Cloud Volumes ONTAP</block>
+  <block id="7d1d96e045e46f5da79febed668dfa02" category="section-title">HA頁面blob組態</block>
+  <block id="113bc9ef3b0433e67708f619cf1903ef" category="paragraph">Azure中的一套「功能」頁面Blob組態包括下列元件Cloud Volumes ONTAP ：</block>
+  <block id="8dc221b1b499606ef0f0ca8c0370189b" category="section-title">HA多重可用度區域組態</block>
+  <block id="3d9563c3da13e16d8921ac243a987129" category="paragraph">Azure中的一個支援多種可用度的區域組態包括下列元件Cloud Volumes ONTAP ：</block>
+  <block id="ad6e11a5573fe6579ae1e6dcdce60d8b" category="inline-image-macro">概念性映像顯示負載平衡器、可管理來自BlueXP和用戶端的傳入流量、Cloud Volumes ONTAP 兩個可用區域中的兩個支援節點、開機資料的SSD磁碟、以及客戶資料的託管磁碟。</block>
+  <block id="af874ecaf1a103d4d596315556c66e56" category="paragraph"><block ref="af874ecaf1a103d4d596315556c66e56" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="77a1f8867dc12013c0da2ead2b6c9ca3" category="inline-link">如需Azure儲存設備備援的詳細資訊、請參閱Azure文件</block>
+  <block id="2b6a2a78ba6ba0d1bf316591f2c9f89b" category="list-text">將兩Cloud Volumes ONTAP 個靜態節點部署至不同的可用度區域。可用度區域可確保節點位於不同的故障網域中。<block ref="c8912f6a29cb2653305e1189cf1fa38a" category="inline-link-rx"></block>。</block>
+  <block id="0297170537ff589d5fd67ec8db7c4ae4" category="inline-link-macro">開機、root、合作夥伴root及核心資料</block>
+  <block id="419c5f0dee6c475074f478e8aca659fd" category="list-text">客戶資料位於區域備援儲存設備（ZRS）託管磁碟上。每個節點均可存取其他節點的儲存設備。也需要額外的儲存空間 <block ref="21b5d37c4ebe0dabed7cc2a884c8db5a" category="inline-link-macro-rx"></block>。</block>
+  <block id="53ad373b2d895bfe9513a423ed557fe0" category="list-text">託管磁碟需要一個儲存帳戶。BlueXP為HA配對建立的儲存帳戶是通用的v2儲存帳戶。</block>
+  <block id="b04fd67a98a3b32956894024aa6fcf4f" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 設定 AWS KMS</block>
+  <block id="3af67a9dfd37709bb6e502fd7f303262" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 使用BlueXP啟動Cloud Volumes ONTAP</block>
+  <block id="96f4c574f3909d1105768df05940587b" category="paragraph">BlueXP會自動將所需數量的私有IP位址分配Cloud Volumes ONTAP 給Azure中的所有人。您必須確定網路有足夠的私有IP位址可用。</block>
+  <block id="03739fdb4fd68641a3dd276274b59b91" category="paragraph">Cloud Manager分配Cloud Volumes ONTAP 給功能不全的生命量取決於您是部署單一節點系統或HA配對。LIF 是與實體連接埠相關聯的 IP 位址。諸如 VMware 的管理工具需要 SVM 管理 LIF SnapCenter 。</block>
+  <block id="99b06d2510cf563a2d5a3bb1e854c0be" category="admonition">iSCSI LIF可透過iSCSI傳輸協定提供用戶端存取、並供系統用於其他重要的網路工作流程。這些生命是必要的、不應刪除。</block>
+  <block id="efd5eb8fe39e72876a227a2a5666b829" category="paragraph">BlueXP會將5或6個IP位址分配給單一節點系統：</block>
+  <block id="40800f2ceb1fadf0fb67562c1b95ca89" category="list-text">叢集管理IP</block>
+  <block id="a3dd4b9ad2ee69945d1ea9864c0769d4" category="list-text">節點管理IP</block>
+  <block id="863bdf16cb9d771a0a419b57d8c86dee" category="list-text">SnapMirror的叢集間IP</block>
+  <block id="93de524930bbe25d386681a6adf96fd8" category="list-text">NFS/CIFS IP</block>
+  <block id="c10bca9e72c1f1277145f5dc68b17eaf" category="list-text">iSCSI IP</block>
+  <block id="95c154df02c50293c8e187a13129c52e" category="admonition">iSCSI IP可透過iSCSI傳輸協定提供用戶端存取。系統也會將其用於其他重要的網路工作流程。此LIF為必填項目、不應刪除。</block>
+  <block id="d8d7417bbebf0251ff6676bd41195a47" category="list-text">SVM管理（選用-預設為未設定）</block>
+  <block id="541fcedb9781d2a648810837511d59e5" category="paragraph">在部署期間、BlueXP會將IP位址分配給4個NIC（每個節點）。</block>
+  <block id="7967db50e031806cc903e7667990fa6e" category="paragraph">*網卡0*</block>
+  <block id="f78bf4ed8c0f2dd904a8bd30215d4b0d" category="list-text">叢集間IP</block>
+  <block id="f667468015bc083421f7d4ce95ec9f32" category="paragraph">*網卡1*</block>
+  <block id="221bc518f8afb4c6e6c6948e962970b4" category="list-text">叢集網路IP</block>
+  <block id="8e9d3876607f552396e0780f17f85516" category="paragraph">*網卡2 *</block>
+  <block id="4c0520ff9efdddb69b34a5b310ccacc4" category="list-text">叢集互連IP（HA IC）</block>
+  <block id="8eb6ec3fbc998fa6a60aa567596e9dea" category="paragraph">* NIC 3 *</block>
+  <block id="1107a77f933d62fe584a3ae3bad83e30" category="list-text">Pageblob NIC IP（磁碟存取）</block>
+  <block id="fd1fdbec8ccbf892f0037009d36357b7" category="admonition">NIC 3僅適用於具有分頁大型資源配置系統的HA部署。</block>
+  <block id="43fb0e8e4573adece08f1409464dfa39" category="paragraph">上述IP位址不會在容錯移轉事件上移轉。</block>
+  <block id="9d691acb8ea0fa8f46108113686332d2" category="paragraph">此外、還設定4個前端IP（FIPS）在容錯移轉事件上進行移轉。這些前端IP位於負載平衡器中。</block>
+  <block id="19820ca81f74a74546add18da6b58fd8" category="list-text">節點A資料IP（NFS/CIFS）</block>
+  <block id="04279da7550f624dc2ed3dbcd07f03ba" category="list-text">節點B資料IP（NFS/CIFS）</block>
+  <block id="1fa9c43c980d3d603988b83d77f02065" category="list-text">SVM管理IP</block>
+  <block id="381055790b65562046260a73d644d222" category="list-text">一個10 GiB標準持續磁碟、用於中介開機資料</block>
+  <block id="01e12de62fa77fda2815719aed8ff892" category="section-title">下一步</block>
+  <block id="5d23d48e0afadebb8bb8d4e3def99de4" category="section-title">在Cloud Volumes ONTAP Azure中啟動單一節點的不完整系統</block>
+  <block id="56bdc4ea1c452fac2f0ec7899a4e3d21" category="paragraph">如果您想要在Cloud Volumes ONTAP Azure中啟動單一節點的功能、您需要在BlueXP中建立單一節點的工作環境。</block>
+  <block id="5e65ccaa7b0cffc728e485801bdd8092" category="list-text">*選擇位置*：選擇* Microsoft Azure *和* Cloud Volumes ONTAP 《單一節點*》。</block>
+  <block id="68367d4408e943b9268a7a6d4314fb0a" category="section-title">在Cloud Volumes ONTAP Azure中啟動一套功能完善的</block>
+  <block id="09848d903bbdcfa49dca87e8854aad0d" category="paragraph">如果您想要在Cloud Volumes ONTAP Azure中啟動一套功能不均的HA配對、您必須在BlueXP中建立HA工作環境。</block>
+  <block id="dee0e0a28a4db505910f0cae119590db" category="list-text">* HA部署模式*：</block>
+  <block id="e1ab7b9a326aaddbde429e4c50909456" category="list-text">選擇*單一可用度區域*或*多個可用度區域*。</block>
+  <block id="a5570b501238b74cc41e8229ed3e51cb" category="list-text">*位置與連線*（單一AZ）及*地區與連線*（多個AZs）</block>
+  <block id="3b57b9c6454667f8a7e141651b4a8068" category="list-text">對於單一AZ、請選取一個地區、vnet和子網路。</block>
+  <block id="9a0059ade43ab240a0f0e8b3f201237d" category="list-text">對於多個AZs、請為節點1選取區域、vnet、子網路、區域、為節點2選取區域。</block>
+  <block id="8a0f5ea3246704da60c7b1c7557519a1" category="list-text">選取「*我已驗證網路連線能力...*」核取方塊。</block>
+  <block id="b6416a070eae245c22afedda3deac1ef" category="list-text">*預先設定的套件*：選取其中一個套件以快速部署Cloud Volumes ONTAP 一個作業系統、或按一下*變更組態*。</block>
+  <block id="1e8446e8033270b9f2f812d81dfc0ddc" category="paragraph">如需選擇磁碟大小的說明、請參閱 <block ref="e1b3c31cb34daed9344cfbb51e1e4263" category="inline-link-macro-rx"></block>。</block>
 </blocks>

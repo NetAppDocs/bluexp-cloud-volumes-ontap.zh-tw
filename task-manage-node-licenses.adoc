@@ -67,6 +67,7 @@ image:screenshot_paygo_licenses.png["一張螢幕快照、顯示「數位錢包�
 . 按一下「 * 新增授權 * 」。
 
 
+.結果
 BlueXP會將授權新增至Digital Wallet。授權將被識別為未指派、直到您將其與新Cloud Volumes ONTAP 的一套系統關聯為止。之後、授權會移至「數位錢包」中的「* BYOL*」索引標籤。
 
 
@@ -96,6 +97,7 @@ image:screenshot-exchange-license.png["顯示在「未指派的授權」頁面�
 . 閱讀法律同意書、然後按一下*同意*。
 
 
+.結果
 BlueXP會將未指派的授權轉換成您選取的服務。您可以在「*資料服務授權*」標籤中檢視新授權。
 
 
@@ -133,6 +135,7 @@ image:screenshot_license_generator.gif["螢幕擷取畫面：顯示填寫的 Net
 . 按一下 * 更新授權 * 。
 
 
+.結果
 BlueXP會更新Cloud Volumes ONTAP 整個作業系統的授權。
 
 
@@ -208,6 +211,7 @@ BlueXP會更新Cloud Volumes ONTAP 整個作業系統的授權。
 . 按一下*「轉換授權*」。
 
 
+.結果
 BlueXP開始轉換程序。此程序會自動重新啟動。Cloud Volumes ONTAP備份時、授權資訊會反映出新的授權。
 
 

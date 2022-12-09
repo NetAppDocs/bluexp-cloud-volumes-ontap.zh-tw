@@ -46,16 +46,77 @@ Azure 必須符合下列網路需求。
 
 === IP位址
 
-BlueXP會將下列IP位址分配給Cloud Volumes ONTAP Azure中的功能：
+BlueXP會自動將所需數量的私有IP位址分配Cloud Volumes ONTAP 給Azure中的所有人。您必須確定網路有足夠的私有IP位址可用。
 
-* 單一節點： 5 個 IP 位址
-* HA 配對： 16 個 IP 位址
+Cloud Manager分配Cloud Volumes ONTAP 給功能不全的生命量取決於您是部署單一節點系統或HA配對。LIF 是與實體連接埠相關聯的 IP 位址。諸如 VMware 的管理工具需要 SVM 管理 LIF SnapCenter 。
 
+
+NOTE: iSCSI LIF可透過iSCSI傳輸協定提供用戶端存取、並供系統用於其他重要的網路工作流程。這些生命是必要的、不應刪除。
+
+
+
+==== 單一節點系統的IP位址
+
+BlueXP會將5或6個IP位址分配給單一節點系統：
+
+* 叢集管理IP
+* 節點管理IP
+* SnapMirror的叢集間IP
+* NFS/CIFS IP
+* iSCSI IP
++
+
+NOTE: iSCSI IP可透過iSCSI傳輸協定提供用戶端存取。系統也會將其用於其他重要的網路工作流程。此LIF為必填項目、不應刪除。
+
+* SVM管理（選用-預設為未設定）
+
+
+
+
+==== HA配對的IP位址
+
+在部署期間、BlueXP會將IP位址分配給4個NIC（每個節點）。
 
 請注意、BlueXP會在HA配對上建立SVM管理LIF、但不會在Azure中的單一節點系統上建立。
 
+*網卡0*
 
-TIP: LIF 是與實體連接埠相關聯的 IP 位址。諸如 VMware 的管理工具需要 SVM 管理 LIF SnapCenter 。
+* 節點管理IP
+* 叢集間IP
+* iSCSI IP
++
+
+NOTE: iSCSI IP可透過iSCSI傳輸協定提供用戶端存取。系統也會將其用於其他重要的網路工作流程。此LIF為必填項目、不應刪除。
+
+
+
+*網卡1*
+
+* 叢集網路IP
+
+
+*網卡2 *
+
+* 叢集互連IP（HA IC）
+
+
+* NIC 3 *
+
+* Pageblob NIC IP（磁碟存取）
+
+
+
+NOTE: NIC 3僅適用於具有分頁大型資源配置系統的HA部署。
+
+上述IP位址不會在容錯移轉事件上移轉。
+
+此外、還設定4個前端IP（FIPS）在容錯移轉事件上進行移轉。這些前端IP位於負載平衡器中。
+
+* 叢集管理IP
+* 節點A資料IP（NFS/CIFS）
+* 節點B資料IP（NFS/CIFS）
+* SVM管理IP
+
 
 
 

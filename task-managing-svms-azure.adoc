@@ -59,6 +59,7 @@ summary: 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可�
 
 如果您要建立SVM管理LIF、請重複這些步驟以建立其他IP位址。
 
+.完成後
 複製您剛建立的私有IP位址。當您為新的儲存VM建立生命期時、必須指定這些IP位址。
 
 
@@ -242,6 +243,7 @@ image:screenshot_azure_lb_rule.gif["在Azure入口網站中新增負載平衡規
 
 --
 ====
+.完成後
 複製您剛建立的私有IP位址。當您為新的儲存VM建立生命期時、必須指定這些IP位址。
 
 
@@ -632,4 +634,5 @@ network interface service-policy add-service -vserver <svm-name> -policy default
 
 --
 ====
+.接下來呢？
 在HA配對上建立儲存VM之後、最好先等待12小時、再在該SVM上配置儲存設備。從發行版的《21》開始、BlueXP會以12小時的時間間隔掃描HA配對負載平衡器的設定。Cloud Volumes ONTAP如果有新的SVM、則BlueXP會啟用可縮短非計畫性容錯移轉的設定。
