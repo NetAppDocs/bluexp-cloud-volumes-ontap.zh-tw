@@ -4571,4 +4571,9 @@
   <block id="26107ad7eb2db3c2d4b832701061add4" category="list-text">Azure磁碟類型搭配單一節點系統</block>
   <block id="7a91b2f49a589947c7854acf66d0f91a" category="list-text">Azure磁碟類型搭配HA配對</block>
   <block id="a75a698e7d0ed400565763b148a6d0db" category="list-text">HA系統使用優質的SSD共享託管磁碟、兩者都能以較高的成本為I/O密集型工作負載提供高效能。在9.12.1版本之前建立的HA部署會使用優質網頁。</block>
+  <block id="e2ab7c65b21ed8cc1c3b642b5e36429e" category="section-title">S3</block>
+  <block id="cc5f50b3903dc30a3a3545bb58fcdd14" category="paragraph">支援S3作為橫向擴充儲存的選項Cloud Volumes ONTAP 。S3傳輸協定支援可讓您設定S3用戶端存取儲存VM（SVM）中儲存區段內的物件。</block>
+  <block id="75081fb4982f7b843e702079b35f0ed4" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block>。</block>
+  <block id="eba1f3287bdc33dfa25c084b5e15a4c5" category="cell">9.12.1%</block>
+  <block id="708ffc372ba6f36174a7930961b956ab" category="section-title">2022年12月8日</block>
 </blocks>
