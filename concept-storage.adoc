@@ -87,7 +87,14 @@ ifdef::azure[]
 
 
 --
-HA 配對:: HA配對使用Premium分頁區、磁碟大小上限為8 TiB。
+HA 配對:: HA配對使用兩種磁碟、以較高的成本為I/O密集型工作負載提供高效能：
++
+--
+* _Premium頁面Blobs_、磁碟大小上限為8 TiB
+* _Managed disks_、磁碟大小上限為32 TiB
+
+
+--
 
 
 * 相關連結 *

@@ -40,16 +40,25 @@ Azure中的資料會使用自動加密Cloud Volumes ONTAP https://azure.microsof
 
 建立Cloud Volumes ONTAP 一個設定為使用客戶管理金鑰的功能完善的支援環境之後Cloud Volumes ONTAP 、即可將下列資料加密。
 
+Azure HA多重可用度區域::
++
+--
+* 所有的Azure儲存帳戶Cloud Volumes ONTAP 均使用客戶管理的金鑰進行加密
+* 對於root、開機、NVRAM、核心和資料磁碟、Cloud Manager使用磁碟加密集來管理受管理磁碟的加密金鑰。
+* 任何新的資料磁碟也會使用相同的磁碟加密集。
+
+
+--
 Azure HA單一可用度區域::
 +
 --
 * 所有的Azure儲存帳戶Cloud Volumes ONTAP 均使用客戶管理的金鑰進行加密
 * 任何新的儲存帳戶（例如新增磁碟或集合體時）也會使用相同的金鑰
-* 從適用於NVRAM和核心磁碟的《軟件更新說明（僅供參考）ONTAP https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["磁碟加密集"^]，可透過託管磁碟管理加密金鑰。較低版本將使用Microsoft管理的金鑰、而非客戶管理的金鑰。
+* 從《支援NVRAM和核心磁碟》的《支援範圍》（《支援範圍》）的《支援範圍》（ONTAP https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["磁碟加密集"^]，可透過託管磁碟管理加密金鑰。較低版本將使用Microsoft管理的金鑰、而非客戶管理的金鑰。
 
 
 --
-多個區域中的單一節點或HA配對::
+單一節點::
 +
 --
 * 所有的Azure儲存帳戶Cloud Volumes ONTAP 均使用客戶管理的金鑰進行加密。^1^
@@ -62,7 +71,7 @@ Azure HA單一可用度區域::
 
 
 .註腳
-. 如果您想在建立儲存帳戶時加密、必須在Cloud Volumes ONTAP 建立資源時建立並提供資源ID。這適用於所有類型的部署。如果您未提供此功能、儲存帳戶仍會加密、但BlueXP會先使用Microsoft管理的金鑰加密來建立儲存帳戶、然後再更新儲存帳戶以使用客戶管理的金鑰。
+. 如果您想要在建立儲存帳戶期間加密、則必須在CVO建立要求中建立並提供資源ID。這適用於所有類型的部署。如果您未提供、儲存帳戶仍會加密、但BlueXP會先使用Microsoft管理的金鑰加密來建立儲存帳戶、然後再更新儲存帳戶以使用客戶管理的金鑰。
 
 
 

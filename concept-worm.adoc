@@ -30,7 +30,14 @@ summary: 您可以在 Cloud Volumes ONTAP 一個還原系統上啟動一次寫�
 
 WORM儲存設備的充電時數是每小時一次、視WORM磁碟區的總配置容量而定。
 
-https://cloud.netapp.com/pricing["瞭解WORM儲存設備的定價"^]。
+您應該瞭解Cloud Volumes ONTAP 下列使用支援功能的充電行為：
+
+* 從ONTAP S59.10.1開始、WORM磁碟區和非WORM磁碟區可以存在於同一個集合體上。
+* 如果您在建立Cloud Volumes ONTAP 一個功能不全的環境時啟用WORM、那麼您從BlueXP建立的每個磁碟區都會啟用WORM。不過ONTAP 、您可以使用「功能性CLI」或「系統管理程式」來建立已停用WORM的磁碟區。這些磁碟區不會以WORM速率收費。
+* 如果您在建立工作環境時未啟用WORM、則從BlueXP建立的每個Volume都會停用WORM。這些磁碟區不會以WORM速率收費。不過ONTAP 、您可以使用支援WORM的CLI或System Manager來建立磁碟區。這些磁碟區將以WORM速率收費。
+
+
+https://cloud.netapp.com/pricing["瞭解WORM儲存設備的定價"^]
 
 
 

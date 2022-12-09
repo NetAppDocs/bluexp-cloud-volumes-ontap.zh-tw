@@ -62,20 +62,20 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azur
 
 
 --
-Azure 磁碟類型:: 當您建立 Cloud Volumes ONTAP 用於實現效能不均的磁碟區時、您需要選擇 Cloud Volumes ONTAP 底層的雲端儲存設備、以利將其用作磁碟。
+Azure磁碟類型搭配單一節點系統:: 當您建立 Cloud Volumes ONTAP 用於實現效能不均的磁碟區時、您需要選擇 Cloud Volumes ONTAP 底層的雲端儲存設備、以利將其用作磁碟。
 +
 --
-HA 系統使用優質網頁。同時、單一節點系統可使用兩種 Azure 託管磁碟：
+單一節點系統可使用三種 Azure 託管磁碟：
 
 * _Premium SSD 託管磁碟 _ 以更高的成本、為 I/O 密集的工作負載提供高效能。
 * _ 標準 SSD 託管磁碟 _ 為需要低 IOPS 的工作負載提供一致的效能。
 * 如果您不需要高 IOPS 、而且想要降低成本、那麼 _ 標準 HDD 託管磁碟 _ 是個不錯的選擇。
-+
+
+
 如需這些磁碟使用案例的其他詳細資料、請參閱 https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure 文件： Azure 提供哪些磁碟類型？"^]。
 
-
-
 --
+Azure磁碟類型搭配HA配對:: HA系統使用優質的SSD共享託管磁碟、兩者都能以較高的成本為I/O密集型工作負載提供高效能。在9.12.1版本之前建立的HA部署會使用優質網頁。
 Azure 磁碟大小:: 啟動 Cloud Volumes ONTAP 時、您必須選擇集合體的預設磁碟大小。BlueXP會將此磁碟大小用於初始Aggregate、以及當您使用簡易資源配置選項時所建立的任何其他集合體。您可以建立使用不同於預設磁碟大小的 Aggregate link:task-create-aggregates.html["使用進階配置選項"]。
 +
 --

@@ -104,9 +104,6 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 | 欄位 | 說明 
 
 
-| 可用度區域 | 對於單一節點系統、您可以選擇要部署 Cloud Volumes ONTAP 的可用度區域。如果您未選擇AZ、則BlueXP會為您選擇一個。 
-
-
 | 資源群組  a| 
 建立Cloud Volumes ONTAP 新的資源群組以供使用、或使用現有的資源群組。最佳實務做法是使用全新的資源群組 Cloud Volumes ONTAP 來進行支援。雖然可以在Cloud Volumes ONTAP 現有的共享資源群組中部署功能、但由於資料遺失的風險、不建議這麼做。如需詳細資料、請參閱上述警告。
 
@@ -159,19 +156,12 @@ link:concept-data-tiering.html["深入瞭解資料分層"]。
 
 
 
-. * 寫入速度與 WORM * （僅限單節點系統）：選擇 * 正常 * 或 * 高速 * 寫入速度、並視需要啟動一次寫入、多次讀取（ WORM ）儲存設備。
+. * 寫入速度與 WORM * ：選擇 * 正常 * 或 * 高速 * 寫入速度、並視需要啟動一次寫入、多次讀取（ WORM ）儲存設備。
 +
 link:concept-write-speed.html["深入瞭解寫入速度"]。
 
 +
 如果資料分層已啟用、則無法啟用 WORM 。
-
-+
-link:concept-worm.html["深入瞭解 WORM 儲存設備"]。
-
-. * 安全通訊至儲存設備與 WORM * （僅限 HA ）：選擇是否啟用 HTTPS 連線至 Azure 儲存帳戶、並視需要啟動一次寫入、多次讀取（ WORM ）儲存設備。
-+
-HTTPS 連線是 Cloud Volumes ONTAP 從一個名為「支援速度」的鏈接至 Azure 儲存帳戶。請注意、啟用此選項可能會影響寫入效能。您無法在建立工作環境之後變更設定。
 
 +
 link:concept-worm.html["深入瞭解 WORM 儲存設備"]。
@@ -332,9 +322,6 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 | 欄位 | 說明 
 
 
-| 可用度區域 | 對於單一節點系統、您可以選擇要部署 Cloud Volumes ONTAP 的可用度區域。如果您未選擇AZ、則BlueXP會為您選擇一個。 
-
-
 | 資源群組  a| 
 建立Cloud Volumes ONTAP 新的資源群組以供使用、或使用現有的資源群組。最佳實務做法是使用全新的資源群組 Cloud Volumes ONTAP 來進行支援。雖然可以在Cloud Volumes ONTAP 現有的共享資源群組中部署功能、但由於資料遺失的風險、不建議這麼做。如需詳細資料、請參閱上述警告。
 
@@ -377,7 +364,6 @@ NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修�
 請注意下列事項：
 
 +
-** 磁碟類型適用於初始磁碟區。您可以為後續磁碟區選擇不同的磁碟類型。
 ** 磁碟大小適用於初始Aggregate中的所有磁碟、以及使用Simple Provisioning選項時、BlueXP所建立的任何其他Aggregate。您可以使用進階配置選項、建立使用不同磁碟大小的集合體。
 +
 如需選擇磁碟大小的說明、請參閱 link:task-planning-your-config-azure.html#sizing-your-system-in-azure["在 Azure 中調整系統規模"]。
@@ -389,9 +375,12 @@ link:concept-data-tiering.html["深入瞭解資料分層"]。
 
 
 
-. * 寫入速度與 WORM * （僅限單節點系統）：選擇 * 正常 * 或 * 高速 * 寫入速度、並視需要啟動一次寫入、多次讀取（ WORM ）儲存設備。
+. * 寫入速度與 WORM * ：選擇 * 正常 * 或 * 高速 * 寫入速度、並視需要啟動一次寫入、多次讀取（ WORM ）儲存設備。
 +
 link:concept-write-speed.html["深入瞭解寫入速度"]。
+
++
+此選項僅適用於特定VM類型。若要瞭解支援哪些VM類型、請參閱 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HA配對授權的支援組態"]。
 
 +
 如果資料分層已啟用、則無法啟用 WORM 。
@@ -399,9 +388,9 @@ link:concept-write-speed.html["深入瞭解寫入速度"]。
 +
 link:concept-worm.html["深入瞭解 WORM 儲存設備"]。
 
-. * 安全通訊至儲存設備與 WORM * （僅限 HA ）：選擇是否啟用 HTTPS 連線至 Azure 儲存帳戶、並視需要啟動一次寫入、多次讀取（ WORM ）儲存設備。
+. *安全通訊至儲存設備與WORM *：選擇是否啟用HTTPS連線至Azure儲存帳戶、並視需要啟動一次寫入、多次讀取（WORM）儲存設備。
 +
-HTTPS 連線是 Cloud Volumes ONTAP 從一個名為「支援速度」的鏈接至 Azure 儲存帳戶。請注意、啟用此選項可能會影響寫入效能。您無法在建立工作環境之後變更設定。
+HTTPS連線是Cloud Volumes ONTAP 從一個畫面9.7 HA配對到Azure網頁blob儲存帳戶。請注意、啟用此選項可能會影響寫入效能。您無法在建立工作環境之後變更設定。
 
 +
 link:concept-worm.html["深入瞭解 WORM 儲存設備"]。

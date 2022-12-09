@@ -127,7 +127,7 @@ NOTE: 帳戶管理員可從「設定」頁面修改此值。
 | UNIX 權限（僅限 NFS ） | 777 
 |===
 +
-有關這些屬性的信息，請參見 _volume creation_ 手冊頁。
+請參閱 link:https://docs.netapp.com/us-en/ontap-cli-9121/volume-create.html["SUR_volume cre__手冊頁ONTAP"] 以取得這些屬性的相關資訊。
 
 
 
@@ -180,19 +180,29 @@ ifdef::azure[]
 
 * 一張1024 GiB標準HDD磁碟、可節省核心
 * 每個開機磁碟和根磁碟各一份 Azure 快照
-* 開機磁碟和根磁碟預設為加密。
+* Azure中的每個磁碟預設都會在閒置時加密。
 
 
 
 
 === Azure（HA配對）
 
+.HA與頁面blob配對
 * 兩個10 GiB Premium SSD磁碟用於開機磁碟區（每個節點一個）
 * 兩個140 GiB Premium Storage頁面、用於根磁碟區（每個節點一個）
 * 兩個1024 GiB標準HDD磁碟、可節省核心（每個節點一個）
 * 兩個512 GiB Premium SSD磁碟用於NVRAM（每個節點一個）
 * 每個開機磁碟和根磁碟各一份 Azure 快照
-* 開機磁碟和根磁碟預設為加密。
+* Azure中的每個磁碟預設都會在閒置時加密。
+
+
+.多個可用度區域中的HA配對
+* 兩個10 GiB Premium SSD磁碟用於開機磁碟區（每個節點一個）
+* 兩個512 GiB Premium Storage頁面、用於根磁碟區（每個節點一個）
+* 兩個1024 GiB標準HDD磁碟、可節省核心（每個節點一個）
+* 兩個512 GiB Premium SSD磁碟用於NVRAM（每個節點一個）
+* 每個開機磁碟和根磁碟各一份 Azure 快照
+* Azure中的每個磁碟預設都會在閒置時加密。
 
 
 endif::azure[]

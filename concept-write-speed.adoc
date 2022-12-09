@@ -116,9 +116,12 @@ endif::gcp[]
 
 * 更新版本Cloud Volumes ONTAP
 +
+ NOTICE nv.data.loss.possible: An unexpected shutdown occurred while in high write speed mode, which possibly caused a loss of data.
+* 從9.11.0到9.11.1 Cloud Volumes ONTAP
++
  DEBUG nv.check.failed: NVRAM check failed with error "NVRAM disabled due to dirty shutdown with High Write Speed mode"
 +
- ERROR wafl.root.content.changed: Contents of the root volume '' might have changed. Verify that all recent configuration changes are still in effect.
+ ERROR wafl.root.content.changed: Contents of the root volume '' might have changed. Verify that all recent configuration changes are still in effect..
 * 零點9.8到9.10.1 Cloud Volumes ONTAP
 +
  DEBUG nv.check.failed: NVRAM check failed with error "NVRAM disabled due to dirty shutdown"
