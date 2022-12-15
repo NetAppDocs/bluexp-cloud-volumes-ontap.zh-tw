@@ -44,7 +44,7 @@ Azure HA多重可用度區域::
 +
 --
 * 所有的Azure儲存帳戶Cloud Volumes ONTAP 均使用客戶管理的金鑰進行加密
-* 對於root、開機、NVRAM、核心和資料磁碟、Cloud Manager使用磁碟加密集來管理受管理磁碟的加密金鑰。
+* 對於root、開機、NVRAM、核心和資料磁碟、BlueXP使用磁碟加密集來管理受管理磁碟的加密金鑰。
 * 任何新的資料磁碟也會使用相同的磁碟加密集。
 
 

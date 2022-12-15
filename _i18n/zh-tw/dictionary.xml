@@ -466,12 +466,6 @@
   <block id="9962024a88bf4c8d55fd2f86b1873618" category="cell">53 任何傳輸協定</block>
   <block id="4038a3ad82c98f912a97fe2f042964cd" category="cell">DNS 與 CIFS</block>
   <block id="a02218676e4b3b1478891bbfdaee427f" category="section-title">連接器需求</block>
-  <block id="93fd4230b4afd5ccd3311e78e4c88ac9" category="paragraph">設定您的網路、讓 Connector 能夠管理公有雲環境中的資源和程序。最重要的步驟是確保從網際網路存取各種端點。</block>
-  <block id="20f41095471130e3ee55ad0782eeccd0" category="inline-link-macro">將 Connector 設定為使用 Proxy 伺服器</block>
-  <block id="49b6be736ceeb184c7d4cfd9132cd282" category="admonition">如果您的網路使用 Proxy 伺服器來進行所有與網際網路的通訊、您可以從「設定」頁面指定 Proxy 伺服器。請參閱 <block ref="6a702607d02fdf72fc33f667cfb9124d" category="inline-link-macro-rx"></block>。</block>
-  <block id="8f83d4a2626dac354314d5394d1f9d21" category="section-title">連線至目標網路</block>
-  <block id="9c4e8356ff1f50418474478350731782" category="paragraph">連接器需要網路連線至您要部署 Cloud Volumes ONTAP 的 VPC 和 VNets 。</block>
-  <block id="c3a5da2edea375289d166ef749b9bd1e" category="paragraph">例如、如果您在公司網路中安裝 Connector 、則必須設定 VPN 連線至 VPC 或 vnet 、以便在其中啟動 Cloud Volumes ONTAP 更新。</block>
   <block id="c0dfa216f26874dae52a89e0090a3358" category="paragraph">連接器需要存取傳出網際網路、才能管理公有雲環境中的資源和程序。</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">端點</block>
   <block id="8963387394e2ee3e2a5a9ba160566a58" category="cell">\https://support.netapp.com</block>
@@ -754,9 +748,7 @@
   <block id="14725afebf967c0c497c447ebcaf1764" category="list-text">若要在 Cloud Volumes ONTAP GCP 中的某個系統與 ONTAP 其他網路中的某個系統之間複寫資料、您必須在 VPC 與另一個網路（例如您的公司網路）之間建立 VPN 連線。</block>
   <block id="2fbb401eef4220b4a89cce3e59325dcb" category="inline-link">Google Cloud 文件：雲端 VPN 概述</block>
   <block id="6d1472a8434e4945740fa177e609f886" category="paragraph">如需相關指示、請參閱<block ref="1bc8aad79f56acf8c242cfb981c11ee1" category="inline-link-rx"></block>。</block>
-  <block id="e50f8e178601a7a1b4960a62843eb210" category="admonition">如果您的網路使用 Proxy 伺服器來進行所有與網際網路的通訊、您可以從「設定」頁面指定 Proxy 伺服器。請參閱<block ref="cce1b522253c2a5c153b8d2850e93a7a" category="inline-link-rx"></block>。</block>
   <block id="be541d1f37f2cc0c7ba1cfd7fcfbb4db" category="section-title">連線至目標網路</block>
-  <block id="4b87bb8b88ced4d50758693e3dabd924" category="paragraph">連接器需要網路連線至您要部署 Cloud Volumes ONTAP 的 VPC 。如果您要部署HA配對、則Connector只需要連線至VPC-0。</block>
   <block id="e0ab516914623c72df4ff708af6cdd54" category="section-title">防火牆規則 Cloud Volumes ONTAP</block>
   <block id="4907f0fb8777892173f7e34fa56bfcdb" category="paragraph">適用於此功能的防火牆規則 Cloud Volumes ONTAP 需要傳入和傳出規則。</block>
   <block id="bcf66fd73f27e271725271d68f4723a9" category="paragraph">如果您要部署 HA 組態、 Cloud Volumes ONTAP 以下是 VPC-0 中的防火牆規則。</block>
@@ -3455,8 +3447,6 @@
   <block id="4094070de63eb60a22dafb42ecab40fb" category="paragraph">如果您在部署期間未選擇服務帳戶、則必須關閉Cloud Volumes ONTAP 該服務帳戶、前往Google Cloud主控台、然後將該服務帳戶附加至Cloud Volumes ONTAP 該故障。然後、您可以依照下一節所述、啟用資料分層。</block>
   <block id="03b060a90dee73a6134cc6c1ebdf7458" category="paragraph">在Google Cloud中、必須先將服務帳戶附加至Cloud Volumes ONTAP 無法顯示此選項的功能。 <block ref="066865d547a10de791f5772d517b17f7" category="inline-xref-macro-rx"></block>。</block>
   <block id="870789b9d0beec538c84e00432400091" category="list-text">在Google Cloud中、移至Cloud Volumes ONTAP 「實例」、並為每個LIF新增一個IP位址至nic0。</block>
-  <block id="8ad37a38e1be1cd56ba8016e897e15c5" category="inline-link">深入瞭解VPC網路對等關係</block>
-  <block id="3af417bcb28902bf6e018910cab4b830" category="paragraph">如果您計畫在Cloud Volumes ONTAP 獨立於Connector的VPC上部署物件、則需要設定VPC網路對等。<block ref="7da1fe3c3eb485cc3c06acb3359fc320" category="inline-link-rx"></block></block>
   <block id="b961ba228f0253598e8fe47f55865219" category="list-text">輸入前端IP的名稱、選取Cloud Volumes ONTAP 該子網路做為「靜態HA配對」、保留「*動態*」選項、並在「可用區域」中保留「*區域-備援*」選項、以確保區域故障時IP位址仍可繼續使用。</block>
   <block id="c00e2d19af360558425fe43036ba7057" category="paragraph"><block ref="c00e2d19af360558425fe43036ba7057" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5505ffcb759fb1c9c3793b2dd386cd82" category="inline-link-macro">瞭解如何在PAYGO和BYOL之間切換</block>
@@ -4441,7 +4431,6 @@
   <block id="b04fd67a98a3b32956894024aa6fcf4f" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 設定 AWS KMS</block>
   <block id="3af67a9dfd37709bb6e502fd7f303262" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 使用BlueXP啟動Cloud Volumes ONTAP</block>
   <block id="96f4c574f3909d1105768df05940587b" category="paragraph">BlueXP會自動將所需數量的私有IP位址分配Cloud Volumes ONTAP 給Azure中的所有人。您必須確定網路有足夠的私有IP位址可用。</block>
-  <block id="03739fdb4fd68641a3dd276274b59b91" category="paragraph">Cloud Manager分配Cloud Volumes ONTAP 給功能不全的生命量取決於您是部署單一節點系統或HA配對。LIF 是與實體連接埠相關聯的 IP 位址。諸如 VMware 的管理工具需要 SVM 管理 LIF SnapCenter 。</block>
   <block id="99b06d2510cf563a2d5a3bb1e854c0be" category="admonition">iSCSI LIF可透過iSCSI傳輸協定提供用戶端存取、並供系統用於其他重要的網路工作流程。這些生命是必要的、不應刪除。</block>
   <block id="efd5eb8fe39e72876a227a2a5666b829" category="paragraph">BlueXP會將5或6個IP位址分配給單一節點系統：</block>
   <block id="40800f2ceb1fadf0fb67562c1b95ca89" category="list-text">叢集管理IP</block>
@@ -4498,7 +4487,6 @@
   <block id="115781a0043a85f8707c5c99fd02dc75" category="paragraph">\https://cloudmanager.cloud.netapp.com</block>
   <block id="7eea1027ea51763c57b7b5965f1ba900" category="admonition">Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即將推出的版本將會開始聯絡「api.bluexp.netapp.com"」。</block>
   <block id="b9eeb00cda3e979e1efe9bef61f951fc" category="list-text">Azure HA多重可用度區域</block>
-  <block id="bf8536c9790d590866c905e06322f99d" category="list-text">對於root、開機、NVRAM、核心和資料磁碟、Cloud Manager使用磁碟加密集來管理受管理磁碟的加密金鑰。</block>
   <block id="0f8e1302b6dedb536c0490b7602b0b32" category="list-text">從《支援NVRAM和核心磁碟》的《支援範圍》（《支援範圍》）的《支援範圍》（ONTAP<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>，可透過託管磁碟管理加密金鑰。較低版本將使用Microsoft管理的金鑰、而非客戶管理的金鑰。</block>
   <block id="5aabc9069557be7e4aeff466605cbc75" category="list-text">單一節點</block>
   <block id="41668006fb357f569acf8441fc16a00c" category="list-text">如果您想要在建立儲存帳戶期間加密、則必須在CVO建立要求中建立並提供資源ID。這適用於所有類型的部署。如果您未提供、儲存帳戶仍會加密、但BlueXP會先使用Microsoft管理的金鑰加密來建立儲存帳戶、然後再更新儲存帳戶以使用客戶管理的金鑰。</block>
@@ -4519,7 +4507,6 @@
   <block id="bdb764a539084c79daf35d5d881ae82c" category="list-text">客戶資料位於本機備援儲存設備（LRS）託管磁碟上。每個節點均可存取其他節點的儲存設備。也需要額外的儲存空間 <block ref="9f11431b4ce0e30551c89e37c48c22cd" category="inline-link-macro-rx"></block>。</block>
   <block id="c69ac98b36cf0e598f3cae6b175a8eec" category="list-text">儲存帳戶用於託管式磁碟型部署、以處理診斷記錄並分層處理至blob儲存設備。</block>
   <block id="dba89da91170934734e847dcfe4ad5d0" category="section-title">零點9.12.1. Cloud Volumes ONTAP</block>
-  <block id="6cfcf66978702040453f6b0622a89aaa" category="paragraph">現在、BlueXP可以部署及管理Cloud Volumes ONTAP 支援全新功能和其他雲端供應商區域的功能。<block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block></block>
   <block id="2dd09f45720a8f94b29c4d048b61ff4e" category="section-title">2022年11月15日</block>
   <block id="cca494b1b1d22bc8b5c8a8ecd5367bf8" category="section-title">GCP中的SS3授權ONTAP</block>
   <block id="44f72ae2127b89a470e082ae9f772acf" category="paragraph">在Google Cloud Platform中、執行9.12.1版或更新版本的全新及現有的版本不含更新版本的S3授權Cloud Volumes ONTAP ONTAP 。</block>
@@ -4581,4 +4568,24 @@
   <block id="8a7f23615316304155b79b66eb77b5b8" category="paragraph">Cloud Manager 會啟動 Cloud Volumes ONTAP 此功能。您可以追蹤時間表的進度。</block>
   <block id="579a953172073c3fe33dc907abd6b3f8" category="paragraph">Cloud Manager會建立安全群組、其中包括Cloud Manager和Cloud Volumes ONTAP NetApp在雲端成功運作所需的傳入和傳出規則。您可能想要參照連接埠進行測試、或是想要使用自己的安全性群組。</block>
   <block id="f4b34b24cc464b0154bd81cd6d906233" category="paragraph">針對此功能、預先定義 Cloud Volumes ONTAP 的內部安全群組包含下列規則：Cloud Manager 一律會建立這個安全群組。您沒有使用自己的選項。</block>
+  <block id="3f2a41d3e64efd3d137a5132f84eb8b6" category="paragraph">BlueXP分配Cloud Volumes ONTAP 給功能的生命量取決於您是部署單一節點系統或HA配對。LIF 是與實體連接埠相關聯的 IP 位址。諸如 VMware 的管理工具需要 SVM 管理 LIF SnapCenter 。</block>
+  <block id="df290139b26527b2473b1e82a36386d4" category="paragraph">設定您的網路、讓 Connector 能夠管理公有雲環境中的資源和程序。除了連接器的虛擬網路和子網路之外、您還需要確保符合下列需求。</block>
+  <block id="2f03f8dd45cb031f8f3cce95fd4acefc" category="paragraph">連接器需要網路連線至您所建立的工作環境類型、以及您計畫啟用的服務。</block>
+  <block id="3f92e0c134aea90b900c9d9fb8728adc" category="paragraph">例如、如果您在公司網路中安裝Connector、則必須設定VPN連線至虛擬網路、以便在其中啟動Cloud Volumes ONTAP 效益管理功能。</block>
+  <block id="3ae1b8362f96338c0c28c7652251bc8b" category="paragraph">如果您的組織需要為所有傳出的網際網路流量部署HTTP Proxy、請取得下列有關HTTP Proxy的資訊：</block>
+  <block id="75ba8d70e3692ba200f0e0df37b4d2ae" category="list-text">IP 位址</block>
+  <block id="2daf1cb573c2c61422faf64610cf9402" category="list-text">認證資料</block>
+  <block id="6a3f3799bc264d32568bb7169ddd515a" category="list-text">HTTPS憑證</block>
+  <block id="338578acf7e0dc54ebcd8c3592f0b022" category="section-title">安全性群組</block>
+  <block id="ae6252cb830dbd695650f78870fe4309" category="inline-link">本機 UI</block>
+  <block id="4f85ea1fc2337ca87ea3957b6ed0f523" category="paragraph">連接器沒有傳入流量、除非您啟動連接器、或連接器是AutoSupport 作為Proxy來接收資訊、否則連接器不會傳入。HTTP 和 HTTPS 可存取<block ref="b66a5441ef03e9f48be36352f5f78769" category="inline-link-rx"></block>、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。</block>
+  <block id="d72a801b2f49d6a4ed170ebdf3cf0efc" category="section-title">IP位址限制</block>
+  <block id="65d425afa00c3ead65e6a786e55b60bc" category="inline-link">深入瞭解此限制</block>
+  <block id="9b1f033bcac0595326d8acd1ef89e52c" category="paragraph">可能與172範圍內的IP位址發生衝突。<block ref="120cc620882c590412757bc531a4f583" category="inline-link-rx"></block>。</block>
+  <block id="236afd214a59ab065a50ccb9cbbbe4c2" category="cell">9.12.0</block>
+  <block id="97145bbcb02af5e728740b1d40bd2046" category="section-title">2022年12月15日</block>
+  <block id="bf748f930fa11e46773ff6f7b815e480" category="section-title">零件9.12.0 Cloud Volumes ONTAP</block>
+  <block id="80df4292f7c986dbd0920bb576487060" category="paragraph">現在、BlueXP可以在Cloud Volumes ONTAP AWS和Google Cloud中部署和管理功能。</block>
+  <block id="abd10f7bee2f791a9e8f76bf98163c27" category="paragraph">現在、BlueXP可以部署及管理Cloud Volumes ONTAP 支援全新功能和其他雲端供應商區域的功能。</block>
+  <block id="fdfad4872e8eceed069f74f82808d36e" category="list-text">對於root、開機、NVRAM、核心和資料磁碟、BlueXP使用磁碟加密集來管理受管理磁碟的加密金鑰。</block>
 </blocks>
