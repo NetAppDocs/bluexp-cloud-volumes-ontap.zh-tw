@@ -113,7 +113,7 @@ BlueXP會將未指派的授權轉換成您選取的服務。您可以在「*資�
 * 範例 *
 
 +
-image:screenshot_license_generator.gif["螢幕擷取畫面：顯示填寫的 NetApp 授權檔案產生器網頁範例、包括密碼、產品（ Cloud Volumes ONTAP 適用於 AWS 的 NetApp Eshot BYOL ）和產品序號。"]
+image:screenshot-license-generator.png["螢幕擷取畫面：顯示NetApp授權產生器網頁的範例、其中包含可用的產品線。"]
 
 . 選擇您要透過電子郵件或直接下載來接收 serialNumber.NLF Json 檔案。
 

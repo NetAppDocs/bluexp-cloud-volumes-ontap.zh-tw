@@ -1352,7 +1352,6 @@
   <block id="e76164b285bb635d604e86db0ddefffb" category="paragraph">以下是3.9.18版Connector所做的變更。</block>
   <block id="44521137c9499dbef6a006058d0d9127" category="section-title">版本9.11.0 Cloud Volumes ONTAP</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">深入瞭Cloud Volumes ONTAP 解本版的更新功能</block>
-  <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>。</block>
   <block id="a0834297e8b28b9a51d59500441c7351" category="section-title">強化中介升級</block>
   <block id="e6e5b99786bfefd88e32c940b7547ab3" category="section-title">K8s標籤已移除</block>
   <block id="6eb7d1343cce33ec7d31b57edd9f3aef" category="paragraph">K8s索引標籤已在先前版本中過時、現在已移除。如果您想要搭配Cloud Volumes ONTAP 使用Kubernetes搭配使用、可以將託管Kubernetes叢集新增至Canvas、作為進階資料管理的工作環境。</block>
@@ -2436,8 +2435,6 @@
   <block id="eeb818d6636d7675fb1108e834a0fed1" category="inline-link">NetApp 授權檔案產生器</block>
   <block id="3eff90cc077e6c35c01b4fa2ce08352e" category="list-text">前往<block ref="d4604fbd185a778fcb9e2d4bce6d880d" category="inline-link-rx"></block> 並使用您的 NetApp 支援網站認證登入。</block>
   <block id="fd714c8e7c7967952f8eefe7a8c25c48" category="list-text">輸入您的密碼、選擇產品、輸入序號、確認您已閱讀並接受隱私權政策、然後按一下 * 提交 * 。</block>
-  <block id="a107b24c3340d0e4184edbe0279df9ea" category="inline-image-macro">螢幕擷取畫面：顯示填寫的 NetApp 授權檔案產生器網頁範例、包括密碼、產品（ Cloud Volumes ONTAP 適用於 AWS 的 NetApp Eshot BYOL ）和產品序號。</block>
-  <block id="dddb4a2878a41b33e01843d439e31968" category="paragraph"><block ref="dddb4a2878a41b33e01843d439e31968" category="inline-image-macro-rx" type="image"></block></block>
   <block id="74fd2dac6a51b8a94f6612bae65dcbdf" category="list-text">選擇您要透過電子郵件或直接下載來接收 serialNumber.NLF Json 檔案。</block>
   <block id="58f676020d30c00d4b3fb18fc835e7ca" category="section-title">更新系統授權</block>
   <block id="eda4b0f5ee71694deda064c01799f329" category="list-text">在「* BYOL*」標籤中、展開Cloud Volumes ONTAP 關於某個系統的詳細資料。</block>
@@ -4584,7 +4581,6 @@
   <block id="abd10f7bee2f791a9e8f76bf98163c27" category="paragraph">現在、BlueXP可以部署及管理Cloud Volumes ONTAP 支援全新功能和其他雲端供應商區域的功能。</block>
   <block id="fdfad4872e8eceed069f74f82808d36e" category="list-text">對於root、開機、NVRAM、核心和資料磁碟、BlueXP使用磁碟加密集來管理受管理磁碟的加密金鑰。</block>
   <block id="da9740256f1fda9e06aa732d86702abc" category="admonition">這是您為BlueXP設定的服務帳戶、 <block ref="0f8a0ed359c33dd5dbb02a467fa98093" category="inline-link-macro-rx"></block>。</block>
-  <block id="f85c96fab0937fb6abf38c354668c165" category="section-title">2023年1月3日</block>
   <block id="3c757e219167079b631dfcb5b1d0c339" category="paragraph">以下是3.9.25版Connector的變更。</block>
   <block id="234213185a1ffd45429411672de5d3e7" category="section-title">Google Cloud提供授權套件</block>
   <block id="54aeb573897a8b2a0c9627ff7030c996" category="paragraph">Google Cloud Volumes ONTAP Cloud Marketplace提供最佳化的Edge Cache容量型授權套件、可作為隨用隨付方案或年度合約、以供使用。</block>
@@ -4597,4 +4593,25 @@
   <block id="0fbc0a0fa746d19ef30c136beb33ee6e" category="list-text">支援所選VM類型：</block>
   <block id="e2bb4238e5d918b51d049ce1e69dc93c" category="list-text">Azure：E4s_v3、E4ds_v4、DS4_v2、DS13_v2、E8s_v3、和E8ds_v4</block>
   <block id="2efd0683ed3ad3ba3a383a25bc466303" category="list-text">Google Cloud：n2-Standard-4、n2-Standard/8</block>
+  <block id="3ee54ac340ad12860ef4b993b12b351c" category="summary">在ONTAP 您建立全新Cloud Volumes ONTAP 的支援環境時、BlueXP可讓您從多個不同的支援版本中進行選擇。</block>
+  <block id="aa74aee23f6f151917b2bab3bcdb7635" category="doc">支援的新部署版本</block>
+  <block id="f97f94b14bab297536041160e29c5828" category="paragraph">新部署不支援所有其他Cloud Volumes ONTAP 的版本。</block>
+  <block id="94a06e39ad7d8a5f30a29ceb12e0cf9d" category="list-text">9.12.1 RC1</block>
+  <block id="b783301cf6b68b7d026b486472da6add" category="list-text">9.12.0 P1</block>
+  <block id="3c1b6c5437336ba57e79705c297e33dc" category="list-text">9.11.1 P3</block>
+  <block id="49603c48d65ef4fb8dd254f815e75b43" category="list-text">9.9.1 P6</block>
+  <block id="76ff5e2b756f473531665fb4019d3573" category="list-text">9.7 P5</block>
+  <block id="0de55206c94834c678768dfaf359fb98" category="list-text">9.5 p6</block>
+  <block id="592862851dd12d3c1919101b087e511e" category="list-text">9.10.1 P3</block>
+  <block id="8198b6447184bf52b73a4e25d8850ed0" category="list-text">9.9.1 P8</block>
+  <block id="e752d3074b911c222830c7f61cf640f3" category="list-text">9.9.1 P7</block>
+  <block id="91e09743e1f25ab741e5f94a5852dfc4" category="list-text">9.8 P10</block>
+  <block id="19d6e3f3d60f0c83123cd6e040378404" category="list-text">9.7 P6</block>
+  <block id="1f7138998459804601fc351f8d442e29" category="section-title">2023年1月1日</block>
+  <block id="64885a300b31929a1b0ea6b5a20128d3" category="paragraph"><block ref="065aa84d514cfdc6fc00d8cb3eaf6ec4" category="inline-link-rx"></block>。</block>
+  <block id="0fce19996aa4315b8976b5aa61c84f65" category="paragraph"><block ref="0fce19996aa4315b8976b5aa61c84f65" category="inline-link-rx"></block></block>
+  <block id="fe9b71f5efddc78532b32c810e3a805b" category="paragraph"><block ref="3919476ab513bb736283b5357766698b" category="inline-link-rx"></block>。</block>
+  <block id="79abc1902ac261d36290f5ef58f42833" category="paragraph"><block ref="91e4737b8b6f603b26f3f35aca1dbafa" category="inline-link-rx"></block>。</block>
+  <block id="7260bbc39295ef94e60be19b73affac6" category="inline-image-macro">螢幕擷取畫面：顯示NetApp授權產生器網頁的範例、其中包含可用的產品線。</block>
+  <block id="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="paragraph"><block ref="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

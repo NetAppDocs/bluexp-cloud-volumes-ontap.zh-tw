@@ -38,6 +38,8 @@ sidebar:
     entries:
     - title: 深入瞭解 Cloud Volumes ONTAP
       url: "/concept-overview-cvo.html"
+    - title: 支援的新部署版本
+      url: "/reference-versions.html"
     - title: Amazon Web Services入門
       flavor: aws
       entries:

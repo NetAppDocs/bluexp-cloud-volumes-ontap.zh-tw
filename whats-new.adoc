@@ -20,7 +20,7 @@ summary: 瞭解Cloud Volumes ONTAP BlueXP（前身為Cloud Manager）的更新�
 
 
 
-== 2023年1月3日
+== 2023年1月1日
 
 以下是3.9.25版Connector的變更。
 
@@ -50,7 +50,7 @@ Google Cloud Volumes ONTAP Cloud Marketplace提供最佳化的Edge Cache容量�
 
 現在、BlueXP可以在Cloud Volumes ONTAP AWS和Google Cloud中部署和管理功能。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]。
+https://docs.netapp.com/us-en/cloud-volumes-ontap-9120-relnotes["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]。
 
 
 
@@ -281,7 +281,7 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解
 
 現在、BlueXP可以部署及管理Cloud Volumes ONTAP 支援全新功能和其他雲端供應商區域的功能。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-9111-relnotes["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]
 
 
 
@@ -359,7 +359,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-pr
 
 現在、BlueXP可以部署及管理Cloud Volumes ONTAP 功能更新9.11.0。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]。
+https://docs.netapp.com/us-en/cloud-volumes-ontap-9110-relnotes["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]。
 
 
 
@@ -612,7 +612,7 @@ image:screenshot-cvo-create-volume.png["建立新Volume時顯示「Protocol（�
 
 現在、BlueXP可以部署及管理Cloud Volumes ONTAP 功能更新9.10.1。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]。
+https://docs.netapp.com/us-en/cloud-volumes-ontap-9101-relnotes["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]。
 
 
 
