@@ -20,6 +20,28 @@ summary: 瞭解Cloud Volumes ONTAP BlueXP（前身為Cloud Manager）的更新�
 
 
 
+== 2023年1月3日
+
+以下是3.9.25版Connector的變更。
+
+
+
+=== Google Cloud提供授權套件
+
+Google Cloud Volumes ONTAP Cloud Marketplace提供最佳化的Edge Cache容量型授權套件、可作為隨用隨付方案或年度合約、以供使用。
+
+請參閱 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["提供授權Cloud Volumes ONTAP"^]。
+
+
+
+=== 的預設組態 Cloud Volumes ONTAP
+
+多租戶加密金鑰管理（MTEKM）授權不再包含在新Cloud Volumes ONTAP 的版次部署中。
+
+如需ONTAP 更多有關隨Cloud Volumes ONTAP 功能自動安裝的功能認證資訊、請參閱 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-default-configs.html["支援的預設組態Cloud Volumes ONTAP"^]。
+
+
+
 == 2022年12月15日
 
 

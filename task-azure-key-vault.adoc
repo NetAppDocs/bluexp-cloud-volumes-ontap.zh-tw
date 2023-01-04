@@ -22,7 +22,6 @@ AKV可用於保護 link:https://docs.netapp.com/us-en/ontap/configure-netapp-vol
 .先決條件
 * 必須執行9.10.1版或更新版本Cloud Volumes ONTAP
 * 已安裝Volume Encryption（VE）授權（NetApp Volume Encryption授權會自動安裝在Cloud Volumes ONTAP 向NetApp支援註冊的每個支援系統上）
-* 已安裝多租戶加密金鑰管理（MTEKM）授權
 * 您必須是叢集或SVM管理員
 * 現用Azure訂閱
 

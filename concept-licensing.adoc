@@ -65,8 +65,6 @@ NetApp Cloud Volumes ONTAP 免費提供所有的支援功能（仍需支付雲�
 
 
 
-ifdef::azure[]
-
 
 
 ==== 最佳化
@@ -78,12 +76,41 @@ ifdef::azure[]
 +
 您將不需支付與資料複寫（SnapMirror）或NDMP相關的I/O費用。
 
-* 僅在Azure Marketplace中以隨用隨付方案或年度合約形式提供
-* 支援所選VM類型：E4s_v3、E4ds_v4、DS4_v2、DS13_v2、E8s_v3、 和E8ds_v4
-* 以額外成本附加任何NetApp的雲端資料服務
+
+
+ifdef::azure[]
+
+* 您可在Azure Marketplace以隨用隨付方案或年度合約形式取得
 
 
 endif::azure[]
+
+ifdef::gcp[]
+
+* 可在Google Cloud Marketplace以隨用隨付方案或年度合約形式提供
+
+
+endif::gcp[]
+
+* 支援所選VM類型：
+
+
+ifdef::azure[]
+
+* Azure：E4s_v3、E4ds_v4、DS4_v2、DS13_v2、E8s_v3、和E8ds_v4
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* Google Cloud：n2-Standard-4、n2-Standard/8
+
+
+endif::gcp[]
+
+* 以額外成本附加任何NetApp的雲端資料服務
+
 
 
 
@@ -114,8 +141,6 @@ endif::azure[]
 * 以額外成本附加任何NetApp的雲端資料服務
 
 
-ifdef::azure[]
-
 
 
 ==== 邊際快取
@@ -126,12 +151,23 @@ ifdef::azure[]
 * 智慧型邊緣快取功能、可透過每個位置佔用空間較小的Windows VM進行快取
 * 至少30個TiB、含六個邊緣節點
 * 每購買3個階層、就有一個邊緣節點、每購買3個階層的額外容量
-* 僅在Azure Marketplace中以隨用隨付方案或年度合約形式提供
 
 
-https://cloud.netapp.com/cloud-volumes-edge-cache["深入瞭解Cloud Volumes Edge Cache如何協助您的企業發展"^]
+ifdef::azure[]
+
+* 您可在Azure Marketplace以隨用隨付方案或年度合約形式取得
+
 
 endif::azure[]
+
+ifdef::gcp[]
+
+* 可在Google Cloud Marketplace以隨用隨付方案或年度合約形式提供
+
+
+endif::gcp[]
+
+https://cloud.netapp.com/cloud-volumes-edge-cache["深入瞭解Cloud Volumes Edge Cache如何協助您的企業發展"^]
 
 
 
