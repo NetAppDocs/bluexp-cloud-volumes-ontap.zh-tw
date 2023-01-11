@@ -325,11 +325,6 @@
   <block id="10142c9d88b9419ee393574e858e86c8" category="inline-link">瞭解WORM儲存設備的定價</block>
   <block id="074dbf8cc93ccd34e86e3e2e8f2a1e3a" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block>。</block>
   <block id="74f13d97ea448b8140308bf35c78920e" category="section-title">啟動 WORM 儲存設備</block>
-  <block id="82389b2fd96eb0a8c75af9a934cf690c" category="paragraph">您可以在 Cloud Volumes ONTAP 建立新的工作環境時、在一個可靠的系統上啟動 WORM 儲存設備。這包括設定檔案的預設保留期間。</block>
-  <block id="99726e6dac736d4f262968c3400fc895" category="admonition">您無法在個別磁碟區上啟動WORM儲存設備、WORM必須在系統層級啟動。</block>
-  <block id="34d0ed563f1f75350e0269592f33c876" category="paragraph">下圖顯示如何在建立工作環境時啟動 WORM 儲存設備：</block>
-  <block id="c7c2875ea001d781c82d348606d491d5" category="inline-image-macro">顯示建立新工作環境時可用的 WORM 選項。</block>
-  <block id="e8c8f94a99b5ff03b2c26b3348becb8a" category="paragraph"><block ref="e8c8f94a99b5ff03b2c26b3348becb8a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="785248b65164fa7ba3b7948c05afc1cc" category="section-title">將檔案提交至 WORM</block>
   <block id="3fd6e3cd7f26f44db79e5d9fabdbeda0" category="paragraph">您可以使用應用程式、透過 NFS 或 CIFS 將檔案提交至 WORM 、或使用 ONTAP CLI 自動將檔案自動提交至 WORM 。您也可以使用 WORM 可應用檔案來保留遞增寫入的資料、例如記錄資訊。</block>
   <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="inline-link">本文檔 ONTAP</block>
@@ -4614,4 +4609,16 @@
   <block id="79abc1902ac261d36290f5ef58f42833" category="paragraph"><block ref="91e4737b8b6f603b26f3f35aca1dbafa" category="inline-link-rx"></block>。</block>
   <block id="7260bbc39295ef94e60be19b73affac6" category="inline-image-macro">螢幕擷取畫面：顯示NetApp授權產生器網頁的範例、其中包含可用的產品線。</block>
   <block id="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="paragraph"><block ref="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="770d7d25a250359f096cca82c310f07b" category="paragraph">如何啟動WORM儲存取決於Cloud Volumes ONTAP 您所使用的版本。</block>
+  <block id="f7bdab9f1b3e432deef3bba2021d518d" category="section-title">9.10.1版及更新版本</block>
+  <block id="634f99868031f4c19cc89185a03da350" category="paragraph">從功能部件支援的版本起、您可以選擇在Volume層級啟用或停用WORM Cloud Volumes ONTAP 。您選擇如何啟用WORM取決於您的需求。</block>
+  <block id="2c404b5c40a30cea75e4486ca42855d7" category="paragraph">當您建立Cloud Volumes ONTAP 全新的支援環境時、系統會提示您啟用或停用WORM儲存設備：</block>
+  <block id="1000fd534e8c9bff4332bafb5a9125aa" category="list-text">如果您在建立工作環境時啟用WORM儲存、則您從BlueXP建立的每個Volume都會啟用WORM。但您可以使用System Manager或CLI來建立已停用WORM的磁碟區。</block>
+  <block id="8614dac2e3bd328ce10de870996db0f5" category="paragraph">如果您想要建立WORM儲存專用系統、這個選項是很好的選擇。</block>
+  <block id="53c068d69d7edf4c467cf5bb2a3193dd" category="list-text">如果您在建立工作環境時停用WORM儲存設備、則您從BlueXP建立的每個Volume都會停用WORM。但您可以使用System Manager或CLI建立已啟用WORM的磁碟區。</block>
+  <block id="03b892a4c3b15391f53e9a5afe77bb58" category="paragraph">如果您想在同一個系統上混合不同類型的磁碟區、這個選項是很好的選擇。</block>
+  <block id="3cbff90f9e1dd222c93cec86291eb0d2" category="inline-xref">瞭解充電的運作方式</block>
+  <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">無論選擇哪一項、您都應該這樣做 <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>。</block>
+  <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">9.10.0版及更早版本</block>
+  <block id="ee11a9e37983cbc9cebba6a139158639" category="paragraph">您可以在 Cloud Volumes ONTAP 建立新的工作環境時、在一個可靠的系統上啟動 WORM 儲存設備。您無法在個別磁碟區上啟動WORM儲存設備、WORM必須在系統層級啟動。只有在您建立工作環境時才能啟動。</block>
 </blocks>
