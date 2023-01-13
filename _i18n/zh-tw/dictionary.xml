@@ -3676,8 +3676,6 @@
   <block id="0e6fc7a8a0a2e83eed1877313299a807" category="paragraph">提供Cloud Volumes Edge Cache授權。</block>
   <block id="cbea577daebf267793d8d7234ee50729" category="list-text">與Professional套件相同的功能、可為分散式企業提供營運不中斷和資料保護</block>
   <block id="90083db3dbad73e69a817501be172673" category="list-text">智慧型邊緣快取功能、可透過每個位置佔用空間較小的Windows VM進行快取</block>
-  <block id="c42bae5dc6b1d94a8229aa520a055d09" category="list-text">至少30個TiB、含六個邊緣節點</block>
-  <block id="9228e835b818682287047b781e3a92b5" category="list-text">每購買3個階層、就有一個邊緣節點、每購買3個階層的額外容量</block>
   <block id="7c4c7c30514b4cc21e76f21acfaacf2a" category="inline-link">深入瞭解Cloud Volumes Edge Cache如何協助您的企業發展</block>
   <block id="20044e95e1ba41fb44c428898ee01dc2" category="paragraph"><block ref="20044e95e1ba41fb44c428898ee01dc2" category="inline-link-rx"></block></block>
   <block id="54dcd2c31a61414eef44d6ac931b8f57" category="paragraph">+請注意、最佳化和邊緣快取套件無法搭配BYOL使用。</block>
@@ -4621,4 +4619,5 @@
   <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">無論選擇哪一項、您都應該這樣做 <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>。</block>
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">9.10.0版及更早版本</block>
   <block id="ee11a9e37983cbc9cebba6a139158639" category="paragraph">您可以在 Cloud Volumes ONTAP 建立新的工作環境時、在一個可靠的系統上啟動 WORM 儲存設備。您無法在個別磁碟區上啟動WORM儲存設備、WORM必須在系統層級啟動。只有在您建立工作環境時才能啟動。</block>
+  <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">每購買3個Tib容量、就有一個邊緣節點</block>
 </blocks>
