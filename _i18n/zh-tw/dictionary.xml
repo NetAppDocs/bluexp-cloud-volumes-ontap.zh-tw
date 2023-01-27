@@ -364,7 +364,6 @@
   <block id="64189aa9d22d4afe87fb8133eb712aa6" category="paragraph">儲存設備接管、重新同步及還原均為預設自動執行。不需要使用者採取任何行動。</block>
   <block id="698c22948c4703fdb8767b82d30d595b" category="section-title">儲存組態</block>
   <block id="a7f1ed3502c297566d12e3e3732abf11" category="paragraph">您可以使用 HA 配對做為主動 - 主動式組態、讓兩個節點都能將資料提供給用戶端、或做為主動 - 被動式組態、被動節點只有在接管主動節點的儲存設備時、才會回應資料要求。</block>
-  <block id="17cdbe368c7c729de5966fefda692ad9" category="summary">設定您的 Azure 網路、 Cloud Volumes ONTAP 使其能夠正常運作。這包括連接器和 Cloud Volumes ONTAP 整個過程的網路功能。</block>
   <block id="412590af9448ac66459e9c3d686de880" category="doc">Azure 的網路需求 Cloud Volumes ONTAP</block>
   <block id="72928bd9aacf64df0eb1285c03f5f5c0" category="section-title">需求 Cloud Volumes ONTAP</block>
   <block id="098d8cb8c4a1291e10ee07b333610f24" category="paragraph">Azure 必須符合下列網路需求。</block>
@@ -461,12 +460,6 @@
   <block id="9962024a88bf4c8d55fd2f86b1873618" category="cell">53 任何傳輸協定</block>
   <block id="4038a3ad82c98f912a97fe2f042964cd" category="cell">DNS 與 CIFS</block>
   <block id="a02218676e4b3b1478891bbfdaee427f" category="section-title">連接器需求</block>
-  <block id="c0dfa216f26874dae52a89e0090a3358" category="paragraph">連接器需要存取傳出網際網路、才能管理公有雲環境中的資源和程序。</block>
-  <block id="b8724da75fb917e992576b17378e66b3" category="cell">端點</block>
-  <block id="8963387394e2ee3e2a5a9ba160566a58" category="cell">\https://support.netapp.com</block>
-  <block id="db9e137068a05efe5440105c2494b7f1" category="cell">以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。</block>
-  <block id="554841a7559bd190d883de523464d1d1" category="cell">\https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net</block>
-  <block id="065880318484084e9bfe33ea9c6a8702" category="cell">升級Connector及其Docker元件。</block>
   <block id="63b34d7f22329c0eb7915fca7a346007" category="cell">提供從用戶端 Web 瀏覽器到本機使用者介面的 HTTP 存取</block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">已知限制指出本產品版本不支援的平台、裝置或功能、或是無法與產品正確互通的平台、裝置或功能。請仔細檢閱這些限制。</block>
   <block id="482723983a4f2af954e36ff41e567451" category="doc">已知限制</block>
@@ -677,11 +670,6 @@
   <block id="2a06c764d503a44b1651d5bd884cbe17" category="paragraph">當您刪除現有系統、然後使用相同授權建立新系統時、節點型BYOL授權可在Cloud Volumes ONTAP 各個版本之間傳輸。</block>
   <block id="c8019f1ffa1872e83dcb3addf5f94fa6" category="paragraph">例如、您可能想要刪除現有的授權系統、然後在不同的VPC/vnet或雲端供應商中、將授權用於新的BYOL系統。請注意、任何雲端供應商都只能使用不受雲端限制的序號。不受雲端限制的序號開頭為_908xxxx_字首。</block>
   <block id="577b267f9988dbdc61738174a3158ab9" category="paragraph">請務必注意、您的BYOL授權與貴公司及一組特定的NetApp支援網站認證資料有關。</block>
-  <block id="c1a944514f668a6530be7821e4a430f3" category="summary">設定您的 Google Cloud Platform 網路功能、 Cloud Volumes ONTAP 讓支援的系統能夠正常運作。這包括連接器和 Cloud Volumes ONTAP 整個過程的網路功能。</block>
-  <block id="a74ee89365e6df5e260d1051917ad0ea" category="doc">GCP 中的功能需求 Cloud Volumes ONTAP</block>
-  <block id="26f701fd34070cdff3f09a341ace7632" category="inline-link-macro">瞭解 HA 配對如何在 GCP 中運作</block>
-  <block id="16e04d05ebe78ce811365e6363616985" category="paragraph">如果您想要部署 HA 配對、應該這樣做 <block ref="34f7e91e8936b0b0eaed95f473b90e44" category="inline-link-macro-rx"></block>。</block>
-  <block id="394894d4a834735632bdc966f17ca917" category="paragraph">GCP 必須符合下列要求。</block>
   <block id="0b92442656d83f3067193055685902c8" category="list-text">內部負載平衡器</block>
   <block id="bed26a3b752abff1e6e50d64a46ef060" category="paragraph">其中一個負載平衡器用於叢集管理、一個用於儲存VM（SVM）管理、一個用於連接節點1的NAS流量、最後一個用於連接節點2的NAS流量。</block>
   <block id="a3f8b70147487a4cbe0d1e707fb50ec9" category="paragraph">每個負載平衡器的設定如下：</block>
@@ -694,22 +682,16 @@
   <block id="0777a377adfb71ee50970edc3940dc96" category="list-text">一個udp轉送規則</block>
   <block id="8141cbd2dd808b9e48e91eaf3d5f2fe1" category="list-text">全域存取已停用</block>
   <block id="83d4ff33554cb62b1f10057bae8d85ce" category="paragraph">即使預設停用全域存取、仍支援在部署後啟用IT。我們停用此功能、因為跨區域流量的延遲時間會大幅增加。我們希望確保您不會因為意外的跨區域裝載而有負面體驗。啟用此選項是專為您的業務需求所打造。</block>
-  <block id="75f83e966c01c1de3b682a52f8d4c7c0" category="list-text">一個或多個區域用於HA配對</block>
   <block id="b998798af53f2f105151ceda08e634dd" category="list-text">多個區域（建議）</block>
   <block id="b7cc244050d3d3e8c009b5b563e1d7df" category="paragraph">跨三個區域部署 HA 組態、可確保在區域內發生故障時、仍能持續提供資料。請注意、與使用單一區域相比、寫入效能略低、但卻是最低的。</block>
   <block id="1421fc8092dbdb233072bc4ee14a9ce1" category="list-text">單一區域</block>
   <block id="91e1df513072689837977512c31be80c" category="paragraph">當部署在單一區域時、 Cloud Volumes ONTAP 使用分散配置原則的即可實現不受限制的 HA 組態。此原則可確保 HA 組態不會在區域內發生單點故障、而無需使用個別區域來實現故障隔離。</block>
   <block id="7a84ddecb590ceeb3544024ab7097add" category="paragraph">此部署模式可降低成本、因為各區域之間不需支付任何資料出口費用。</block>
-  <block id="0a27741a79d0e9ca18ec583e983bfb93" category="list-text">四個虛擬私有雲端、適用於HA配對</block>
-  <block id="9aac39c2eff8d072fd62e0e718e5684b" category="list-text">HA組態需要四個虛擬私有雲端（VPC）。由於 GCP 要求每個網路介面位於獨立的 VPC 網路、因此需要四台 VPC 。</block>
   <block id="d05ee1603902a8831c88a7a4e2d05592" category="list-text">VPC-0 用於資料和節點的傳入連線</block>
   <block id="420f5bde5fe8d88334d70c6e271fafb1" category="list-text">VPC-1 、 VPC-2 和 VPC-3 用於節點與 HA 中介器之間的內部通訊</block>
-  <block id="3d13cafcfa05e263c4df4bafb6f8f947" category="list-text">HA配對的子網路</block>
   <block id="8a8c42c41cee152d79d679a14f70eab6" category="list-text">每個VPC都需要私有子網路。</block>
   <block id="79dd843cdbd0a98276c26f29bded2257" category="paragraph">如果您將Connector放在VPC-0中、則必須在子網路上啟用私有Google Access、才能存取API並啟用資料分層。</block>
   <block id="879d9e5531b71e6c91d2bb1771c06d40" category="paragraph">這些VPC中的子網路必須具有不同的CIDR範圍。它們不能有重疊的CIDR範圍。</block>
-  <block id="115b6c4bc1559957108cd2e500828c8d" category="list-text">單一節點系統適用的單一虛擬私有雲</block>
-  <block id="50db7350c142ba7d29f00df81b4c786b" category="list-text">單一節點系統需要一個 VPC 。</block>
   <block id="b9ea9f76a11191d80f8fe1abc9437eb6" category="list-text">共享VPC</block>
   <block id="f3d03214bf75026b54f5b2c16fec0e81" category="list-text">支援的對象包括 Google Cloud 共享 VPC 和獨立 VPC 。 Cloud Volumes ONTAP</block>
   <block id="d3a2a7fdaa8373f4a0dca1f16e49c9c1" category="paragraph">對於單一節點系統、VPC可以是共享VPC或獨立VPC。</block>
@@ -720,48 +702,30 @@
   <block id="0d8050524ef140aadb3a681481890b39" category="list-text">VPC中的封包鏡射</block>
   <block id="4d6aebef0af2c2c1118b467bdf0dadf0" category="inline-link">封包鏡射</block>
   <block id="7c0126eb5fa57fb86ccb4cf44811856d" category="list-text"><block ref="581f54bac504640f66f842676676be03" category="inline-link-rx"></block> 必須在部署Cloud Volumes ONTAP 了下列項目的Google Cloud VPC中停用。啟用封包鏡射時、無法正常運作。Cloud Volumes ONTAP</block>
-  <block id="d3d79704bb54117545a4635e1d22fc65" category="list-text">輸出網際網路存取 Cloud Volumes ONTAP 功能</block>
   <block id="4c896c50345c5252f4b0e8fc4bf10723" category="admonition">如果您使用 HA 配對、 HA 中介器不需要傳出網際網路存取。</block>
   <block id="af5123aa908861af9755bea4400d279c" category="list-text">私有IP位址</block>
-  <block id="e7787f4da96c754ed6401b93cf7a96ee" category="list-text">*單一節點*：3或4個私有IP位址</block>
   <block id="c0d1b864d00da3eb6415590dfa2621ab" category="paragraph">如果Cloud Volumes ONTAP 您使用API部署了Sf2並指定下列旗標、則可以跳過儲存VM（SVM）管理LIF的建立：</block>
   <block id="9389c2cd70872a229cd788537557d183" category="paragraph">「kipSvmManagementLif: true」</block>
   <block id="2be40f62b7c4e1d13a18dcc030852bf8" category="paragraph">LIF 是與實體連接埠相關聯的 IP 位址。諸如VMware等管理工具需要儲存VM（SVM）管理LIF SnapCenter 。</block>
-  <block id="a4dcab9c1ee36b30447e9cfab646cbc8" category="list-text">* HA配對*：14或15個私有IP位址</block>
   <block id="0ac7ae25c356474957d53018f385f434" category="list-text">VPC-0的7或8個私有IP位址</block>
   <block id="16dba371e7c3be679c75a860acf986a5" category="list-text">VPC-1的兩個私有IP位址</block>
   <block id="3b36c3b05500e8c44c01c05c2c597b97" category="list-text">VPC-2的兩個私有IP位址</block>
   <block id="75a392272a1bb675ed8f846182436d6e" category="list-text">VPC-3的三個私有IP位址</block>
   <block id="4dfddd1829f7fb340bd9b36bff6e3130" category="list-text">防火牆規則</block>
   <block id="2a361a1f21cbd928455b1bd06df94169" category="paragraph">請注意、 HA 組態需要兩組防火牆規則：</block>
-  <block id="01e18e5463e6c1fc9c05a5b8a728f3ff" category="list-text">VPC-0 中 HA 元件的一組規則。這些規則可讓您存取 Cloud Volumes ONTAP 資料以存取資料。 <block ref="889fb5c02a9d32a6457688ad005f7e96" category="inline-xref-macro-rx"></block>。</block>
-  <block id="204347da7430e0509c4b62949e49e5dc" category="list-text">VPC-1 、 VPC-2 和 VPC-3 中的另一組 HA 元件規則。這些規則可用於 HA 元件之間的傳入和傳出通訊。 <block ref="889fb5c02a9d32a6457688ad005f7e96" category="inline-xref-macro-rx"></block>。</block>
-  <block id="d9352b05e7fd32136338aa8bf365e170" category="list-text">從 Cloud Volumes ONTAP 功能區連接到 Google Cloud Storage 、以利資料分層</block>
   <block id="5e74b536fe3c8bd111e49f783c8e991c" category="inline-link">Google Cloud 文件：設定私有 Google Access</block>
   <block id="9e0ae4847043d43d71330ce503e69ac8" category="list-text">如果您想要將冷資料分層至 Google Cloud Storage 資源桶、 Cloud Volumes ONTAP 則必須將駐留的子網路設定為私有 Google Access （如果您使用 HA 配對、則此子網路位於 VPC-0 ）。如需相關指示、請參閱<block ref="6db326f0ee07df97e25069fccf883deb" category="inline-link-rx"></block>。</block>
   <block id="df025646ed6854c0696237c0ac916446" category="list-text">連線 ONTAP 至其他網路中的不二系統</block>
-  <block id="14725afebf967c0c497c447ebcaf1764" category="list-text">若要在 Cloud Volumes ONTAP GCP 中的某個系統與 ONTAP 其他網路中的某個系統之間複寫資料、您必須在 VPC 與另一個網路（例如您的公司網路）之間建立 VPN 連線。</block>
   <block id="2fbb401eef4220b4a89cce3e59325dcb" category="inline-link">Google Cloud 文件：雲端 VPN 概述</block>
   <block id="6d1472a8434e4945740fa177e609f886" category="paragraph">如需相關指示、請參閱<block ref="1bc8aad79f56acf8c242cfb981c11ee1" category="inline-link-rx"></block>。</block>
-  <block id="be541d1f37f2cc0c7ba1cfd7fcfbb4db" category="section-title">連線至目標網路</block>
-  <block id="e0ab516914623c72df4ff708af6cdd54" category="section-title">防火牆規則 Cloud Volumes ONTAP</block>
-  <block id="4907f0fb8777892173f7e34fa56bfcdb" category="paragraph">適用於此功能的防火牆規則 Cloud Volumes ONTAP 需要傳入和傳出規則。</block>
-  <block id="bcf66fd73f27e271725271d68f4723a9" category="paragraph">如果您要部署 HA 組態、 Cloud Volumes ONTAP 以下是 VPC-0 中的防火牆規則。</block>
   <block id="62978cf670cdcd284392400fa0cb70a9" category="list-text">*限選定VPC *：傳入流量的來源篩選器為VPC的子網路範圍、Cloud Volumes ONTAP 適用於該系統、以及連接器所在VPC的子網路範圍。這是建議的選項。</block>
   <block id="ba2e1bf50371835f50d77c05a977d80c" category="list-text">*所有VPC*：傳入流量的來源篩選器為0.00.0.0/0 IP範圍。</block>
   <block id="1147a9bceab35dc98b14493a462a8f27" category="inline-link">Google Cloud文件：負載平衡器防火牆規則</block>
   <block id="4fa4c5ae842db9adb7911d016ca19362" category="paragraph">如果您使用自己的防火牆原則、請確定您新增了所有需要與Cloud Volumes ONTAP 之通訊的網路、但同時也請務必新增這兩個位址範圍、以讓內部Google負載平衡器正常運作。這些位址分別為130.211.0.0/22和35.191.0/16。如需詳細資訊、請參閱<block ref="ec02114a2c39456710780c7d788390e7" category="inline-link-rx"></block>。</block>
   <block id="1395d3dc336eac468612e7bbe8281f7a" category="cell">63001-63050</block>
   <block id="06fb5a0f91eb3d073524ac0c7e590c54" category="cell">負載平衡探針連接埠、判斷哪個節點正常（僅 HA 配對需要）</block>
-  <block id="9fda35946418ee004d3cdc93c12473b4" category="section-title">VPC-1 、 VPC-2 和 VPC-3 的防火牆規則</block>
   <block id="4e9d1f4e3c452c7aba2d9cc51c690416" category="inline-xref">以上所列 Cloud Volumes ONTAP 的 for 列舉</block>
-  <block id="8ab03e4616af1a81bd7e097e2a865c29" category="paragraph">在 GCP 中、 HA 組態會部署在四個 VPC 上。VPC-0 中 HA 組態所需的防火牆規則為 <block ref="6696339384f87dfedda2136f4a028ff0" category="inline-xref-macro-rx"></block>。</block>
   <block id="e83b31d42852ca12480d330a3385214f" category="paragraph">HA節點與HA中介器之間的通訊會透過連接埠3260（iSCSI）進行。</block>
-  <block id="fa6661c729382092acdf9b6930de105e" category="section-title">Connector 的防火牆規則</block>
-  <block id="5ea521a799e1cf043cd101ec326044f6" category="paragraph">連接器的防火牆規則需要傳入和傳出規則。</block>
-  <block id="aa414a57d6f1347fc5212beb06655a8e" category="paragraph">連接器的預先定義防火牆規則會開啟所有傳出流量。如果可以接受、請遵循基本的傳出規則。如果您需要更嚴格的規則、請使用進階的傳出規則。</block>
-  <block id="bd83f7d2350eb6b777b2622dfd275ab6" category="paragraph">Connector 的預先定義防火牆規則包括下列傳出規則。</block>
-  <block id="6dabf2a1195c84bdf3b7bf30e5ddf080" category="cell">API會呼叫GCP和ONTAP VMware、Cloud Data Sense、勒索軟體服務、並將AutoSupport 此訊息傳送給NetApp</block>
   <block id="f9ca6b49a548c69b9daaf623a10c70fe" category="summary">帳戶管理員可移除 Cloud Volumes ONTAP 運作中的環境、將其移至其他系統、或疑難排解探索問題。</block>
   <block id="345811bf0383d75dd95a07e487d8b29b" category="doc">移除 Cloud Volumes ONTAP 運作環境</block>
   <block id="8a5743c35b84714fc6fe40c2cfab576b" category="list-text">在另一個工作區重新探索</block>
@@ -2930,7 +2894,6 @@
   <block id="81cc31df8f1cfdded8f19bde6b378f31" category="section-title">HA組態內部安全性群組的規則</block>
   <block id="7893e453f8f5e33915b2a7890867e098" category="paragraph">針對某個不穩定的HA組態、預先定義的內部安全群組Cloud Volumes ONTAP 包括下列規則。此安全性群組可在HA節點之間以及中介器與節點之間進行通訊。</block>
   <block id="52bb55c8099e551b91ec50d983141e9a" category="paragraph">若要在Cloud Volumes ONTAP Azure中的某個系統與ONTAP 其他網路中的某些系統之間複寫資料、您必須在Azure vnet與其他網路（例如您的公司網路）之間建立VPN連線。</block>
-  <block id="d17764ffa4b2b993f35778d5e7c1f22e" category="cell">API將Azure和ONTAP VMware呼叫、Cloud Data Sense、勒索軟體服務、並將AutoSupport VMware訊息傳送給NetApp</block>
   <block id="aa73f4eb582c3e0e9bca433f741e8a12" category="inline-link-macro">深入瞭Cloud Volumes ONTAP 解支援S3和其他用戶端傳輸協定的功能</block>
   <block id="b19dcb5d79169da5722547be25d81a05" category="paragraph"><block ref="2b5ab7e81cd6465f0e4fd342fda67520" category="inline-link-macro-rx"></block>。</block>
   <block id="2f2289dc4d144dd69a1fd73eaab183e0" category="summary">部分Cloud Volumes ONTAP 支援的組態包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備以Flash Cache的形式使用、可提供更好的效能。</block>
@@ -3930,7 +3893,6 @@
   <block id="2a37f0bf23209f41128e5c28160ecd0b" category="paragraph">如果您嘗試在Cloud Volumes ONTAP Azure資源群組中部署第二個「鏈接HA配對」、則BlueXP會遇到連線問題。</block>
   <block id="ce23ccd5f69f45f3f2a022750ab9d6e7" category="paragraph">您不需要建立安全性群組、因為BlueXP會為您建立安全性群組。如果您需要使用自己的安全性群組規則、請參閱下列安全性群組規則。</block>
   <block id="196affcedcabdcd9243dfaab58327dae" category="paragraph">BlueXP會建立Azure安全性群組、其中包含Cloud Volumes ONTAP 了順利運作所需的傳入和傳出規則。您可能需要參照連接埠進行測試、或是偏好使用自己的安全性群組。</block>
-  <block id="23486ca53d499245ebae5460cf6d10ad" category="cell">在BlueXP中提供SaaS功能與服務。</block>
   <block id="ecd87ae03b07f0712964d94eb75683a5" category="cell">用於BlueXP的DNS解析</block>
   <block id="4350eea5911affd7e2c237dd5705777c" category="list-text">在部署Cloud Volumes ONTAP 時、BlueXP會建立一個資料服務儲存VM。部分組態支援額外的儲存 VM 。 <block ref="a7cc00a0b341c53959a0ff9bb9ec925b" category="inline-link-macro-rx"></block>。</block>
   <block id="d3ba63f114f62f143d97434a92eb48a8" category="paragraph">從BlueXP 3.9.5版本開始、系統會在初始儲存VM上啟用邏輯空間報告功能。以邏輯方式回報空間時ONTAP 、此功能會報告磁碟區空間、讓儲存效率功能所節省的所有實體空間也會報告為已使用。</block>
@@ -4041,10 +4003,7 @@
   <block id="0d5b8e06664cffcf9f498e7821c89481" category="list-text">您可以跨多個區域或單一區域部署HA組態、確保資料的高可用度。建立HA配對時、BlueXP會提示您選擇多個區域或單一區域。</block>
   <block id="44b028753f7a7976b8be9d11b1afed32" category="paragraph">在建立HA配對時、BlueXP會提示您選擇四個VPC：</block>
   <block id="c44db905496bb7220714be5427afb035" category="paragraph">如果傳出的網際網路連線無法傳送AutoSupport 功能性訊息、則BlueXP會自動將Cloud Volumes ONTAP 您的功能性更新系統設定為使用Connector做為Proxy伺服器。唯一的需求是確保連接器的防火牆允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
-  <block id="8c9d06136a351aef5233e159f1b086f5" category="list-text">在Cloud Volumes ONTAP GCP中、BlueXP會將下列數目的私有IP位址分配給各個方面：</block>
-  <block id="c3872c89a315822852621c448e41aac4" category="list-text">您不需要建立防火牆規則、因為BlueXP會為您執行這些規則。如果您需要使用自己的防火牆、請參閱下列防火牆規則。</block>
   <block id="33e7d975fa9a0910415fa300d8bf304a" category="paragraph">如需在BlueXP中設定資料分層所需的其他步驟、請參閱 <block ref="9ae9bcf59853ba48ce2658a41db24feb" category="inline-link-macro-rx"></block>。</block>
-  <block id="e468ba21e4a82ddfaf9b8e28f74bb73b" category="paragraph">BlueXP會建立GCP防火牆規則、其中包含Cloud Volumes ONTAP 運作成功所需的傳入和傳出規則。您可能需要參照連接埠進行測試、或是偏好使用自己的防火牆規則。</block>
   <block id="639c4a9b76126cf4712751dee5546383" category="paragraph">同時、BlueXP針對VPC-1、VPC-2和VPC-3中的執行個體所建立的預先定義防火牆規則、可透過_all_傳輸協定和連接埠進行入侵通訊。這些規則可在HA節點之間進行通訊。</block>
   <block id="3ef69cb41da937aa60ab5fbab53eb42a" category="list-text">升級Cloud Volumes ONTAP 時、BlueXP也會視需要更新中介執行個體。</block>
   <block id="5d345d14f8662bfe45d8562fba90c487" category="list-text">當Cloud Volumes ONTAP 您從BlueXP建立一套功能不全的HA配對時、系統會提示您提供一個用於中介執行個體的金鑰配對。您可以使用該金鑰配對來進行SSH存取<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> 使用者：</block>
@@ -4169,7 +4128,6 @@
   <block id="0dbd392deaa683187b56036c1e13a1a6" category="list-text">如果使用客戶管理的加密金鑰和分層資料來物件儲存設備、則BlueXP會嘗試使用相同的金鑰來加密持續磁碟。但您必須先啟用Google Cloud Storage儲存桶、才能使用這些金鑰：</block>
   <block id="2f75073874e4641aa2be5b8208fdfe64" category="paragraph">請參閱<block ref="cf06621be2a2bfce0ef0595deee16955" category="inline-link-rx"></block> 如需使用「 GcpEncryption 」參數的詳細資訊、</block>
   <block id="2f1e7d6affd61098f336e5b1777ec8e2" category="summary">BlueXP負責Cloud Volumes ONTAP 設定功能完善的網路元件、例如IP位址、網路遮罩和路由。您需要確保可以存取傳出網際網路、有足夠的私有IP位址可用、有適當的連線位置等等。</block>
-  <block id="716fe391ac4cd57434ca473a86d6a7da" category="paragraph">BlueXP（前身為Cloud Manager）負責Cloud Volumes ONTAP 設定用於支援的網路元件、例如IP位址、網路遮罩和路由。您需要確保可以存取傳出網際網路、有足夠的私有IP位址可用、有適當的連線位置等等。</block>
   <block id="b28334323356fda049acaa1568ee382c" category="paragraph">BlueXP會自動分配所需的私有IP位址數量給Cloud Volumes ONTAP 整個過程。您必須確保網路有足夠的私有IP位址可用。</block>
   <block id="bdc0bf1240a907023821eccea893d017" category="paragraph">BlueXP分配Cloud Volumes ONTAP 給功能的生命量取決於您是部署單一節點系統或HA配對。LIF 是與實體連接埠相關聯的 IP 位址。</block>
   <block id="7a4fc6df5acc7a338525efe76c970bd8" category="paragraph">BlueXP會將6個IP位址分配給單一節點系統：</block>
@@ -4464,11 +4422,6 @@
   <block id="7ec6925d846a27916198adf7334fcae3" category="list-text">如果您在建立Cloud Volumes ONTAP 一個功能不全的環境時啟用WORM、那麼您從BlueXP建立的每個磁碟區都會啟用WORM。不過ONTAP 、您可以使用「功能性CLI」或「系統管理程式」來建立已停用WORM的磁碟區。這些磁碟區不會以WORM速率收費。</block>
   <block id="3101fb677e91832ce5fd2af7de4c1850" category="list-text">如果您在建立工作環境時未啟用WORM、則從BlueXP建立的每個Volume都會停用WORM。這些磁碟區不會以WORM速率收費。不過ONTAP 、您可以使用支援WORM的CLI或System Manager來建立磁碟區。這些磁碟區將以WORM速率收費。</block>
   <block id="38aefad2ca205e663da97b7fdd932dcf" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block></block>
-  <block id="37ba276f010f4ea07f1196b487811443" category="paragraph">\https://*.api.bluexp.netapp.com</block>
-  <block id="e1095ff19466581c5274f67123c95036" category="paragraph">\https://api.bluexp.netapp.com</block>
-  <block id="9e434ddc2ad4b9de005368b77254223d" category="paragraph">\https://*.cloudmanager.cloud.netapp.com</block>
-  <block id="115781a0043a85f8707c5c99fd02dc75" category="paragraph">\https://cloudmanager.cloud.netapp.com</block>
-  <block id="7eea1027ea51763c57b7b5965f1ba900" category="admonition">Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即將推出的版本將會開始聯絡「api.bluexp.netapp.com"」。</block>
   <block id="b9eeb00cda3e979e1efe9bef61f951fc" category="list-text">Azure HA多重可用度區域</block>
   <block id="0f8e1302b6dedb536c0490b7602b0b32" category="list-text">從《支援NVRAM和核心磁碟》的《支援範圍》（《支援範圍》）的《支援範圍》（ONTAP<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>，可透過託管磁碟管理加密金鑰。較低版本將使用Microsoft管理的金鑰、而非客戶管理的金鑰。</block>
   <block id="5aabc9069557be7e4aeff466605cbc75" category="list-text">單一節點</block>
@@ -4552,19 +4505,6 @@
   <block id="579a953172073c3fe33dc907abd6b3f8" category="paragraph">Cloud Manager會建立安全群組、其中包括Cloud Manager和Cloud Volumes ONTAP NetApp在雲端成功運作所需的傳入和傳出規則。您可能想要參照連接埠進行測試、或是想要使用自己的安全性群組。</block>
   <block id="f4b34b24cc464b0154bd81cd6d906233" category="paragraph">針對此功能、預先定義 Cloud Volumes ONTAP 的內部安全群組包含下列規則：Cloud Manager 一律會建立這個安全群組。您沒有使用自己的選項。</block>
   <block id="3f2a41d3e64efd3d137a5132f84eb8b6" category="paragraph">BlueXP分配Cloud Volumes ONTAP 給功能的生命量取決於您是部署單一節點系統或HA配對。LIF 是與實體連接埠相關聯的 IP 位址。諸如 VMware 的管理工具需要 SVM 管理 LIF SnapCenter 。</block>
-  <block id="df290139b26527b2473b1e82a36386d4" category="paragraph">設定您的網路、讓 Connector 能夠管理公有雲環境中的資源和程序。除了連接器的虛擬網路和子網路之外、您還需要確保符合下列需求。</block>
-  <block id="2f03f8dd45cb031f8f3cce95fd4acefc" category="paragraph">連接器需要網路連線至您所建立的工作環境類型、以及您計畫啟用的服務。</block>
-  <block id="3f92e0c134aea90b900c9d9fb8728adc" category="paragraph">例如、如果您在公司網路中安裝Connector、則必須設定VPN連線至虛擬網路、以便在其中啟動Cloud Volumes ONTAP 效益管理功能。</block>
-  <block id="3ae1b8362f96338c0c28c7652251bc8b" category="paragraph">如果您的組織需要為所有傳出的網際網路流量部署HTTP Proxy、請取得下列有關HTTP Proxy的資訊：</block>
-  <block id="75ba8d70e3692ba200f0e0df37b4d2ae" category="list-text">IP 位址</block>
-  <block id="2daf1cb573c2c61422faf64610cf9402" category="list-text">認證資料</block>
-  <block id="6a3f3799bc264d32568bb7169ddd515a" category="list-text">HTTPS憑證</block>
-  <block id="338578acf7e0dc54ebcd8c3592f0b022" category="section-title">安全性群組</block>
-  <block id="ae6252cb830dbd695650f78870fe4309" category="inline-link">本機 UI</block>
-  <block id="4f85ea1fc2337ca87ea3957b6ed0f523" category="paragraph">連接器沒有傳入流量、除非您啟動連接器、或連接器是AutoSupport 作為Proxy來接收資訊、否則連接器不會傳入。HTTP 和 HTTPS 可存取<block ref="b66a5441ef03e9f48be36352f5f78769" category="inline-link-rx"></block>、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。</block>
-  <block id="d72a801b2f49d6a4ed170ebdf3cf0efc" category="section-title">IP位址限制</block>
-  <block id="65d425afa00c3ead65e6a786e55b60bc" category="inline-link">深入瞭解此限制</block>
-  <block id="9b1f033bcac0595326d8acd1ef89e52c" category="paragraph">可能與172範圍內的IP位址發生衝突。<block ref="120cc620882c590412757bc531a4f583" category="inline-link-rx"></block>。</block>
   <block id="236afd214a59ab065a50ccb9cbbbe4c2" category="cell">9.12.0</block>
   <block id="97145bbcb02af5e728740b1d40bd2046" category="section-title">2022年12月15日</block>
   <block id="bf748f930fa11e46773ff6f7b815e480" category="section-title">零件9.12.0 Cloud Volumes ONTAP</block>
@@ -4628,4 +4568,36 @@
   <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
   <block id="6d50c94851edb68865f91b19a7c8e802" category="inline-link">如需Azure區域備援儲存設備的詳細資訊、請參閱Azure文件</block>
   <block id="d0dd1e24dc3eec7e346159d97577b2a5" category="list-text">將兩Cloud Volumes ONTAP 個靜態節點部署至不同的可用度區域。可用度區域可確保節點位於不同的故障網域中。<block ref="ac08b397e7ae08c3f76d7057ac214476" category="inline-link-rx"></block>。</block>
+  <block id="806bf55e3fada643423a5e8b443a821f" category="summary">設定您的Google Cloud網路功能、Cloud Volumes ONTAP 讓各個系統都能正常運作。</block>
+  <block id="b2a93ab6944b01da98f77474158de584" category="doc">Google Cloud中的功能需求Cloud Volumes ONTAP</block>
+  <block id="589257f6242e3a6232a5f72f7867c4b6" category="inline-link-macro">瞭解HA配對如何在Google Cloud中運作</block>
+  <block id="c8e39b92d04aae2c3a6d3e6f428d480e" category="paragraph">如果您想要部署 HA 配對、應該這樣做 <block ref="135d51832239d75e9eff2c1e7574765f" category="inline-link-macro-rx"></block>。</block>
+  <block id="26cc43b1e094bf317e2d9013491cb9af" category="paragraph">Google Cloud必須符合下列要求。</block>
+  <block id="cd28e0a76ff845ef2e9e5eeced367a01" category="section-title">單一節點系統的特定需求</block>
+  <block id="d9358a4b713f2c5cc37fadb9fef3c574" category="paragraph">如果您要部署單一節點系統、請確定您的網路符合下列需求。</block>
+  <block id="1ec1df3337524963212c8e27b42ab3cc" category="section-title">一個VPC</block>
+  <block id="5bd17b13142e93319e9f09e96063763a" category="paragraph">單一節點系統需要一個虛擬私有雲（VPC）。</block>
+  <block id="268f43c6ccc1a99cbd92114c3903e0f1" category="paragraph">BlueXP會將3或4個私有IP位址分配給Google Cloud中的單一節點系統。</block>
+  <block id="fea70579987e879c99c2df3cebf39f70" category="section-title">HA配對的特定需求</block>
+  <block id="549263475571fab7c340abda30733212" category="paragraph">如果您要部署HA配對、請確定您的網路符合下列需求。</block>
+  <block id="5dadc4e112da073feca16f4aff4ba237" category="section-title">一個或多個區域</block>
+  <block id="4c62b2e0648ccb7cc5ac07de5a4c67f4" category="section-title">四個虛擬私有雲端</block>
+  <block id="0fc9a4a783a2856e3a35ee9b12a2f357" category="paragraph">HA組態需要四個虛擬私有雲端（VPC）。由於Google Cloud要求每個網路介面都位於獨立的VPC網路、因此需要四個VPC。</block>
+  <block id="74cd215a46d2bd96fc35dad7ef313283" category="section-title">子網路</block>
+  <block id="206f49c25e0bbd2da69d30f14f4f222d" category="paragraph">在Google Cloud中、BlueXP會將14或15個私有IP位址分配給HA配對：</block>
+  <block id="974715540568df2f5efe3c40777931b7" category="section-title">連線至Google Cloud Storage以進行資料分層</block>
+  <block id="53c6f0799470bd2e67e7902192e11c7c" category="paragraph">若要在Cloud Volumes ONTAP Google Cloud中的某個支援中心系統與ONTAP 其他網路中的支援中心系統之間複寫資料、您必須在VPC與其他網路（例如公司網路）之間建立VPN連線。</block>
+  <block id="8bb6cd6de4a896f626b89e711d40aa4c" category="paragraph">BlueXP會建立Google Cloud防火牆規則、其中包括Cloud Volumes ONTAP 需要順利運作的傳入和傳出規則。您可能需要參照連接埠進行測試、或是偏好使用自己的防火牆規則。</block>
+  <block id="30f3abb35963e0cd7d66dc08581087c9" category="paragraph">適用於此功能的防火牆規則 Cloud Volumes ONTAP 需要傳入和傳出規則。如果您要部署 HA 組態、 Cloud Volumes ONTAP 以下是 VPC-0 中的防火牆規則。</block>
+  <block id="cb97a2b297b246ea14d6c17e8e5ee28a" category="list-text">VPC-0 中 HA 元件的一組規則。這些規則可讓您存取 Cloud Volumes ONTAP 資料以存取資料。</block>
+  <block id="853d5f8d41b181e1e73157826ecc4287" category="inline-xref">VPC-2和VPC-3、深入瞭解</block>
+  <block id="9cd85fea135b7ad7c981c3cc1f75a6ea" category="list-text">VPC-1 、 VPC-2 和 VPC-3 中的另一組 HA 元件規則。這些規則可用於 HA 元件之間的傳入和傳出通訊。 <block ref="8d9dee5ea3dbe6098c688583dd57c09d" category="inline-xref-macro-rx"></block>。</block>
+  <block id="ae2d87942e6697528344ccace68364e3" category="section-title">VPC-1、VPC-2和VPC-3的規則</block>
+  <block id="5fb73c1af98e831dcfe0ce66f4582d3b" category="paragraph">在Google Cloud中、HA組態部署於四個VPC上。VPC-0 中 HA 組態所需的防火牆規則為 <block ref="8216cabe940880477030118a8a765034" category="inline-xref-macro-rx"></block>。</block>
+  <block id="4fad8964dcacb8a6d329f6e2e57a2af9" category="paragraph">如果您尚未建立連接器、也應該檢閱連接器的網路需求。</block>
+  <block id="f63c987d15807845ae712461b133bad5" category="inline-link">檢視連接器的網路需求</block>
+  <block id="fec3732f829761687c4a94dc2dcf4ef5" category="paragraph"><block ref="fec3732f829761687c4a94dc2dcf4ef5" category="inline-link-rx"></block></block>
+  <block id="0f5cc196efac5a9fadb7272e55c7d686" category="summary">設定您的 Azure 網路、 Cloud Volumes ONTAP 使其能夠正常運作。</block>
+  <block id="323c8a1d29b771e63edf9d7a9968be4e" category="paragraph"><block ref="323c8a1d29b771e63edf9d7a9968be4e" category="inline-link-rx"></block></block>
+  <block id="f483cdf3bbc75344ed7ba476a346b3ae" category="paragraph"><block ref="f483cdf3bbc75344ed7ba476a346b3ae" category="inline-link-rx"></block></block>
 </blocks>
