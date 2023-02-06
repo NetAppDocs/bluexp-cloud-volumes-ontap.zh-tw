@@ -1,6 +1,7 @@
 ---
 settings:
   name: Cloud Volumes ONTAP
+  harmony_integration: maestro
   platform: cloud
   internal:
     pdf_enabled: true
@@ -21,7 +22,7 @@ settings:
     - name: Microsoft Azure
       alias: Azure
       id: azure
-  langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr,fr-fr,de-de
+  langs: zh-tw,us-en,ja-jp,ko-kr,zh-cn,de-de,fr-fr
 sidebar:
   entries:
   - title: 文件Cloud Volumes ONTAP
@@ -189,6 +190,8 @@ sidebar:
           url: "/task-change-route-tables.html"
         - title: 監控 AWS 成本
           url: "/task-monitoring-costs.html"
+        - title: 設定放置群組建立
+          url: task-configure-placement-group-failure-aws.html
       - title: Azure管理
         flavor: azure
         entries:

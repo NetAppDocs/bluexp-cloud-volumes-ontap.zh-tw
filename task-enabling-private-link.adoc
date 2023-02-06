@@ -43,7 +43,7 @@ summary: 使用Azure Private Link連線至相關儲存帳戶。Cloud Volumes ONT
 
 == 使用Azure私有連結
 
-在大多數情況下、您不需要做任何事、就能使用Cloud Volumes ONTAP 下列功能來設定Azure私有連結：BlueXP會為您管理Azure私有連結。但是如果您使用 Azure 私有 DNS 、則需要編輯組態檔。您也應該瞭解Azure中的Connector位置需求。
+在大多數情況下、您不需要做任何事、就能使用Cloud Volumes ONTAP 下列功能來設定Azure私有連結：BlueXP會為您管理Azure私有連結。但如果您使用Azure私有DNS、則必須編輯組態檔。您也應該瞭解Azure中的Connector位置需求。
 
 
 
@@ -81,6 +81,7 @@ image:diagram_azure_private_link.png["概念性影像、顯示資料存取功能
    "resource-group" : "<resource group name of the DNS zone>",
    "subscription" : "<subscription ID>",
    "use-existing" : true
+   "create-private-dns-zone-link" : true
 }
 ....
 +

@@ -88,6 +88,10 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["深入瞭解Cloud Data Sense"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["深入瞭解Cloud Backup"^]
++
+
+TIP: 如果您想要使用WORM和資料分層、您必須停用Cloud Backup、並部署Cloud Volumes ONTAP 9.8版或更新版本的運作環境。
+
 
 
 . *位置*：選取區域、可用度區域、vnet和子網路、然後選取核取方塊以確認連接器與目標位置之間的網路連線。
@@ -156,15 +160,24 @@ link:concept-data-tiering.html["深入瞭解資料分層"]。
 
 
 
-. * 寫入速度與 WORM * ：選擇 * 正常 * 或 * 高速 * 寫入速度、並視需要啟動一次寫入、多次讀取（ WORM ）儲存設備。
+. *寫入速度與WORM *：
++
+.. 如果需要、請選擇*正常*或*高速*寫入速度。
 +
 link:concept-write-speed.html["深入瞭解寫入速度"]。
 
+.. 視需要啟動一次寫入、多次讀取（WORM）儲存設備。
 +
-如果資料分層已啟用、則無法啟用 WORM 。
+此選項僅適用於特定VM類型。若要瞭解支援哪些VM類型、請參閱 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HA配對授權的支援組態"]。
+
++
+如果啟用Cloud Volumes ONTAP 資料分層功能、無法啟用WORM 9.7版及更低版本。啟用WORM和分層後、將Cloud Volumes ONTAP 會封鎖還原或降級至物件9.8。
 
 +
 link:concept-worm.html["深入瞭解 WORM 儲存設備"]。
+
+.. 如果您啟動WORM儲存設備、請選取保留期間。
+
 
 . * 建立 Volume * ：輸入新磁碟區的詳細資料、或按一下 * 跳過 * 。
 +
@@ -298,6 +311,10 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["深入瞭解Cloud Data Sense"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["深入瞭解Cloud Backup"^]
++
+
+TIP: 如果您想要使用WORM和資料分層、您必須停用Cloud Backup、並部署Cloud Volumes ONTAP 9.8版或更新版本的運作環境。
+
 
 
 . * HA部署模式*：
@@ -375,18 +392,24 @@ link:concept-data-tiering.html["深入瞭解資料分層"]。
 
 
 
-. * 寫入速度與 WORM * ：選擇 * 正常 * 或 * 高速 * 寫入速度、並視需要啟動一次寫入、多次讀取（ WORM ）儲存設備。
+. *寫入速度與WORM *：
++
+.. 如果需要、請選擇*正常*或*高速*寫入速度。
 +
 link:concept-write-speed.html["深入瞭解寫入速度"]。
 
+.. 視需要啟動一次寫入、多次讀取（WORM）儲存設備。
 +
 此選項僅適用於特定VM類型。若要瞭解支援哪些VM類型、請參閱 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HA配對授權的支援組態"]。
 
 +
-如果資料分層已啟用、則無法啟用 WORM 。
+如果啟用Cloud Volumes ONTAP 資料分層功能、無法啟用WORM 9.7版及更低版本。啟用WORM和分層後、將Cloud Volumes ONTAP 會封鎖還原或降級至物件9.8。
 
 +
 link:concept-worm.html["深入瞭解 WORM 儲存設備"]。
+
+.. 如果您啟動WORM儲存設備、請選取保留期間。
+
 
 . *安全通訊至儲存設備與WORM *：選擇是否啟用HTTPS連線至Azure儲存帳戶、並視需要啟動一次寫入、多次讀取（WORM）儲存設備。
 +

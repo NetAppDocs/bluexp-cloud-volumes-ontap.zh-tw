@@ -91,6 +91,10 @@ TIP: 如果多位 IAM 使用者使用相同的 AWS 帳戶、則每位使用者�
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["深入瞭解Cloud Data Sense"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["深入瞭解Cloud Backup"^]
++
+
+TIP: 如果您想要使用WORM和資料分層、您必須停用Cloud Backup、並部署Cloud Volumes ONTAP 9.8版或更新版本的運作環境。
+
 
 
 . *位置與連線*：輸入您在中記錄的網路資訊 link:task-planning-your-config.html#aws-network-information-worksheet["AWS工作表"]。
@@ -169,15 +173,21 @@ link:concept-data-tiering.html["瞭解資料分層的運作方式"]。
 
 
 
-. * 寫入速度與 WORM * ：選擇 * 正常 * 或 * 高速 * 寫入速度、並視需要啟動一次寫入、多次讀取（ WORM ）儲存設備。
+. *寫入速度與WORM *：
++
+.. 如果需要、請選擇*正常*或*高速*寫入速度。
 +
 link:concept-write-speed.html["深入瞭解寫入速度"]。
 
+.. 視需要啟動一次寫入、多次讀取（WORM）儲存設備。
 +
-如果資料分層已啟用、則無法啟用 WORM 。
+如果啟用Cloud Volumes ONTAP 資料分層功能、無法啟用WORM 9.7版及更低版本。啟用WORM和分層後、將Cloud Volumes ONTAP 會封鎖還原或降級至物件9.8。
 
 +
 link:concept-worm.html["深入瞭解 WORM 儲存設備"]。
+
+.. 如果您啟動WORM儲存設備、請選取保留期間。
+
 
 . * 建立 Volume * ：輸入新磁碟區的詳細資料、或按一下 * 跳過 * 。
 +
@@ -321,6 +331,10 @@ TIP: 如果多位 IAM 使用者使用相同的 AWS 帳戶、則每位使用者�
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["深入瞭解Cloud Data Sense"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["深入瞭解Cloud Backup"^]
++
+
+TIP: 如果您想要使用WORM和資料分層、您必須停用Cloud Backup、並部署Cloud Volumes ONTAP 9.8版或更新版本的運作環境。
+
 
 
 . * HA 部署模式 * ：選擇 HA 組態。
@@ -409,15 +423,21 @@ link:concept-data-tiering.html["瞭解資料分層的運作方式"]。
 
 
 
-. * 寫入速度與 WORM * ：選擇 * 正常 * 或 * 高速 * 寫入速度、並視需要啟動一次寫入、多次讀取（ WORM ）儲存設備。
+. *寫入速度與WORM *：
++
+.. 如果需要、請選擇*正常*或*高速*寫入速度。
 +
 link:concept-write-speed.html["深入瞭解寫入速度"]。
 
+.. 視需要啟動一次寫入、多次讀取（WORM）儲存設備。
 +
-如果資料分層已啟用、則無法啟用 WORM 。
+如果啟用Cloud Volumes ONTAP 資料分層功能、無法啟用WORM 9.7版及更低版本。啟用WORM和分層後、將Cloud Volumes ONTAP 會封鎖還原或降級至物件9.8。
 
 +
 link:concept-worm.html["深入瞭解 WORM 儲存設備"]。
+
+.. 如果您啟動WORM儲存設備、請選取保留期間。
+
 
 . * 建立 Volume * ：輸入新磁碟區的詳細資料、或按一下 * 跳過 * 。
 +

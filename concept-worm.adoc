@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-worm.html 
-keywords: worm, write once, read many, snaplock, retain, retention, period, cloud worm, worm storage 
+keywords: worm, write once, read many, snaplock, retain, retention, period, cloud worm, worm storage, tiering 
 summary: 您可以在 Cloud Volumes ONTAP 一個還原系統上啟動一次寫入、多次讀取（ WORM ）儲存、以未修改的形式保留檔案、保留指定的保留期間。Cloud WORM儲存設備採用SnapLock 支援各種技術、這表示WORM檔案在檔案層級受到保護。 
 ---
 = WORM 儲存設備
@@ -81,9 +81,21 @@ https://cloud.netapp.com/pricing["瞭解WORM儲存設備的定價"^]
 
 
 
+== WORM與資料分層
+
+當您建立全新Cloud Volumes ONTAP 的版本的更新版本時、可以同時啟用資料分層和WORM儲存。利用WORM儲存設備進行資料分層、可將資料分層至雲端的物件存放區。
+
+您應該瞭解下列關於啟用資料分層和WORM儲存設備的資訊：
+
+* 分層至物件儲存的資料不含ONTAP 「支援WORM」功能。為了確保端點對端點WORM功能、您必須正確設定儲存區權限。
+* 分層至物件儲存的資料並不具備WORM功能、這意味著從技術上而言、任何擁有完整儲存區和容器存取權的人、都能移除由ONTAP 實物分級的物件。
+* 啟用WORM和分層後、將Cloud Volumes ONTAP 會封鎖還原或降級至物件9.8。
+
+
+
+
 == 限制
 
 * WORM儲存在Cloud Volumes ONTAP 「受信任的儲存管理員」模式下運作。儘管WORM檔案受到保護、不會遭到竄改或修改、但即使這些磁碟區包含未過期的WORM資料、叢集管理員仍可刪除這些磁碟區。
 * 除了值得信賴的儲存管理員模式之外Cloud Volumes ONTAP 、在「值得信賴的雲端管理員」模式下、WORM儲存設備也會以隱含方式運作。雲端管理員可以直接從雲端供應商移除或編輯雲端儲存設備、在WORM資料到期日前刪除。
-* 啟動 WORM 儲存設備時、無法啟用資料分層至物件儲存設備的功能。
 

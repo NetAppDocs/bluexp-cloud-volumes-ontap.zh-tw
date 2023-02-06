@@ -332,7 +332,6 @@
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
   <block id="e2d4a517cbcae1c0966d5e478d743531" category="list-text">WORM儲存在Cloud Volumes ONTAP 「受信任的儲存管理員」模式下運作。儘管WORM檔案受到保護、不會遭到竄改或修改、但即使這些磁碟區包含未過期的WORM資料、叢集管理員仍可刪除這些磁碟區。</block>
   <block id="6d0cc0f6b100bdce8cb06276811faff9" category="list-text">除了值得信賴的儲存管理員模式之外Cloud Volumes ONTAP 、在「值得信賴的雲端管理員」模式下、WORM儲存設備也會以隱含方式運作。雲端管理員可以直接從雲端供應商移除或編輯雲端儲存設備、在WORM資料到期日前刪除。</block>
-  <block id="eb57ade58504f4d5c09cb5e8cd78ae55" category="list-text">啟動 WORM 儲存設備時、無法啟用資料分層至物件儲存設備的功能。</block>
   <block id="f5c4745b8a5809c2aa248d1297288719" category="summary">在雲端環境發生故障時、提供企業級的可靠性和持續運作。 Cloud Volumes ONTAP在 Azure 中、儲存設備會在兩個節點之間共享。</block>
   <block id="ca010532511b0575d0c11648404720a6" category="doc">Azure 中的高可用度配對</block>
   <block id="39579c446d8c5e21ff1d2b6c3e65c086" category="section-title">HA 元件</block>
@@ -1846,7 +1845,6 @@
   <block id="9402e8f13b9c1b7b1bbcad4d4c4eb4a9" category="paragraph"><block ref="9402e8f13b9c1b7b1bbcad4d4c4eb4a9" category="inline-link-rx"></block></block>
   <block id="9265447fe548064ca54a98dd4a111bc0" category="inline-link">適用於GCP的儲存限制Cloud Volumes ONTAP</block>
   <block id="2dcb300e9b01e5d98962a7e0c6eee87e" category="paragraph"><block ref="2dcb300e9b01e5d98962a7e0c6eee87e" category="inline-link-rx"></block></block>
-  <block id="a15ee6cc62f2676af04c7221ef99fc86" category="section-title">在 GCP 中調整系統規模</block>
   <block id="d1d964d1db8731b3b8174fa845b85de0" category="paragraph">調整 Cloud Volumes ONTAP 您的支援規模、有助於滿足效能與容量的需求。在選擇機器類型、磁碟類型和磁碟大小時、您應該注意幾個關鍵點：</block>
   <block id="3ea4bf9da7622edeeae1bf80e9c5cded" category="list-text">機器類型</block>
   <block id="c216ce09fef0e1ef250512b3b43005f3" category="list-text">請查看中支援的機器類型<block ref="f922a7787320953a33ee2591f979f78c" category="inline-link-rx"></block> 然後檢視 Google 提供的每種受支援機器類型的詳細資料。將工作負載需求與機器類型的 vCPU 和記憶體數量配對。請注意、每個 CPU 核心都能提升網路效能。</block>
@@ -2219,7 +2217,6 @@
   <block id="bef2f3bc1b5f6b5fc3eaabff818b8b07" category="inline-link">有關節點的原則要求 Cloud Volumes ONTAP</block>
   <block id="a6fcc094aa2aa8328784bade825b168a" category="inline-link-macro">瞭解資料分層的運作方式</block>
   <block id="e3d16ce79bcead59781233b93cb58009" category="paragraph"><block ref="204d09224c7e7513a2d3fc955e6c2d5a" category="inline-link-macro-rx"></block>。</block>
-  <block id="8ee28f71a3913c6cd38d72baee984fef" category="list-text">* 寫入速度與 WORM * ：選擇 * 正常 * 或 * 高速 * 寫入速度、並視需要啟動一次寫入、多次讀取（ WORM ）儲存設備。</block>
   <block id="fb0f1ebb01626c50d4db72222f7f93b8" category="cell">AD 網域中與 CIFS 伺服器相關聯的組織單位。預設值為「 CN= 電腦」。如果您將 AWS 託管 Microsoft AD 設定為 AD 伺服器 Cloud Volumes ONTAP 以供使用、您應該在此欄位中輸入 * OID=computers,O=corp* 。</block>
   <block id="92a1203fc5511fdb287e0ca1b80062ce" category="list-text">* 使用率設定檔、磁碟類型及分層原則 * ：視需要選擇是否要啟用儲存效率功能、並編輯磁碟區分層原則。</block>
   <block id="1f6465335a2368ecd8ca00b7d4b12299" category="paragraph">如需詳細資訊、請參閱 <block ref="d6fdbd844f3d68fb39cacde3bf57bd32" category="inline-link-macro-rx"></block> 和 <block ref="69d3706831f999336fb27703356dae22" category="inline-link-macro-rx"></block>。</block>
@@ -2639,13 +2636,9 @@
   <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">在登入頁面上、提供您的NetApp支援網站註冊電子郵件地址和密碼、以執行驗證程序。</block>
   <block id="eef256fe1f25b0dfdcc3971d7f0a9974" category="summary">您可以在 Cloud Volumes ONTAP 單一系統組態中或在 Google Cloud Platform 中以 HA 配對的形式啟動功能。</block>
-  <block id="fdbc311c4dd4bb425160f22f166435fa" category="doc">在 Cloud Volumes ONTAP GCP 中啟動</block>
-  <block id="74b0825a91f70136708bc63f9253e89c" category="paragraph">您可以 Cloud Volumes ONTAP 在單一節點組態中或在 Google Cloud Platform 中以 HA 配對的形式啟動功能。</block>
   <block id="3a2e3bd3692b5b10d4e8d1876ea764e4" category="list-text">您應該擁有<block ref="31efb472d9740ae4bd5b3185af479587" category="inline-link-rx"></block>。</block>
-  <block id="af2fe545c466e4cd2bff03fb7e3dd4f2" category="paragraph">您應該先選擇組態、然後從系統管理員取得GCP網路資訊、以做好準備。如需詳細資訊、請參閱 <block ref="7c40283f4f533a5903d1033c57ef27f4" category="inline-link-macro-rx"></block>。</block>
   <block id="fb387d3403e9d0f4168631a5c1e65d3d" category="inline-link">在您的專案中啟用</block>
   <block id="3f7dd317abe229076594c229e96f375d" category="list-text">Google Cloud API應該是<block ref="2bf1d71c4d11fe94040400dbdd9bbe2e" category="inline-link-rx"></block>：</block>
-  <block id="2418d4e79163fe8a8ee473ee02e56b0d" category="section-title">在 GCP 中啟動單一節點系統</block>
   <block id="02468344d7eb024c93087ede43938890" category="list-text">* 選擇位置 * ：選擇 * Google Cloud * 和 * Cloud Volumes ONTAP</block>
   <block id="a52ac8a7b02f1fcb4758ef8608df8657" category="list-text">如果出現提示、<block ref="3902ae0ac0b84277d412c62a8daa1bac" category="inline-link-rx"></block>。</block>
   <block id="3e385957b42bff8380e99a914d474fb1" category="list-text">*詳細資料與認證*：選取專案、指定叢集名稱、選擇性地選取服務帳戶、選擇性地新增標籤、然後指定認證資料。</block>
@@ -2658,9 +2651,6 @@
   <block id="c9dac17a844d646dfb54058f973d40a5" category="cell">編輯專案</block>
   <block id="380bfdc134190af310ad2f9812d7569f" category="inline-link-macro">如本頁所述</block>
   <block id="27d9b3c82bd8da92f73b89a66c20ba04" category="paragraph">按一下 * 「新增訂閱」 * 、將選取的認證資料與訂閱建立關聯。</block>
-  <block id="b878d292874b3ab2ea5568d71ba31a73" category="paragraph">若要建立隨用隨付 Cloud Volumes ONTAP 的功能性系統、您需要從 Cloud Volumes ONTAP GCP Marketplace 選擇與訂閱功能相關的 GCP 專案。</block>
-  <block id="0b6a93a12e94b586f0634222ff996760" category="inline-link">將 Marketplace 訂閱與 GCP 認證建立關聯</block>
-  <block id="c6183bf47ae03a5fca3043b995daf4ad" category="paragraph">下列影片說明如何將隨用隨付服務市場訂閱關聯至GCP專案。或者、請依照中的步驟訂閱<block ref="1ca5652e3bd427104a4f5f3fa595cbd8" category="inline-link-rx"></block> 區段。</block>
   <block id="440dfcc60c7c21a1c797e881b2dd7646" category="list-text">* 服務 * ：選取您要在此系統上使用的服務。若要選取「雲端備份」或使用分層、您必須在步驟3中指定「服務帳戶」。</block>
   <block id="1adb02ac235ed181f81480b00aa116f6" category="list-text">*位置與連線*：選擇位置、選擇防火牆原則、並確認與Google Cloud儲存設備的網路連線、以進行資料分層。</block>
   <block id="3450bc9327f985ff43682b683cb1eee9" category="cell">連線驗證</block>
@@ -2672,28 +2662,17 @@
   <block id="7f6be0499fe67271d3c198bd726fe0c0" category="inline-link-macro">深入瞭Cloud Volumes ONTAP 解適用於此功能的防火牆規則</block>
   <block id="154e9c61180206ef2d8b605b639fb35f" category="cell">如果您使用現有的防火牆原則、請確定其中包含必要的規則。 <block ref="c3fbed15c1fb154b840fdb8b5504f098" category="inline-link-macro-rx"></block>。</block>
   <block id="f72d7e736d5c07e6650c7c59c1d4beae" category="list-text">* 基礎儲存資源 * ：選擇初始 Aggregate 的設定：每個磁碟的磁碟類型和大小。</block>
-  <block id="46c8ec27dde6a17388de3058e4f90f1b" category="paragraph">如需選擇磁碟類型和大小的說明、請參閱 <block ref="648252a904437aee014f01faec9e87c4" category="inline-link-macro-rx"></block>。</block>
-  <block id="95fb8b2c3ed7d9abbd6c24af1369553c" category="paragraph">只有單一節點系統才支援選擇寫入速度。</block>
-  <block id="bd33ad636739b8c6eade3eaa425ba1d4" category="list-text">* Google Cloud Platform 中的資料分層 * ：選擇是否要在初始 Aggregate 上啟用資料分層、選擇階層式資料的儲存類別、然後選擇具有預先定義儲存管理角色的服務帳戶（ Cloud Volumes ONTAP 適用於更新版本的更新版本）、 或是選擇 GCP 帳戶（ Cloud Volumes ONTAP 不適用於功能表 9.6 ）。</block>
-  <block id="528caeb1301c53d77a1cb7331729c1de" category="inline-link">設定和新增 GCP 帳戶、以便使用 9.6 進行資料分層</block>
-  <block id="256547a64d3e41d9a7c6a18d8d4243c1" category="list-text">如需新增 GCP 帳戶的說明、請參閱<block ref="73ec53281b5c885e66f789300c61c2d4" category="inline-link-rx"></block>。</block>
-  <block id="158462e318c84b41ed7070989fee5b8c" category="list-text">如果停用資料分層、您可以在後續的 Aggregate 上啟用、但您需要關閉系統、並從 GCP 主控台新增服務帳戶。</block>
   <block id="61406b1bdfba5a7d3fd5d0089edfe238" category="cell">提供 CIFS 伺服器名稱解析的 DNS 伺服器 IP 位址。列出的 DNS 伺服器必須包含所需的服務位置記錄（ SRV), 才能找到 CIFS 伺服器要加入之網域的 Active Directory LDAP 伺服器和網域控制器。如果您要設定Google Managed Active Directory、AD預設可透過169.254.169.254 IP位址存取。</block>
   <block id="40bf45be09da9df22806f3324816106f" category="cell">AD 網域中與 CIFS 伺服器相關聯的組織單位。預設值為「 CN= 電腦」。若要將Google託管Microsoft AD設定為Cloud Volumes ONTAP AD伺服器以供使用、請在此欄位中輸入* OU=computers,OU=Cloud *。<block ref="8e7507132642e39310c024b1b990cf52" category="inline-link-rx"></block></block>
   <block id="547635b81ffb0f5ff05913c2836c7d9a" category="paragraph">如需詳細資訊、請參閱 <block ref="3385123430547e9830342b8fdb19e3d3" category="inline-link-macro-rx"></block> 和 <block ref="69d3706831f999336fb27703356dae22" category="inline-link-macro-rx"></block>。</block>
-  <block id="031ff168f42bf83e7c6ebec1250cef3f" category="section-title">在 GCP 中啟動 HA 配對</block>
   <block id="b5a7d19f6788ad4a9fa68128eabe2be1" category="list-text">* 選擇位置 * ：選擇 * Google Cloud * 和 * Cloud Volumes ONTAP 《 * 》 HA * 。</block>
   <block id="47e8755e148fbe2f9d687cce086d2e82" category="list-text">* 詳細資料與認證 * ：選取專案、指定叢集名稱、選擇性地選取服務帳戶、選擇性地新增標籤、然後指定認證資料。</block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="inline-link-macro">分層</block>
   <block id="44c4ed2245bcd5288c91b50f9a330bf4" category="cell">如果您打算使用 <block ref="1295a10079ec492e012aa129538498c1" category="inline-link-macro-rx"></block> 或<block ref="65043dfb781746b8fde5bfddb319eb97" category="inline-link-rx"></block> 服務、您必須啟用 * 服務帳戶 * 交換器、然後選取具有預先定義儲存管理角色的服務帳戶。</block>
-  <block id="65be3455c2d9a55c35fcbb66e8968d88" category="paragraph">下列影片說明如何將隨用隨付服務市場訂閱關聯至GCP專案。或者、請依照中的步驟訂閱<block ref="1ca5652e3bd427104a4f5f3fa595cbd8" category="inline-link-rx"></block> 區段。</block>
   <block id="166a4b640ff9a34dd7447ebf0e16518b" category="list-text">* HA 部署模式 * ：選擇多個區域（建議）或單一區域進行 HA 組態。然後選取區域和區域。</block>
   <block id="96c883d1fa1e7ebdc724bb5cec521bbd" category="inline-link-macro">深入瞭解 HA 部署模式</block>
   <block id="c03cb5d06936cb14d5f6dff824cc7c90" category="paragraph"><block ref="978980a9148c052b6f4164e267b317c3" category="inline-link-macro-rx"></block>。</block>
   <block id="74c223c0ac10d19fc933bf44bdfae707" category="list-text">* 連線能力 * ：為 HA 組態選取四個不同的 VPC 、在每個 VPC 中選取一個子網路、然後選擇防火牆原則。</block>
-  <block id="09c7f0ffca918d21158d7ea36691dcf2" category="list-text">* WORM * ：視需要啟動一次寫入、多次讀取（ WORM ）儲存設備。</block>
-  <block id="279b45ef0c8a71337da715b526ec30ed" category="paragraph">如果資料分層已啟用、則無法啟用 WORM 。 <block ref="b8e9389aa16366d8b675fc0ac72edf2e" category="inline-link-macro-rx"></block>。</block>
-  <block id="5a491f1bb01a92203592595fdf6ce353" category="list-text">* Google Cloud Platform 中的資料分層 * ：選擇是否要在初始 Aggregate 上啟用資料分層、選擇階層式資料的儲存類別、然後選取具有預先定義儲存管理角色的服務帳戶。</block>
   <block id="d8fe61fe121132ae71b6616d52f15f56" category="summary">支援 NetApp Volume Encryption （ NVE ）和 NetApp Aggregate Encryption （ NAE ）與外部金鑰管理程式。 Cloud Volumes ONTAP如果您設定外部金鑰管理程式、則預設會啟用 NVE 和 NAE 。</block>
   <block id="9472acffdb6a585b24d4317169bbc868" category="inline-link-macro">深入瞭解這些加密解決方案</block>
   <block id="1be198b136be79973c11820713c00b26" category="paragraph">新的Aggregate在您設定外部金鑰管理程式之後、預設會啟用NAE。非 NAE Aggregate 一部分的新磁碟區預設會啟用 NVE （例如、如果在設定外部金鑰管理程式之前已建立現有的 Aggregate ）。</block>
@@ -4220,7 +4199,6 @@
   <block id="6f3d93af7507d9ff7bead94d1ffc9cc1" category="paragraph">根據預設、BlueXP會啟用Azure Private Link、以便Cloud Volumes ONTAP 在支援的各個儲存帳戶之間建立連線。Azure Private Link可保護Azure中端點之間的連線安全、並提供效能優勢。</block>
   <block id="7dfd5068a6c1386a24bb81164b3321f3" category="paragraph">無論是哪一種組態、BlueXP都會限制Cloud Volumes ONTAP 存取網路、以利連接到各個儲存帳戶。網路存取僅限於Cloud Volumes ONTAP 部署了下列項目的vnet和部署Connector的vnet。</block>
   <block id="2172036a4fb1da374a247000f3d0760e" category="paragraph">如果貴企業需要、您可以變更BlueXP中的設定、使Cloud Volumes ONTAP 其設定使用服務端點、而非Azure私有連結。變更此設定會套用Cloud Volumes ONTAP 至您所建立的新版資訊系統。</block>
-  <block id="b2ae1e45589e149ddbd92b2a29aa5bd3" category="paragraph">在大多數情況下、您不需要做任何事、就能使用Cloud Volumes ONTAP 下列功能來設定Azure私有連結：BlueXP會為您管理Azure私有連結。但是如果您使用 Azure 私有 DNS 、則需要編輯組態檔。您也應該瞭解Azure中的Connector位置需求。</block>
   <block id="497286b7c4a76755ff0535ba3414dce0" category="paragraph">當BlueXP在Cloud Volumes ONTAP Azure中部署時、它會在資源群組中建立一個私有端點。私有端點與Cloud Volumes ONTAP 用於實現功能不均的儲存帳戶相關聯。因此Cloud Volumes ONTAP 、存取資料可透過Microsoft主幹網路存取。</block>
   <block id="77bb2abfb8f3c95b3fdaf2c2e6814b89" category="section-title">提供您Azure私有DNS的詳細資料給BlueXP</block>
   <block id="c6862ef0bb5d25a7ed0231faab734f0d" category="paragraph">如果您使用<block ref="35609e050ed0963e042a408dda682719" category="inline-link-rx"></block>然後您需要修改每個 Connector 上的組態檔。否則、BlueXP無法在Cloud Volumes ONTAP 支援的儲存帳戶之間啟用Azure Private Link連線。</block>
@@ -4268,14 +4246,10 @@
   <block id="43b4e2bfc7554b142c2e386bdb5e5828" category="paragraph">幾個月前、我們宣佈 Cloud Volumes ONTAP 、在 Amazon Web Services （ AWS ）的「 Ready 」（就緒）頭銜中、此產品已獲獎。今天、我們很高興宣布、我們已驗證了BlueXP和Cloud Volumes ONTAP 以AWS outs為基礎的功能。</block>
   <block id="bada065bfea7e34e9203e33edc44d46a" category="paragraph">您現在可以選擇要在其中部署單一節點 Cloud Volumes ONTAP 的可用度區域。如果您未選擇AZ、則BlueXP會為您選擇一個。</block>
   <block id="4f0678a9e095858a4fa747c1c08210ee" category="paragraph">根據預設、BlueXP現在可在Cloud Volumes ONTAP 支援的儲存帳戶之間啟用Azure Private Link連線。私有連結可保護 Azure 中端點之間的連線安全。</block>
-  <block id="e7fc9bf2d5b3fc237c8223fb2e9678d6" category="paragraph">在BlueXP中建立工作環境、以在Cloud Volumes ONTAP GCP中啟動功能。</block>
-  <block id="3cc94422ed10580ec406e0e90e02ed57" category="cell">BlueXP使用工作環境名稱來命名Cloud Volumes ONTAP 整個系統、以及GCP VM執行個體。如果您選取該選項、它也會使用名稱做為預先定義安全性群組的前置詞。</block>
-  <block id="1456e010de4447704584caa0f583807b" category="cell">標籤是 GCP 資源的中繼資料。BlueXP會將標籤新增Cloud Volumes ONTAP 至與系統相關的支援系統和GCP資源。建立工作環境時、您最多可以從使用者介面新增四個標籤、然後在建立之後新增更多標籤。請注意、在建立工作環境時、 API 不會限制您使用四個標籤。如需標籤的相關資訊、請參閱<block ref="fa397f5b6985fa16ac695ba7d4f7a5a5" category="inline-link-rx"></block>。</block>
   <block id="23b98688a84e3975fec56c5adda952e4" category="paragraph">選取 Cloud Volumes ONTAP 您要駐留的專案。預設專案是BlueXP所在的專案。</block>
   <block id="851527495c0afb57caeba39ab6e50d4f" category="paragraph">如果在下拉式清單中沒有看到任何其他專案、表示您尚未將BlueXP服務帳戶與其他專案建立關聯。前往 Google Cloud 主控台、開啟 IAM 服務、然後選取專案。將具有BlueXP角色的服務帳戶新增至該專案。您必須針對每個專案重複此步驟。</block>
   <block id="e11609cdeba36e9154797798b7bb710f" category="paragraph">如果讓BlueXP為您產生防火牆原則、您必須選擇允許流量的方式：</block>
   <block id="4f4736bd9b3e508042a30af6279a85b0" category="list-text">BlueXP會在Cloud Volumes ONTAP 整個過程中設定服務帳戶。此服務帳戶提供資料分層至 Google Cloud Storage 儲存庫的權限。請務必將Connector服務帳戶新增為分層服務帳戶的使用者、否則您無法從BlueXP中選取該帳戶</block>
-  <block id="a696f74c5e0abf27caa52c3cb3b4a270" category="list-text">按一下*更多資訊*以檢閱有關支援和BlueXP將購買之GCP資源的詳細資料。</block>
   <block id="04429fb60c702313423187ef9f61c183" category="list-text">BlueXP會在Cloud Volumes ONTAP 整個過程中設定服務帳戶。此服務帳戶提供資料分層至 Google Cloud Storage 儲存庫的權限。請務必將Connector服務帳戶新增為分層服務帳戶的使用者、否則您無法從BlueXP中選取該帳戶。</block>
   <block id="5d46d9d34dce758984570380cdc60f89" category="summary">選擇使用VPC服務控制來鎖定Google環境時、您應該瞭解BlueXP和Cloud Volumes ONTAP Isa如何與Google API互動、以及如何設定服務參數來部署BlueXP和Cloud Volumes ONTAP Isa。</block>
   <block id="ad5571e5652bf6da2a87ff238427dd83" category="paragraph">選擇使用VPC服務控制來鎖定Google Cloud環境時、您應該瞭解BlueXP和Cloud Volumes ONTAP Isa如何與Google Cloud API互動、以及如何設定服務邊界以部署BlueXP和Cloud Volumes ONTAP Isa。</block>
@@ -4600,4 +4574,59 @@
   <block id="0f5cc196efac5a9fadb7272e55c7d686" category="summary">設定您的 Azure 網路、 Cloud Volumes ONTAP 使其能夠正常運作。</block>
   <block id="323c8a1d29b771e63edf9d7a9968be4e" category="paragraph"><block ref="323c8a1d29b771e63edf9d7a9968be4e" category="inline-link-rx"></block></block>
   <block id="f483cdf3bbc75344ed7ba476a346b3ae" category="paragraph"><block ref="f483cdf3bbc75344ed7ba476a346b3ae" category="inline-link-rx"></block></block>
+  <block id="7dca2de7042f01604c6fa18e67e28e36" category="section-title">WORM與資料分層</block>
+  <block id="83f865c2acfa2b30d8adc34128a9b741" category="paragraph">當您建立全新Cloud Volumes ONTAP 的版本的更新版本時、可以同時啟用資料分層和WORM儲存。利用WORM儲存設備進行資料分層、可將資料分層至雲端的物件存放區。</block>
+  <block id="125acd88196259df48335a29149824c8" category="paragraph">您應該瞭解下列關於啟用資料分層和WORM儲存設備的資訊：</block>
+  <block id="a915bf61fc4da5557d359b0301ad21ef" category="list-text">分層至物件儲存的資料不含ONTAP 「支援WORM」功能。為了確保端點對端點WORM功能、您必須正確設定儲存區權限。</block>
+  <block id="998c3b79cbc9135556e51847e16ca6c3" category="list-text">分層至物件儲存的資料並不具備WORM功能、這意味著從技術上而言、任何擁有完整儲存區和容器存取權的人、都能移除由ONTAP 實物分級的物件。</block>
+  <block id="795cfc8480eae289c5de0d65352581a1" category="list-text">啟用WORM和分層後、將Cloud Volumes ONTAP 會封鎖還原或降級至物件9.8。</block>
+  <block id="8f3a22fee1fcc35025e3e68b3c7b5499" category="paragraph">在大多數情況下、您不需要做任何事、就能使用Cloud Volumes ONTAP 下列功能來設定Azure私有連結：BlueXP會為您管理Azure私有連結。但如果您使用Azure私有DNS、則必須編輯組態檔。您也應該瞭解Azure中的Connector位置需求。</block>
+  <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">2023年2月5日</block>
+  <block id="078640757da4b274abf89709c42d7741" category="paragraph">下列變更是在版本3.9.26的Connector中提出。</block>
+  <block id="72c6f65b45015ee1135ff4bc2cce8860" category="section-title">在AWS中建立放置群組</block>
+  <block id="b743dbbfdeafb74e0c5a918472cb8000" category="paragraph">全新組態設定現在可透過AWS HA單一可用度區域（AZ）部署來建立放置群組。現在您可以選擇略過失敗的放置群組建立、並讓AWS HA單一AZ部署順利完成。</block>
+  <block id="a461eabe3ab382f71ac2e2f6d1e640ac" category="inline-link-macro">設定AWS HA單一AZ的放置群組建立</block>
+  <block id="f8574b4ca8450ebb66b430e6a34a7af0" category="paragraph">如需如何設定放置群組建立設定的詳細資訊、請參閱 <block ref="76b771ebcb3b2314cb6a5531c78c8c56" category="inline-link-macro-rx"></block>。</block>
+  <block id="6d236ccded1ae841f7032a1cfa719500" category="section-title">私有DNS區域組態更新</block>
+  <block id="c07e7cfc7f9b172f2a6463f65a2a4b56" category="paragraph">現在已有新的組態設定可供使用、以便在使用Azure私有連結時、避免在私有DNS區域和虛擬網路之間建立連結。預設會啟用建立。</block>
+  <block id="b4f6cf785c09e40247b4fa3feac5c2a6" category="paragraph"><block ref="b4f6cf785c09e40247b4fa3feac5c2a6" category="inline-link-macro-rx"></block></block>
+  <block id="9790d5e9d3f702b3255ef268a7bcfc80" category="section-title">WORM儲存與資料分層</block>
+  <block id="3277463bf1ddcca922f85a2efd92c721" category="paragraph">現在您可以在建立Cloud Volumes ONTAP 一套或更新版本的版本時、同時啟用資料分層和WORM儲存。利用WORM儲存設備進行資料分層、可將資料分層至雲端的物件存放區。</block>
+  <block id="2179dc7c2201ce007bdd7f0a37e78d5e" category="inline-link-macro">瞭解WORM儲存設備。</block>
+  <block id="fc76ca2a106ecf45415f92e5b6f34f21" category="paragraph"><block ref="fc76ca2a106ecf45415f92e5b6f34f21" category="inline-link-macro-rx"></block></block>
+  <block id="cd46599be4a268656c67fc0d154a21ec" category="admonition">如果您想要使用WORM和資料分層、您必須停用Cloud Backup、並部署Cloud Volumes ONTAP 9.8版或更新版本的運作環境。</block>
+  <block id="a0657ff0e169aee7a5734487716bb0c4" category="list-text">*寫入速度與WORM *：</block>
+  <block id="8423b054b8164151c3151be7c37415ed" category="list-text">如果需要、請選擇*正常*或*高速*寫入速度。</block>
+  <block id="0a44bfce0bc775d87f0ac6a57bdba584" category="list-text">視需要啟動一次寫入、多次讀取（WORM）儲存設備。</block>
+  <block id="6aeb3713e488b71d0dcbb96914a7951f" category="paragraph">如果啟用Cloud Volumes ONTAP 資料分層功能、無法啟用WORM 9.7版及更低版本。啟用WORM和分層後、將Cloud Volumes ONTAP 會封鎖還原或降級至物件9.8。</block>
+  <block id="02675533e5e8f922a01de0dd3f2892ad" category="list-text">如果您啟動WORM儲存設備、請選取保留期間。</block>
+  <block id="94fb201facd8c99956b25af1c56a2562" category="paragraph">當放置群組建立失敗時、可在單一可用度區域（AZ）中容錯並回復AWS高可用度（HA）組態的新部署Cloud Volumes ONTAP 。如有需要、您可以設定放置群組、在建立失敗時略過復原程序、以強制成功完成部署。</block>
+  <block id="4b80314a98cf05dbcb3b2c5f33f9e79f" category="paragraph">根據預設、只要放置群組在HA單一可用度區域工作環境的建立程序失敗、部署就會失敗並復原。建立放置群組也會失敗、如果Cloud Volumes ONTAP 既不存在任何節點、也不存在中介執行個體、則會回復。</block>
+  <block id="65f98964e7d8889df16715139a88da9d" category="paragraph">只要放置群組建立失敗、您就可以跳過復原程序、並設定app.conf檔案、讓部署繼續進行。繞過復原程序時、部署作業成功完成、系統會產生通知、指出建立放置群組失敗、狀態為「不完整」。</block>
+  <block id="8dbf64cf105a5f307a9741aab14c6d90" category="section-title">停用放置群組故障時的復原功能</block>
+  <block id="103d8850bfd2b5f919a2c306256386e7" category="paragraph">若要關閉放置群組失敗、「復原放置位置-群組失敗」旗標必須設定為「假」。</block>
+  <block id="53db5515d90522545dd9493db83f9ad7" category="list-text">使用SSH連線至Connector主機並登入。</block>
+  <block id="e5d0a443064f8c75bf5b7e1c953ec5f9" category="list-text">編輯app.conf：將「復原位置時-群組失敗」參數的值變更為「假」：</block>
+  <block id="6b90ec112441f6a2ffc873da4c8cb544" category="admonition">根據預設、「復原到位置-群組失敗」參數設為「真」。</block>
+  <block id="abb2030a97b8fa0f26925ca21ccacdce" category="paragraph">不需要重新開機。</block>
+  <block id="254d5c87d5ab437395f866390ea49cd0" category="doc">在Cloud Volumes ONTAP Google Cloud上啟動</block>
+  <block id="952f472ceaa325aaac5f1352ed448f4e" category="paragraph">您可以Cloud Volumes ONTAP 在單一節點組態中或在Google Cloud中以HA配對的形式啟動功能。</block>
+  <block id="5ce440fd1a40346ea0f26ec2424bfcb2" category="paragraph">您應該已做好準備、選擇組態、並向系統管理員取得Google Cloud網路資訊。如需詳細資訊、請參閱 <block ref="7c40283f4f533a5903d1033c57ef27f4" category="inline-link-macro-rx"></block>。</block>
+  <block id="733156037751f70e529112a458e8ade6" category="section-title">在Google Cloud中啟動單一節點系統</block>
+  <block id="ee5b769fad1fe9446cc03d19d0a3d607" category="paragraph">在BlueXP中建立工作環境、在Cloud Volumes ONTAP Google Cloud中推出功能更新。</block>
+  <block id="aeeff95df93d5139e77aaa023ae4f78d" category="cell">BlueXP使用工作環境名稱來命名Cloud Volumes ONTAP 支援系統和Google Cloud VM執行個體。如果您選取該選項、它也會使用名稱做為預先定義安全性群組的前置詞。</block>
+  <block id="a4bf88119cf04fd8c616db4b8cc720b8" category="cell">標籤是Google Cloud資源的中繼資料。BlueXP會將標籤新增Cloud Volumes ONTAP 至與系統相關的支援系統和Google Cloud資源。建立工作環境時、您最多可以從使用者介面新增四個標籤、然後在建立之後新增更多標籤。請注意、在建立工作環境時、 API 不會限制您使用四個標籤。如需標籤的相關資訊、請參閱<block ref="fa397f5b6985fa16ac695ba7d4f7a5a5" category="inline-link-rx"></block>。</block>
+  <block id="9825444762440cb7be1345336853f4a6" category="paragraph">若要建立隨用隨付Cloud Volumes ONTAP 功能的功能性支援系統、您需要從Cloud Volumes ONTAP Google Cloud Marketplace選擇與訂閱功能相關的Google Cloud專案。</block>
+  <block id="2dbb2a35f48f58340e040cb41a1d70b1" category="inline-link">將Marketplace訂閱與Google Cloud認證建立關聯</block>
+  <block id="493552d486a035ce25ba041dbe0317cc" category="paragraph">下列影片說明如何將隨用隨付服務市場訂閱關聯至Google Cloud專案。或者、請依照中的步驟訂閱<block ref="ae09191bda49c43cc387d269b21d9c61" category="inline-link-rx"></block> 區段。</block>
+  <block id="c328f8a7342e88f617f6d5b5de3ddde7" category="paragraph">如需選擇磁碟類型和大小的說明、請參閱 <block ref="d149bf4b730fbae097705dc422facd68" category="inline-link-macro-rx"></block>。</block>
+  <block id="06017a9b77812f0002c0c97398d0c75e" category="list-text">* Google Cloud Platform中的資料分層*：選擇是否要在初始Aggregate上啟用資料分層、選擇階層式資料的儲存類別、然後選擇具有預先定義儲存管理角色的服務帳戶（Cloud Volumes ONTAP 適用於更新版本的更新版本）、或是選擇Google Cloud帳戶（Cloud Volumes ONTAP 不支援支援支援功能9.6）。</block>
+  <block id="bb74d89743a44b4a44d7b815ee74a08e" category="inline-link">設定及新增Google Cloud帳戶、以便使用9.6進行資料分層</block>
+  <block id="a7e78bd76ee63b56217658f0ca0d9ae8" category="list-text">如需新增Google Cloud帳戶的說明、請參閱<block ref="d5ddd655d9651722d04dce7a3fd75f04" category="inline-link-rx"></block>。</block>
+  <block id="cd6afa4ed61f071f47165012e4286043" category="list-text">如果停用資料分層、您可以在後續的Aggregate上啟用、但您需要關閉系統、並從Google Cloud主控台新增服務帳戶。</block>
+  <block id="5e80d11354160f3330ae3fb0f2186edf" category="list-text">按一下*更多資訊*以檢閱有關支援與BlueXP將購買的Google Cloud資源的詳細資料。</block>
+  <block id="f23467ff8f84fc95ca2baa4b362c7865" category="section-title">在Google Cloud上啟動HA配對</block>
+  <block id="1ed50148a7aaf99d753c01a51f01ef11" category="paragraph">下列影片說明如何將隨用隨付服務市場訂閱關聯至Google Cloud專案。或者、請依照中的步驟訂閱<block ref="ae09191bda49c43cc387d269b21d9c61" category="inline-link-rx"></block> 區段。</block>
+  <block id="3f73fdcd7eab5d7e67557205b890929e" category="list-text">* Google Cloud中的資料分層*：選擇是否要在初始Aggregate上啟用資料分層、選擇階層式資料的儲存類別、然後選取具有預先定義儲存管理角色的服務帳戶。</block>
+  <block id="1aff466e3c0d499007e1d801be1c66d9" category="sidebar">設定放置群組建立</block>
 </blocks>
