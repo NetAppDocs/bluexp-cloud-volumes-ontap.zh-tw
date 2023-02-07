@@ -3047,7 +3047,6 @@
   <block id="8e3273e621dd5a9485259171b1b535e9" category="section-title">在Azure中調整系統規模</block>
   <block id="e17d83fdb14af6aea9c5838dcc9ece55" category="paragraph"><block ref="b2908e7df27905e20924b93b3ff0b803" category="inline-link-macro-rx"></block>。</block>
   <block id="96440bf30cd20c7ed50d0d7a8279917e" category="doc">在Cloud Volumes ONTAP Google Cloud規劃您的不一樣組態</block>
-  <block id="9b79239dba046d18af2dfc2ca929db17" category="list-text"><block ref="9b79239dba046d18af2dfc2ca929db17" category="inline-link-macro-rx"></block></block>
   <block id="18ff4ec9e6259918d45028a5d6040d91" category="section-title">選擇支援的機器類型</block>
   <block id="0d705fad98d8ea6c4ffe75e2508e2f92" category="section-title">在GCP中調整系統規模</block>
   <block id="9b183a2167e00c4527ad8d66a1342c3c" category="list-text">在*詳細資料與認證*頁面上、按一下*編輯認證&gt;新增訂閱*、然後依照提示訂閱Google Cloud Marketplace中的隨用隨付方案。</block>
@@ -4629,4 +4628,5 @@
   <block id="1ed50148a7aaf99d753c01a51f01ef11" category="paragraph">下列影片說明如何將隨用隨付服務市場訂閱關聯至Google Cloud專案。或者、請依照中的步驟訂閱<block ref="ae09191bda49c43cc387d269b21d9c61" category="inline-link-rx"></block> 區段。</block>
   <block id="3f73fdcd7eab5d7e67557205b890929e" category="list-text">* Google Cloud中的資料分層*：選擇是否要在初始Aggregate上啟用資料分層、選擇階層式資料的儲存類別、然後選取具有預先定義儲存管理角色的服務帳戶。</block>
   <block id="1aff466e3c0d499007e1d801be1c66d9" category="sidebar">設定放置群組建立</block>
+  <block id="f1e89d709c35aed2650bbf12a55f1ba1" category="list-text"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block></block>
 </blocks>
