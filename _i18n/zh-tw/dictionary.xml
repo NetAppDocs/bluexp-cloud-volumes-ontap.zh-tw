@@ -246,24 +246,9 @@
   <block id="75fb76c71939b7f9f3ee363c4aec2044" category="section-title">Connector 規則</block>
   <block id="0fbb894005047753551829b93d408eac" category="paragraph">Connector 的安全性群組需要傳入和傳出規則。</block>
   <block id="7dca630291dc35d5447daa0c9abf8da4" category="cell">提供對 Connector 主機的 SSH 存取權</block>
-  <block id="e41468f89241b53dc9a8cebeff010b25" category="cell">提供HTTP存取、從用戶端網頁瀏覽器存取本機使用者介面、以及從Cloud Data Sense連線</block>
   <block id="2f0c197eb73a7c6da10b03384f241025" category="cell">提供 HTTPS 存取、從用戶端網頁瀏覽器存取本機使用者介面</block>
   <block id="dff8e9c2ac33381546d96deea9922999" category="cell">3128</block>
-  <block id="f27967c4c8769094dfb727988a22cbfa" category="paragraph">Connector 的預先定義安全性群組會開啟所有傳出流量。如果可以接受、請遵循基本的傳出規則。如果您需要更嚴格的規則、請使用進階的傳出規則。</block>
   <block id="422c84262f431352e9da45084016a52c" category="paragraph">Connector 的預先定義安全性群組包括下列傳出規則。</block>
-  <block id="4c7e4350b2ac4e79ecdf1d8f33b2d41e" category="paragraph">如果您需要嚴格的傳出流量規則、可以使用下列資訊、僅開啟連接器傳出通訊所需的連接埠。</block>
-  <block id="a94c44d83136ca0aa23c397adb28b116" category="admonition">來源 IP 位址為 Connector 主機。</block>
-  <block id="241b5fab8e737eaa79c543efe7307059" category="cell">API 呼叫與 AutoSupport 功能</block>
-  <block id="096a28c32a85d3d48462b468a3700d9a" category="cell">傳出網際網路和 ONTAP 叢集管理 LIF</block>
-  <block id="a6a8d3a613b6b7ece18f688d168e5cda" category="cell">API會呼叫AWS和ONTAP VMware、Cloud Data Sense、勒索軟體服務、並將AutoSupport 這些訊息傳送給NetApp</block>
-  <block id="22043367a89ddcf3eb99eec509a967ba" category="cell">API 呼叫</block>
-  <block id="e9ed822bdea417e9dfd79a2c81634ba4" category="cell">充當HA中介者ONTAP</block>
-  <block id="ad4167f20adb487bdfdd71a56ab00120" category="cell">與ONTAP NetApp HA中介人通訊</block>
-  <block id="172ef5a94b4dd0aa120c6878fc29f70c" category="cell">8088</block>
-  <block id="168342a53455f99d5b1d8d7d95e99567" category="cell">API 呼叫備份至 S3</block>
-  <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="cell">雲端資料感測</block>
-  <block id="6cf25d0dcbf586ed6aff3b930e4d8019" category="cell">Cloud Data Sense執行個體</block>
-  <block id="059ace13ef3980df592dafb754ef8883" category="cell">Cloud Data Sense for Cloud Volumes ONTAP 功能</block>
   <block id="5ca4d0f89ef6c18d7fa7fae7290d98cb" category="summary">利用 NetApp 技術、您可以最佳化雲端儲存成本與效能、同時強化資料保護、安全性與法規遵循。 Cloud Volumes ONTAP</block>
   <block id="1a523ba4ece9125275b92ebb41e3cf23" category="doc">本文檔Cloud Volumes ONTAP</block>
   <block id="d9483fef78159e6b7c5c069f6308ec9e" category="doc">搭配 Cloud Volumes ONTAP 使用客戶管理的加密金鑰</block>
@@ -3638,7 +3623,6 @@
   <block id="20df81b10ec53f3723942b914b6125f2" category="paragraph">如果您定義了Cloud Volumes ONTAP 嚴格的出站規則以供支援、那麼您也必須確保Cloud Volumes ONTAP 透過連接埠3128建立的支援_出站_連線。</block>
   <block id="72d5371b4a8014dbf2df076044553ab6" category="paragraph">建立工作環境時、您可以在部署期間選擇預先定義防火牆原則的來源篩選器：</block>
   <block id="6cf46adb3fb6177f186428a0cac9190b" category="cell">如果無法使用傳出的網際網路連線、請透過Connector上的Proxy伺服器傳送AutoSupport 功能介紹訊息</block>
-  <block id="2fcfd53faae8a46d655bdd5bf49e4324" category="cell">提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport部署Connector之後、您必須手動開啟此連接埠。</block>
   <block id="84d78cb2b5253a0b7912f4b35a0a5276" category="list-text">從取得軟體映像<block ref="66da4490d1acc2c130b3158cd12dade2" category="inline-link-rx"></block>。</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="5d95d03306d738eddc1fcb7b61b6151a" category="paragraph">以下是3.9.21版Connector的變更。</block>
@@ -3869,9 +3853,7 @@
   <block id="a972bcad179af301a93e1049da5fbbbb" category="paragraph">請注意、BlueXP會在HA配對上建立SVM管理LIF、但不會在Azure中的單一節點系統上建立。</block>
   <block id="6065260b6e2ca957f806162cf33800f6" category="paragraph">您也可以視業務需求而停用「私有連結」連線。如果您停用連結、則BlueXP會設定Cloud Volumes ONTAP 使用服務端點的功能。</block>
   <block id="2a37f0bf23209f41128e5c28160ecd0b" category="paragraph">如果您嘗試在Cloud Volumes ONTAP Azure資源群組中部署第二個「鏈接HA配對」、則BlueXP會遇到連線問題。</block>
-  <block id="ce23ccd5f69f45f3f2a022750ab9d6e7" category="paragraph">您不需要建立安全性群組、因為BlueXP會為您建立安全性群組。如果您需要使用自己的安全性群組規則、請參閱下列安全性群組規則。</block>
   <block id="196affcedcabdcd9243dfaab58327dae" category="paragraph">BlueXP會建立Azure安全性群組、其中包含Cloud Volumes ONTAP 了順利運作所需的傳入和傳出規則。您可能需要參照連接埠進行測試、或是偏好使用自己的安全性群組。</block>
-  <block id="ecd87ae03b07f0712964d94eb75683a5" category="cell">用於BlueXP的DNS解析</block>
   <block id="4350eea5911affd7e2c237dd5705777c" category="list-text">在部署Cloud Volumes ONTAP 時、BlueXP會建立一個資料服務儲存VM。部分組態支援額外的儲存 VM 。 <block ref="a7cc00a0b341c53959a0ff9bb9ec925b" category="inline-link-macro-rx"></block>。</block>
   <block id="d3ba63f114f62f143d97434a92eb48a8" category="paragraph">從BlueXP 3.9.5版本開始、系統會在初始儲存VM上啟用邏輯空間報告功能。以邏輯方式回報空間時ONTAP 、此功能會報告磁碟區空間、讓儲存效率功能所節省的所有實體空間也會報告為已使用。</block>
   <block id="0dbf08a19cabe7472c89a9c1e7157737" category="list-text">BlueXP會自動在ONTAP 下列功能授權上安裝Cloud Volumes ONTAP 到更新版本：</block>
@@ -4109,7 +4091,6 @@
   <block id="b28334323356fda049acaa1568ee382c" category="paragraph">BlueXP會自動分配所需的私有IP位址數量給Cloud Volumes ONTAP 整個過程。您必須確保網路有足夠的私有IP位址可用。</block>
   <block id="bdc0bf1240a907023821eccea893d017" category="paragraph">BlueXP分配Cloud Volumes ONTAP 給功能的生命量取決於您是部署單一節點系統或HA配對。LIF 是與實體連接埠相關聯的 IP 位址。</block>
   <block id="7a4fc6df5acc7a338525efe76c970bd8" category="paragraph">BlueXP會將6個IP位址分配給單一節點系統：</block>
-  <block id="939507fbe623e8fd878f92a352424732" category="paragraph">您不需要建立安全性群組、因為BlueXP會為您建立安全性群組。如果您需要使用自己的、請參閱 <block ref="6b621ae9e3deb16d56da37977cce65f3" category="inline-link-macro-rx"></block>。</block>
   <block id="7fbad4788d127b35618996584caa5cbf" category="paragraph">其他 AWS 網路需求適用於 Cloud Volumes ONTAP 使用多個可用區域（ AZs ）的 SestHA 組態。在啟動HA配對之前、您應該先檢閱這些需求、因為在建立工作環境時、您必須在BlueXP中輸入網路詳細資料。</block>
   <block id="79b99f78668311f7164df3fbc2b1ab13" category="paragraph">建立Cloud Volumes ONTAP 一套功能完善的運作環境時、您需要在BlueXP中輸入浮動IP位址。在啟動系統時、BlueXP會將IP位址分配給HA配對。</block>
   <block id="fbf22458f97f1e958f61f1269da5e0dc" category="admonition">BlueXP會自動建立靜態IP位址、以供iSCSI存取及從VPC外部用戶端存取NAS。您不需要滿足這些類型 IP 位址的任何需求。</block>
@@ -4192,8 +4173,6 @@
   <block id="156a3c6e72f6f36b96ffa2a53bc4b125" category="list-text">從NetApp 9.7開始Cloud Volumes ONTAP 、BlueXP為HA配對建立的儲存帳戶是通用的v2儲存帳戶。</block>
   <block id="5891037085a8d7a4e0c6d1c1177dc1b1" category="paragraph">當您建立Cloud Volumes ONTAP 一個運作環境時、BlueXP會提示您訂閱AWS Marketplace提供的合約。該訂閱之後會與工作環境建立關聯、以便進行充電。您可以在其他工作環境中使用相同的訂閱。</block>
   <block id="762aad63fdd6b79217c19517ed5983a5" category="paragraph">如同每小時訂閱、BlueXP會提示您訂閱AWS Marketplace提供的年度合約。</block>
-  <block id="313ffec3230aa3292dde2f11b0bfa481" category="summary">BlueXP會建立AWS安全性群組、其中包括BlueXP和Cloud Volumes ONTAP 穩健運作所需的傳入和傳出規則。您可能需要參照連接埠進行測試、或是需要使用自己的連接埠。</block>
-  <block id="dfd7076c3cd05fe305cbd204cf4845a9" category="paragraph">BlueXP會建立AWS安全性群組、其中包含Connector和Cloud Volumes ONTAP 其他人成功運作所需的傳入和傳出規則。您可能需要參照連接埠進行測試、或是偏好使用自己的安全性群組。</block>
   <block id="4c06e1c4065aa853ffa68ddc60e138c3" category="paragraph">BlueXP一律會建立此安全性群組。您沒有使用自己的選項。</block>
   <block id="6f3d93af7507d9ff7bead94d1ffc9cc1" category="paragraph">根據預設、BlueXP會啟用Azure Private Link、以便Cloud Volumes ONTAP 在支援的各個儲存帳戶之間建立連線。Azure Private Link可保護Azure中端點之間的連線安全、並提供效能優勢。</block>
   <block id="7dfd5068a6c1386a24bb81164b3321f3" category="paragraph">無論是哪一種組態、BlueXP都會限制Cloud Volumes ONTAP 存取網路、以利連接到各個儲存帳戶。網路存取僅限於Cloud Volumes ONTAP 部署了下列項目的vnet和部署Connector的vnet。</block>
@@ -4629,4 +4608,18 @@
   <block id="3f73fdcd7eab5d7e67557205b890929e" category="list-text">* Google Cloud中的資料分層*：選擇是否要在初始Aggregate上啟用資料分層、選擇階層式資料的儲存類別、然後選取具有預先定義儲存管理角色的服務帳戶。</block>
   <block id="1aff466e3c0d499007e1d801be1c66d9" category="sidebar">設定放置群組建立</block>
   <block id="f1e89d709c35aed2650bbf12a55f1ba1" category="list-text"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block></block>
+  <block id="2626748206273dbf0d13d2fffdb79c5b" category="summary">BlueXP會建立AWS安全性群組、其中包括Cloud Volumes ONTAP 需要順利運作的傳入和傳出規則。您可能需要參照連接埠進行測試、或是偏好使用自己的安全性群組。</block>
+  <block id="eb19784d052e3e9a0aa941090082ebbe" category="inline-link">檢視Connector的安全群組規則</block>
+  <block id="c456915aac0f612541f35dc3bfc19faf" category="paragraph"><block ref="c456915aac0f612541f35dc3bfc19faf" category="inline-link-rx"></block></block>
+  <block id="a6c935eff93c3c2a81864fdabc1d1951" category="inline-link">檢視Connector的防火牆規則</block>
+  <block id="fd21d6325b77b856e27ff0f3a2769254" category="admonition">正在尋找Connector的相關資訊？<block ref="b4a1b1e09448c4916df7db5a89b51b2b" category="inline-link-rx"></block></block>
+  <block id="e22a4abc98b47ca148e0dfda7e259162" category="inline-link">Google Cloud中的防火牆規則</block>
+  <block id="2cfdb7ae537da608249744d8e40289a8" category="list-text"><block ref="2cfdb7ae537da608249744d8e40289a8" category="inline-link-rx"></block></block>
+  <block id="314f455c046d8114edc23b21e45ae3e0" category="admonition">正在尋找Connector的相關資訊？<block ref="03f0ff9a2503a569189cff8aff64ae33" category="inline-link-rx"></block></block>
+  <block id="569fe31933e5918613ae1efa70e82d16" category="inline-link">Azure中的安全性群組規則</block>
+  <block id="c3122c19fb459588f8438e668beb5f88" category="list-text"><block ref="c3122c19fb459588f8438e668beb5f88" category="inline-link-rx"></block></block>
+  <block id="0b79e4862d28fb04132c84c8aab97cc4" category="paragraph">您不需要建立安全性群組、因為BlueXP會為您建立安全性群組。如果您需要使用自己的、請參閱 <block ref="6b621ae9e3deb16d56da37977cce65f3" category="inline-link-macro-rx"></block>。</block>
+  <block id="a8fd24da5145000ecce0c3f4f64ade44" category="admonition">正在尋找Connector的相關資訊？<block ref="388760eab464a72355382b7e30fcff50" category="inline-link-rx"></block></block>
+  <block id="60f0453bf0393ab630be6aa37dc20180" category="inline-link">AWS中的安全群組規則</block>
+  <block id="f2ad0eeffca4d67e7eb677593c90d5bf" category="list-text"><block ref="f2ad0eeffca4d67e7eb677593c90d5bf" category="inline-link-rx"></block></block>
 </blocks>

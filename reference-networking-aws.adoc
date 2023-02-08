@@ -163,6 +163,9 @@ TIP: 部署在多個可用度區域時、會與多個生命區建立關聯 link:
 您不需要建立安全性群組、因為BlueXP會為您建立安全性群組。如果您需要使用自己的、請參閱 link:reference-security-groups.html["安全性群組規則"]。
 
 
+TIP: 正在尋找Connector的相關資訊？ https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["檢視Connector的安全群組規則"^]
+
+
 
 === 資料分層連線
 
@@ -265,4 +268,6 @@ image:diagram_ha_networking.png["概念性影像、顯示 Cloud Volumes ONTAP �
 
 如果您尚未建立連接器、也應該檢閱連接器的網路需求。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["檢視連接器的網路需求"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["檢視連接器的網路需求"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["AWS中的安全群組規則"^]
+
