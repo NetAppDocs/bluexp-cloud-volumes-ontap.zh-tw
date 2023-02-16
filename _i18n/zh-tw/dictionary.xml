@@ -505,7 +505,6 @@
   <block id="c9a9b22c97e2474e63fdb09a6f5f4a75" category="paragraph">您有一個Cloud Volumes ONTAP 全新的支援系統、可設定使用客戶管理的金鑰進行資料加密。</block>
   <block id="5fbc523d8d2ad241522a15100f23bef2" category="doc">Flash 快取</block>
   <block id="3a36e6b466e0265c25d241c486f64e02" category="paragraph">Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。</block>
-  <block id="341cc964e0c52fec40f9705182116dda" category="list-text">所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。</block>
   <block id="405cb575e50b611a22ec99d1abb3f202" category="inline-link">使用 CLI 停用資料壓縮</block>
   <block id="444f10b28a63ab25d9664d0647602d07" category="list-text">重新開機後的快取重新溫熱功能不支援 Cloud Volumes ONTAP 使用此功能。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">取得協助</block>
@@ -4637,4 +4636,5 @@
   <block id="65533a408ee230b29deae5fd1634c46a" category="list-text">使用應用程式登錄後儲存的用戶端ID和租戶ID來啟用Azure Key Vault：<block ref="fc019c518ce1e237021d337077bd96cc" prefix=" " category="inline-code"></block></block>
   <block id="2b92b9eae444abb7f44aa96b856847a4" category="paragraph">如果是<block ref="c02e65ef2be24722283d91b62774dd3d" prefix=" " category="inline-code"></block> 狀態不是<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block>、SVM無法以所有必要的連線和權限來連線至Azure Key Vault服務。請確保您的Azure網路原則和路由不會封鎖您的私有vNet、使其無法到達Azure KeyVault Public端點。如果有、請考慮使用Azure私有端點、從vNet內存取金鑰庫。您可能還需要在SVM上新增靜態主機項目、以解析端點的私有IP位址。</block>
   <block id="840b18b97e1e55325d94f00b965a31cf" category="paragraph">。<block ref="5fb243bae51d7320aff8e09d0bb56325" prefix=" " category="inline-code"></block> 將會報告<block ref="696b031073e74bf2cb98e5ef201d4aa3" prefix=" " category="inline-code"></block> 初始組態時。其狀態將變更為<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block> 加密第一個磁碟區之後。</block>
+  <block id="4237e167da34ce4cc54b7915a9ee779a" category="list-text">所有磁碟區都必須停用壓縮功能、才能充分發揮Flash Cache效能提升功能Cloud Volumes ONTAP 、直到更新至VMware版。當您部署或升級Cloud Volumes ONTAP 至盡力9.12.1時、就不需要停用壓縮功能。</block>
 </blocks>

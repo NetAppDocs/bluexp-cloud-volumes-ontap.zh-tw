@@ -32,7 +32,7 @@ Flash Cache支援特定Cloud Volumes ONTAP 的支援功能。檢視中支援的�
 
 == 限制
 
-* 所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。
+* 所有磁碟區都必須停用壓縮功能、才能充分發揮Flash Cache效能提升功能Cloud Volumes ONTAP 、直到更新至VMware版。當您部署或升級Cloud Volumes ONTAP 至盡力9.12.1時、就不需要停用壓縮功能。
 +
 從BlueXP建立磁碟區時、請選擇「無儲存效率」、或先建立磁碟區、然後再選擇「無儲存效率」 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["使用 CLI 停用資料壓縮"^]。
 
