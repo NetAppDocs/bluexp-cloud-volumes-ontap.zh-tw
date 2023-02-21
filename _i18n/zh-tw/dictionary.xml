@@ -716,7 +716,6 @@
   <block id="125c3f7f1a34115bd5d7a3312f502185" category="list-text">在「工具」頁面中、按一下 * 「啟動 * 」。</block>
   <block id="c9c1fe399a016eb71ef77b98d9d3908c" category="list-text">選取 Cloud Volumes ONTAP 您要移除的「不工作環境」。</block>
   <block id="844581166f3d6c9fef0c12b72220bb3d" category="list-text">在「 Review and Approve 」（檢閱並核准）頁面上、按一下「 * Go * 」。</block>
-  <block id="1bf0dfe526c6a7cc50e0e7cd24f46087" category="section-title">連接器位於Azure中</block>
   <block id="573514d5de621ecfe56c91e7c665d73d" category="inline-link">Azure區域配對</block>
   <block id="b2de829903c040e99b02d3d155ca0528" category="paragraph">當用戶端與Cloud Volumes ONTAP S時 位於相同的vnet內、在連接VNets的對等網路內、或在使用私有VPN或ExpressRoute連線至vnet的內部部署網路中、用戶端存取會透過私有連結進行。</block>
   <block id="6b29a9cbfcf35db30ad6d2c78c52db5e" category="paragraph">以下範例顯示用戶端透過私有連結從同一個Vnet存取、以及從內部網路存取具有私有VPN或ExpressRoute連線的權限。</block>
@@ -730,7 +729,6 @@
   <block id="6f35ba1af4056628e6fc10196137fc15" category="list-text">儲存檔案並登出 Connector 。</block>
   <block id="4dbd1699313f9a246cfb29418554adf1" category="paragraph">不需要重新開機。</block>
   <block id="65d4f53995ffa0759f8e9ed896c6e68e" category="section-title">在故障時啟用復原功能</block>
-  <block id="901f352e439a1e734fd8f1c8ef0a5450" category="paragraph">只有API支援啟用復原功能。</block>
   <block id="48c7c41b72e1d678923ce3571aa65b2d" category="list-title">步驟</block>
   <block id="3964c03d92d8204dfd473576f17a5009" category="list-text">請使用「PUT /occm/config（放入/occm/config）API呼叫與下列要求內容：</block>
   <block id="6c00fef2e24946332c58419df6198320" category="list-text">在* Azure *下、按一下*使用Azure Private Link*。</block>
@@ -3233,7 +3231,6 @@
   <block id="3b45d0097165753cbe807b39e8e38550" category="paragraph">請注意Cloud Volumes ONTAP 、支援Amazon EBS彈性Volume功能搭配IO1磁碟。 <block ref="2f34fac6c8e3e7a84b963b75a5591f20" category="inline-link-macro-rx"></block>。</block>
   <block id="44bacb29285bcdcf27b752d7b6c9e182" category="inline-link-macro">Amazon EBS彈性磁碟區功能</block>
   <block id="a611a569997e8479ac56d19e1a51785f" category="paragraph">如上所述、Cloud Volumes ONTAP 支援Amazon EBS彈性Volume功能的各種組態不支援選擇磁碟大小。 <block ref="2f34fac6c8e3e7a84b963b75a5591f20" category="inline-link-macro-rx"></block>。</block>
-  <block id="0e4b0391e50169d97fc505f0c73a94ba" category="paragraph">連接器應部署在Cloud Volumes ONTAP 其所管理的或所管理的各個系統所在的Azure區域<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。</block>
   <block id="ab446ebd1f851655193779b7c50f3533" category="paragraph">在您建立儲存VM並分配LIF之前、必須先將IP位址指派給Azure中的nic0。</block>
   <block id="19c2f8be3dc9f0749efedd54317e259b" category="paragraph">您需要為資料LIF存取建立IP位址、並為儲存VM（SVM）管理LIF建立另一個選用的IP位址。此管理LIF可連線至SnapCenter 諸如VMware等管理工具。</block>
   <block id="6705d4b1a3db9cb88b17655dcca33de5" category="list-text">如果您執行Cloud Volumes ONTAP 的是版本不含更新版本的版本、請修改儲存VM的網路服務原則。</block>
@@ -4159,7 +4156,6 @@
   <block id="4c06e1c4065aa853ffa68ddc60e138c3" category="paragraph">BlueXP一律會建立此安全性群組。您沒有使用自己的選項。</block>
   <block id="6f3d93af7507d9ff7bead94d1ffc9cc1" category="paragraph">根據預設、BlueXP會啟用Azure Private Link、以便Cloud Volumes ONTAP 在支援的各個儲存帳戶之間建立連線。Azure Private Link可保護Azure中端點之間的連線安全、並提供效能優勢。</block>
   <block id="7dfd5068a6c1386a24bb81164b3321f3" category="paragraph">無論是哪一種組態、BlueXP都會限制Cloud Volumes ONTAP 存取網路、以利連接到各個儲存帳戶。網路存取僅限於Cloud Volumes ONTAP 部署了下列項目的vnet和部署Connector的vnet。</block>
-  <block id="2172036a4fb1da374a247000f3d0760e" category="paragraph">如果貴企業需要、您可以變更BlueXP中的設定、使Cloud Volumes ONTAP 其設定使用服務端點、而非Azure私有連結。變更此設定會套用Cloud Volumes ONTAP 至您所建立的新版資訊系統。</block>
   <block id="497286b7c4a76755ff0535ba3414dce0" category="paragraph">當BlueXP在Cloud Volumes ONTAP Azure中部署時、它會在資源群組中建立一個私有端點。私有端點與Cloud Volumes ONTAP 用於實現功能不均的儲存帳戶相關聯。因此Cloud Volumes ONTAP 、存取資料可透過Microsoft主幹網路存取。</block>
   <block id="77bb2abfb8f3c95b3fdaf2c2e6814b89" category="section-title">提供您Azure私有DNS的詳細資料給BlueXP</block>
   <block id="c6862ef0bb5d25a7ed0231faab734f0d" category="paragraph">如果您使用<block ref="35609e050ed0963e042a408dda682719" category="inline-link-rx"></block>然後您需要修改每個 Connector 上的組態檔。否則、BlueXP無法在Cloud Volumes ONTAP 支援的儲存帳戶之間啟用Azure Private Link連線。</block>
@@ -4541,7 +4537,6 @@
   <block id="a915bf61fc4da5557d359b0301ad21ef" category="list-text">分層至物件儲存的資料不含ONTAP 「支援WORM」功能。為了確保端點對端點WORM功能、您必須正確設定儲存區權限。</block>
   <block id="998c3b79cbc9135556e51847e16ca6c3" category="list-text">分層至物件儲存的資料並不具備WORM功能、這意味著從技術上而言、任何擁有完整儲存區和容器存取權的人、都能移除由ONTAP 實物分級的物件。</block>
   <block id="795cfc8480eae289c5de0d65352581a1" category="list-text">啟用WORM和分層後、將Cloud Volumes ONTAP 會封鎖還原或降級至物件9.8。</block>
-  <block id="8f3a22fee1fcc35025e3e68b3c7b5499" category="paragraph">在大多數情況下、您不需要做任何事、就能使用Cloud Volumes ONTAP 下列功能來設定Azure私有連結：BlueXP會為您管理Azure私有連結。但如果您使用Azure私有DNS、則必須編輯組態檔。您也應該瞭解Azure中的Connector位置需求。</block>
   <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">2023年2月5日</block>
   <block id="078640757da4b274abf89709c42d7741" category="paragraph">下列變更是在版本3.9.26的Connector中提出。</block>
   <block id="72c6f65b45015ee1135ff4bc2cce8860" category="section-title">在AWS中建立放置群組</block>
@@ -4637,4 +4632,15 @@
   <block id="2b92b9eae444abb7f44aa96b856847a4" category="paragraph">如果是<block ref="c02e65ef2be24722283d91b62774dd3d" prefix=" " category="inline-code"></block> 狀態不是<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block>、SVM無法以所有必要的連線和權限來連線至Azure Key Vault服務。請確保您的Azure網路原則和路由不會封鎖您的私有vNet、使其無法到達Azure KeyVault Public端點。如果有、請考慮使用Azure私有端點、從vNet內存取金鑰庫。您可能還需要在SVM上新增靜態主機項目、以解析端點的私有IP位址。</block>
   <block id="840b18b97e1e55325d94f00b965a31cf" category="paragraph">。<block ref="5fb243bae51d7320aff8e09d0bb56325" prefix=" " category="inline-code"></block> 將會報告<block ref="696b031073e74bf2cb98e5ef201d4aa3" prefix=" " category="inline-code"></block> 初始組態時。其狀態將變更為<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block> 加密第一個磁碟區之後。</block>
   <block id="4237e167da34ce4cc54b7915a9ee779a" category="list-text">所有磁碟區都必須停用壓縮功能、才能充分發揮Flash Cache效能提升功能Cloud Volumes ONTAP 、直到更新至VMware版。當您部署或升級Cloud Volumes ONTAP 至盡力9.12.1時、就不需要停用壓縮功能。</block>
+  <block id="dd1852694a70af4fe454fcf679ab1071" category="inline-link-macro">Azure區域配對</block>
+  <block id="ab83b37918dd75da5385d47425e5a41b" category="paragraph">如果貴企業需要、您可以變更BlueXP中的設定、使Cloud Volumes ONTAP 其設定使用服務端點、而非Azure私有連結。變更此設定會套用Cloud Volumes ONTAP 至您所建立的新版資訊系統。服務端點僅在中受支援 <block ref="143d2b52aa05d0c2b5e02a98661c9a57" category="inline-link-macro-rx"></block> 連接器與Cloud Volumes ONTAP 胎心之間。</block>
+  <block id="23c74e586b63f34de771242b40d88dcf" category="paragraph">連接器應部署在Cloud Volumes ONTAP 其所管理的或所管理的各個系統所在的Azure區域<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> 適用於整個系統。Cloud Volumes ONTAP</block>
+  <block id="1fee58171d5cf0db16d7385f5e4a939d" category="paragraph">在大多數情況下、您不需要做任何事、就能使用Cloud Volumes ONTAP 下列功能來設定Azure私有連結：BlueXP會為您管理Azure私有連結。但如果您使用現有的Azure私有DNS區域、則必須編輯組態檔。</block>
+  <block id="dd7ca1b0e6369f5ef2a79cd465cf7cf2" category="section-title">自訂DNS的需求</block>
+  <block id="224fa7dc7e400247de076ec5d2eafc75" category="inline-link-macro">Azure關於使用DNS轉寄站的文件</block>
+  <block id="60af090fbecac12fdce367109a13438c" category="paragraph">或者、如果您使用自訂DNS、則需要從自訂DNS伺服器建立條件轉寄站、以前往Azure私有DNS區域。若要深入瞭解、請參閱 <block ref="4be762cea0592f84a7a3a1377d992613" category="inline-link-macro-rx"></block>。</block>
+  <block id="b8bc704b3f131d1c37611dd5a5c17e1e" category="admonition">如果連接器和Cloud Volumes ONTAP 物件系統部署在不同的VNets中、則您必須在部署連接器的vnet和Cloud Volumes ONTAP 部署了該系統的vnet之間設定vnet對等關係。</block>
+  <block id="85fa376f75ded218650eec5453f272cf" category="paragraph">您可以透過API或更新app.conf檔案來啟用復原功能。</block>
+  <block id="631d5d58329754fe0bb44ea77f068c95" category="paragraph">*透過API*啟用復原功能</block>
+  <block id="07c460b15c5d7df22ee3bebc2fd32aaa" category="paragraph">*更新app.conf以啟用復原功能*</block>
 </blocks>

@@ -30,7 +30,9 @@ summary: 使用Azure Private Link連線至相關儲存帳戶。Cloud Volumes ONT
 
 == 停用Azure私有連結、改用服務端點
 
-如果貴企業需要、您可以變更BlueXP中的設定、使Cloud Volumes ONTAP 其設定使用服務端點、而非Azure私有連結。變更此設定會套用Cloud Volumes ONTAP 至您所建立的新版資訊系統。
+如果貴企業需要、您可以變更BlueXP中的設定、使Cloud Volumes ONTAP 其設定使用服務端點、而非Azure私有連結。變更此設定會套用Cloud Volumes ONTAP 至您所建立的新版資訊系統。服務端點僅在中受支援 link:https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure區域配對"^] 連接器與Cloud Volumes ONTAP 胎心之間。
+
+連接器應部署在Cloud Volumes ONTAP 其所管理的或所管理的各個系統所在的Azure區域 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure區域配對"^] 適用於整個系統。Cloud Volumes ONTAP
 
 .步驟
 . 在BlueXP主控台右上角、按一下「設定」圖示、然後選取「*連接器設定*」。
@@ -43,7 +45,13 @@ summary: 使用Azure Private Link連線至相關儲存帳戶。Cloud Volumes ONT
 
 == 使用Azure私有連結
 
-在大多數情況下、您不需要做任何事、就能使用Cloud Volumes ONTAP 下列功能來設定Azure私有連結：BlueXP會為您管理Azure私有連結。但如果您使用Azure私有DNS、則必須編輯組態檔。您也應該瞭解Azure中的Connector位置需求。
+在大多數情況下、您不需要做任何事、就能使用Cloud Volumes ONTAP 下列功能來設定Azure私有連結：BlueXP會為您管理Azure私有連結。但如果您使用現有的Azure私有DNS區域、則必須編輯組態檔。
+
+
+
+=== 自訂DNS的需求
+
+或者、如果您使用自訂DNS、則需要從自訂DNS伺服器建立條件轉寄站、以前往Azure私有DNS區域。若要深入瞭解、請參閱 link:https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns#on-premises-workloads-using-a-dns-forwarder["Azure關於使用DNS轉寄站的文件"^]。
 
 
 
@@ -58,10 +66,7 @@ summary: 使用Azure Private Link連線至相關儲存帳戶。Cloud Volumes ONT
 image:diagram_azure_private_link.png["概念性影像、顯示資料存取功能可透過Cloud Volumes ONTAP 私有端點和私有連結存取至功能性的資料、並可存取儲存帳戶。"]
 
 
-
-=== 連接器位於Azure中
-
-連接器應部署在Cloud Volumes ONTAP 其所管理的或所管理的各個系統所在的Azure區域 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure區域配對"^] 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。
+NOTE: 如果連接器和Cloud Volumes ONTAP 物件系統部署在不同的VNets中、則您必須在部署連接器的vnet和Cloud Volumes ONTAP 部署了該系統的vnet之間設定vnet對等關係。
 
 
 
@@ -111,7 +116,9 @@ image:diagram_azure_private_link.png["概念性影像、顯示資料存取功能
 
 如果您啟用復原、則BlueXP會停止動作、並回溯作為行動一部分所建立的所有資源。
 
-只有API支援啟用復原功能。
+您可以透過API或更新app.conf檔案來啟用復原功能。
+
+*透過API*啟用復原功能
 
 .步驟
 . 請使用「PUT /occm/config（放入/occm/config）API呼叫與下列要求內容：
@@ -119,5 +126,16 @@ image:diagram_azure_private_link.png["概念性影像、顯示資料存取功能
 [source, json]
 ----
 { "rollbackOnAzurePrivateLinkFailure": true }
+----
+
+
+*更新app.conf以啟用復原功能*
+
+.步驟
+. 請使用「PUT /occm/config（放入/occm/config）API呼叫與下列要求內容：
++
+[source, json]
+----
+{ "rollbackOnAzurePrivateLinkFailure": false }
 ----
 
