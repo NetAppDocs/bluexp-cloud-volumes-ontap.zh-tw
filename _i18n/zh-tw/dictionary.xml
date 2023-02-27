@@ -508,7 +508,6 @@
   <block id="405cb575e50b611a22ec99d1abb3f202" category="inline-link">使用 CLI 停用資料壓縮</block>
   <block id="444f10b28a63ab25d9664d0647602d07" category="list-text">重新開機後的快取重新溫熱功能不支援 Cloud Volumes ONTAP 使用此功能。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">取得協助</block>
-  <block id="07d41912a6ab6b97216f8cf89e93205c" category="section-title">自我支援</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">這些選項可供免費使用、一天24小時、一週7天：</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">知識庫</block>
   <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
@@ -516,8 +515,6 @@
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文件</block>
   <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto：ng-cloudmanager-feedback@netapp.com [意見反應電子郵件]</block>
-  <block id="0659d428df833a806e29e65e632d380a" category="section-title">NetApp支援</block>
-  <block id="f5052c65917d7341726235d4d4941461" category="list-text">在「Technical Support（技術支援）」下選擇可用的選項之一：</block>
   <block id="8e9d6d95264b6231f0a1d0ca22c087f7" category="summary">下列指南可協助您在Cloud Volumes ONTAP Google Cloud中開始使用、以符合您的特定使用案例。</block>
   <block id="f540a08b090d18fa948ca4ade8ceb7ff" category="doc">適用於 Google Cloud Cloud Volumes ONTAP</block>
   <block id="f22e86b63856df3737d333499d0d8642" category="inline-link-macro">在Google Cloud中開始Cloud Volumes ONTAP 使用功能：設定逐步解說</block>
@@ -3651,7 +3648,6 @@
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述的自我支援選項、您也可以在啟動支援之後、與NetApp支援專家合作解決任何問題。</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">瞭解如何註冊以取得支援</block>
   <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">如果您想與電話上的其他人通話、請按一下*「呼叫我們*」。您將會被導向netapp.com上的頁面、其中列出您可以撥打的電話號碼。</block>
-  <block id="bf5bc6ab0f95f17f4e98c9d766b8c11d" category="list-text">按一下*建立案例*、與NetApp支援專家一起開啟問題單：</block>
   <block id="b53e0a259f4a0c8e7da80d6c94e26c84" category="list-text">*《支援帳戶*》：選取與開立支援案例的人員相關的適用的NSS帳戶。NetApp 支援網站除了以下提供的其他電子郵件之外、此人將是NetApp聯絡的主要聯絡人。</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*工作環境*：如果適用於儲存設備、請選取* Cloud Volumes ONTAP 《*》或*《內部部署*》、然後選取相關的工作環境。</block>
   <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*案例優先順序*：選擇案例的優先順序、可以是低、中、高或嚴重。</block>
@@ -4397,7 +4393,6 @@
   <block id="a75a698e7d0ed400565763b148a6d0db" category="list-text">HA系統使用優質的SSD共享託管磁碟、兩者都能以較高的成本為I/O密集型工作負載提供高效能。在9.12.1版本之前建立的HA部署會使用優質網頁。</block>
   <block id="e2ab7c65b21ed8cc1c3b642b5e36429e" category="section-title">S3</block>
   <block id="cc5f50b3903dc30a3a3545bb58fcdd14" category="paragraph">支援S3作為橫向擴充儲存的選項Cloud Volumes ONTAP 。S3傳輸協定支援可讓您設定S3用戶端存取儲存VM（SVM）中儲存區段內的物件。</block>
-  <block id="75081fb4982f7b843e702079b35f0ed4" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block>。</block>
   <block id="eba1f3287bdc33dfa25c084b5e15a4c5" category="cell">9.12.1%</block>
   <block id="708ffc372ba6f36174a7930961b956ab" category="section-title">2022年12月8日</block>
   <block id="5e1976febada1fa49b700760dd574954" category="paragraph">與標準AWS區域類似、您可以在中使用Cloud Manager<block ref="5d288b71381e3fb57ca0bda26da6a1f9" category="inline-link-rx"></block> 部署Cloud Volumes ONTAP 的環境、為您的雲端儲存設備提供企業級功能。AWS C2S是美國專屬的封閉區域智慧社群；本頁的說明僅適用於AWS C2S區域使用者。</block>
@@ -4643,4 +4638,10 @@
   <block id="85fa376f75ded218650eec5453f272cf" category="paragraph">您可以透過API或更新app.conf檔案來啟用復原功能。</block>
   <block id="631d5d58329754fe0bb44ea77f068c95" category="paragraph">*透過API*啟用復原功能</block>
   <block id="07c460b15c5d7df22ee3bebc2fd32aaa" category="paragraph">*更新app.conf以啟用復原功能*</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">使用自我支援選項</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">利用NetApp支援建立案例</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在「*資源*」頁面上、選擇「技術支援」下的其中一個可用選項：</block>
+  <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">按一下*建立案例*、與NetApp支援專家一起開啟問題單：</block>
+  <block id="5db69347f06a9f63ed1f4c90e8b874e5" category="inline-link-macro">瞭解S3多重傳輸協定的運作方式</block>
+  <block id="e48cc3153e7d667d87986f8e162ea872" category="paragraph"><block ref="8674fe872330e1769235c43fb746c3f7" category="inline-link-macro-rx"></block>。<block ref="5b24747aa1a4fd51dbcea213f97833c7" category="inline-link-macro-rx"></block>。</block>
 </blocks>

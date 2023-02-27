@@ -42,7 +42,7 @@ SMB是Windows系統的傳統檔案存取傳輸協定。用戶端可以ONTAP 使�
 
 支援S3作為橫向擴充儲存的選項Cloud Volumes ONTAP 。S3傳輸協定支援可讓您設定S3用戶端存取儲存VM（SVM）中儲存區段內的物件。
 
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]。
+link:https://docs.netapp.com/us-en/ontap/s3-multiprotocol/index.html#how-s3-multiprotocol-works["瞭解S3多重傳輸協定的運作方式"^]。link:https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]。
 
 
 
