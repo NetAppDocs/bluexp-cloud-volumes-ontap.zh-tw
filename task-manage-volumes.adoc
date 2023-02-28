@@ -120,7 +120,7 @@ NOTE: BlueXP會將磁碟區移至現有的Aggregate、該集合體使用所選�
 
 根據預設、當磁碟區空間不足時、它會自動增加至最大大小。預設值為1、000、表示磁碟區的大小可增加至11倍。此值可在連接器的設定中設定。
 
-如果您需要調整磁碟區大小、您可以透過調整磁碟區大小 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["系統管理程式ONTAP"^]。調整磁碟區大小時、請務必將系統的容量限制列入考量。前往 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["發行說明 Cloud Volumes ONTAP"^] 以取得更多詳細資料。
+如果您需要調整磁碟區大小、您可以透過調整磁碟區大小 link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["系統管理程式ONTAP"^]。調整磁碟區大小時、請務必將系統的容量限制列入考量。前往 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["發行說明 Cloud Volumes ONTAP"^] 以取得更多詳細資料。
 
 
 
@@ -161,14 +161,14 @@ endif::aws[]
 
 ifdef::azure[]
 
-** 若要將Azure AD網域服務設定為Cloud Volumes ONTAP AD伺服器以供使用、請在此欄位中輸入* OID=AADDC computers*或* OID=AADDC使用者*。https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Azure 說明文件：在 Azure AD 網域服務託管網域中建立組織單位（ OU ）"^]
+** 若要將Azure AD網域服務設定為Cloud Volumes ONTAP AD伺服器以供使用、請在此欄位中輸入* OID=AADDC computers*或* OID=AADDC使用者*。link:https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Azure 說明文件：在 Azure AD 網域服務託管網域中建立組織單位（ OU ）"^]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-** 若要將Google託管Microsoft AD設定為Cloud Volumes ONTAP AD伺服器以供使用、請在此欄位中輸入* OU=computers,OU=Cloud *。https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google Cloud文件：Google託管Microsoft AD的組織單位"^]
+** 若要將Google託管Microsoft AD設定為Cloud Volumes ONTAP AD伺服器以供使用、請在此欄位中輸入* OU=computers,OU=Cloud *。link:https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google Cloud文件：Google託管Microsoft AD的組織單位"^]
 
 
 endif::gcp[]
@@ -197,7 +197,7 @@ endif::gcp[]
 在大多數情況下、您可以使用 System Manager 來移動磁碟區。
 
 +
-如需相關指示、請參閱 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["《》《 9 Volume Move Express Guide 》（英文） ONTAP"^]。
+如需相關指示、請參閱 link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["《》《 9 Volume Move Express Guide 》（英文） ONTAP"^]。
 
 
 
@@ -208,14 +208,14 @@ endif::gcp[]
 BlueXP可能會顯示「必要行動」訊息、指出移動磁碟區是避免容量問題的必要條件、但您必須自行修正問題。如果發生這種情況、您需要找出如何修正問題、然後移動一或多個磁碟區。
 
 
-TIP: 當Aggregate已達到90%使用容量時、BlueXP會顯示這些必要行動訊息。如果啟用資料分層、則當Aggregate達到80%已使用容量時、訊息會顯示。根據預設、10%的可用空間會保留給資料分層。 link:task-tiering.html#changing-the-free-space-ratio-for-data-tiering["深入瞭解資料分層的可用空間比率"]。
+TIP: 當Aggregate已達到90%使用容量時、BlueXP會顯示這些必要行動訊息。如果啟用資料分層、則當Aggregate達到80%已使用容量時、訊息會顯示。根據預設、10%的可用空間會保留給資料分層。 link:task-tiering.html#changing-the-free-space-ratio-for-data-tiering["深入瞭解資料分層的可用空間比率"^]。
 
 .步驟
-. <<找出如何修正容量問題,找出如何修正問題>>。
+. <<找出如何修正容量問題>>。
 . 根據您的分析、移動磁碟區以避免容量問題：
 +
-** <<將磁碟區移至其他系統、以避免發生容量問題,將磁碟區移至其他系統>>。
-** <<將磁碟區移至其他Aggregate、以避免容量問題,將磁碟區移至同一系統上的其他 Aggregate>>。
+** <<將磁碟區移至其他系統、以避免發生容量問題>>。
+** <<將磁碟區移至其他Aggregate、以避免容量問題>>。
 
 
 
@@ -273,20 +273,24 @@ image:screenshot_aggr_volumes.gif["螢幕擷取畫面：在 Aggregate 資訊對�
 .關於這項工作
 您可以依照此工作中的步驟來修正下列必要行動訊息：
 
- Moving a volume is necessary to avoid capacity issues; however, BlueXP cannot perform this action for you because the system has reached the disk limit.
+[]
+====
+移動磁碟區是避免容量問題的必要步驟、不過、由於系統已達到磁碟限制、因此BlueXP無法為您執行此動作。
+
+====
 .步驟
 . 找出 Cloud Volumes ONTAP 具備可用容量的系統、或是部署新系統。
 . 將來源工作環境拖放到目標工作環境、以執行磁碟區的一次性資料複寫。
 +
-如需詳細資訊、請參閱 https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["在系統之間複寫資料"^]。
+如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["在系統之間複寫資料"^]。
 
 . 移至「複寫狀態」頁面、然後中斷 SnapMirror 關係、將複寫的磁碟區從資料保護磁碟區轉換為讀寫磁碟區。
 +
-如需詳細資訊、請參閱 https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["管理資料複寫排程和關係"^]。
+如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["管理資料複寫排程和關係"^]。
 
 . 設定磁碟區以進行資料存取。
 +
-如需設定目的地 Volume 以進行資料存取的相關資訊、請參閱 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["《》《 9 Volume Disaster Recovery Express 指南》 ONTAP"^]。
+如需設定目的地 Volume 以進行資料存取的相關資訊、請參閱 link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["《》《 9 Volume Disaster Recovery Express 指南》 ONTAP"^]。
 
 . 刪除原始 Volume 。
 +
@@ -303,7 +307,11 @@ image:screenshot_aggr_volumes.gif["螢幕擷取畫面：在 Aggregate 資訊對�
 .關於這項工作
 您可以依照此工作中的步驟來修正下列必要行動訊息：
 
- Moving two or more volumes is necessary to avoid capacity issues; however, BlueXP cannot perform this action for you.
+[]
+====
+為了避免容量問題、必須移動兩個以上的磁碟區；不過、BlueXP無法為您執行此動作。
+
+====
 .步驟
 . 驗證現有的 Aggregate 是否具有您需要移動的磁碟區可用容量：
 +
@@ -327,7 +335,7 @@ image:screenshot_aggr_capacity.gif["螢幕擷取畫面：顯示 Aggregate 資訊
 . 使用 System Manager 或 CLI 將磁碟區移至 Aggregate 。
 . 在大多數情況下、您可以使用 System Manager 來移動磁碟區。
 +
-如需相關指示、請參閱 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["《》《 9 Volume Move Express Guide 》（英文） ONTAP"^]。
+如需相關指示、請參閱 link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["《》《 9 Volume Move Express Guide 》（英文） ONTAP"^]。
 
 
 

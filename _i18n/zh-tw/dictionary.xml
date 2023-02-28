@@ -1111,7 +1111,6 @@
   <block id="f003f3d16df55f060f81ad4dddd2fbf9" category="section-title">調整磁碟區大小</block>
   <block id="983731c4568a7ed436142da8a63f9442" category="paragraph">根據預設、當磁碟區空間不足時、它會自動增加至最大大小。預設值為1、000、表示磁碟區的大小可增加至11倍。此值可在連接器的設定中設定。</block>
   <block id="6ad5e0a20f49ad6a370454bb3afc9a9e" category="inline-link">系統管理程式ONTAP</block>
-  <block id="506e74c9262ca17fcd45f9fc1bb03b87" category="paragraph">如果您需要調整磁碟區大小、您可以透過調整磁碟區大小<block ref="bfb8b856b98909d9b8eda9fe0698d61f" category="inline-link-rx"></block>。調整磁碟區大小時、請務必將系統的容量限制列入考量。前往<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 以取得更多詳細資料。</block>
   <block id="6b851ed63a549d28a80d2c974afcec80" category="section-title">修改CIFS伺服器</block>
   <block id="fd549a6bcd2d53b8accb49a7225fcfa0" category="paragraph">如果您變更 DNS 伺服器或 Active Directory 網域、您需要在 Cloud Volumes ONTAP 更新版中修改 CIFS 伺服器、以便繼續將儲存設備提供給用戶端。</block>
   <block id="26eb89266cb77257e69e50bb61b2da4e" category="list-text">在工作環境中、按一下功能表圖示、然後按一下 * 進階 &gt; CIFS 設定 * 。</block>
@@ -1139,15 +1138,8 @@
   <block id="8db7c24c4dffccaf5bf563f6d3732e89" category="list-text">使用 System Manager 或 CLI 將磁碟區移至 Aggregate 。</block>
   <block id="af0b0ecdfe1446323bef34666744c7e9" category="paragraph">在大多數情況下、您可以使用 System Manager 來移動磁碟區。</block>
   <block id="1a21197322dd87a558be86d7c5d97492" category="inline-link">《》《 9 Volume Move Express Guide 》（英文） ONTAP</block>
-  <block id="217bcdbee54dc423980ce9fc6cc76b79" category="paragraph">如需相關指示、請參閱<block ref="fb045c0781ca935cf172ccf1ef6911f4" category="inline-link-rx"></block>。</block>
   <block id="6cd040ad52746e1f0492a9759d917f90" category="inline-link-macro">深入瞭解資料分層的可用空間比率</block>
-  <block id="f3e9ffaf35c2c9107fad65340c0a58ef" category="inline-xref">找出如何修正問題</block>
-  <block id="a503739f25483871918a8a5207edf1c0" category="list-text"><block ref="c1f7d6f91a9daa0975a20f015e7d72e8" category="inline-xref-macro-rx"></block>。</block>
   <block id="5d665333f267e82f0046deebfd57476c" category="list-text">根據您的分析、移動磁碟區以避免容量問題：</block>
-  <block id="c78ca6c286afc3dfb94b066563deac1b" category="inline-xref">將磁碟區移至其他系統</block>
-  <block id="1c4b1721b4601b5dc6b06c5ebd7cea02" category="list-text"><block ref="80571c84b62cdae6320cf68009d86584" category="inline-xref-macro-rx"></block>。</block>
-  <block id="9b4303562671d5b474d173b347fd9b61" category="inline-xref">將磁碟區移至同一系統上的其他 Aggregate</block>
-  <block id="ae1a89f1e455b4d862ac350927ac1efe" category="list-text"><block ref="2a6a024d5d411af25d1ff07727fe0540" category="inline-xref-macro-rx"></block>。</block>
   <block id="e1b75cc4594e8fdbb5c705aee244a469" category="section-title">找出如何修正容量問題</block>
   <block id="5a31c45fe6b6d37f4ceeb5b86c4346da" category="list-text">檢視必要行動訊息中的進階資訊、以識別已達到容量上限的集合體。</block>
   <block id="34b14acb1a2ab9863c3c5dad4fd43a16" category="paragraph">例如、進階資訊應該說類似以下的內容： Agggr1 已達到其容量上限。</block>
@@ -1174,13 +1166,10 @@
   <block id="3ebad430102b25358c29364084a76dad" category="list-text">找出 Cloud Volumes ONTAP 具備可用容量的系統、或是部署新系統。</block>
   <block id="9ffaf8150bb88e959d7eae927c0c3cc0" category="list-text">將來源工作環境拖放到目標工作環境、以執行磁碟區的一次性資料複寫。</block>
   <block id="bf448453afbbab6dd3b54b15d2ebdcee" category="inline-link">在系統之間複寫資料</block>
-  <block id="03cfceb5dec779775f3d0affcf589362" category="paragraph">如需詳細資訊、請參閱<block ref="6f7d40a364323bc62d4fdc75425cae64" category="inline-link-rx"></block>。</block>
   <block id="2dc704f7e20cf3c16f9def2d83a6b399" category="list-text">移至「複寫狀態」頁面、然後中斷 SnapMirror 關係、將複寫的磁碟區從資料保護磁碟區轉換為讀寫磁碟區。</block>
   <block id="95be3f7b9f27ac89487465c149063782" category="inline-link">管理資料複寫排程和關係</block>
-  <block id="386f4c219628b994f8c22ccccaf567af" category="paragraph">如需詳細資訊、請參閱<block ref="0f41cde29a12d20b922d64dd196364f0" category="inline-link-rx"></block>。</block>
   <block id="7985a618100e35f9e631782c3bb28e64" category="list-text">設定磁碟區以進行資料存取。</block>
   <block id="3592520f476679c41ae085dbea13f855" category="inline-link">《》《 9 Volume Disaster Recovery Express 指南》 ONTAP</block>
-  <block id="a33e50c65bd1d897511af3eae58228ea" category="paragraph">如需設定目的地 Volume 以進行資料存取的相關資訊、請參閱<block ref="af502c2f8fb660944e2ad52aad1efcc3" category="inline-link-rx"></block>。</block>
   <block id="ba425bc12c858c9fb4c4f3f36164a1a7" category="list-text">刪除原始 Volume 。</block>
   <block id="48ade27fb20d2c5d23a7a3f46a67008c" category="paragraph">如需詳細資訊、請參閱 <block ref="926e5f34b50c39795d0a59ca0afdb660" category="inline-link-macro-rx"></block>。</block>
   <block id="9b75835d1597be290e865df9d9c03011" category="section-title">將磁碟區移至其他Aggregate、以避免容量問題</block>
@@ -2878,7 +2867,6 @@
   <block id="656d282ec4da3b613132f8e29d6cb90e" category="paragraph">您可以在雲端供應商的市場中、透過隨用隨付訂閱取得30天的免費試用版。免費試用版包含Cloud Volumes ONTAP 了VMware及Cloud Backup。試用版會在您訂閱市場上的產品項目時開始。</block>
   <block id="2986f3edb85e34a7556b412028be57fb" category="paragraph">沒有執行個體或容量限制。您可以任意部署Cloud Volumes ONTAP 多個不需付費的功能、並視需要配置多餘的容量、30天內即可免費部署。免費試用版會在30天後自動轉換為付費的每小時訂閱。</block>
   <block id="631556a144b10d5d5f19603b18176e32" category="paragraph">雖然不收取Cloud Volumes ONTAP 每小時的軟體授權費用、但您的雲端供應商仍需支付基礎架構費用。</block>
-  <block id="0fc39380a79b9b90f383fcccff782087" category="cell">提供 CIFS 伺服器名稱解析的 DNS 伺服器 IP 位址。列出的 DNS 伺服器必須包含所需的服務位置記錄（ SRV), 才能找到 CIFS 伺服器要加入之網域的 Active Directory LDAP 伺服器和網域控制器。ifdef：：GCP[]如果您正在設定Google Managed Active Directory、則AD預設可透過169.254.169.254 IP位址存取。endif::GCP[]</block>
   <block id="6c30ec25f9c157f6acd5cb63a6abee29" category="list-text">其中一個集合體使用舊的物件命名配置。兩個 Aggregate 都必須使用相同的名稱格式。</block>
   <block id="ea17490349895c296964a806a4f6a8d1" category="paragraph">請注意、可用空間現在可在原始 Aggregate 上使用。現有磁碟區或新磁碟區可以使用該空間。在此案例中、無法將空間傳回雲端產品。</block>
   <block id="181e3299a212253d089ee23c58a37a10" category="list-text">Essentials套件與專業版套件現已在所有雲端供應商的市場中推出。</block>
@@ -4128,7 +4116,6 @@
   <block id="f162010d329e7b7904453b50a89c50d5" category="admonition">BlueXP會將磁碟區移至現有的Aggregate、該集合體使用所選的磁碟類型進行分層、或是為磁碟區建立新的Aggregate。</block>
   <block id="13a7a73346b449660233c2025494cc6b" category="section-title">當BlueXP顯示「需要採取行動」訊息時、請移動磁碟區</block>
   <block id="d6239790c8fdf63f11c139a1d35d52f2" category="paragraph">BlueXP可能會顯示「必要行動」訊息、指出移動磁碟區是避免容量問題的必要條件、但您必須自行修正問題。如果發生這種情況、您需要找出如何修正問題、然後移動一或多個磁碟區。</block>
-  <block id="b3c34ebd7a4896da31735742995b6a89" category="admonition">當Aggregate已達到90%使用容量時、BlueXP會顯示這些必要行動訊息。如果啟用資料分層、則當Aggregate達到80%已使用容量時、訊息會顯示。根據預設、10%的可用空間會保留給資料分層。 <block ref="daf1e430edb10b6c6271ed1f402acb50" category="inline-link-macro-rx"></block>。</block>
   <block id="9ea2c21203b42625092e01233ade8432" category="paragraph">如果BlueXP無法提供移動磁碟區以避免容量問題的建議、您必須識別需要移動的磁碟區、以及是否應該將它們移到同一個系統上的其他Aggregate或其他系統上。</block>
   <block id="089c5aa04f9684ce9c89262d002a1a92" category="paragraph">CMK 可以是 AWS 託管的 CMK 、也可以是客戶託管的 CMK 。它可以與BlueXP和Cloud Volumes ONTAP Sfor相同的AWS帳戶、也可以位於不同的AWS帳戶中。</block>
   <block id="6364b028c15709e34959be9167982fd5" category="list-text">新增IAM角色、將權限提供給BlueXP做為_key使用者_、以修改每個CMK的金鑰原則。</block>
@@ -4644,4 +4631,18 @@
   <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">按一下*建立案例*、與NetApp支援專家一起開啟問題單：</block>
   <block id="5db69347f06a9f63ed1f4c90e8b874e5" category="inline-link-macro">瞭解S3多重傳輸協定的運作方式</block>
   <block id="e48cc3153e7d667d87986f8e162ea872" category="paragraph"><block ref="8674fe872330e1769235c43fb746c3f7" category="inline-link-macro-rx"></block>。<block ref="5b24747aa1a4fd51dbcea213f97833c7" category="inline-link-macro-rx"></block>。</block>
+  <block id="80f73203717d2460e95dcb08c0b8c6a2" category="paragraph">如果您需要調整磁碟區大小、您可以透過調整磁碟區大小 <block ref="03bbffa71060830678a71c986c6c0e67" category="inline-link-macro-rx"></block>。調整磁碟區大小時、請務必將系統的容量限制列入考量。前往<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 以取得更多詳細資料。</block>
+  <block id="2ff4be1dced06cb9c588fc9e6efd1009" category="cell">提供 CIFS 伺服器名稱解析的 DNS 伺服器 IP 位址。列出的 DNS 伺服器必須包含所需的服務位置記錄（ SRV), 才能找到 CIFS 伺服器要加入之網域的 Active Directory LDAP 伺服器和網域控制器。ifdef：：GCP[]如果您正在設定Google Managed Active Directory、則AD預設可透過169.254.169.254 IP位址存取。endif::GCP[]</block>
+  <block id="0031307525b9c7232536c8489912acba" category="list-text">若要將Azure AD網域服務設定為Cloud Volumes ONTAP AD伺服器以供使用、請在此欄位中輸入* OID=AADDC computers*或* OID=AADDC使用者*。<block ref="6cfd09a964ae125f104125f00208f340" category="inline-link-macro-rx"></block></block>
+  <block id="8c69b575c72fa1fcd5f27c44ebda605c" category="list-text">若要將Google託管Microsoft AD設定為Cloud Volumes ONTAP AD伺服器以供使用、請在此欄位中輸入* OU=computers,OU=Cloud *。<block ref="1b7ab571d5a2f9c86fda846ee11b6c13" category="inline-link-macro-rx"></block></block>
+  <block id="6ecb389aa5c4152ad11debb6b405d8f4" category="paragraph">如需相關指示、請參閱 <block ref="c838ef5ca7d4c799293e9d6665f058c2" category="inline-link-macro-rx"></block>。</block>
+  <block id="3e3f3d1ee09d0c34761e81b8febdfac1" category="admonition">當Aggregate已達到90%使用容量時、BlueXP會顯示這些必要行動訊息。如果啟用資料分層、則當Aggregate達到80%已使用容量時、訊息會顯示。根據預設、10%的可用空間會保留給資料分層。 <block ref="3db8b63393c9dee90fed2c0d21b67506" category="inline-link-macro-rx"></block>。</block>
+  <block id="2b79332b080e36571c2a54380fc5c418" category="list-text"><block ref="17047d28181f6f299ef2c58b9def85f2" category="inline-xref-macro-rx"></block>。</block>
+  <block id="97d3b1a647264740ff1eb4d6ac3f08b6" category="list-text"><block ref="53798a349f4b8eaaf382d38d42cd2fda" category="inline-xref-macro-rx"></block>。</block>
+  <block id="f44da59206fbcc578506df6f00d5030b" category="list-text"><block ref="924b7cdc66a1ab2e5f404339b85fd57a" category="inline-xref-macro-rx"></block>。</block>
+  <block id="1589be55d1846040de3b3619fc377b4a" category="paragraph">移動磁碟區是避免容量問題的必要步驟、不過、由於系統已達到磁碟限制、因此BlueXP無法為您執行此動作。</block>
+  <block id="621c224eaccf978de56d5c7c92dcd365" category="paragraph">如需詳細資訊、請參閱 <block ref="90f62dc404dc75e350515d756b9451b6" category="inline-link-macro-rx"></block>。</block>
+  <block id="35b10bba4deebd11fc4a8516d588a2f7" category="paragraph">如需詳細資訊、請參閱 <block ref="99d9b6ae46b04038337785859273721b" category="inline-link-macro-rx"></block>。</block>
+  <block id="5f377380cbcdf7966d890bdb7ff0faa5" category="paragraph">如需設定目的地 Volume 以進行資料存取的相關資訊、請參閱 <block ref="194d6a4dc62fd84f1ce4e3d372f4afab" category="inline-link-macro-rx"></block>。</block>
+  <block id="38e756f76c74b5075bf08a75f76e4554" category="paragraph">為了避免容量問題、必須移動兩個以上的磁碟區；不過、BlueXP無法為您執行此動作。</block>
 </blocks>
