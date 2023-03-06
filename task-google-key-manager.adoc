@@ -20,6 +20,7 @@ summary: 利用Azure Key Vault提供第三方金鑰管理服務。
 .先決條件
 * 必須執行9.10.1版或更新版本Cloud Volumes ONTAP
 * 已安裝Volume Encryption（VE）授權
+* 安裝多租戶加密金鑰管理（MTEKM）授權、從Cloud Volumes ONTAP 版本號為E59.12.1 GA開始。
 * 您必須是叢集或SVM管理員
 * 現用Google Cloud Platform訂閱
 

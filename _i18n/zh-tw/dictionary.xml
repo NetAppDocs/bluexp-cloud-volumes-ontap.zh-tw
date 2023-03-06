@@ -2519,7 +2519,6 @@
   <block id="19efe5a9cd2387e8587c05321062a095" category="paragraph">如果您使用HA配對、Cloud Volumes ONTAP 從9.8版開始、支援多種VM類型的高速寫入速度。前往<block ref="2c91cb4d7bbd40d1a3efe8602ebb4273" category="inline-link-rx"></block> 可查看支持高速寫入速度的VM類型。</block>
   <block id="56ef2682280ac110060b881925a87b80" category="section-title">Google Cloud</block>
   <block id="543bcb76d6487a8515a8a34178160fca" category="paragraph">如果您使用單一節點系統、 Cloud Volumes ONTAP 則支援所有機器類型的高速寫入速度。</block>
-  <block id="a5feb10e04fddec4318f091f70667b36" category="paragraph">在 Google Cloud 中、使用 HA 配對不支援高速寫入。 Cloud Volumes ONTAP</block>
   <block id="e4e959caff2c6b1635b2a3bea64b35f7" category="inline-link">深入瞭解Cloud Volumes ONTAP 支援的Google Cloud機器類型</block>
   <block id="f3e658b45576241d792ccaccc236fc48" category="paragraph"><block ref="a8ee7ccc97f8f155aa3297d287b2257a" category="inline-link-rx"></block>。</block>
   <block id="5859fb81f0cd1fbd6824d86c16923404" category="section-title">如何選擇寫入速度</block>
@@ -3702,10 +3701,7 @@
   <block id="1c91f3adc957364cb01d33e100ee1ea3" category="list-text">NetApp新推出</block>
   <block id="00fc9d0c515c69ea2c368521453d982e" category="inline-xref">瞭解如何向NetApp註冊</block>
   <block id="97454ce87333f7ebd50ee38b8126fb39" category="paragraph"><block ref="37544f11913357c4e8c8a4ec607ae247" category="inline-xref-macro-rx"></block>。</block>
-  <block id="0f0a0d646a020cf3a65ce82ada4cfb01" category="list-text">帳戶必須是客戶層級的帳戶（不是來賓帳戶或臨時帳戶）。</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">三個橫點的圖示</block>
-  <block id="ff67299785d475e87002751aa6ab5eb8" category="list-text">成功登入後、NetApp會儲存NSS.使用者名稱。這是系統產生的ID、會對應至您的電子郵件。在「* nssn*管理*」頁面上、您可以從顯示電子郵件 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
-  <block id="505da61efe6bebebbaf092da18f64613" category="list-text">如果您需要重新整理登入認證憑證權杖、也可以在中使用*更新認證*選項 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 功能表。使用此選項會提示您重新登入。</block>
   <block id="ad56c7289bc13dcf4f78c285f7f03878" category="section-title">向NetApp註冊</block>
   <block id="f1bac79c2c71fbd93863b9fbd718094c" category="paragraph">您如何註冊NetApp支援取決於您是否已擁有NetApp 支援網站 一個NetApp（NSS）帳戶。</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">現有的客戶、擁有一個新服務客戶帳戶</block>
@@ -4645,4 +4641,123 @@
   <block id="35b10bba4deebd11fc4a8516d588a2f7" category="paragraph">如需詳細資訊、請參閱 <block ref="99d9b6ae46b04038337785859273721b" category="inline-link-macro-rx"></block>。</block>
   <block id="5f377380cbcdf7966d890bdb7ff0faa5" category="paragraph">如需設定目的地 Volume 以進行資料存取的相關資訊、請參閱 <block ref="194d6a4dc62fd84f1ce4e3d372f4afab" category="inline-link-macro-rx"></block>。</block>
   <block id="38e756f76c74b5075bf08a75f76e4554" category="paragraph">為了避免容量問題、必須移動兩個以上的磁碟區；不過、BlueXP無法為您執行此動作。</block>
+  <block id="1ee6f28ca24808cbfb56feaccf1c3e53" category="summary">透過Google Cloud命令列、將匯出的映像轉換成disk.RAW格式。</block>
+  <block id="4924fff9a6684704aac6ccb1ed5fd97d" category="doc">將Google Cloud上的影像轉換成原始格式</block>
+  <block id="e42cb7ec1fc839883e3e4e1864b30d87" category="inline-link">The》（NSS）NetApp 支援網站</block>
+  <block id="ac16be4e1060792bdf37f35e6cc518f9" category="paragraph">用於部署新執行個體、升級或用於現有映像的映像、將透過與用戶端共用<block ref="c1c4e3e8a814891940b982f96af89878" category="inline-link-rx"></block>。已簽署的摘要及憑證將可透過NSS入口網站下載。請確定您下載的摘要和憑證是與NetApp支援部門共用的映像相對應的適當版本。例如、9.13.0映像會有9.13.0簽署的摘要和證書、可在NSS上取得。</block>
+  <block id="7a8f498eae5977019b0d0c0d3ef013c0" category="section-title">為何需要此步驟？</block>
+  <block id="6bb0851f205415d62274497842e3218a" category="paragraph">無法直接從Google Cloud下載影像。若要根據簽署的摘要和憑證來驗證映像、您需要有機制來比較這兩個檔案並下載映像。若要這麼做、您必須將映像匯出/轉換成磁碟.RAW格式、並將結果儲存在Google Cloud的儲存庫中。磁碟.RAW檔案會在處理過程中產生損及壓縮。</block>
+  <block id="639031c91c1718355b2c49de79b7c8a9" category="paragraph">使用者/服務帳戶需要權限才能執行下列作業：</block>
+  <block id="8510b9d49ae3af28080e9ab3c769e316" category="list-text">存取Google儲存庫</block>
+  <block id="6b3a8711b7b0a7f0ca17594f3cb27910" category="list-text">寫入Google Storage儲存區</block>
+  <block id="bb08d6d5fcb1c5c4e9257dd97f8657e8" category="list-text">建立雲端建置工作（在匯出程序期間使用）</block>
+  <block id="0211c2e7a1f1b9cd2d2ff37f63d0cbfe" category="list-text">存取所需的映像</block>
+  <block id="74a5f984dcb642bac9c5327e39e6df05" category="list-text">建立匯出映像工作</block>
+  <block id="65f7614896abb27a91631087b7310da5" category="paragraph">若要驗證映像、必須先將其轉換成磁碟.RAW格式、然後再下載。</block>
+  <block id="10868e2d56662b4588b6d2397d92a859" category="section-title">使用Google Cloud命令列匯出Google Cloud映像</block>
+  <block id="af61c0c1ee8de516a01c6e171f19abeb" category="inline-link">gCloud運算映像匯出命令</block>
+  <block id="1dd36b5da1220777ad9e1ab31632d911" category="paragraph">將映像匯出至雲端儲存設備的首選方法是使用<block ref="a4c66ff2f3c53397780a048fb09314b7" category="inline-link-rx"></block>。此命令會取得所提供的映像、並將其轉換成磁碟.原始 檔案、並取得tar和gzipped。產生的檔案會儲存在目的地URL、然後下載以供驗證。</block>
+  <block id="26b2216a4240ad7d761b87056bdd08d6" category="paragraph">使用者/帳戶必須擁有存取及寫入所需儲存區、匯出映像及雲端建置（Google用於匯出映像）的權限、才能執行此作業。</block>
+  <block id="d5d1915ba486e63c35a1f3a88839e1b0" category="paragraph">*使用gCloud匯出Google Cloud映像*</block>
+  <block id="d2816514636c054ad7c6ba2f7c056434" category="example-title">按一下以顯示指令碼</block>
+  <block id="b9231f744254be27be6f8180edb2c230" category="paragraph">*解壓縮檔案*</block>
+  <block id="7687a452778371a352ce867b57724b93" category="inline-link">匯出影像的Google Cloud文件</block>
+  <block id="c32a24baf89135bb87bdf6dbe099b487" category="admonition">請參閱<block ref="c7e947f0888e30efd1d729c87ccc8502" category="inline-link-rx"></block> 如需如何透過Google Cloud匯出影像的詳細資訊、</block>
+  <block id="e6b411af64f8108d8230e8dc4d5ed17e" category="cell">9.13.0</block>
+  <block id="01277cd6d5e8d9a803f07b849cedae4b" category="summary">驗證Google Cloud映像檔案簽名檔案。</block>
+  <block id="5567cef37155e1157348c6775226af57" category="doc">Google Cloud映像驗證總覽</block>
+  <block id="248cdc66c441a6612309f6e2ce80a63c" category="inline-link">NSS</block>
+  <block id="1c6fb094d8ad58a6db78e6b557985243" category="paragraph">Google Cloud映像驗證符合增強的NetApp安全要求。已對產生映像的指令碼進行變更、以便在過程中使用專為此工作所產生的私密金鑰來簽署映像。您可以使用已簽署的Google Cloud摘要與公開憑證來驗證GCP映像的完整性、此憑證可透過下載<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block> 以取得特定版本。</block>
+  <block id="5745e537e1e3a11e00e50f67820a46a1" category="admonition">支援Google Cloud映像驗證Cloud Volumes ONTAP 功能的更新版本為9.13.0或更新版本。</block>
+  <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">管理支援案例（預覽）</block>
+  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">您可以直接從BlueXP檢視及管理作用中和已解決的支援案例。您可以管理與您的NSS帳戶和貴公司相關的個案。</block>
+  <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">案例管理可透過預覽取得。我們計畫改善這項體驗、並在即將推出的版本中加入增強功能。請使用產品內建聊天功能、向我們傳送意見反應。</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">頁面頂端的案例管理儀表板提供兩種檢視：</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">左側檢視顯示您所提供的使用者nssc帳戶在過去3個月內開啟的個案總數。</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">右側檢視顯示過去3個月內、貴公司層級根據您的使用者nssc帳戶所開啟的個案總數。</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">表格中的結果會反映您所選檢視的相關個案。</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">您可以新增或移除感興趣的欄、也可以篩選優先順序和狀態等欄的內容。其他欄則只提供排序功能。</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">如需詳細資料、請參閱下列步驟。</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">在個別案例層級、我們提供更新案例附註或關閉尚未處於「已結案」或「待結案」狀態的案例的功能。</block>
+  <block id="34b1296d31cefa72dae9b3a364b1f444" category="list-text">按一下*個案管理*、如果出現提示、請將您的NSS帳戶新增至藍圖XP。</block>
+  <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">「*個案管理*」頁面會顯示與您的BlueXP使用者帳戶相關聯的與NSS帳戶相關的未決個案。這是顯示在「* nssnmanagement *」頁面頂端的相同nss.帳戶。</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">（可選）修改表格中顯示的資訊：</block>
+  <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">在*組織案例*下、按一下*檢視*以檢視與貴公司相關的所有案例。</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">選擇確切的日期範圍或選擇不同的時間範圍、以修改日期範圍。</block>
+  <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">案例管理頁面上方表格上方選項的快照、可讓您選擇確切的日期範圍或過去7天、30天或3個月。</block>
+  <block id="7fcba8aeefa9960d3fc3fa08b360ba2e" category="paragraph"><block ref="7fcba8aeefa9960d3fc3fa08b360ba2e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">篩選欄的內容。</block>
+  <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">「狀態」欄中篩選選項的快照、可讓您篩選出符合特定狀態（例如「作用中」或「已關閉」）的個案。</block>
+  <block id="37709be3a43df07d5975287545d0ba12" category="paragraph"><block ref="37709be3a43df07d5975287545d0ba12" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">出現在表格中的加號圖示</block>
+  <block id="1614dc8e47c0492434152c990d6c1040" category="list-text">按一下以變更表格中顯示的欄 <block ref="effeab06130cddc8360822b2b706805b" category="inline-image-macro-rx" type="image"></block> 然後選擇您要顯示的欄。</block>
+  <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">顯示可在表格中顯示之欄的快照。</block>
+  <block id="5de408d7cbad49634fb25f9047498132" category="paragraph"><block ref="5de408d7cbad49634fb25f9047498132" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">表格最後一欄中出現三個點的圖示</block>
+  <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">按一下即可管理現有案例 <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> 並選擇其中一個可用選項：</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*檢視案例*：檢視特定案例的完整詳細資料。</block>
+  <block id="482429810c2b00a4fa04f9900c560232" category="list-text">*更新案例備註*：提供您問題的其他詳細資料。</block>
+  <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*結案案例*：提供結案原因的詳細資料、然後按一下*結案案例*。</block>
+  <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">螢幕擷取畫面、顯示您在表格最後一欄選取功能表後可以採取的動作。</block>
+  <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3c6506a0407767fa4ee430c24f3b89e2" category="admonition">以*高速*寫入速度選項提供_Flash Cache、高速寫入速度和更高的最大傳輸單元（MTU）8、896、以及n2-Standard-16、n2-Standard-32、n2-Standard-48和n2-Standard-64執行個體類型。此外、較高的MTU為8、896時、部署時必須選擇VCP、VPC、2或VCP。_Flash Cache、高速寫入速度和8、896的MTU是功能相依的、無法在設定的執行個體中個別停用。</block>
+  <block id="c616f204302ed58d4618e3ded77f1858" category="paragraph">如果您使用HA配對、Cloud Volumes ONTAP 從9.13.0版開始、支援多種VM類型的高速寫入速度。前往<block ref="44033d1307c0997839bd6a3cb420c3fd" category="inline-link-rx"></block> 可查看支持高速寫入速度的VM類型。</block>
+  <block id="436ea77bab9d72d8fe71dbccf1dd6613" category="list-text">安裝多租戶加密金鑰管理（MTEKM）授權、從Cloud Volumes ONTAP 版本號為E59.12.1 GA開始。</block>
+  <block id="51f24173f2f6195b17c8e22458037f6c" category="summary">透過Cloud Volumes ONTAP 「鏡射影像摘要檔案」工具驗證匯出的Google Cloud影像檔案簽名。</block>
+  <block id="f2381744b9c03db11d49cbcc38dd048d" category="doc">驗證Google Cloud簽署的映像</block>
+  <block id="019892a31385e7fb7670de88abfcf3cd" category="paragraph">若要驗證匯出的Google Cloud簽署映像、您必須從NSS下載映像摘要檔案、以驗證disk.RAW檔案和摘要檔案內容。</block>
+  <block id="c81429443fac6104f46abd88cff6840a" category="section-title">簽署映像驗證工作流程摘要</block>
+  <block id="89367ca4743c16d95c687430c6a0d9cc" category="paragraph">以下是Google Cloud簽署映像驗證工作流程的總覽。</block>
+  <block id="11253a7af5a989f0e3e2ee767386c743" category="list-text">從<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block>下載內含下列檔案的Google Cloud歸檔：</block>
+  <block id="e197da4f69193c85d129866a2675f762" category="list-text">簽名摘要（.sig）</block>
+  <block id="6763cb37e125279317bf8422431cb36a" category="list-text">包含公開金鑰（.pem）的憑證</block>
+  <block id="41008194a87291660d5b8cbbcf4e901b" category="list-text">憑證鏈結（.pem）</block>
+  <block id="20578512149c6e3b4e6524f4afc81315" category="inline-image-macro">顯示包含摘要檔案tar.gz下載的NSS/頁面的映像</block>
+  <block id="956855c49a0e0c3b22aa13808aac916f" category="paragraph"><block ref="956855c49a0e0c3b22aa13808aac916f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="81b811e1bb7358a9bfbd1be493ad5e08" category="list-text">下載轉換後的disk.原始 檔案</block>
+  <block id="f4580c24dd557ee68edae3101b584307" category="list-text">使用憑證鏈結驗證憑證</block>
+  <block id="c6843882530be14543f812c098985cdb" category="list-text">使用含有公開金鑰的憑證來驗證已簽署的摘要</block>
+  <block id="98774f82cdc945a9f4d0e57b8bc015ca" category="list-text">使用公開金鑰解密已簽署的摘要、以擷取映像檔摘要</block>
+  <block id="aa709fc45e05f2a5e2dd888ef8a945d0" category="list-text">建立已下載磁碟.原始 檔案的摘要</block>
+  <block id="997f5d3364a511663fd4bf677e6ccd0d" category="list-text">比較兩個摘要檔案以進行驗證</block>
+  <block id="80f2dd223bbef33f12a6f95c73d7f282" category="inline-image-macro">顯示映像簽名驗證程序的映像</block>
+  <block id="acd7963bcfab60ed9803b6ce962f013d" category="paragraph"><block ref="acd7963bcfab60ed9803b6ce962f013d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023年3月5日</block>
+  <block id="eed8585d0b45afc4676b1c89f6f22a9a" category="paragraph">以下是3.9.27版Connector的變更。</block>
+  <block id="e2c7f196cec5020e2b840087f6a8e068" category="section-title">Azure支援16 TiB和32 Tib</block>
+  <block id="bfb9ab5387a727da709a7377d950cee0" category="paragraph">目前支援16個TiB和32個TiB磁碟大小、可在Azure的託管磁碟上執行高可用度部署Cloud Volumes ONTAP 。</block>
+  <block id="8f9e72f80a7dd402a28a4b46aca286f9" category="inline-link">Azure支援的磁碟大小</block>
+  <block id="9bc26ebd17008cdc39569edf382f0b5e" category="paragraph">深入瞭解<block ref="e55b1d7df019ac083c7ffec036e8de25" category="inline-link-rx"></block>。</block>
+  <block id="3cc0e97defd245de4dee36cae1e4c485" category="paragraph">多租戶加密金鑰管理（MTEKM）授權現已隨Cloud Volumes ONTAP 附於執行9.12.1 GA或更新版本的全新及現有的支援系統中。</block>
+  <block id="bc912dd00b6301509fad22d6a376560d" category="paragraph"><block ref="532112271454bf057b0a2415bb119744" category="inline-link-rx"></block>。</block>
+  <block id="93616689ecb546d3ff1261cf76e33109" category="section-title">支援無網際網路的環境 </block>
+  <block id="28f5f7b773a8085f5db45145fb774c27" category="paragraph">目前支援任何完全隔離網際網路的雲端環境Cloud Volumes ONTAP 。這些環境僅支援節點型授權（BYOL）。不支援容量型授權。若要開始使用、請手動安裝Connector軟體、登入在Connector上執行的BlueXP主控台、將BYOL授權新增至Digital Wallet、然後再部署Cloud Volumes ONTAP 。 </block>
+  <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">將Connector安裝在沒有網際網路存取的位置</block>
+  <block id="6bfdfb1d6b845d41edac4f1eb0065216" category="list-text"><block ref="6bfdfb1d6b845d41edac4f1eb0065216" category="inline-link-rx"></block></block>
+  <block id="cbea6f8d2cd687c094438e0a7a38fedf" category="inline-link">存取Connector上的BlueXP主控台</block>
+  <block id="b620510a7b9198825896459898b7bc08" category="list-text"><block ref="b620510a7b9198825896459898b7bc08" category="inline-link-rx"></block></block>
+  <block id="c09d91817b6017a3572898b867b22e36" category="inline-link">新增未指派的授權</block>
+  <block id="587a8286d2e3b61d9f250d807b34983c" category="list-text"><block ref="587a8286d2e3b61d9f250d807b34983c" category="inline-link-rx"></block></block>
+  <block id="44579e142f1f753a153dbb19dac8125c" category="summary">使用OpenSSL驗證Google Cloud下載的disk.原始 檔案是否符合摘要檔案內容。</block>
+  <block id="4768a2782def76fdf9b074232676aba9" category="doc">使用OpenSSL驗證磁碟.RAW檔案和摘要檔案內容</block>
+  <block id="9790936d7b09c3cf187b770347ee60d1" category="paragraph">您可以根據可透過取得的摘要檔案內容、驗證Google Cloud下載的disk.RAW檔案<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block> 使用OpenSSL。</block>
+  <block id="64bba92e74e274ead8d4e951ad8c9d3a" category="admonition">用於驗證映像的OpenSSL命令與Linux、Mac OS和Windows機器相容。</block>
+  <block id="c275ec11ecf674a6672183664681e98f" category="list-text">使用OpenSSL驗證憑證。</block>
+  <block id="72d3302ad6fe92c7f4d817235e6ec413" category="list-text">將下載的disk.原始 檔案、簽名及憑證放在目錄中。</block>
+  <block id="f059e79846663b1827b8520855050095" category="list-text">使用OpenSSL從憑證擷取公開金鑰。</block>
+  <block id="1ce11a955fcab73f91ead73e47d4f374" category="list-text">使用擷取的公開金鑰解密簽名、並驗證下載的disk.原始 檔案內容。</block>
+  <block id="edcfeb86d02d7df1eb2c480ac3913d8a" category="list-text">多租戶加密金鑰管理（MTEKM）、從Cloud Volumes ONTAP 版本號為E9.12.1 GA開始</block>
+  <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSS-帳戶必須是客戶層級的帳戶（而非來賓帳戶或暫存帳戶）。您可以擁有多個客戶層級的NSS帳戶。</block>
+  <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">如果該帳戶是合作夥伴層級帳戶、則只能有一個NSS帳戶。如果您嘗試新增客戶層級的NSS帳戶、但有合作夥伴層級的帳戶存在、您會收到下列錯誤訊息：</block>
+  <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">「此帳戶不允許使用新增服務客戶類型、因為已經有不同類型的新增服務使用者。」</block>
+  <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">如果您擁有預先存在的客戶層級的NSS帳戶、並嘗試新增合作夥伴層級的帳戶、情況也是如此。</block>
+  <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">成功登入後、NetApp會儲存NSS.使用者名稱。</block>
+  <block id="452cd4df7b0d5eb1156519a2f3b0206b" category="paragraph">這是系統產生的ID、會對應至您的電子郵件。在「* nssn*管理*」頁面上、您可以從顯示電子郵件 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
+  <block id="fd02e84624a2fdfd58787131aa2820b5" category="list-text">如果您需要重新整理登入認證憑證權杖、也可以在中使用*更新認證*選項 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
+  <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">使用此選項會提示您重新登入。請注意、這些帳戶的權杖會在90天後過期。系統會張貼通知、提醒您注意此點。</block>
+  <block id="190ca4df9155a41a2f2d0d261c72ddc3" category="sidebar">Google Cloud Platform映像驗證</block>
+  <block id="0bb4855e3aeb722a47c6f81b2c53c274" category="sidebar">將GCP上的映像轉換成原始格式</block>
+  <block id="5cb40010f012896cbae43d59859ac520" category="sidebar">影像簽名驗證</block>
+  <block id="734726fba5c0a704a6a780254a724e08" category="sidebar">驗證GCP簽署映像</block>
+  <block id="11bb059fb2906ae78eda04a864443447" category="sidebar">使用OpenSSL驗證內容</block>
 </blocks>

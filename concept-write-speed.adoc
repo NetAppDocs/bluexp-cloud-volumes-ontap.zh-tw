@@ -96,7 +96,7 @@ ifdef::gcp[]
 
 如果您使用單一節點系統、 Cloud Volumes ONTAP 則支援所有機器類型的高速寫入速度。
 
-在 Google Cloud 中、使用 HA 配對不支援高速寫入。 Cloud Volumes ONTAP
+如果您使用HA配對、Cloud Volumes ONTAP 從9.13.0版開始、支援多種VM類型的高速寫入速度。前往 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html#supported-configurations-by-license["發行說明 Cloud Volumes ONTAP"^] 可查看支持高速寫入速度的VM類型。
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["深入瞭解Cloud Volumes ONTAP 支援的Google Cloud機器類型"^]。
 

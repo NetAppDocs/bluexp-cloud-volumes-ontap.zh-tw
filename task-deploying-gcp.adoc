@@ -390,6 +390,10 @@ NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修�
 +
 link:concept-write-speed.html["深入瞭解寫入速度"]。
 
++
+
+NOTE: 以*高速*寫入速度選項提供_Flash Cache、高速寫入速度和更高的最大傳輸單元（MTU）8、896、以及n2-Standard-16、n2-Standard-32、n2-Standard-48和n2-Standard-64執行個體類型。此外、較高的MTU為8、896時、部署時必須選擇VCP、VPC、2或VCP。_Flash Cache、高速寫入速度和8、896的MTU是功能相依的、無法在設定的執行個體中個別停用。
+
 .. 視需要啟動一次寫入、多次讀取（WORM）儲存設備。
 +
 如果啟用Cloud Volumes ONTAP 資料分層功能、無法啟用WORM 9.7版及更低版本。啟用WORM和分層後、將Cloud Volumes ONTAP 會封鎖還原或降級至物件9.8。

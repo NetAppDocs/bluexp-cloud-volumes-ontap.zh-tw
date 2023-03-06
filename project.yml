@@ -104,6 +104,18 @@ sidebar:
         url: "/task-set-up-licensing-google.html"
       - title: 在Cloud Volumes ONTAP Google Cloud上啟動
         url: "/task-deploying-gcp.html"
+      - title: Google Cloud Platform映像驗證
+        entries:
+        - title: 總覽
+          url: "/concept-gcp-image-verification.html"
+        - title: 將GCP上的映像轉換成原始格式
+          url: "/task-gcp-convert-image-raw.html"
+        - title: 影像簽名驗證
+          entries:
+          - title: 驗證GCP簽署映像
+            url: "/concept-gcp-verify-signed-image.html"
+          - title: 使用OpenSSL驗證內容
+            url: "/task-verify-openssl-gcp.html"
   - title: 使用Cloud Volumes ONTAP
     entries:
     - title: 授權管理
