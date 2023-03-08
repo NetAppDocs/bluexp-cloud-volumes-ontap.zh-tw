@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-getting-started-gcp.html 
 keywords: google cloud platform, gcp, cloud manager, deploy BlueXP, launch BlueXP, create BlueXP, getting started, networking, gcp networking, service account, tiering, data tiering, bucket, fabricpool, cloud backup, storage access key, gcp role, role, iam role, permissions, gcp permissions 
-summary: 只要幾個步驟、就能開始使用 Cloud Volumes ONTAP 適用於 GCP 的功能。 
+summary: 只要幾個步驟、就能開始使用Cloud Volumes ONTAP 適用於Google Cloud的解決方案。 
 ---
 = 在Google Cloud中快速入門Cloud Volumes ONTAP
 :hardbreaks:
@@ -14,14 +14,14 @@ summary: 只要幾個步驟、就能開始使用 Cloud Volumes ONTAP 適用於 G
 
 
 [role="lead"]
-只要幾個步驟、就能開始使用 Cloud Volumes ONTAP 適用於 GCP 的功能。
+只要幾個步驟、就能開始使用Cloud Volumes ONTAP 適用於Google Cloud的解決方案。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 建立連接器
 [role="quick-margin-para"]
-如果您沒有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["連接器"^] 然而、帳戶管理員需要建立一個帳戶。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["瞭解如何在 GCP 中建立連接器"^]。
+如果您沒有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["連接器"^] 然而、帳戶管理員需要建立一個帳戶。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["瞭解如何在Google Cloud中建立Connector"^]
 
 [role="quick-margin-para"]
-建立第一個Cloud Volumes ONTAP 運作環境時、如果您還沒有連接器、則BlueXP（前身為Cloud Manager）會提示您部署連接器。
+請注意、如果您想要在Cloud Volumes ONTAP 無法存取網際網路的子網路中部署支援、則必須手動安裝Connector、並存取在該Connector上執行的BlueXP使用者介面。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["瞭解如何在無法存取網際網路的位置手動安裝Connector"^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 規劃您的組態
 [role="quick-margin-para"]
@@ -36,9 +36,9 @@ link:task-planning-your-config-gcp.html["深入瞭解規劃組態"]。
 . 如果您打算啟用資料分層、 https://cloud.google.com/vpc/docs/configure-private-google-access["設定Cloud Volumes ONTAP 私有Google Access的子網路"^]。
 . 如果您要部署 HA 配對、請確定您有四個 VPC 、每個 VPC 都有自己的子網路。
 . 如果您使用的是共享VPC、請將_Compute Network User_角色提供給Connector服務帳戶。
-. 啟用從目標 VPC 的傳出網際網路存取、讓 Connector 和 Cloud Volumes ONTAP 支援中心能夠連絡多個端點。
+. 啟用從目標VPC for NetApp AutoSupport 的傳出網際網路存取功能。
 +
-這個步驟很重要、因為連接器 Cloud Volumes ONTAP 無法在沒有外傳網際網路存取的情況下管理不穩定。如果您需要限制傳出連線、請參閱的端點清單 link:reference-networking-gcp.html["Connector 與 Cloud Volumes ONTAP the"]。
+如果您在Cloud Volumes ONTAP 無法存取網際網路的位置部署支援、則不需要執行此步驟。
 
 
 
@@ -74,5 +74,5 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["在專案中�
 .相關連結
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["從BlueXP建立連接器"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在 Linux 主機上安裝 Connector 軟體"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["BlueXP使用GCP權限的功能"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["BlueXP使用Google Cloud權限的功能"^]
 

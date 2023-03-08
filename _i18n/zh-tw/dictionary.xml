@@ -266,11 +266,8 @@
   <block id="8d6456bdd46775a0bde58d79fa727b86" category="paragraph">如需詳細資訊、請參閱<block ref="0d1fec14af342ac3f0970d5f69f9ea12" category="inline-link-rx"></block></block>
   <block id="4d5272b77be8e6cf2d9611b8c660d0aa" category="list-text">建立工作環境時、請將「 GcpEncryption 」參數搭配 API 要求使用。</block>
   <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">* 範例 *</block>
-  <block id="7a0f0cbfb576252735561bf366791b09" category="summary">只要幾個步驟、就能開始使用 Cloud Volumes ONTAP 適用於 GCP 的功能。</block>
   <block id="c816d65f45a034b0842bc039567fcb6b" category="doc">在Google Cloud中快速入門Cloud Volumes ONTAP</block>
   <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="inline-link">連接器</block>
-  <block id="b1602fa6fa97985ef68ff003c11124ae" category="inline-link">瞭解如何在 GCP 中建立連接器</block>
-  <block id="76f915f1735f8e90aeadfbca5bcf13e8" category="paragraph">如果您沒有<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 然而、帳戶管理員需要建立一個帳戶。<block ref="26c29a7306b61a92e3953c6b8ea9ef70" category="inline-link-rx"></block>。</block>
   <block id="2529fbdc4c253bec28669839cfb92bd4" category="inline-link-macro">深入瞭解規劃組態</block>
   <block id="e0bce116621fe62848ab384f3d3a607f" category="paragraph"><block ref="efb0a51bcf2d14d25bf3c3e32647f9b6" category="inline-link-macro-rx"></block>。</block>
   <block id="c5a74d045a159ee12555da1d786bd27c" category="list-text">確保您的 VPC 和子網路支援連接器與 Cloud Volumes ONTAP 支援之間的連線。</block>
@@ -278,9 +275,6 @@
   <block id="18bc49f7b78f896ce4e7d8b5500b328f" category="list-text">如果您打算啟用資料分層、<block ref="79d3319f0d772940c7bc4dbea4092e64" category="inline-link-rx"></block>。</block>
   <block id="6751c9f5e8a3c198a8b10468007e6216" category="list-text">如果您要部署 HA 配對、請確定您有四個 VPC 、每個 VPC 都有自己的子網路。</block>
   <block id="0b06d386717fdc64bf7c7a380d7e926d" category="list-text">如果您使用的是共享VPC、請將_Compute Network User_角色提供給Connector服務帳戶。</block>
-  <block id="9a3287fcb26e5124ab289087c07c9388" category="list-text">啟用從目標 VPC 的傳出網際網路存取、讓 Connector 和 Cloud Volumes ONTAP 支援中心能夠連絡多個端點。</block>
-  <block id="19c8e498334c0ca06860eccd287db869" category="inline-link-macro">Connector 與 Cloud Volumes ONTAP the</block>
-  <block id="f94bd78922cfb0510d4854a74c6f88bc" category="paragraph">這個步驟很重要、因為連接器 Cloud Volumes ONTAP 無法在沒有外傳網際網路存取的情況下管理不穩定。如果您需要限制傳出連線、請參閱的端點清單 <block ref="cf01e0d720b6d65690d9d75394ed0328" category="inline-link-macro-rx"></block>。</block>
   <block id="a5ee79c4e6a740f92d76e4ae26f7efd9" category="inline-link-macro">深入瞭解網路需求</block>
   <block id="7e1b099e8ddd48733a860e9dc84718f9" category="paragraph"><block ref="81d7ec58de725abfb78667b4f46a89ab" category="inline-link-macro-rx"></block>。</block>
   <block id="2157938460edbda23f083148927e15a0" category="inline-link-macro">資料分層</block>
@@ -614,11 +608,8 @@
   <block id="aef294321c5e9daca32778610304f081" category="summary">只要幾個步驟、 Cloud Volumes ONTAP 就能開始使用適用於 Azure 的功能。</block>
   <block id="6b9ec885733dcee16db8c4d8dde6312a" category="doc">Azure中的功能快速入門Cloud Volumes ONTAP</block>
   <block id="019fd7c8c6395aedf9e4d8fe995febee" category="inline-link">瞭解如何在 Azure 中建立 Connector</block>
-  <block id="25d1f3c3b2feb0e5beb6b392b1138dee" category="paragraph">如果您沒有<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 然而、帳戶管理員需要建立一個帳戶。<block ref="5057dc0bf3c81969de0b1b1e5a9bc718" category="inline-link-rx"></block>。</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">深入瞭解</block>
   <block id="adbae5f6c0e5278e80011271a859029d" category="list-text">確保您的 Vnet 和子網路可支援連接器與 Cloud Volumes ONTAP 支援的連接功能。</block>
-  <block id="ccd3fcdc67d3ef83a68e87c46c6d76e3" category="list-text">啟用從目標 vnet 的傳出網際網路存取、讓 Connector 和 Cloud Volumes ONTAP 支援中心能夠連絡多個端點。</block>
-  <block id="c5461127c15425e013bece2753887444" category="paragraph">這個步驟很重要、因為連接器 Cloud Volumes ONTAP 無法在沒有外傳網際網路存取的情況下管理不穩定。如果您需要限制傳出連線、請參閱的端點清單 <block ref="192ffe6bd8d29acdcc19bbb1f6770b4c" category="inline-link-macro-rx"></block>。</block>
   <block id="0d21ff817105e810cdab25bd9f2d902a" category="paragraph"><block ref="6e8067af2836c2e6e39420cbcee5abb4" category="inline-link-macro-rx"></block>。</block>
   <block id="7f4227f5e289d9b09c1c0e06243584ef" category="paragraph">按一下「 * 新增工作環境 * 」、選取您要部署的系統類型、然後完成精靈中的步驟。 <block ref="6f7d7b3de08ec5c6f3771511caa5244a" category="inline-link-macro-rx"></block>。</block>
   <block id="4fa0ddd312f5d44c35c17e8e39a2e30a" category="inline-link">從 Azure Marketplace 建立 Connector</block>
@@ -2315,8 +2306,6 @@
   <block id="486388bbe4cda183a0e74df6ada2a454" category="doc">在AWS中快速入門Cloud Volumes ONTAP</block>
   <block id="ecd871e3e8bbcd8fb9b67fde1abb1ca5" category="paragraph">只要幾個步驟、Cloud Volumes ONTAP 就能開始使用AWS的功能。</block>
   <block id="74d2f2a8ee613c321072e364f7ed33b2" category="inline-link">瞭解如何在 AWS 中建立 Connector</block>
-  <block id="48c18ed38455bb7fa700b44ef3c04c42" category="paragraph">如果您沒有<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 然而、帳戶管理員需要建立一個帳戶。<block ref="e02c55c05c6081d62516fdec2316cf6c" category="inline-link-rx"></block>。</block>
-  <block id="93bd04110cbfe99e86acdf0e6821558e" category="paragraph">這個步驟很重要、因為連接器 Cloud Volumes ONTAP 無法在沒有外傳網際網路存取的情況下管理不穩定。如果您需要限制傳出連線、請參閱的端點清單 <block ref="40c53126370550c6e3e9b05d7cc4fab9" category="inline-link-macro-rx"></block>。</block>
   <block id="55a261557a4dfbea9aa5325501d84846" category="paragraph"><block ref="7e11f3b402f8248cdd9a54558a06f390" category="inline-link-macro-rx"></block>。</block>
   <block id="2ebefdbfcba652a39d4087dd1efd61ec" category="paragraph">如果您想搭配 Cloud Volumes ONTAP 使用 Amazon 加密搭配使用、則必須確保存在作用中的客戶主金鑰（ CMK ）。您也必須新增 IAM 角色、將連接器的權限提供給作為 _key 使用者 _ 的連接器、以修改每個 CMK 的金鑰原則。 <block ref="14606759ae597b8bfba37ee1ee6b0880" category="inline-link-macro-rx"></block>。</block>
   <block id="de55eaa977cb9b3376bd6729e1a97107" category="paragraph">按一下「 * 新增工作環境 * 」、選取您要部署的系統類型、然後完成精靈中的步驟。 <block ref="168f7f4d4c37c8fac9b64fb187eb00a2" category="inline-link-macro-rx"></block>。</block>
@@ -3230,7 +3219,6 @@
   <block id="314f67251497657aa0bf5f980043c0ab" category="list-text">指定您在Google Cloud中新增的IP位址、以建立資料LIF。</block>
   <block id="b840b6cee4c36a177669a81f293132a6" category="open-title">NFS或SMB</block>
   <block id="29788364ff656936651870f4b1c88537" category="list-text">選用：指定您在Google Cloud中新增的IP位址、以建立儲存VM管理LIF。</block>
-  <block id="4bd46f200c4c3391a3b00fc9aa8af7dd" category="paragraph">從3.9.19版本開始、Connector需要下列權限、才能建立及管理Cloud Volumes ONTAP 適用於各個HA配對的儲存VM：</block>
   <block id="9edd86f763fc6d21418429b5c63134af" category="inline-link">NetApp 提供的原則</block>
   <block id="8786838db6c83df6feac856057d2e141" category="list-text">使用下列API呼叫建立儲存VM：</block>
   <block id="78beb47b48fe8b17a288b32a8942a187" category="paragraph">「POST /occm/api/gcp/ha/辦公 環境/｛we_ID｝/svm/」</block>
@@ -3506,7 +3494,6 @@
   <block id="45e9fc9038e8db14384b82fa67d6e96c" category="list-text"><block ref="45e9fc9038e8db14384b82fa67d6e96c" category="inline-link-rx"></block></block>
   <block id="c6239bda161ac0e2a3f3a7f04121192f" category="inline-link">AWS文件：建立IAM角色</block>
   <block id="a617d64955af268e6cf6dcbbd1b9c7a2" category="list-text"><block ref="a617d64955af268e6cf6dcbbd1b9c7a2" category="inline-link-rx"></block></block>
-  <block id="9bbbccce6014d45ac8f43e7614d2a34c" category="paragraph">這些權限包含在中<block ref="4e2f5782ef353f7277cd9ba2163caaf1" category="inline-link-rx"></block>。</block>
   <block id="67e53d36a1474a1493554aa780f091dd" category="inline-link">連接器服務帳戶權限依預設</block>
   <block id="30770411d4576ecdafaa756fb5a82328" category="paragraph">權限會在中提供<block ref="296035bc3f3b9b7f4150059e833c4544" category="inline-link-rx"></block>、但如果您使用雲端金鑰管理服務的替代專案、則可能無法套用。</block>
   <block id="791fab48bebea2a79a35d70b5cc07227" category="inline-link">檢視最新的權限清單</block>
@@ -3745,7 +3732,6 @@
   <block id="cd5e8c25d1aad520d5f38aad580ccac4" category="list-text">確認BlueXP可從AWS取得成本資訊：</block>
   <block id="fa1a1d63af1876462d8a89bb1c81da2a" category="list-text">確保提供BlueXP權限的IAM原則包含必要的權限。</block>
   <block id="5137e20086fbd2e10511433ace3ac154" category="paragraph">為追蹤AWS成本、BlueXP會指派成本分配標籤給Cloud Volumes ONTAP 各個執行個體。建立第一個工作環境之後、請啟動 * 工作環境 Id* 標籤。使用者定義的標記不會出現在 AWS 帳單報告上、除非您在帳單和成本管理主控台中啟動它們。</block>
-  <block id="035e8e0fe7b70bf47c761ac008c0042c" category="paragraph">建立第一個Cloud Volumes ONTAP 運作環境時、如果您還沒有連接器、則BlueXP（前身為Cloud Manager）會提示您部署連接器。</block>
   <block id="0c29cb137ebcfb10c1b30edf702322ea" category="paragraph">BlueXP提供符合工作負載需求的預先設定套件、或者您也可以建立自己的組態。如果您選擇自己的組態、應該瞭解可用的選項。 <block ref="786d547ede2f0e723e26aaa12a2cb737" category="inline-link-macro-rx"></block>。</block>
   <block id="9c51d38f64e8c1335e2502c05f118401" category="inline-link">從BlueXP建立連接器</block>
   <block id="0d5f53ba40b365132e5ed55aeb13bafc" category="list-text"><block ref="0d5f53ba40b365132e5ed55aeb13bafc" category="inline-link-rx"></block></block>
@@ -4105,8 +4091,6 @@
   <block id="d2563fcd4b4b3ec541ca3e59420d1fc7" category="paragraph">當您透過聯絡NetApp代表續約節點型BYOL訂閱時、BlueXP會自動從NetApp取得新授權、並將其安裝在Cloud Volumes ONTAP 該系統上。</block>
   <block id="c8ce4a03cda52de4d81a6d52e83dcfc7" category="paragraph">BlueXP提供符合工作負載需求的預先設定套件、或者您也可以建立自己的組態。如果您選擇自己的組態、應該瞭解可用的選項。</block>
   <block id="f9ba5de6e1e6e10258b5319a01017c4f" category="list-text"><block ref="f9ba5de6e1e6e10258b5319a01017c4f" category="inline-link-rx"></block></block>
-  <block id="09b1c9db3412d658147935c3c63672bf" category="inline-link">BlueXP使用GCP權限的功能</block>
-  <block id="fd68e9c683a8ff70d9bdae99d8f70237" category="list-text"><block ref="fd68e9c683a8ff70d9bdae99d8f70237" category="inline-link-rx"></block></block>
   <block id="7dfb6c2c87a3491ee04b30bc313e53c5" category="summary">BlueXP可讓您管理磁碟區和CIFS伺服器。它也會提示您移動磁碟區、以避免發生容量問題。</block>
   <block id="56b02e9e8848ef5443c7bdbcb313ec2c" category="admonition">BlueXP會將磁碟區移至使用所選磁碟類型的現有Aggregate、或為磁碟區建立新的Aggregate。</block>
   <block id="f162010d329e7b7904453b50a89c50d5" category="admonition">BlueXP會將磁碟區移至現有的Aggregate、該集合體使用所選的磁碟類型進行分層、或是為磁碟區建立新的Aggregate。</block>
@@ -4760,4 +4744,16 @@
   <block id="5cb40010f012896cbae43d59859ac520" category="sidebar">影像簽名驗證</block>
   <block id="734726fba5c0a704a6a780254a724e08" category="sidebar">驗證GCP簽署映像</block>
   <block id="11bb059fb2906ae78eda04a864443447" category="sidebar">使用OpenSSL驗證內容</block>
+  <block id="8fa0059a7c3b7b511ddc3ef2fd394b8e" category="summary">只要幾個步驟、就能開始使用Cloud Volumes ONTAP 適用於Google Cloud的解決方案。</block>
+  <block id="aa5c1c092b41ba183b34ea75815e55a2" category="inline-link">瞭解如何在Google Cloud中建立Connector</block>
+  <block id="410319d8e485760a446e1bdee0ff326b" category="paragraph">如果您沒有<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 然而、帳戶管理員需要建立一個帳戶。<block ref="ae1244ceb54b5b14bb70d7bfb0adabbd" category="inline-link-rx"></block></block>
+  <block id="20323efc4d51de74865285e21220bc14" category="inline-link">瞭解如何在無法存取網際網路的位置手動安裝Connector</block>
+  <block id="af6bcead3114e39003d2acc90fa53454" category="paragraph">請注意、如果您想要在Cloud Volumes ONTAP 無法存取網際網路的子網路中部署支援、則必須手動安裝Connector、並存取在該Connector上執行的BlueXP使用者介面。<block ref="1fc505e892ad76b5ccb867f11989c2d8" category="inline-link-rx"></block></block>
+  <block id="b73b2829274aee64ee8dcd0fc7290f49" category="list-text">啟用從目標VPC for NetApp AutoSupport 的傳出網際網路存取功能。</block>
+  <block id="f26437251ef23953176712de75dc4d69" category="paragraph">如果您在Cloud Volumes ONTAP 無法存取網際網路的位置部署支援、則不需要執行此步驟。</block>
+  <block id="824be8b95270c8a8618f49cb7fb21ae8" category="inline-link">BlueXP使用Google Cloud權限的功能</block>
+  <block id="1857f44521f712859d70ea04bc03b602" category="list-text"><block ref="1857f44521f712859d70ea04bc03b602" category="inline-link-rx"></block></block>
+  <block id="686559ad5b35ebcac7c3039ba4d273ec" category="paragraph">如果您沒有<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 然而、帳戶管理員需要建立一個帳戶。<block ref="5057dc0bf3c81969de0b1b1e5a9bc718" category="inline-link-rx"></block></block>
+  <block id="a646f605cbf6ed0d1902ed148dff6a02" category="paragraph">如果您沒有<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 然而、帳戶管理員需要建立一個帳戶。<block ref="e02c55c05c6081d62516fdec2316cf6c" category="inline-link-rx"></block></block>
+  <block id="60a5bfe73545b12bdf2f8c33e65bedb4" category="paragraph">Connector需要特定權限、才能建立及管理Cloud Volumes ONTAP 儲存VM、以利執行各種HA配對。所需權限包含在中<block ref="4e2f5782ef353f7277cd9ba2163caaf1" category="inline-link-rx"></block>。</block>
 </blocks>

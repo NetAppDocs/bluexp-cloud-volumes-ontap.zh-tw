@@ -18,10 +18,10 @@ summary: 只要幾個步驟、 Cloud Volumes ONTAP 就能開始使用適用於 A
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 建立連接器
 [role="quick-margin-para"]
-如果您沒有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["連接器"^] 然而、帳戶管理員需要建立一個帳戶。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["瞭解如何在 Azure 中建立 Connector"^]。
+如果您沒有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["連接器"^] 然而、帳戶管理員需要建立一個帳戶。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["瞭解如何在 Azure 中建立 Connector"^]
 
 [role="quick-margin-para"]
-建立第一個Cloud Volumes ONTAP 運作環境時、如果您還沒有連接器、則BlueXP（前身為Cloud Manager）會提示您部署連接器。
+請注意、如果您想要在Cloud Volumes ONTAP 無法存取網際網路的子網路中部署支援、則必須手動安裝Connector、並存取在該Connector上執行的BlueXP使用者介面。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["瞭解如何在無法存取網際網路的位置手動安裝Connector"^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 規劃您的組態
 [role="quick-margin-para"]
@@ -30,9 +30,9 @@ BlueXP提供符合工作負載需求的預先設定套件、或者您也可以�
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 設定您的網路
 [role="quick-margin-list"]
 . 確保您的 Vnet 和子網路可支援連接器與 Cloud Volumes ONTAP 支援的連接功能。
-. 啟用從目標 vnet 的傳出網際網路存取、讓 Connector 和 Cloud Volumes ONTAP 支援中心能夠連絡多個端點。
+. 啟用從目標VPC for NetApp AutoSupport 的傳出網際網路存取功能。
 +
-這個步驟很重要、因為連接器 Cloud Volumes ONTAP 無法在沒有外傳網際網路存取的情況下管理不穩定。如果您需要限制傳出連線、請參閱的端點清單 link:reference-networking-azure.html["Connector 與 Cloud Volumes ONTAP the"]。
+如果您在Cloud Volumes ONTAP 無法存取網際網路的位置部署支援、則不需要執行此步驟。
 
 
 
