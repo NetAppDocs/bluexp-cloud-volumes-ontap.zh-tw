@@ -41,6 +41,11 @@ summary: 使用Azure Private Link連線至相關儲存帳戶。Cloud Volumes ONT
 . 按一下「 * 儲存 * 」。
 
 
+.完成後
+如果您停用Azure私有連結、且Connector使用Proxy伺服器、則必須啟用直接API流量。
+
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-configuring-proxy.html#enable-a-proxy-on-a-connector["瞭解如何在Connector上啟用直接API流量"^]
+
 
 
 == 使用Azure私有連結

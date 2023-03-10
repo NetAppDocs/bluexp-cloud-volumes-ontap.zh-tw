@@ -96,10 +96,10 @@ BlueXP會建立具有下列設定的儲存帳戶：
 
 
 --
-儲存存取層:: Azure 中階層式資料的預設儲存存取層為 _hot_ 層。熱層是經常存取資料的理想選擇。
+儲存存取層:: Azure 中階層式資料的預設儲存存取層為 _hot_ 層。熱層是容量層中經常存取資料的理想選擇。
 +
 --
-如果您不打算存取非作用中資料、可以改用 _cool 儲存層來降低儲存成本。當您變更儲存層時、非作用中的資料會從熱儲存層開始、並在 30 天後無法存取資料時、移轉至冷卻儲存層。
+如果您不打算存取容量層中的非作用中資料、可以改用_cle__儲存層來降低儲存成本。當您將儲存層變更為冷卻時、非作用中的容量層資料會直接移至冷卻儲存層。
 
 如果您確實存取資料、存取成本就會較高、因此在變更儲存層之前、請先將此納入考量。 https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers["深入瞭解 Azure Blob 儲存設備存取層"^]。
 
@@ -137,7 +137,7 @@ BlueXP會為每個工作環境建立一個儲存區、並將其命名為「網�
 
 
 --
-儲存類別:: 階層式資料的預設儲存類別為 _Standard Storage_ 類別。如果資料不常存取、您可以改用 _Nearline Storage_ 或 _Coldline Storage_ 來降低儲存成本。當您變更儲存類別時、非作用中的資料會從 Standard Storage 類別開始、並轉換至您選取的儲存類別、如果資料在 30 天後仍未存取。
+儲存類別:: 階層式資料的預設儲存類別為 _Standard Storage_ 類別。如果資料不常存取、您可以改用 _Nearline Storage_ 或 _Coldline Storage_ 來降低儲存成本。當您變更儲存類別時、非作用中資料會直接移至您選取的類別。
 +
 --
 如果您確實存取資料、存取成本就會較高、因此在變更儲存類別之前、請先將此納入考量。 https://cloud.google.com/storage/docs/storage-classes["深入瞭解 Google Cloud Storage 的儲存課程"^]。

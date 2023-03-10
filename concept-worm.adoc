@@ -34,18 +34,12 @@ summary: 您可以在 Cloud Volumes ONTAP 一個還原系統上啟動一次寫�
 
 === 9.10.1版及更新版本
 
-從功能部件支援的版本起、您可以選擇在Volume層級啟用或停用WORM Cloud Volumes ONTAP 。您選擇如何啟用WORM取決於您的需求。
+從功能部件支援的版本起、您可以選擇在Volume層級啟用或停用WORM Cloud Volumes ONTAP 。
 
 當您建立Cloud Volumes ONTAP 全新的支援環境時、系統會提示您啟用或停用WORM儲存設備：
 
 * 如果您在建立工作環境時啟用WORM儲存、則您從BlueXP建立的每個Volume都會啟用WORM。但您可以使用System Manager或CLI來建立已停用WORM的磁碟區。
-+
-如果您想要建立WORM儲存專用系統、這個選項是很好的選擇。
-
-* 如果您在建立工作環境時停用WORM儲存設備、則您從BlueXP建立的每個Volume都會停用WORM。但您可以使用System Manager或CLI建立已啟用WORM的磁碟區。
-+
-如果您想在同一個系統上混合不同類型的磁碟區、這個選項是很好的選擇。
-
+* 如果您在建立工作環境時停用WORM儲存設備、則從BlueXP、System Manager或CLI建立的每個Volume都會停用WORM。如果您想要在Cloud Volumes ONTAP 建立期間未啟用的支援環境中啟用WORM、您必須建立支援票證、並提供NetApp支援以取得協助。
 
 
 無論選擇哪一項、您都應該這樣做 <<充電,瞭解充電的運作方式>>。
@@ -54,7 +48,7 @@ summary: 您可以在 Cloud Volumes ONTAP 一個還原系統上啟動一次寫�
 
 === 9.10.0版及更早版本
 
-您可以在 Cloud Volumes ONTAP 建立新的工作環境時、在一個可靠的系統上啟動 WORM 儲存設備。您無法在個別磁碟區上啟動WORM儲存設備、WORM必須在系統層級啟動。只有在您建立工作環境時才能啟動。
+您可以在 Cloud Volumes ONTAP 建立新的工作環境時、在一個可靠的系統上啟動 WORM 儲存設備。您從BlueXP建立的每個磁碟區都已啟用WORM。您無法停用個別磁碟區上的WORM儲存設備。
 
 
 
@@ -66,7 +60,7 @@ WORM儲存設備的充電時數是每小時一次、視WORM磁碟區的總配置
 
 * 從ONTAP S59.10.1開始、WORM磁碟區和非WORM磁碟區可以存在於同一個集合體上。
 * 如果您在建立Cloud Volumes ONTAP 一個功能不全的環境時啟用WORM、那麼您從BlueXP建立的每個磁碟區都會啟用WORM。不過ONTAP 、您可以使用「功能性CLI」或「系統管理程式」來建立已停用WORM的磁碟區。這些磁碟區不會以WORM速率收費。
-* 如果您在建立工作環境時未啟用WORM、則從BlueXP建立的每個Volume都會停用WORM。這些磁碟區不會以WORM速率收費。不過ONTAP 、您可以使用支援WORM的CLI或System Manager來建立磁碟區。這些磁碟區將以WORM速率收費。
+* 如果您在建立工作環境時未啟用WORM、則從BlueXP建立的每個Volume都會停用WORM。這些磁碟區不會以WORM速率收費。
 
 
 https://cloud.netapp.com/pricing["瞭解WORM儲存設備的定價"^]

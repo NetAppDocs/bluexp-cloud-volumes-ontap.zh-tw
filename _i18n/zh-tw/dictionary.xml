@@ -2397,7 +2397,6 @@
   <block id="98fdd008687283335edf23e9e287cb83" category="paragraph">您可以在建立工作環境時選取儲存層、之後隨時變更。如需變更儲存層的詳細資訊、請參閱 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
   <block id="a38b9b490932e9d5b5db3e24784ec656" category="paragraph">資料分層的儲存存取層是全系統的、並非每個磁碟區。</block>
   <block id="3b8940895816a07ee6f7b4cd2d7353e3" category="list-text">效能層可以是SSD持續磁碟、平衡持續磁碟或標準持續磁碟。</block>
-  <block id="56fcb51b5b1e4760266f6a808fa6396a" category="list-text">階層式資料的預設儲存類別為 _Standard Storage_ 類別。如果資料不常存取、您可以改用 _Nearline Storage_ 或 _Coldline Storage_ 來降低儲存成本。當您變更儲存類別時、非作用中的資料會從 Standard Storage 類別開始、並轉換至您選取的儲存類別、如果資料在 30 天後仍未存取。</block>
   <block id="5097a121ff5ccfae7cb78986b23616f8" category="inline-link">深入瞭解 Google Cloud Storage 的儲存課程</block>
   <block id="3f1b0a674f5325ee098ce0196eda6d56" category="paragraph">如果您確實存取資料、存取成本就會較高、因此在變更儲存類別之前、請先將此納入考量。<block ref="12bb21ea227f99e4e5df122704c6f379" category="inline-link-rx"></block>。</block>
   <block id="f273810af2be19da638a9463cfa6e62a" category="paragraph">您可以在建立工作環境時選取儲存層、之後隨時變更。如需變更儲存類別的詳細資訊、請參閱 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
@@ -2908,8 +2907,6 @@
   <block id="4fbd5770a6fd5de01bbbcf2a407118d7" category="list-text">儲存帳戶金鑰存取：已啟用</block>
   <block id="c826704ed8ef326581305fef2036bfb6" category="list-text">最低TLS版本：1.2版</block>
   <block id="276a9219319519ae3ee8b320e4458068" category="list-text">基礎架構加密：已停用</block>
-  <block id="fb3bd9a69b565a8866ad383666b98f8c" category="list-text">Azure 中階層式資料的預設儲存存取層為 _hot_ 層。熱層是經常存取資料的理想選擇。</block>
-  <block id="45c06cdb409b9857a0b2089bf2cff7a0" category="paragraph">如果您不打算存取非作用中資料、可以改用 _cool 儲存層來降低儲存成本。當您變更儲存層時、非作用中的資料會從熱儲存層開始、並在 30 天後無法存取資料時、移轉至冷卻儲存層。</block>
   <block id="f2bc66356d174d95b97b4e9b8b873540" category="list-text">這個系統會將非作用中的資料分層至單一Google Cloud Storage儲存庫。Cloud Volumes ONTAP</block>
   <block id="bd15f9947281cda8b8713ff72eb007f8" category="list-text">位置類型：地區</block>
   <block id="95e66c145ec5a9c6db0940e3c8b89f10" category="list-text">公共存取：受物件ACL限制</block>
@@ -3413,7 +3410,6 @@
   <block id="0d007d44f30aa9582772f6ca7709803f" category="paragraph">以容量支付Cloud Volumes ONTAP 任何類型的不受限制的還原組態。</block>
   <block id="fdb568933703a9268c5ba46f3208f414" category="list-text">提供Cloud Volumes ONTAP 任何功能組態的授權</block>
   <block id="2b7a2bda81dcf84ff8d6b600415c5e52" category="paragraph">單一節點或HA、以相同速率為主要和次要磁碟區充電</block>
-  <block id="2d856ef929513d16aba9286266a2ea92" category="list-text">包括使用Cloud Backup的無限Volume備份、但僅適用於Cloud Volumes ONTAP 隨Professional套件部署的各種系統</block>
   <block id="728fd439c2abdc887c4a5e678d7c8708" category="paragraph">下列消費模式提供容量型授權套件：</block>
   <block id="fcbd09a2622ccd7b58495c6277262566" category="list-text">* BYOL*：向NetApp購買的授權、可用於在Cloud Volumes ONTAP 任何雲端供應商中部署</block>
   <block id="1e101142b61a711e7fbc92238adf9d20" category="list-text">* PAYGO*：每小時向雲端供應商的市場訂購一次。</block>
@@ -4314,7 +4310,6 @@
   <block id="f30b44d93ffa429590bd7907a3d0099c" category="paragraph">您應該瞭解Cloud Volumes ONTAP 下列使用支援功能的充電行為：</block>
   <block id="0514cef4c1e1a5949a3acc085ee50110" category="list-text">從ONTAP S59.10.1開始、WORM磁碟區和非WORM磁碟區可以存在於同一個集合體上。</block>
   <block id="7ec6925d846a27916198adf7334fcae3" category="list-text">如果您在建立Cloud Volumes ONTAP 一個功能不全的環境時啟用WORM、那麼您從BlueXP建立的每個磁碟區都會啟用WORM。不過ONTAP 、您可以使用「功能性CLI」或「系統管理程式」來建立已停用WORM的磁碟區。這些磁碟區不會以WORM速率收費。</block>
-  <block id="3101fb677e91832ce5fd2af7de4c1850" category="list-text">如果您在建立工作環境時未啟用WORM、則從BlueXP建立的每個Volume都會停用WORM。這些磁碟區不會以WORM速率收費。不過ONTAP 、您可以使用支援WORM的CLI或System Manager來建立磁碟區。這些磁碟區將以WORM速率收費。</block>
   <block id="38aefad2ca205e663da97b7fdd932dcf" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block></block>
   <block id="b9eeb00cda3e979e1efe9bef61f951fc" category="list-text">Azure HA多重可用度區域</block>
   <block id="0f8e1302b6dedb536c0490b7602b0b32" category="list-text">從《支援NVRAM和核心磁碟》的《支援範圍》（《支援範圍》）的《支援範圍》（ONTAP<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>，可透過託管磁碟管理加密金鑰。較低版本將使用Microsoft管理的金鑰、而非客戶管理的金鑰。</block>
@@ -4440,16 +4435,11 @@
   <block id="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="paragraph"><block ref="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="770d7d25a250359f096cca82c310f07b" category="paragraph">如何啟動WORM儲存取決於Cloud Volumes ONTAP 您所使用的版本。</block>
   <block id="f7bdab9f1b3e432deef3bba2021d518d" category="section-title">9.10.1版及更新版本</block>
-  <block id="634f99868031f4c19cc89185a03da350" category="paragraph">從功能部件支援的版本起、您可以選擇在Volume層級啟用或停用WORM Cloud Volumes ONTAP 。您選擇如何啟用WORM取決於您的需求。</block>
   <block id="2c404b5c40a30cea75e4486ca42855d7" category="paragraph">當您建立Cloud Volumes ONTAP 全新的支援環境時、系統會提示您啟用或停用WORM儲存設備：</block>
   <block id="1000fd534e8c9bff4332bafb5a9125aa" category="list-text">如果您在建立工作環境時啟用WORM儲存、則您從BlueXP建立的每個Volume都會啟用WORM。但您可以使用System Manager或CLI來建立已停用WORM的磁碟區。</block>
-  <block id="8614dac2e3bd328ce10de870996db0f5" category="paragraph">如果您想要建立WORM儲存專用系統、這個選項是很好的選擇。</block>
-  <block id="53c068d69d7edf4c467cf5bb2a3193dd" category="list-text">如果您在建立工作環境時停用WORM儲存設備、則您從BlueXP建立的每個Volume都會停用WORM。但您可以使用System Manager或CLI建立已啟用WORM的磁碟區。</block>
-  <block id="03b892a4c3b15391f53e9a5afe77bb58" category="paragraph">如果您想在同一個系統上混合不同類型的磁碟區、這個選項是很好的選擇。</block>
   <block id="3cbff90f9e1dd222c93cec86291eb0d2" category="inline-xref">瞭解充電的運作方式</block>
   <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">無論選擇哪一項、您都應該這樣做 <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>。</block>
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">9.10.0版及更早版本</block>
-  <block id="ee11a9e37983cbc9cebba6a139158639" category="paragraph">您可以在 Cloud Volumes ONTAP 建立新的工作環境時、在一個可靠的系統上啟動 WORM 儲存設備。您無法在個別磁碟區上啟動WORM儲存設備、WORM必須在系統層級啟動。只有在您建立工作環境時才能啟動。</block>
   <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">每購買3個Tib容量、就有一個邊緣節點</block>
   <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">支援雲端供應商解決方案</block>
   <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">如需您已整合至BlueXP的下列雲端供應商解決方案的技術支援、請參閱該產品的藍圖XP文件中的「取得協助」。</block>
@@ -4756,4 +4746,15 @@
   <block id="686559ad5b35ebcac7c3039ba4d273ec" category="paragraph">如果您沒有<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 然而、帳戶管理員需要建立一個帳戶。<block ref="5057dc0bf3c81969de0b1b1e5a9bc718" category="inline-link-rx"></block></block>
   <block id="a646f605cbf6ed0d1902ed148dff6a02" category="paragraph">如果您沒有<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 然而、帳戶管理員需要建立一個帳戶。<block ref="e02c55c05c6081d62516fdec2316cf6c" category="inline-link-rx"></block></block>
   <block id="60a5bfe73545b12bdf2f8c33e65bedb4" category="paragraph">Connector需要特定權限、才能建立及管理Cloud Volumes ONTAP 儲存VM、以利執行各種HA配對。所需權限包含在中<block ref="4e2f5782ef353f7277cd9ba2163caaf1" category="inline-link-rx"></block>。</block>
+  <block id="256b759fe821d1e6df4108737b419291" category="list-text">包括使用Cloud Backup的無限Volume備份、但僅適用於Cloud Volumes ONTAP 使用Professional套件的各種系統</block>
+  <block id="c8f6e82c7aad23d387dc5633fe484591" category="paragraph">從功能部件支援的版本起、您可以選擇在Volume層級啟用或停用WORM Cloud Volumes ONTAP 。</block>
+  <block id="686bb3ee7d23fdaf656f41328b5449e7" category="list-text">如果您在建立工作環境時停用WORM儲存設備、則從BlueXP、System Manager或CLI建立的每個Volume都會停用WORM。如果您想要在Cloud Volumes ONTAP 建立期間未啟用的支援環境中啟用WORM、您必須建立支援票證、並提供NetApp支援以取得協助。</block>
+  <block id="f4b6aa85f64f47d1816ec182949156ef" category="paragraph">您可以在 Cloud Volumes ONTAP 建立新的工作環境時、在一個可靠的系統上啟動 WORM 儲存設備。您從BlueXP建立的每個磁碟區都已啟用WORM。您無法停用個別磁碟區上的WORM儲存設備。</block>
+  <block id="60e4218f85755238d0c16943a070de88" category="list-text">如果您在建立工作環境時未啟用WORM、則從BlueXP建立的每個Volume都會停用WORM。這些磁碟區不會以WORM速率收費。</block>
+  <block id="39c6a1c30ae1faf01f4bd99a4757f7ae" category="paragraph">如果您停用Azure私有連結、且Connector使用Proxy伺服器、則必須啟用直接API流量。</block>
+  <block id="40e86593118ce089551b3691f6bba919" category="inline-link">瞭解如何在Connector上啟用直接API流量</block>
+  <block id="fd4c1859263bee09c6463abbca610eae" category="paragraph"><block ref="fd4c1859263bee09c6463abbca610eae" category="inline-link-rx"></block></block>
+  <block id="aa036f3aad369ff5710a7a7d5043dcbc" category="list-text">Azure 中階層式資料的預設儲存存取層為 _hot_ 層。熱層是容量層中經常存取資料的理想選擇。</block>
+  <block id="07524ae3949ffd6bf3d8864e62191d5c" category="paragraph">如果您不打算存取容量層中的非作用中資料、可以改用_cle__儲存層來降低儲存成本。當您將儲存層變更為冷卻時、非作用中的容量層資料會直接移至冷卻儲存層。</block>
+  <block id="3e06c5fbfb4be981b82d7b6b33bb900f" category="list-text">階層式資料的預設儲存類別為 _Standard Storage_ 類別。如果資料不常存取、您可以改用 _Nearline Storage_ 或 _Coldline Storage_ 來降低儲存成本。當您變更儲存類別時、非作用中資料會直接移至您選取的類別。</block>
 </blocks>

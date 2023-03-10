@@ -137,7 +137,7 @@ endif::gcp[]
 +
 單一節點或HA、以相同速率為主要和次要磁碟區充電
 
-* 包括使用Cloud Backup的無限Volume備份、但僅適用於Cloud Volumes ONTAP 隨Professional套件部署的各種系統
+* 包括使用Cloud Backup的無限Volume備份、但僅適用於Cloud Volumes ONTAP 使用Professional套件的各種系統
 * 以額外成本附加任何NetApp的雲端資料服務
 
 
