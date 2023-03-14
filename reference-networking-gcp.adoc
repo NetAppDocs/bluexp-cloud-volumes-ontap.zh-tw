@@ -459,6 +459,9 @@ NOTE: 來源是 Cloud Volumes ONTAP 指在整個系統上的介面（ IP 位址�
 HA節點與HA中介器之間的通訊會透過連接埠3260（iSCSI）進行。
 
 
+NOTE: 若要為新的Google Cloud HA配對部署啟用高速寫入速度、VPC-1、VPC-2和VPC-3至少需要8、896位元組的最大傳輸單元（MTU）。如果您選擇將現有VPC-1、VPC-2和VPC-3升級為8、896位元組的MTU、則必須在組態程序期間使用這些VPC關閉所有現有的HA系統。
+
+
 
 == 連接器需求
 

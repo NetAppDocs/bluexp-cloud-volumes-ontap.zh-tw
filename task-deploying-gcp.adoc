@@ -392,7 +392,7 @@ link:concept-write-speed.html["深入瞭解寫入速度"]。
 
 +
 
-NOTE: 以*高速*寫入速度選項提供_Flash Cache、高速寫入速度和更高的最大傳輸單元（MTU）8、896、以及n2-Standard-16、n2-Standard-32、n2-Standard-48和n2-Standard-64執行個體類型。此外、較高的MTU為8、896時、部署時必須選擇VCP、VPC、2或VCP。_Flash Cache、高速寫入速度和8、896的MTU是功能相依的、無法在設定的執行個體中個別停用。
+NOTE: 「*高速*寫入速度」選項提供_Flash Cache、高速寫入速度和更高的最大傳輸單元（MTU）8、896位元組、以及n2-Standard-16、n2-Standard-32、n2-Standard-48和n2-Standard-64執行個體類型。此外、較高的MTU為8、896、需要選擇VPC-1、VPC-2和VPC-3來進行部署。_Flash Cache、高速寫入速度和8、896的MTU是功能相依的、無法在設定的執行個體中個別停用。如需VPC-1、VPC-2和VPC-3的詳細資訊、請參閱 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1、VPC-2和VPC-3的規則"]。
 
 .. 視需要啟動一次寫入、多次讀取（WORM）儲存設備。
 +

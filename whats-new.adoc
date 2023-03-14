@@ -63,6 +63,14 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-
 
 
 
+=== Google Cloud的Flash Cache和高速寫入速度
+
+支援Flash Cache、高速寫入速度、以及高傳輸單位（MTU）8、896位元組、現在Cloud Volumes ONTAP 可用於發行版本為《The》（英文）的特定執行個體。
+
+深入瞭解 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Google Cloud授權支援的組態"^]。
+
+
+
 == 2023年2月5日
 
 下列變更是在版本3.9.26的Connector中提出。

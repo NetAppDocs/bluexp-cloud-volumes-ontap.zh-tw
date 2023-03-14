@@ -199,6 +199,7 @@ endif::azure[]
 
 
 * 如果您有市場的年度合約、Cloud Volumes ONTAP 您所部署的_all_系統將根據該合約付費。您無法與BYOL混搭一年一度的市場合約。
+* 中國地區僅支援具有BYOL的單一節點系統。
 
 
 
