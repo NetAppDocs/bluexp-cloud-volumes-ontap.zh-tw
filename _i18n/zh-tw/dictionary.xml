@@ -4767,4 +4767,12 @@
   <block id="77e5d57bae938bc31208cded57756dc8" category="paragraph">支援Flash Cache、高速寫入速度、以及高傳輸單位（MTU）8、896位元組、現在Cloud Volumes ONTAP 可用於發行版本為《The》（英文）的特定執行個體。</block>
   <block id="80d41628bf38145af2326ce3d52d8e91" category="inline-link-macro">Google Cloud授權支援的組態</block>
   <block id="0a623de488b37ca75333d521fccaa559" category="paragraph">深入瞭解 <block ref="cdeafd55498169f22d9d7a55ffee4ff4" category="inline-link-macro-rx"></block>。</block>
+  <block id="0eeac28a6eb03f47165f3c65b5e13cea" category="section-title">2023年3月13日</block>
+  <block id="5eeac325d343b1bb90074e1be60dd1ae" category="section-title">中國地區支援</block>
+  <block id="f3818f17dde36b1601ccfef8ceab6cbe" category="paragraph">從推出支援中國地區的支援功能到現在起、Azure已提供下列支援Cloud Volumes ONTAP ：</block>
+  <block id="49b72186e2fe2638cbb520201b58bc02" category="list-text">支援中國北方3 Cloud Volumes ONTAP 。</block>
+  <block id="fcf30aaa0348521d4d4752992c9db378" category="list-text">支援單一節點系統。</block>
+  <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">支援直接向NetApp購買的授權。</block>
+  <block id="13615a82d1149a992b363c411914d3b8" category="inline-link-macro">全球區域地圖Cloud Volumes ONTAP 、供您使用</block>
+  <block id="39aeb3e37839611b14bfa6c7390065c1" category="paragraph">如需區域可用度、請參閱 <block ref="69e22a6a63d14aa651819a20b96c9cc5" category="inline-link-macro-rx"></block>。</block>
 </blocks>

@@ -20,6 +20,23 @@ summary: 瞭解Cloud Volumes ONTAP BlueXP（前身為Cloud Manager）的更新�
 
 
 
+== 2023年3月13日
+
+
+
+=== 中國地區支援
+
+從推出支援中國地區的支援功能到現在起、Azure已提供下列支援Cloud Volumes ONTAP ：
+
+* 支援中國北方3 Cloud Volumes ONTAP 。
+* 支援單一節點系統。
+* 支援直接向NetApp購買的授權。
+
+
+如需區域可用度、請參閱 link:https://bluexp.netapp.com/cloud-volumes-global-regions["全球區域地圖Cloud Volumes ONTAP 、供您使用"^]。
+
+
+
 == 2023年3月5日
 
 以下是3.9.27版Connector的變更。
