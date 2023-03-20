@@ -267,17 +267,14 @@ NOTE: 來源是 Cloud Volumes ONTAP 指在整個系統上的介面（ IP 位址�
 
 === 傳入規則
 
-傳入規則的來源為 0.00.0.0/0 。
+HA中介器的預先定義安全性群組包括下列傳入規則。
 
-[cols="20,20,60"]
+[cols="20,20,20,40"]
 |===
-| 傳輸協定 | 連接埠 | 目的 
+| 傳輸協定 | 連接埠 | 來源 | 目的 
 
 
-| SSH | 22 | SSH 連線至 HA 中介器 
-
-
-| TCP | 3000 | 從 Connector 進行 RESTful API 存取 
+| TCP | 3000 | 連接器的CIDR | 從 Connector 進行 RESTful API 存取 
 |===
 
 
@@ -312,13 +309,13 @@ HA 中介器的預先定義安全性群組包括下列傳出規則。
 | 傳輸協定 | 連接埠 | 目的地 | 目的 
 
 
-| HTTP | 80 | 連接器 IP 位址 | 下載中介程式升級 
+| HTTP | 80 | AWS EC2執行個體上Connector的IP位址 | 下載中介程式升級 
 
 
-| HTTPS | 443.. | AWS API 服務 | 協助進行儲存容錯移轉 
+| HTTPS | 443.. | ec2.amazonaws.com | 協助進行儲存容錯移轉 
 
 
-| UDP | 53. | AWS API 服務 | 協助進行儲存容錯移轉 
+| UDP | 53. | ec2.amazonaws.com | 協助進行儲存容錯移轉 
 |===
 
 NOTE: 您可以建立介面 VPC 端點、從目標子網路到 AWS EC2 服務、而非開啟連接埠 443 和 53 。

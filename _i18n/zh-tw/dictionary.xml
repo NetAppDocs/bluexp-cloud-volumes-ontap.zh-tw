@@ -229,15 +229,12 @@
   <block id="a21848ca8e1b04c74552ca38f4284f2b" category="cell">系統記錄轉送訊息</block>
   <block id="a476a8c72bef590ea37867c7275919b7" category="section-title">HA 協調器外部安全群組的規則</block>
   <block id="6f32c9b6315913918b0d282bfb2b4c66" category="paragraph">針對此功能、預先定義 Cloud Volumes ONTAP 的外部安全群組包括下列傳入和傳出規則。</block>
-  <block id="1975a8843b2153f2d02f2a63ead63c6d" category="paragraph">傳入規則的來源為 0.00.0.0/0 。</block>
   <block id="f81635b4fadca27cff21e25f7426f99c" category="cell">SSH 連線至 HA 中介器</block>
   <block id="030bd70df22ed3354f19b1ed2afdeb00" category="cell">從 Connector 進行 RESTful API 存取</block>
   <block id="decc3cc349f3757e43ecd0c47a092341" category="paragraph">HA 中介器的預先定義安全性群組會開啟所有傳出流量。如果可以接受、請遵循基本的傳出規則。如果您需要更嚴格的規則、請使用進階的傳出規則。</block>
   <block id="35c1e7571a7c31f32b4caa5a6aee08bb" category="paragraph">HA 中介器的預先定義安全性群組包括下列傳出規則。</block>
   <block id="9528bcb068299f44f7850e2e930d3f00" category="paragraph">如果您需要嚴格的傳出流量規則、可以使用下列資訊、只開啟 HA 中介者傳出通訊所需的連接埠。</block>
-  <block id="6c8a72bb428eef0fb772b736267a33ca" category="cell">連接器 IP 位址</block>
   <block id="2b14ebecd08152e1467e0863951e038a" category="cell">下載中介程式升級</block>
-  <block id="4fa494f1ae1d15d791b8daf53f3d2a55" category="cell">AWS API 服務</block>
   <block id="fa1cddc8ac392ea41880d5f31e86fbf3" category="cell">協助進行儲存容錯移轉</block>
   <block id="1e56718e9810cd52e22fd292a9b32245" category="admonition">您可以建立介面 VPC 端點、從目標子網路到 AWS EC2 服務、而非開啟連接埠 443 和 53 。</block>
   <block id="d5e80ceb9cd16e162abee97d3789d829" category="paragraph">預先定義的安全性群組包含下列傳入規則。</block>
@@ -4787,4 +4784,8 @@
   <block id="5007d33dbe3f9e50ed8c96fc08a7443a" category="list-text">按一下您剛才建立的IP組態名稱、將指派變更為靜態、然後按一下*儲存*。</block>
   <block id="aa700fba04d3b674bf01f1887210edfe" category="list-text">輸入下列命令以存取進階模式。</block>
   <block id="87f1ece84a21ef92f0776380600117e6" category="list-text">建立iSCSI LIF以提供DNS通訊：</block>
+  <block id="b85a0d4dea04769a8ce6e0860eb4c90f" category="paragraph">HA中介器的預先定義安全性群組包括下列傳入規則。</block>
+  <block id="52554fb81854d42f02280f83a1067574" category="cell">連接器的CIDR</block>
+  <block id="cdbb82146d412877f64f943229bd9533" category="cell">AWS EC2執行個體上Connector的IP位址</block>
+  <block id="2e7f33375cb03e7deb01286344bbca46" category="cell">ec2.amazonaws.com</block>
 </blocks>
