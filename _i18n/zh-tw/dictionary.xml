@@ -2257,10 +2257,8 @@
   <block id="4dfb9365c6db058f009ea80d9ad1d88a" category="paragraph"><block ref="4dfb9365c6db058f009ea80d9ad1d88a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5031fdddd713681aa180d7bfa60b1f72" category="list-text">確認Cloud Volumes ONTAP 適用於此功能的網路安全群組規則可讓負載平衡器針對上述步驟4所建立的健全狀況探查傳送TCP探查。請注意、這是預設允許的。</block>
   <block id="c09d6988bf61135b41e7b195d446e2b9" category="paragraph">用於SMB資料的IP位址會配置在負載平衡器中、以便在發生容錯移轉事件時、IP位址可以移轉到其他節點。</block>
-  <block id="da253cd0d6c8d87b61a60f7e67560913" category="list-text">節點1上iSCSI LIF的一個IP位址</block>
   <block id="5aa1fc4c5c5e3c602f89524b94fcaf47" category="list-text">節點2上iSCSI LIF的一個IP位址</block>
   <block id="d31b2ca2df7d7ec89a597cf3ff166e6d" category="paragraph">DNS和SMB通訊需要iSCSI LIF。iSCSI LIF用於此用途、因為它不會在容錯移轉時移轉。</block>
-  <block id="ccc2da4a96a5d07ea0b03ab18f4ed608" category="list-text">建立所需的前端IP組態數目：</block>
   <block id="a094ded8d387643804f456ad69ef9c4e" category="section-title">建立儲存VM和LIF</block>
   <block id="3ad6e3f460248126da5c801e403088c1" category="paragraph">在Azure中配置IP位址之後、您可以在單一節點系統或HA配對上建立新的儲存VM。</block>
   <block id="5683cfda0c67cd1651e904160b0a5460" category="paragraph">如何在單一節點系統上建立儲存VM和LIF、取決於您使用的儲存傳輸協定。</block>
@@ -2278,7 +2276,6 @@
   <block id="622931dd0b6724a34dfe5a4f99b9a820" category="list-text">使用下列命令在節點1上建立NAS LIF。</block>
   <block id="0cffe85429bb79552ce3607190d9dbad" category="list-text">使用下列命令在節點2上建立NAS LIF。</block>
   <block id="6c6c472de3f0cea0f21c8e31be81490c" category="list-text">建立NAS資料生命量：</block>
-  <block id="477dc9bfd99f5e3ed09c8dbdc76a2c7c" category="list-text">建立iSCSI LIF以提供DNS與SMB通訊：</block>
   <block id="d6e98757d1df5cdc1234e534f0d83efe" category="summary">這個功能的元件會收集遙測資料並傳送給分析人員。AutoSupport ONTAP支援以支援技術分析資料、並提供主動式的照護與最佳化功能。Active IQ AutoSupport利用人工智慧、Active IQ 即可識別潛在問題、並在問題影響企業之前協助您解決問題。</block>
   <block id="0f68b2b3e9b96354c8791aefa8416cb6" category="doc">不再是不知道的數位顧問AutoSupport Active IQ</block>
   <block id="534cf99258be6454cc1c45fef4893c42" category="paragraph">透過雲端型入口網站和行動應用程式、提供可據以行動的預測分析和主動式支援、讓您能夠在全球混合雲中最佳化資料基礎架構。Active IQ所有擁有有效的NetApp客戶都能從NetApp獲得資料導向的見解和建議Active IQ （功能因產品和支援層而異）SupportEdge 。</block>
@@ -4775,4 +4772,19 @@
   <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">支援直接向NetApp購買的授權。</block>
   <block id="13615a82d1149a992b363c411914d3b8" category="inline-link-macro">全球區域地圖Cloud Volumes ONTAP 、供您使用</block>
   <block id="39aeb3e37839611b14bfa6c7390065c1" category="paragraph">如需區域可用度、請參閱 <block ref="69e22a6a63d14aa651819a20b96c9cc5" category="inline-link-macro-rx"></block>。</block>
+  <block id="8a83d5aff252fbe923fc5b8ce4cab9f9" category="paragraph">DNS通訊需要iSCSI LIF。iSCSI LIF用於此用途、因為它不會在容錯移轉時移轉。</block>
+  <block id="c87f63c179c59eda8579e373c6a25976" category="paragraph">您需要在負載平衡器中建立下列IP位址：</block>
+  <block id="9b31eba9539b4b373752a1f9efafb8ac" category="list-text">每個VM各自的NIC 0中節點1上iSCSI LIF的一個IP位址</block>
+  <block id="6f2174023153761cdb987311021eaf2b" category="list-text">僅為資料和SVM LIF建立所需的前端IP組態數目：</block>
+  <block id="37dd90c0b5c3c64f5ce58ece1a549527" category="admonition">前端IP只能在每個對應SVM的NIC 0下建立。如需如何將IP位址新增至SVM NIC 0的詳細資訊、請參閱「步驟7 [hyperlink]」</block>
+  <block id="b31c05988fa937699345307f0d088b5e" category="list-text">對於iSCSI LIF、請新增NIC 0的IP位址。</block>
+  <block id="d8268f30cad7ca754b650b30d5a9fb20" category="list-text">在「設定」下、按一下「* IP組態*」。</block>
+  <block id="f14404f1eb77db8c34dfa687da4e9969" category="inline-image-macro">Azure入口網站中IP組態頁面的快照</block>
+  <block id="d3f503b2101b1859a2272746e61a2bca" category="paragraph"><block ref="d3f503b2101b1859a2272746e61a2bca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d8292c375cfd1e8785887fa2307c216e" category="list-text">輸入IP組態的名稱、選取動態、然後按一下*確定*。</block>
+  <block id="d139a8131606839195ad605bafe04b07" category="inline-image-macro">新增IP組態視窗的快照</block>
+  <block id="d78a1a202c691ad37ba63488112cab29" category="paragraph"><block ref="d78a1a202c691ad37ba63488112cab29" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5007d33dbe3f9e50ed8c96fc08a7443a" category="list-text">按一下您剛才建立的IP組態名稱、將指派變更為靜態、然後按一下*儲存*。</block>
+  <block id="aa700fba04d3b674bf01f1887210edfe" category="list-text">輸入下列命令以存取進階模式。</block>
+  <block id="87f1ece84a21ef92f0776380600117e6" category="list-text">建立iSCSI LIF以提供DNS通訊：</block>
 </blocks>
