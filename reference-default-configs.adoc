@@ -93,9 +93,9 @@ endif::gcp[]
 NOTE: 根據Cloud Volumes ONTAP 雲端供應商的需求、根據預設、LIF容錯移轉功能會停用以供使用。將 LIF 移轉至其他連接埠會中斷執行個體上 IP 位址與網路介面的外部對應、使 LIF 無法存取。
 
 +
-** 使用 HTTPS 將組態備份傳送至 Connector 。 Cloud Volumes ONTAP
+** 使用HTTP將組態備份傳送至Connector Cloud Volumes ONTAP 。
 +
-可從存取備份 https://ipaddress/occm/offboxconfig/[] 其中 _ipaddress_ 是連接器主機的 IP 位址。
+可從存取備份 http://ipaddress/occm/offboxconfig/[] 其中 _ipaddress_ 是連接器主機的 IP 位址。
 
 ** BlueXP會設定一些不同於其他管理工具的Volume屬性（例如System Manager或CLI）。
 +

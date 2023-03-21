@@ -413,6 +413,9 @@ NOTE: 來源是 Cloud Volumes ONTAP 指在整個系統上的介面（ IP 位址�
 | 叢集 | 所有流量 | 所有流量 | 一個節點上的所有 LIF | 其他節點上的所有 LIF | 叢集間通訊（ Cloud Volumes ONTAP 僅限不含 HA ） 
 
 
+| 組態備份 | HTTP | 80 | 節點管理 LIF | \http：//Wese/occm/offboxconfig <connector-IP-address> | 將組態備份傳送至Connector。 link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["深入瞭解組態備份檔案"^]。 
+
+
 | DHCP | UDP | 68 | 節點管理 LIF | DHCP | 第一次設定的 DHCP 用戶端 
 
 
