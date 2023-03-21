@@ -95,7 +95,7 @@ NOTE: 根據Cloud Volumes ONTAP 雲端供應商的需求、根據預設、LIF容
 +
 ** 使用HTTP將組態備份傳送至Connector Cloud Volumes ONTAP 。
 +
-可從存取備份 http://ipaddress/occm/offboxconfig/[] 其中 _ipaddress_ 是連接器主機的 IP 位址。
+可從http://ipaddress/occm/offboxconfig/存取備份、其中_ipaddress_是Connector主機的IP位址。
 
 ** BlueXP會設定一些不同於其他管理工具的Volume屬性（例如System Manager或CLI）。
 +
