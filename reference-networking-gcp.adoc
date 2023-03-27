@@ -102,9 +102,9 @@ image:diagram_gcp_ha.png["顯示Cloud Volume HA配對和組態所需的四個VPC
 
 ==== 私有IP位址
 
-BlueXP會自動將所需的私有IP位址分配給Cloud Volumes ONTAP GCP中的某些人。您必須確定網路有足夠的私有位址可供使用。
+在Cloud Volumes ONTAP Google Cloud中、BlueXP會自動分配所需數量的私有IP位址給功能。您必須確定網路有足夠的私有位址可供使用。
 
-Cloud Manager分配Cloud Volumes ONTAP 給功能不全的生命量取決於您是部署單一節點系統或HA配對。LIF 是與實體連接埠相關聯的 IP 位址。諸如 VMware 的管理工具需要 SVM 管理 LIF SnapCenter 。
+BlueXP分配Cloud Volumes ONTAP 給功能的生命量取決於您是部署單一節點系統或HA配對。LIF 是與實體連接埠相關聯的 IP 位址。諸如 VMware 的管理工具需要 SVM 管理 LIF SnapCenter 。
 
 * *單一節點* BlueXP會將4個IP位址分配給單一節點系統：
 +
