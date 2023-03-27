@@ -673,10 +673,6 @@
   <block id="c0d1b864d00da3eb6415590dfa2621ab" category="paragraph">如果Cloud Volumes ONTAP 您使用API部署了Sf2並指定下列旗標、則可以跳過儲存VM（SVM）管理LIF的建立：</block>
   <block id="9389c2cd70872a229cd788537557d183" category="paragraph">「kipSvmManagementLif: true」</block>
   <block id="2be40f62b7c4e1d13a18dcc030852bf8" category="paragraph">LIF 是與實體連接埠相關聯的 IP 位址。諸如VMware等管理工具需要儲存VM（SVM）管理LIF SnapCenter 。</block>
-  <block id="0ac7ae25c356474957d53018f385f434" category="list-text">VPC-0的7或8個私有IP位址</block>
-  <block id="16dba371e7c3be679c75a860acf986a5" category="list-text">VPC-1的兩個私有IP位址</block>
-  <block id="3b36c3b05500e8c44c01c05c2c597b97" category="list-text">VPC-2的兩個私有IP位址</block>
-  <block id="75a392272a1bb675ed8f846182436d6e" category="list-text">VPC-3的三個私有IP位址</block>
   <block id="4dfddd1829f7fb340bd9b36bff6e3130" category="list-text">防火牆規則</block>
   <block id="2a361a1f21cbd928455b1bd06df94169" category="paragraph">請注意、 HA 組態需要兩組防火牆規則：</block>
   <block id="5e74b536fe3c8bd111e49f783c8e991c" category="inline-link">Google Cloud 文件：設定私有 Google Access</block>
@@ -1714,9 +1710,7 @@
   <block id="c4bfff5af37d4867925c439260689f58" category="paragraph">手動選項可以是從目標子網路到 AWS EC2 服務的 NAT 閘道或介面 VPC 端點。如需 VPC 端點的詳細資訊、請參閱<block ref="ba25197f61698aac8f5883c92983c6fe" category="inline-link-rx"></block>。</block>
   <block id="80c103dec1da91d2850236e737249870" category="section-title">單一節點系統的IP位址</block>
   <block id="15a4d902a9e2eeb56724bdb94f9d1977" category="list-text">叢集管理LIF</block>
-  <block id="ca44bf750b10b8a875a517d3a3ab5da6" category="list-text">NAS資料LIF</block>
   <block id="e837515a89200e7cd1bddfc96747979e" category="list-text">iSCSI資料LIF</block>
-  <block id="e4595cde20c3c7c41bb9f7fba19a0fc1" category="list-text">儲存VM管理LIF</block>
   <block id="f7fb4679628db57f6d5d8a1ad673e5d9" category="paragraph">儲存VM管理LIF可搭配SnapCenter 使用諸如VMware等管理工具。</block>
   <block id="754851680a34e87fae0aca5083f7dbfe" category="section-title">HA配對的IP位址</block>
   <block id="e438a6efe5f9ab56c9230159070485aa" category="paragraph">HA配對比單一節點系統需要更多IP位址。這些IP位址分佈在不同的乙太網路介面上、如下圖所示：</block>
@@ -1751,7 +1745,6 @@
   <block id="e63d2e05b66ab370cc2baaae9d2dcfe9" category="cell">RAID SyncMirror 支援iSCSI流量、以及兩Cloud Volumes ONTAP 個支援節點與中介器之間的通訊。</block>
   <block id="af90726bf48cd763b5fb4e961da15871" category="cell">節點與中介器之間的通訊通道、可協助進行儲存接管與恢復程序。</block>
   <block id="bff3c591c699ca31f730e1f2040baf4f" category="section-title">多個AZs中HA配對的LIF</block>
-  <block id="ecb277307bf56fdc012332a896c09dc2" category="cell">透過iSCSI傳輸協定進行用戶端存取。此LIF也能管理節點之間的浮動IP位址移轉作業。</block>
   <block id="ab89f6727a41ad22707663146b9002d8" category="admonition">部署在多個可用度區域時、會與多個生命區建立關聯 <block ref="c1f676036d5f93c88159c13cc04402fb" category="inline-link-macro-rx"></block>、不計入AWS私有IP限制。</block>
   <block id="a83fb1ff36ceed286841d6eef8f99b92" category="section-title">資料分層連線</block>
   <block id="4376aec17418e75d2d4cfdf8fada938a" category="paragraph">如果您想要將 EBS 當作效能層、將 AWS S3 當作容量層、您必須確保 Cloud Volumes ONTAP 將該連接到 S3 。提供此連線的最佳方法是建立 VPC 端點至 S3 服務。如需相關指示、請參閱<block ref="739944581ddd86bd6d09f3841372a69b" category="inline-link-rx"></block>。</block>
@@ -4024,7 +4017,6 @@
   <block id="2f1e7d6affd61098f336e5b1777ec8e2" category="summary">BlueXP負責Cloud Volumes ONTAP 設定功能完善的網路元件、例如IP位址、網路遮罩和路由。您需要確保可以存取傳出網際網路、有足夠的私有IP位址可用、有適當的連線位置等等。</block>
   <block id="b28334323356fda049acaa1568ee382c" category="paragraph">BlueXP會自動分配所需的私有IP位址數量給Cloud Volumes ONTAP 整個過程。您必須確保網路有足夠的私有IP位址可用。</block>
   <block id="bdc0bf1240a907023821eccea893d017" category="paragraph">BlueXP分配Cloud Volumes ONTAP 給功能的生命量取決於您是部署單一節點系統或HA配對。LIF 是與實體連接埠相關聯的 IP 位址。</block>
-  <block id="7a4fc6df5acc7a338525efe76c970bd8" category="paragraph">BlueXP會將6個IP位址分配給單一節點系統：</block>
   <block id="7fbad4788d127b35618996584caa5cbf" category="paragraph">其他 AWS 網路需求適用於 Cloud Volumes ONTAP 使用多個可用區域（ AZs ）的 SestHA 組態。在啟動HA配對之前、您應該先檢閱這些需求、因為在建立工作環境時、您必須在BlueXP中輸入網路詳細資料。</block>
   <block id="79b99f78668311f7164df3fbc2b1ab13" category="paragraph">建立Cloud Volumes ONTAP 一套功能完善的運作環境時、您需要在BlueXP中輸入浮動IP位址。在啟動系統時、BlueXP會將IP位址分配給HA配對。</block>
   <block id="fbf22458f97f1e958f61f1269da5e0dc" category="admonition">BlueXP會自動建立靜態IP位址、以供iSCSI存取及從VPC外部用戶端存取NAS。您不需要滿足這些類型 IP 位址的任何需求。</block>
@@ -4459,8 +4451,6 @@
   <block id="4c62b2e0648ccb7cc5ac07de5a4c67f4" category="section-title">四個虛擬私有雲端</block>
   <block id="0fc9a4a783a2856e3a35ee9b12a2f357" category="paragraph">HA組態需要四個虛擬私有雲端（VPC）。由於Google Cloud要求每個網路介面都位於獨立的VPC網路、因此需要四個VPC。</block>
   <block id="74cd215a46d2bd96fc35dad7ef313283" category="section-title">子網路</block>
-  <block id="206f49c25e0bbd2da69d30f14f4f222d" category="paragraph">在Google Cloud中、BlueXP會將14或15個私有IP位址分配給HA配對：</block>
-  <block id="974715540568df2f5efe3c40777931b7" category="section-title">連線至Google Cloud Storage以進行資料分層</block>
   <block id="53c6f0799470bd2e67e7902192e11c7c" category="paragraph">若要在Cloud Volumes ONTAP Google Cloud中的某個支援中心系統與ONTAP 其他網路中的支援中心系統之間複寫資料、您必須在VPC與其他網路（例如公司網路）之間建立VPN連線。</block>
   <block id="8bb6cd6de4a896f626b89e711d40aa4c" category="paragraph">BlueXP會建立Google Cloud防火牆規則、其中包括Cloud Volumes ONTAP 需要順利運作的傳入和傳出規則。您可能需要參照連接埠進行測試、或是偏好使用自己的防火牆規則。</block>
   <block id="30f3abb35963e0cd7d66dc08581087c9" category="paragraph">適用於此功能的防火牆規則 Cloud Volumes ONTAP 需要傳入和傳出規則。如果您要部署 HA 組態、 Cloud Volumes ONTAP 以下是 VPC-0 中的防火牆規則。</block>
@@ -4792,4 +4782,24 @@
   <block id="bbacf5ab57ba08e16b08f7b20295279f" category="inline-link-macro">深入瞭解組態備份檔案</block>
   <block id="2ffb2b9a3d63d4562dc012fb7ccbe8f0" category="cell">將組態備份傳送至Connector。 <block ref="60ef96540660b8c0ada3ca23fe3c6d48" category="inline-link-macro-rx"></block>。</block>
   <block id="91927d042dca36bab1fa5fb92c667147" category="paragraph">可從http://ipaddress/occm/offboxconfig/存取備份、其中_ipaddress_是Connector主機的IP位址。</block>
+  <block id="a3a425fe01b7b7835f40e98d5131d953" category="paragraph">BlueXP會自動將所需的私有IP位址分配給Cloud Volumes ONTAP GCP中的某些人。您必須確定網路有足夠的私有位址可供使用。</block>
+  <block id="d73dbd7a9a0f76a49c1b796c3bbf2e51" category="paragraph">+ Cloud Manager分配Cloud Volumes ONTAP 給功能的生命量取決於您是部署單一節點系統或HA配對。LIF 是與實體連接埠相關聯的 IP 位址。諸如 VMware 的管理工具需要 SVM 管理 LIF SnapCenter 。</block>
+  <block id="498c90636197dec64c0feb8b682990f2" category="list-text">*單一節點* BlueXP會將4個IP位址分配給單一節點系統：</block>
+  <block id="a28292fa77dc234022cd48bc08becd01" category="list-text">NAS LIF</block>
+  <block id="db29658b73395ac9c81d9ab9db9c854e" category="list-text">* HA配對* BlueXP會將14個IP位址分配給HA配對：</block>
+  <block id="4be2acabdfd03ad1e08cbfefbda0ff51" category="list-text">2個節點管理生命里數（e0a）</block>
+  <block id="0c0ae10290400b878c0abf083889e78d" category="list-text">2個iSCSI LIF（e0a）</block>
+  <block id="b2eba5b8e0037393ec3f8a81ae77e78b" category="list-text">2個NAS LIF（e0a）</block>
+  <block id="e0c98565c3b923fcfdca593269481630" category="list-text">2個叢集間LIF（e0a）</block>
+  <block id="a00377c792cd8ccb6a0c832ffec2c1dc" category="list-text">2個叢集LIF（e0b）</block>
+  <block id="bbe8dbabe5bfd1d32eaa2131b90c191a" category="list-text">2個HA互連IP位址（e0c）</block>
+  <block id="0baf3fbe98870c6047f6b10e5370bff7" category="list-text">2個RSMiSCSI IP位址（e0d）</block>
+  <block id="c3872c89a315822852621c448e41aac4" category="list-text">您不需要建立防火牆規則、因為BlueXP會為您執行這些規則。如果您需要使用自己的防火牆、請參閱下列防火牆規則。</block>
+  <block id="01e18e5463e6c1fc9c05a5b8a728f3ff" category="list-text">VPC-0 中 HA 元件的一組規則。這些規則可讓您存取 Cloud Volumes ONTAP 資料以存取資料。 <block ref="889fb5c02a9d32a6457688ad005f7e96" category="inline-xref-macro-rx"></block>。</block>
+  <block id="204347da7430e0509c4b62949e49e5dc" category="list-text">VPC-1 、 VPC-2 和 VPC-3 中的另一組 HA 元件規則。這些規則可用於 HA 元件之間的傳入和傳出通訊。 <block ref="889fb5c02a9d32a6457688ad005f7e96" category="inline-xref-macro-rx"></block>。</block>
+  <block id="e2f177a250a8772cd8ebbe4839390958" category="paragraph">BlueXP會將6個IP位址分配給單一節點系統。</block>
+  <block id="b4f6a6268e9ed79637c765266075ab8c" category="paragraph">下表提供與每個私有IP位址相關聯的LIF詳細資料。</block>
+  <block id="6d0c9e6ffd2de679838428abdea38009" category="cell">透過iSCSI傳輸協定進行用戶端存取。系統也用於其他重要的網路工作流程。此LIF為必填項目、不應刪除。</block>
+  <block id="c3c3a9cabe89fd2f00daf39d11c934e0" category="cell">儲存VM管理</block>
+  <block id="5a81ac921ca7aad4221a846f305e2643" category="cell">透過iSCSI傳輸協定進行用戶端存取。這些LIF也能管理節點之間的浮動IP位址移轉作業。這些生命是必要的、不應刪除。</block>
 </blocks>
