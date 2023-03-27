@@ -124,16 +124,16 @@ NOTE: iSCSI LIF可透過iSCSI傳輸協定提供用戶端存取、並供系統用
 
 
 
-* * HA配對* BlueXP會將14個IP位址分配給HA配對：
+* * HA配對* BlueXP會將12-13個IP位址分配給HA配對：
 +
 ** 2個節點管理生命里數（e0a）
+** 1叢集管理LIF（e0a）
 ** 2個iSCSI LIF（e0a）
 +
 
 NOTE: iSCSI LIF可透過iSCSI傳輸協定提供用戶端存取、並供系統用於其他重要的網路工作流程。這些生命是必要的、不應刪除。
 
-** 2個NAS LIF（e0a）
-** 2個叢集間LIF（e0a）
+** 1或2個NAS lifs（e0a）
 ** 2個叢集LIF（e0b）
 ** 2個HA互連IP位址（e0c）
 ** 2個RSMiSCSI IP位址（e0d）
