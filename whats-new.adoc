@@ -20,6 +20,57 @@ summary: 瞭解Cloud Volumes ONTAP BlueXP（前身為Cloud Manager）的更新�
 
 
 
+== 2023年4月3日
+
+Connector 3.9.28 版隨附下列變更。
+
+ifdef::gcp[]
+
+
+
+=== Google Cloud 現在支援都靈地區
+
+Google Cloud for Cloud Volumes ONTAP 和 Connector for Cloud Volumes ONTAP 9.12.1 GA 及更新版本均支援都靈地區。
+
+endif::gcp[]
+
+
+
+=== 數位錢包增強功能
+
+Digital Wallet 現在顯示您購買的授權容量、並提供市場私有優惠。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["瞭解如何檢視您帳戶中的已用容量"]。
+
+
+
+=== 支援在磁碟區建立期間提出意見
+
+此版本可讓您在使用 API 建立 Cloud Volumes ONTAP FlexGroup Volume 或 FlexVol Volume 時、提出意見。
+
+
+
+=== 重新設計 BlueXP 使用者介面、以重新設計 Cloud Volumes ONTAP 概觀、 Volume 和集合頁面
+
+BlueXP 現在已重新設計了 Cloud Volumes ONTAP 概觀、磁碟區和集合網頁的使用者介面。並排式設計會在每個方塊中提供更完整的資訊、以提供更好的使用者體驗。
+
+image:screenshot-resource-page-rn.png["此螢幕擷取畫面會在 Cloud Volumes ONTAP 總覽頁面上顯示重新設計的 BlueXP 使用者介面。各種方塊顯示儲存效率、版本、容量分配、 Cloud Volumes ONTAP 部署、磁碟區、集合體、複製和備份的相關資訊。"]
+
+
+
+=== 可透過 Cloud Volumes ONTAP 檢視的 FlexGroup Volume
+
+透過 CLI 或系統管理員直接建立的 FlexGroup Volume 現在可透過 BlueXP 中重新設計的 Volumes 動態磚來檢視。BlueXP 與提供給 FlexVol Volume 的資訊相同、透過專用的 Volumes 磚提供建立的 FlexGroup Volume 的詳細資訊。
+
+
+NOTE: 目前、您只能在 BlueXP 下檢視現有的 FlexGroup 磁碟區。在 BlueXP 中建立 FlexGroup 磁碟區的功能無法使用、但已計畫在未來版本中使用。
+
+image:screenshot-show-flexgroup-volume.png["顯示 FlexGroup Volume 圖示的螢幕擷取畫面會將文字暫留在 Volumes 磚下方。"]
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html["深入瞭解如何檢視建立的 FlexGroup Volume 。"^]
+
+
+
 == 2023年3月13日
 
 
@@ -49,6 +100,8 @@ summary: 瞭解Cloud Volumes ONTAP BlueXP（前身為Cloud Manager）的更新�
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]。
 
+ifdef::azure[]
+
 
 
 === Azure支援16 TiB和32 Tib
@@ -56,6 +109,8 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["深入瞭Cloud Volum
 目前支援16個TiB和32個TiB磁碟大小、可在Azure的託管磁碟上執行高可用度部署Cloud Volumes ONTAP 。
 
 深入瞭解 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#supported-disk-sizes["Azure支援的磁碟大小"^]。
+
+endif::azure[]
 
 
 
@@ -78,6 +133,8 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["新增未指派的授權"^]
 
 
+ifdef::gcp[]
+
 
 
 === Google Cloud的Flash Cache和高速寫入速度
@@ -86,11 +143,15 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-
 
 深入瞭解 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Google Cloud授權支援的組態"^]。
 
+endif::gcp[]
+
 
 
 == 2023年2月5日
 
 下列變更是在版本3.9.26的Connector中提出。
+
+ifdef::aws[]
 
 
 
@@ -99,6 +160,10 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-
 全新組態設定現在可透過AWS HA單一可用度區域（AZ）部署來建立放置群組。現在您可以選擇略過失敗的放置群組建立、並讓AWS HA單一AZ部署順利完成。
 
 如需如何設定放置群組建立設定的詳細資訊、請參閱 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["設定AWS HA單一AZ的放置群組建立"^]。
+
+endif::aws[]
+
+ifdef::azure[]
 
 
 
@@ -122,6 +187,8 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-wor
 
 以下是3.9.25版Connector的變更。
 
+ifdef::gcp[]
+
 
 
 === Google Cloud提供授權套件
@@ -129,6 +196,8 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-wor
 Google Cloud Volumes ONTAP Cloud Marketplace提供最佳化的Edge Cache容量型授權套件、可作為隨用隨付方案或年度合約、以供使用。
 
 請參閱 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["提供授權Cloud Volumes ONTAP"^]。
+
+endif::gcp[]
 
 
 
@@ -186,19 +255,25 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["深入瞭Cloud Volum
 
 下列變更是在版本3.9.23的Connector中提出。
 
+ifdef::gcp[]
 
 
-=== GCP中的SS3授權ONTAP
+
+=== Google Cloud 中的 ONTAP S3 授權
 
 在Google Cloud Platform中、執行9.12.1版或更新版本的全新及現有的版本不含更新版本的S3授權Cloud Volumes ONTAP ONTAP 。
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]
+
+endif::gcp[]
 
 
 
 == 2022年11月6日
 
 下列變更是在版本3.9.23的Connector中提出。
+
+ifdef::azure[]
 
 
 
@@ -208,6 +283,8 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解
 
 如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-moving-resource-groups-azure.html["正在移動資源群組"]。
 
+endif::azure[]
+
 
 
 === NDMP複製認證
@@ -216,6 +293,8 @@ NDMP複本現已通過認證、可搭配Cloud Volume ONTAP 使用。
 
 如需有關如何設定及使用NDMP的資訊、請參閱 https://docs.netapp.com/us-en/ontap/ndmp/index.html["NDMP組態總覽"]。
 
+ifdef::azure[]
+
 
 
 === Azure的託管磁碟加密支援
@@ -223,6 +302,8 @@ NDMP複本現已通過認證、可搭配Cloud Volume ONTAP 使用。
 新增Azure權限、讓您在建立時加密所有託管磁碟。
 
 如需此新功能的詳細資訊、請參閱 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-azure-encryption.html["設定Cloud Volumes ONTAP 支援使用Azure中客戶管理的金鑰"]。
+
+endif::azure[]
 
 
 
@@ -309,6 +390,8 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 == 2022年7月18日
 
+ifdef::azure[]
+
 
 
 === Azure中的新授權方案
@@ -320,6 +403,8 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["深入瞭解這些授權套件"]。
+
+endif::azure[]
 
 
 
@@ -343,6 +428,8 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["深入瞭解AWS對彈性磁碟區的支援"]。
 
+ifdef::aws[]
+
 
 
 === AWS中的SS3授權ONTAP
@@ -350,6 +437,10 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elas
 現在AWS中執行9.11.0版或更新版本的全新和現有的版本不含支援的S3授權。ONTAP Cloud Volumes ONTAP
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]
+
+endif::aws[]
+
+ifdef::azure[]
 
 
 
@@ -366,6 +457,8 @@ https://cloud.netapp.com/cloud-volumes-global-regions["檢視Cloud Volumes ONTAP
 Azure中執行9.9.1版或更新版本的全新及現有的支援功能系統、現在已隨附一份支援功能S3的授權。ONTAP Cloud Volumes ONTAP
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]
+
+endif::azure[]
 
 
 
@@ -390,6 +483,8 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-9111-relnotes["深入瞭Cloud 
 此「進階檢視」可作為Cloud Volumes ONTAP Preview搭配使用的版本（含E59.10.0及更新版本）。我們計畫改善這項體驗、並在即將推出的版本中加入增強功能。請使用產品內建聊天功能、向我們傳送意見反應。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-administer-advanced-view.html["深入瞭解進階檢視"]。
+
+ifdef::aws[]
 
 
 
@@ -418,6 +513,10 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elas
 
 link:task-deploy-aws-shared-vpc.html["瞭解如何在共用子網路中部署HA配對"]。
 
+endif::aws[]
+
+ifdef::azure[]
+
 
 
 === 使用服務端點時網路存取受限
@@ -425,6 +524,10 @@ link:task-deploy-aws-shared-vpc.html["瞭解如何在共用子網路中部署HA�
 現在、當使用vnet服務端點來連接Cloud Volumes ONTAP 時、BlueXP會限制網路存取、以利連接至各個儲存帳戶。如果您停用Azure Private Link連線、則BlueXP會使用服務端點。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["深入瞭解Azure Private Link與Cloud Volumes ONTAP NetApp的連線功能"]。
+
+endif::azure[]
+
+ifdef::gcp[]
 
 
 
@@ -444,6 +547,8 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-pr
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#storage-vm-limits["深入瞭解Google Cloud中的儲存VM限制"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["瞭解如何在Cloud Volumes ONTAP Google Cloud中建立資料服務儲存VM以供其使用"]
 
+
+endif::gcp[]
 
 
 
@@ -473,6 +578,8 @@ K8s索引標籤已在先前版本中過時、現在已移除。如果您想要�
 
 https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["瞭解BlueXP中的Kubernetes資料管理"^]
 
+ifdef::azure[]
+
 
 
 === Azure年度合約
@@ -483,6 +590,8 @@ NetApp與您分享私人優惠之後、您可以在工作環境建立期間、�
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["深入瞭解授權"]。
 
+endif::azure[]
+
 
 
 === S3 Glacier即時擷取
@@ -490,6 +599,8 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 您現在可以將階層式資料儲存在Amazon S3 Glacier即時擷取儲存類別中。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html#changing-the-storage-class-for-tiered-data["瞭解如何變更階層式資料的儲存類別"]。
+
+ifdef::aws[]
 
 
 
@@ -505,6 +616,10 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.htm
 現在需要這些權限、才能最佳化BlueXP建立放置群組的方式。
 
 請務必為您新增至BlueXP的每組AWS認證資料提供這些權限。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["檢視AWS的最新Connector原則"^]。
+
+endif::aws[]
+
+ifdef::gcp[]
 
 
 
@@ -546,6 +661,8 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 當您選擇要搭配Cloud Volumes ONTAP 使用的Google Cloud服務帳戶時、BlueXP現在會顯示與每個服務帳戶相關的電子郵件地址。檢視電子郵件地址可讓您更容易區分共用相同名稱的服務帳戶。
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["服務帳戶欄位的快照"]
+
+endif::gcp[]
 
 
 

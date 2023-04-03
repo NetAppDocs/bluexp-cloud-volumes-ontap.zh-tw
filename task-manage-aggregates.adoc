@@ -28,7 +28,11 @@ CAUTION: 所有磁碟和集合體都必須直接從BlueXP建立和刪除。您�
 .步驟
 . 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . 在「畫版」頁面上、按兩下 Cloud Volumes ONTAP 您要管理集合體的功能性工作環境。
-. 按一下功能表圖示、然後按一下 * 進階 > 進階分配 * 。
+. 在工作環境中、按一下 * Aggregate * 標籤。
+. 在 Aggregate 索引標籤上、瀏覽至所需標題、然後按一下 * 。 （橢圓圖示） * 。
++
+image:screenshot_aggr_menu_options.png["集合體功能表選項的螢幕擷取畫面。"]
+
 . 管理您的 Aggregate ：
 +
 [cols="30,70"]
@@ -36,14 +40,14 @@ CAUTION: 所有磁碟和集合體都必須直接從BlueXP建立和刪除。您�
 | 工作 | 行動 
 
 
-| 檢視有關 Aggregate 的資訊 | 選取一個 Aggregate 、然後按一下「 * 資訊 * 」。 
+| 檢視有關 Aggregate 的資訊 | 在 ... 下 （橢圓圖示）功能表、按一下 * 檢視 Aggregate details* 。 
 
 
-| 在特定 Aggregate 上建立磁碟區 | 選取一個 Aggregate 、然後按一下「 * 建立 Volume * 」。 
+| 在特定 Aggregate 上建立磁碟區 | 在 ... 下 （橢圓圖示）功能表、按一下 * 新增 Volume * 。 
 
 
 | 將磁碟新增至 Aggregate  a| 
-.. 選取一個Aggregate、然後按一下*「Add disks*」。
+.. 在 ... 下 （橢圓圖示）功能表、按一下 * 新增磁碟 * 。
 .. 選取您要新增的磁碟數目、然後按一下「 * 新增 * 」。
 +
 
@@ -56,8 +60,8 @@ ifdef::aws[]
 
 
 | 增加支援Amazon EBS彈性Volume的Aggregate容量  a| 
-.. 選取一個Aggregate、然後按一下*增加容量*。
-.. 輸入您要新增的額外容量、然後按一下「*新增*」。
+.. 在 ... 下 （橢圓圖示）功能表、按一下 * 增加容量 * 。
+.. 輸入您要新增的額外容量、然後按一下 * 增加 * 。
 +
 請注意、您必須將Aggregate的容量增加至少256 GiB或集合體大小的10%。
 
@@ -71,7 +75,7 @@ endif::aws[]
 
 
 | 刪除 Aggregate  a| 
-.. 選取不包含任何磁碟區的 Aggregate 、然後按一下 * 刪除 * 。
+.. 選取不包含任何磁碟區的 Aggregate tile 按一下 * 。 （橢圓圖示） > 刪除 * 。
 .. 再按一下 * 刪除 * 以確認。
 
 

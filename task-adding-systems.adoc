@@ -29,7 +29,7 @@ summary: 您可以探索並新增Cloud Volumes ONTAP 現有的元件系統至藍
 
 ifdef::aws[]
 
-+image:screenshot_discover.gif["顯示連結以探索現有 Cloud Volumes ONTAP 的一套系統的螢幕快照。"]
++image:screenshot_discover_redesign.png["顯示連結以探索現有 Cloud Volumes ONTAP 的一套系統的螢幕快照。"]
 
 endif::aws[]
 

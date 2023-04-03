@@ -35,9 +35,10 @@ summary: 您可以從Cloud Volumes ONTAP BlueXP停止並開始執行功能、以
 
 
 .步驟
-. 在工作環境中、按一下時鐘圖示：
+. 在 Canvas 頁面上、按兩下所需的工作環境。
+. 在「總覽」索引標籤上、按一下「功能」面板、然後按一下 * 排程停機 * 旁的鉛筆圖示。
 +
-image:screenshot_shutdown_icon.gif["螢幕擷取畫面：顯示載入自動關機頁面的圖示。"]
+image:screenshot_schedule_downtime.png["螢幕擷取畫面：顯示載入自動關機頁面的圖示。"]
 
 . 指定關機排程：
 +
@@ -47,10 +48,10 @@ image:screenshot_shutdown_icon.gif["螢幕擷取畫面：顯示載入自動關�
 * 範例 *
 
 +
-下圖顯示每週六上午12：00指示BlueXP關閉系統的排程48 小時。每週一上午12：00、BlueXP會重新啟動系統
+下圖顯示一個排程、指示 BlueXP 每週六下午 20 ： 00 關閉系統（下午 8 ： 00 ） 12 小時。每週一上午12：00、BlueXP會重新啟動系統
 
 +
-image:screenshot_shutdown.gif["螢幕擷取畫面：顯示每 Cloud Volumes ONTAP 週末中午 12 ： 00 關閉支援 48 小時的關機排程。"]
+image:screenshot_schedule_downtime_window.png["螢幕擷取畫面：顯示排程停機畫面。"]
 
 
 
@@ -58,7 +59,7 @@ image:screenshot_shutdown.gif["螢幕擷取畫面：顯示每 Cloud Volumes ONTA
 
 
 .結果
-BlueXP會儲存排程。時鐘圖示會變更、表示已設定排程： image:screenshot_shutdown_icon_scheduled.gif["螢幕擷取畫面：在定義排程後顯示自動關機圖示。"]
+BlueXP會儲存排程。「功能」面板下方的對應排程停機項目會顯示為「開啟」。
 
 
 
@@ -75,7 +76,7 @@ NOTE: 為降低成本、BlueXP會定期刪除較舊的根磁碟和開機磁碟�
 .步驟
 . 在工作環境中、按一下 * 關閉 * 圖示。
 +
-image:screenshot_otc_turn_off.gif["螢幕擷取畫面：顯示圖示以關閉 Cloud Volumes ONTAP 一套功能完善的系統。"]
+image:screenshot_turn_off_redesign.png["螢幕擷取畫面：顯示圖示以關閉 Cloud Volumes ONTAP 一套功能完善的系統。"]
 
 . 保留建立快照的選項、因為快照可以啟用系統還原。
 . 按一下 * 關閉 * 。

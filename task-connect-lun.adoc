@@ -25,7 +25,9 @@ summary: 建立iSCSI磁碟區時、BlueXP會自動為您建立LUN。我們只要
 .步驟
 . 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . 在「畫版」頁面上、按兩下 Cloud Volumes ONTAP 您要管理磁碟區的「功能區」工作環境。
-. 選取磁碟區、然後按一下「 * 目標 IQN* 」。
+. 在工作環境中、按一下 * Volumes （磁碟區） * 標籤。
+. 在 Volumes （磁碟區）索引標籤上、瀏覽至所需的磁碟區標題、然後按一下 * Manage Volumes （管理磁碟區） * 以存取 Manage Volumes （管理磁碟區）右側面板。
+. 按一下 * 目標 IQN* 。
 . 按一下「 * 複製 * 」以複製 IQN 名稱。
 . 設定從主機到 LUN 的 iSCSI 連線。
 +

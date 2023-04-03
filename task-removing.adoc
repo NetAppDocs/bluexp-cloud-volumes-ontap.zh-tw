@@ -27,13 +27,12 @@ summary: 帳戶管理員可移除 Cloud Volumes ONTAP 運作中的環境、將�
 
 
 .步驟
-. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取「*工具*」。
+. 在 Canvas 頁面上、按兩下您要移除的工作環境。
+. 在 BlueXP 主控台的右上角、按一下橢圓圖示、然後選取 * 從工作區移除 * 。
 +
-image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
+image:screenshot_settings_remove.png["在 BlueXP 主控台右上角顯示「從工作區移除」選項的螢幕擷取畫面。"]
 
-. 在「工具」頁面中、按一下 * 「啟動 * 」。
-. 選取 Cloud Volumes ONTAP 您要移除的「不工作環境」。
-. 在「 Review and Approve 」（檢閱並核准）頁面上、按一下「 * Go * 」。
+. 在「從工作區檢閱」視窗中、按一下 * 移除 * 。
 
 
 .結果

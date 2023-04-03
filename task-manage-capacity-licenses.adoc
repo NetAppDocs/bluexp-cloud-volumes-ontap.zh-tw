@@ -40,32 +40,37 @@ link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解不知如何取得�
 
 .步驟
 . 從左側導覽功能表中、選取* Digital Wallet *。
-. 選取*容量型授權*後、即可檢視套件摘要、其中會顯示耗用容量、總授權容量、以及總PAYGO容量。
+. 選取 * 容量型使用許可 * 後、即可檢視套件摘要、其中會顯示您的使用容量、預先認可的總容量、以及 PAYGO 總容量。
 +
 ** _總使用容量_是Cloud Volumes ONTAP NetApp帳戶中所有供應系統的總容量。無論磁碟區內的本機、已用、已儲存或有效空間為何、充電都是根據每個磁碟區的已配置大小而計算。
-** _Total licensed是您向NetApp購買的總授權容量（BYOL）。
+** _Total preconted capacity_ 是您從 NetApp 購買的總授權容量（ BYOL 或 Marketplace Contract ）。
 ** _Total PAYGO_是使用雲端市場訂閱的已配置總容量。只有當耗用容量高於授權容量、或數位錢包中沒有BYOL授權時、才會使用透過PAYGO充電。
 +
-以下是使用容量為2000 TiB的帳戶範例：
+以下是數位錢包中 Cloud Volumes ONTAP 套件摘要的範例：
 
 +
-image:screenshot_capacity-based-licenses.png["螢幕擷取畫面顯示專業套件和基本套件的已配置容量與授權容量。"]
+image:screenshot_capacity-based-licenses.png["螢幕擷取畫面顯示 Cloud Volumes ONTAP 套件摘要、包括總使用容量、總預先承諾容量（ BYOL 和 Marketplace Contracts ）、以及數位錢包中的 PAYGO 總容量或已配置容量。"]
 
 
 
 . 在摘要下、檢視每個授權套件的耗用容量。
 +
-** _已用容量_顯示該套件的磁碟區總容量。如需特定套件的詳細資料、請將滑鼠游標移到工具提示上。
+** 耗用容量 _ 顯示該套件的磁碟區容量。如需特定套件的詳細資料、請將滑鼠游標移到工具提示上。
 +
 若要更深入瞭解Essentials套件的顯示容量、您應該熟悉充電的運作方式。 link:concept-licensing.html#notes-about-charging["瞭解如何為Essentials套裝方案充電"]。
 
-** _BYOL_顯示您向NetApp購買的授權容量。
-** _PAYGO_顯示授權使用模式的總使用容量。
+** _ 預先承諾容量 _ 是您從 NetApp 購買的授權容量（ BYOL 或 Marketplace 合約）。
++
+*** _BYOL_ 顯示您從 NetApp 購買的此套件類型的授權容量。
+*** _Marketplace Contracts_ 顯示您購買的此套件類型的市場合約授權容量。
+
+
+** _PAYGO_ 會依授權使用模式顯示使用容量。
 +
 以下是一個擁有多個授權套件的帳戶範例：
 
 +
-image:screenshot-digital-wallet-packages.png["螢幕快照顯示專業、最佳化及基本套件的耗用容量。"]
+image:screenshot-digital-wallet-packages.png["螢幕擷取畫面顯示基本功能和專業套件的耗用容量、預先配置容量和 PAYGO 或已配置容量。"]
 
 
 

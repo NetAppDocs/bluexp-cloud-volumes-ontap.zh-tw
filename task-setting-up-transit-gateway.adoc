@@ -75,10 +75,10 @@ image:screenshot_transit_gateway3.png["AWS 主控台的快照、顯示 VPC 1 的
 
 . 使用浮動 IP 位址將磁碟區掛載到用戶端。
 +
-您可以選取磁碟區並按一下*掛載Command*、在BluXP中找到正確的IP位址。
+您可以透過 BlueXP 中「管理磁碟區」面板下的 * 掛載命令 * 選項、在 BlueXP 中找到正確的 IP 位址。
 
 +
-image:screenshot_mount.gif["螢幕擷取畫面：顯示選取 Volume 時可用的 Mount Command 。"]
+image:screenshot_mount_option.png["螢幕擷取畫面：顯示選取 Volume 時可用的 Mount Command 。"]
 
 . 如果您要掛載NFS Volume、請設定匯出原則以符合用戶端VPC的子網路。
 +

@@ -11,14 +11,10 @@
   <block id="e8fafc5515dbe922c9cd7f7101d3a661" category="paragraph">對於單一節點系統、 I/O 會中斷。</block>
   <block id="0da5cbb23a0a7d13b0f40ce06d29d3b4" category="paragraph">對於 HA 配對、變更不中斷營運。HA 配對可繼續提供資料。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
-  <block id="7ad9575195738d8c7f1b3ae6cea26ee2" category="list-text">如果您使用的是節點型PAYGO授權、您可以選擇不同的授權。</block>
-  <block id="124da972831d8567648a5d865ca52285" category="list-text">選取機器類型、選取核取方塊以確認您瞭解變更的影響、然後按一下*確定*。</block>
   <block id="a8e111d8043785d9d556635c64194b73" category="paragraph">以新組態重新開機。 Cloud Volumes ONTAP</block>
   <block id="4760896a3351a42c072a61eb664108e5" category="summary">您可以修改AWS路由表、其中包含部署在多個AWS可用性區域中之HA配對的浮動IP位址路由。如果新的 NFS 或 CIFS 用戶端需要存取 AWS 中的 HA 配對、您可以這麼做。</block>
   <block id="f431a02cb5c1646114365a3adfa4233b" category="doc">在多個AZs中變更HA配對的路由表</block>
   <block id="89cac051c93d21ebf3a23db9a240bbd1" category="paragraph">您可以修改AWS路由表、其中包含部署在多個AWS可用性區域（AZs）中之HA配對的浮動IP位址路由。如果新的 NFS 或 CIFS 用戶端需要存取 AWS 中的 HA 配對、您可以這麼做。</block>
-  <block id="e60243467f676326e36a7e657bc20970" category="list-text">在工作環境中、按一下功能表圖示、然後按一下 * 資訊 * 。</block>
-  <block id="411f67726812722e40994bad9091a5ac" category="list-text">按一下 * 路由表 * 。</block>
   <block id="ce501a2e9d8b238043619a3db4abc141" category="list-text">修改所選路由表的清單、然後按一下「 * 儲存 * 」。</block>
   <block id="987e6a12f4054c7d2b4fb12b670fd3e2" category="summary">瞭解 Cloud Volumes ONTAP 根據預設設定的功能可協助您設定及管理系統、尤其是熟悉 ONTAP 使用功能時、因為 Cloud Volumes ONTAP 預設的功能與 ONTAP 使用功能不相同、所以使用功能不一。</block>
   <block id="f280b5a5c0eeaf41d31a8a2661b341cb" category="doc">的預設組態 Cloud Volumes ONTAP</block>
@@ -92,8 +88,6 @@
   <block id="f1ff33b1bdbf816203ee716386af3578" category="list-text">資料磁碟區也位於 aggr1 中。</block>
   <block id="8d4073fa4a8e186f65d9241d17413d18" category="paragraph">當您使用金鑰管理服務（ KMS ）在 AWS 中啟用資料加密時、 Cloud Volumes ONTAP 也會加密適用於此功能的開機磁碟和根磁碟。這包括 HA 配對中中介執行個體的開機磁碟。磁碟會使用您在建立工作環境時所選取的 CMK 進行加密。</block>
   <block id="95d79008b0be56c31d097e76b7584763" category="doc">變更Cloud Volumes ONTAP 密碼以供使用</block>
-  <block id="8ade5dd9392dfe1171a2a14523929e7d" category="list-text">在工作環境中、按一下功能表圖示、然後按一下 * 進階 &gt; 設定密碼 * 。</block>
-  <block id="4ca6940bf893c214ac89a699b609845c" category="list-text">輸入新密碼兩次、然後按一下「 * 儲存 * 」。</block>
   <block id="809993be97183c1aad51ef5ea989cd2a" category="paragraph">新密碼必須與您最近使用的六個密碼之一不同。</block>
   <block id="ff12fe6f5d97035a37481ab9694afb95" category="doc">AWS 的安全群組規則</block>
   <block id="01cc3f2faf08762df2ba5632863fa9b9" category="section-title">規則 Cloud Volumes ONTAP</block>
@@ -540,7 +534,6 @@
   <block id="4df04bd818b4ec915902bb9d71d89e11" category="summary">在Cloud Volumes ONTAP AWS中啟動時、您可以從多個執行個體或類型中進行選擇。如果判斷執行個體的大小過小或過大、您可以隨時變更執行個體類型。</block>
   <block id="58cfda201064f1899f15aad3e019b071" category="doc">變更EC2執行個體類型Cloud Volumes ONTAP 以供使用</block>
   <block id="64001104830dfdff90f2cf316af055f4" category="list-text">變更執行個體類型可能會影響AWS服務費用。</block>
-  <block id="ba1aa64af19fe534f8edf051425fc04d" category="list-text">選擇執行個體類型、選取核取方塊以確認您瞭解變更的影響、然後按一下*確定*。</block>
   <block id="243c363888d8a767b0c39057fd91bece" category="doc">刪除Cloud Volumes ONTAP 一個系統</block>
   <block id="1b044bb64b9bbe28f6c0512f65cdaa86" category="paragraph">刪除工作環境時、不會刪除由其他服務（例如雲端備份與雲端資料感測與監控執行個體）管理的資源。您必須自行手動刪除。如果您沒有、您將繼續收取這些資源的費用。</block>
   <block id="ab3fdba113c7d85bf4272c78761ef0b8" category="inline-link">如有必要、請刪除備份</block>
@@ -549,9 +542,7 @@
   <block id="b684a678c3e505841ebacb9d4d1cb66d" category="list-text"><block ref="ac2e95b9536af713edc378ae2cd06df9" category="inline-link-rx"></block>。</block>
   <block id="57cbefe39109ab51b31e818f9ce6d9c4" category="list-text">刪除Cloud Volumes ONTAP 這個作業環境。</block>
   <block id="deacec910b77251dad4f11490aa93221" category="list-text">在「畫版」頁面上、按兩下Cloud Volumes ONTAP 您要刪除的「紙張工作環境」名稱。</block>
-  <block id="ce57c223c9772471dcabe8db7fec79ea" category="list-text">按一下功能表圖示、然後按一下*刪除*。</block>
   <block id="4a9ee4aa88ebf38223ea447fe291d222" category="inline-image-macro">顯示包含「刪除」動作之工作環境中可用功能表的快照。</block>
-  <block id="27bf96ea2dd4c98f397498424680c167" category="list-text">輸入工作環境的名稱、然後按一下 * 刪除 * 。</block>
   <block id="7d73be13421466d5cf5d832329f74c79" category="paragraph">刪除工作環境最多可能需要 5 分鐘。</block>
   <block id="96b6d7d9126b9ae9264c568037532584" category="summary">瞭解 Cloud Volumes ONTAP 如何使用雲端儲存設備、有助於瞭解儲存成本。</block>
   <block id="4a2a51b2a8cfd502b2d8ec4b5b09a0b3" category="doc">磁碟與集合體</block>
@@ -692,9 +683,6 @@
   <block id="345811bf0383d75dd95a07e487d8b29b" category="doc">移除 Cloud Volumes ONTAP 運作環境</block>
   <block id="8a5743c35b84714fc6fe40c2cfab576b" category="list-text">在另一個工作區重新探索</block>
   <block id="c0745336f44247c724e2de0e640b4daa" category="list-text">如果在初始探索期間發生問題、請重新探索</block>
-  <block id="125c3f7f1a34115bd5d7a3312f502185" category="list-text">在「工具」頁面中、按一下 * 「啟動 * 」。</block>
-  <block id="c9c1fe399a016eb71ef77b98d9d3908c" category="list-text">選取 Cloud Volumes ONTAP 您要移除的「不工作環境」。</block>
-  <block id="844581166f3d6c9fef0c12b72220bb3d" category="list-text">在「 Review and Approve 」（檢閱並核准）頁面上、按一下「 * Go * 」。</block>
   <block id="573514d5de621ecfe56c91e7c665d73d" category="inline-link">Azure區域配對</block>
   <block id="b2de829903c040e99b02d3d155ca0528" category="paragraph">當用戶端與Cloud Volumes ONTAP S時 位於相同的vnet內、在連接VNets的對等網路內、或在使用私有VPN或ExpressRoute連線至vnet的內部部署網路中、用戶端存取會透過私有連結進行。</block>
   <block id="6b29a9cbfcf35db30ad6d2c78c52db5e" category="paragraph">以下範例顯示用戶端透過私有連結從同一個Vnet存取、以及從內部網路存取具有私有VPN或ExpressRoute連線的權限。</block>
@@ -751,7 +739,6 @@
   <block id="350a5f4a5776c36c5a3cd04127fb4fe5" category="section-title">在實作需求之後啟用資料分層</block>
   <block id="153099ca90154cd624989c2d0ba20c2b" category="inline-xref">確保您已符合所有要求</block>
   <block id="87d6e798cac3a87c0353ec294be704dd" category="list-text"><block ref="066865d547a10de791f5772d517b17f7" category="inline-xref-macro-rx"></block>。</block>
-  <block id="b9abd7055dd68825b2f07a610643808b" category="list-text">在「畫版」頁面上、按兩下 Cloud Volumes ONTAP 「實例」的名稱。</block>
   <block id="8bafa552ca08956804ea81c5b66b12db" category="list-text">按一下功能表圖示、然後選取 * 啟用容量分層 * 。</block>
   <block id="75a38ac7969fd8d12bc86993fd41536a" category="section-title">確保在 Aggregate 上啟用分層</block>
   <block id="d1795f03cc65928e7e6c681acf520582" category="paragraph">必須在集合體上啟用資料分層、才能在磁碟區上啟用資料分層。您應該瞭解新磁碟區和現有磁碟區的需求。</block>
@@ -759,8 +746,6 @@
   <block id="7837a0921d66e4bb13eaadfbd4e230b5" category="list-text">* 現有磁碟區 *</block>
   <block id="603cb1023afc4d427cec5523f7e57a44" category="paragraph">如果您想要在現有磁碟區上啟用資料分層、則必須確保已在基礎 Aggregate 上啟用資料分層。如果在現有的 Aggregate 上未啟用資料分層、則需要使用 System Manager 將現有的 Aggregate 附加至物件存放區。</block>
   <block id="8ccc20b42c5589bb063180b688f1b75c" category="list-title">確認是否在 Aggregate 上啟用分層的步驟</block>
-  <block id="164a2b16a831f0be194767eec1e394e9" category="list-text">按一下功能表圖示、按一下 * 進階 * 、然後按一下 * 進階分配 * 。</block>
-  <block id="42e0fd08a018bc4ebe85c982dcdbf69e" category="list-text">驗證是否在 Aggregate 上啟用或停用分層。</block>
   <block id="f996b43685fd706b80aeb790d46b2ba2" category="list-title">在集合體上啟用分層的步驟</block>
   <block id="fa993d0910660bdcad473652ec5f6fd9" category="list-text">在 System Manager 中、按一下 * Storage &gt; Tiers* 。</block>
   <block id="a81d10975a3cf570e21398a50ce230b9" category="list-text">按一下 Aggregate 的動作功能表、然後選取 * 附加 Cloud Tiers* 。</block>
@@ -768,17 +753,13 @@
   <block id="a323b1a6695991c4c107a123436089fb" category="paragraph">您現在可以在新的和現有的磁碟區上啟用資料分層、如下一節所述。</block>
   <block id="4378a09b2897cb95172610f9ab82105b" category="section-title">從讀寫磁碟區分層資料</block>
   <block id="38f85b7b21b44c9b59780ab299932eff" category="paragraph">可將讀寫磁碟區上的非作用中資料分層保存至具成本效益的物件儲存設備、以釋出效能層以供熱資料使用。 Cloud Volumes ONTAP</block>
-  <block id="cdf6af3897d6557455ac809e1ffde97c" category="list-text">在工作環境中、建立新磁碟區或變更現有磁碟區的層級：</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">工作</block>
   <block id="004bf6c9a40003140292e97330236c53" category="cell">行動</block>
   <block id="39bd65df7752a24493d186f47c1c4bcd" category="cell">建立新的 Volume</block>
   <block id="e0e02b01eefffa92ef6dd41ca0bfddaa" category="cell">按一下「 * 新增 Volume * 」。</block>
   <block id="182706d5a3d41050c9687bc12322e932" category="cell">修改現有的 Volume</block>
-  <block id="5db974b5f3510ad309e326c50b08ea61" category="cell">選取磁碟區、然後按一下 * 變更磁碟類型與分層原則 * 。</block>
   <block id="8e18d8c821310741023d16bcccb5aa95" category="list-text">選取分層原則。</block>
   <block id="9566ee0b8867f3b42d0387e3792c2561" category="paragraph">如需這些原則的說明、請參閱 <block ref="69d3706831f999336fb27703356dae22" category="inline-link-macro-rx"></block>。</block>
-  <block id="ed3fffd1e98b6ea6e3c87bde5d798945" category="inline-image-macro">顯示圖示的快照、可讓您分層儲存物件。</block>
-  <block id="6173457770f08d006795bfe77a9ee1ff" category="paragraph"><block ref="6173457770f08d006795bfe77a9ee1ff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bbef357c8db2518419bffde441df9910" category="section-title">從資料保護磁碟區分層資料</block>
   <block id="f7ace3ec87f10c0e3afcafcb4cf7b425" category="paragraph">可將資料從資料保護磁碟區分層至容量層。 Cloud Volumes ONTAP如果您啟動目的地 Volume 、資料會隨著讀取而逐漸移至效能層。</block>
   <block id="29e71d65fc647320e822efb6ec422c56" category="list-text">在「畫版」頁面上、選取包含來源磁碟區的工作環境、然後將其拖曳至您要複寫磁碟區的工作環境。</block>
@@ -800,7 +781,6 @@
   <block id="804f26a0bc44f8e04d1fb697d33eb4d8" category="list-text">在* Capacity *下、按一下* Aggregate Capacity臨界值- Free Space Ratio for Data Tiering *。</block>
   <block id="c389556b61d8e54624252a2563fdfc17" category="list-text">根據您的需求變更可用空間比率、然後按一下「*儲存*」。</block>
   <block id="24c979ae168264040ca2c88e59f2902a" category="section-title">變更自動分層原則的冷卻週期</block>
-  <block id="314e806b4e1a10feefefa7b140062fab" category="paragraph">如果Cloud Volumes ONTAP 您使用_auto_分層原則在某個SURFVolume上啟用資料分層、您可以根據業務需求調整預設的冷卻時間。此動作僅支援使用API。</block>
   <block id="77ac5bdafcd5300a46db8d23117433c1" category="paragraph">冷卻期間是指磁碟區中的使用者資料在被視為「冷」並移至物件儲存設備之前、必須保持非作用中狀態的天數。</block>
   <block id="15d3560479839db873ba3a7d6309b50c" category="paragraph">自動分層原則的預設冷卻期間為31天。您可以變更冷卻期間、如下所示：</block>
   <block id="07c1e6ebf913a40fd18f3f57f20d6d68" category="list-text">9.8或更新版本：2天至183天</block>
@@ -840,7 +820,6 @@
   <block id="0a746eb7dceb143e3aac00bd3d507d00" category="paragraph"><block ref="0a746eb7dceb143e3aac00bd3d507d00" category="inline-image-macro-rx" type="image"></block></block>
   <block id="de0c14b39dbeb6aa804318f10069c1ca" category="list-text">使用浮動 IP 位址將磁碟區掛載到用戶端。</block>
   <block id="d0eb9723d8f743b568ca7af03af706b0" category="inline-image-macro">螢幕擷取畫面：顯示選取 Volume 時可用的 Mount Command 。</block>
-  <block id="a5061c073213535809d187195725e86c" category="paragraph"><block ref="a5061c073213535809d187195725e86c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2e41b6df544fc6e3dae54d0f364e3942" category="list-text">如果您要掛載NFS Volume、請設定匯出原則以符合用戶端VPC的子網路。</block>
   <block id="b5db75984831b38729eaafcd865d67e4" category="inline-link-macro">瞭解如何編輯Volume</block>
   <block id="0da139308525636e62be136978fa7e43" category="paragraph"><block ref="1b5a3ed48a00633adbc203b0ae302c43" category="inline-link-macro-rx"></block>。</block>
@@ -1055,37 +1034,23 @@
   <block id="e2439a8512b353f75391ba9c346bc84d" category="section-title">管理磁碟區</block>
   <block id="78b58016122bb23db763832d3df72599" category="paragraph">您可以在儲存需求變更時管理磁碟區。您可以檢視、編輯、複製、還原及刪除磁碟區。</block>
   <block id="ad125360a406d7d2d9b4c68551674284" category="list-text">在「畫版」頁面上、按兩下 Cloud Volumes ONTAP 您要管理磁碟區的「功能區」工作環境。</block>
-  <block id="75ab567efb1db447b59b0343c1a2ceb3" category="list-text">管理您的磁碟區：</block>
   <block id="289d57ca7886b8016f08f4d17ad68a55" category="cell">檢視磁碟區的相關資訊</block>
-  <block id="af7d09d8e320bd6a243e7e191eb7025d" category="cell">選取磁碟區、然後按一下「 * 資訊 * 」。</block>
   <block id="fa66a5498542b41c797489000210e5cb" category="cell">編輯磁碟區（僅限讀寫磁碟區）</block>
-  <block id="3a952a555dd0c4bc3d26bcf0d7fde45e" category="list-text">選取磁碟區、然後按一下 * 編輯 * 。</block>
-  <block id="fbec2ab2a5e28a01696c847ad1605c40" category="list-text">修改磁碟區的Snapshot原則、NFS傳輸協定版本、NFS存取控制清單（匯出原則）或共用權限、然後按一下*更新*。</block>
   <block id="4d72f256b7a978be1277616666d0ce81" category="admonition">如果您需要自訂 Snapshot 原則、可以使用 System Manager 來建立。</block>
   <block id="d50044469c0bf9ab38eff9cf7243fb25" category="cell">複製磁碟區</block>
-  <block id="94c63f19be46a66b73356db561854603" category="list-text">選取磁碟區、然後按一下 * Clone （複製） * 。</block>
   <block id="50086f0f77547b0171b7a431d6a39fa0" category="list-text">視需要修改複本名稱、然後按一下 * Clone （複製） * 。</block>
   <block id="4cc808195cbf18422cb9719f962fd525" category="paragraph">此程序會建立 FlexClone Volume 。FlexClone Volume 是可寫入的時間點複本、空間效率極高、因為它會使用少量的空間作為中繼資料、然後只會在資料變更或新增時耗用額外空間。</block>
   <block id="0fa0071d4364b9114c15a5d2758f2577" category="inline-link">《 9 邏輯儲存管理指南》 ONTAP</block>
   <block id="4717b449094c1b48fb9da6fe4ec03c44" category="paragraph">若要深入瞭解 FlexClone Volume 、請參閱<block ref="3ae98799f9586e965a749204c2b3e8f9" category="inline-link-rx"></block>。</block>
   <block id="dc86e5cdedf617184e568612bb0f4b0e" category="cell">將資料從 Snapshot 複本還原至新的 Volume</block>
-  <block id="0e7e803934c43587ce046f079fb159ae" category="list-text">選取磁碟區、然後按一下 * 從 Snapshot 複本還原 * 。</block>
   <block id="d68e4493e40c36ff887078a04d29a0c7" category="list-text">選取 Snapshot 複本、輸入新磁碟區的名稱、然後按一下 * 還原 * 。</block>
   <block id="7037507985b932c715517fcf78ae11e3" category="cell">隨需建立 Snapshot 複本</block>
-  <block id="60e2cc66323270a764c3d126ddbdb292" category="list-text">選取一個磁碟區、然後按一下 * 「 Create a Snapshot Copy* （建立 Snapshot 複本 * ）」。</block>
   <block id="4e421f73920c619b2a88e35f954c3429" category="list-text">視需要變更名稱、然後按一下「 * 建立 * 」。</block>
   <block id="9fe2538a2d5bb7e8ab50729192e9bae8" category="cell">取得 NFS 掛載命令</block>
-  <block id="93b75fd4fe38319058f69c169a51599d" category="list-text">選取磁碟區、然後按一下 * 掛載 Command* 。</block>
   <block id="a9320a3f6836ed5a97720b08ba97994a" category="list-text">按一下 * 複本 * 。</block>
-  <block id="b4791f5803f8c06f9ebe79fab64eb94c" category="cell">檢視 iSCSI 磁碟區的目標 IQN</block>
-  <block id="c2a685651a77d71812f2c11efaa07339" category="list-text">選取磁碟區、然後按一下「 * 目標 IQN* 」。</block>
-  <block id="ff898fbdb96b746cb44abc417a9434e1" category="inline-link-macro">使用 IQN 從主機連線至 LUN</block>
-  <block id="ef0b4c9a075f5ca377b2629e230fb1bf" category="list-text"><block ref="294b9b4974581388516e364caa79c936" category="inline-link-macro-rx"></block>。</block>
   <block id="e85050d3f9317d1eb563323469b5f697" category="cell">變更基礎磁碟類型</block>
-  <block id="0a669a096950b6abbcba32005af805c3" category="list-text">選取磁碟區、然後按一下 * 變更磁碟類型與分層原則 * 。</block>
   <block id="73ffd7bf843e4fa686f3e89c1e8480d8" category="list-text">選取磁碟類型、然後按一下 * 變更 * 。</block>
   <block id="9f4aa892debf403a854859b0ca9c9ff6" category="cell">變更分層原則</block>
-  <block id="df36c1d5436d58b70c3730737e5458b1" category="list-text">按一下 * 編輯原則 * 。</block>
   <block id="460e97605d9d46a32c5b9fbf3be9143b" category="list-text">選取不同的原則、然後按一下 * 變更 * 。</block>
   <block id="8e9a64bda9d21f945b6489df2e7946e1" category="cell">刪除 Volume</block>
   <block id="150cd3111dfd7ae68aaeb429e7e50847" category="list-text">選取磁碟區、然後按一下 * 刪除 * 。</block>
@@ -1095,7 +1060,6 @@
   <block id="6ad5e0a20f49ad6a370454bb3afc9a9e" category="inline-link">系統管理程式ONTAP</block>
   <block id="6b851ed63a549d28a80d2c974afcec80" category="section-title">修改CIFS伺服器</block>
   <block id="fd549a6bcd2d53b8accb49a7225fcfa0" category="paragraph">如果您變更 DNS 伺服器或 Active Directory 網域、您需要在 Cloud Volumes ONTAP 更新版中修改 CIFS 伺服器、以便繼續將儲存設備提供給用戶端。</block>
-  <block id="26eb89266cb77257e69e50bb61b2da4e" category="list-text">在工作環境中、按一下功能表圖示、然後按一下 * 進階 &gt; CIFS 設定 * 。</block>
   <block id="47839a059e385e1317a08bc188364e78" category="list-text">指定 CIFS 伺服器的設定：</block>
   <block id="e4a1fa95644ca78b79474ee2192e37a1" category="cell">DNS 主要和次要 IP 位址</block>
   <block id="b4a5aaff47ac1aad0a039f0089aac0c6" category="cell">要加入的 Active Directory 網域</block>
@@ -1126,12 +1090,7 @@
   <block id="5a31c45fe6b6d37f4ceeb5b86c4346da" category="list-text">檢視必要行動訊息中的進階資訊、以識別已達到容量上限的集合體。</block>
   <block id="34b14acb1a2ab9863c3c5dad4fd43a16" category="paragraph">例如、進階資訊應該說類似以下的內容： Agggr1 已達到其容量上限。</block>
   <block id="d741de259d45adde48602bde8af2fa1e" category="list-text">識別一個或多個要從集合體移出的磁碟區：</block>
-  <block id="13c88f068a7d567935bc3e57b6ac65e9" category="list-text">在工作環境中、按一下功能表圖示、然後按一下 * 進階 &gt; 進階配置 * 。</block>
-  <block id="2b0c89ca25e54b64f2450bc1ed62e7dd" category="list-text">選取 Aggregate 、然後按一下「 * 資訊 * 」。</block>
-  <block id="a03fe4765cf778bd609159dbd02518f9" category="list-text">展開 Volume 清單。</block>
   <block id="44996e2a556779f9e9d262677dc18a32" category="inline-image-macro">螢幕擷取畫面：在 Aggregate 資訊對話方塊中顯示 Aggregate 中的磁碟區清單。</block>
-  <block id="ebb164430899be4a43aac5ed08017381" category="paragraph"><block ref="ebb164430899be4a43aac5ed08017381" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f9c288511bce9b8d3e44ff0677a0b22b" category="list-text">檢閱每個磁碟區的大小、然後選擇一或多個磁碟區從集合區移出。</block>
   <block id="1ac63b40afca7dec0b6be58237e990c5" category="paragraph">您應該選擇足夠大的磁碟區來釋放集合體中的空間、以避免未來發生額外的容量問題。</block>
   <block id="a64d88ebebbadd18db492923a6de8f40" category="list-text">如果系統尚未達到磁碟限制、您應該將磁碟區移至同一個系統上的現有集合體或新集合體。</block>
   <block id="b665b3a7d068d10da4bb1ff6a9eebc76" category="inline-link-macro">將磁碟區移至另一個 Aggregate 、以避免容量問題</block>
@@ -1157,11 +1116,8 @@
   <block id="9b75835d1597be290e865df9d9c03011" category="section-title">將磁碟區移至其他Aggregate、以避免容量問題</block>
   <block id="46532ea93f05a647dcfb9dbb7724acf3" category="paragraph">您可以將一個或多個磁碟區移至另一個 Aggregate 、以避免發生容量問題。</block>
   <block id="b9caee734c459ea1d440e0f169eb1723" category="list-text">驗證現有的 Aggregate 是否具有您需要移動的磁碟區可用容量：</block>
-  <block id="a2d464b6fa7b04c397c84554c3e39809" category="list-text">選取每個 Aggregate 、按一下「 * 資訊 * 」、然後檢視可用容量（ Aggregate capcapcape容納 量減去已使用的 Aggregate capcape望 ）。</block>
   <block id="82cf261b628d223daf02ae88b056b424" category="inline-image-macro">螢幕擷取畫面：顯示 Aggregate 資訊對話方塊中可用的總 Aggregate 容量和已使用的 Aggregate 容量。</block>
-  <block id="fc8b427ea07afce711bc9c553569a274" category="paragraph"><block ref="fc8b427ea07afce711bc9c553569a274" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b8bd018e0e8deb966bda4a09610591ac" category="list-text">如有需要、請將磁碟新增至現有的 Aggregate ：</block>
-  <block id="5e3902fe134d9ed2c4f422ab0316579f" category="list-text">選取 Aggregate 、然後按一下 * 「 Add disks* （新增磁碟 * ）」。</block>
   <block id="3425dbe0168b60aed62d54b2290baad1" category="list-text">選取要新增的磁碟數目、然後按一下 * 「 Add* （新增 * ）」。</block>
   <block id="e272fdd11a7aa99158a093a41c65fdd9" category="list-text">如果沒有集合體具有可用容量、請建立新的集合體。</block>
   <block id="0e725e4f9ac82ce0408528d6e38105f1" category="inline-link-macro">建立 Aggregate</block>
@@ -1252,8 +1208,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
   <block id="c165494898bc0fbf27151d6359a27936" category="doc">建立Aggregate</block>
   <block id="67ea3f429e13cb33e66f1359eb85cc04" category="list-text">在「畫版」頁面上、按兩下 Cloud Volumes ONTAP 您要管理集合體的實例名稱。</block>
-  <block id="d56f9c2528e1e01328b3a8b34a35154d" category="list-text">按一下功能表圖示、然後按一下 * 進階 &gt; 進階分配 * 。</block>
-  <block id="ff4facf1a49a9f339fdb4bf4880c23f1" category="list-text">按一下「 * 新增 Aggregate * 」、然後指定 Aggregate 的詳細資料。</block>
   <block id="833ac412ce32368430680596235b2009" category="list-text">按一下「 * 執行 * 」、然後按一下「 * 核准並購買 * 」。</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">新功能</block>
   <block id="49644953fd4e9612a9842d17bef5e79b" category="section-title">2022年5月2日</block>
@@ -1635,22 +1589,14 @@
   <block id="502ba236a1cae83a29d3574451caea8b" category="list-text">選取關係、然後按一下 * 作業 &gt; 靜止 * 。</block>
   <block id="58f03f4aa156a72c372951a943f6b4d3" category="section-title">驗證Aggregate是否在線上</block>
   <block id="8934d548c1104122f0b1a27daeb92ffa" category="paragraph">更新軟體之前、必須先在線上安裝適用於 Cloud Volumes ONTAP 此功能的 Aggregate 。在大多數的組態中、 Aggregate 都應該處於線上狀態、但如果沒有、則應該將其上線。</block>
-  <block id="bad0781b91218856a150922e68d07abe" category="list-text">選取 Aggregate 、按一下 * Info* 、然後確認狀態為線上。</block>
   <block id="8a58bd2f86c7acb1b532ae3d8d8ffea5" category="inline-image-macro">螢幕擷取畫面：當您檢視 Aggregate 的資訊時、會顯示 State 欄位。</block>
-  <block id="9a995e2acb4483a9819c1ce69c1838e4" category="paragraph"><block ref="9a995e2acb4483a9819c1ce69c1838e4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3c9582501e322eb574b7a8f727a9838c" category="list-text">如果 Aggregate 離線、請使用 System Manager 將 Aggregate 上線：</block>
   <block id="9f4fc08ee817c29b22638b7544f0a27a" category="list-text">按一下「 * 儲存設備 &gt; 集合體與磁碟 &gt; Aggregate * 」。</block>
   <block id="c8a8f302f21fc7d1accf5a0eb3025496" category="list-text">選取 Aggregate 、然後按一下 * 更多動作 &gt; 狀態 &gt; 線上 * 。</block>
   <block id="3a3843b2672bd389702bef2d50b13ac2" category="section-title">升級Cloud Volumes ONTAP</block>
   <block id="31d167cba5cdd422c65657c793b962dc" category="inline-image-macro">螢幕擷取畫面：顯示選取工作環境後、在「畫版」頁面中顯示的「可用新版本」通知。</block>
-  <block id="93e69b27c99652c72cf49fd51a487813" category="paragraph"><block ref="93e69b27c99652c72cf49fd51a487813" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1e565fae8cb8375a73df9abf2e99667a" category="paragraph">您可以從此通知開始升級程序、從 S3 儲存區取得軟體映像、安裝映像、然後重新啟動系統、藉此自動化程序。</block>
   <block id="d51a07decbe601cbb24e543eb1a87686" category="list-text">選取工作環境。</block>
-  <block id="253804b3f61f30ff9abeb479b2c10701" category="paragraph">如果有新版本可用、則右窗格中會出現通知：</block>
-  <block id="3ff5bd4f7d1ec1b55544ace7c0a77dbc" category="list-text">如果有可用的新版本、請按一下 * 升級 * 。</block>
-  <block id="04f69386f5a6c4daab4b7332e06cb8ea" category="list-text">在「版本資訊」頁面中、按一下連結以閱讀指定版本的「版本說明」、然後選取「 * 我讀過 ... * 」核取方塊。</block>
-  <block id="ba897f4b2dc97e3650f4751a409565f3" category="list-text">在「終端使用者授權合約（ EULA ）」頁面中、閱讀 EULA 、然後選取「 * 我閱讀並核准 EULA* 」。</block>
-  <block id="f475ec9a2d7eef21df387d22c2657629" category="list-text">在「檢閱與核准」頁面中、閱讀重要附註、選取 * 我瞭解 ...* 、然後按一下 * 執行 * 。</block>
   <block id="9a5aec1f134672fe587fc8acffcdf87f" category="paragraph">如果您暫停 SnapMirror 傳輸、請使用 System Manager 繼續傳輸。</block>
   <block id="8a2e35e048f2fec22cf01ac1e91ac6e6" category="section-title">從URL提供的映像升級</block>
   <block id="478a47fb7018b29c05bb8f425afdc456" category="list-text">選用：設定HTTP伺服器、以裝載Cloud Volumes ONTAP 支援此功能的軟體映像。</block>
@@ -1679,8 +1625,6 @@
   <block id="331320477ecac4cca1b63e686d99f8d3" category="section-title">如何將授權新增至Digital Wallet</block>
   <block id="792eeb7f686f2ad37b664f6478d40bed" category="paragraph">向NetApp銷售代表購買授權後、NetApp會寄送一封電子郵件給您、附上序號和其他授權詳細資料。</block>
   <block id="ad0be4bc913a8026a3f5e42fc7656d23" category="inline-xref">瞭解如何將購買的授權新增至您的帳戶</block>
-  <block id="8881e3192df3d6a5d7efc284f0e0beee" category="inline-image-macro">螢幕擷取畫面顯示專業套件和基本套件的已配置容量與授權容量。</block>
-  <block id="a67c1e3fa166897e8cc4f860ff4aa0c5" category="paragraph"><block ref="a67c1e3fa166897e8cc4f860ff4aa0c5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b2dfe525c9a6bec7392826fba889fe07" category="section-title">將購買的授權新增至您的帳戶</block>
   <block id="ea9a2b9ac34c9aab133f21aa5b67976e" category="list-text">按一下「 * 新增授權 * 」。</block>
   <block id="5c55b043854250a04085395d6b5a3a9d" category="list-text">輸入容量型授權的序號、或上傳授權檔案。</block>
@@ -1695,7 +1639,6 @@
   <block id="0131f05be010a429416bcb6f853b54f6" category="doc">監控 AWS 資源成本</block>
   <block id="de4e4bb6bc85c14c6a8601fd20afdca3" category="inline-link">啟動 * 工作環境 Id* 標籤</block>
   <block id="ee0050b628db7de40e04e661d528d91f" category="list-text"><block ref="541edff71c56eae6d36d5f7a463cfcca" category="inline-link-rx"></block>。</block>
-  <block id="525637918edc816fd2dd073b6aa98f41" category="list-text">在「畫版」頁面上、選取 Cloud Volumes ONTAP 一個運作環境、然後按一下「 * 成本 * 」。</block>
   <block id="9dfa1bfa6d369f6aee8b4ba09ac15642" category="paragraph">「成本」頁面會顯示目前和過去幾個月的成本、並顯示您每年的 NetApp 節約效益（如果您已啟用 NetApp 的 Volume 節約功能）。</block>
   <block id="c58c67877e90861ec92c90c10b7ad7f4" category="paragraph">下圖顯示成本頁範例：</block>
   <block id="37423695a33e814084966c17d451584a" category="inline-image-macro">螢幕擷取畫面：顯示 Cloud Volumes ONTAP 每個月的成本（例如每個實例的成本）。</block>
@@ -1885,20 +1828,14 @@
   <block id="4df66712f957d539001edc73bbb48742" category="list-text">此工作會排程 HA 配對中兩個節點的自動關機。</block>
   <block id="a38060fa2aae177f0fbef99ef2923324" category="list-text">透過Cloud Volumes ONTAP 排定的關機功能關閉功能時、不會建立開機和根磁碟的快照。</block>
   <block id="1f9d590b21cddc0cc992effc141a9be2" category="paragraph">只有在執行手動關機時、才會自動建立快照、如下一節所述。</block>
-  <block id="8a1b478d84a6f80cc4e08b04f317d63b" category="list-text">在工作環境中、按一下時鐘圖示：</block>
   <block id="34e70391062bd14a2cecba6e39595285" category="inline-image-macro">螢幕擷取畫面：顯示載入自動關機頁面的圖示。</block>
-  <block id="3bbcb84741fc1c9468cb750fd8649a74" category="paragraph"><block ref="3bbcb84741fc1c9468cb750fd8649a74" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5f95206b8c2df1268bd8a4454e57f5df" category="list-text">指定關機排程：</block>
   <block id="3a3fb4513da1ae453de12bb3293a3aa1" category="list-text">選擇您要每天、每個工作日、每個週末或三種選項的任意組合來關閉系統。</block>
   <block id="063dc598b5df43ce8c2ce8aebd705d40" category="list-text">指定您要關閉系統的時間、以及關閉系統的時間長度。</block>
-  <block id="fe684206be5bfef48a19e96654dd77eb" category="inline-image-macro">螢幕擷取畫面：顯示每 Cloud Volumes ONTAP 週末中午 12 ： 00 關閉支援 48 小時的關機排程。</block>
-  <block id="dcf55005a499d7c230aed9db69cce7cc" category="paragraph"><block ref="dcf55005a499d7c230aed9db69cce7cc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bb0a5bced808713247ccd116ba565493" category="inline-image-macro">螢幕擷取畫面：在定義排程後顯示自動關機圖示。</block>
   <block id="743f723fb93463aec3e7652a73bd3890" category="section-title">停止 Cloud Volumes ONTAP</block>
   <block id="9db86a680f4bae1de09076b7c830129a" category="paragraph">停止 Cloud Volumes ONTAP 使用功能可節省運算成本、並建立根磁碟和開機磁碟的快照、有助於疑難排解。</block>
   <block id="07bd6b4bc48913b55530949bce54eea8" category="list-text">在工作環境中、按一下 * 關閉 * 圖示。</block>
   <block id="b47a0575c3200f7dd372fe15d0a725a2" category="inline-image-macro">螢幕擷取畫面：顯示圖示以關閉 Cloud Volumes ONTAP 一套功能完善的系統。</block>
-  <block id="b23fbf5cfb02f1455245e12c56aee2f3" category="paragraph"><block ref="b23fbf5cfb02f1455245e12c56aee2f3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a8fa2551f6408bfa93fe493745bac6f4" category="list-text">保留建立快照的選項、因為快照可以啟用系統還原。</block>
   <block id="bb7e6cfdc4746a614a2674f0e2c56e43" category="list-text">按一下 * 關閉 * 。</block>
   <block id="5f2e3fd1b057bcc33ab14fddf0b6d211" category="paragraph">停止系統可能需要幾分鐘的時間。您可以稍後從工作環境頁面重新啟動系統。</block>
@@ -1919,10 +1856,6 @@
   <block id="145677a5a159dfbbd80d693eb835dd56" category="paragraph">向 NetApp 註冊 PAYGO 系統時、必須 ONTAP 使用任何方法來升級 __LW_NETAPP 軟體 <block ref="a298d5e88f2fe29dd7b686b16fbea686" category="inline-link-macro-rx"></block>。</block>
   <block id="17a487ae56e17c3c175366c070697ba7" category="inline-link">瞭解如何新增 NetApp 支援網站帳戶</block>
   <block id="8e396ea0aa1df92258d1f707577a2a06" category="paragraph"><block ref="15f23b395848b815304786c7c573b912" category="inline-link-rx"></block>。</block>
-  <block id="598a7189c0a8955db5d1e7c0795da2a6" category="list-text">在「畫版」頁面上、按兩下您要註冊的系統名稱。</block>
-  <block id="ddfc5fbf9d4116f75fab6bc240ee3629" category="list-text">按一下功能表圖示、然後按一下 * 支援註冊 * ：</block>
-  <block id="c91422d2af44df29262eeef0050de7fb" category="inline-image-macro">螢幕擷取畫面：顯示 Cloud Volumes ONTAP 在功能表圖示中選取的支援登錄選項、以供選擇。</block>
-  <block id="f82fe496603bf204ff4b4b1c2f2016dc" category="paragraph"><block ref="f82fe496603bf204ff4b4b1c2f2016dc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5e09b978da9c03ac56e9ae009a493fb2" category="list-text">選擇 NetApp 支援網站帳戶、然後按一下 * 註冊 * 。</block>
   <block id="6f16a5f8ff5d75ab84c018adacdfcbb7" category="cell">欄位</block>
   <block id="6f6cb72d544962fa333e2e34ce64f719" category="cell">尺寸</block>
@@ -1994,9 +1927,6 @@
   <block id="fcdf2fd9d6e147f33f4e8d5f15a8724a" category="inline-link-macro">瞭解如何實作 NetApp 勒索軟體解決方案</block>
   <block id="8d9f62f251a8a411876740e6611a61cf" category="paragraph"><block ref="f1b4d319a2908121f0a6e639ae6c7cdc" category="inline-link-macro-rx"></block>。</block>
   <block id="0c0c93dcca58dc6ba5a46ef2bf56980b" category="doc">改善防範勒索軟體的能力</block>
-  <block id="3e2be8b5f27f1aa296209f82d9266254" category="list-text">在工作環境中、按一下 * 勒索軟體 * 圖示。</block>
-  <block id="b4d57e3816d3dc9005d5675c781d08bf" category="inline-image-macro">顯示頁面右上角可在檢視工作環境時使用之勒索軟體圖示的快照。</block>
-  <block id="7e750d159c031938f4193b0bd8d03636" category="paragraph"><block ref="7e750d159c031938f4193b0bd8d03636" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6fd2a34cb3ac050adc4e4ef8cbaf3727" category="list-text">實作 NetApp 勒索軟體解決方案：</block>
   <block id="630bed2396b7232862aa978bb71ea4a6" category="list-text">如果您的磁碟區未啟用 Snapshot 原則、請按一下「 * 啟動 Snapshot Policy* 」。</block>
   <block id="939f63aeda74246a5fa38c869770bd7c" category="paragraph">NetApp Snapshot 技術提供業界最佳的勒索軟體補救解決方案。成功還原的關鍵在於從未受感染的備份還原。Snapshot 複本為唯讀、可防止勒索軟體毀損。他們也能提供精細度、以建立單一檔案複本或完整災難恢復解決方案的映像。</block>
@@ -2009,17 +1939,12 @@
   <block id="05c1f921312a3701ff4fe737635bbfb0" category="paragraph">如果您要刪除 Aggregate 、則必須先刪除 Aggregate 中的磁碟區。</block>
   <block id="14f6e5cbecec465db4af750335c3369b" category="paragraph">如果Aggregate空間不足、您可以使用System Manager將磁碟區移至其他Aggregate。</block>
   <block id="47a29d3d79731f5f3ac2e35595cdd5a9" category="list-text">在「畫版」頁面上、按兩下 Cloud Volumes ONTAP 您要管理集合體的功能性工作環境。</block>
-  <block id="be6c4e6315a42d6166b9bdefd99b4175" category="list-text">按一下功能表圖示、然後按一下 * 進階 &gt; 進階分配 * 。</block>
   <block id="4ee08bb978546541b2d29cc9458a50b6" category="list-text">管理您的 Aggregate ：</block>
   <block id="6fb0fc660dff117671a3212aa98c1e9a" category="cell">檢視有關 Aggregate 的資訊</block>
-  <block id="a40afba5e0bd72803969dff1b0ed7469" category="cell">選取一個 Aggregate 、然後按一下「 * 資訊 * 」。</block>
   <block id="b50c158eaf466db16b58f00ceffdc6e1" category="cell">在特定 Aggregate 上建立磁碟區</block>
-  <block id="90f1a1f2730a3abc2245b4a979df10f4" category="cell">選取一個 Aggregate 、然後按一下「 * 建立 Volume * 」。</block>
   <block id="ee1ffb740641bd768beada794d582fc1" category="cell">將磁碟新增至 Aggregate</block>
-  <block id="0558557eddde3c400b73684dfb49fdbb" category="list-text">選取一個Aggregate、然後按一下*「Add disks*」。</block>
   <block id="b98fc1f56f56b03e2525b90a45df7e45" category="list-text">選取您要新增的磁碟數目、然後按一下「 * 新增 * 」。</block>
   <block id="8ce62ed0fdfe7abb736c3597956922c2" category="cell">刪除 Aggregate</block>
-  <block id="55acf40831b2a6bbebbb0948c51c7dad" category="list-text">選取不包含任何磁碟區的 Aggregate 、然後按一下 * 刪除 * 。</block>
   <block id="f0186be0ddaae2816f6d38932fcc74bb" category="paragraph">Microsoft Azure 會排程在其虛擬機器上定期進行維護活動。當某個維護事件發生在Cloud Volumes ONTAP 一個不支援的HA配對上時、HA配對會啟動儲存設備接管。如果在此維護事件期間有作用中的CIFS工作階段、則CIFS檔案上的鎖定功能可能會妨礙儲存設備恢復。</block>
   <block id="b41beec6b021aed8f5f64bcce68ec5c9" category="paragraph">如果啟用此設定、 Cloud Volumes ONTAP 則會取消鎖定並重設作用中的 CIFS 工作階段。因此、HA配對可在這些維護事件期間完成儲存恢復。</block>
   <block id="7dcc83de27613f9409a84f38ee5d345e" category="admonition">此程序可能會對 CIFS 用戶端造成破壞。未從 CIFS 用戶端提交的資料可能會遺失。</block>
@@ -2286,7 +2211,6 @@
   <block id="282267afd7416dee4eb19ac3837e1b47" category="summary">在Cloud Volumes ONTAP Microsoft Azure中啟動時、您可以從多種VM類型中進行選擇。您可以隨時變更VM類型、只要判斷其規模過小或過大、就能滿足您的需求。</block>
   <block id="a03c706f9aecdf2cb0f407d0f08a1656" category="doc">變更Azure VM類型Cloud Volumes ONTAP 以供使用</block>
   <block id="9f257b11a56fb0990bae90687da210c7" category="list-text">變更VM類型可能會影響Microsoft Azure服務費用。</block>
-  <block id="611a1fa2f8a37527bbcb1f0228321b4d" category="list-text">選取VM類型、選取核取方塊以確認您瞭解變更的影響、然後按一下*確定*。</block>
   <block id="47a9dec41b05cb9452bf85a6b7a24260" category="summary">只要幾個步驟、就能開始使用 Cloud Volumes ONTAP 適用於 AWS 的解決方法。</block>
   <block id="486388bbe4cda183a0e74df6ada2a454" category="doc">在AWS中快速入門Cloud Volumes ONTAP</block>
   <block id="ecd871e3e8bbcd8fb9b67fde1abb1ca5" category="paragraph">只要幾個步驟、Cloud Volumes ONTAP 就能開始使用AWS的功能。</block>
@@ -2422,10 +2346,8 @@
   <block id="69e28a1ba6bc5233cc60dd248c362636" category="paragraph">在變更寫入速度之前、您應該先進行 <block ref="eb987e41d6a04bba64a9af2bb235fccb" category="inline-link-macro-rx"></block>。</block>
   <block id="d9072539538ac46d98e04043ff27fe64" category="list-text">確保磁碟區或集合體建立等作業未在進行中。</block>
   <block id="48e74d5adada7060074e975baf48822e" category="list-text">請注意、這項變更會重新啟動Cloud Volumes ONTAP 整個系統。這是一項中斷營運的程序、需要整個系統停機。</block>
-  <block id="95f9e248ac6da6c5225434c857ed26af" category="list-text">在工作環境中、按一下功能表圖示、然後按一下 * 進階 &gt; 寫入速度 * 。</block>
   <block id="96f68979b7e20270904a489e3ffb5590" category="list-text">選擇 * 正常 * 或 * 高 * 。</block>
   <block id="1dc9045fa2256d31acd9a9e96f728946" category="paragraph">如果您選擇「高」、則必須閱讀「我瞭解 ... 」聲明、並勾選方塊以確認。</block>
-  <block id="b020ae609de3aa70a34f31ba07ba8917" category="list-text">按一下「 * 儲存 * 」、檢閱確認訊息、然後按一下「 * 繼續 * 」。</block>
   <block id="129ebe82fb349647f39c555285fb6251" category="paragraph">儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可為您的用戶端提供儲存與資料服務。您可能知道這是 _SVM_ 或 _vserver_ 。根據預設、系統會設定一個儲存 VM 、但部分組態會支援額外的儲存 VM 。 Cloud Volumes ONTAP</block>
   <block id="d7a22fd9c17e5a9e3b614b52df2bcf96" category="section-title">使用多個儲存VM</block>
   <block id="ff3b711176ea253389bb97ff46d7f05c" category="paragraph">例如、下圖顯示如何在建立 Volume 時選擇儲存 VM 。</block>
@@ -2636,12 +2558,8 @@
   <block id="7b706b41f05f9caa3f36f827554b9f72" category="list-text">在「畫版」頁面上、按兩下Cloud Volumes ONTAP 您要在其中配置FlexVol 一份「功能區」的「功能區」系統名稱。</block>
   <block id="8fe21d93cbc571a932071994087670db" category="paragraph">只有在您對Cloud Volumes ONTAP 自己的系統上的資料集合體有充分的瞭解時、才建議您選擇特定的集合體。</block>
   <block id="71c3e1e405ad66b5bff9ec466ea6a3f4" category="open-title">任何Aggregate</block>
-  <block id="26b392aa05064fe814836b0694a9882f" category="paragraph">在Volumes（磁碟區）索引標籤中、按一下* Add Volume*（新增磁碟區）&gt;* New Volume*。</block>
   <block id="8f16078272611a0f4398b213c95246b5" category="open-title">特定Aggregate</block>
-  <block id="c838714246a1663c8542bc0fc4ad1aab" category="list-text">按一下功能表以取得 Aggregate 。</block>
-  <block id="e980b61c0751016af2c2c6c2323619ea" category="list-text">按一下「 * 建立 Volume * 」。</block>
   <block id="108a74a6cbb575c986177039e07dc411" category="list-text">依照精靈中的步驟建立磁碟區。</block>
-  <block id="9691bf3a7c5f05b620ab3b20437b6123" category="list-text">*詳細資料、保護及標記*：輸入有關磁碟區的基本詳細資料、然後選取Snapshot原則。</block>
   <block id="3b0e375a08fe94a129cba31916c9d2dc" category="paragraph">此頁面上的部分欄位是不知自明的。下列清單說明您可能需要指引的欄位：</block>
   <block id="191fac23c2b2ea4e948178972521292f" category="cell">Volume大小</block>
   <block id="189f63f277cd73395561651753563065" category="cell">標記</block>
@@ -2675,29 +2593,20 @@
   <block id="395f4870d887a81edabc6ad40f5a84f0" category="admonition">使用範本時、您只能建立NFS或CIFS磁碟區。</block>
   <block id="3464a6536597fb17300e864f33f6b63d" category="list-text">在「畫版」頁面上、按一下Cloud Volumes ONTAP 您要配置Volume的功能區系統名稱。</block>
   <block id="74099e7b70c30e3a55db543cda9bfc1e" category="inline-image-macro">顯示如何從範本新增磁碟區的快照。</block>
-  <block id="2adf96b75ce7acafe3eaaa1d8d3b1b2a" category="paragraph"><block ref="2adf96b75ce7acafe3eaaa1d8d3b1b2a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5b33742921c3a09b3c0916cff2d87632" category="list-text">在「選取範本_」頁面中、選取您要用來建立磁碟區的範本、然後按一下「*下一步*」。</block>
   <block id="41fdbb8293e553892079d0e7ad8a9ad9" category="inline-image-macro">可用應用程式範本的快照。</block>
   <block id="f2a6f7bb83d518b8832e241b44419c17" category="paragraph"><block ref="f2a6f7bb83d518b8832e241b44419c17" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8675916eaff2fb10955e8a3b1b14108f" category="paragraph">此時會顯示「定義參數_」頁面。</block>
   <block id="19f5b7f92268b2f8e63e4083819666c9" category="inline-image-macro">顯示空白範本的螢幕快照、您必須填寫才能建立Volume。</block>
   <block id="f9fb39421cb5c84a9897e58b19c84510" category="paragraph"><block ref="f9fb39421cb5c84a9897e58b19c84510" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c5ebc721265bff6f5891df31595f9db9" category="admonition">如果您想查看這些參數的值、可以按一下「Show read-only parameters*（顯示唯讀參數*）」核取方塊、以顯示範本已鎖定的所有欄位。根據預設、這些預先定義的欄位會隱藏、只會顯示您需要填寫的欄位。</block>
-  <block id="f916a27cf580c1cb72d910a796827151" category="list-text">在_context_區域中、工作環境會填入您剛開始使用的工作環境名稱。您需要選擇要在其中建立磁碟區的*儲存VM*。</block>
-  <block id="0149fd22e5722b132cbafe2d3e86e10b" category="list-text">新增所有非模板硬編碼的參數值。請參閱 <block ref="c4711ce582f4a278fe266c32d7e1a70b" category="inline-xref-macro-rx"></block> 如需部署Cloud Volumes ONTAP 一套解決方案的所有必要參數詳細資訊、請參閱。</block>
-  <block id="7c40758a149a5a65989345e1641d496d" category="list-text">如果您不需要定義其他動作（例如、設定Cloud Backup）、請按一下*執行範本*。</block>
   <block id="db382d688e4cb3e09b6e7a743ce00edb" category="paragraph">如果還有其他動作、請按一下左窗格中的動作、以顯示您需要完成的參數。</block>
   <block id="a31e4f2aa7f454321015e4c5b02bae97" category="inline-image-macro">螢幕快照顯示如何選取需要完成的其他動作。</block>
   <block id="0fdf861b8e72c9acd6caea0924545667" category="paragraph"><block ref="0fdf861b8e72c9acd6caea0924545667" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="805efa3cb5ac86159dc412d73e3ea0ee" category="paragraph">例如、如果「啟用雲端備份」動作需要您選取備份原則、您現在就可以這麼做了。</block>
-  <block id="4e4c407dde2bf455a9c4fcfb4d35f0cb" category="list-text">按一下*執行範本*。</block>
   <block id="f97c61e27cbf22f850ec5f0412358f0b" category="paragraph">此功能會配置磁碟區並顯示頁面、以便您查看進度。Cloud Volumes ONTAP</block>
   <block id="40136e65ff57723941fc2af2bf21d54a" category="inline-image-macro">快照顯示從範本建立新磁碟區的進度。</block>
   <block id="d1ad4ec8d83a0a6b7ef8ac4c5acc2d2f" category="paragraph"><block ref="d1ad4ec8d83a0a6b7ef8ac4c5acc2d2f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0ca2ea4d1ed88de2980b88af718eedaf" category="paragraph">此外、如果範本中實作任何次要動作、例如在磁碟區上啟用Cloud Backup、也會執行該動作。</block>
   <block id="841221afb195f2b9f58a8b1dc6a57132" category="section-title">在HA組態的第二個節點上建立磁碟區</block>
   <block id="60a2834a97bdfe49641e5ed1d42e4116" category="list-text">在「畫版」頁面上、按兩下 Cloud Volumes ONTAP 您要管理集合體的運作環境名稱。</block>
-  <block id="ad8627b73ca7a7c5d40024a795bad541" category="list-text">按一下「 * 新增 Aggregate * 」、然後建立 Aggregate 。</block>
   <block id="c8f3514620e31924fc247388a82834fa" category="list-text">對於主節點、請在 HA 配對中選擇第二個節點。</block>
   <block id="3e508ca38cc9707d385da2b9195e69c1" category="list-text">輸入新磁碟區的詳細資料、然後按一下「 * 建立 * 」。</block>
   <block id="8da4ea7971e73407bb70003f96f11e26" category="admonition">對於部署在多個 AWS 可用性區域中的 HA 配對、您必須使用磁碟區所在節點的浮動 IP 位址、將磁碟區掛載到用戶端。</block>
@@ -3146,11 +3055,8 @@
   <block id="bb1ef255816e8724de2a508f11ab6faa" category="list-text">在「畫版」頁面上、按兩下Cloud Volumes ONTAP 某個系統的名稱。</block>
   <block id="a31b079030fd3d406e06a9ce180abf58" category="list-text">在右上角、按一下*切換至進階檢視*。</block>
   <block id="4764848a2e939676e46196b57ed3d239" category="inline-image-macro">顯示「切換至進階檢視」選項的「不工作環境」快照Cloud Volumes ONTAP 。</block>
-  <block id="3ee38239984a2c6b3ae4074ced0704c7" category="paragraph"><block ref="3ee38239984a2c6b3ae4074ced0704c7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="74d668d6c47cd0c55c4ff8f77ad621bd" category="list-text">如果出現確認訊息、請仔細閱讀、然後按一下*關閉*。</block>
   <block id="f0da217269d7f8fb37fd503f586df2ef" category="list-text">使用System Manager來管理Cloud Volumes ONTAP 功能。</block>
-  <block id="c7c80403ddad5bf0ae3c78cf20ad2cf1" category="inline-image-macro">顯示「切換至標準檢視」選項的「不工作環境」快照Cloud Volumes ONTAP 。</block>
-  <block id="b98d787e610274d7cf438bd9dacb5eb3" category="paragraph"><block ref="b98d787e610274d7cf438bd9dacb5eb3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9091c5cdacecb3d4082594d5d5a31855" category="section-title">協助使用System Manager</block>
   <block id="29b2dad08499788ccf25f529167b3782" category="paragraph">如果您需要協助、請Cloud Volumes ONTAP 參閱《System Manager with》（搭配使用系統管理程式）<block ref="e4712fca3ed0fd9138bc58dbf36327e9" category="inline-link-rx"></block> 以取得逐步指示。以下是幾個可能有幫助的連結：</block>
   <block id="b9cf2d579e6b088870d384fe9910b52f" category="inline-link">Volume與LUN管理</block>
@@ -3177,8 +3083,6 @@
   <block id="45d56c7397375528eb877ce509812ff1" category="paragraph"><block ref="45d56c7397375528eb877ce509812ff1" category="inline-link-rx"></block></block>
   <block id="f544f5509c6658bd68f3e69072dd7145" category="admonition">此行為不適用於支援Amazon EBS彈性磁碟區功能的集合體。啟用彈性磁碟區的集合體由一或兩個RAID群組組成。每個RAID群組都有四個容量相同的磁碟。 <block ref="e64e49a1cded5f4109adae46b4faa045" category="inline-link-macro-rx"></block>。</block>
   <block id="149dd55e6760c710e611c0480e5069ac" category="cell">增加支援Amazon EBS彈性Volume的Aggregate容量</block>
-  <block id="f17996ff912274a89bd46a09126f54a0" category="list-text">選取一個Aggregate、然後按一下*增加容量*。</block>
-  <block id="c2ee080a41f3128dec50564d5d2cf945" category="list-text">輸入您要新增的額外容量、然後按一下「*新增*」。</block>
   <block id="ddc70e48be52170226876f32fd0d0955" category="paragraph">請注意、您必須將Aggregate的容量增加至少256 GiB或集合體大小的10%。</block>
   <block id="457b4b096cd2396d1dc52e52b77f7f16" category="paragraph">例如、如果您有1.77 TiB Aggregate、則10%為181 GiB。此值低於256 GiB、因此集合體的大小必須至少增加256 GiB。</block>
   <block id="a787df3b454348b29e66a5e26381efe1" category="inline-link-macro">深入瞭解彈性磁碟區支援</block>
@@ -3264,9 +3168,6 @@
   <block id="d842642316b39be001efb718a0cad4bd" category="inline-link-macro">瞭解如何建立Aggregate</block>
   <block id="3af655005fd29fbbd8824a6ef2f040dc" category="paragraph"><block ref="bdaa17f2dfe16043f8bea33e0b6d1ef8" category="inline-link-macro-rx"></block>。</block>
   <block id="71ce9ba1a5339afe1098587175217b4b" category="list-text">識別已啟用彈性磁碟區的集合體</block>
-  <block id="71ba010a4e2b551c25de28ee7b4f8a9a" category="paragraph">前往「進階配置」頁面時、您可以識別是否已在集合體上啟用「彈性磁碟區」功能。在下列範例中、aggr2已啟用彈性磁碟區、而aggr1則未啟用彈性磁碟區。</block>
-  <block id="090c5fa182e6b93f4da9c8d06195700f" category="inline-image-macro">顯示兩個集合體的快照、其中一個有一個欄位的「Elastic Volumes已啟用」文字。</block>
-  <block id="ee7cf33bd0cd0b3af6a7cc58c5d43380" category="paragraph"><block ref="ee7cf33bd0cd0b3af6a7cc58c5d43380" category="inline-image-macro-rx" type="image"></block></block>
   <block id="13cb5ebd8c0b7becb3143ed413ade223" category="list-text">新增容量至Aggregate</block>
   <block id="dc71aae1559eb6f97026da188f10aa46" category="inline-link-macro">瞭解如何增加Aggregate容量</block>
   <block id="aeef03dd397a861db5fa8e9873d3c379" category="paragraph"><block ref="ea7cf76a282dc5fbb196162d820ca1ce" category="inline-link-macro-rx"></block>。</block>
@@ -3327,11 +3228,9 @@
   <block id="03c93da41831d72dcea5fc724b2b4658" category="list-text">在* Capacity *下、修改下列任何設定：</block>
   <block id="af1f64d74440547a71a0dfdd077d8a15" category="inline-link-macro">瞭解容量管理模式的運作方式</block>
   <block id="46e6171a2e84c75269ac8bcb3c5004d8" category="paragraph"><block ref="f8a3c55f9fa8638c083e126aaf830b07" category="inline-link-macro-rx"></block>。</block>
-  <block id="562e73580c466cead324e6a17fbfe1c8" category="list-text">可用空間比率</block>
   <block id="314b05c3387324c9621b3b3cd58816d4" category="list-text">當Aggregate上的可用空間比率低於指定臨界值時觸發通知。</block>
   <block id="a27b16792f86cfcc4c0f28d5d58e43f4" category="paragraph">可用空間比率的計算方式如下：</block>
   <block id="b9fbc310908f08e909d0f601f964b6d5" category="paragraph">（Aggregate capcap處理 能力- Aggregate上的總使用容量）/ Aggregate cap處理 能力</block>
-  <block id="1bf0c6edc1ff4a9b211fcdf6bda9cef9" category="list-text">資料分層的可用空間比率</block>
   <block id="0bc3c683bdb3389ca9d8d2211fce0878" category="list-text">定義將資料分層至容量層（物件儲存）時、效能層（磁碟）需要多少可用空間。</block>
   <block id="3e230a58ba269a917d314abcc623818e" category="paragraph">這種比率對於災難恢復方案非常重要。從容量層讀取資料時Cloud Volumes ONTAP 、將資料移至效能層、以提供更好的效能。如果空間不足、Cloud Volumes ONTAP 則無法移動資料。</block>
   <block id="99a583bf10de030bdac538c8b15f5b45" category="paragraph">此行為由連接器上的_Capacity Management Mode_決定。容量管理模式會影響Cloud Volumes ONTAP 由該Connector管理的所有不完整系統。如果您有另一個Connector、則可以以不同的方式設定。</block>
@@ -3423,18 +3322,12 @@
   <block id="e1d61ff8b15b12854145940279164504" category="paragraph">總共有六個系統。之後您的帳戶就有額外14個系統的空間。</block>
   <block id="03021ab228ad1d1c921bbf536e2913a4" category="section-title">檢視您帳戶中的已用容量</block>
   <block id="e54d493645f297f788982c1215f721bf" category="paragraph">數位錢包會顯示您帳戶的總使用容量、以及授權套件的使用容量。這有助於瞭解您的收費方式、以及您是否需要購買額外容量。</block>
-  <block id="d5dde91fb8d63e816b49f1eaaf1b31f0" category="list-text">選取*容量型授權*後、即可檢視套件摘要、其中會顯示耗用容量、總授權容量、以及總PAYGO容量。</block>
   <block id="29f9c9781f75b695cb6c7c93910280cd" category="list-text">_總使用容量_是Cloud Volumes ONTAP NetApp帳戶中所有供應系統的總容量。無論磁碟區內的本機、已用、已儲存或有效空間為何、充電都是根據每個磁碟區的已配置大小而計算。</block>
-  <block id="2895d33d8798ea34fbece2f03c7b1a44" category="list-text">_Total licensed是您向NetApp購買的總授權容量（BYOL）。</block>
   <block id="4cca90046112da5c5d3a703dafebbb7e" category="list-text">_Total PAYGO_是使用雲端市場訂閱的已配置總容量。只有當耗用容量高於授權容量、或數位錢包中沒有BYOL授權時、才會使用透過PAYGO充電。</block>
-  <block id="fa5b039d6c7312346b7c921f81258971" category="paragraph">以下是使用容量為2000 TiB的帳戶範例：</block>
   <block id="ea7c202c277e5ccf92e08be29b4a64e9" category="list-text">在摘要下、檢視每個授權套件的耗用容量。</block>
-  <block id="39d8821e12869173bcc44d49a6c82619" category="list-text">_已用容量_顯示該套件的磁碟區總容量。如需特定套件的詳細資料、請將滑鼠游標移到工具提示上。</block>
   <block id="d30bc4bd5cee7ac23a1df54311d1f4b3" category="inline-link-macro">瞭解如何為Essentials套裝方案充電</block>
   <block id="33b4838dec7acdb2df64d13961f0a255" category="paragraph">若要更深入瞭解Essentials套件的顯示容量、您應該熟悉充電的運作方式。 <block ref="eee0a6ebb632d7e4c34635f35e9b54cf" category="inline-link-macro-rx"></block>。</block>
   <block id="bbb170bfbf4105204b0dbe4292724d6e" category="paragraph">以下是一個擁有多個授權套件的帳戶範例：</block>
-  <block id="9dbb08096054a8593f55c8cd3e2863d6" category="inline-image-macro">螢幕快照顯示專業、最佳化及基本套件的耗用容量。</block>
-  <block id="943b03ddb77b543ab329dfed996ad4ac" category="paragraph"><block ref="943b03ddb77b543ab329dfed996ad4ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="998e6cc07bc5c3b4a2329ad21093316c" category="paragraph"><block ref="998e6cc07bc5c3b4a2329ad21093316c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3fe75f10a35597997861eca633c30fa7" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block></block>
   <block id="c0d3ce4ea1bcde455d433b9182cdde33" category="list-text">從左側導覽功能表中、選取* Digital Wallet *。</block>
@@ -3452,8 +3345,6 @@
   <block id="3bc8827b2b8b4b47a25fb21994526d52" category="paragraph">如果資料因高速寫入而遺失、事件管理系統（EMS）會報告下列兩個事件：</block>
   <block id="7cd42532925d5e610a9d3694b57652da" category="list-text">零點9.8到9.10.1 Cloud Volumes ONTAP</block>
   <block id="deae9d093dee266b166a3693474231a9" category="paragraph">發生這種情況時Cloud Volumes ONTAP 、無需使用者介入、即可啟動及繼續提供資料。</block>
-  <block id="4f68f7a47531b2df7b7a4db5225d57b5" category="list-text">_BYOL_顯示您向NetApp購買的授權容量。</block>
-  <block id="0c27ea3454ff74c09bafc9361752d263" category="list-text">_PAYGO_顯示授權使用模式的總使用容量。</block>
   <block id="37bd0d8d0efdd824ed9e36094f3c2c1c" category="paragraph">這些權限包含在中<block ref="98fe8f9430f05dddae3f56358643ae7b" category="inline-link-rx"></block></block>
   <block id="d0cc9b5d406e02bdbb6a1a9848e6af5f" category="inline-link">檢視所需的權限</block>
   <block id="0fcac0fe9e3d9ae4416e83b6bf0316d1" category="paragraph"><block ref="0fcac0fe9e3d9ae4416e83b6bf0316d1" category="inline-link-rx"></block></block>
@@ -3573,18 +3464,11 @@
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">如果您有來自雲端供應商市場的私人優惠或合約、改用未包含在合約中的收費方法、將會導致依BYOL（如果您向NetApp購買授權）或PAYGO收取費用。</block>
   <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">您將不需支付與資料複寫（SnapMirror）或NDMP相關的I/O費用。</block>
   <block id="240bee2f94d72e6a18a1263f971266c2" category="cell">使用叢集管理LIF的IP位址、連線到Connector和HTTPS、存取System Manager Web主控台</block>
-  <block id="9de6e01935c802f21691e7efbefa9680" category="inline-image-macro">三個並排點的圖示。</block>
-  <block id="4cd7acfcbb86932901020185b1df1ec0" category="list-text">按一下 <block ref="231de61ef434abbab90a4356a7d32c83" category="inline-image-macro-rx" type="image"></block> &gt;*從範本新增Volume *。</block>
   <block id="4f9ff6137bed641431cf4f88c0e37ba0" category="inline-image-macro">概念性影像：Cloud Volumes ONTAP 一套概念性影像、顯示出一套關於功能不整的HA配對及其元件。</block>
   <block id="deec4375ad9dbb52932d049564b46c2c" category="paragraph"><block ref="deec4375ad9dbb52932d049564b46c2c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="59d7031e8dd126031d49f14da3eb9662" category="inline-image-macro">顯示Cloud Volume HA配對和組態所需的四個VPC的概念映像。</block>
   <block id="5f244177e38ddb1ab2243352007aaca2" category="paragraph"><block ref="5f244177e38ddb1ab2243352007aaca2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2963bb3da6cd2f26e6b000d48fda5b9c" category="inline-link-macro">疑難排解AutoSupport 您的VMware組態</block>
-  <block id="10b7e2e8f5f0b89386db5d8f54c2583a" category="list-text">從「畫版」選取工作環境。</block>
-  <block id="26adcf62b4b0748e28f414b46e0ad443" category="list-text">在右窗格中、按一下功能表圖示、然後選取*最佳化成本與效能*。</block>
-  <block id="bbcd7b9a3e132961d93ea08d77eb732e" category="inline-image-macro">可從Canvas.取得最佳化成本與擴大機；效能選項的快照。</block>
-  <block id="84fb9846fd45aafb7e227dceba2bf483" category="paragraph"><block ref="41ee20c5926363ecd6aaed7cd5cd1cdd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d0e6517b6c0b570b620f706f71cb176c" category="admonition">您也可以進入工作環境、開啟動作功能表、然後選取*變更VM*來使用此選項。</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
   <block id="440be74a67502f9c3d55890782329328" category="paragraph">以下是3.9.22版Connector的變更。</block>
   <block id="83bad7a989a8ab61893e9cfb7497cefd" category="section-title">數位錢包增強功能</block>
@@ -3599,7 +3483,6 @@
   <block id="f929bd53055100ea5034e258d5828a45" category="inline-image-macro">選取工作環境後、可從畫版取得「最佳化成本與安培」選項的快照。</block>
   <block id="b04af3108aa064fb53015f188d417418" category="paragraph"><block ref="740982637064d815add45193172173b0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fa5f0abcdf06ead83ea7fc11be56d19a" category="section-title">資訊通知AutoSupport</block>
-  <block id="5ed78720df0a22827c77c0f200597bec" category="admonition">您也可以進入工作環境、開啟動作功能表、然後選取*變更機器*來使用此選項。</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述的自我支援選項、您也可以在啟動支援之後、與NetApp支援專家合作解決任何問題。</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">瞭解如何註冊以取得支援</block>
   <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">如果您想與電話上的其他人通話、請按一下*「呼叫我們*」。您將會被導向netapp.com上的頁面、其中列出您可以撥打的電話號碼。</block>
@@ -3617,7 +3500,6 @@
   <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"您無權針對所選服務建立案例"</block>
   <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">使用產品內對談</block>
   <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">請至提交非技術案例<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
-  <block id="9097b7003d9efcc9b19c4d5073cdcd3b" category="admonition">您也可以輸入工作環境、開啟動作功能表、然後選取*變更執行個體*來使用此選項。</block>
   <block id="ad6a05badd8d020ceea1ccb2534365ab" category="section-title">需求AutoSupport</block>
   <block id="295477dc121353b83198c98d83f89695" category="section-title">疑難排解AutoSupport 您的VMware組態</block>
   <block id="db5287528bed608802655c082c0e89b3" category="paragraph">您很可能因為網路問題而收到此訊息。</block>
@@ -3652,8 +3534,6 @@
   <block id="ea92910b55077f3c4e27aa9df66efbf8" category="list-text">返回Cloud Volumes ONTAP 到還原CLI、確認Cloud Volumes ONTAP 功能不只能傳送AutoSupport 功能不實的訊息：</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">開始之前</block>
   <block id="434256b12ce281ef5e4d73836f3321d4" category="paragraph">前往NetApp知識庫檢視逐步指示：</block>
-  <block id="2d3838f6845c3ac0398071b3ad7e14f5" category="paragraph"><block ref="2d3838f6845c3ac0398071b3ad7e14f5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="99c8d21234f18ca8a3a220793fea2262" category="paragraph">+<block ref="d4324b56e309570d8b82ab9a959b9228" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a8bfe07e1e703ed3692dbea8b2a81de" category="inline-link">關於此問題的聲明Cloud Volumes ONTAP</block>
   <block id="b8a867ef3334c621e08f3cfef506f53b" category="list-text"><block ref="b8a867ef3334c621e08f3cfef506f53b" category="inline-link-rx"></block></block>
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">關於本產品的注意事項ONTAP</block>
@@ -3873,7 +3753,6 @@
   <block id="00ab90255b4d6e7b956ddf02ccf0b78e" category="inline-image-macro">BlueXP的快照顯示叢集管理介面、兩個NFS和CIFS資料介面以及SVM管理介面的浮動IP位址。</block>
   <block id="0793fb2aa91da8227ea7295e5891ea57" category="paragraph"><block ref="0793fb2aa91da8227ea7295e5891ea57" category="inline-image-macro-rx" type="image"></block></block>
   <block id="27f1a07e4eef2fc0ab102135404da657" category="paragraph">下列範例影像顯示 VPC 1 的路由表。其中包括通往浮動 IP 位址和 VPC 2 的路由、而 VPC 2 是用戶端所在的位置。在部署HA配對時、BlueXP會自動將浮動IP新增至路由表。</block>
-  <block id="9036b8f651252283ddfb9a00295cfa70" category="paragraph">您可以選取磁碟區並按一下*掛載Command*、在BluXP中找到正確的IP位址。</block>
   <block id="e0bda1591b7559424f02d1adbbd3965d" category="summary">與標準AWS區域類似、您可以在AWS商業雲端服務（C2S）環境中使用BlueXP（前身為Cloud Manager）來部署Cloud Volumes ONTAP 支援功能、為您的雲端儲存設備提供企業級功能。AWS C2S是美國專屬的封閉區域智慧社群；本頁的說明僅適用於AWS C2S區域使用者。</block>
   <block id="d9bc9104669da346ed2fadb2cb686999" category="paragraph">BlueXP會啟動Cloud Volumes ONTAP 這個執行個體。您可以追蹤時間表的進度。</block>
   <block id="93f5e6c9fa12acc64acdb6b378a09bdd" category="doc">在BlueXP中管理儲存VM</block>
@@ -3899,7 +3778,6 @@
   <block id="bf75afe84fa4d8e8637d67f46da78447" category="admonition">BlueXP會建立一個<block ref="69dad99e4ae4952ff167137be3a42452" category="inline-link-rx"></block> 然後啟動該放置群組中的兩個 HA 節點。放置群組可將執行個體分散到不同的基礎硬體、藉此降低同時發生故障的風險。此功能可從運算角度而非磁碟故障角度改善備援。</block>
   <block id="c884e72132fe774e964d45203b2dda4d" category="paragraph">當您建立新的磁碟區並需要額外的磁碟時、BlueXP會將相同數量的磁碟分配給兩個節點、建立鏡射的Aggregate、然後建立新的磁碟區。例如、如果磁碟區需要兩個磁碟、則BlueXP會在每個節點上配置兩個磁碟、總共四個磁碟。</block>
   <block id="6b014a111978e615d8d143759130afe1" category="admonition">只有在儲存系統檢視中使用BluXP時、才能設定雙主動式組態。</block>
-  <block id="00c9595bc5cbf65901adf1c05dbc4c08" category="paragraph">您可以從BlueXP輕鬆識別正確的IP位址：</block>
   <block id="a35bca3f24f4dccbc351b2e388077c00" category="paragraph">如果您想Cloud Volumes ONTAP 要在AWS中啟動功能、您需要在BlueXP中建立新的工作環境</block>
   <block id="da6a1a281804977deca79ae615d580d8" category="paragraph">在您建立工作環境之後、BlueXP會立即在指定的VPC中啟動測試執行個體、以驗證連線能力。如果成功、BlueXP會立即終止執行個體、然後開始部署Cloud Volumes ONTAP 該系統。如果BlueXP無法驗證連線能力、則無法建立工作環境。測試執行個體為 T2.奈 米（預設 VPC 租賃）或 m3.medium （專屬 VPC 租賃）。</block>
   <block id="4430756ff29ab7fea3e175d3ff48be76" category="cell">BlueXP使用工作環境名稱來命名Cloud Volumes ONTAP 整個系統、以及Amazon EC2執行個體。如果您選取該選項、它也會使用名稱做為預先定義安全性群組的前置詞。</block>
@@ -3935,8 +3813,6 @@
   <block id="d4cf496f112c8443c55c77f819b95b4b" category="paragraph">您可能想要在 Cloud Volumes ONTAP 特定時間間隔內關閉此功能、以降低運算成本。您可以將BlueXP設定為自動關機、然後在特定時間重新啟動系統、而非手動執行此動作。</block>
   <block id="719804aecba45f2a91fc03419f9f60ac" category="list-text">當您排程自動關閉Cloud Volumes ONTAP 您的作業系統時、如果正在進行作用中的資料傳輸、則BlueXP會將關機時間延後。</block>
   <block id="bef3442a081401294987a04d5fd013d7" category="paragraph">在傳輸完成後、BlueXP會關閉系統。</block>
-  <block id="f884ea208e6bcd01380f10fb59dea173" category="paragraph">下圖顯示每週六上午12：00指示BlueXP關閉系統的排程48 小時。每週一上午12：00、BlueXP會重新啟動系統</block>
-  <block id="e47eeb0d6a9544ebd7c2192d93a896cc" category="paragraph">BlueXP會儲存排程。時鐘圖示會變更、表示已設定排程： <block ref="74bec5e5dc52030c6eeec717b2b26a75" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d96640cb9857bedea622da8e210171a8" category="admonition">為降低成本、BlueXP會定期刪除較舊的根磁碟和開機磁碟快照。根磁碟和開機磁碟只會保留兩個最新的快照。</block>
   <block id="50840e2145fe17e7b2d3355bf1858f3b" category="paragraph">當您停止HA配對時、BlueXP會關閉兩個節點。</block>
   <block id="ffa45f5dd5756168cb752f08f5b3cefd" category="inline-link">在NetApp 支援網站 BlueXP中新增功能帳戶</block>
@@ -3948,28 +3824,22 @@
   <block id="71ad7ee54b2c54364e470e91313bd1c8" category="paragraph">在系統建立時、BlueXP會為Cold資料建立物件存放區、 <block ref="dbb78a2cc39acf14e084217f8235322a" category="inline-xref-macro-rx"></block>。之後、您只需要在磁碟區上啟用資料分層功能（在某些情況下、 <block ref="7f499208f2ff911432bf2cd70bde52dd" category="inline-xref-macro-rx"></block>）。</block>
   <block id="110bf8d701c3104f8527af78ccf4f6f3" category="paragraph">只要BlueXP具備必要的權限、您就不需要在效能層與容量層之間建立連線。如果Connector的自訂角色具有下列權限、則BlueXP會為您啟用vnet服務端點：</block>
   <block id="544cf6a9b3209b8642549a9f636f850d" category="paragraph">只要沒有連線或權限問題、在建立系統時、BlueXP就會建立Cold資料的物件存放區。如果您在建立系統之前未實作上述要求、則必須手動啟用分層、以建立物件存放區。</block>
-  <block id="7ba788606ad56bde2415340a76fe7dc0" category="inline-image-macro">當BlueXP嘗試啟用資料分層時、如果遇到問題、可從工作環境功能表取得「啟用容量分層」選項的快照。</block>
-  <block id="c40ae3d4404caf2d331095e8007c76d0" category="paragraph"><block ref="c40ae3d4404caf2d331095e8007c76d0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="34a53c9826b73666c9ff291fdbb73cc4" category="paragraph">只有在BlueXP建立系統時無法啟用資料分層功能時、才會看到此選項。</block>
   <block id="0ed8d1c9d40b89d8bb30156f2ff80b44" category="list-text">按一下「*啟用*」、即可讓BlueXP建立物件存放區、供此Cloud Volumes ONTAP 支援系統用於階層式資料。</block>
   <block id="f504f88c3ef9fff4d0a0f3ea83ce4b0a" category="paragraph">如果您要在新磁碟區上啟用資料分層功能、就不需要擔心在集合體上啟用資料分層功能。BlueXP會在已啟用分層功能的現有Aggregate上建立磁碟區、或是在啟用資料分層功能的Aggregate不存在的情況下、為磁碟區建立新的Aggregate。</block>
   <block id="6f7dbe99eb1dafd47fcc1667c1661873" category="list-text">在BlueXP中開啟工作環境。</block>
   <block id="c42d7d1729e77b6aa2d88e357efbb241" category="inline-image-macro">快照顯示有關BlueXP中包含分層狀態的Aggregate資訊。</block>
-  <block id="ec23400a3a57e1931ad6d6c4bcadc5f4" category="paragraph"><block ref="ec23400a3a57e1931ad6d6c4bcadc5f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="18f662e89926d99c2d0078857e1e0594" category="paragraph">如果啟用資料分層的Aggregate不存在、則BlueXP會為磁碟區建立新的Aggregate。</block>
   <block id="15772334d40a5e0ec433c7a427e96777" category="paragraph">例如、您可以選擇少於10%的可用空間、以確保您使用購買的容量。然後、當需要額外容量時、BlueXP可以為您購買額外的磁碟（直到達到Aggregate的磁碟限制為止）。</block>
   <block id="2b891711a30d74a376864ff361ead016" category="list-text">在BlueXP主控台右上角、按一下*設定*圖示、然後選取*連接器設定*。</block>
   <block id="be9d7b7687f0c55f7e65f14cd2b0f530" category="inline-image-macro">顯示BlueXP主控台右上角「設定」圖示的快照。</block>
-  <block id="cb9e3791dcb67c8a699c104be6a1c49c" category="paragraph"><block ref="cb9e3791dcb67c8a699c104be6a1c49c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6b51126e31989dbd35d983caab04ff08" category="paragraph">移除Cloud Volumes ONTAP 功能不正常的環境、將其從藍圖XP移除。它不會刪除 Cloud Volumes ONTAP 此作業系統。您稍後可以重新探索工作環境。</block>
   <block id="c3d8bc113694ac5e1b1bc6903d5f4777" category="paragraph">從BlueXP移除工作環境可讓您執行下列動作：</block>
   <block id="017482efc6f3c5791be39e26da43f9c3" category="list-text">從另一個BlueXP系統重新探索</block>
-  <block id="b55eb28344378e34c1c9c9f4b1a693ae" category="list-text">在BlueXP主控台右上角、按一下「設定」圖示、然後選取「*工具*」。</block>
   <block id="fefa70b1c4e33b9a37d96658b2133389" category="paragraph">BlueXP移除工作環境。使用者可隨時從「畫版」頁面重新探索此工作環境。</block>
   <block id="0e90b6bbef3911eccc0d09b6e4087aff" category="summary">從Cloud Volumes ONTAP BlueXP升級以取得最新的新功能與增強功能。升級軟體之前、您應該先準備 Cloud Volumes ONTAP 好用的不一樣系統。</block>
   <block id="61560599f4747b091e1abc457824f639" category="section-title">僅從BlueXP升級</block>
   <block id="c6925d752394e325c0b435137fbe997c" category="paragraph">必須從BlueXP完成升級。Cloud Volumes ONTAP您不應 Cloud Volumes ONTAP 使用 System Manager 或 CLI 來升級功能。這樣做可能會影響系統穩定性。</block>
-  <block id="bed8a3185a4b2ddb1020be5c9da45358" category="paragraph">BlueXP提供兩種升級Cloud Volumes ONTAP 途徑：</block>
   <block id="9291a80d43d5b5496ef3da30291aed0c" category="list-text">將升級映像放在HTTPS位置、然後提供URL給BlueXP</block>
   <block id="a0c4aa457c64e636209cb497491957e3" category="list-text">如果您依照工作環境中顯示的升級通知進行升級、則BlueXP會提示您升級至遵循這些支援升級途徑的版本。</block>
   <block id="331278b9811c6edc293cd27e4bb970a2" category="admonition">尚未註冊支援的系統仍會在新版本推出時收到在BlueXP中顯示的軟體更新通知。但您必須先註冊系統、才能升級軟體。</block>
@@ -3980,7 +3850,6 @@
   <block id="32d300cab53087f3ab3e15c01593d633" category="section-title">從BlueXP通知升級</block>
   <block id="5f75615300b4a5dfb537f7f68f86cad0" category="paragraph">當Cloud Volumes ONTAP 有新版Cloud Volumes ONTAP 的功能時、BlueXP會在不工作環境中顯示通知：</block>
   <block id="31aacf5ad0f1f7f769f403486ca64107" category="paragraph">在Cloud Volumes ONTAP 這個系統上、不能進行諸如Volume或Aggregate建立等BlueXP作業。</block>
-  <block id="9be46f2eecdd8ba27897fc5c3d9e21f3" category="paragraph">BlueXP會啟動軟體升級。軟體更新完成後、即可在工作環境中執行動作。</block>
   <block id="daf09a56a5eef482eb39aae95ad9c10d" category="paragraph">您可以將Cloud Volumes ONTAP 「更新」軟體映像放在Connector或HTTP伺服器上、然後從BlueXP開始軟體升級。如果BlueXP無法存取S3儲存區來升級軟體、您可以使用此選項。</block>
   <block id="ec96841ef9fc6828c45908c34b7efd84" category="list-text">如果您使用HTTPS來裝載ONTAP 資訊影像、升級可能會因為SSL驗證問題而失敗、因為遺失憑證。因應措施是產生並安裝CA簽署的憑證、以用於ONTAP 在EXP和BlueXP之間進行驗證。</block>
   <block id="8187f77b708bd73b1d1ea983eefc6853" category="inline-link">NetApp KB：如何將BlueXP設定為HTTPS伺服器、以裝載升級映像</block>
@@ -4048,7 +3917,6 @@
   <block id="2c5d07ca61673fa8fb94be1c97bf91fe" category="paragraph">請注意、BlueXP會在Google Cloud中配置所需的IP位址、並使用資料LIF來建立儲存VM、以進行SMB/NFS存取、並使用iSCSI LIF來進行傳出SMB通訊。</block>
   <block id="4a5ed1e1f5c4ada56ab2471bc9700165" category="paragraph">BlueXP API也支援在HA配對上重新命名及刪除儲存VM。</block>
   <block id="f82d1b6b82e3a4e80812051b0f0d956c" category="list-text">如果NetApp 支援網站 您尚未將您的支援帳戶新增至藍圖XP、請前往*帳戶設定*、立即新增。</block>
-  <block id="b9ea5f54d5e7487561836a098ec50c0c" category="list-text">從左側導覽功能表中、選取*儲存設備&gt; Canvas*</block>
   <block id="3c133f4bc8bc3ebf4d10cf6cfdf4d97f" category="paragraph">BlueXP向NetApp註冊系統。</block>
   <block id="8c97ed5bc0c7a571b8993af8c6396051" category="paragraph">BlueXP會將授權新增至Digital Wallet。授權將被識別為未指派、直到您將其與新Cloud Volumes ONTAP 的一套系統關聯為止。之後、授權會移至「數位錢包」中的「* BYOL*」索引標籤。</block>
   <block id="e366d9a0e89a88ec47c46ef7e75a1620" category="paragraph">BlueXP會將未指派的授權轉換成您選取的服務。您可以在「*資料服務授權*」標籤中檢視新授權。</block>
@@ -4317,7 +4185,6 @@
   <block id="c69ac98b36cf0e598f3cae6b175a8eec" category="list-text">儲存帳戶用於託管式磁碟型部署、以處理診斷記錄並分層處理至blob儲存設備。</block>
   <block id="dba89da91170934734e847dcfe4ad5d0" category="section-title">零點9.12.1. Cloud Volumes ONTAP</block>
   <block id="2dd09f45720a8f94b29c4d048b61ff4e" category="section-title">2022年11月15日</block>
-  <block id="cca494b1b1d22bc8b5c8a8ecd5367bf8" category="section-title">GCP中的SS3授權ONTAP</block>
   <block id="44f72ae2127b89a470e082ae9f772acf" category="paragraph">在Google Cloud Platform中、執行9.12.1版或更新版本的全新及現有的版本不含更新版本的S3授權Cloud Volumes ONTAP ONTAP 。</block>
   <block id="50ffa0cb1ebb11ac1969ed98e7c94bf5" category="admonition">NIC 3僅適用於使用網頁BLOB儲存設備的HA部署。</block>
   <block id="baa56a5cbeb0b5811b307c481a824728" category="paragraph">根據預設、BlueXP會啟用Azure Private Link、以便Cloud Volumes ONTAP 在支援鏈接的情況下連接到支援鏈接的畫面和Azure網頁BLOB儲存帳戶。</block>
@@ -4652,7 +4519,6 @@
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">表格最後一欄中出現三個點的圖示</block>
   <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">按一下即可管理現有案例 <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> 並選擇其中一個可用選項：</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*檢視案例*：檢視特定案例的完整詳細資料。</block>
-  <block id="482429810c2b00a4fa04f9900c560232" category="list-text">*更新案例備註*：提供您問題的其他詳細資料。</block>
   <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*結案案例*：提供結案原因的詳細資料、然後按一下*結案案例*。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">螢幕擷取畫面、顯示您在表格最後一欄選取功能表後可以採取的動作。</block>
   <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
@@ -4801,4 +4667,200 @@
   <block id="7f09653ec569404a6d78270f050d7c18" category="list-text">* HA配對* BlueXP會將12-13個IP位址分配給HA配對：</block>
   <block id="99388f0fdeac933c80f2d52c95fe6eac" category="list-text">1叢集管理LIF（e0a）</block>
   <block id="07ddec46aac81bd14d6fc7f0d22ee78d" category="list-text">1或2個NAS lifs（e0a）</block>
+  <block id="e8c25ea78d67a6ef891f303353422dbd" category="paragraph">+<block ref="45bd8c026c5ef22179001445b3bd636a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2c75d71bcadfabfa7cf8757cbfdd3d85" category="inline-image-macro">「連接器設定」選項的螢幕擷取畫面、位於「設定」圖示下。</block>
+  <block id="473c33023a339a6b370b4ddd3b34813e" category="paragraph"><block ref="473c33023a339a6b370b4ddd3b34813e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2e11b0ec6ed47b1e8f7051aaab70da38" category="list-text">Aggregate Capacity 臨界值 - 可用空間比率</block>
+  <block id="c707daf76e9202bb2278e4872c7db485" category="list-text">Aggregate Capacity 臨界值 - 資料分層的可用空間比率</block>
+  <block id="93538ad94a332061adf2239e8ac21a4d" category="list-text">在 Canvas 頁面上、選取工作環境。</block>
+  <block id="ca2685261e68781c7e281c106027c9d6" category="list-text">在「總覽」標籤上、按一下「功能」面板、然後按一下「 * 路由表 * 」旁邊的鉛筆圖示。</block>
+  <block id="4b6844f3c505a6f4a3db39ea33fd3cf0" category="inline-image-macro">在檢視工作環境時、會在「概觀」頁面右上角的「功能」面板下顯示「路由表」設定的螢幕擷取畫面。</block>
+  <block id="2057f11c69807ba4cbd27e1e921f7823" category="paragraph"><block ref="2057f11c69807ba4cbd27e1e921f7823" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8bcb080f300b6dfd8ee09d89bb85d060" category="paragraph"><block ref="8bcb080f300b6dfd8ee09d89bb85d060" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="021ed7718b4d1f8ff42ac2d9a653d143" category="list-text">在工作環境中、按一下 * Aggregate * 標籤。</block>
+  <block id="a83fde1416b692585ab72d55276e43ee" category="list-text">在 Aggregate 索引標籤上、瀏覽至所需標題、然後按一下 * 。 （橢圓圖示） * 。</block>
+  <block id="4940ff7a33940e4ec33b7d78f146648a" category="inline-image-macro">集合體功能表選項的螢幕擷取畫面。</block>
+  <block id="65c989c474db774160c441e94f03ddfc" category="paragraph"><block ref="65c989c474db774160c441e94f03ddfc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="116812c107d40280e65a3a0f4f5c3440" category="cell">在 ... 下 （橢圓圖示）功能表、按一下 * 檢視 Aggregate details* 。</block>
+  <block id="2e59a4ccfe2d0087aa6ece23a0922ea4" category="cell">在 ... 下 （橢圓圖示）功能表、按一下 * 新增 Volume * 。</block>
+  <block id="64209bde9f2d422a086f99622664bb4b" category="list-text">在 ... 下 （橢圓圖示）功能表、按一下 * 新增磁碟 * 。</block>
+  <block id="54afa16678d9fa49dd4f37f5d8d62d51" category="list-text">在 ... 下 （橢圓圖示）功能表、按一下 * 增加容量 * 。</block>
+  <block id="cacd62863a1aec474ea14c7ba39b9f28" category="list-text">輸入您要新增的額外容量、然後按一下 * 增加 * 。</block>
+  <block id="f20c2435bfa2bf017b0a33455e4d252c" category="list-text">選取不包含任何磁碟區的 Aggregate tile 按一下 * 。 （橢圓圖示） &gt; 刪除 * 。</block>
+  <block id="44f505566cfb44ab274d6dd37da6a48b" category="list-text">在「 Canvas 」頁面上、按兩下您設定為寫入速度的系統名稱。</block>
+  <block id="b9c48f0b7a355bd9b39b3ae2c666ec43" category="list-text">在「總覽」標籤上、按一下「功能」面板、然後按一下「 * 寫入速度 * 」旁邊的鉛筆圖示。</block>
+  <block id="bc3c9695426ff48d40dce0286c7e05f4" category="inline-image-macro">在檢視工作環境時、在「概觀」頁面右上角的「功能」面板下顯示寫入速度設定的螢幕擷取畫面。</block>
+  <block id="98dbfe06324c35bb25c949f4b21d581a" category="paragraph"><block ref="98dbfe06324c35bb25c949f4b21d581a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8e1d6d29fa6bbc00ab6896ec1e677037" category="list-text">按一下 * 儲存 * 、檢閱確認訊息、然後按一下 * 核准 * 。</block>
+  <block id="38124763ec69515302fcd6a655b0cb92" category="list-text">在「畫布」頁面上、按兩下 Cloud Volumes ONTAP 工作環境的名稱。</block>
+  <block id="67f0f7bdc0b6b3c961c645e5a644b531" category="list-text">在 BlueXP 主控台的右上角、按一下橢圓圖示、然後選取 * 設定密碼 * 。</block>
+  <block id="a18ec44ef07922a650e590de9dd0a36e" category="inline-image-macro">螢幕擷取畫面顯示工作環境中的可用功能表、其中包含設定密碼動作。</block>
+  <block id="6daca7a21673390f9b4946d99b575dbc" category="paragraph"><block ref="6daca7a21673390f9b4946d99b575dbc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="906b0fc78378feea1883fe721c72e648" category="list-text">在「概述」索引標籤上、按一下「功能」面板、然後按一下「 * 機器類型 * 」旁邊的鉛筆圖示。</block>
+  <block id="6466b41798117de76beee910171ffc8f" category="inline-image-macro">在檢視工作環境時、會在「概觀」頁面右上角的「功能」面板下顯示「機器類型」設定的螢幕擷取畫面。</block>
+  <block id="65501384f1f7cf6e689e492914a698c1" category="paragraph"><block ref="65501384f1f7cf6e689e492914a698c1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6ccb38ae114176203c2592f430a889d7" category="list-text">如果您使用的是節點型 PAYGO 授權、您可以選擇不同的授權和機器類型、方法是按一下 * 授權類型 * 旁的鉛筆圖示。</block>
+  <block id="f5e2fedd06abf8315436e3971f9755de" category="list-text">選擇機器類型、勾選核取方塊以確認您瞭解變更的影響、然後按一下 * 變更 * 。</block>
+  <block id="1bb49759ca91107ea85449bc0249ce13" category="list-text">選取 * 容量型使用許可 * 後、即可檢視套件摘要、其中會顯示您的使用容量、預先認可的總容量、以及 PAYGO 總容量。</block>
+  <block id="def968f0e18d0f7aed6421ac81039272" category="list-text">_Total preconted capacity_ 是您從 NetApp 購買的總授權容量（ BYOL 或 Marketplace Contract ）。</block>
+  <block id="6805f1cb53971ab8cf6263bd093c5d20" category="paragraph">以下是數位錢包中 Cloud Volumes ONTAP 套件摘要的範例：</block>
+  <block id="e9132fa20985cf4b3d5004a6a371ecab" category="inline-image-macro">螢幕擷取畫面顯示 Cloud Volumes ONTAP 套件摘要、包括總使用容量、總預先承諾容量（ BYOL 和 Marketplace Contracts ）、以及數位錢包中的 PAYGO 總容量或已配置容量。</block>
+  <block id="68519fd40c76d6220d905ceda4e0956b" category="paragraph"><block ref="68519fd40c76d6220d905ceda4e0956b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="af61e314a8c2484dfcfef0afc2e5b8b9" category="list-text">耗用容量 _ 顯示該套件的磁碟區容量。如需特定套件的詳細資料、請將滑鼠游標移到工具提示上。</block>
+  <block id="cfc852810f89c13febd473e12117d828" category="list-text">_ 預先承諾容量 _ 是您從 NetApp 購買的授權容量（ BYOL 或 Marketplace 合約）。</block>
+  <block id="b35741916171a2b4d1210c1ccf6e3920" category="list-text">_BYOL_ 顯示您從 NetApp 購買的此套件類型的授權容量。</block>
+  <block id="59bdc4172870791ff34a990174b34a66" category="list-text">_Marketplace Contracts_ 顯示您購買的此套件類型的市場合約授權容量。</block>
+  <block id="e733f8e4574a8639831d6df796e6a0eb" category="list-text">_PAYGO_ 會依授權使用模式顯示使用容量。</block>
+  <block id="b0980f4f35d961e95a685e0af8bda7e4" category="inline-image-macro">螢幕擷取畫面顯示基本功能和專業套件的耗用容量、預先配置容量和 PAYGO 或已配置容量。</block>
+  <block id="71b669d4d19df676d975ef4911ded7af" category="paragraph"><block ref="71b669d4d19df676d975ef4911ded7af" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a98606dee1787dfd2471d2ef8adeb680" category="list-text">在「 Canvas 」頁面上、按兩下您要登錄的系統名稱。</block>
+  <block id="24901c53838efd4b9981ed8ffd510413" category="list-text">在「概述」標籤上、按一下「功能」面板、然後按一下「 * 支援註冊 * 」旁邊的鉛筆圖示。</block>
+  <block id="055fb099b650eb50b3be2ee6aaa5edaa" category="inline-image-macro">螢幕擷取畫面：顯示 Cloud Volumes ONTAP 系統「功能」面板下的「支援」登錄選項。</block>
+  <block id="683ad9be450b1e4aaffcdcab8b33b0c4" category="paragraph"><block ref="683ad9be450b1e4aaffcdcab8b33b0c4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4da26c1efc91c7136517504959cc0687" category="paragraph"><block ref="4da26c1efc91c7136517504959cc0687" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fc2c97abb2fb8e3c019de4850d91d264" category="list-text">在 Canvas 頁面上、選取 Cloud Volumes ONTAP 工作環境、</block>
+  <block id="6ba9fc3c166e3d53b824216485ae89ee" category="list-text">按一下功能表圖示、然後按一下 * 檢視成本報告 * 。</block>
+  <block id="e657448bf5ab3960e8e1fc068d83deee" category="inline-image-macro">螢幕擷取畫面：顯示「檢視成本報告」功能表選項。</block>
+  <block id="4881300462ed76e4f5ebaf3070d5e7d9" category="paragraph"><block ref="4881300462ed76e4f5ebaf3070d5e7d9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6200e275553fcb2d81141061804129aa" category="list-text">在 Canvas 頁面上、按兩下您設定為勒索軟體保護的系統名稱。</block>
+  <block id="68e277e7409c8587f5447ff6e1d07bac" category="list-text">在「概述」索引標籤上、按一下「功能」面板、然後按一下 * 勒索軟體保護 * 旁的鉛筆圖示。</block>
+  <block id="e44870bfe38bf3731499fca3154b9528" category="inline-image-macro">在「概觀」頁面右上角的「功能」面板下顯示勒索軟體保護設定的螢幕擷取畫面、可在檢視工作環境時顯示。</block>
+  <block id="2a39771bd60186d9d0eea3e49bb0d221" category="paragraph"><block ref="2a39771bd60186d9d0eea3e49bb0d221" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d0b1fe5e5e43d6e24cc20f730b8d1742" category="paragraph">您可以透過 BlueXP 「管理磁碟區」面板下的 _Mount Command_ 選項、輕鬆識別正確的 IP 位址。</block>
+  <block id="b717cb7368a7773e8663a0b7444325ad" category="paragraph"><block ref="b717cb7368a7773e8663a0b7444325ad" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="36466e75ef3251345a1fc3b957275568" category="list-text">在 Aggregate 索引標籤上、按一下 * 新增 Aggregate * 、然後指定 Aggregate 的詳細資料。</block>
+  <block id="3c27c0be3b51a96fbeaf21988a5d0da7" category="paragraph">前往「進階配置」頁面時、您可以識別是否已在集合體上啟用「彈性磁碟區」功能。在下列範例中、 Aggr1 已啟用彈性 Volume 。</block>
+  <block id="da881591358a049c4652b06b1054ccb1" category="inline-image-macro">顯示兩個集合體的螢幕擷取畫面、其中一個集合體具有文字「 Elastic Volumes Enabled 」的欄位。</block>
+  <block id="6d62cbba5d5d4db651e497c57ee98339" category="paragraph"><block ref="6d62cbba5d5d4db651e497c57ee98339" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3f5b7e3773583b9ca6b634b5264139c7" category="list-text">在 Canvas 頁面上、按兩下您要移除的工作環境。</block>
+  <block id="a9d8201fa61b52d04aa8d5efa98407ef" category="list-text">在 BlueXP 主控台的右上角、按一下橢圓圖示、然後選取 * 從工作區移除 * 。</block>
+  <block id="41aeb32afbd7adcd7344a525b524aa2e" category="inline-image-macro">在 BlueXP 主控台右上角顯示「從工作區移除」選項的螢幕擷取畫面。</block>
+  <block id="68dff8388aadd10577c0c664fc4fa756" category="paragraph"><block ref="68dff8388aadd10577c0c664fc4fa756" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ccc69ca3b9f50bd572baa407834f41ed" category="list-text">在「從工作區檢閱」視窗中、按一下 * 移除 * 。</block>
+  <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023年4月3日</block>
+  <block id="2dfd965acb2426b281b13a70df99c06b" category="paragraph">Connector 3.9.28 版隨附下列變更。</block>
+  <block id="7ce52c94db42646098e71a61d9836b73" category="section-title">Google Cloud 現在支援都靈地區</block>
+  <block id="84030861d628cd7238a62da972a260f4" category="paragraph">Google Cloud for Cloud Volumes ONTAP 和 Connector for Cloud Volumes ONTAP 9.12.1 GA 及更新版本均支援都靈地區。</block>
+  <block id="671e2a59b2bfa852def9660bf14badde" category="section-title">數位錢包增強功能</block>
+  <block id="d3ab2a9ddd985032aa120324e6da3710" category="paragraph">Digital Wallet 現在顯示您購買的授權容量、並提供市場私有優惠。</block>
+  <block id="6ee7d527518e93562cc9e691d20fb1d5" category="section-title">支援在磁碟區建立期間提出意見</block>
+  <block id="ac14eb6382fa5b619966ba72622ecd3f" category="paragraph">此版本可讓您在使用 API 建立 Cloud Volumes ONTAP FlexGroup Volume 或 FlexVol Volume 時、提出意見。</block>
+  <block id="231ea98554191e640c216736796158d5" category="section-title">重新設計 BlueXP 使用者介面、以重新設計 Cloud Volumes ONTAP 概觀、 Volume 和集合頁面</block>
+  <block id="1cc55fcb982bea0e8f241a1271bda985" category="paragraph">BlueXP 現在已重新設計了 Cloud Volumes ONTAP 概觀、磁碟區和集合網頁的使用者介面。並排式設計會在每個方塊中提供更完整的資訊、以提供更好的使用者體驗。</block>
+  <block id="9000895c1e7c46e6e8fc9eb750dfb403" category="inline-image-macro">此螢幕擷取畫面會在 Cloud Volumes ONTAP 總覽頁面上顯示重新設計的 BlueXP 使用者介面。各種方塊顯示儲存效率、版本、容量分配、 Cloud Volumes ONTAP 部署、磁碟區、集合體、複製和備份的相關資訊。</block>
+  <block id="23fbfdbb598644432ab089fa6e533405" category="paragraph"><block ref="23fbfdbb598644432ab089fa6e533405" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6fff4762fc0aeb74dd0a918683c157ae" category="section-title">可透過 Cloud Volumes ONTAP 檢視的 FlexGroup Volume</block>
+  <block id="8d40e6e8379382ee39fba2c4a1cb5629" category="paragraph">透過 CLI 或系統管理員直接建立的 FlexGroup Volume 現在可透過 BlueXP 中重新設計的 Volumes 動態磚來檢視。BlueXP 與提供給 FlexVol Volume 的資訊相同、透過專用的 Volumes 磚提供建立的 FlexGroup Volume 的詳細資訊。</block>
+  <block id="905d8520d584560b3995118b2a01f6c2" category="admonition">目前、您只能在 BlueXP 下檢視現有的 FlexGroup 磁碟區。在 BlueXP 中建立 FlexGroup 磁碟區的功能無法使用、但已計畫在未來版本中使用。</block>
+  <block id="91f0dcc3b5f3e7c2ced12a923ca3b92e" category="inline-image-macro">顯示 FlexGroup Volume 圖示的螢幕擷取畫面會將文字暫留在 Volumes 磚下方。</block>
+  <block id="ce46ac36501bd1de8616d715ef7ee1c2" category="paragraph"><block ref="ce46ac36501bd1de8616d715ef7ee1c2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9f223d40f9c90f08d9cd6ef8cba648c3" category="inline-link-macro">深入瞭解如何檢視建立的 FlexGroup Volume 。</block>
+  <block id="acef74218ad5e199582b5c76062e5559" category="paragraph"><block ref="acef74218ad5e199582b5c76062e5559" category="inline-link-macro-rx"></block></block>
+  <block id="d92a428713f7303c87adb54fb04cf41b" category="section-title">Google Cloud 中的 ONTAP S3 授權</block>
+  <block id="df8131ce273465a002c95cb0c5cf8a39" category="list-text">按一下 [ 概觀 ] 索引標籤上的 [ 功能 ] 面板，然後按一下 *VM 類型 * 旁邊的鉛筆圖示。</block>
+  <block id="838630480d269a60c2c6bb929717f964" category="inline-image-macro">檢視工作環境時、會在「概觀」頁面右上角的「功能」面板下顯示虛擬機器類型設定的螢幕擷取畫面。</block>
+  <block id="4782218bc1564550fa76897e159be9bf" category="paragraph"><block ref="4782218bc1564550fa76897e159be9bf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e257ba6100e7f02e04c1d8b474024a3c" category="list-text">如果您使用的是節點型 PAYGO 授權、您可以選擇不同的授權和 VM 類型、方法是按一下 * 授權類型 * 旁的鉛筆圖示。</block>
+  <block id="0b52c0f8f311ea5465845d81cc4401f1" category="list-text">選取 VM 類型、選取核取方塊以確認您瞭解變更的影響、然後按一下 * 變更 * 。</block>
+  <block id="c529c6170bed402afd9deff05a6b3d0d" category="paragraph">您可以透過 BlueXP 中「管理磁碟區」面板下的 * 掛載命令 * 選項、在 BlueXP 中找到正確的 IP 位址。</block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">* 附件（選填） * ：上傳最多五個附件、一次上傳一個。</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">每個檔案的附件上限為 25 MB 。支援下列副檔名： txt 、 log 、 pdf 、 jpg/jpeg 、 rtf 、 doc/dox 、 xls/xlsx 和 csv 。</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">* 更新案例附註 * ：提供問題的其他詳細資料、或選擇 * 上傳檔案 * 最多附加五個檔案。</block>
+  <block id="a3e3a06edf2b13412206a49650d28c73" category="list-text">在「畫布」頁面上、選取 Cloud Volumes ONTAP 執行個體的名稱。</block>
+  <block id="c8ae9612aebf2aa8477908ecc9dc4ad2" category="list-text">按一下 Aggregate 索引標籤。</block>
+  <block id="93bad64eb0d84f1d45ce1ff481e26c51" category="list-text">瀏覽至所需的方塊、並驗證是否已在 Aggregate 上啟用或停用分層。</block>
+  <block id="cc26bc8be32a1d905f6d22627e65a0b9" category="paragraph"><block ref="cc26bc8be32a1d905f6d22627e65a0b9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b433e385414da518f50fc6f6b243cce6" category="list-text">在工作環境下的 Volumes （磁碟區）標籤中、建立新的磁碟區或變更現有磁碟區的層級：</block>
+  <block id="4fea09deb083b39f9519227c4dc045e5" category="cell">選取所需的磁碟區方塊、按一下 * 管理磁碟區 * 以存取「管理磁碟區」右側面板、然後按一下右側面板下的 * 進階動作 * 和 * 變更分層原則 * 。</block>
+  <block id="78cffa6560689ac98432ba58e17e78ff" category="inline-image-macro">螢幕擷取畫面、顯示可用於變更磁碟區分層原則的選項。</block>
+  <block id="e0e0725f5ef956857b33c008a39af157" category="paragraph"><block ref="e0e0725f5ef956857b33c008a39af157" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fd6a9430e3d3dc98292b8abddc9d77ff" category="paragraph">如果Cloud Volumes ONTAP 您使用_auto_分層原則在某個SURFVolume上啟用資料分層、您可以根據業務需求調整預設的冷卻時間。此動作僅支援使用 API 和 CLI 。</block>
+  <block id="0f6046d8813989f95f3ce9353dba26a5" category="list-text">在 BlueXP 主控台的右上角、按一下橢圓圖示、然後選取 * 刪除 * 。</block>
+  <block id="ec8e04c7758ae04f1375383b387929a1" category="paragraph"><block ref="ec8e04c7758ae04f1375383b387929a1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e46b959133eadbb0d00ac0a308843f30" category="list-text">在刪除工作環境視窗下、輸入工作環境的名稱、然後按一下 * 刪除 * 。</block>
+  <block id="c4bd89564dafc82c9b2027b549fa45f2" category="list-text">在工作環境中、按一下 * Volumes （磁碟區） * 標籤。</block>
+  <block id="31fe088c17d984a78f5027d2b8428e18" category="list-text">在 Volumes （磁碟區）索引標籤上、瀏覽至所需的磁碟區標題、然後按一下 * Manage Volumes （管理磁碟區） * 以存取 Manage Volumes （管理磁碟區）右側面板。</block>
+  <block id="2142690a2d1ae8bd820983b7911914d5" category="list-text">按一下 * 目標 IQN* 。</block>
+  <block id="a56a5ae6f53f5f4ccfd018cd42004ea1" category="list-text">在 Canvas 頁面上、按兩下所需的工作環境。</block>
+  <block id="1db430d5f476ccb7c5abbdfc3d4402d2" category="list-text">在「總覽」索引標籤上、按一下「功能」面板、然後按一下 * 排程停機 * 旁的鉛筆圖示。</block>
+  <block id="16fe8db807301272754ce201908a4d01" category="paragraph"><block ref="16fe8db807301272754ce201908a4d01" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0e1d67ee86981cf82fb4f5195e170da1" category="paragraph">下圖顯示一個排程、指示 BlueXP 每週六下午 20 ： 00 關閉系統（下午 8 ： 00 ） 12 小時。每週一上午12：00、BlueXP會重新啟動系統</block>
+  <block id="3d33a0e91197625fe5c19262b8588a5e" category="inline-image-macro">螢幕擷取畫面：顯示排程停機畫面。</block>
+  <block id="b7964eed3054006e2dc32e71addc9330" category="paragraph"><block ref="b7964eed3054006e2dc32e71addc9330" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="833d40bbf64439ee457b9a9720b3cc4c" category="paragraph">BlueXP會儲存排程。「功能」面板下方的對應排程停機項目會顯示為「開啟」。</block>
+  <block id="ee55aa8843d0fe4882d1ebc2115835c8" category="paragraph"><block ref="ee55aa8843d0fe4882d1ebc2115835c8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e6441a36027812e99b99675afebb1ad3" category="inline-image-macro">「概述」索引標籤下的「新增 Volume 」按鈕的螢幕擷取畫面。</block>
+  <block id="d3c83108d2d70bd2eb22fbd1bb485f2f" category="paragraph">在「概觀」標籤上、瀏覽至「 Volume 」磚、然後按一下「 * 新增 Volume * 」。<block ref="d66b0ca71189f0ddd53cd4b3e65bbf57" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d67d87305db3f29260c81473dd44e3f1" category="inline-image-macro">Aggregate 索引標籤下的 Add Volume （新增 Volume ）按鈕的螢幕擷取畫面。</block>
+  <block id="13f1658d880a29010b36402880b7742d" category="paragraph">在 Aggregate 索引標籤上、瀏覽至所需的 Aggregate 動態磚。按一下功能表圖示、然後按一下 * 新增 Volume * 。<block ref="90511a2a61b219fe659f6c6204d0e9f4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5359c0cc8b61614ec08d953783fef7e9" category="list-text">* Volume 、 Details 、 Protection 和 Tag* ：輸入有關該卷的基本詳細信息並選擇 Snapshot 策略。</block>
+  <block id="5a33fdd3ad048388d676b3cfe62a76b4" category="cell">Volume名稱</block>
+  <block id="da791c0c870c83e87ff0b50e41446b5f" category="cell">您可以為新磁碟區輸入的可識別名稱。</block>
+  <block id="8bc5e99f50f67c6de120548d75821d83" category="cell">儲存 VM （ SVM ）</block>
+  <block id="360a6a454911fe3432462fbd11f3588c" category="cell">儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可為您的用戶端提供儲存與資料服務。您可能知道這是 SVM 或 Vserver 。根據預設、系統會設定一個儲存 VM 、但部分組態會支援額外的儲存 VM 。 Cloud Volumes ONTAP您可以為新的 Volume 指定儲存 VM 。</block>
+  <block id="83153603fdc3097c323cd6a9c354a74c" category="list-text">瀏覽至 Volumes （磁碟區）標籤、然後按一下 * Add Volume （新增磁碟區） * &gt; * New Volume from Template* （從範本</block>
+  <block id="d5b72c940ba2727afcbba5dd037893f5" category="paragraph"><block ref="d5b72c940ba2727afcbba5dd037893f5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ac2c13cd2f76af0753933c8630446e5f" category="paragraph">隨即顯示 _Editor_ 頁面。</block>
+  <block id="18a9b2315ac5b98381d542571ba28299" category="list-text">在 _Action_ 面板上、輸入範本的名稱。</block>
+  <block id="74f7c9266baa87f8e4aceef158811143" category="list-text">在 _context_ 下、工作環境會填入您開始使用的工作環境名稱。選取要建立磁碟區的 * 儲存 VM* 。</block>
+  <block id="02550edcd072d55bf0b10ab3bdd4bc07" category="list-text">新增所有非模板硬編碼的參數值。請參閱 <block ref="c4711ce582f4a278fe266c32d7e1a70b" category="inline-xref-macro-rx"></block> 以取得完成 Cloud Volumes ONTAP Volume 部署所需的所有參數詳細資料。</block>
+  <block id="746037c3b6a0eec6bb1e41959d51e07e" category="list-text">按一下 * 套用 * 將設定的參數儲存至選取的動作。</block>
+  <block id="ceaf2fbd590803b94d4b9355d3432936" category="list-text">如果您不需要定義其他動作（例如、設定 Cloud Backup ）、請按一下 * 儲存範本 * 。</block>
+  <block id="be2645489c0ae0149fc30f6dc8d80bbb" category="paragraph">例如、如果「啟用雲端備份 on Volume 」動作需要您選取備份原則、您現在可以這麼做。</block>
+  <block id="f0131c80c45b00e70cb9a1d8c9e3448a" category="list-text">完成範本動作的組態設定後、按一下 * 儲存範本 * 。</block>
+  <block id="bc321d6d3a5b549e1c0961440ef815f4" category="list-text">在 Aggregate 索引標籤上、按一下 * 新增 Aggregate * 。</block>
+  <block id="d528ab86bd3d69a199b872eae76729c3" category="list-text">從 _ 新增 Aggregate _ 畫面建立 Aggregate 。</block>
+  <block id="6f3d3de9b8245394933ccb5a82580032" category="inline-image-macro">顯示新增 Aggregate 進度的螢幕擷取畫面。</block>
+  <block id="6d8395606a42c9b4b508b7083fef071b" category="paragraph"><block ref="6d8395606a42c9b4b508b7083fef071b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1f0652f3e88178c774443201328e4d2a" category="paragraph">BlueXP 提供三種升級 Cloud Volumes ONTAP 的方法：</block>
+  <block id="61c67604de243e1d1f09464a53018e48" category="list-text">在 Aggregate 標題下、按一下「橢圓」按鈕、然後選取 * 檢視 Aggregate details* 。</block>
+  <block id="46804cb5ec7cb836d1b3ea87af016b42" category="paragraph"><block ref="46804cb5ec7cb836d1b3ea87af016b42" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b1d9e8a6210003e4a2d3ad9699698b5c" category="paragraph"><block ref="b1d9e8a6210003e4a2d3ad9699698b5c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c0db33b74d957aee90885031cc634b6" category="paragraph">如果有新版本可用、則會在「概觀」索引標籤中顯示通知：</block>
+  <block id="9646f8f8111c91fa6c731c727c894c5f" category="inline-image-macro">顯示「立即升級！」的螢幕擷取畫面 「概觀」索引標籤下的連結。</block>
+  <block id="96189d65a45e7fa44a02098d1c2994b3" category="paragraph"><block ref="96189d65a45e7fa44a02098d1c2994b3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c8a40603d5d9f8240beba1de505700ab" category="list-text">如果有新版本可用、請按一下 * 立即升級！ *</block>
+  <block id="e4e172ed018cf6c10be6941fd7282e6f" category="list-text">在「升級 Cloud Volumes ONTAP 」頁面中、閱讀 EULA 、然後選取 * 我閱讀並核准 EULA * 。</block>
+  <block id="f6e8db7e26c18ff77395c70107114b81" category="list-text">按一下*升級*。</block>
+  <block id="aac15e5127b7a8b7e9fa2c9cd925e9b5" category="paragraph">BlueXP會啟動軟體升級。軟體更新完成後、您可以在工作環境中執行動作。</block>
+  <block id="2d06184bb48576ef2fb92fc134897025" category="admonition">目前、您只能透過 BlueXP 使用者介面升級至最新的可用 ONTAP 版本。透過 BlueXP 使用者介面升級至特定 ONTAP 版本的功能將在未來版本中提供。</block>
+  <block id="fa7b604cc90feece6d71e8400213710f" category="list-text">新增下列參數和值以編輯 app.conf ：</block>
+  <block id="4356eb78a767f5eff5a7176feb088ce4" category="inline-image-macro">「 Volume 」索引標籤下的「 Manage Volume 」（管理 Volume ）按鈕的螢幕擷取畫面。</block>
+  <block id="3113f5bbc88ead26c7d366fdec38f27b" category="paragraph"><block ref="3113f5bbc88ead26c7d366fdec38f27b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8f56224592abe10774e5575500874b11" category="cell">在「管理磁碟區」面板的「 Volume Actions 」（ Volume 動作）下、按一下「 * 檢視磁碟區詳細資料 * 」</block>
+  <block id="d4c98b540182b809e992d8b4a580423e" category="list-text">在「管理磁碟區」面板的「 Volume Actions 」（ Volume 動作）下、按一下「 * 掛載命令 * 」。</block>
+  <block id="98c56e9d0291f443f1ed942549039cc3" category="list-text">在「管理磁碟區」面板的「 Volume Actions 」（磁碟區動作）下、按一下「 * Clone the volume * 」（</block>
+  <block id="c36ae8709c4f5551dcd33c1fa09b1144" category="cell">編輯 Volume 標記（僅限讀寫磁碟區）</block>
+  <block id="0c76e6ded4e12f0dc0b2564def628aae" category="list-text">在「管理磁碟區」面板的「 Volume Actions 」（ Volume 動作）下、按一下 * 「 Edit Volume Tags* 」（編輯磁碟區標記 * ）以修改指派給所選磁碟區的 Volume 標記。</block>
+  <block id="186ac335ead3bdabcd70b18a0e6f40ed" category="list-text">在提供的欄位下輸入 Volume 標記金鑰和值。</block>
+  <block id="cf92c264f59ad57e63ae663106047d25" category="list-text">若要加入其他標記、請按一下 * 新增標記 * 。</block>
+  <block id="29f680a1731a2250d73a33aede73a2eb" category="list-text">在「管理磁碟區」面板的「 Volume Actions 」（磁碟區動作）下、按一下 * 「 Edit Volume settings* 」（</block>
+  <block id="ac11ccea860c1468f49807407e073557" category="list-text">修改磁碟區的 Snapshot 原則、 NFS 傳輸協定版本、 NFS 存取控制清單（匯出原則）或共用權限、然後按一下 * 套用 * 。</block>
+  <block id="6271604d64ad8f6bcdad901be64df292" category="list-text">在「管理磁碟區」面板的「 Volume Actions 」（磁碟區動作）下、按一下「 * 刪除磁碟區 * 」</block>
+  <block id="a1546ebb48752d4bd4d09e75842decd8" category="list-text">在「刪除 Volume 」視窗下、輸入您要刪除的 Volume 名稱。</block>
+  <block id="0776ce27c5318514c6a838e721b809ce" category="list-text">在「管理磁碟區」面板的「保護動作」下、按一下 * 建立 Snapshot 複本 * 。</block>
+  <block id="23d745e528991c6cbab9c76044a9058b" category="list-text">在「管理磁碟區」面板的「保護動作」下、按一下 * 從 Snapshot 複本還原 * 。</block>
+  <block id="44ef2d8eff57541b631f3815660b4ecf" category="list-text">在「管理磁碟區」面板的「進階動作」下、按一下 * 變更磁碟類型 * 。</block>
+  <block id="7dfcaaac35e1f30c1f24428c9e96edbf" category="list-text">在「管理磁碟區」面板的「進階動作」下、按一下 * 變更階層原則 * 。</block>
+  <block id="29d65535c1a7fceff3430e7f581ccab6" category="list-text">在對話方塊中輸入磁碟區的名稱。</block>
+  <block id="df558d420bf0d201f04fde33701f2df7" category="list-text">在工作環境的「總覽」標籤中、按一下右側面板下方的「功能」標籤。</block>
+  <block id="7a35a25a92271952afb7c4819b18295f" category="list-text">在 "CIFS Setup （ CIFS 設置） " 字段下，單擊 *p鉛筆 圖標 * 以顯示 "CIFS Setup （ CIFS 設置） " 窗口。</block>
+  <block id="1931ad448159a5e88348fe5bcc0f9382" category="cell">選取儲存 VM （ SVM ）</block>
+  <block id="350c5507976ce0078fb3fab36bf47f9b" category="cell">選取 Cloud Volume ONTAP 儲存虛擬機器（ SVM ）會顯示其已設定的 CIFS 資訊。</block>
+  <block id="1aad0c623c80b59d018f9ae6c07ca0bf" category="list-text">按一下 * 設定 * 。</block>
+  <block id="4145a13d965a05b20f37aec1922ef7dd" category="list-text">在工作環境中、按一下 * Aggregate 標籤 * 。</block>
+  <block id="7d3d9db5a4178e569561d635871c26ed" category="list-text">瀏覽至所需的 Aggregate 方塊、然後按一下 * 。 （橢圓圖示） &gt; 檢視 Aggregate 詳細資料 * 。</block>
+  <block id="920937d0401827a767850d6598f69cf9" category="list-text">在 Aggregate Details 畫面的 Overview （概觀）索引標籤下、檢閱每個 Volume 的大小、然後選擇一個或多個要移出 Aggregate 的 Volume 。</block>
+  <block id="e992ef205a43832966f09572f1eb3492" category="paragraph"><block ref="e992ef205a43832966f09572f1eb3492" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c6d494ac63d05f0797b17cc4e9b671a5" category="list-text">在 Aggregate 方塊下、檢視可用容量（資源配置大小減去使用的 Aggregate 容量）。</block>
+  <block id="448b7e585e92285ee5349bcda1a7acd0" category="paragraph"><block ref="448b7e585e92285ee5349bcda1a7acd0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8fcffd0e2a621979482d32af8df3fa54" category="list-text">選取集合體、然後按一下 * 。 （橢圓圖示） &gt; 新增磁碟 * 。</block>
+  <block id="85cbc8c9d17142818868d0deb987b7d4" category="section-title">檢視 FlexGroup Volume</block>
+  <block id="bfc66c582a5f0744b4549abc59217c8b" category="paragraph">您可以直接透過 BlueXP 中的 Volumes （磁碟區）標籤、檢視透過 CLI 或系統管理員建立的 FlexGroup 磁碟區。BlueXP 與提供給 FlexVol Volume 的資訊相同、透過專用的 Volumes 方塊、提供建立的 FleGroup Volume 的詳細資訊。在「 Volume （磁碟區）」磚下方、您可以透過圖示的暫留文字來識別每個 FlexGroup 磁碟區群組。此外、您也可以透過 Volume 樣式欄、在 Volume 清單檢視下識別及排序 FlexGroup Volume 。</block>
+  <block id="b732fd66a88d23ecd20ddd54d252bde0" category="paragraph"><block ref="b732fd66a88d23ecd20ddd54d252bde0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="18f38afc08c122a02d1cef0b8f55b13c" category="list-text">在「概述」標籤上、按一下「功能」面板、然後按一下「 * 執行個體類型 * 」旁邊的鉛筆圖示。</block>
+  <block id="246617af3cc2b3a4751f4377e63c90d9" category="inline-image-macro">在檢視工作環境時、會在「概觀」頁面右上角的「功能」面板下顯示「執行個體類型」設定的螢幕擷取畫面。</block>
+  <block id="22d199cf6285224598c87a4bf598fec7" category="paragraph"><block ref="22d199cf6285224598c87a4bf598fec7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e977a40ba12e4cbe82ec5ad1eeca10d3" category="list-text">如果您使用的是節點型 PAYGO 授權、您可以選擇不同的授權和執行個體類型、方法是按一下 * 授權類型 * 旁的鉛筆圖示。</block>
+  <block id="dcee8dbc1dce5317d8cfa6588f8f050e" category="list-text">選擇執行個體類型、選取核取方塊以確認您瞭解變更的影響、然後按一下 * 變更 * 。</block>
 </blocks>

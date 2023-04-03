@@ -25,28 +25,29 @@ BlueXP可讓您管理磁碟區和CIFS伺服器。它也會提示您移動磁碟�
 .步驟
 . 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . 在「畫版」頁面上、按兩下 Cloud Volumes ONTAP 您要管理磁碟區的「功能區」工作環境。
-. 管理您的磁碟區：
+. 在工作環境中、按一下 * Volumes （磁碟區） * 標籤。
++
+image:screenshot_manage_vol_button.png["「 Volume 」索引標籤下的「 Manage Volume 」（管理 Volume ）按鈕的螢幕擷取畫面。"]
+
+. 在 Volumes （磁碟區）索引標籤上、瀏覽至所需的磁碟區標題、然後按一下 * Manage Volumes （管理磁碟區） * 以存取 Manage Volumes （管理磁碟區）右側面板。
 +
 [cols="30,70"]
 |===
 | 工作 | 行動 
 
 
-| 檢視磁碟區的相關資訊 | 選取磁碟區、然後按一下「 * 資訊 * 」。 
+| 檢視磁碟區的相關資訊 | 在「管理磁碟區」面板的「 Volume Actions 」（ Volume 動作）下、按一下「 * 檢視磁碟區詳細資料 * 」 
 
 
-| 編輯磁碟區（僅限讀寫磁碟區）  a| 
-.. 選取磁碟區、然後按一下 * 編輯 * 。
-.. 修改磁碟區的Snapshot原則、NFS傳輸協定版本、NFS存取控制清單（匯出原則）或共用權限、然後按一下*更新*。
+| 取得 NFS 掛載命令  a| 
+.. 在「管理磁碟區」面板的「 Volume Actions 」（ Volume 動作）下、按一下「 * 掛載命令 * 」。
+.. 按一下 * 複本 * 。
 
-
-
-NOTE: 如果您需要自訂 Snapshot 原則、可以使用 System Manager 來建立。
 
 
 
 | 複製磁碟區  a| 
-.. 選取磁碟區、然後按一下 * Clone （複製） * 。
+.. 在「管理磁碟區」面板的「 Volume Actions 」（磁碟區動作）下、按一下「 * Clone the volume * 」（
 .. 視需要修改複本名稱、然後按一下 * Clone （複製） * 。
 
 
@@ -56,37 +57,49 @@ NOTE: 如果您需要自訂 Snapshot 原則、可以使用 System Manager 來建
 
 
 
-| 將資料從 Snapshot 複本還原至新的 Volume  a| 
-.. 選取磁碟區、然後按一下 * 從 Snapshot 複本還原 * 。
-.. 選取 Snapshot 複本、輸入新磁碟區的名稱、然後按一下 * 還原 * 。
+| 編輯 Volume 標記（僅限讀寫磁碟區）  a| 
+.. 在「管理磁碟區」面板的「 Volume Actions 」（ Volume 動作）下、按一下 * 「 Edit Volume Tags* 」（編輯磁碟區標記 * ）以修改指派給所選磁碟區的 Volume 標記。
+.. 在提供的欄位下輸入 Volume 標記金鑰和值。
+.. 若要加入其他標記、請按一下 * 新增標記 * 。
+.. 按一下「 * 儲存 * 」。
+
+
+
+
+| 編輯磁碟區（僅限讀寫磁碟區）  a| 
+.. 在「管理磁碟區」面板的「 Volume Actions 」（磁碟區動作）下、按一下 * 「 Edit Volume settings* 」（
+.. 修改磁碟區的 Snapshot 原則、 NFS 傳輸協定版本、 NFS 存取控制清單（匯出原則）或共用權限、然後按一下 * 套用 * 。
+
+
+
+NOTE: 如果您需要自訂 Snapshot 原則、可以使用 System Manager 來建立。
+
+
+
+| 刪除 Volume  a| 
+.. 在「管理磁碟區」面板的「 Volume Actions 」（磁碟區動作）下、按一下「 * 刪除磁碟區 * 」
+.. 在「刪除 Volume 」視窗下、輸入您要刪除的 Volume 名稱。
+.. 再按一下 * 刪除 * 以確認。
 
 
 
 
 | 隨需建立 Snapshot 複本  a| 
-.. 選取一個磁碟區、然後按一下 * 「 Create a Snapshot Copy* （建立 Snapshot 複本 * ）」。
+.. 在「管理磁碟區」面板的「保護動作」下、按一下 * 建立 Snapshot 複本 * 。
 .. 視需要變更名稱、然後按一下「 * 建立 * 」。
 
 
 
 
-| 取得 NFS 掛載命令  a| 
-.. 選取磁碟區、然後按一下 * 掛載 Command* 。
-.. 按一下 * 複本 * 。
-
-
-
-
-| 檢視 iSCSI 磁碟區的目標 IQN  a| 
-.. 選取磁碟區、然後按一下「 * 目標 IQN* 」。
-.. 按一下 * 複本 * 。
-.. link:task-connect-lun.html["使用 IQN 從主機連線至 LUN"]。
+| 將資料從 Snapshot 複本還原至新的 Volume  a| 
+.. 在「管理磁碟區」面板的「保護動作」下、按一下 * 從 Snapshot 複本還原 * 。
+.. 選取 Snapshot 複本、輸入新磁碟區的名稱、然後按一下 * 還原 * 。
 
 
 
 
 | 變更基礎磁碟類型  a| 
-.. 選取磁碟區、然後按一下 * 變更磁碟類型與分層原則 * 。
+.. 在「管理磁碟區」面板的「進階動作」下、按一下 * 變更磁碟類型 * 。
 .. 選取磁碟類型、然後按一下 * 變更 * 。
 
 
@@ -96,8 +109,7 @@ NOTE: BlueXP會將磁碟區移至使用所選磁碟類型的現有Aggregate、�
 
 
 | 變更分層原則  a| 
-.. 選取磁碟區、然後按一下 * 變更磁碟類型與分層原則 * 。
-.. 按一下 * 編輯原則 * 。
+.. 在「管理磁碟區」面板的「進階動作」下、按一下 * 變更階層原則 * 。
 .. 選取不同的原則、然後按一下 * 變更 * 。
 
 
@@ -108,6 +120,7 @@ NOTE: BlueXP會將磁碟區移至現有的Aggregate、該集合體使用所選�
 
 | 刪除 Volume  a| 
 .. 選取磁碟區、然後按一下 * 刪除 * 。
+.. 在對話方塊中輸入磁碟區的名稱。
 .. 再按一下 * 刪除 * 以確認。
 
 
@@ -129,7 +142,8 @@ NOTE: BlueXP會將磁碟區移至現有的Aggregate、該集合體使用所選�
 如果您變更 DNS 伺服器或 Active Directory 網域、您需要在 Cloud Volumes ONTAP 更新版中修改 CIFS 伺服器、以便繼續將儲存設備提供給用戶端。
 
 .步驟
-. 在工作環境中、按一下功能表圖示、然後按一下 * 進階 > CIFS 設定 * 。
+. 在工作環境的「總覽」標籤中、按一下右側面板下方的「功能」標籤。
+. 在 "CIFS Setup （ CIFS 設置） " 字段下，單擊 *p鉛筆 圖標 * 以顯示 "CIFS Setup （ CIFS 設置） " 窗口。
 . 指定 CIFS 伺服器的設定：
 +
 [cols="30,70"]
@@ -137,13 +151,19 @@ NOTE: BlueXP會將磁碟區移至現有的Aggregate、該集合體使用所選�
 | 工作 | 行動 
 
 
-| DNS 主要和次要 IP 位址 | 提供 CIFS 伺服器名稱解析的 DNS 伺服器 IP 位址。列出的 DNS 伺服器必須包含所需的服務位置記錄（ SRV), 才能找到 CIFS 伺服器要加入之網域的 Active Directory LDAP 伺服器和網域控制器。ifdef：：GCP[]如果您正在設定Google Managed Active Directory、則AD預設可透過169.254.169.254 IP位址存取。endif::GCP[] 
+| 選取儲存 VM （ SVM ） | 選取 Cloud Volume ONTAP 儲存虛擬機器（ SVM ）會顯示其已設定的 CIFS 資訊。 
 
 
 | 要加入的 Active Directory 網域 | 您要 CIFS 伺服器加入之 Active Directory （ AD ）網域的 FQDN 。 
 
 
 | 授權加入網域的認證資料 | 具有足夠權限的 Windows 帳戶名稱和密碼、可將電腦新增至 AD 網域內的指定組織單位（ OU ）。 
+
+
+| DNS 主要和次要 IP 位址 | 提供 CIFS 伺服器名稱解析的 DNS 伺服器 IP 位址。列出的 DNS 伺服器必須包含所需的服務位置記錄（ SRV), 才能找到 CIFS 伺服器要加入之網域的 Active Directory LDAP 伺服器和網域控制器。ifdef：：GCP[]如果您正在設定Google Managed Active Directory、則AD預設可透過169.254.169.254 IP位址存取。endif::GCP[] 
+
+
+| DNS 網域 | 適用於整個儲存虛擬 Cloud Volumes ONTAP 機器（ SVM ）的 DNS 網域。在大多數情況下、網域與 AD 網域相同。 
 
 
 | CIFS 伺服器 NetBios 名稱 | AD 網域中唯一的 CIFS 伺服器名稱。 
@@ -173,11 +193,8 @@ ifdef::gcp[]
 
 endif::gcp[]
 
-
-
-| DNS 網域 | 適用於整個儲存虛擬 Cloud Volumes ONTAP 機器（ SVM ）的 DNS 網域。在大多數情況下、網域與 AD 網域相同。 
 |===
-. 按一下「 * 儲存 * 」。
+. 按一下 * 設定 * 。
 
 
 .結果
@@ -233,15 +250,14 @@ TIP: 當Aggregate已達到90%使用容量時、BlueXP會顯示這些必要行動
 
 . 識別一個或多個要從集合體移出的磁碟區：
 +
-.. 在工作環境中、按一下功能表圖示、然後按一下 * 進階 > 進階配置 * 。
-.. 選取 Aggregate 、然後按一下「 * 資訊 * 」。
-.. 展開 Volume 清單。
-+
-image:screenshot_aggr_volumes.gif["螢幕擷取畫面：在 Aggregate 資訊對話方塊中顯示 Aggregate 中的磁碟區清單。"]
-
-.. 檢閱每個磁碟區的大小、然後選擇一或多個磁碟區從集合區移出。
+.. 在工作環境中、按一下 * Aggregate 標籤 * 。
+.. 瀏覽至所需的 Aggregate 方塊、然後按一下 * 。 （橢圓圖示） > 檢視 Aggregate 詳細資料 * 。
+.. 在 Aggregate Details 畫面的 Overview （概觀）索引標籤下、檢閱每個 Volume 的大小、然後選擇一個或多個要移出 Aggregate 的 Volume 。
 +
 您應該選擇足夠大的磁碟區來釋放集合體中的空間、以避免未來發生額外的容量問題。
+
++
+image:screenshot_aggr_volume_overview.png["螢幕擷取畫面：在 Aggregate 資訊對話方塊中顯示 Aggregate 中的磁碟區清單。"]
 
 
 
@@ -315,16 +331,17 @@ image:screenshot_aggr_volumes.gif["螢幕擷取畫面：在 Aggregate 資訊對�
 .步驟
 . 驗證現有的 Aggregate 是否具有您需要移動的磁碟區可用容量：
 +
-.. 在工作環境中、按一下功能表圖示、然後按一下 * 進階 > 進階配置 * 。
-.. 選取每個 Aggregate 、按一下「 * 資訊 * 」、然後檢視可用容量（ Aggregate capcapcape容納 量減去已使用的 Aggregate capcape望 ）。
+.. 在工作環境中、按一下 * Aggregate 標籤 * 。
+.. 瀏覽至所需的 Aggregate 方塊、然後按一下 * 。 （橢圓圖示） > 檢視 Aggregate 詳細資料 * 。
+.. 在 Aggregate 方塊下、檢視可用容量（資源配置大小減去使用的 Aggregate 容量）。
 +
-image:screenshot_aggr_capacity.gif["螢幕擷取畫面：顯示 Aggregate 資訊對話方塊中可用的總 Aggregate 容量和已使用的 Aggregate 容量。"]
+image:screenshot_aggr_capacity.png["螢幕擷取畫面：顯示 Aggregate 資訊對話方塊中可用的總 Aggregate 容量和已使用的 Aggregate 容量。"]
 
 
 
 . 如有需要、請將磁碟新增至現有的 Aggregate ：
 +
-.. 選取 Aggregate 、然後按一下 * 「 Add disks* （新增磁碟 * ）」。
+.. 選取集合體、然後按一下 * 。 （橢圓圖示） > 新增磁碟 * 。
 .. 選取要新增的磁碟數目、然後按一下 * 「 Add* （新增 * ）」。
 
 
@@ -356,3 +373,14 @@ image:screenshot_aggr_capacity.gif["螢幕擷取畫面：顯示 Aggregate 資訊
 * 在移動磁碟區時指定了 _ 分層原則 _ 選項、以變更分層原則。
 * 磁碟區移動時指定了「 -generation-destination-key_ 」選項。
 
+
+
+
+== 檢視 FlexGroup Volume
+
+您可以直接透過 BlueXP 中的 Volumes （磁碟區）標籤、檢視透過 CLI 或系統管理員建立的 FlexGroup 磁碟區。BlueXP 與提供給 FlexVol Volume 的資訊相同、透過專用的 Volumes 方塊、提供建立的 FleGroup Volume 的詳細資訊。在「 Volume （磁碟區）」磚下方、您可以透過圖示的暫留文字來識別每個 FlexGroup 磁碟區群組。此外、您也可以透過 Volume 樣式欄、在 Volume 清單檢視下識別及排序 FlexGroup Volume 。
+
+image:screenshot_show_flexgroup_vol.png["顯示 FlexGroup Volume 圖示的螢幕擷取畫面會將文字暫留在 Volumes 磚下方。"]
+
+
+NOTE: 目前、您只能在 BlueXP 下檢視現有的 FlexGroup 磁碟區。在 BlueXP 中建立 FlexGroup 磁碟區的功能無法使用、但已計畫在未來版本中使用。

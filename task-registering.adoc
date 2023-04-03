@@ -26,11 +26,10 @@ TIP: 尚未註冊支援的系統仍會在新版本推出時收到在BlueXP中顯
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["瞭解如何新增 NetApp 支援網站帳戶"^]。
 
-. 從左側導覽功能表中、選取*儲存設備> Canvas*
-. 在「畫版」頁面上、按兩下您要註冊的系統名稱。
-. 按一下功能表圖示、然後按一下 * 支援註冊 * ：
+. 在「 Canvas 」頁面上、按兩下您要登錄的系統名稱。
+. 在「概述」標籤上、按一下「功能」面板、然後按一下「 * 支援註冊 * 」旁邊的鉛筆圖示。
 +
-image:screenshot_menu_registration.gif["螢幕擷取畫面：顯示 Cloud Volumes ONTAP 在功能表圖示中選取的支援登錄選項、以供選擇。"]
+image:screenshot_features_support_registration_2.png["螢幕擷取畫面：顯示 Cloud Volumes ONTAP 系統「功能」面板下的「支援」登錄選項。"]
 
 . 選擇 NetApp 支援網站帳戶、然後按一下 * 註冊 * 。
 

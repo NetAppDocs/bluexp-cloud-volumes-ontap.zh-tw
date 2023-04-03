@@ -60,21 +60,18 @@ endif::aws[]
 ====
 .任何Aggregate
 --
-在Volumes（磁碟區）索引標籤中、按一下* Add Volume*（新增磁碟區）>* New Volume*。
+在「概觀」標籤上、瀏覽至「 Volume 」磚、然後按一下「 * 新增 Volume * 」。image:screenshot_add_volume_button.png["「概述」索引標籤下的「新增 Volume 」按鈕的螢幕擷取畫面。"]
 
 --
 .特定Aggregate
 --
-.. 按一下功能表圖示、然後按一下 * 進階 > 進階分配 * 。
-.. 按一下功能表以取得 Aggregate 。
-.. 按一下「 * 建立 Volume * 」。
-
+在 Aggregate 索引標籤上、瀏覽至所需的 Aggregate 動態磚。按一下功能表圖示、然後按一下 * 新增 Volume * 。image:screenshot_add_volume_button_agg.png["Aggregate 索引標籤下的 Add Volume （新增 Volume ）按鈕的螢幕擷取畫面。"]
 
 --
 ====
 . 依照精靈中的步驟建立磁碟區。
 +
-.. *詳細資料、保護及標記*：輸入有關磁碟區的基本詳細資料、然後選取Snapshot原則。
+.. * Volume 、 Details 、 Protection 和 Tag* ：輸入有關該卷的基本詳細信息並選擇 Snapshot 策略。
 +
 此頁面上的部分欄位是不知自明的。下列清單說明您可能需要指引的欄位：
 
@@ -84,10 +81,16 @@ endif::aws[]
 | 欄位 | 說明 
 
 
+| Volume名稱 | 您可以為新磁碟區輸入的可識別名稱。 
+
+
 | Volume大小 | 您可以輸入的最大大小、主要取決於您是否啟用精簡配置、這可讓您建立比目前可用實體儲存容量更大的磁碟區。 
 
 
 | 標記 | 您新增至Volume的標記會與相關聯 https://docs.netapp.com/us-en/cloud-manager-app-template/task-using-tags.html["應用程式範本服務"^]可協助您組織及簡化資源管理。 
+
+
+| 儲存 VM （ SVM ） | 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可為您的用戶端提供儲存與資料服務。您可能知道這是 SVM 或 Vserver 。根據預設、系統會設定一個儲存 VM 、但部分組態會支援額外的儲存 VM 。 Cloud Volumes ONTAP您可以為新的 Volume 指定儲存 VM 。 
 
 
 | Snapshot 原則 | Snapshot 複製原則會指定自動建立的 NetApp Snapshot 複本的頻率和數量。NetApp Snapshot 複本是一種不影響效能的時間點檔案系統映像、需要最少的儲存容量。您可以選擇預設原則或無。您可以針對暫時性資料選擇「無」：例如、 Microsoft SQL Server 的 Tempdb 。 
@@ -231,27 +234,25 @@ NOTE: 使用範本時、您只能建立NFS或CIFS磁碟區。
 .步驟
 . 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . 在「畫版」頁面上、按一下Cloud Volumes ONTAP 您要配置Volume的功能區系統名稱。
-. 按一下 image:screenshot_gallery_options.gif["三個並排點的圖示。"] >*從範本新增Volume *。
+. 瀏覽至 Volumes （磁碟區）標籤、然後按一下 * Add Volume （新增磁碟區） * > * New Volume from Template* （從範本
 +
-image:screenshot_template_add_vol_cvo.png["顯示如何從範本新增磁碟區的快照。"]
+image:screenshot_add_volume_template.png["顯示如何從範本新增磁碟區的快照。"]
 
 . 在「選取範本_」頁面中、選取您要用來建立磁碟區的範本、然後按一下「*下一步*」。
 +
 image:screenshot_select_template_cvo.png["可用應用程式範本的快照。"]
 
 +
-此時會顯示「定義參數_」頁面。
+隨即顯示 _Editor_ 頁面。
 
 +
 image:screenshot_define_cvo_vol_from_template.png["顯示空白範本的螢幕快照、您必須填寫才能建立Volume。"]
 
-+
-
-NOTE: 如果您想查看這些參數的值、可以按一下「Show read-only parameters*（顯示唯讀參數*）」核取方塊、以顯示範本已鎖定的所有欄位。根據預設、這些預先定義的欄位會隱藏、只會顯示您需要填寫的欄位。
-
-. 在_context_區域中、工作環境會填入您剛開始使用的工作環境名稱。您需要選擇要在其中建立磁碟區的*儲存VM*。
-. 新增所有非模板硬編碼的參數值。請參閱 <<create a volume,建立Volume>> 如需部署Cloud Volumes ONTAP 一套解決方案的所有必要參數詳細資訊、請參閱。
-. 如果您不需要定義其他動作（例如、設定Cloud Backup）、請按一下*執行範本*。
+. 在 _Action_ 面板上、輸入範本的名稱。
+. 在 _context_ 下、工作環境會填入您開始使用的工作環境名稱。選取要建立磁碟區的 * 儲存 VM* 。
+. 新增所有非模板硬編碼的參數值。請參閱 <<create a volume,建立Volume>> 以取得完成 Cloud Volumes ONTAP Volume 部署所需的所有參數詳細資料。
+. 按一下 * 套用 * 將設定的參數儲存至選取的動作。
+. 如果您不需要定義其他動作（例如、設定 Cloud Backup ）、請按一下 * 儲存範本 * 。
 +
 如果還有其他動作、請按一下左窗格中的動作、以顯示您需要完成的參數。
 
@@ -259,9 +260,9 @@ NOTE: 如果您想查看這些參數的值、可以按一下「Show read-only pa
 image:screenshot_template_select_next_action.png["螢幕快照顯示如何選取需要完成的其他動作。"]
 
 +
-例如、如果「啟用雲端備份」動作需要您選取備份原則、您現在就可以這麼做了。
+例如、如果「啟用雲端備份 on Volume 」動作需要您選取備份原則、您現在可以這麼做。
 
-. 按一下*執行範本*。
+. 完成範本動作的組態設定後、按一下 * 儲存範本 * 。
 
 
 .結果
@@ -280,8 +281,11 @@ image:screenshot_template_creating_resource_cvo.png["快照顯示從範本建立
 .步驟
 . 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . 在「畫版」頁面上、按兩下 Cloud Volumes ONTAP 您要管理集合體的運作環境名稱。
-. 按一下功能表圖示、然後按一下 * 進階 > 進階分配 * 。
-. 按一下「 * 新增 Aggregate * 」、然後建立 Aggregate 。
+. 在 Aggregate 索引標籤上、按一下 * 新增 Aggregate * 。
+. 從 _ 新增 Aggregate _ 畫面建立 Aggregate 。
++
+image:screenshot_add_aggregate_cvo.png["顯示新增 Aggregate 進度的螢幕擷取畫面。"]
+
 . 對於主節點、請在 HA 配對中選擇第二個節點。
 . 在BlueXP建立Aggregate之後、選取該集合體、然後按一下「*建立Volume *」。
 . 輸入新磁碟區的詳細資料、然後按一下「 * 建立 * 」。

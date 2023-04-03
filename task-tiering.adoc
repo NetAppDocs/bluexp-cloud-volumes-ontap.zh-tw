@@ -200,13 +200,11 @@ endif::gcp[]
 .步驟
 . <<需求,確保您已符合所有要求>>。
 . 從左側導覽功能表中、選取*儲存設備> Canvas*。
-. 在「畫版」頁面上、按兩下 Cloud Volumes ONTAP 「實例」的名稱。
+. 在「畫布」頁面上、選取 Cloud Volumes ONTAP 執行個體的名稱。
 . 按一下功能表圖示、然後選取 * 啟用容量分層 * 。
 +
-image:screenshot_enable_capacity_tiering.gif["當BlueXP嘗試啟用資料分層時、如果遇到問題、可從工作環境功能表取得「啟用容量分層」選項的快照。"]
 
-+
-只有在BlueXP建立系統時無法啟用資料分層功能時、才會看到此選項。
+NOTE: 只有在BlueXP建立系統時無法啟用資料分層功能時、才會看到此選項。
 
 +
 在Google Cloud中、必須先將服務帳戶附加至Cloud Volumes ONTAP 無法顯示此選項的功能。 <<需求,確保您已符合所有要求>>。
@@ -232,10 +230,10 @@ image:screenshot_enable_capacity_tiering.gif["當BlueXP嘗試啟用資料分層�
 
 .確認是否在 Aggregate 上啟用分層的步驟
 . 在BlueXP中開啟工作環境。
-. 按一下功能表圖示、按一下 * 進階 * 、然後按一下 * 進階分配 * 。
-. 驗證是否在 Aggregate 上啟用或停用分層。
+. 按一下 Aggregate 索引標籤。
+. 瀏覽至所需的方塊、並驗證是否已在 Aggregate 上啟用或停用分層。
 +
-image:screenshot_aggr_tiering.gif["快照顯示有關BlueXP中包含分層狀態的Aggregate資訊。"]
+image:screenshot_aggregate_tiering_enabled.png["快照顯示有關BlueXP中包含分層狀態的Aggregate資訊。"]
 
 
 
@@ -255,7 +253,7 @@ image:screenshot_aggr_tiering.gif["快照顯示有關BlueXP中包含分層狀態
 可將讀寫磁碟區上的非作用中資料分層保存至具成本效益的物件儲存設備、以釋出效能層以供熱資料使用。 Cloud Volumes ONTAP
 
 .步驟
-. 在工作環境中、建立新磁碟區或變更現有磁碟區的層級：
+. 在工作環境下的 Volumes （磁碟區）標籤中、建立新的磁碟區或變更現有磁碟區的層級：
 +
 [cols="30,70"]
 |===
@@ -265,7 +263,7 @@ image:screenshot_aggr_tiering.gif["快照顯示有關BlueXP中包含分層狀態
 | 建立新的 Volume | 按一下「 * 新增 Volume * 」。 
 
 
-| 修改現有的 Volume | 選取磁碟區、然後按一下 * 變更磁碟類型與分層原則 * 。 
+| 修改現有的 Volume | 選取所需的磁碟區方塊、按一下 * 管理磁碟區 * 以存取「管理磁碟區」右側面板、然後按一下右側面板下的 * 進階動作 * 和 * 變更分層原則 * 。 
 |===
 . 選取分層原則。
 +
@@ -275,7 +273,7 @@ image:screenshot_aggr_tiering.gif["快照顯示有關BlueXP中包含分層狀態
 * 範例 *
 
 +
-image:screenshot_tiered_storage.gif["顯示圖示的快照、可讓您分層儲存物件。"]
+image:screenshot_volumes_change_tiering_policy.png["螢幕擷取畫面、顯示可用於變更磁碟區分層原則的選項。"]
 
 +
 如果啟用資料分層的Aggregate不存在、則BlueXP會為磁碟區建立新的Aggregate。
@@ -334,7 +332,7 @@ CAUTION: 如果空間不足、Cloud Volumes ONTAP 則無法移動資料、可能
 .步驟
 . 在BlueXP主控台右上角、按一下*設定*圖示、然後選取*連接器設定*。
 +
-image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
+image:screenshot_settings_icon.png["顯示BlueXP主控台右上角「設定」圖示的快照。"]
 
 . 在* Capacity *下、按一下* Aggregate Capacity臨界值- Free Space Ratio for Data Tiering *。
 . 根據您的需求變更可用空間比率、然後按一下「*儲存*」。
@@ -344,7 +342,7 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 
 == 變更自動分層原則的冷卻週期
 
-如果Cloud Volumes ONTAP 您使用_auto_分層原則在某個SURFVolume上啟用資料分層、您可以根據業務需求調整預設的冷卻時間。此動作僅支援使用API。
+如果Cloud Volumes ONTAP 您使用_auto_分層原則在某個SURFVolume上啟用資料分層、您可以根據業務需求調整預設的冷卻時間。此動作僅支援使用 API 和 CLI 。
 
 冷卻期間是指磁碟區中的使用者資料在被視為「冷」並移至物件儲存設備之前、必須保持非作用中狀態的天數。
 

@@ -36,6 +36,9 @@ summary: 使用Azure Private Link連線至相關儲存帳戶。Cloud Volumes ONT
 
 .步驟
 . 在BlueXP主控台右上角、按一下「設定」圖示、然後選取「*連接器設定*」。
++
+image:screenshot_settings_icon.png["顯示BlueXP主控台右上角「設定」圖示的快照。"]
+
 . 在* Azure *下、按一下*使用Azure Private Link*。
 . 取消選擇* Cloud Volumes ONTAP 在不同時使用*私有連結的情況下、連接到儲存帳戶*。
 . 按一下「 * 儲存 * 」。
@@ -137,10 +140,13 @@ NOTE: 如果連接器和Cloud Volumes ONTAP 物件系統部署在不同的VNets�
 *更新app.conf以啟用復原功能*
 
 .步驟
-. 請使用「PUT /occm/config（放入/occm/config）API呼叫與下列要求內容：
+. SSH 連接至 Connector 主機並登入。
+. 瀏覽至下列目錄：/opp/application/netapp/cloudmanager/docker_occm/data
+. 新增下列參數和值以編輯 app.conf ：
 +
-[source, json]
-----
-{ "rollbackOnAzurePrivateLinkFailure": false }
-----
+ "rollback-on-private-link-failure": true
+. 儲存檔案並登出 Connector 。
++
+不需要重新開機。
+
 

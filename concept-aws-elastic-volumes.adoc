@@ -169,10 +169,10 @@ link:task-create-aggregates.html["瞭解如何建立Aggregate"]。
 
 * 識別已啟用彈性磁碟區的集合體
 +
-前往「進階配置」頁面時、您可以識別是否已在集合體上啟用「彈性磁碟區」功能。在下列範例中、aggr2已啟用彈性磁碟區、而aggr1則未啟用彈性磁碟區。
+前往「進階配置」頁面時、您可以識別是否已在集合體上啟用「彈性磁碟區」功能。在下列範例中、 Aggr1 已啟用彈性 Volume 。
 
 +
-image:screenshot-elastic-volumes-enabled.png["顯示兩個集合體的快照、其中一個有一個欄位的「Elastic Volumes已啟用」文字。"]
+image:screenshot_elastic_volume_enabled.png["顯示兩個集合體的螢幕擷取畫面、其中一個集合體具有文字「 Elastic Volumes Enabled 」的欄位。"]
 
 * 新增容量至Aggregate
 +

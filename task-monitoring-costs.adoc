@@ -33,7 +33,11 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aw
 
 
 . 從左側導覽功能表中、選取*儲存設備> Canvas*。
-. 在「畫版」頁面上、選取 Cloud Volumes ONTAP 一個運作環境、然後按一下「 * 成本 * 」。
+. 在 Canvas 頁面上、選取 Cloud Volumes ONTAP 工作環境、
+. 按一下功能表圖示、然後按一下 * 檢視成本報告 * 。
++
+image:screenshot_view_cost_report.png["螢幕擷取畫面：顯示「檢視成本報告」功能表選項。"]
+
 +
 「成本」頁面會顯示目前和過去幾個月的成本、並顯示您每年的 NetApp 節約效益（如果您已啟用 NetApp 的 Volume 節約功能）。
 

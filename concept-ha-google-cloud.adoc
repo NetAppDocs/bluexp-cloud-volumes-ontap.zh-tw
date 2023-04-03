@@ -141,9 +141,9 @@ HA 組態可維持資料的高可用度、如下所示：
 
 TIP: 如果您在 HA 配對中的節點之間移動磁碟區、則應使用其他節點的 IP 位址來重新掛載磁碟區。否則、您可能會遇到效能降低的情況。如果用戶端支援 NFSv4 轉介或 CIFS 資料夾重新導向、您可以在 Cloud Volumes ONTAP 支撐系統上啟用這些功能、以避免重新掛載磁碟區。如需詳細資料、請參閱 ONTAP 《關於我們的資料》。
 
-您可以從BlueXP輕鬆識別正確的IP位址：
+您可以透過 BlueXP 「管理磁碟區」面板下的 _Mount Command_ 選項、輕鬆識別正確的 IP 位址。
 
-image:screenshot_mount.gif["螢幕擷取畫面：顯示選取 Volume 時可用的 Mount Command 。"]
+image:screenshot_mount_option.png["螢幕擷取畫面：顯示選取 Volume 時可用的 Mount Command 。"]
 
 
 
