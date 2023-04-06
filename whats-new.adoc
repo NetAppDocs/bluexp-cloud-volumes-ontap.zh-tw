@@ -20,6 +20,18 @@ summary: 瞭解Cloud Volumes ONTAP BlueXP（前身為Cloud Manager）的更新�
 
 
 
+== 2023 年 4 月 4 日
+
+從 Cloud Volumes ONTAP 9.12.1 GA 開始、 AWS 現在支援中國地區、如下所示。
+
+* 支援單一節點系統。
+* 支援直接向NetApp購買的授權。
+
+
+如需區域可用度、請參閱 link:https://bluexp.netapp.com/cloud-volumes-global-regions["全球區域地圖Cloud Volumes ONTAP 、供您使用"^]。
+
+
+
 == 2023年4月3日
 
 Connector 3.9.28 版隨附下列變更。
