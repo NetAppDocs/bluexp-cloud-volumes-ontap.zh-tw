@@ -20,9 +20,12 @@ summary: 已知限制指出本產品版本不支援的平台、裝置或功能�
 
 
 
-== BlueXP不支援FlexGroup 功能區
+== BlueXP 不支援建立 FlexGroup Volume
 
-雖然支援的是不支援的功能、但BlueXP卻不支援。Cloud Volumes ONTAP FlexGroup如果FlexGroup 您從System Manager或CLI建立一個支援功能區、則應將BlueXP的容量管理模式設為手動。自動模式可能無法與 FlexGroup 功能不全的功能搭配使用。
+雖然 Cloud Volumes ONTAP 支援 FlexGroup 磁碟區、但 BlueXP 目前不支援建立 FlexGroup 磁碟區。如果FlexGroup 您從System Manager或CLI建立一個支援功能區、則應將BlueXP的容量管理模式設為手動。自動模式可能無法與 FlexGroup 功能不全的功能搭配使用。
+
+
+NOTE: 在 BlueXP 中建立 FlexGroup 磁碟區的能力已計畫在未來的版本中推出。
 
 
 

@@ -3610,7 +3610,6 @@
   <block id="bd143c2af617c5743abf3efb9b36b10a" category="paragraph">當您建立Cloud Volumes ONTAP 一個運作環境時、BlueXP會提示您訂閱Google Cloud Marketplace提供的合約。該訂閱之後會與工作環境建立關聯、以便進行充電。您可以在其他工作環境中使用相同的訂閱。</block>
   <block id="f03e86cc66eb1161cd11073bf0ca84cb" category="list-text">mailto：ng-keystone-success@netapp.com [聯絡NetApp]以一或多個Keystone Flex訂閱授權您的BlueXP使用者帳戶。</block>
   <block id="970e80f52bfaf06fb0516cbd1132f19b" category="paragraph">這些限制僅適用於Cloud Volumes ONTAP BlueXP（前身為Cloud Manager）的內部資料管理。若要檢視Cloud Volumes ONTAP 有關此功能的限制、<block ref="70a3d165b5204ef94ef3f2d7b3d098d2" category="inline-link-rx"></block></block>
-  <block id="cc536ef595b8b8d98efa4ac1fce2305e" category="paragraph">雖然支援的是不支援的功能、但BlueXP卻不支援。Cloud Volumes ONTAP FlexGroup如果FlexGroup 您從System Manager或CLI建立一個支援功能區、則應將BlueXP的容量管理模式設為手動。自動模式可能無法與 FlexGroup 功能不全的功能搭配使用。</block>
   <block id="a719d497acfd7c92ff4bf9224e1de3d0" category="paragraph">雖然在某些雲端供應商中、支援S3作為橫向擴充儲存設備的選項、但BlueXP並未針對此功能提供任何管理功能。Cloud Volumes ONTAP使用CLI是設定S3用戶端從Cloud Volumes ONTAP 功能支援的最佳實務做法。如需詳細資訊、請參閱<block ref="49e8fee748cd4c8d6f01bdb03113fc2a" category="inline-link-rx"></block>。</block>
   <block id="397f1667d1f282be3b879b4e92a63aad" category="paragraph">BlueXP不提供任何儲存VM災難恢復的設定或協調支援。您必須使用 System Manager 或 CLI 。</block>
   <block id="66abe501678500958b330ea34f7f3794" category="admonition">BlueXP會主動啟動接管並等待回饋、一次只能正常變更一個節點。NetApp 的 QA 團隊在這段過程中測試了寫入和讀取檔案的能力、並未發現客戶端有任何問題。隨著連線變更、我們確實看到 I/O 層級的重試次數、但應用程式層卻取代了 NFS/CIFS 連線的這些短「重新連線」。</block>
@@ -4084,7 +4083,6 @@
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">接下來呢？</block>
   <block id="f3d9abb903127694db460aa9c7f4d7be" category="paragraph-title">限制</block>
   <block id="6b2eadbbc64d8760da4136e28da230c2" category="list-text">*選擇位置*：選擇* Amazon Web Services*和* Cloud Volumes ONTAP 《*》HA *。</block>
-  <block id="7945e794f4dd8b21c15eebff5d67a416" category="section-title">BlueXP不支援FlexGroup 功能區</block>
   <block id="56fe439ee061f5bc2e940368c1d73fa3" category="section-title">BlueXP不支援Cloud Volumes ONTAP S3搭配使用</block>
   <block id="9832e39264a34e4e40dca8449efd019e" category="section-title">BlueXP不支援儲存VM的災難恢復</block>
   <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">您需要的產品</block>
@@ -4865,4 +4863,7 @@
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
   <block id="38d4d167f6dd9174c3535fc5c7ba4b76" category="section-title">2023 年 4 月 4 日</block>
   <block id="ebef32c1ba0aec7a39eb2ce8370a97d5" category="paragraph">從 Cloud Volumes ONTAP 9.12.1 GA 開始、 AWS 現在支援中國地區、如下所示。</block>
+  <block id="88e0131339701d1e970c1ab7a5495d25" category="section-title">BlueXP 不支援建立 FlexGroup Volume</block>
+  <block id="fff40ddae0362c17ba575430d4cdd727" category="paragraph">雖然 Cloud Volumes ONTAP 支援 FlexGroup 磁碟區、但 BlueXP 目前不支援建立 FlexGroup 磁碟區。如果FlexGroup 您從System Manager或CLI建立一個支援功能區、則應將BlueXP的容量管理模式設為手動。自動模式可能無法與 FlexGroup 功能不全的功能搭配使用。</block>
+  <block id="be5e56e337ebbc7d99062048ba94693e" category="admonition">在 BlueXP 中建立 FlexGroup 磁碟區的能力已計畫在未來的版本中推出。</block>
 </blocks>
