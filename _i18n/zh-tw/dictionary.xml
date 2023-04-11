@@ -4742,12 +4742,10 @@
   <block id="231ea98554191e640c216736796158d5" category="section-title">重新設計 BlueXP 使用者介面、以重新設計 Cloud Volumes ONTAP 概觀、 Volume 和集合頁面</block>
   <block id="1cc55fcb982bea0e8f241a1271bda985" category="paragraph">BlueXP 現在已重新設計了 Cloud Volumes ONTAP 概觀、磁碟區和集合網頁的使用者介面。並排式設計會在每個方塊中提供更完整的資訊、以提供更好的使用者體驗。</block>
   <block id="9000895c1e7c46e6e8fc9eb750dfb403" category="inline-image-macro">此螢幕擷取畫面會在 Cloud Volumes ONTAP 總覽頁面上顯示重新設計的 BlueXP 使用者介面。各種方塊顯示儲存效率、版本、容量分配、 Cloud Volumes ONTAP 部署、磁碟區、集合體、複製和備份的相關資訊。</block>
-  <block id="23fbfdbb598644432ab089fa6e533405" category="paragraph"><block ref="23fbfdbb598644432ab089fa6e533405" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6fff4762fc0aeb74dd0a918683c157ae" category="section-title">可透過 Cloud Volumes ONTAP 檢視的 FlexGroup Volume</block>
   <block id="8d40e6e8379382ee39fba2c4a1cb5629" category="paragraph">透過 CLI 或系統管理員直接建立的 FlexGroup Volume 現在可透過 BlueXP 中重新設計的 Volumes 動態磚來檢視。BlueXP 與提供給 FlexVol Volume 的資訊相同、透過專用的 Volumes 磚提供建立的 FlexGroup Volume 的詳細資訊。</block>
   <block id="905d8520d584560b3995118b2a01f6c2" category="admonition">目前、您只能在 BlueXP 下檢視現有的 FlexGroup 磁碟區。在 BlueXP 中建立 FlexGroup 磁碟區的功能無法使用、但已計畫在未來版本中使用。</block>
   <block id="91f0dcc3b5f3e7c2ced12a923ca3b92e" category="inline-image-macro">顯示 FlexGroup Volume 圖示的螢幕擷取畫面會將文字暫留在 Volumes 磚下方。</block>
-  <block id="ce46ac36501bd1de8616d715ef7ee1c2" category="paragraph"><block ref="ce46ac36501bd1de8616d715ef7ee1c2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9f223d40f9c90f08d9cd6ef8cba648c3" category="inline-link-macro">深入瞭解如何檢視建立的 FlexGroup Volume 。</block>
   <block id="acef74218ad5e199582b5c76062e5559" category="paragraph"><block ref="acef74218ad5e199582b5c76062e5559" category="inline-link-macro-rx"></block></block>
   <block id="d92a428713f7303c87adb54fb04cf41b" category="section-title">Google Cloud 中的 ONTAP S3 授權</block>
@@ -4866,4 +4864,8 @@
   <block id="6e987a799bff743a20629c6963efee7e" category="paragraph"><block ref="88e663ceca138a2ba6bdf07d4cbe79f1" category="inline-link-rx"></block>。</block>
   <block id="9bb754282eec4e66c9472848d18fa68b" category="paragraph">若要更深入瞭解Essentials套件的顯示容量、您應該熟悉充電的運作方式。<block ref="e0127f60c714803ed2bb7172384e02ad" category="inline-link-rx"></block>。</block>
   <block id="180b09672bfae24bd56a0aee5f3b1b2b" category="paragraph"><block ref="a9e2b0598eacf571f92143c75c6c24a3" category="inline-link-rx"></block>。</block>
+  <block id="77b63f391cd8d8277d8d106f03ad5d8f" category="paragraph"><block ref="77b63f391cd8d8277d8d106f03ad5d8f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="78f9ca50556d02ff8700efd01af0d528" category="paragraph"><block ref="78f9ca50556d02ff8700efd01af0d528" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9cc2b6cdaf0b50459353a2d67c0baa80" category="section-title">縮短部署時間</block>
+  <block id="66d5639668d7c3e585771304940a252b" category="paragraph">我們縮短了在Cloud Volumes ONTAP Microsoft Azure或Google Cloud中部署運作環境所需的時間（啟用正常寫入速度時）。部署時間現在平均縮短3-4分鐘。</block>
 </blocks>
