@@ -24,7 +24,7 @@ _Node型授權_是前一代授權模式（不適用於新客戶）：
 
 「_數位錢包_」可讓您從Cloud Volumes ONTAP 單一位置管理用於支援的授權。您可以新增授權並更新現有授權。
 
-link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解不知如何取得授權"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["深入瞭Cloud Volumes ONTAP 解不知如何取得授權"]。
 
 
 
@@ -228,6 +228,6 @@ https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.ht
 
 . 刪除原始工作環境、終止Cloud Volumes ONTAP 不再需要的功能。
 +
-link:task-deleting-working-env.html["瞭解如何刪除Cloud Volumes ONTAP 功能不正常的工作環境"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deleting-working-env.html["瞭解如何刪除Cloud Volumes ONTAP 功能不正常的工作環境"]。
 
 

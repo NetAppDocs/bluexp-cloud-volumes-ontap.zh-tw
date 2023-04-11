@@ -20,7 +20,7 @@ _容量型授權_可讓您針對Cloud Volumes ONTAP 每個TiB的容量付費。
 
 「_數位錢包_」可讓您從Cloud Volumes ONTAP 單一位置管理用於支援的授權。您可以新增授權並更新現有授權。
 
-link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解不知如何取得授權"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["深入瞭Cloud Volumes ONTAP 解不知如何取得授權"]。
 
 
 
@@ -57,7 +57,7 @@ image:screenshot_capacity-based-licenses.png["螢幕擷取畫面顯示 Cloud Vol
 +
 ** 耗用容量 _ 顯示該套件的磁碟區容量。如需特定套件的詳細資料、請將滑鼠游標移到工具提示上。
 +
-若要更深入瞭解Essentials套件的顯示容量、您應該熟悉充電的運作方式。 link:concept-licensing.html#notes-about-charging["瞭解如何為Essentials套裝方案充電"]。
+若要更深入瞭解Essentials套件的顯示容量、您應該熟悉充電的運作方式。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#notes-about-charging["瞭解如何為Essentials套裝方案充電"]。
 
 ** _ 預先承諾容量 _ 是您從 NetApp 購買的授權容量（ BYOL 或 Marketplace 合約）。
 +

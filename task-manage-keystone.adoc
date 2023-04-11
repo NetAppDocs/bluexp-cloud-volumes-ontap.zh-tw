@@ -20,7 +20,7 @@ _Keystone Flex訂購_是NetApp提供的隨需付費儲存服務。
 
 「_數位錢包_」可讓您從Cloud Volumes ONTAP 單一位置管理用於支援的授權。您可以新增授權並更新現有授權。
 
-link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解不知如何取得授權"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["深入瞭Cloud Volumes ONTAP 解不知如何取得授權"]。
 
 
 
