@@ -39,8 +39,9 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 數位錢包會顯示您帳戶的總使用容量、以及授權套件的使用容量。這有助於瞭解您的收費方式、以及您是否需要購買額外容量。
 
 .步驟
-. 從左側導覽功能表中、選取* Digital Wallet *。
-. 選取 * 容量型使用許可 * 後、即可檢視套件摘要、其中會顯示您的使用容量、預先認可的總容量、以及 PAYGO 總容量。
+. 從BlueXP導覽功能表中、選取*管理>數位錢包*。
+. 在 * Cloud Volumes ONTAP * 標籤上、選取 * 容量型授權 * 。
+. 檢視套件摘要、其中會顯示您已耗用的容量、預先認可的總容量和 PAYGO 總容量。
 +
 ** _總使用容量_是Cloud Volumes ONTAP NetApp帳戶中所有供應系統的總容量。無論磁碟區內的本機、已用、已儲存或有效空間為何、充電都是根據每個磁碟區的已配置大小而計算。
 ** _Total preconted capacity_ 是您從 NetApp 購買的總授權容量（ BYOL 或 Marketplace Contract ）。
@@ -88,7 +89,7 @@ image:screenshot-digital-wallet-packages.png["螢幕擷取畫面顯示基本功�
 
 
 .步驟
-. 從左側導覽功能表中、選取* Digital Wallet *。
+. 從BlueXP導覽功能表中、選取*管理>數位錢包*。
 . 在* Cloud Volumes ONTAP 《*》索引標籤上、保留*容量型授權*、然後按一下*新增授權*。
 . 輸入容量型授權的序號、或上傳授權檔案。
 +
@@ -109,7 +110,7 @@ image:screenshot-digital-wallet-packages.png["螢幕擷取畫面顯示基本功�
 授權檔案（如果您有HA配對、則為_file_）。
 
 .步驟
-. 從左側導覽功能表中、選取* Digital Wallet *。
+. 從BlueXP導覽功能表中、選取*管理>數位錢包*。
 . 在* Cloud Volumes ONTAP 《*》索引標籤上、按一下授權旁的動作功能表、然後選取*更新授權*。
 . 上傳授權檔案。
 . 按一下*上傳授權*。
@@ -132,7 +133,7 @@ endif::azure[]
 如果您有來自雲端供應商市場的私人優惠或合約、改用未包含在合約中的收費方法、將會導致依BYOL（如果您向NetApp購買授權）或PAYGO收取費用。
 
 .步驟
-. 從左側導覽功能表中、選取* Digital Wallet *。
+. 從BlueXP導覽功能表中、選取*管理>數位錢包*。
 . 在* Cloud Volumes ONTAP 《*》索引標籤上、按一下「*變更充電方法*」。
 +
 image:screenshot-digital-wallet-charging-method-button.png["數位錢包中的「更新收費方法」按鈕位於Cloud Volumes ONTAP 表格上方的「資訊」頁面快照。"]
@@ -156,7 +157,7 @@ BlueXP改變Cloud Volumes ONTAP 了這個系統的充電方法。
 如果容量型授權過期且不再使用、您可以隨時將其移除。
 
 .步驟
-. 從左側導覽功能表中、選取* Digital Wallet *。
+. 從BlueXP導覽功能表中、選取*管理>數位錢包*。
 . 在* Cloud Volumes ONTAP 《*》索引標籤上、按一下授權旁的動作功能表、然後選取*移除授權*。
 . 按一下「 * 移除 * 」以確認。
 

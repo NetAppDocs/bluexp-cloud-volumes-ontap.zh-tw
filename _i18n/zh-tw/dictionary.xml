@@ -1779,7 +1779,6 @@
   <block id="541be6e1dda8fc9678c974d148e15469" category="paragraph">啟用訂閱功能以搭配Cloud Volumes ONTAP 使用、從Digital Wallet管理Keystone Flex訂閱。您也可以要求變更已提交的容量、也可以取消訂閱連結。</block>
   <block id="144db5f18aa0a48a9fe63c8b55bd0275" category="paragraph">_Keystone Flex訂購_是NetApp提供的隨需付費儲存服務。</block>
   <block id="4edb70089cdbc18de22fa9ead5189bc8" category="section-title">授權您的帳戶</block>
-  <block id="34050b9fba3323c4ec7fb2d89aa95a36" category="list-text">按一下* Keystone Flex訂閱*。</block>
   <block id="daf4ae396784c74ec2cbf002eaaa25f4" category="list-text">如果您看到*歡迎使用NetApp Keystone S不到*頁面、請傳送電子郵件至頁面上所列的地址。</block>
   <block id="16692c26ca4528e651bbb36d93c465c7" category="paragraph">NetApp代表將授權您的使用者帳戶存取訂閱、以處理您的申請。</block>
   <block id="ed53b278164ebd0a6b2a2a8f63581c09" category="list-text">請返回* Keystone Flex訂購*以檢視您的訂閱內容。</block>
@@ -3326,7 +3325,6 @@
   <block id="bbb170bfbf4105204b0dbe4292724d6e" category="paragraph">以下是一個擁有多個授權套件的帳戶範例：</block>
   <block id="998e6cc07bc5c3b4a2329ad21093316c" category="paragraph"><block ref="998e6cc07bc5c3b4a2329ad21093316c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3fe75f10a35597997861eca633c30fa7" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block></block>
-  <block id="c0d3ce4ea1bcde455d433b9182cdde33" category="list-text">從左側導覽功能表中、選取* Digital Wallet *。</block>
   <block id="5844b24c31c1897efda5443d984702f8" category="list-text">在* Cloud Volumes ONTAP 《*》*索引標籤上、從下拉式清單中選取「*節點型授權*」。</block>
   <block id="666ac747a8d5a1aa317496f8add413a6" category="list-text">在* Cloud Volumes ONTAP 《*》索引標籤上、保留*容量型授權*、然後按一下*新增授權*。</block>
   <block id="ecdf6ba3b837de5910abdabc360df552" category="list-text">在* Cloud Volumes ONTAP 《*》索引標籤上、按一下授權旁的動作功能表、然後選取*更新授權*。</block>
@@ -4695,7 +4693,6 @@
   <block id="65501384f1f7cf6e689e492914a698c1" category="paragraph"><block ref="65501384f1f7cf6e689e492914a698c1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6ccb38ae114176203c2592f430a889d7" category="list-text">如果您使用的是節點型 PAYGO 授權、您可以選擇不同的授權和機器類型、方法是按一下 * 授權類型 * 旁的鉛筆圖示。</block>
   <block id="f5e2fedd06abf8315436e3971f9755de" category="list-text">選擇機器類型、勾選核取方塊以確認您瞭解變更的影響、然後按一下 * 變更 * 。</block>
-  <block id="1bb49759ca91107ea85449bc0249ce13" category="list-text">選取 * 容量型使用許可 * 後、即可檢視套件摘要、其中會顯示您的使用容量、預先認可的總容量、以及 PAYGO 總容量。</block>
   <block id="def968f0e18d0f7aed6421ac81039272" category="list-text">_Total preconted capacity_ 是您從 NetApp 購買的總授權容量（ BYOL 或 Marketplace Contract ）。</block>
   <block id="6805f1cb53971ab8cf6263bd093c5d20" category="paragraph">以下是數位錢包中 Cloud Volumes ONTAP 套件摘要的範例：</block>
   <block id="e9132fa20985cf4b3d5004a6a371ecab" category="inline-image-macro">螢幕擷取畫面顯示 Cloud Volumes ONTAP 套件摘要、包括總使用容量、總預先承諾容量（ BYOL 和 Marketplace Contracts ）、以及數位錢包中的 PAYGO 總容量或已配置容量。</block>
@@ -4868,4 +4865,8 @@
   <block id="78f9ca50556d02ff8700efd01af0d528" category="paragraph"><block ref="78f9ca50556d02ff8700efd01af0d528" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9cc2b6cdaf0b50459353a2d67c0baa80" category="section-title">縮短部署時間</block>
   <block id="66d5639668d7c3e585771304940a252b" category="paragraph">我們縮短了在Cloud Volumes ONTAP Microsoft Azure或Google Cloud中部署運作環境所需的時間（啟用正常寫入速度時）。部署時間現在平均縮短3-4分鐘。</block>
+  <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">從BlueXP導覽功能表中、選取*管理&gt;數位錢包*。</block>
+  <block id="e83a5b2754cd537ac6467dc025115726" category="list-text">在 * Cloud Volumes ONTAP * 標籤上、選取 * 容量型授權 * 。</block>
+  <block id="2bd469c6a2a1a44818909050205d416b" category="list-text">檢視套件摘要、其中會顯示您已耗用的容量、預先認可的總容量和 PAYGO 總容量。</block>
+  <block id="492847bcbc9ec0bd3075b612aa43e4a7" category="list-text">選取 * Keystone * 。</block>
 </blocks>
