@@ -184,7 +184,7 @@ HA配對需要四個VPC。每個VPC都可以是共享的或獨立的。例如、
 
 共享 VPC 可讓您設定及集中管理多個專案中的虛擬網路。您可以在 _ 主機專案 _ 中設定共享 VPC 網路、並在 Cloud Volumes ONTAP _ 服務專案 _ 中部署連接器與支援虛擬機器執行個體。 https://cloud.google.com/vpc/docs/shared-vpc["Google Cloud 文件：共享 VPC 總覽"^]。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html#shared-vpc-permissions["檢閱Connector部署所涵蓋的必要共享VPC權限"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["檢閱Connector部署所涵蓋的必要共享VPC權限"^]
 
 
 

@@ -88,7 +88,7 @@ link:task-set-up-licensing-gcp.html["瞭解如何設定授權"]。
 如果在下拉式清單中沒有看到任何其他專案、表示您尚未將BlueXP服務帳戶與其他專案建立關聯。前往 Google Cloud 主控台、開啟 IAM 服務、然後選取專案。將具有BlueXP角色的服務帳戶新增至該專案。您必須針對每個專案重複此步驟。
 
 
-NOTE: 這是您為BlueXP設定的服務帳戶、 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html#set-up-a-service-account-for-the-connector["如本頁所述"^]。
+NOTE: 這是您為BlueXP設定的服務帳戶、 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["如本頁所述"^]。
 
 按一下 * 「新增訂閱」 * 、將選取的認證資料與訂閱建立關聯。
 
@@ -314,7 +314,7 @@ BlueXP部署Cloud Volumes ONTAP 了這個功能完善的系統。您可以追蹤
 如果在下拉式清單中沒有看到任何其他專案、表示您尚未將BlueXP服務帳戶與其他專案建立關聯。前往 Google Cloud 主控台、開啟 IAM 服務、然後選取專案。將具有BlueXP角色的服務帳戶新增至該專案。您必須針對每個專案重複此步驟。
 
 
-NOTE: 這是您為BlueXP設定的服務帳戶、 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html#set-up-a-service-account-for-the-connector["如本頁所述"^]。
+NOTE: 這是您為BlueXP設定的服務帳戶、 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["如本頁所述"^]。
 
 按一下 * 「新增訂閱」 * 、將選取的認證資料與訂閱建立關聯。
 
