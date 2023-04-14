@@ -22,7 +22,7 @@ summary: 您可以Cloud Volumes ONTAP 在Cloud Volumes ONTAP BlueXP中建立一�
 [[licensing]]
 * 已啟動並執行的連接器。
 +
-** 您應該擁有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["與工作區相關的連接器"^]。
+** 您應該擁有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["與工作區相關的連接器"^]。
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["您應該隨時準備好讓 Connector 保持運作"^]。
 
 
@@ -57,7 +57,7 @@ link:task-set-up-licensing-azure.html["瞭解如何設定授權"]。
 . 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . [[訂閱]在「畫版」頁面上、按一下「*新增工作環境*」、然後依照提示進行。
 . *選擇位置*：選擇* Microsoft Azure *和* Cloud Volumes ONTAP 《單一節點*》。
-. 如果出現提示、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["建立連接器"^]。
+. 如果出現提示、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["建立連接器"^]。
 . *詳細資料與認證*：選擇性變更Azure認證與訂閱、指定叢集名稱、視需要新增標籤、然後指定認證資料。
 +
 下表說明您可能需要指導的欄位：
@@ -280,7 +280,7 @@ BlueXP部署Cloud Volumes ONTAP 了這個功能完善的系統。您可以追蹤
 .步驟
 . 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . [[訂閱]在「畫版」頁面上、按一下「*新增工作環境*」、然後依照提示進行。
-. 如果出現提示、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["建立連接器"^]。
+. 如果出現提示、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["建立連接器"^]。
 . *詳細資料與認證*：選擇性變更Azure認證與訂閱、指定叢集名稱、視需要新增標籤、然後指定認證資料。
 +
 下表說明您可能需要指導的欄位：

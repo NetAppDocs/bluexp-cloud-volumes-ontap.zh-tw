@@ -281,6 +281,6 @@ image:diagram_ha_networking.png["概念性影像、顯示 Cloud Volumes ONTAP �
 
 如果您尚未建立連接器、也應該檢閱連接器的網路需求。
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["檢視連接器的網路需求"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["檢視連接器的網路需求"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["AWS中的安全群組規則"^]
 

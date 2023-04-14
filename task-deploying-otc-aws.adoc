@@ -25,7 +25,7 @@ summary: 您可以在 Cloud Volumes ONTAP 單一系統組態中或 AWS 中以 HA
 [[licensing]]
 * 已啟動並執行的連接器。
 +
-** 您應該擁有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["與工作區相關的連接器"^]。
+** 您應該擁有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["與工作區相關的連接器"^]。
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["您應該隨時準備好讓 Connector 保持運作"^]。
 
 
@@ -56,7 +56,7 @@ link:task-set-up-licensing-aws.html["瞭解如何設定授權"]。
 . 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . [[訂閱]在「畫版」頁面上、按一下「*新增工作環境*」、然後依照提示進行。
 . * 選擇位置 * ：選擇 * Amazon Web Services* 和 * Cloud Volumes ONTAP 《單一節點 * 》。
-. 如果出現提示、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["建立連接器"^]。
+. 如果出現提示、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["建立連接器"^]。
 . * 詳細資料與認證 * ：選擇性地變更 AWS 認證資料與訂閱、輸入工作環境名稱、視需要新增標記、然後輸入密碼。
 +
 本頁中的部分欄位是不知自明的。下表說明您可能需要指導的欄位：
