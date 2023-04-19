@@ -36,7 +36,7 @@ summary: 您可以在 Cloud Volumes ONTAP 單一系統組態中或在 Google Clo
 
 * 瞭解設定Cloud Volumes ONTAP 驗證功能所需的條件。
 +
-link:task-set-up-licensing-gcp.html["瞭解如何設定授權"]。
+link:task-set-up-licensing-google.html["瞭解如何設定授權"]。
 
 * Google Cloud API應該是 https://cloud.google.com/apis/docs/getting-started#enabling_apis["在您的專案中啟用"^]：
 +
@@ -132,7 +132,7 @@ TIP: 如果您想要使用WORM和資料分層、您必須停用Cloud Backup、�
 . *充電方法與NSS帳戶*：指定您要搭配此系統使用的收費選項、然後指定NetApp支援網站帳戶。
 +
 ** link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的授權選項"]。
-** link:task-set-up-licensing-gcp.html["瞭解如何設定授權"]。
+** link:task-set-up-licensing-google.html["瞭解如何設定授權"]。
 
 
 . * 預先設定的套件 * ：選取其中一個套件以快速部署 Cloud Volumes ONTAP 某個作業系統、或按一下 * 建立我自己的組態 * 。
@@ -362,7 +362,7 @@ link:reference-networking-gcp.html["深入瞭解網路需求"]。
 . *充電方法與NSS帳戶*：指定您要搭配此系統使用的收費選項、然後指定NetApp支援網站帳戶。
 +
 ** link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的授權選項"]。
-** link:task-set-up-licensing-gcp.html["瞭解如何設定授權"]。
+** link:task-set-up-licensing-google.html["瞭解如何設定授權"]。
 
 
 . * 預先設定的套件 * ：選取其中一個套件以快速部署 Cloud Volumes ONTAP 某個作業系統、或按一下 * 建立我自己的組態 * 。

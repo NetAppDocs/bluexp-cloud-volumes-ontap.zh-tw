@@ -605,8 +605,6 @@
   <block id="f9402b876a835ea0ecd00da4d201433a" category="paragraph">節點型授權最多可為單一節點或HA配對提供368TiB容量。</block>
   <block id="7bf9d9c18215351b0d16f4f9343c9700" category="paragraph">您可以購買Cloud Volumes ONTAP 多個適用於某個不含資料的BYOL系統授權、以分配超過368TiB的容量。例如、您可能會購買兩份授權、以配置多達736 TiB的容量來Cloud Volumes ONTAP 供使用。您也可以購買四份授權、最多可取得1.4 PIB。</block>
   <block id="5e26587c8f074cc4f0455ff005cb744c" category="paragraph">單一節點系統或 HA 配對可購買的授權數量不受限制。</block>
-  <block id="c695cd123d8c1b69b12f443c42ad98f9" category="inline-link">查看您是否有可用的授權可供使用</block>
-  <block id="d5777fa0c0510a8e0af55b024f765d10" category="admonition">您ONTAP 所購買的部分內部部署的功能不全的儲存系統可能包含免費Cloud Volumes ONTAP 的功能不全的使用許可。您可以使用授權來建立新Cloud Volumes ONTAP 的功能完善的系統、或是將授權套用至現有Cloud Volumes ONTAP 的功能完善的系統、以擴充容量。<block ref="e219f91c05893e1e7e9c773a8103d487" category="inline-link-rx"></block>。</block>
   <block id="ba23388576c937a1743b84554bd13c72" category="inline-link-macro">將非作用中資料分層至物件儲存設備</block>
   <block id="255a885478279e7778252b0fbb8e555b" category="inline-link">《發行說明》中的儲存限制 Cloud Volumes ONTAP</block>
   <block id="b64442e22e4baecde15d6214c922aa65" category="paragraph">請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制 <block ref="c80d06c6bbd06cbbb7b267be96c5b90c" category="inline-link-macro-rx"></block>。如需磁碟限制的相關資訊、請參閱<block ref="02f1a1c120ffb5f37ea9d7c14b5f1158" category="inline-link-rx"></block>。</block>
@@ -2796,7 +2794,6 @@
   <block id="77d680745644d1c19a022cc0a306f88b" category="list-text">資料加密：Google管理的金鑰</block>
   <block id="b33b7497784a31fa197bca9debbfddea" category="list-text">瞭解設定Cloud Volumes ONTAP 驗證功能所需的條件。</block>
   <block id="b2084f1d9eba331a28867d15c742284e" category="inline-link-macro">瞭解如何設定授權</block>
-  <block id="1093810fe4a9e55d156722b8332da3cd" category="paragraph"><block ref="9b79239dba046d18af2dfc2ca929db17" category="inline-link-macro-rx"></block>。</block>
   <block id="5719f300587dfbbd55551379f9ab4915" category="list-text"><block ref="69100fd89c8fc892aa253073563db45d" category="inline-link-macro-rx"></block>。</block>
   <block id="17b559ceaadd6decdd6c9a579de016a2" category="summary">在決定Cloud Volumes ONTAP 要使用哪個授權選項來執行功能時、在部署新系統時、您必須先執行幾個步驟、才能選擇該授權選項。</block>
   <block id="0cce9e09385c0d8e677ff5d9518dc514" category="doc">在Cloud Volumes ONTAP Azure中設定for NetApp的授權</block>
@@ -4871,4 +4868,5 @@
   <block id="c6a56bb8eca094c529c75a2c22c92bcc" category="inline-link-macro">深入瞭解如何管理節點型授權</block>
   <block id="6dbf080f75126585a20cc8d6d87df22f" category="paragraph"><block ref="6b55a043b67b958778673f44bc8845b9" category="inline-link-macro-rx"></block>。</block>
   <block id="5a91158751eaabe4d195cd633fa37db6" category="paragraph">管理數位錢包中的節點型授權、確保每個 Cloud Volumes ONTAP 系統都擁有具有所需容量的有效授權。</block>
+  <block id="0c1a89022d40f1a10025e9f9354168a0" category="paragraph"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block>。</block>
 </blocks>
