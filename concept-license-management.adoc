@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-license-management.html 
-keywords: byol, bring your own license, expiration, warning, node-based byol, node license 
+keywords: byol, bring your own license, expiration, warning, node-based byol, node license, capacity 
 summary: 每個採用節點型BYOL的系統都必須安裝有效訂閱的系統授權。Cloud Volumes ONTAPBlueXP可管理您的授權、並在授權到期前顯示警告、藉此簡化程序。 
 ---
 = 節點型BYOL的授權管理
@@ -20,6 +20,8 @@ summary: 每個採用節點型BYOL的系統都必須安裝有效訂閱的系統�
 TIP: 節點型授權是前一代Cloud Volumes ONTAP 的BYOL for the節點型授權僅適用於授權續約。
 
 link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解有關功能多樣的授權選項"]。
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["深入瞭解如何管理節點型授權"^]。
 
 
 
