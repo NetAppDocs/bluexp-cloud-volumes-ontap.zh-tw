@@ -13,7 +13,7 @@ summary: 利用Azure Key Vault提供第三方金鑰管理服務。
 
 您可以使用 link:https://docs.microsoft.com/en-us/azure/key-vault/general/basic-concepts["Azure Key Vault（AKV）"^] 在ONTAP Azure部署的應用程式中保護您的不加密金鑰。
 
-AKV可用於保護 link:https://docs.netapp.com/us-en/ontap/configure-netapp-volume-encryption-concept.html["NetApp Volume Encryption（NVE）金鑰"^] 僅適用於資料SVM。
+AKV可用於保護 link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-netapp-volume-encryption-concept.html["NetApp Volume Encryption（NVE）金鑰"^] 僅適用於資料SVM。
 
 使用AKV的金鑰管理可透過CLI或ONTAP REST API來啟用。
 
