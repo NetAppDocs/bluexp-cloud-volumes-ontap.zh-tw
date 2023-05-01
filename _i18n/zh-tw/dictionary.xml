@@ -320,7 +320,6 @@
   <block id="cd5ddfb19671526301ef6b32141e2e79" category="section-title">RPO 和 RTO</block>
   <block id="723596a60ea78fba91bcc7acb47cb786" category="paragraph">HA 組態可維持資料的高可用度、如下所示：</block>
   <block id="f04b83c6c15bc920bde6b3bda82d692e" category="list-text">恢復點目標（ RPO ）為 0 秒。您的資料交易一致、不會遺失任何資料。</block>
-  <block id="9a761447afd0b14671defde47da1673b" category="list-text">恢復時間目標（ RTO ）為 60 秒。發生中斷時、資料應可在 60 秒內取得。</block>
   <block id="3607defb16c7899920239098788e309c" category="section-title">儲存設備接管與恢復</block>
   <block id="92fa2f6d07938e1caadaff4ebb27bb27" category="paragraph">與實體 ONTAP 的實體叢集類似、 Azure HA 配對中的儲存設備會在節點之間共享。連線至合作夥伴的儲存設備、可讓每個節點在 _ 接管 _ 時存取對方的儲存設備。網路路徑容錯移轉機制可確保用戶端和主機繼續與正常運作的節點通訊。當節點恢復連線時、合作夥伴 _ 會提供 Back_storage 。</block>
   <block id="2757cec411cf47da357ab50e5c8ccff9" category="paragraph">對於 NAS 組態、如果發生故障、資料 IP 位址會自動在 HA 節點之間移轉。</block>
@@ -1956,8 +1955,6 @@
   <block id="48c4b347a69acc97f71ef6775bf6260d" category="list-text">對於Debian、預設的雲端使用者是「admin」。當透過Google Cloud主控台或gCloud命令列要求SSH存取時、Google Cloud會建立並新增「admin」使用者的憑證。您可以指定「show」以取得root權限。</block>
   <block id="b9c7a6d43bec359b40ab04efb944c7c4" category="list-text">恢復點目標（ RPO ）為 0 秒。</block>
   <block id="bf7c76034279e30c18d14dc7990ee330" category="paragraph">您的資料交易一致、不會遺失任何資料。</block>
-  <block id="856d7ffe64733ea6b89924ff6410d489" category="list-text">恢復時間目標（ RTO ）為 60 秒。</block>
-  <block id="a440b74cbaeb3025f8a909b3dd0782ed" category="paragraph">發生中斷時、資料應可在 60 秒內取得。</block>
   <block id="8bf571523805ed82609d8283f739355b" category="paragraph">您可以在多個區域或單一區域中部署 HA 組態、確保資料的高可用度。</block>
   <block id="6bf98e65a399f1401fd22fb5e31efc11" category="paragraph">不像 ONTAP 是一個叢集、 Cloud Volumes ONTAP 在 GCP 中使用的不二線 HA 配對儲存設備不會在節點之間共享。相反地、資料會在節點之間同步鏡射、以便在發生故障時能夠使用資料。</block>
   <block id="ae08e6c650418eed0656a1a4c7cf7330" category="section-title">HA 組態的效能期望</block>
@@ -4869,4 +4866,7 @@
   <block id="6dbf080f75126585a20cc8d6d87df22f" category="paragraph"><block ref="6b55a043b67b958778673f44bc8845b9" category="inline-link-macro-rx"></block>。</block>
   <block id="5a91158751eaabe4d195cd633fa37db6" category="paragraph">管理數位錢包中的節點型授權、確保每個 Cloud Volumes ONTAP 系統都擁有具有所需容量的有效授權。</block>
   <block id="0c1a89022d40f1a10025e9f9354168a0" category="paragraph"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block>。</block>
+  <block id="ed40352f9ed490b733344d4ac872054a" category="list-text">恢復時間目標（ RTO ）為 120 秒。萬一發生停電、資料應在 120 秒或更短時間內可用。</block>
+  <block id="1b4ae0cf922638f65d049bc6332ca497" category="list-text">恢復時間目標（ RTO ）為 120 秒。</block>
+  <block id="dbbdb92d530311690266ca56ba26d998" category="paragraph">萬一發生停電、資料應在 120 秒或更短時間內可用。</block>
 </blocks>
