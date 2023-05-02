@@ -4869,4 +4869,5 @@
   <block id="ed40352f9ed490b733344d4ac872054a" category="list-text">恢復時間目標（ RTO ）為 120 秒。萬一發生停電、資料應在 120 秒或更短時間內可用。</block>
   <block id="1b4ae0cf922638f65d049bc6332ca497" category="list-text">恢復時間目標（ RTO ）為 120 秒。</block>
   <block id="dbbdb92d530311690266ca56ba26d998" category="paragraph">萬一發生停電、資料應在 120 秒或更短時間內可用。</block>
+  <block id="51f3f3385ba782f2b8752155e908cf60" category="admonition">快照會在重新開機時自動建立。</block>
 </blocks>
