@@ -79,6 +79,73 @@ image:screenshot-digital-wallet-packages.png["螢幕擷取畫面顯示基本功�
 
 
 
+== 下載使用報告
+
+帳戶管理員可以從 BlueXP 的數位錢包下載四份使用報告。這些使用報告會提供您訂閱的容量詳細資料、並告訴您如何為 Cloud Volumes ONTAP 訂閱中的資源收取費用。可下載的報告會在某個時間點擷取資料、並可輕鬆與他人共用。
+
+image:screenshot-digital-wallet-usage-report.png["螢幕擷取畫面會顯示數位錢包 Cloud Volumes ONTAP 容量型授權頁面、並反白顯示使用報告按鈕。"]
+
+以下報告可供下載。顯示的容量值以 TiB 為單位。
+
+* * 高階使用率 * ：此報告會清楚顯示數位錢包中「 Cloud Volumes ONTAP 套件摘要」卡的內容。其中包括下列資訊：
++
+** 總使用容量
+** 預認可容量總計
+** BYOL 總容量
+** 市場總合約容量
+** PAYGO 總容量
+
+
+* * Cloud Volumes ONTAP 套件使用 * ：此報告會清楚顯示數位錢包內的套裝卡片內容。除了最佳化的 I/O 套件外、其中包括每個套件的下列資訊：
++
+** 總使用容量
+** 預認可容量總計
+** BYOL 總容量
+** 市場總合約容量
+** PAYGO 總容量
+
+
+* * 儲存虛擬機器使用率 * ：此報告顯示如何在 Cloud Volumes ONTAP 系統和儲存虛擬機器（ SVM ）之間分解已計費的容量。此資訊無法在數位錢包的任何畫面上取得。其中包括下列資訊：
++
+** 工作環境 ID （顯示為 UUID ）
+** 雲端
+** NetApp 帳戶 ID
+** 工作環境組態
+** SVM名稱
+** 已配置的容量
+** 充電容量綜合報告
+** 市場帳單期限
+** Cloud Volumes ONTAP 套件或功能
+** 向 SaaS Marketplace 訂閱名稱收費
+** 向 SaaS Marketplace 訂閱 ID 收費
+
+
+* * Volume 使用量 * ：此報告顯示如何在工作環境中、依磁碟區來分解收費容量。此資訊無法在數位錢包的任何畫面上取得。其中包括下列資訊：
++
+** 工作環境 ID （顯示為 UUID ）
+** SVN 名稱
+** Volume ID
+** Volume類型
+** Volume 資源配置容量
++
+
+NOTE: 此報告不包含 FlexClone Volume 、因為這些類型的磁碟區不會產生費用。
+
+
+
+
+
+.步驟
+. 從BlueXP導覽功能表中、選取*管理>數位錢包*。
+. 在 * Cloud Volumes ONTAP * 標籤上、選取 * 容量型授權 * 、然後按一下 * 使用報告 * 。
++
+使用報告會下載。
+
+. 開啟下載的檔案以存取報告。
+
+
+
+
 == 將購買的授權新增至您的帳戶
 
 如果您在Digital Wallet中沒有看到您購買的授權、您必須將授權新增至BlueXP、才能讓容量Cloud Volumes ONTAP 可供使用。

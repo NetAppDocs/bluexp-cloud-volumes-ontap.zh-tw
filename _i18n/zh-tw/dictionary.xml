@@ -4870,4 +4870,55 @@
   <block id="1b4ae0cf922638f65d049bc6332ca497" category="list-text">恢復時間目標（ RTO ）為 120 秒。</block>
   <block id="dbbdb92d530311690266ca56ba26d998" category="paragraph">萬一發生停電、資料應在 120 秒或更短時間內可用。</block>
   <block id="51f3f3385ba782f2b8752155e908cf60" category="admonition">快照會在重新開機時自動建立。</block>
+  <block id="71bff2737bdd059023a4784358e71a64" category="section-title">2023 年 5 月 7 日</block>
+  <block id="3b9e0ca0be1cb4ee263fc0a386a705bc" category="paragraph">Connector 3.9.29 版隨附下列變更。</block>
+  <block id="ef33a11b5d2090c4cf0e98ca1b79cc2d" category="section-title">現在、 Google Cloud 支援卡塔爾地區</block>
+  <block id="357b47742b71d8fe5b5936de05c522ec" category="paragraph">現在、 Google Cloud for Cloud Volumes ONTAP 和 Connector for Cloud Volumes ONTAP 9.12.1 GA 及更新版本均支援卡塔爾地區。</block>
+  <block id="c8dc4f54d280ddaf5974f6c903e2152f" category="section-title">瑞典中部地區現在支援 Azure</block>
+  <block id="787bf3f02b45f65c827e46d88d4e7b24" category="paragraph">現在 Azure for Cloud Volumes ONTAP 和 Connector for Cloud Volumes ONTAP 9.12.1 GA 及更新版本均支援瑞典中部地區。</block>
+  <block id="d38001cc976e394cf57ce77223bee1a1" category="section-title">支援 Azure Australia East 的 HA 多重可用度區域部署</block>
+  <block id="bef0df4f898713881ef2098a621a3745" category="paragraph">Azure 中的澳洲東部地區現在支援 Cloud Volumes ONTAP 9.12.1 GA 及更新版本的 HA 多重可用度區域部署。</block>
+  <block id="2cd5985150a2728c0c6295c5162b2b1d" category="section-title">充電使用量明細</block>
+  <block id="300bba824d9f2e68a0c89aef6da5fb8a" category="paragraph">現在、您可以瞭解訂閱容量型授權時所需支付的費用。以下類型的使用報告可從 BlueXP 的數位錢包下載。使用報告會提供您訂閱的容量詳細資料、並告訴您如何為 Cloud Volumes ONTAP 訂閱中的資源收取費用。可下載的報告可輕鬆與他人共用。</block>
+  <block id="ed54fb55b53f11e61f612ff99520f4bc" category="list-text">Cloud Volumes ONTAP 套件使用率</block>
+  <block id="160ba974abba347f5e939a1a0acd5982" category="list-text">高階使用率</block>
+  <block id="bf951096cc9eea5fae867ec94f06dfa3" category="list-text">儲存 VM 使用率</block>
+  <block id="3c5979c173a0a4fe3ff27e0e6185a693" category="list-text">Volume 使用量</block>
+  <block id="6ddb4c081e1822f2c34768a65c03eb8b" category="paragraph">如需詳細資訊、請參閱 <block ref="ebcf101f07f46d44ff28084ad0f8bce3" category="inline-link-macro-rx"></block>。</block>
+  <block id="eaf72ee058835b38b417b55e2fb1c0af" category="section-title">現在在沒有市場訂閱的情況下存取 BlueXP 時會顯示通知</block>
+  <block id="5cc1493ad28334fdb28f7ed57f0e1d41" category="paragraph">當您在 BlueXP 中存取 Cloud Volumes ONTAP 而不訂閱市場時、現在就會顯示通知。通知指出：「此工作環境的市場訂閱必須符合 Cloud Volumes ONTAP 條款與條件。」</block>
+  <block id="d845f71cd5cacb5fdb671f6530007953" category="paragraph"><block ref="b614243ef1614b3040beb4428349cfdf" category="inline-link-rx"></block>。</block>
+  <block id="37532cd27e3c53471b1caed0ba1f90ed" category="section-title">下載使用報告</block>
+  <block id="819d4e1e06bcd4bb3249b60d928ccacc" category="paragraph">帳戶管理員可以從 BlueXP 的數位錢包下載四份使用報告。這些使用報告會提供您訂閱的容量詳細資料、並告訴您如何為 Cloud Volumes ONTAP 訂閱中的資源收取費用。可下載的報告會在某個時間點擷取資料、並可輕鬆與他人共用。</block>
+  <block id="c2b73e18a5b530a547ba48a8177d13c3" category="inline-image-macro">螢幕擷取畫面會顯示數位錢包 Cloud Volumes ONTAP 容量型授權頁面、並反白顯示使用報告按鈕。</block>
+  <block id="a1a4a48254cf8eb8962fbd995f5e7ea8" category="paragraph"><block ref="a1a4a48254cf8eb8962fbd995f5e7ea8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d11dcbec58d47bd13de1dcccfbd640ff" category="paragraph">以下報告可供下載。顯示的容量值以 TiB 為單位。</block>
+  <block id="ad73e4897304c80496a4f15e033cefa7" category="list-text">* 高階使用率 * ：此報告會清楚顯示數位錢包中「 Cloud Volumes ONTAP 套件摘要」卡的內容。其中包括下列資訊：</block>
+  <block id="c596c9291f76a11af1aefc235c262de6" category="list-text">總使用容量</block>
+  <block id="8dd7541d6c4e83402d88448119068a02" category="list-text">預認可容量總計</block>
+  <block id="b01a146aed01aa8af61e034befc116ce" category="list-text">BYOL 總容量</block>
+  <block id="109323142d354af9ccc7eb636b1dcbce" category="list-text">市場總合約容量</block>
+  <block id="baf09c6c43fd26effd8f15e252649384" category="list-text">PAYGO 總容量</block>
+  <block id="76101a2de96d735db21249323914bc6c" category="list-text">* Cloud Volumes ONTAP 套件使用 * ：此報告會清楚顯示數位錢包內的套裝卡片內容。除了最佳化的 I/O 套件外、其中包括每個套件的下列資訊：</block>
+  <block id="c01bbdbe6721d80a74779e943243486b" category="list-text">* 儲存虛擬機器使用率 * ：此報告顯示如何在 Cloud Volumes ONTAP 系統和儲存虛擬機器（ SVM ）之間分解已計費的容量。此資訊無法在數位錢包的任何畫面上取得。其中包括下列資訊：</block>
+  <block id="b16bfcaa9b0651f05b8e8894a2aebb31" category="list-text">工作環境 ID （顯示為 UUID ）</block>
+  <block id="c8e2277ecfb1427838c488c217f99466" category="list-text">雲端</block>
+  <block id="4736cd35bf5b3fe63e1b1785fb2aa664" category="list-text">NetApp 帳戶 ID</block>
+  <block id="bbfa34e8af02138b821f784c8962669b" category="list-text">工作環境組態</block>
+  <block id="203c4205822c007d08ecafe163b02ea2" category="list-text">SVM名稱</block>
+  <block id="b567847dd629376ac84ed4958fd61687" category="list-text">已配置的容量</block>
+  <block id="a09b8df9fd0007770b0a8c10f9a17d81" category="list-text">充電容量綜合報告</block>
+  <block id="671095c17b0e9e0deda06cff2fa103e6" category="list-text">市場帳單期限</block>
+  <block id="d38764d5edf26bd9b744840cd2ea3c17" category="list-text">Cloud Volumes ONTAP 套件或功能</block>
+  <block id="a016fcdfd1d7159ffd537d78d4b68f74" category="list-text">向 SaaS Marketplace 訂閱名稱收費</block>
+  <block id="fe6ac599d13d94a0ee0800482bec7e41" category="list-text">向 SaaS Marketplace 訂閱 ID 收費</block>
+  <block id="33e97335db88f16611400cab965f95af" category="list-text">* Volume 使用量 * ：此報告顯示如何在工作環境中、依磁碟區來分解收費容量。此資訊無法在數位錢包的任何畫面上取得。其中包括下列資訊：</block>
+  <block id="3edb9123c69629ec86469d96d3feb0aa" category="list-text">SVN 名稱</block>
+  <block id="cccc95b62282240886ee975a3f122adb" category="list-text">Volume ID</block>
+  <block id="fc18634852d4299cd5f8c7ad55ddefbe" category="list-text">Volume類型</block>
+  <block id="3756f66a273f440893f16ee968ce3450" category="list-text">Volume 資源配置容量</block>
+  <block id="8b3da2ed858ee5c956acde26c9ef7dd0" category="admonition">此報告不包含 FlexClone Volume 、因為這些類型的磁碟區不會產生費用。</block>
+  <block id="a4bad4f350632a2078a6d795984ee60f" category="list-text">在 * Cloud Volumes ONTAP * 標籤上、選取 * 容量型授權 * 、然後按一下 * 使用報告 * 。</block>
+  <block id="23e918e9f1c9f1bb5769dcc236489de2" category="paragraph">使用報告會下載。</block>
+  <block id="05655bb3cbd3604d6c71a1db823ad94f" category="list-text">開啟下載的檔案以存取報告。</block>
 </blocks>
