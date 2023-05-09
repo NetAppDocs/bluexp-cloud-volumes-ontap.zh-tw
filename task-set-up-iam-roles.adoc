@@ -236,6 +236,7 @@ NOTE: AWS商業雲端服務環境需要提供您自己的IAM角色。 link:task-
 ====
 ** HA 中介
 +
+--
 [source, json]
 ----
 {
@@ -251,12 +252,15 @@ NOTE: AWS商業雲端服務環境需要提供您自己的IAM角色。 link:task-
 				"ec2:DescribeVpcs",
 				"ec2:ReplaceRoute",
 				"ec2:UnassignPrivateIpAddresses"
+                "sts:AssumeRole"
+                "ec2:DescribeSubnets"
 			],
 			"Resource": "*"
 		}
 	]
 }
 ----
+--
 
 
 . 建立IAM角色、並將您建立的原則附加至角色。
