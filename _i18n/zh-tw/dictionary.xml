@@ -4833,11 +4833,8 @@
   <block id="23a6fec51e7e7d398bc37636e86e1522" category="list-text">當系統提示您選擇充電方法時、請選取 Keystone Subscription 充電方法。</block>
   <block id="9ef6a991e8b332819da490002a529dfe" category="inline-image-macro">建立 Cloud Volumes ONTAP 工作環境時 Keystone Subscription 選項的螢幕擷取畫面。</block>
   <block id="002247e118f1fafbd5464e9559e97958" category="paragraph"><block ref="002247e118f1fafbd5464e9559e97958" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f299a90ea343277f03db9212a075b743" category="inline-link">備份與還原</block>
-  <block id="3f61ed1be9573dd263bad0fb454ff936" category="cell">如果您打算使用 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 或<block ref="f6a24dd7c8333d6197d5c13fe0b2da54" category="inline-link-rx"></block> 有了這個功能、您就需要啟用*服務帳戶*、並選取具有預先定義儲存管理員角色的服務帳戶。Cloud Volumes ONTAP <block ref="1e3ffbdede44246b454219bb91ade15a" category="inline-link-macro-rx"></block>。</block>
   <block id="b96b0568ece0515dc25527bb206dc624" category="list-text">* 服務 * ：選取您要在此系統上使用的服務。若要選取 BlueXP 備份與還原、或使用 BlueXP 分層、您必須在步驟 3 中指定服務帳戶。</block>
   <block id="00b55c6e8a613c3d6275f305157bc85f" category="admonition">如果您想要使用 WORM 和資料分層功能、您必須停用 BlueXP 備份與還原、並部署 9.8 版或更新版本的 Cloud Volumes ONTAP 工作環境。</block>
-  <block id="122fbba22f02b63cfbb1c31be8b85e8e" category="cell">如果您打算使用 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 或<block ref="f6a24dd7c8333d6197d5c13fe0b2da54" category="inline-link-rx"></block> 服務、您必須啟用 * 服務帳戶 * 交換器、然後選取具有預先定義儲存管理角色的服務帳戶。</block>
   <block id="b52e55022a3899fe34e70373f16c4e69" category="list-text">* 服務 * ：選取您要在此系統上使用的服務。若要選取 BlueXP 備份與還原、或使用 BlueXP 分層、您必須在步驟 3 中指定服務帳戶。</block>
   <block id="4112533811706ae9c45d956e68299f46" category="summary">從 BlueXP 數位錢包管理容量型授權、以確保您的 NetApp 帳戶擁有足夠的容量供 Cloud Volumes ONTAP 系統使用。</block>
   <block id="b37ea3f4c93245969c515634c741e9bf" category="paragraph">_BlueXP 數位錢包 _ 可讓您從單一位置管理 Cloud Volumes ONTAP 的授權。您可以新增授權並更新現有授權。</block>
@@ -4854,14 +4851,13 @@
   <block id="325ef46eb3d6b63c4d60ef08cdd6176f" category="inline-image-macro">BlueXP 數位電子錢包中 Cloud Volumes ONTAP 頁面的螢幕擷取畫面、其中變更充電方法按鈕就在表格上方。</block>
   <block id="bdc5814154b1b181ca8722ef08ed8a28" category="paragraph"><block ref="bdc5814154b1b181ca8722ef08ed8a28" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d592a4e1d68c1047f1f5e39639bee6bf" category="paragraph">您可能也會注意到 BlueXP 數位錢包會重新整理每個套件類型的已用容量、以因應您剛做的變更。</block>
-  <block id="078be6a9f1dfaaea5e7153ff9ec78760" category="list-text">BlueXP 分層</block>
+  <block id="078be6a9f1dfaaea5e7153ff9ec78760" category="inline-link-macro">BlueXP 分層</block>
   <block id="fdc0e66a431a39bf7d68fad74c362d1a" category="paragraph">Cloud Volumes ONTAP 不支援 BlueXP 分層服務。建立磁碟區時、必須直接從BlueXP的標準檢視畫面設定將資料分層至物件儲存設備。</block>
   <block id="fd736cdd9cd06a871bed533b6e339d5c" category="summary">與標準 AWS 區域類似、您可以在 AWS 商業雲端服務（ C2S ）環境中使用 BlueXP 來部署 Cloud Volumes ONTAP 、為您的雲端儲存設備提供企業級功能。AWS C2S是美國專屬的封閉區域智慧社群；本頁的說明僅適用於AWS C2S區域使用者。</block>
   <block id="52c73bbae26b1c8362e849d7b7e0539f" category="paragraph">如果您計畫在 Cloud Volumes ONTAP 系統上使用 BlueXP 備份與還原、節點的 IAM 角色必須包含以下所示的第二個原則。</block>
   <block id="ede1cce9f240fed5ecc4264bd699cee1" category="inline-link">BlueXP 備份與還原</block>
   <block id="d71976832e1023b23c1ad48c04841a20" category="paragraph">下列兩種用途需要Google Cloud服務帳戶：Cloud Volumes ONTAP第一個是啟用時 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 將冷資料分層至Google Cloud中的低成本物件儲存設備。第二個是啟用時<block ref="f8430e60155316f7bd64115f216c9ed9" category="inline-link-rx"></block> 將磁碟區備份至低成本的物件儲存設備。</block>
   <block id="334457e955e851dd9304247244593287" category="summary">在 BlueXP 數位錢包中管理節點型授權、以確保每個 Cloud Volumes ONTAP 系統都擁有具有所需容量的有效授權。</block>
-  <block id="990d530a36683451e6ac666b1b224270" category="paragraph">在 BlueXP 數位錢包中管理節點型授權、以確保每個 Cloud Volumes ONTAP 系統都擁有具有所需容量的有效授權。</block>
   <block id="755544cd7e451192e8f70ab60b76986b" category="paragraph">BlueXP 數位錢包頁面可讓您檢視每個 PAYGO Cloud Volumes ONTAP 系統的詳細資料、包括序號和 PAYGO 授權類型。</block>
   <block id="0ad53d9b2c46069812124453e75f768d" category="inline-image-macro">此螢幕擷取畫面顯示 BlueXP 數位電子錢包頁面中的表格、內含三個 Paygo 授權。每一列都會顯示名稱、系統類型、序號、套件、以及管理授權的連結。</block>
   <block id="53f70eaa2639e1c4c624cb3bcc1042c2" category="paragraph"><block ref="53f70eaa2639e1c4c624cb3bcc1042c2" category="inline-image-macro-rx" type="image"></block></block>
@@ -4884,7 +4880,7 @@
   <block id="26ee3f5587dc47d76226ef9b570828ff" category="paragraph">在 BlueXP 數位錢包中、 50 TiB 將根據 _Essentials Single Nodon_ 授權收費。</block>
   <block id="3ea1315566755c191cc8996f86a9af02" category="paragraph">充電是根據 Keystone 訂閱中一或多個 Cloud Volumes ONTAP HA 配對的承諾容量大小而定。</block>
   <block id="46b39bb522bc6ece1b6bf75e81db3cbf" category="paragraph">系統會定期彙總每個 Volume 的已配置容量、並將其與 Keystone 訂閱上的已認可容量進行比較、而任何超額資料都會在 Keystone 訂閱上以暴增方式收費。</block>
-  <block id="100bae5c7e0821077de0fde9621000c1" category="paragraph"><block ref="bc493c0c6367fdf80f51179db159d9ed" category="inline-link-rx"></block>。</block>
+  <block id="100bae5c7e0821077de0fde9621000c1" category="list-text"><block ref="bc493c0c6367fdf80f51179db159d9ed" category="inline-link-rx"></block>。</block>
   <block id="73511701791994e2ed3cc40c68089746" category="paragraph">HA 配對支援 Keystone 訂閱。目前單一節點系統不支援此授權選項。</block>
   <block id="9a762a1c55d92068610f4f2bc3e42d91" category="paragraph">瞭解如何開始使用 Keystone 訂閱：</block>
   <block id="fc757430059ba1c5429f69be6c92e93b" category="paragraph">不Cloud Volumes ONTAP 支援將現有的支援系統轉換成其他授權方法。目前的三種授權方法是容量型授權、基礎概念訂閱和節點型授權。例如、您無法將系統從節點型授權轉換成容量型授權（反之亦然）。</block>
@@ -4898,7 +4894,6 @@
   <block id="de33988c687dff633cec70e80a05f959" category="paragraph">Keystone Subscription 是一項以隨成長付費訂閱為基礎的服務、可為偏好使用 OpEx 消費模式、而不選擇前期資本支出或租賃模式的使用者、提供順暢的混合雲體驗。</block>
   <block id="8765b8141289c553bb6583d305152f50" category="paragraph">您可以從 BlueXP 部署的所有新版 Cloud Volumes ONTAP 都支援 Keystone 訂閱。</block>
   <block id="47e98d8abdf6a91192cff6466b616ce4" category="inline-link-macro">瞭解如何開始使用 BlueXP 中的 Keystone 訂閱</block>
-  <block id="d32bc06f4693559b0941ab221004f77a" category="list-text"><block ref="b537ee4eb64ec01da34737ed00ba85c9" category="inline-link-macro-rx"></block>。</block>
   <block id="e0277b8d41546d47637400507bf0f9f5" category="paragraph">當您刪除工作環境時、其他服務所管理的資源、例如 BlueXP 備份和還原的備份、以及 BlueXP 分類的執行個體、都不會被刪除。您必須自行手動刪除。如果您沒有、您將繼續收取這些資源的費用。</block>
   <block id="54247681d588d23204e6fae74998cc72" category="list-text">如果您在工作環境中啟用 BlueXP 備份與還原、請先判斷是否仍需要備份資料、然後再決定<block ref="a63fe511bda1d904c92110dce9e2b88b" category="inline-link-rx"></block>。</block>
   <block id="6994b2fbca796c979abed69e3bd6275c" category="paragraph">BlueXP 備份與還原在設計上不受 Cloud Volumes ONTAP 的保護。BlueXP 備份與還原不會在您刪除 Cloud Volumes ONTAP 系統時自動刪除備份、而且在刪除系統之後、 UI 目前不支援刪除備份。</block>
@@ -4918,6 +4913,10 @@
   <block id="c5889acf4592b2ce675b7e0be182268e" category="paragraph">這些限制僅適用於 BlueXP 中的 Cloud Volumes ONTAP 管理。若要檢視Cloud Volumes ONTAP 有關此功能的限制、<block ref="70a3d165b5204ef94ef3f2d7b3d098d2" category="inline-link-rx"></block></block>
   <block id="829bbd3178c74725b58e1817c2135502" category="paragraph">Cloud Volumes ONTAP 也與 BlueXP 備份與還原整合、提供保護的備份與還原功能、以及雲端資料的長期歸檔。</block>
   <block id="d37c9703eabd9a68dc0d1fb0b42d7881" category="paragraph">與 BlueXP 分類整合可協助您瞭解資料內容並識別敏感資料。</block>
-  <block id="0f2fe7f7d7d6e9e8b6985ebcba41a752" category="paragraph">Keystone 訂閱是一項隨成長付費訂閱服務。 <block ref="a4cf1d10eb125cd296862332c2edca47" category="inline-link-macro-rx"></block>。</block>
   <block id="5d52a8b51c505c42c6cec9d89c67795a" category="paragraph"><block ref="3abd3a0b5353b2721a22292e3b71aa39" category="inline-link-rx"></block> 整合至 BlueXP UI 、讓您在單一窗口中最佳化 Cloud Volumes ONTAP 系統的作業、安全性和效能。</block>
+  <block id="e16f30d121bfd2f9150c3b384f4bafd7" category="cell">如果您打算使用 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 或<block ref="f8430e60155316f7bd64115f216c9ed9" category="inline-link-rx"></block> 有了這個功能、您就需要啟用*服務帳戶*、並選取具有預先定義儲存管理員角色的服務帳戶。Cloud Volumes ONTAP <block ref="1e3ffbdede44246b454219bb91ade15a" category="inline-link-macro-rx"></block>。</block>
+  <block id="59d8dcefa0c00dc439534f201c3b8cad" category="cell">如果您打算使用 <block ref="b0493934baf26f9529eb4214b9de6c71" category="inline-link-macro-rx"></block> 或<block ref="f8430e60155316f7bd64115f216c9ed9" category="inline-link-rx"></block> 服務、您必須啟用 * 服務帳戶 * 交換器、然後選取具有預先定義儲存管理角色的服務帳戶。</block>
+  <block id="fe8304b9cc044b147f56b2d91e04417e" category="list-text"><block ref="fe8304b9cc044b147f56b2d91e04417e" category="inline-link-rx"></block></block>
+  <block id="1ff8c921e91129864e26470e27f163e4" category="paragraph"><block ref="f3dcfa97ec0e043d2a6bb618df9e88d1" category="inline-link-rx"></block>[ 深入瞭解 NetApp Keystone 訂閱 ^] 。</block>
+  <block id="082d2f26c5c0981f06c4a8fa0b1114d6" category="list-text"><block ref="f4e5a313767343aeb22db09ed17536ac" category="inline-link-macro-rx"></block>。</block>
 </blocks>

@@ -73,7 +73,7 @@ link:task-set-up-licensing-google.html["瞭解如何設定授權"]。
 | 工作環境名稱 | BlueXP使用工作環境名稱來命名Cloud Volumes ONTAP 支援系統和Google Cloud VM執行個體。如果您選取該選項、它也會使用名稱做為預先定義安全性群組的前置詞。 
 
 
-| 服務帳戶名稱 | 如果您打算使用 link:concept-data-tiering.html["資料分層"] 或 https://["備份與還原"^] 有了這個功能、您就需要啟用*服務帳戶*、並選取具有預先定義儲存管理員角色的服務帳戶。Cloud Volumes ONTAP link:task-creating-gcp-service-account.html["瞭解如何建立服務帳戶"]。 
+| 服務帳戶名稱 | 如果您打算使用 link:concept-data-tiering.html["資料分層"] 或 https://["BlueXP 備份與還原"^] 有了這個功能、您就需要啟用*服務帳戶*、並選取具有預先定義儲存管理員角色的服務帳戶。Cloud Volumes ONTAP link:task-creating-gcp-service-account.html["瞭解如何建立服務帳戶"]。 
 
 
 | 新增標籤 | 標籤是Google Cloud資源的中繼資料。BlueXP會將標籤新增Cloud Volumes ONTAP 至與系統相關的支援系統和Google Cloud資源。建立工作環境時、您最多可以從使用者介面新增四個標籤、然後在建立之後新增更多標籤。請注意、在建立工作環境時、 API 不會限制您使用四個標籤。如需標籤的相關資訊、請參閱 https://["Google Cloud 文件：標示資源"^]。 
@@ -299,7 +299,7 @@ BlueXP部署Cloud Volumes ONTAP 了這個功能完善的系統。您可以追蹤
 | 工作環境名稱 | BlueXP使用工作環境名稱來命名Cloud Volumes ONTAP 支援系統和Google Cloud VM執行個體。如果您選取該選項、它也會使用名稱做為預先定義安全性群組的前置詞。 
 
 
-| 服務帳戶名稱 | 如果您打算使用 link:concept-data-tiering.html["資料分層"] 或 https://["備份與還原"^] 服務、您必須啟用 * 服務帳戶 * 交換器、然後選取具有預先定義儲存管理角色的服務帳戶。 
+| 服務帳戶名稱 | 如果您打算使用 link:concept-data-tiering.html["BlueXP 分層"] 或 https://["BlueXP 備份與還原"^] 服務、您必須啟用 * 服務帳戶 * 交換器、然後選取具有預先定義儲存管理角色的服務帳戶。 
 
 
 | 新增標籤 | 標籤是Google Cloud資源的中繼資料。BlueXP會將標籤新增Cloud Volumes ONTAP 至與系統相關的支援系統和Google Cloud資源。建立工作環境時、您最多可以從使用者介面新增四個標籤、然後在建立之後新增更多標籤。請注意、在建立工作環境時、 API 不會限制您使用四個標籤。如需標籤的相關資訊、請參閱 https://["Google Cloud 文件：標示資源"^]。 

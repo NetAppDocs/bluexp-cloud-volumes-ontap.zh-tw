@@ -14,7 +14,7 @@ summary: 在 BlueXP 數位錢包中管理節點型授權、以確保每個 Cloud
 
 
 [role="lead"]
-在 BlueXP 數位錢包中管理節點型授權、以確保每個 Cloud Volumes ONTAP 系統都擁有具有所需容量的有效授權。
+5a91158751eaabe4d195cd633fa37db6
 
 _Node型授權_是前一代授權模式（不適用於新客戶）：
 

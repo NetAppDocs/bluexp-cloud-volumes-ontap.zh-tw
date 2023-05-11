@@ -152,7 +152,7 @@ link:task-deploying-otc-aws.html["請參閱逐步指示、以在Cloud Volumes ON
 
 == Keystone訂閱
 
-Keystone 訂閱是一項隨成長付費訂閱服務。 link:concept-licensing.html#keystone-subscription["深入瞭解 NetApp Keystone 訂閱"^]。
+Keystone 訂閱是一項隨成長付費訂閱服務。 link:concept-licensing.html#keystone-subscription["深入瞭解 NetApp Keystone 訂閱"]。
 
 .步驟
 . 如果您尚未訂閱、 https://["請聯絡NetApp"^]
