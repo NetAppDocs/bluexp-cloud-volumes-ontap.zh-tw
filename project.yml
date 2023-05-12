@@ -122,7 +122,7 @@ sidebar:
       entries:
       - title: 管理容量型授權
         url: "/task-manage-capacity-licenses.html"
-      - title: 管理 Keystone Flex 訂閱
+      - title: 管理基礎概念訂閱
         url: "/task-manage-keystone.html"
       - title: 管理節點型授權
         url: "/task-manage-node-licenses.html"
@@ -307,7 +307,7 @@ homepage:
       url: task-manage-capacity-licenses.html
     - title: Exchange未指派的節點型授權
       url: task-manage-node-licenses.html#exchange-unassigned-node-based-licenses
-    - title: 管理 Keystone Flex 訂閱
+    - title: 管理基礎概念訂閱
       url: task-manage-keystone.html
   - title: 儲存管理
     links:

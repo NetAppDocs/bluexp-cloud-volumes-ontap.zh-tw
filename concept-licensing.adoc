@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-licensing.html 
-keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go 
+keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go, keystone flex, keystone, cloud backup, digital wallet 
 summary: 有多種授權選項可供Cloud Volumes ONTAP 選擇。每個選項都能讓您選擇符合需求的組態。 
 ---
 = 提供授權Cloud Volumes ONTAP
@@ -23,7 +23,7 @@ summary: 有多種授權選項可供Cloud Volumes ONTAP 選擇。每個選項都
 下列授權選項適用於新客戶。
 
 容量型授權:: 根據Cloud Volumes ONTAP 資源配置的容量、在NetApp帳戶中支付多個支援系統的費用。包括購買附加雲端資料服務的能力。
-Keystone Flex 訂閱:: 以隨成長付費訂閱為基礎的服務、為HA配對提供無縫的混合雲體驗。
+Keystone訂閱:: 以隨成長付費訂閱為基礎的服務、為HA配對提供無縫的混合雲體驗。
 
 
 先前的個別節點授權模式仍適用於已購買授權或正在訂閱市場的現有客戶。
@@ -137,7 +137,7 @@ endif::gcp[]
 +
 單一節點或HA、以相同速率為主要和次要磁碟區充電
 
-* 包括使用Cloud Backup的無限Volume備份、但僅適用於Cloud Volumes ONTAP 使用Professional套件的各種系統
+* 包括使用 BlueXP 備份與還原的不限數量的 Volume 備份、但僅適用於使用專業版套件的 Cloud Volumes ONTAP 系統
 * 以額外成本附加任何NetApp的雲端資料服務
 
 
@@ -166,7 +166,7 @@ ifdef::gcp[]
 
 endif::gcp[]
 
-https://cloud.netapp.com/cloud-volumes-edge-cache["深入瞭解Cloud Volumes Edge Cache如何協助您的企業發展"^]
+https://["深入瞭解Cloud Volumes Edge Cache如何協助您的企業發展"^]
 
 
 
@@ -214,13 +214,13 @@ link:task-manage-capacity-licenses.html["瞭解如何變更充電方法"]。
 
 === 定價
 
-如需定價的詳細資訊、請前往 https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp BlueXP網站"^]。
+如需定價的詳細資訊、請前往 https://["NetApp BlueXP網站"^]。
 
 
 
 === 免費試用
 
-您可以在雲端供應商的市場中、透過隨用隨付訂閱取得30天的免費試用版。免費試用版包含Cloud Volumes ONTAP 了VMware及Cloud Backup。試用版會在您訂閱市場上的產品項目時開始。
+您可以在雲端供應商的市場中、透過隨用隨付訂閱取得30天的免費試用版。免費試用包括 Cloud Volumes ONTAP 和 BlueXP 備份與還原。試用版會在您訂閱市場上的產品項目時開始。
 
 沒有執行個體或容量限制。您可以任意部署Cloud Volumes ONTAP 多個不需付費的功能、並視需要配置多餘的容量、30天內即可免費部署。免費試用版會在30天後自動轉換為付費的每小時訂閱。
 
@@ -269,7 +269,7 @@ TIP: 您將會在BlueXP中收到一則通知、告知免費試用開始、剩餘
 
 如果您的大型部署需要20個以上的系統、請聯絡您的客戶代表或銷售團隊。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html["深入瞭解NetApp客戶"^]。
+https://["深入瞭解NetApp客戶"^]。
 
 
 
@@ -299,7 +299,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.
 
 有了Essentials套件、您將依照部署類型（HA或單一節點）和Volume類型（主要或次要）收費。例如、_Essentials HHA與_Essentials次要HA的定價不同。
 
-如果您向NetApp（BYOL）購買Essentials授權、但超出該部署與Volume類型的授權容量、則Digital Wallet會針對價格較高的Essentials授權（如果您有）收取超額費用。這是因為我們會先使用您已購買的可用容量作為預付容量、然後再針對市場進行充電。向市場收取費用會增加每月帳單的成本。
+如果您向 NetApp （ BYOL ）購買 Essentials 授權、且超過該部署和 Volume 類型的授權容量、則 BlueXP 數位錢包會因價格較高的 Essentials 授權（如果您有）而收取超額費用。這是因為我們會先使用您已購買的可用容量作為預付容量、然後再針對市場進行充電。向市場收取費用會增加每月帳單的成本。
 
 以下是範例。假設您擁有下列Essentials套件授權：
 
@@ -307,9 +307,9 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.
 * 500 TiB _Essentials單一節點_授權、僅擁有100 TiB的已認可容量
 
 
-另有50個TiB配置在與次要Volume的HA配對上。數位錢包不會向PAYGO收取50 TiB的費用、而是根據_Essentials單一節點_授權、收取50 TiB的超額費用。該授權的價格高於_Essentials二線HA、但比PAYGO價格便宜。
+另有50個TiB配置在與次要Volume的HA配對上。BlueXP 數位錢包不需向 PAYGO 收取 50 TiB 費用、而是根據 _Essentials Single Node_ 授權收取 50 TiB 超額費用。該授權的價格高於_Essentials二線HA、但比PAYGO價格便宜。
 
-在「數位錢包」中、50 TiB將根據_Essentials單一節點_授權收費。
+在 BlueXP 數位錢包中、 50 TiB 將根據 _Essentials Single Nodon_ 授權收費。
 
 
 
@@ -362,21 +362,21 @@ endif::gcp[]
 
 
 
-== Keystone Flex 訂閱
+== Keystone訂閱
 
 以隨成長付費訂閱為基礎的服務、可為偏好營運成本使用模式的使用者、提供無縫的混合雲體驗、以供預先支付資本支出或租賃之用。
 
-充電是根據Cloud Volumes ONTAP 您在Keystone Flex訂閱中一或多對的已認可容量大小而計算。
+充電是根據 Keystone 訂閱中一或多個 Cloud Volumes ONTAP HA 配對的承諾容量大小而定。
 
-每個磁碟區的已配置容量會定期彙總、並與Keystone Flex訂閱上的已提交容量進行比較、而且任何超額的費用都會在Keystone Flex訂閱上以「連串」的形式進行收費。
+系統會定期彙總每個 Volume 的已配置容量、並將其與 Keystone 訂閱上的已認可容量進行比較、而任何超額資料都會在 Keystone 訂閱上以暴增方式收費。
 
-https://www.netapp.com/services/subscriptions/keystone/flex-subscription/["深入瞭解Keystone Flex訂閱"^]。
+https://["深入瞭解 NetApp Keystone 訂閱"^]。
 
 
 
 === 支援的組態
 
-Keystone Flex訂閱支援HA配對。目前單一節點系統不支援此授權選項。
+HA 配對支援 Keystone 訂閱。目前單一節點系統不支援此授權選項。
 
 
 
@@ -388,7 +388,7 @@ Keystone Flex訂閱支援HA配對。目前單一節點系統不支援此授權�
 
 === 如何開始使用
 
-瞭解如何開始使用Keystone Flex訂閱：
+瞭解如何開始使用 Keystone 訂閱：
 
 ifdef::aws[]
 
@@ -427,7 +427,7 @@ endif::gcp[]
 
 == 授權轉換
 
-不Cloud Volumes ONTAP 支援將現有的支援系統轉換成其他授權方法。目前的三種授權方法為容量型授權、Keystone Flex訂閱及節點型授權。例如、您無法將系統從節點型授權轉換成容量型授權（反之亦然）。
+不Cloud Volumes ONTAP 支援將現有的支援系統轉換成其他授權方法。目前的三種授權方法是容量型授權、基礎概念訂閱和節點型授權。例如、您無法將系統從節點型授權轉換成容量型授權（反之亦然）。
 
 如果您想要轉換至其他授權方法、可以購買授權、使用Cloud Volumes ONTAP 該授權部署新的一套作業系統、然後將資料複寫到新系統。
 

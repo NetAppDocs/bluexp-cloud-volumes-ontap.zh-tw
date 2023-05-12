@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-administer-advanced-view.html 
-keywords: system manager, advanced view, access system manager, load system manager, use system manager 
+keywords: system manager, advanced view, access system manager, load system manager, use system manager, cloud tiering 
 summary: 如果您需要執行Cloud Volumes ONTAP 進階的支援管理功能、可以使用ONTAP 支援ONTAP 此功能的支援功能、這個功能是隨附於一個系統的管理介面。我們已將System Manager介面直接納入BlueXP、因此您不需要離開BlueXP進行進階管理。 
 ---
 = 使用進階檢視來管理Cloud Volumes ONTAP
@@ -60,9 +60,9 @@ BlueXP的進階檢視可讓您存取其他管理功能：
 
 下列功能不支援出現在System Manager介面中Cloud Volumes ONTAP 的部分功能：
 
-* 雲端分層
+* BlueXP 分層
 +
-不支援Cloud Volumes ONTAP 使用Cloud Tiering服務。建立磁碟區時、必須直接從BlueXP的標準檢視畫面設定將資料分層至物件儲存設備。
+Cloud Volumes ONTAP 不支援 BlueXP 分層服務。建立磁碟區時、必須直接從BlueXP的標準檢視畫面設定將資料分層至物件儲存設備。
 
 * 階層
 +
@@ -98,9 +98,9 @@ image:screenshot_advanced_view.png["顯示「切換至進階檢視」選項的�
 
 == 協助使用System Manager
 
-如果您需要協助、請Cloud Volumes ONTAP 參閱《System Manager with》（搭配使用系統管理程式） https://docs.netapp.com/us-en/ontap/index.html["本文檔 ONTAP"^] 以取得逐步指示。以下是幾個可能有幫助的連結：
+如果您需要協助、請Cloud Volumes ONTAP 參閱《System Manager with》（搭配使用系統管理程式） https://["本文檔 ONTAP"^] 以取得逐步指示。以下是幾個可能有幫助的連結：
 
-* https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html["Volume與LUN管理"^]
-* https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html["網路管理"^]
-* https://docs.netapp.com/us-en/ontap/concept_dp_overview.html["資料保護"^]
+* https://["Volume與LUN管理"^]
+* https://["網路管理"^]
+* https://["資料保護"^]
 

@@ -23,7 +23,7 @@ summary: 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可�
 
 == 支援的儲存 VM 數量
 
-某些組態支援多個儲存VM。前往 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["發行說明 Cloud Volumes ONTAP"^] 驗證Cloud Volumes ONTAP 支援的儲存VM數量是否適用於您的版本的支援。
+某些組態支援多個儲存VM。前往 https://["發行說明 Cloud Volumes ONTAP"^] 驗證Cloud Volumes ONTAP 支援的儲存VM數量是否適用於您的版本的支援。
 
 
 
@@ -62,6 +62,6 @@ image:screenshot_svm.gif["螢幕擷取畫面：顯示 SVM 名稱欄位、以及�
 
 BlueXP不提供任何儲存VM災難恢復的設定或協調支援。您必須使用 System Manager 或 CLI 。
 
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["SVM 災難恢復準備快速指南"^]
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["SVM Disaster Recovery Express 指南"^]
+* https://["SVM 災難恢復準備快速指南"^]
+* https://["SVM Disaster Recovery Express 指南"^]
 

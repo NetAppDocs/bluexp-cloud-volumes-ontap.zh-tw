@@ -52,7 +52,7 @@ endif::gcp[]
 
 === NetApp 加密解決方案（ NVE 和 NAE ）
 
-支援Cloud Volumes ONTAP https://www.netapp.com/us/media/ds-3899.pdf["NetApp Volume Encryption（NVE）與NetApp Aggregate Encryption（NAE）"^]。NVE 和 NAE 是軟體型解決方案、可對磁碟區進行（ FIPS ） 140-2 相容的閒置資料加密。NVE 和 NAE 都使用 AES 256 位元加密。
+支援Cloud Volumes ONTAP https://["NetApp Volume Encryption（NVE）與NetApp Aggregate Encryption（NAE）"^]。NVE 和 NAE 是軟體型解決方案、可對磁碟區進行（ FIPS ） 140-2 相容的閒置資料加密。NVE 和 NAE 都使用 AES 256 位元加密。
 
 * NVE 一次加密閒置的資料一個磁碟區。每個資料磁碟區都有其專屬的加密金鑰。
 * Nae 是 NVE 的延伸、它會加密每個磁碟區的資料、而且磁碟區會在整個集合體之間共用金鑰。Nae 也允許對集合體中所有磁碟區的通用區塊進行重複資料刪除。
@@ -78,7 +78,7 @@ ifdef::aws[]
 
 === AWS 金鑰管理服務
 
-當您在 Cloud Volumes ONTAP AWS 中啟動一個支援功能系統時、可以使用啟用資料加密 http://docs.aws.amazon.com/kms/latest/developerguide/overview.html["AWS 金鑰管理服務（ KMS ）"^]。BlueXP會使用客戶主金鑰（CMK）要求資料金鑰。
+當您在 Cloud Volumes ONTAP AWS 中啟動一個支援功能系統時、可以使用啟用資料加密 http://["AWS 金鑰管理服務（ KMS ）"^]。BlueXP會使用客戶主金鑰（CMK）要求資料金鑰。
 
 
 TIP: 建立 Cloud Volumes ONTAP 一套系統後、您無法變更 AWS 資料加密方法。
@@ -93,7 +93,7 @@ ifdef::azure[]
 
 === Azure 儲存服務加密
 
-資料會使用在Cloud Volumes ONTAP Azure中的功能自動加密 https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure 儲存服務加密"^] 使用Microsoft管理的金鑰。
+資料會使用在Cloud Volumes ONTAP Azure中的功能自動加密 https://["Azure 儲存服務加密"^] 使用Microsoft管理的金鑰。
 
 您可以視需要使用自己的加密金鑰。 link:task-set-up-azure-encryption.html["瞭解如何在Cloud Volumes ONTAP Azure中設定使用客戶管理的金鑰"]。
 
@@ -105,7 +105,7 @@ ifdef::gcp[]
 
 === Google Cloud Platform 預設加密
 
-https://cloud.google.com/security/encryption-at-rest/["Google Cloud Platform 閒置資料加密"^] 預設為 Cloud Volumes ONTAP 啟用以供使用。無需設定。
+https://["Google Cloud Platform 閒置資料加密"^] 預設為 Cloud Volumes ONTAP 啟用以供使用。無需設定。
 
 雖然Google Cloud Storage會在資料寫入磁碟之前先加密資料、但您可以使用BlueXP API來建立Cloud Volumes ONTAP 使用_客戶管理的加密金鑰_的支援系統。這些是您使用 Cloud Key Management Service 在 GCP 中產生及管理的金鑰。 link:task-setting-up-gcp-encryption.html["深入瞭解"]。
 
@@ -119,9 +119,9 @@ endif::gcp[]
 
 名為 _VScann_ 的還原病毒掃描、結合同級最佳的協力廠商防毒軟體與各種功能、讓您靈活控制掃描檔案的時間與時間。 ONTAP ONTAP
 
-如需 VScan 支援的廠商、軟體及版本資訊、請參閱 http://mysupport.netapp.com/matrix["NetApp 互通性對照表"^]。
+如需 VScan 支援的廠商、軟體及版本資訊、請參閱 http://["NetApp 互通性對照表"^]。
 
-如需有關如何設定 ONTAP 及管理作業系統上防毒功能的資訊、請參閱 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-acg/home.html["《 9 防毒組態指南》 ONTAP"^]。
+如需有關如何設定 ONTAP 及管理作業系統上防毒功能的資訊、請參閱 http://["《 9 防毒組態指南》 ONTAP"^]。
 
 
 

@@ -34,7 +34,7 @@ summary: 可主動監控系統健全狀況、並傳送訊息給NetApp技術支�
 
 如果您定義了Cloud Volumes ONTAP 嚴格的傳出規則以供支援、那麼Cloud Volumes ONTAP 您也必須確保支援透過連接埠3128建立_Outbound _連線的安全性群組。
 
-在您確認可以存取傳出網際網路之後、您可以測試AutoSupport 以確保能夠傳送訊息。如需相關指示、請參閱 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["文件：設定檔ONTAP AutoSupport"^]。
+在您確認可以存取傳出網際網路之後、您可以測試AutoSupport 以確保能夠傳送訊息。如需相關指示、請參閱 https://["文件：設定檔ONTAP AutoSupport"^]。
 
 
 
@@ -109,7 +109,7 @@ link:task-connecting-to-otc.html["瞭解如何從SSH到Cloud Volumes ONTAP 功�
 . 如果狀態仍然失敗、請驗證Cloud Volumes ONTAP 透過連接埠3128驗證顯示的是在連接埠之間與連接器之間是否有連線。
 . 如果狀態ID在驗證是否有連線後仍失敗、請使用SSH連線至連接器。
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["深入瞭解連接至Linux VM for the Connector的相關資訊"^]
+https://["深入瞭解連接至Linux VM for the Connector的相關資訊"^]
 
 . 請前往「/opt/sapplication/netapp/cloudmanager/dock_occm/data/`」
 . 開啟Proxy組態檔「shquid.conf」

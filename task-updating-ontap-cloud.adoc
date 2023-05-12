@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-updating-ontap-cloud.html 
-keywords: update, updating, upgrading, upgrade, software, downgrade, downgrading, FTP, HTTP, mediator, local image, revert, reverting, downgrading 
+keywords: update, updating, upgrading, upgrade, software, downgrade, downgrading, FTP, HTTP, mediator, local image, revert, reverting, downgrading, cloud backup 
 summary: 從Cloud Volumes ONTAP BlueXP升級以取得最新的新功能與增強功能。升級軟體之前、您應該先準備 Cloud Volumes ONTAP 好用的不一樣系統。 
 ---
 = 升級Cloud Volumes ONTAP 版軟體
@@ -172,7 +172,7 @@ BlueXP也會在Cloud Volumes ONTAP 更新過程中視需要更新中介執行個
 
 自動恢復必須在 Cloud Volumes ONTAP 一個「無法恢復的 HA 配對」上啟用（這是預設設定）。如果沒有、則作業將會失敗。
 
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["供應說明文件：設定自動恢復的命令 ONTAP"^]
+http://["供應說明文件：設定自動恢復的命令 ONTAP"^]
 
 
 
@@ -181,7 +181,7 @@ http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D
 如果 Cloud Volumes ONTAP 某個不活躍的 SnapMirror 關係、最好在更新 Cloud Volumes ONTAP 該軟件之前暫停傳輸。暫停傳輸可防止 SnapMirror 故障。您必須暫停來自目的地系統的傳輸。
 
 
-NOTE: 即使Cloud Backup使用SnapMirror實作來建立備份檔案（稱為SnapMirror Cloud）、升級系統時也不需要暫停備份。
+NOTE: 雖然 BlueXP 備份與還原使用 SnapMirror 實作來建立備份檔案（稱為 SnapMirror Cloud ）、但系統升級時不需要暫停備份。
 
 .關於這項工作
 這些步驟說明如何使用系統管理程式來執行 9.3 版及更新版本。
@@ -279,7 +279,7 @@ NOTE: 目前、您只能透過 BlueXP 使用者介面升級至最新的可用 ON
 前往NetApp知識庫檢視逐步指示：
 
 +
-https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/How_to_configure_Cloud_Manager_as_an_HTTPS_server_to_host_upgrade_images["NetApp KB：如何將BlueXP設定為HTTPS伺服器、以裝載升級映像"^]
+https://["NetApp KB：如何將BlueXP設定為HTTPS伺服器、以裝載升級映像"^]
 
 
 
@@ -293,7 +293,7 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/Ho
 
 NOTE: 預設情況下、預先定義Cloud Volumes ONTAP 的「支援HTTP連線」安全群組會允許傳出HTTP連線。
 
-. 從取得軟體映像 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NetApp 支援網站"^]。
+. 從取得軟體映像 https://["NetApp 支援網站"^]。
 . 將軟體映像複製到Connector上的目錄、或是將從其中提供檔案的HTTP伺服器上。
 +
 有兩種路徑可供使用。正確的路徑取決於您的Connector版本。
@@ -342,6 +342,6 @@ _MaxDownloadSseds_的值可以是1或任何大於1的整數。如果值為1、�
 
 請注意、32為範例值。您應該使用的值取決於NAT組態和可同時使用的工作階段數目。
 
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["深入瞭解/occm/config API呼叫"^]。
+https://["深入瞭解/occm/config API呼叫"^]。
 
 endif::gcp[]

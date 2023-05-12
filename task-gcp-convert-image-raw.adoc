@@ -14,7 +14,7 @@ summary: 透過Google Cloud命令列、將匯出的映像轉換成disk.RAW格式
 
 
 [role="lead"]
-用於部署新執行個體、升級或用於現有映像的映像、將透過與用戶端共用 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["The》（NSS）NetApp 支援網站"^]。已簽署的摘要及憑證將可透過NSS入口網站下載。請確定您下載的摘要和憑證是與NetApp支援部門共用的映像相對應的適當版本。例如、9.13.0映像會有9.13.0簽署的摘要和證書、可在NSS上取得。
+用於部署新執行個體、升級或用於現有映像的映像、將透過與用戶端共用 https://["The》（NSS）NetApp 支援網站"^]。已簽署的摘要及憑證將可透過NSS入口網站下載。請確定您下載的摘要和憑證是與NetApp支援部門共用的映像相對應的適當版本。例如、9.13.0映像會有9.13.0簽署的摘要和證書、可在NSS上取得。
 
 
 
@@ -37,7 +37,7 @@ summary: 透過Google Cloud命令列、將匯出的映像轉換成disk.RAW格式
 
 == 使用Google Cloud命令列匯出Google Cloud映像
 
-將映像匯出至雲端儲存設備的首選方法是使用 https://cloud.google.com/sdk/gcloud/reference/compute/images/export["gCloud運算映像匯出命令"^]。此命令會取得所提供的映像、並將其轉換成磁碟.原始 檔案、並取得tar和gzipped。產生的檔案會儲存在目的地URL、然後下載以供驗證。
+將映像匯出至雲端儲存設備的首選方法是使用 https://["gCloud運算映像匯出命令"^]。此命令會取得所提供的映像、並將其轉換成磁碟.原始 檔案、並取得tar和gzipped。產生的檔案會儲存在目的地URL、然後下載以供驗證。
 
 使用者/帳戶必須擁有存取及寫入所需儲存區、匯出映像及雲端建置（Google用於匯出映像）的權限、才能執行此作業。
 
@@ -146,4 +146,4 @@ total 1565036
 $ tar -xf CVO_GCP_Signed_Digest.tar.gz
 ----
 
-NOTE: 請參閱 https://cloud.google.com/compute/docs/images/export-image#console["匯出影像的Google Cloud文件"^] 如需如何透過Google Cloud匯出影像的詳細資訊、
+NOTE: 請參閱 https://["匯出影像的Google Cloud文件"^] 如需如何透過Google Cloud匯出影像的詳細資訊、

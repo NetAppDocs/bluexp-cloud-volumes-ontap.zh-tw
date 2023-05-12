@@ -19,7 +19,7 @@ summary: 在Cloud Volumes ONTAP Microsoft Azure中啟動時、您可以從多種
 .關於這項工作
 * 自動恢復必須在 Cloud Volumes ONTAP 一個「無法恢復的 HA 配對」上啟用（這是預設設定）。如果沒有、則作業將會失敗。
 +
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["供應說明文件：設定自動恢復的命令 ONTAP"^]
+http://["供應說明文件：設定自動恢復的命令 ONTAP"^]
 
 * 變更VM類型可能會影響Microsoft Azure服務費用。
 * 此作業會重新啟動 Cloud Volumes ONTAP 。

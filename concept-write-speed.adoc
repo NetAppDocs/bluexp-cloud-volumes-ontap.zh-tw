@@ -72,7 +72,7 @@ ifdef::aws[]
 
 從9.8版開始、Cloud Volumes ONTAP 當使用幾乎所有支援的EC2執行個體類型（m5.xlarge和r5.xlarge除外）時、支援HA配對的高速寫入速度。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["深入瞭解Cloud Volumes ONTAP 支援的Amazon EC2執行個體"^]。
+https://["深入瞭解Cloud Volumes ONTAP 支援的Amazon EC2執行個體"^]。
 
 endif::aws[]
 
@@ -84,7 +84,7 @@ ifdef::azure[]
 
 如果您使用單一節點系統、 Cloud Volumes ONTAP 則支援所有 VM 類型的高速寫入速度。
 
-如果您使用HA配對、Cloud Volumes ONTAP 從9.8版開始、支援多種VM類型的高速寫入速度。前往 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["發行說明 Cloud Volumes ONTAP"^] 可查看支持高速寫入速度的VM類型。
+如果您使用HA配對、Cloud Volumes ONTAP 從9.8版開始、支援多種VM類型的高速寫入速度。前往 https://["發行說明 Cloud Volumes ONTAP"^] 可查看支持高速寫入速度的VM類型。
 
 endif::azure[]
 
@@ -96,9 +96,9 @@ ifdef::gcp[]
 
 如果您使用單一節點系統、 Cloud Volumes ONTAP 則支援所有機器類型的高速寫入速度。
 
-如果您使用HA配對、Cloud Volumes ONTAP 從9.13.0版開始、支援多種VM類型的高速寫入速度。前往 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html#supported-configurations-by-license["發行說明 Cloud Volumes ONTAP"^] 可查看支持高速寫入速度的VM類型。
+如果您使用HA配對、Cloud Volumes ONTAP 從9.13.0版開始、支援多種VM類型的高速寫入速度。前往 https://["發行說明 Cloud Volumes ONTAP"^] 可查看支持高速寫入速度的VM類型。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["深入瞭解Cloud Volumes ONTAP 支援的Google Cloud機器類型"^]。
+https://["深入瞭解Cloud Volumes ONTAP 支援的Google Cloud機器類型"^]。
 
 endif::gcp[]
 
@@ -142,7 +142,7 @@ endif::gcp[]
 停用 NVFIL 選項:: 「 volvol modify -volume <vol-name> -nvail off' 」
 
 
-發生資料遺失時、啟用 NVFIL 的 NFS 或 iSCSI 磁碟區應停止提供資料（不影響無狀態傳輸協定的 CIFS ）。如需詳細資料、請參閱 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-mgmt-dr/GUID-40D04B8A-01F7-4E87-8161-E30BD80F5B7F.html["NVFIL 如何影響 NFS 磁碟區或 LUN 的存取"^]。
+發生資料遺失時、啟用 NVFIL 的 NFS 或 iSCSI 磁碟區應停止提供資料（不影響無狀態傳輸協定的 CIFS ）。如需詳細資料、請參閱 https://["NVFIL 如何影響 NFS 磁碟區或 LUN 的存取"^]。
 
 以檢查 NVFIL 狀態:: 「 vol show -功能 變數 in -nvfaile-state 」
 

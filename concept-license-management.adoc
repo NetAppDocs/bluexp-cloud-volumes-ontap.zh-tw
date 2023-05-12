@@ -33,7 +33,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage
 
 單一節點系統或 HA 配對可購買的授權數量不受限制。
 
-請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制 link:concept-data-tiering.html["將非作用中資料分層至物件儲存設備"]。如需磁碟限制的相關資訊、請參閱 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["《發行說明》中的儲存限制 Cloud Volumes ONTAP"^]。
+請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制 link:concept-data-tiering.html["將非作用中資料分層至物件儲存設備"]。如需磁碟限制的相關資訊、請參閱 https://["《發行說明》中的儲存限制 Cloud Volumes ONTAP"^]。
 
 
 
@@ -41,7 +41,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage
 
 當您建立節點型BYOL系統時、BlueXP會提示您輸入授權的序號和NetApp 支援網站 您的效益帳戶。BlueXP使用帳戶從NetApp下載授權檔案、並將其安裝在Cloud Volumes ONTAP 整個作業系統上。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["瞭解如何在NetApp 支援網站 BlueXP中新增功能不一的帳戶"^]。
+https://["瞭解如何在NetApp 支援網站 BlueXP中新增功能不一的帳戶"^]。
 
 如果BlueXP無法透過安全的網際網路連線存取授權檔案、您可以這麼做 link:task-manage-node-licenses.html["自行取得檔案、然後手動將檔案上傳至BlueXP"]。
 

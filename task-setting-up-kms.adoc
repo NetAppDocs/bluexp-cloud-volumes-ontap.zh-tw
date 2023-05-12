@@ -22,14 +22,14 @@ summary: 如果您想搭配 Cloud Volumes ONTAP 使用 Amazon 加密搭配使用
 CMK 可以是 AWS 託管的 CMK 、也可以是客戶託管的 CMK 。它可以與BlueXP和Cloud Volumes ONTAP Sfor相同的AWS帳戶、也可以位於不同的AWS帳戶中。
 
 +
-https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master_keys["AWS 文件：客戶主要金鑰（ CMK ）"^]
+https://["AWS 文件：客戶主要金鑰（ CMK ）"^]
 
 . 新增IAM角色、將權限提供給BlueXP做為_key使用者_、以修改每個CMK的金鑰原則。
 +
 將IAM角色新增為主要使用者後、即可讓BlueXP擁有權限、可搭配Cloud Volumes ONTAP 使用CMK搭配使用。
 
 +
-https://docs.aws.amazon.com/kms/latest/developerguide/editing-keys.html["AWS 文件：編輯金鑰"^]
+https://["AWS 文件：編輯金鑰"^]
 
 . 如果 CMK 位於不同的 AWS 帳戶、請完成下列步驟：
 +
@@ -96,7 +96,7 @@ image:screenshot_cmk_add_accounts_dialog.gif["此螢幕快照顯示 AWS KMS 主�
 }
 ----
 +
-如需此程序的其他詳細資料、請參閱 https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html["AWS文件：允許其他帳戶的使用者使用KMS金鑰"^]。
+如需此程序的其他詳細資料、請參閱 https://["AWS文件：允許其他帳戶的使用者使用KMS金鑰"^]。
 
 
 
@@ -108,6 +108,6 @@ image:screenshot_cmk_add_accounts_dialog.gif["此螢幕快照顯示 AWS KMS 主�
 您需要在部署Cloud Volumes ONTAP 完時執行此步驟_after、因為IAM角色是在您建立工作環境時建立的。（當然、您可以選擇使用現有Cloud Volumes ONTAP 的ISIAM角色、因此可以在之前執行此步驟。）
 
 +
-https://docs.aws.amazon.com/kms/latest/developerguide/editing-keys.html["AWS 文件：編輯金鑰"^]
+https://["AWS 文件：編輯金鑰"^]
 
 

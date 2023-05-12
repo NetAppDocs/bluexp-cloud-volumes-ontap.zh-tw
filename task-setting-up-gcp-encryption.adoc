@@ -19,7 +19,7 @@ summary: 雖然Google Cloud Storage會在資料寫入磁碟之前先加密資料
 .步驟
 . 確認BlueXP Connector服務帳戶在專案層級（儲存金鑰的專案）擁有正確的權限。
 +
-權限會在中提供 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["連接器服務帳戶權限依預設"^]、但如果您使用雲端金鑰管理服務的替代專案、則可能無法套用。
+權限會在中提供 https://["連接器服務帳戶權限依預設"^]、但如果您使用雲端金鑰管理服務的替代專案、則可能無法套用。
 
 +
 權限如下：
@@ -32,22 +32,22 @@ summary: 雖然Google Cloud Storage會在資料寫入磁碟之前先加密資料
 - cloudkms.cryptoKeys.list
 - cloudkms.keyRings.list
 ----
-. 確認的服務帳戶 https://cloud.google.com/iam/docs/service-agents["Google Compute Engine服務代理程式"^] 具有金鑰的Cloud KMS Encrypter/Dec供 解密權限。
+. 確認的服務帳戶 https://["Google Compute Engine服務代理程式"^] 具有金鑰的Cloud KMS Encrypter/Dec供 解密權限。
 +
 服務帳戶名稱使用下列格式：「service-[service_project _number]@ compute-system.iam.gserviceaccount.com」。
 
 +
-https://cloud.google.com/kms/docs/iam#granting_roles_on_a_resource["Google Cloud文件：使用IAM搭配Cloud KMS使用-授予資源角色"]
+https://["Google Cloud文件：使用IAM搭配Cloud KMS使用-授予資源角色"]
 
 . 若要取得金鑰的「ID」、請叫用「/GCP / VSA /中繼資料/ GCP加密金鑰」API呼叫的「Get」命令、或在GCP主控台的金鑰上選擇「Copy Resource Name」（複製資源名稱）。
 . 如果使用客戶管理的加密金鑰和分層資料來物件儲存設備、則BlueXP會嘗試使用相同的金鑰來加密持續磁碟。但您必須先啟用Google Cloud Storage儲存桶、才能使用這些金鑰：
 +
-.. 請依照下列步驟尋找Google Cloud Storage服務代理程式 https://cloud.google.com/storage/docs/getting-service-agent["Google Cloud文件：取得Cloud Storage服務代理程式"^]。
+.. 請依照下列步驟尋找Google Cloud Storage服務代理程式 https://["Google Cloud文件：取得Cloud Storage服務代理程式"^]。
 .. 瀏覽至加密金鑰、並指派具有Cloud KMS Encrypter/Decypter權限的Google Cloud Storage服務代理程式。
 
 
 +
-如需詳細資訊、請參閱 https://cloud.google.com/storage/docs/encryption/using-customer-managed-keys["Google Cloud文件：使用客戶管理的加密金鑰"^]
+如需詳細資訊、請參閱 https://["Google Cloud文件：使用客戶管理的加密金鑰"^]
 
 . 建立工作環境時、請將「 GcpEncryption 」參數搭配 API 要求使用。
 +
@@ -62,4 +62,4 @@ https://cloud.google.com/kms/docs/iam#granting_roles_on_a_resource["Google Cloud
 ----
 
 
-請參閱 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["藍圖XP自動化文件"^] 如需使用「 GcpEncryption 」參數的詳細資訊、
+請參閱 https://["藍圖XP自動化文件"^] 如需使用「 GcpEncryption 」參數的詳細資訊、

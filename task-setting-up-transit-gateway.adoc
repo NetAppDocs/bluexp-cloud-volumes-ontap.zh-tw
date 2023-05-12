@@ -29,7 +29,7 @@ image:diagram_transit_gateway.png["此圖表顯示一部 VPC 中的 HA 組態、
 下列步驟說明如何設定類似的組態。
 
 .步驟
-. https://docs.aws.amazon.com/vpc/latest/tgw/tgw-getting-started.html["建立傳輸閘道、並將 VPC 附加至閘道"^]。
+. https://["建立傳輸閘道、並將 VPC 附加至閘道"^]。
 . 將VPC與傳輸閘道路由表建立關聯。
 +
 .. 在* VPC*服務中、按一下* Transit Gateway Route Tables *。

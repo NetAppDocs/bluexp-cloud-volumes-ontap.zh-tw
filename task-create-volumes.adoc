@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-create-volumes.html 
-keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates 
+keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates, cloud backup 
 summary: 如果您在啟動初始Cloud Volumes ONTAP 的支援功能後需要更多儲存設備、您可以從FlexVol BlueXP建立新的支援NFS、CIFS或iSCSI的支援功能。 
 ---
 = 建立FlexVol 功能區
@@ -87,7 +87,7 @@ endif::aws[]
 | Volume大小 | 您可以輸入的最大大小、主要取決於您是否啟用精簡配置、這可讓您建立比目前可用實體儲存容量更大的磁碟區。 
 
 
-| 標記 | 您新增至Volume的標記會與相關聯 https://docs.netapp.com/us-en/cloud-manager-app-template/task-using-tags.html["應用程式範本服務"^]可協助您組織及簡化資源管理。 
+| 標記 | 您新增至Volume的標記會與相關聯 https://["應用程式範本服務"^]可協助您組織及簡化資源管理。 
 
 
 | 儲存 VM （ SVM ） | 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可為您的用戶端提供儲存與資料服務。您可能知道這是 SVM 或 Vserver 。根據預設、系統會設定一個儲存 VM 、但部分組態會支援額外的儲存 VM 。 Cloud Volumes ONTAP您可以為新的 Volume 指定儲存 VM 。 
@@ -145,20 +145,20 @@ endif::aws[]
 
 ifdef::azure[]
 
-*** 若要將Azure AD網域服務設定為Cloud Volumes ONTAP AD伺服器以供使用、請在此欄位中輸入* OID=AADDC computers*或* OID=AADDC使用者*。https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Azure 說明文件：在 Azure AD 網域服務託管網域中建立組織單位（ OU ）"^]
+*** 若要將Azure AD網域服務設定為Cloud Volumes ONTAP AD伺服器以供使用、請在此欄位中輸入* OID=AADDC computers*或* OID=AADDC使用者*。https://["Azure 說明文件：在 Azure AD 網域服務託管網域中建立組織單位（ OU ）"^]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-*** 若要將Google託管Microsoft AD設定為Cloud Volumes ONTAP AD伺服器以供使用、請在此欄位中輸入* OU=computers,OU=Cloud *。https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google Cloud文件：Google託管Microsoft AD的組織單位"^]
+*** 若要將Google託管Microsoft AD設定為Cloud Volumes ONTAP AD伺服器以供使用、請在此欄位中輸入* OU=computers,OU=Cloud *。https://["Google Cloud文件：Google託管Microsoft AD的組織單位"^]
 
 
 endif::gcp[]
 
 DNS 網域:: 適用於整個儲存虛擬 Cloud Volumes ONTAP 機器（ SVM ）的 DNS 網域。在大多數情況下、網域與 AD 網域相同。
-NTP 伺服器:: 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["藍圖XP自動化文件"^] 以取得詳細資料。
+NTP 伺服器:: 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱 https://["藍圖XP自動化文件"^] 以取得詳細資料。
 +
 --
 請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。
@@ -252,7 +252,7 @@ image:screenshot_define_cvo_vol_from_template.png["顯示空白範本的螢幕�
 . 在 _context_ 下、工作環境會填入您開始使用的工作環境名稱。選取要建立磁碟區的 * 儲存 VM* 。
 . 新增所有非模板硬編碼的參數值。請參閱 <<create a volume,建立Volume>> 以取得完成 Cloud Volumes ONTAP Volume 部署所需的所有參數詳細資料。
 . 按一下 * 套用 * 將設定的參數儲存至選取的動作。
-. 如果您不需要定義其他動作（例如、設定 Cloud Backup ）、請按一下 * 儲存範本 * 。
+. 如果沒有其他需要定義的動作（例如、設定 BlueXP 備份與還原）、請按一下 * 儲存範本 * 。
 +
 如果還有其他動作、請按一下左窗格中的動作、以顯示您需要完成的參數。
 
@@ -270,7 +270,7 @@ image:screenshot_template_select_next_action.png["螢幕快照顯示如何選取
 
 image:screenshot_template_creating_resource_cvo.png["快照顯示從範本建立新磁碟區的進度。"]
 
-此外、如果範本中實作任何次要動作、例如在磁碟區上啟用Cloud Backup、也會執行該動作。
+此外、如果範本中實作任何次要動作、例如在磁碟區上啟用 BlueXP 備份與還原、則也會執行該動作。
 
 
 

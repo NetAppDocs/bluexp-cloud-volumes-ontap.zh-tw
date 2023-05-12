@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-limitations.html 
-keywords: limitations, flexgroup, ontap s3, s3 configuration, svm dr, svm disaster recovery, disaster recovery, storage vm dr 
+keywords: limitations, flexgroup, ontap s3, s3 configuration, svm dr, svm disaster recovery, disaster recovery, storage vm dr, BlueXP, cloud manager 
 summary: 已知限制指出本產品版本不支援的平台、裝置或功能、或是無法與產品正確互通的平台、裝置或功能。請仔細檢閱這些限制。 
 ---
 = 已知限制
@@ -16,7 +16,7 @@ summary: 已知限制指出本產品版本不支援的平台、裝置或功能�
 [role="lead"]
 已知限制指出本產品版本不支援的平台、裝置或功能、或是無法與產品正確互通的平台、裝置或功能。請仔細檢閱這些限制。
 
-這些限制僅適用於Cloud Volumes ONTAP BlueXP（前身為Cloud Manager）的內部資料管理。若要檢視Cloud Volumes ONTAP 有關此功能的限制、 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limitations.html["前往Cloud Volumes ONTAP 《發行說明》"^]
+這些限制僅適用於 BlueXP 中的 Cloud Volumes ONTAP 管理。若要檢視Cloud Volumes ONTAP 有關此功能的限制、 https://["前往Cloud Volumes ONTAP 《發行說明》"^]
 
 
 
@@ -31,7 +31,7 @@ NOTE: 在 BlueXP 中建立 FlexGroup 磁碟區的能力已計畫在未來的版�
 
 == BlueXP不支援Cloud Volumes ONTAP S3搭配使用
 
-雖然在某些雲端供應商中、支援S3作為橫向擴充儲存設備的選項、但BlueXP並未針對此功能提供任何管理功能。Cloud Volumes ONTAP使用CLI是設定S3用戶端從Cloud Volumes ONTAP 功能支援的最佳實務做法。如需詳細資訊、請參閱 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html["S3組態電源指南"^]。
+雖然在某些雲端供應商中、支援S3作為橫向擴充儲存設備的選項、但BlueXP並未針對此功能提供任何管理功能。Cloud Volumes ONTAP使用CLI是設定S3用戶端從Cloud Volumes ONTAP 功能支援的最佳實務做法。如需詳細資訊、請參閱 http://["S3組態電源指南"^]。
 
 link:concept-client-protocols.html["深入瞭Cloud Volumes ONTAP 解支援S3和其他用戶端傳輸協定的功能"]。
 
@@ -41,6 +41,6 @@ link:concept-client-protocols.html["深入瞭Cloud Volumes ONTAP 解支援S3和�
 
 BlueXP不提供任何儲存VM災難恢復的設定或協調支援。您必須使用 System Manager 或 CLI 。
 
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["SVM 災難恢復準備快速指南"^]
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["SVM Disaster Recovery Express 指南"^]
+* https://["SVM 災難恢復準備快速指南"^]
+* https://["SVM Disaster Recovery Express 指南"^]
 

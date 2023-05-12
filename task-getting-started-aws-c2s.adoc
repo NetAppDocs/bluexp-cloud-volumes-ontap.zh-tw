@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-getting-started-aws-c2s.html 
-keywords: commercial cloud services, c2s, secret region, aws secret region, cloud manager 
-summary: 與標準AWS區域類似、您可以在AWS商業雲端服務（C2S）環境中使用BlueXP（前身為Cloud Manager）來部署Cloud Volumes ONTAP 支援功能、為您的雲端儲存設備提供企業級功能。AWS C2S是美國專屬的封閉區域智慧社群；本頁的說明僅適用於AWS C2S區域使用者。 
+keywords: commercial cloud services, c2s, secret region, aws secret region, cloud manager, BlueXP 
+summary: 與標準 AWS 區域類似、您可以在 AWS 商業雲端服務（ C2S ）環境中使用 BlueXP 來部署 Cloud Volumes ONTAP 、為您的雲端儲存設備提供企業級功能。AWS C2S是美國專屬的封閉區域智慧社群；本頁的說明僅適用於AWS C2S區域使用者。 
 ---
 = 開始使用Cloud Volumes ONTAP AWS C2S環境中的功能
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 與標準AWS區域類似、您可以在AWS商業雲端服務（C2S）�
 
 
 [role="lead"]
-與標準AWS區域類似、您可以在中使用Cloud Manager https://aws.amazon.com/federal/us-intelligence-community/["AWS商業雲端服務（C2S）"] 部署Cloud Volumes ONTAP 的環境、為您的雲端儲存設備提供企業級功能。AWS C2S是美國專屬的封閉區域智慧社群；本頁的說明僅適用於AWS C2S區域使用者。
+與標準AWS區域類似、您可以在中使用Cloud Manager https://["AWS商業雲端服務（C2S）"] 部署Cloud Volumes ONTAP 的環境、為您的雲端儲存設備提供企業級功能。AWS C2S是美國專屬的封閉區域智慧社群；本頁的說明僅適用於AWS C2S區域使用者。
 
 
 
@@ -366,7 +366,7 @@ CMK 可以是 AWS 託管的 CMK 、也可以是客戶託管的 CMK 。
 
 . 從連線至Connector執行個體的主機設定Cloud Manager：
 +
-.. 開啟網頁瀏覽器並輸入下列 URL ： http://ipaddress[]
+.. 開啟網頁瀏覽器並輸入下列 URL ： http://[]
 .. 指定用於連線至AWS服務的Proxy伺服器。
 .. 上傳您在步驟1中取得的憑證。
 .. 完成設定精靈中的步驟以設定Cloud Manager。

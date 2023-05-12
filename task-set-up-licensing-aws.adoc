@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-set-up-licensing-aws.html 
-keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go 
+keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go, keystone flex, keystone, digital wallet 
 summary: 在決定Cloud Volumes ONTAP 要使用哪個授權選項來執行功能時、在部署新系統時、您必須先執行幾個步驟、才能選擇該授權選項。 
 ---
 = 在Cloud Volumes ONTAP AWS中設定適用於此功能的授權
@@ -67,13 +67,13 @@ link:concept-licensing.html["深入瞭解容量型授權"]。
 事先向NetApp購買授權（BYOL）、即可在Cloud Volumes ONTAP 任何雲端供應商部署支援系統。
 
 .步驟
-. https://cloud.netapp.com/contact-cds["請聯絡NetApp銷售人員以取得授權"^]
-. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["將NetApp 支援網站 您的不更新帳戶新增至藍圖XP"^]
+. https://["請聯絡NetApp銷售人員以取得授權"^]
+. https://["將NetApp 支援網站 您的不更新帳戶新增至藍圖XP"^]
 +
-BlueXP會自動查詢NetApp的授權服務、以取得NetApp 支援網站 與您的還原帳戶相關之授權的詳細資料。如果沒有錯誤、BlueXP會自動將授權新增至Digital Wallet。
+BlueXP會自動查詢NetApp的授權服務、以取得NetApp 支援網站 與您的還原帳戶相關之授權的詳細資料。如果沒有錯誤、 BlueXP 會自動將授權新增至數位錢包。
 
 +
-您的授權必須先從Digital Wallet取得、才能搭配Cloud Volumes ONTAP 使用。如有需要、您可以 link:task-manage-capacity-licenses.html#add-purchased-licenses-to-your-account["手動將授權新增至Digital Wallet"]。
+您必須先從 BlueXP 數位錢包取得授權、才能搭配 Cloud Volumes ONTAP 使用。如有需要、您可以 link:task-manage-capacity-licenses.html#add-purchased-licenses-to-your-account["手動將授權新增至 BlueXP 數位錢包"]。
 
 . 在「畫版」頁面上、按一下「*新增工作環境*」、然後依照BlueXP中的步驟進行。
 +
@@ -121,7 +121,7 @@ image:screenshot-professional.png["建立Cloud Volumes ONTAP 功能不正常的�
 link:task-deploying-otc-aws.html["請參閱逐步指示、以在Cloud Volumes ONTAP AWS中啟動功能"]。
 
 
-TIP: 您可以從「設定」>「認證」頁面管理與AWS帳戶相關的AWS Marketplace訂閱。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["瞭解如何管理AWS帳戶和訂閱"^]
+TIP: 您可以從「設定」>「認證」頁面管理與AWS帳戶相關的AWS Marketplace訂閱。 https://["瞭解如何管理AWS帳戶和訂閱"^]
 
 
 
@@ -150,19 +150,19 @@ link:task-deploying-otc-aws.html["請參閱逐步指示、以在Cloud Volumes ON
 
 
 
-== Keystone Flex 訂閱
+== Keystone訂閱
 
-Keystone Flex訂閱是一種隨需付費的訂閱型服務。 link:concept-licensing.html#keystone-flex-subscription["深入瞭解Keystone Flex訂閱"]。
+Keystone 訂閱是一項隨成長付費訂閱服務。 link:concept-licensing.html#keystone-subscription["深入瞭解 NetApp Keystone 訂閱"^]。
 
 .步驟
-. 如果您尚未訂閱、 https://www.netapp.com/forms/keystone-sales-contact/["請聯絡NetApp"^]
-. mailto：ng-keystone-success@netapp.com [聯絡NetApp]以一或多個Keystone Flex訂閱授權您的BlueXP使用者帳戶。
+. 如果您尚未訂閱、 https://["請聯絡NetApp"^]
+. mailto ： ng-keystone-success@netapp.com [ 聯絡 NetApp] 以使用一或多個 Keystone 訂閱來授權您的 BlueXP 使用者帳戶。
 . NetApp授權您的帳戶之後、 link:task-manage-keystone.html#link-a-subscription["連結您的訂閱內容以供Cloud Volumes ONTAP 搭配使用"]。
 . 在「畫版」頁面上、按一下「*新增工作環境*」、然後依照BlueXP中的步驟進行。
 +
-.. 當系統提示您選擇充電方法時、請選取Keystone Flex訂閱充電方法。
+.. 當系統提示您選擇充電方法時、請選取 Keystone Subscription 充電方法。
 +
-image:screenshot-keystone.png["Keystone Flex訂購選項在建立Cloud Volumes ONTAP 運作環境時的快照。"]
+image:screenshot-keystone.png["建立 Cloud Volumes ONTAP 工作環境時 Keystone Subscription 選項的螢幕擷取畫面。"]
 
 
 

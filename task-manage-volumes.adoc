@@ -53,7 +53,7 @@ image:screenshot_manage_vol_button.png["「 Volume 」索引標籤下的「 Mana
 
 此程序會建立 FlexClone Volume 。FlexClone Volume 是可寫入的時間點複本、空間效率極高、因為它會使用少量的空間作為中繼資料、然後只會在資料變更或新增時耗用額外空間。
 
-若要深入瞭解 FlexClone Volume 、請參閱 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html["《 9 邏輯儲存管理指南》 ONTAP"^]。
+若要深入瞭解 FlexClone Volume 、請參閱 http://["《 9 邏輯儲存管理指南》 ONTAP"^]。
 
 
 
@@ -133,7 +133,7 @@ NOTE: BlueXP會將磁碟區移至現有的Aggregate、該集合體使用所選�
 
 根據預設、當磁碟區空間不足時、它會自動增加至最大大小。預設值為1、000、表示磁碟區的大小可增加至11倍。此值可在連接器的設定中設定。
 
-如果您需要調整磁碟區大小、您可以透過調整磁碟區大小 link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["系統管理程式ONTAP"^]。調整磁碟區大小時、請務必將系統的容量限制列入考量。前往 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["發行說明 Cloud Volumes ONTAP"^] 以取得更多詳細資料。
+如果您需要調整磁碟區大小、您可以透過調整磁碟區大小 link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["系統管理程式ONTAP"^]。調整磁碟區大小時、請務必將系統的容量限制列入考量。前往 https://["發行說明 Cloud Volumes ONTAP"^] 以取得更多詳細資料。
 
 
 

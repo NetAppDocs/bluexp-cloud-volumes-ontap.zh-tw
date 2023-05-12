@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-cvo-aiq-digital-advisor.html 
-keywords: concepts, active iq digital advisor, cloud volumes ontap 
+keywords: concepts, active iq digital advisor, cloud volumes ontap, cloud manager, BlueXP 
 summary: 支援整合到BlueXP UI中、讓您在單一窗口中、將整個叢集的作業、安全性和效能最佳化。Active IQ Digital Advisor ONTAP 
 ---
 = 使用Cloud Volumes ONTAP 「e數位顧問」最佳化您的不實系統Active IQ
@@ -14,7 +14,7 @@ summary: 支援整合到BlueXP UI中、讓您在單一窗口中、將整個叢�
 
 
 [role="lead"]
-https://www.netapp.com/services/support/active-iq/["《數位顧問》 Active IQ"] 整合至BlueXP（前身為Cloud Manager）UI、讓Cloud Volumes ONTAP 您在單一窗口中最佳化您的VMware系統的作業、安全性和效能。
+https://["《數位顧問》 Active IQ"] 整合至 BlueXP UI 、讓您在單一窗口中最佳化 Cloud Volumes ONTAP 系統的作業、安全性和效能。
 
 
 
@@ -48,18 +48,18 @@ https://www.netapp.com/services/support/active-iq/["《數位顧問》 Active IQ
 
 在BlueXP中、按一下* Active IQ 《*》服務。
 
-* 如果您已在BlueXP中註冊現有的NSS帳戶、Active IQ Digital Advisor 則會像您在的獨立實作中看到的一樣、顯示此UI https://activeiq.netapp.com/[]。
+* 如果您已在BlueXP中註冊現有的NSS帳戶、Active IQ Digital Advisor 則會像您在的獨立實作中看到的一樣、顯示此UI https://[]。
 +
 image:screenshot_aiq_digital_advisor.png["BlueXP中的功能不一的使用者介面快照Active IQ Digital Advisor 。"]
 
-* 如果您尚未在BlueXP中註冊某個nssa帳戶、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["立即註冊一個nssnss"^] ，之後隨即出現 Active IQ Digital Advisor UI。
+* 如果您尚未在BlueXP中註冊某個nssa帳戶、 https://["立即註冊一個nssnss"^] ，之後隨即出現 Active IQ Digital Advisor UI。
 
 
 
-NOTE: 截至2021年12月3日、NetApp已改用新方法來登錄新的NSS帳戶 認證資料。 https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["如需詳細資料、請參閱此常見問題集"]。如果您的NSS帳戶使用舊的一組認證資料、您將需要將帳戶更新為新的認證資料。
+NOTE: 截至2021年12月3日、NetApp已改用新方法來登錄新的NSS帳戶 認證資料。 https://["如需詳細資料、請參閱此常見問題集"]。如果您的NSS帳戶使用舊的一組認證資料、您將需要將帳戶更新為新的認證資料。
 
 
 
 == 下一步
 
-請參閱 https://docs.netapp.com/us-en/active-iq/index.html["《數位顧問》文件 Active IQ"] 以取得詳細資料。
+請參閱 https://["《數位顧問》文件 Active IQ"] 以取得詳細資料。
