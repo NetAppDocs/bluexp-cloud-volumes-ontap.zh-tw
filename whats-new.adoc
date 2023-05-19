@@ -822,7 +822,7 @@ Keystone Subscription 是一項以隨成長付費訂閱為基礎的服務、可�
 您可以從 BlueXP 部署的所有新版 Cloud Volumes ONTAP 都支援 Keystone 訂閱。
 
 * https://["深入瞭解 NetApp Keystone 訂閱"^]。
-* link:task-manage-keystone.html["瞭解如何開始使用 BlueXP 中的 Keystone 訂閱"]。
+* link:task-manage-keystone.html["瞭解如何開始使用 BlueXP 中的 Keystone 訂閱"^]。
 
 
 

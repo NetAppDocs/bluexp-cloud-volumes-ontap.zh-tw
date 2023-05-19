@@ -52,9 +52,6 @@ BlueXP 提供三種升級 Cloud Volumes ONTAP 的方法：
 | 9.12.1% | 9.13.0 
 
 
-| 9.12.1% | 9.13.0 
-
-
 | 9.12.0 | 9.12.1% 
 
 
@@ -303,15 +300,14 @@ NOTE: 預設情況下、預先定義Cloud Volumes ONTAP 的「支援HTTP連線�
 ** /`op/application/NetApp/cloudmanager/ontONTAP /映像/`
 
 
-. 在BlueXP的工作環境中、按一下功能表圖示、然後按一下*進階>更新Cloud Volumes ONTAP *。
-. 在「更新軟體」頁面上輸入URL、然後按一下「*變更映像*」。
+. 在 BlueXP 的工作環境中、按一下 * 。 （橢圓圖示） * 、然後按一下 * 更新 Cloud Volumes ONTAP * 。
+. 在「更新 Cloud Volumes ONTAP 版本」頁面上、輸入 URL 、然後按一下 * 變更映像 * 。
 +
 如果您將軟體映像複製到上述路徑中的Connector、請輸入下列URL：
 
 +
 \http://<Connector-private-IP-address>/ontap/images/<image-file-name>
 
-. 按 * Proceed* 確認。
 
 
 .結果

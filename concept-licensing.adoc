@@ -370,7 +370,7 @@ endif::gcp[]
 
 系統會定期彙總每個 Volume 的已配置容量、並將其與 Keystone 訂閱上的已認可容量進行比較、而任何超額資料都會在 Keystone 訂閱上以暴增方式收費。
 
-https://[][ 深入瞭解 NetApp Keystone 訂閱 ^] 。
+https://["深入瞭解 NetApp Keystone 訂閱"^]。
 
 
 

@@ -1581,10 +1581,8 @@
   <block id="a0b1807d647c5ece7bc49bd539f7dcc6" category="inline-link">NetApp 支援網站</block>
   <block id="3e3318ff6382b95c2c0c29be3a83b97d" category="list-text">將軟體映像複製到Connector上的目錄、或是將從其中提供檔案的HTTP伺服器上。</block>
   <block id="1b19ae48e0693419e1e905991459c290" category="paragraph">「/opt/application/netapp/cloudmanager/dock_occm/data/ontap / imes/」</block>
-  <block id="593130e23abb8f92a3863f44a5070ba6" category="list-text">在「更新軟體」頁面上輸入URL、然後按一下「*變更映像*」。</block>
   <block id="36b9b0b795315e6103637ec1e81df1ae" category="paragraph">如果您將軟體映像複製到上述路徑中的Connector、請輸入下列URL：</block>
   <block id="3dbcdaf55d05d32136f76c127fdacce1" category="paragraph">\http://&lt;Connector-private-IP-address&gt;/ontap/images/&lt;image-file-name&gt;</block>
-  <block id="a6f0c7a0901d4da8e8ff8a6db3216b38" category="list-text">按 * Proceed* 確認。</block>
   <block id="fb6890fd99d108eeb3627b961bdfb529" category="section-title">修正使用Google Cloud NAT閘道時的下載失敗</block>
   <block id="123919fc420bd58c9e773df9431e7089" category="list-text">將PUT要求提交至/occm/config、並以下列Json做為本文：</block>
   <block id="cd8e208bdf0e89ff2e888104b2d9c769" category="paragraph">_MaxDownloadSseds_的值可以是1或任何大於1的整數。如果值為1、則下載的映像不會分割。</block>
@@ -2302,12 +2300,6 @@
   <block id="51ade599e97dd58d56c5f3c242449e8f" category="inline-image-macro">螢幕快照顯示您可以選取要複寫磁碟區的儲存 VM 。</block>
   <block id="f6fdd9a8422426229035e242b935272e" category="paragraph"><block ref="f6fdd9a8422426229035e242b935272e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0b6956f370dad63125aa39057f9fb97e" category="section-title">修改預設儲存VM的名稱</block>
-  <block id="7653e0abc427b73765825d38050763ab" category="list-text">在工作環境中、按一下功能表圖示、然後按一下 * 資訊 * 。</block>
-  <block id="eae507dc240e4e00154f4e496e2489eb" category="list-text">按一下儲存 VM 名稱右側的編輯圖示。</block>
-  <block id="41bae8072f7709a6dea902697d27502c" category="inline-image-macro">螢幕擷取畫面：顯示 SVM 名稱欄位、以及您必須按一下以修改 SVM 名稱的編輯圖示。</block>
-  <block id="702cd8b5778c05ac8a668b21c59c3e4b" category="paragraph"><block ref="702cd8b5778c05ac8a668b21c59c3e4b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5c8f140d140067c2425ea00d27f023f7" category="list-text">在「修改 SVM 名稱」對話方塊中、變更名稱、然後按一下「 * 儲存 * 」。</block>
-  <block id="eb47971e346ef76aab3c839fd1b8c204" category="section-title">管理儲存VM以進行災難恢復</block>
   <block id="3ddffa447216115135ad7b5a7bdd106d" category="doc">深入瞭解 Cloud Volumes ONTAP</block>
   <block id="f703efebd5f1fe499787635d16bb070c" category="paragraph">不只是軟體的儲存應用裝置、可在雲端上執行功能完善的資料管理軟體。 Cloud Volumes ONTAP ONTAP它提供企業級儲存設備、具備下列主要功能：</block>
   <block id="af20abc7154e9ee224c54b48b6ec7d63" category="list-text">儲存效率</block>
@@ -3653,8 +3645,6 @@
   <block id="d9bc9104669da346ed2fadb2cb686999" category="paragraph">BlueXP會啟動Cloud Volumes ONTAP 這個執行個體。您可以追蹤時間表的進度。</block>
   <block id="93f5e6c9fa12acc64acdb6b378a09bdd" category="doc">在BlueXP中管理儲存VM</block>
   <block id="50660b7473b276b2ca6ffca877133e87" category="paragraph">BlueXP支援您從System Manager或CLI建立的任何其他儲存VM。</block>
-  <block id="3a7da23df37c318afca891bae50b8b40" category="paragraph">BlueXP會自動命名為其所建立的Cloud Volumes ONTAP 單一儲存VM、以利執行效能。如果您有嚴格的命名標準、可以修改儲存 VM 的名稱。例如、您可能希望名稱與您為 ONTAP 自己的叢集命名儲存虛擬機器的方式相符。</block>
-  <block id="6ad06cca9a22ffa541a72c1a64acb283" category="paragraph">如果您建立Cloud Volumes ONTAP 任何其他的儲存VM以供使用、則無法從BlueXP重新命名儲存VM。您必須 Cloud Volumes ONTAP 使用 System Manager 或 CLI 直接從支援功能進行此作業。</block>
   <block id="891665afb192ec7434051075c05e3e2f" category="list-text">在BlueXP中、識別叢集管理介面的IP位址：</block>
   <block id="08882f53f80237686337effbc79af710" category="paragraph">現在、BlueXP並未提供FlexCache 對功能區的管理、但您可以使用ONTAP 功能區的CLI或ONTAP 功能區管理程式來建立及管理FlexCache 功能區：</block>
   <block id="84c7d68ceec07ae1479f5ffd5345fe69" category="paragraph">從3.7.2版開始、BlueXP會為FlexCache 所有新Cloud Volumes ONTAP 的功能齊全的系統產生一個不完整的授權。授權包含500 GiB使用限制。</block>
@@ -3748,7 +3738,6 @@
   <block id="ec96841ef9fc6828c45908c34b7efd84" category="list-text">如果您使用HTTPS來裝載ONTAP 資訊影像、升級可能會因為SSL驗證問題而失敗、因為遺失憑證。因應措施是產生並安裝CA簽署的憑證、以用於ONTAP 在EXP和BlueXP之間進行驗證。</block>
   <block id="8187f77b708bd73b1d1ea983eefc6853" category="inline-link">NetApp KB：如何將BlueXP設定為HTTPS伺服器、以裝載升級映像</block>
   <block id="c7dc0e2f3985a59155226a1b49fa72f0" category="paragraph"><block ref="c7dc0e2f3985a59155226a1b49fa72f0" category="inline-link-rx"></block></block>
-  <block id="a96872ca23fc4d0e47d83b2ac4aee24f" category="list-text">在BlueXP的工作環境中、按一下功能表圖示、然後按一下*進階&gt;更新Cloud Volumes ONTAP *。</block>
   <block id="62e3daffda94b222aa0f3758e47992d3" category="paragraph">BlueXP會啟動軟體更新。軟體更新完成後、即可在工作環境中執行動作。</block>
   <block id="2eac5df1bc108f46482e586570f46442" category="paragraph">Connector會自動下載Cloud Volumes ONTAP 適用於更新的軟體。如果您的組態使用Google Cloud NAT閘道、下載可能會失敗。您可以限制軟體映像分成的零件數量來修正此問題。此步驟必須使用BlueXP API完成。</block>
   <block id="84a030379f30db92916c596dbdfb092c" category="paragraph">如需協助、請參閱<block ref="07e6a6e4814dabc1a0870a10a70c4b44" category="inline-link-rx"></block></block>
@@ -4914,9 +4903,13 @@
   <block id="829bbd3178c74725b58e1817c2135502" category="paragraph">Cloud Volumes ONTAP 也與 BlueXP 備份與還原整合、提供保護的備份與還原功能、以及雲端資料的長期歸檔。</block>
   <block id="d37c9703eabd9a68dc0d1fb0b42d7881" category="paragraph">與 BlueXP 分類整合可協助您瞭解資料內容並識別敏感資料。</block>
   <block id="5d52a8b51c505c42c6cec9d89c67795a" category="paragraph"><block ref="3abd3a0b5353b2721a22292e3b71aa39" category="inline-link-rx"></block> 整合至 BlueXP UI 、讓您在單一窗口中最佳化 Cloud Volumes ONTAP 系統的作業、安全性和效能。</block>
-  <block id="e16f30d121bfd2f9150c3b384f4bafd7" category="cell">如果您打算使用 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 或<block ref="f8430e60155316f7bd64115f216c9ed9" category="inline-link-rx"></block> 有了這個功能、您就需要啟用*服務帳戶*、並選取具有預先定義儲存管理員角色的服務帳戶。Cloud Volumes ONTAP <block ref="1e3ffbdede44246b454219bb91ade15a" category="inline-link-macro-rx"></block>。</block>
-  <block id="59d8dcefa0c00dc439534f201c3b8cad" category="cell">如果您打算使用 <block ref="b0493934baf26f9529eb4214b9de6c71" category="inline-link-macro-rx"></block> 或<block ref="f8430e60155316f7bd64115f216c9ed9" category="inline-link-rx"></block> 服務、您必須啟用 * 服務帳戶 * 交換器、然後選取具有預先定義儲存管理角色的服務帳戶。</block>
-  <block id="fe8304b9cc044b147f56b2d91e04417e" category="list-text"><block ref="fe8304b9cc044b147f56b2d91e04417e" category="inline-link-rx"></block></block>
-  <block id="1ff8c921e91129864e26470e27f163e4" category="paragraph"><block ref="f3dcfa97ec0e043d2a6bb618df9e88d1" category="inline-link-rx"></block>[ 深入瞭解 NetApp Keystone 訂閱 ^] 。</block>
-  <block id="082d2f26c5c0981f06c4a8fa0b1114d6" category="list-text"><block ref="f4e5a313767343aeb22db09ed17536ac" category="inline-link-macro-rx"></block>。</block>
+  <block id="f299a90ea343277f03db9212a075b743" category="inline-link">備份與還原</block>
+  <block id="3f61ed1be9573dd263bad0fb454ff936" category="cell">如果您打算使用 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 或<block ref="f6a24dd7c8333d6197d5c13fe0b2da54" category="inline-link-rx"></block> 有了這個功能、您就需要啟用*服務帳戶*、並選取具有預先定義儲存管理員角色的服務帳戶。Cloud Volumes ONTAP <block ref="1e3ffbdede44246b454219bb91ade15a" category="inline-link-macro-rx"></block>。</block>
+  <block id="122fbba22f02b63cfbb1c31be8b85e8e" category="cell">如果您打算使用 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 或<block ref="f6a24dd7c8333d6197d5c13fe0b2da54" category="inline-link-rx"></block> 服務、您必須啟用 * 服務帳戶 * 交換器、然後選取具有預先定義儲存管理角色的服務帳戶。</block>
+  <block id="990d530a36683451e6ac666b1b224270" category="paragraph">在 BlueXP 數位錢包中管理節點型授權、以確保每個 Cloud Volumes ONTAP 系統都擁有具有所需容量的有效授權。</block>
+  <block id="11a72b1b7122c65d1d6f13efb867113a" category="paragraph">BlueXP會自動命名為其所建立的Cloud Volumes ONTAP 單一儲存VM、以利執行效能。如果您有嚴格的命名標準、則可以從 System Manager 、 CLI 或 API 修改儲存 VM 的名稱。例如、您可能希望名稱與您為 ONTAP 自己的叢集命名儲存虛擬機器的方式相符。</block>
+  <block id="c916a82ca6e79a33689505d2642c711c" category="list-text">在 BlueXP 的工作環境中、按一下 * 。 （橢圓圖示） * 、然後按一下 * 更新 Cloud Volumes ONTAP * 。</block>
+  <block id="31a578b8e294d03f4be50639f79e8160" category="list-text">在「更新 Cloud Volumes ONTAP 版本」頁面上、輸入 URL 、然後按一下 * 變更映像 * 。</block>
+  <block id="d32bc06f4693559b0941ab221004f77a" category="list-text"><block ref="b537ee4eb64ec01da34737ed00ba85c9" category="inline-link-macro-rx"></block>。</block>
+  <block id="0f2fe7f7d7d6e9e8b6985ebcba41a752" category="paragraph">Keystone 訂閱是一項隨成長付費訂閱服務。 <block ref="a4cf1d10eb125cd296862332c2edca47" category="inline-link-macro-rx"></block>。</block>
 </blocks>

@@ -43,25 +43,4 @@ image:screenshot_replicate_volume_svm.gif["螢幕快照顯示您可以選取要�
 
 == 修改預設儲存VM的名稱
 
-BlueXP會自動命名為其所建立的Cloud Volumes ONTAP 單一儲存VM、以利執行效能。如果您有嚴格的命名標準、可以修改儲存 VM 的名稱。例如、您可能希望名稱與您為 ONTAP 自己的叢集命名儲存虛擬機器的方式相符。
-
-如果您建立Cloud Volumes ONTAP 任何其他的儲存VM以供使用、則無法從BlueXP重新命名儲存VM。您必須 Cloud Volumes ONTAP 使用 System Manager 或 CLI 直接從支援功能進行此作業。
-
-.步驟
-. 在工作環境中、按一下功能表圖示、然後按一下 * 資訊 * 。
-. 按一下儲存 VM 名稱右側的編輯圖示。
-+
-image:screenshot_svm.gif["螢幕擷取畫面：顯示 SVM 名稱欄位、以及您必須按一下以修改 SVM 名稱的編輯圖示。"]
-
-. 在「修改 SVM 名稱」對話方塊中、變更名稱、然後按一下「 * 儲存 * 」。
-
-
-
-
-== 管理儲存VM以進行災難恢復
-
-BlueXP不提供任何儲存VM災難恢復的設定或協調支援。您必須使用 System Manager 或 CLI 。
-
-* https://["SVM 災難恢復準備快速指南"^]
-* https://["SVM Disaster Recovery Express 指南"^]
-
+BlueXP會自動命名為其所建立的Cloud Volumes ONTAP 單一儲存VM、以利執行效能。如果您有嚴格的命名標準、則可以從 System Manager 、 CLI 或 API 修改儲存 VM 的名稱。例如、您可能希望名稱與您為 ONTAP 自己的叢集命名儲存虛擬機器的方式相符。
