@@ -4912,4 +4912,5 @@
   <block id="31a578b8e294d03f4be50639f79e8160" category="list-text">在「更新 Cloud Volumes ONTAP 版本」頁面上、輸入 URL 、然後按一下 * 變更映像 * 。</block>
   <block id="d32bc06f4693559b0941ab221004f77a" category="list-text"><block ref="b537ee4eb64ec01da34737ed00ba85c9" category="inline-link-macro-rx"></block>。</block>
   <block id="0f2fe7f7d7d6e9e8b6985ebcba41a752" category="paragraph">Keystone 訂閱是一項隨成長付費訂閱服務。 <block ref="a4cf1d10eb125cd296862332c2edca47" category="inline-link-macro-rx"></block>。</block>
+  <block id="57a6d3c65b0af592c913eb5564c15458" category="admonition">在 URL 中， * image-file-name* 必須遵循格式 "cot.image.9.13.1p2.tgz" 。</block>
 </blocks>

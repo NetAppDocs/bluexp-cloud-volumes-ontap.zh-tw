@@ -308,6 +308,10 @@ NOTE: 預設情況下、預先定義Cloud Volumes ONTAP 的「支援HTTP連線�
 +
 \http://<Connector-private-IP-address>/ontap/images/<image-file-name>
 
++
+
+NOTE: 在 URL 中， * image-file-name* 必須遵循格式 "cot.image.9.13.1p2.tgz" 。
+
 
 
 .結果
