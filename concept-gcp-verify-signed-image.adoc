@@ -22,7 +22,7 @@ summary: 透過Cloud Volumes ONTAP 「鏡射影像摘要檔案」工具驗證匯
 
 以下是Google Cloud簽署映像驗證工作流程的總覽。
 
-* 從 https://["NSS"^]下載內含下列檔案的Google Cloud歸檔：
+* 從 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NSS"^]下載內含下列檔案的Google Cloud歸檔：
 +
 ** 簽名摘要（.sig）
 ** 包含公開金鑰（.pem）的憑證

@@ -141,11 +141,11 @@ ifdef::aws[]
 
 === 將冷資料分層至 AWS S3 的需求
 
-確保 Cloud Volumes ONTAP 與 S3 建立連線。提供此連線的最佳方法是建立 VPC 端點至 S3 服務。如需相關指示、請參閱 https://["AWS 文件：建立閘道端點"^]。
+確保 Cloud Volumes ONTAP 與 S3 建立連線。提供此連線的最佳方法是建立 VPC 端點至 S3 服務。如需相關指示、請參閱 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS 文件：建立閘道端點"^]。
 
 當您建立 VPC 端點時、請務必選取與 Cloud Volumes ONTAP 該實例相對應的區域、 VPC 和路由表。您也必須修改安全性群組、以新增允許流量到 S3 端點的傳出 HTTPS 規則。否則 Cloud Volumes ONTAP 、無法連線至 S3 服務。
 
-如果您遇到任何問題、請參閱 https://["AWS 支援知識中心：為什麼我無法使用閘道 VPC 端點連線至 S3 儲存區？"^]。
+如果您遇到任何問題、請參閱 https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS 支援知識中心：為什麼我無法使用閘道 VPC 端點連線至 S3 儲存區？"^]。
 
 endif::aws[]
 
@@ -162,7 +162,7 @@ ifdef::azure[]
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-根據預設、權限會包含在自訂角色中。 https://["檢視Azure對Connector的權限"^]
+根據預設、權限會包含在自訂角色中。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["檢視Azure對Connector的權限"^]
 
 endif::azure[]
 
@@ -172,7 +172,7 @@ ifdef::gcp[]
 
 === 將冷資料分層至 Google Cloud Storage 儲存庫的需求
 
-* 駐留的子網路 Cloud Volumes ONTAP 必須設定為私有 Google Access 。如需相關指示、請參閱 https://["Google Cloud 文件：設定私有 Google Access"^]。
+* 駐留的子網路 Cloud Volumes ONTAP 必須設定為私有 Google Access 。如需相關指示、請參閱 https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud 文件：設定私有 Google Access"^]。
 * 服務帳戶必須附加Cloud Volumes ONTAP 至
 +
 link:task-creating-gcp-service-account.html["瞭解如何設定此服務帳戶"]。
@@ -297,7 +297,7 @@ image:screenshot_volumes_change_tiering_policy.png["螢幕擷取畫面、顯示�
 image:screenshot_replication_tiering.gif["快照顯示複寫磁碟區時的 S3 分層選項。"]
 
 +
-如需複寫資料的說明、請參閱 https://["在雲端之間複寫資料"^]。
+如需複寫資料的說明、請參閱 https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["在雲端之間複寫資料"^]。
 
 
 

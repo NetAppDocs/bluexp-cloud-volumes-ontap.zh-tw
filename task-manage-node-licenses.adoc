@@ -24,7 +24,7 @@ _Node型授權_是前一代授權模式（不適用於新客戶）：
 
 _BlueXP 數位錢包 _ 可讓您從單一位置管理 Cloud Volumes ONTAP 的授權。您可以新增授權並更新現有授權。
 
-https://["深入瞭Cloud Volumes ONTAP 解不知如何取得授權"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["深入瞭Cloud Volumes ONTAP 解不知如何取得授權"]。
 
 
 
@@ -107,7 +107,7 @@ BlueXP會將未指派的授權轉換成您選取的服務。您可以在「*資�
 在大多數情況下、BlueXP可以使用NetApp 支援網站 您的還原帳戶自動取得授權檔案。但如果無法、則需要手動上傳授權檔案。如果您沒有授權檔案、可以從 netapp.com 取得。
 
 .步驟
-. 前往 https://["NetApp 授權檔案產生器"^] 並使用您的 NetApp 支援網站認證登入。
+. 前往 https://register.netapp.com/register/getlicensefile["NetApp 授權檔案產生器"^] 並使用您的 NetApp 支援網站認證登入。
 . 輸入您的密碼、選擇產品、輸入序號、確認您已閱讀並接受隱私權政策、然後按一下 * 提交 * 。
 +
 * 範例 *
@@ -224,10 +224,10 @@ BlueXP開始轉換程序。此程序會自動重新啟動。Cloud Volumes ONTAP�
 . 打造全新 Cloud Volumes ONTAP 的運作環境。
 . 針對您需要複寫的每個磁碟區、在系統之間設定一次性資料複寫。
 +
-https://["瞭解如何在系統之間複寫資料"^]
+https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["瞭解如何在系統之間複寫資料"^]
 
 . 刪除原始工作環境、終止Cloud Volumes ONTAP 不再需要的功能。
 +
-https://["瞭解如何刪除Cloud Volumes ONTAP 功能不正常的工作環境"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deleting-working-env.html["瞭解如何刪除Cloud Volumes ONTAP 功能不正常的工作環境"]。
 
 

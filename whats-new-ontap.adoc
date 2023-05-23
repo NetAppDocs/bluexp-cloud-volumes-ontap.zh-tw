@@ -16,4 +16,4 @@ summary: 《發行說明Cloud Volumes ONTAP 》for the發行說明提供特定�
 [role="lead"]
 《發行說明Cloud Volumes ONTAP 》for the發行說明提供特定版本的資訊。版本的新功能、支援的組態、儲存限制、以及任何可能影響產品功能的已知限制或問題。
 
-https://["前往Cloud Volumes ONTAP 《發行說明》"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["前往Cloud Volumes ONTAP 《發行說明》"^]

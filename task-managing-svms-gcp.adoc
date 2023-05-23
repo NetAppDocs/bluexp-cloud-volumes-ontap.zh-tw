@@ -23,7 +23,7 @@ summary: 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可�
 
 == 支援的儲存 VM 數量
 
-從9.11.1版開始、Cloud Volumes ONTAP Google Cloud中的特定支援功能可支援多個儲存VM。前往 https://["發行說明 Cloud Volumes ONTAP"^] 驗證Cloud Volumes ONTAP 支援的儲存VM數量是否適用於您的版本的支援。
+從9.11.1版開始、Cloud Volumes ONTAP Google Cloud中的特定支援功能可支援多個儲存VM。前往 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["發行說明 Cloud Volumes ONTAP"^] 驗證Cloud Volumes ONTAP 支援的儲存VM數量是否適用於您的版本的支援。
 
 所有其他 Cloud Volumes ONTAP 的支援功能均支援單一資料服務儲存 VM 、以及一部用於災難恢復的目的地儲存 VM 。如果來源儲存VM發生中斷、您可以啟動目的地儲存VM進行資料存取。
 
@@ -48,7 +48,7 @@ image:screenshot-gcp-add-ip-range.png["Google Cloud主控台的螢幕快照、�
 如果您想在儲存VM上建立管理LIF、則需要一個IP位址用於資料LIF、另一個選用IP位址。
 
 +
-https://["Google Cloud文件：新增別名IP範圍至現有執行個體"^]
+https://cloud.google.com/vpc/docs/configure-alias-ip-ranges#adding_alias_ip_ranges_to_an_existing_instance["Google Cloud文件：新增別名IP範圍至現有執行個體"^]
 
 . 建立儲存虛擬機器和通往儲存虛擬機器的路由。
 +
@@ -106,7 +106,7 @@ vserver add-aggregates -vserver <svm-name> -aggregates <aggr1,aggr2>
 請注意、BlueXP會在Google Cloud中配置所需的IP位址、並使用資料LIF來建立儲存VM、以進行SMB/NFS存取、並使用iSCSI LIF來進行傳出SMB通訊。
 
 .必要的Google Cloud權限
-Connector需要特定權限、才能建立及管理Cloud Volumes ONTAP 儲存VM、以利執行各種HA配對。所需權限包含在中 https://["NetApp 提供的原則"]。
+Connector需要特定權限、才能建立及管理Cloud Volumes ONTAP 儲存VM、以利執行各種HA配對。所需權限包含在中 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["NetApp 提供的原則"]。
 
 .步驟
 . 使用下列API呼叫建立儲存VM：

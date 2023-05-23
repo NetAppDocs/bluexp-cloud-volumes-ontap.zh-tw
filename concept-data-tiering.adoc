@@ -58,7 +58,7 @@ BlueXP會針對每個工作環境建立單一S3儲存區、並將其命名為「
 --
 如果您不打算存取非作用中資料、可以將儲存類別變更為下列其中一項、藉此降低儲存成本：_Intelligent Tiering、_One Zone In頻率 存取_、_Standard-in頻繁 存取_或_S3 Glacier即時擷取。當您變更儲存類別時、非作用中的資料會從 Standard 儲存類別開始、並轉換至您選取的儲存類別（如果 30 天後仍未存取資料）。
 
-如果您確實存取資料、存取成本就會較高、因此在變更儲存類別之前、請先將此納入考量。 https://["深入瞭解 Amazon S3 儲存類別"^]。
+如果您確實存取資料、存取成本就會較高、因此在變更儲存類別之前、請先將此納入考量。 https://aws.amazon.com/s3/storage-classes["深入瞭解 Amazon S3 儲存類別"^]。
 
 您可以在建立工作環境時選取儲存類別、之後隨時變更。如需變更儲存類別的詳細資訊、請參閱 link:task-tiering.html["將非作用中資料分層至低成本物件儲存設備"]。
 
@@ -101,7 +101,7 @@ BlueXP會建立具有下列設定的儲存帳戶：
 --
 如果您不打算存取容量層中的非作用中資料、可以改用_cle__儲存層來降低儲存成本。當您將儲存層變更為冷卻時、非作用中的容量層資料會直接移至冷卻儲存層。
 
-如果您確實存取資料、存取成本就會較高、因此在變更儲存層之前、請先將此納入考量。 https://["深入瞭解 Azure Blob 儲存設備存取層"^]。
+如果您確實存取資料、存取成本就會較高、因此在變更儲存層之前、請先將此納入考量。 https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers["深入瞭解 Azure Blob 儲存設備存取層"^]。
 
 您可以在建立工作環境時選取儲存層、之後隨時變更。如需變更儲存層的詳細資訊、請參閱 link:task-tiering.html["將非作用中資料分層至低成本物件儲存設備"]。
 
@@ -140,7 +140,7 @@ BlueXP會為每個工作環境建立一個儲存區、並將其命名為「網�
 儲存類別:: 階層式資料的預設儲存類別為 _Standard Storage_ 類別。如果資料不常存取、您可以改用 _Nearline Storage_ 或 _Coldline Storage_ 來降低儲存成本。當您變更儲存類別時、非作用中資料會直接移至您選取的類別。
 +
 --
-如果您確實存取資料、存取成本就會較高、因此在變更儲存類別之前、請先將此納入考量。 https://["深入瞭解 Google Cloud Storage 的儲存課程"^]。
+如果您確實存取資料、存取成本就會較高、因此在變更儲存類別之前、請先將此納入考量。 https://cloud.google.com/storage/docs/storage-classes["深入瞭解 Google Cloud Storage 的儲存課程"^]。
 
 您可以在建立工作環境時選取儲存層、之後隨時變更。如需變更儲存類別的詳細資訊、請參閱 link:task-tiering.html["將非作用中資料分層至低成本物件儲存設備"]。
 
@@ -166,7 +166,7 @@ endif::gcp[]
 有些分層原則具有相關的最低冷卻週期、可設定磁碟區中的使用者資料必須保持非作用中狀態的時間、以便將資料視為「冷」並移至容量層。當資料寫入Aggregate時、就會開始冷卻期間。
 
 
-TIP: 您可以將最小冷卻週期和預設Aggregate臨界值變更為50%（以下詳細資訊）。 http://["瞭解如何變更冷卻週期"^] 和 http://["瞭解如何變更臨界值"^]。
+TIP: 您可以將最小冷卻週期和預設Aggregate臨界值變更為50%（以下詳細資訊）。 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mgng-stor-tier-fp/GUID-AD522711-01F9-4413-A254-929EAE871EBF.html["瞭解如何變更冷卻週期"^] 和 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mgng-stor-tier-fp/GUID-8FC4BFD5-F258-4AA6-9FCB-663D42D92CAA.html["瞭解如何變更臨界值"^]。
 
 在建立或修改磁碟區時、您可以使用BlueXP從下列磁碟區分層原則中進行選擇：
 

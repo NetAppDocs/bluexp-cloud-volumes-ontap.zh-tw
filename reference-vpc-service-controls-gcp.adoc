@@ -16,7 +16,7 @@ summary: 選擇使用VPC服務控制來鎖定Google環境時、您應該瞭解Bl
 [role="lead"]
 選擇使用VPC服務控制來鎖定Google Cloud環境時、您應該瞭解BlueXP和Cloud Volumes ONTAP Isa如何與Google Cloud API互動、以及如何設定服務邊界以部署BlueXP和Cloud Volumes ONTAP Isa。
 
-VPC服務控管可讓您控制在信任邊界之外存取Google管理的服務、封鎖來自不信任位置的資料存取、並降低未獲授權的資料傳輸風險。 https://["深入瞭解Google Cloud VPC服務控制"^]。
+VPC服務控管可讓您控制在信任邊界之外存取Google管理的服務、封鎖來自不信任位置的資料存取、並降低未獲授權的資料傳輸風險。 https://cloud.google.com/vpc-service-controls/docs["深入瞭解Google Cloud VPC服務控制"^]。
 
 
 
@@ -54,7 +54,7 @@ BlueXP直接與Google Cloud API通訊。這可能是從Google Cloud外部的外�
 
 == VPC服務控制周邊原則
 
-原則允許VPC服務控制規則集例外。如需原則的詳細資訊、請參閱 https://["GCP VPC服務控制原則文件"^]。
+原則允許VPC服務控制規則集例外。如需原則的詳細資訊、請參閱 https://cloud.google.com/vpc-service-controls/docs/ingress-egress-rules#policy-model["GCP VPC服務控制原則文件"^]。
 
 若要設定BlueXP所需的原則、請瀏覽至組織內部的VPC服務控制周邊、然後新增下列原則。這些欄位應符合VPC服務控制原則頁面中提供的選項。另請注意、* all *規則是必要的、且*或*參數應用於規則集中。
 

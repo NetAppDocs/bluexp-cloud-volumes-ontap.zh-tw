@@ -30,7 +30,7 @@ Microsoft Azure的高可用度模式應可減少非計畫性容錯移轉時間�
 具備「擁有者」權限的Azure使用者可從Azure CLI啟用此功能。
 
 .步驟
-. https://["從Azure Portal存取Azure Cloud Shell"^]
+. https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart["從Azure Portal存取Azure Cloud Shell"^]
 . 註冊高可用度模式功能：
 +
 [source, azurecli]

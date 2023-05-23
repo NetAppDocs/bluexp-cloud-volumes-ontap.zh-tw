@@ -25,7 +25,7 @@ summary: 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可�
 
 == 支援的儲存 VM 數量
 
-從9.7版開始、特定Cloud Volumes ONTAP 的支援功能可支援多個儲存VM。前往 https://["發行說明 Cloud Volumes ONTAP"^] 驗證Cloud Volumes ONTAP 支援的儲存VM數量是否適用於您的版本的支援。
+從9.7版開始、特定Cloud Volumes ONTAP 的支援功能可支援多個儲存VM。前往 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["發行說明 Cloud Volumes ONTAP"^] 驗證Cloud Volumes ONTAP 支援的儲存VM數量是否適用於您的版本的支援。
 
 所有其他 Cloud Volumes ONTAP 的支援功能均支援單一資料服務儲存 VM 、以及一部用於災難恢復的目的地儲存 VM 。如果來源儲存VM發生中斷、您可以啟動目的地儲存VM進行資料存取。
 
@@ -36,7 +36,7 @@ summary: 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可�
 每個EC2執行個體都支援每個網路介面的私有IPv4位址數目上限。在AWS中為新的儲存VM分配IP位址之前、您必須先確認限制。
 
 .步驟
-. 請選擇 https://["《不知》中的「儲存限制」區段Cloud Volumes ONTAP"^]。
+. 請選擇 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html["《不知》中的「儲存限制」區段Cloud Volumes ONTAP"^]。
 . 識別執行個體類型的每個介面IP位址數目上限。
 . 請記下這個數字、因為您在AWS中分配IP位址時、會在下一節中需要這個數字。
 

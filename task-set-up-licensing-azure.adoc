@@ -67,8 +67,8 @@ link:concept-licensing.html["深入瞭解容量型授權"]。
 事先向NetApp購買授權（BYOL）、即可在Cloud Volumes ONTAP 任何雲端供應商部署支援系統。
 
 .步驟
-. https://["請聯絡NetApp銷售人員以取得授權"^]
-. https://["將NetApp 支援網站 您的不更新帳戶新增至藍圖XP"^]
+. https://cloud.netapp.com/contact-cds["請聯絡NetApp銷售人員以取得授權"^]
+. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["將NetApp 支援網站 您的不更新帳戶新增至藍圖XP"^]
 +
 BlueXP會自動查詢NetApp的授權服務、以取得NetApp 支援網站 與您的還原帳戶相關之授權的詳細資料。如果沒有錯誤、 BlueXP 會自動將授權新增至數位錢包。
 
@@ -121,7 +121,7 @@ image:screenshot-professional.png["建立Cloud Volumes ONTAP 功能不正常的�
 link:task-deploying-otc-azure.html["請參閱Cloud Volumes ONTAP 逐步指示、以在Azure中推出《功能不全》"]。
 
 
-TIP: 您可以從「設定」>「認證」頁面管理Azure Marketplace與Azure帳戶相關的訂閱。 https://["瞭解如何管理您的Azure帳戶和訂閱"^]
+TIP: 您可以從「設定」>「認證」頁面管理Azure Marketplace與Azure帳戶相關的訂閱。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html["瞭解如何管理您的Azure帳戶和訂閱"^]
 
 
 
@@ -158,7 +158,7 @@ link:task-deploying-otc-azure.html["請參閱Cloud Volumes ONTAP 逐步指示、
 Keystone 訂閱是一項隨成長付費訂閱服務。 link:concept-licensing.html#keystone-subscription["深入瞭解 NetApp Keystone 訂閱"]。
 
 .步驟
-. 如果您尚未訂閱、 https://["請聯絡NetApp"^]
+. 如果您尚未訂閱、 https://www.netapp.com/forms/keystone-sales-contact/["請聯絡NetApp"^]
 . mailto ： ng-keystone-success@netapp.com [ 聯絡 NetApp] 以使用一或多個 Keystone 訂閱來授權您的 BlueXP 使用者帳戶。
 . NetApp授權您的帳戶之後、 link:task-manage-keystone.html#link-a-subscription["連結您的訂閱內容以供Cloud Volumes ONTAP 搭配使用"]。
 . 在「畫版」頁面上、按一下「*新增工作環境*」、然後依照BlueXP中的步驟進行。

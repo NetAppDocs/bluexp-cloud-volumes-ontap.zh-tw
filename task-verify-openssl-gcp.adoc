@@ -14,7 +14,7 @@ summary: 使用OpenSSL驗證Google Cloud下載的disk.原始 檔案是否符合�
 
 
 [role="lead"]
-您可以根據可透過取得的摘要檔案內容、驗證Google Cloud下載的disk.RAW檔案 https://["NSS"^] 使用OpenSSL。
+您可以根據可透過取得的摘要檔案內容、驗證Google Cloud下載的disk.RAW檔案 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NSS"^] 使用OpenSSL。
 
 
 NOTE: 用於驗證映像的OpenSSL命令與Linux、Mac OS和Windows機器相容。

@@ -38,7 +38,7 @@ Azure 必須符合下列網路需求。
 
 如果您定義了Cloud Volumes ONTAP 嚴格的傳出規則以供支援、那麼Cloud Volumes ONTAP 您也必須確保支援透過連接埠3128建立_Outbound _連線的安全性群組。
 
-在您確認可以存取傳出網際網路之後、您可以測試AutoSupport 以確保能夠傳送訊息。如需相關指示、請參閱 https://["文件：設定檔ONTAP AutoSupport"^]。
+在您確認可以存取傳出網際網路之後、您可以測試AutoSupport 以確保能夠傳送訊息。如需相關指示、請參閱 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["文件：設定檔ONTAP AutoSupport"^]。
 
 如果BlueXP通知您AutoSupport 無法傳送資訊、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["疑難排解AutoSupport 您的VMware組態"]。
 
@@ -136,7 +136,7 @@ link:task-enabling-private-link.html["深入瞭解如何搭配Cloud Volumes ONTA
 
 若要在Cloud Volumes ONTAP Azure中的某個系統與ONTAP 其他網路中的某些系統之間複寫資料、您必須在Azure vnet與其他網路（例如您的公司網路）之間建立VPN連線。
 
-如需相關指示、請參閱 https://["Microsoft Azure 文件：在 Azure 入口網站中建立站台對站台連線"^]。
+如需相關指示、請參閱 https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal["Microsoft Azure 文件：在 Azure 入口網站中建立站台對站台連線"^]。
 
 
 
@@ -163,7 +163,7 @@ BlueXP會建立Azure安全性群組、其中包含Cloud Volumes ONTAP 了順利�
 適用於此功能的安全性群組 Cloud Volumes ONTAP 需要傳入和傳出規則。
 
 
-TIP: 正在尋找Connector的相關資訊？ https://["檢視Connector的安全群組規則"^]
+TIP: 正在尋找Connector的相關資訊？ https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["檢視Connector的安全群組規則"^]
 
 
 
@@ -435,6 +435,6 @@ NOTE: 來源是 Cloud Volumes ONTAP 指在整個系統上的介面（ IP 位址�
 
 如果您尚未建立連接器、也應該檢閱連接器的網路需求。
 
-* https://["檢視連接器的網路需求"^]
-* https://["Azure中的安全性群組規則"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["檢視連接器的網路需求"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Azure中的安全性群組規則"^]
 

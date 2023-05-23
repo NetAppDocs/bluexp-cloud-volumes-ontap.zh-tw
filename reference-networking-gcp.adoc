@@ -182,15 +182,15 @@ BlueXP會自動建立四個Google Cloud內部負載平衡器（TCP/IP）、以�
 
 HA配對需要四個VPC。每個VPC都可以是共享的或獨立的。例如、VPC-0可以是共享VPC、VPC-1、VPC-2和VPC-3則可以是獨立式VPC。
 
-共享 VPC 可讓您設定及集中管理多個專案中的虛擬網路。您可以在 _ 主機專案 _ 中設定共享 VPC 網路、並在 Cloud Volumes ONTAP _ 服務專案 _ 中部署連接器與支援虛擬機器執行個體。 https://["Google Cloud 文件：共享 VPC 總覽"^]。
+共享 VPC 可讓您設定及集中管理多個專案中的虛擬網路。您可以在 _ 主機專案 _ 中設定共享 VPC 網路、並在 Cloud Volumes ONTAP _ 服務專案 _ 中部署連接器與支援虛擬機器執行個體。 https://cloud.google.com/vpc/docs/shared-vpc["Google Cloud 文件：共享 VPC 總覽"^]。
 
-https://["檢閱Connector部署所涵蓋的必要共享VPC權限"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["檢閱Connector部署所涵蓋的必要共享VPC權限"^]
 
 
 
 === VPC中的封包鏡射
 
-https://["封包鏡射"^] 必須在部署Cloud Volumes ONTAP 了下列項目的Google Cloud VPC中停用。啟用封包鏡射時、無法正常運作。Cloud Volumes ONTAP
+https://cloud.google.com/vpc/docs/packet-mirroring["封包鏡射"^] 必須在部署Cloud Volumes ONTAP 了下列項目的Google Cloud VPC中停用。啟用封包鏡射時、無法正常運作。Cloud Volumes ONTAP
 
 
 
@@ -208,7 +208,7 @@ NetApp支援需要外傳網際網路存取功能、才能主動監控系統健�
 
 如果您定義了Cloud Volumes ONTAP 嚴格的出站規則以供支援、那麼您也必須確保Cloud Volumes ONTAP 透過連接埠3128建立的支援_出站_連線。
 
-在您確認可以存取傳出網際網路之後、您可以測試AutoSupport 以確保能夠傳送訊息。如需相關指示、請參閱 https://["文件：設定檔ONTAP AutoSupport"^]。
+在您確認可以存取傳出網際網路之後、您可以測試AutoSupport 以確保能夠傳送訊息。如需相關指示、請參閱 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["文件：設定檔ONTAP AutoSupport"^]。
 
 
 TIP: 如果您使用 HA 配對、 HA 中介器不需要傳出網際網路存取。
@@ -227,7 +227,7 @@ TIP: 如果您使用 HA 配對、 HA 中介器不需要傳出網際網路存取�
 --
 
 
-如果您想要將冷資料分層至 Google Cloud Storage 資源桶、 Cloud Volumes ONTAP 則必須將駐留的子網路設定為私有 Google Access （如果您使用 HA 配對、則此子網路位於 VPC-0 ）。如需相關指示、請參閱 https://["Google Cloud 文件：設定私有 Google Access"^]。
+如果您想要將冷資料分層至 Google Cloud Storage 資源桶、 Cloud Volumes ONTAP 則必須將駐留的子網路設定為私有 Google Access （如果您使用 HA 配對、則此子網路位於 VPC-0 ）。如需相關指示、請參閱 https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud 文件：設定私有 Google Access"^]。
 
 如需在BlueXP中設定資料分層所需的其他步驟、請參閱 link:task-tiering.html["將冷資料分層至低成本物件儲存設備"]。
 
@@ -237,7 +237,7 @@ TIP: 如果您使用 HA 配對、 HA 中介器不需要傳出網際網路存取�
 
 若要在Cloud Volumes ONTAP Google Cloud中的某個支援中心系統與ONTAP 其他網路中的支援中心系統之間複寫資料、您必須在VPC與其他網路（例如公司網路）之間建立VPN連線。
 
-如需相關指示、請參閱 https://["Google Cloud 文件：雲端 VPN 概述"^]。
+如需相關指示、請參閱 https://cloud.google.com/vpn/docs/concepts/overview["Google Cloud 文件：雲端 VPN 概述"^]。
 
 
 
@@ -254,7 +254,7 @@ BlueXP會建立Google Cloud防火牆規則、其中包括Cloud Volumes ONTAP 需
 
 
 
-TIP: 正在尋找Connector的相關資訊？ https://["檢視Connector的防火牆規則"^]
+TIP: 正在尋找Connector的相關資訊？ https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["檢視Connector的防火牆規則"^]
 
 
 
@@ -266,7 +266,7 @@ TIP: 正在尋找Connector的相關資訊？ https://["檢視Connector的防火�
 * *所有VPC*：傳入流量的來源篩選器為0.00.0.0/0 IP範圍。
 
 
-如果您使用自己的防火牆原則、請確定您新增了所有需要與Cloud Volumes ONTAP 之通訊的網路、但同時也請務必新增這兩個位址範圍、以讓內部Google負載平衡器正常運作。這些位址分別為130.211.0.0/22和35.191.0/16。如需詳細資訊、請參閱 https://["Google Cloud文件：負載平衡器防火牆規則"^]。
+如果您使用自己的防火牆原則、請確定您新增了所有需要與Cloud Volumes ONTAP 之通訊的網路、但同時也請務必新增這兩個位址範圍、以讓內部Google負載平衡器正常運作。這些位址分別為130.211.0.0/22和35.191.0/16。如需詳細資訊、請參閱 https://cloud.google.com/load-balancing/docs/tcp#firewall_rules["Google Cloud文件：負載平衡器防火牆規則"^]。
 
 [cols="10,10,80"]
 |===
@@ -509,6 +509,6 @@ NOTE: 若要為新的Google Cloud HA配對部署啟用高速寫入速度、VPC-1
 
 如果您尚未建立連接器、也應該檢閱連接器的網路需求。
 
-* https://["檢視連接器的網路需求"^]
-* https://["Google Cloud中的防火牆規則"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["檢視連接器的網路需求"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Google Cloud中的防火牆規則"^]
 

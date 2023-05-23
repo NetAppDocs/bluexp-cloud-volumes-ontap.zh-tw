@@ -14,13 +14,13 @@ summary: 使用Cloud Volumes ONTAP Azure Storage Service Encryption搭配Microso
 
 
 [role="lead"]
-資料會使用在Cloud Volumes ONTAP Azure中的功能自動加密 https://["Azure 儲存服務加密"] 使用Microsoft管理的金鑰。但您可以改用自己的加密金鑰、只要執行本頁的步驟即可。
+資料會使用在Cloud Volumes ONTAP Azure中的功能自動加密 https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure 儲存服務加密"] 使用Microsoft管理的金鑰。但您可以改用自己的加密金鑰、只要執行本頁的步驟即可。
 
 
 
 == 資料加密總覽
 
-Azure中的資料會使用自動加密Cloud Volumes ONTAP https://["Azure 儲存服務加密"^]。預設實作使用Microsoft管理的金鑰。無需設定。
+Azure中的資料會使用自動加密Cloud Volumes ONTAP https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure 儲存服務加密"^]。預設實作使用Microsoft管理的金鑰。無需設定。
 
 如果您想要使用客戶管理的支援服務金鑰Cloud Volumes ONTAP 搭配使用、則必須完成下列步驟：
 
@@ -54,7 +54,7 @@ Azure HA單一可用度區域::
 --
 * 所有的Azure儲存帳戶Cloud Volumes ONTAP 均使用客戶管理的金鑰進行加密
 * 任何新的儲存帳戶（例如新增磁碟或集合體時）也會使用相同的金鑰
-* 從《支援NVRAM和核心磁碟》的《支援範圍》（《支援範圍》）的《支援範圍》（ONTAP https://["磁碟加密集"^]，可透過託管磁碟管理加密金鑰。較低版本將使用Microsoft管理的金鑰、而非客戶管理的金鑰。
+* 從《支援NVRAM和核心磁碟》的《支援範圍》（《支援範圍》）的《支援範圍》（ONTAP https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["磁碟加密集"^]，可透過託管磁碟管理加密金鑰。較低版本將使用Microsoft管理的金鑰、而非客戶管理的金鑰。
 
 
 --
@@ -62,7 +62,7 @@ Azure HA單一可用度區域::
 +
 --
 * 所有的Azure儲存帳戶Cloud Volumes ONTAP 均使用客戶管理的金鑰進行加密。^1^
-* 對於root、開機和資料磁碟、BlueXP會使用a https://["磁碟加密集"^]，可透過託管磁碟管理加密金鑰。
+* 對於root、開機和資料磁碟、BlueXP會使用a https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["磁碟加密集"^]，可透過託管磁碟管理加密金鑰。
 * 任何新的資料磁碟也會使用相同的磁碟加密集。
 * 從適用於NVRAM和核心磁碟的《支援支援支援》9.9、1頁7開始ONTAP 、BlueXP使用磁碟加密集來管理受管理磁碟的加密金鑰。較低版本將使用Microsoft管理的金鑰、而非客戶管理的金鑰。
 
@@ -81,7 +81,7 @@ Azure HA單一可用度區域::
 金鑰庫必須位於您計畫建立Cloud Volumes ONTAP 此系統的同一個Azure訂閱和地區。
 
 .步驟
-. https://["在您的Azure訂閱中建立金鑰庫"^]。
+. https://docs.microsoft.com/en-us/azure/key-vault/general/quick-create-portal["在您的Azure訂閱中建立金鑰庫"^]。
 +
 請注意金鑰庫的下列需求：
 
@@ -96,7 +96,7 @@ Azure HA單一可用度區域::
 
 
 
-. https://["在金鑰保存庫中產生金鑰"^]。
+. https://docs.microsoft.com/en-us/azure/key-vault/keys/quick-create-portal#add-a-key-to-key-vault["在金鑰保存庫中產生金鑰"^]。
 +
 請注意金鑰的下列需求：
 
@@ -126,7 +126,7 @@ Azure HA單一可用度區域::
 "Microsoft.KeyVault/vaults/accessPolicies/write"
 "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
 ----
-https://["檢視最新的權限清單"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["檢視最新的權限清單"^]
 
 
 NOTE: 單一區域中的HA配對不需要權限。
@@ -143,7 +143,7 @@ NOTE: 單一區域中的HA配對不需要權限。
 請記下*名稱*和*資源群組*。您需要在下一步中指定這些值。
 
 +
-https://["深入瞭解此API呼叫"^]。
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["深入瞭解此API呼叫"^]。
 
 . 使用下列BlueXP API呼叫取得資料保險箱內的金鑰清單。
 +
@@ -156,7 +156,7 @@ https://["深入瞭解此API呼叫"^]。
 請記下*金鑰名稱*。您需要在下一步中指定該值（連同資料保險箱名稱）。
 
 +
-https://["深入瞭解此API呼叫"^]。
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["深入瞭解此API呼叫"^]。
 
 . 使用Cloud Volumes ONTAP 下列BlueXP API呼叫建立一個系統。
 +
@@ -177,7 +177,7 @@ https://["深入瞭解此API呼叫"^]。
 }
 ----
 +
-https://["深入瞭解此API呼叫"^]。
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-haworking-environments["深入瞭解此API呼叫"^]。
 
 .. 對於單一節點系統：
 +
@@ -196,7 +196,7 @@ https://["深入瞭解此API呼叫"^]。
 }
 ----
 +
-https://["深入瞭解此API呼叫"^]。
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-vsaworking-environments["深入瞭解此API呼叫"^]。
 
 
 

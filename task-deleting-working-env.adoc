@@ -24,13 +24,13 @@ summary: 您應該一律從Cloud Volumes ONTAP BlueXP刪除不適用的系統、
 NOTE: 當您Cloud Volumes ONTAP 的雲端供應商部署了支援功能時、就能在執行個體上提供終止保護。此選項有助於防止意外終止。
 
 .步驟
-. 如果您在工作環境中啟用 BlueXP 備份與還原、請先判斷是否仍需要備份資料、然後再決定 https://["如有必要、請刪除備份"^]。
+. 如果您在工作環境中啟用 BlueXP 備份與還原、請先判斷是否仍需要備份資料、然後再決定 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-ontap.html#deleting-backups["如有必要、請刪除備份"^]。
 +
 BlueXP 備份與還原在設計上不受 Cloud Volumes ONTAP 的保護。BlueXP 備份與還原不會在您刪除 Cloud Volumes ONTAP 系統時自動刪除備份、而且在刪除系統之後、 UI 目前不支援刪除備份。
 
 . 如果您在此工作環境中啟用 BlueXP 分類、且沒有其他工作環境使用此服務、則您必須刪除該服務的執行個體。
 +
-https://["深入瞭解 BlueXP 分類執行個體"^]。
+https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html#the-cloud-data-sense-instance["深入瞭解 BlueXP 分類執行個體"^]。
 
 . 刪除Cloud Volumes ONTAP 這個作業環境。
 +

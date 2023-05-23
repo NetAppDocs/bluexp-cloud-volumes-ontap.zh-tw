@@ -30,7 +30,7 @@ summary: 在 Cloud Volumes ONTAP Azure 中部署時、您可以選擇符合工�
 
 == 選擇支援的地區
 
-大多數Microsoft Azure地區均支援此功能。Cloud Volumes ONTAP https://["檢視支援區域的完整清單"^]。
+大多數Microsoft Azure地區均支援此功能。Cloud Volumes ONTAP https://cloud.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]。
 
 
 
@@ -38,7 +38,7 @@ summary: 在 Cloud Volumes ONTAP Azure 中部署時、您可以選擇符合工�
 
 根據您選擇的授權類型、支援多種 VM 類型。 Cloud Volumes ONTAP
 
-https://["Azure支援Cloud Volumes ONTAP 的支援功能組態"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure支援Cloud Volumes ONTAP 的支援功能組態"^]
 
 
 
@@ -46,7 +46,7 @@ https://["Azure支援Cloud Volumes ONTAP 的支援功能組態"^]
 
 一個不含資源的系統的原始容量上限 Cloud Volumes ONTAP 與授權有關。其他限制會影響集合體和磁碟區的大小。在規劃組態時、您應該注意這些限制。
 
-https://["Azure的Cloud Volumes ONTAP 儲存限制"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Azure的Cloud Volumes ONTAP 儲存限制"^]
 
 
 
@@ -54,11 +54,11 @@ https://["Azure的Cloud Volumes ONTAP 儲存限制"^]
 
 調整 Cloud Volumes ONTAP 您的支援規模、有助於滿足效能與容量的需求。在選擇 VM 類型、磁碟類型和磁碟大小時、您應該注意幾個關鍵點：
 
-虛擬機器類型:: 請查看中支援的虛擬機器類型 http://["發行說明 Cloud Volumes ONTAP"^] 然後檢閱每種受支援 VM 類型的詳細資料。請注意、每種 VM 類型都支援特定數量的資料磁碟。
+虛擬機器類型:: 請查看中支援的虛擬機器類型 http://docs.netapp.com/cloud-volumes-ontap/us-en/index.html["發行說明 Cloud Volumes ONTAP"^] 然後檢閱每種受支援 VM 類型的詳細資料。請注意、每種 VM 類型都支援特定數量的資料磁碟。
 +
 --
-* https://["Azure 文件：通用虛擬機器大小"^]
-* https://["Azure 文件：記憶體最佳化的虛擬機器大小"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-general#dsv2-series["Azure 文件：通用虛擬機器大小"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-memory#dsv2-series-11-15["Azure 文件：記憶體最佳化的虛擬機器大小"^]
 
 
 --
@@ -72,7 +72,7 @@ Azure磁碟類型搭配單一節點系統:: 當您建立 Cloud Volumes ONTAP 用
 * 如果您不需要高 IOPS 、而且想要降低成本、那麼 _ 標準 HDD 託管磁碟 _ 是個不錯的選擇。
 
 
-如需這些磁碟使用案例的其他詳細資料、請參閱 https://["Microsoft Azure 文件： Azure 提供哪些磁碟類型？"^]。
+如需這些磁碟使用案例的其他詳細資料、請參閱 https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure 文件： Azure 提供哪些磁碟類型？"^]。
 
 --
 Azure磁碟類型搭配HA配對:: HA系統使用優質的SSD共享託管磁碟、兩者都能以較高的成本為I/O密集型工作負載提供高效能。在9.12.1版本之前建立的HA部署會使用優質網頁。
@@ -90,8 +90,8 @@ Azure Premium Storage 的效能與磁碟大小有關。較大的磁碟可提供�
 
 請參閱 Azure 、瞭解每個磁碟大小的 IOPS 與處理量：
 
-* https://["Microsoft Azure ：託管磁碟定價"^]
-* https://["Microsoft Azure ：網頁 Blobs 定價"^]
+* https://azure.microsoft.com/en-us/pricing/details/managed-disks/["Microsoft Azure ：託管磁碟定價"^]
+* https://azure.microsoft.com/en-us/pricing/details/storage/page-blobs/["Microsoft Azure ：網頁 Blobs 定價"^]
 
 
 --
@@ -106,7 +106,7 @@ Azure Premium Storage 的效能與磁碟大小有關。較大的磁碟可提供�
 link:reference-default-configs.html#azure-single-node["在Cloud Volumes ONTAP Azure中檢視系統資料的預設磁碟"]。
 
 
-TIP: 連接器也需要系統磁碟。 https://["檢視Connector預設組態的詳細資料"^]。
+TIP: 連接器也需要系統磁碟。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["檢視Connector預設組態的詳細資料"^]。
 
 
 

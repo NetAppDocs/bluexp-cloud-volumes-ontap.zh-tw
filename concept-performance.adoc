@@ -24,7 +24,7 @@ ifdef::aws[]
 
 * AWS 適用的 Cloud Volumes ONTAP
 +
-https://["NetApp 技術報告 4383 ： Cloud Volumes ONTAP 運用應用程式工作負載、將 Amazon Web Services 中的功能特性化"^]
+https://www.netapp.com/us/media/tr-4383.pdf["NetApp 技術報告 4383 ： Cloud Volumes ONTAP 運用應用程式工作負載、將 Amazon Web Services 中的功能特性化"^]
 
 
 
@@ -34,7 +34,7 @@ ifdef::azure[]
 
 * 適用於 Microsoft Azure 的 Cloud Volumes ONTAP
 +
-https://["NetApp 技術報告 4671 ： Cloud Volumes ONTAP 利用應用程式工作負載、將 Azure 中的效能特性化"^]
+https://www.netapp.com/us/media/tr-4671.pdf["NetApp 技術報告 4671 ： Cloud Volumes ONTAP 利用應用程式工作負載、將 Azure 中的效能特性化"^]
 
 
 
@@ -44,7 +44,7 @@ ifdef::gcp[]
 
 * 適用於 Google Cloud Cloud Volumes ONTAP
 +
-https://["NetApp 技術報告 4816 ： Cloud Volumes ONTAP 效能特性分析、適用於 Google Cloud"^]
+https://www.netapp.com/us/media/tr-4816.pdf["NetApp 技術報告 4816 ： Cloud Volumes ONTAP 效能特性分析、適用於 Google Cloud"^]
 
 
 
@@ -56,4 +56,4 @@ endif::gcp[]
 
 從雲端供應商的監控工具中、顯示出使用率極高（超過90%）的節點。Cloud Volumes ONTAP這是因為ONTAP 、當需要時、支援的所有vCPU都會保留在虛擬機器上。
 
-如需協助、請參閱 https://["NetApp知識庫文章、說明如何ONTAP 使用CLI監控不實的CPU使用率"^]
+如需協助、請參閱 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/Monitoring_CPU_utilization_before_an_ONTAP_upgrade["NetApp知識庫文章、說明如何ONTAP 使用CLI監控不實的CPU使用率"^]

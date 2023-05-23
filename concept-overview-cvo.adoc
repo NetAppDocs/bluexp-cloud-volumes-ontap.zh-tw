@@ -34,7 +34,7 @@ summary: 利用 NetApp 技術、您可以最佳化雲端儲存成本與效能、
 Cloud Volumes ONTAP 也與 BlueXP 備份與還原整合、提供保護的備份與還原功能、以及雲端資料的長期歸檔。
 
 +
-https://["深入瞭解 BlueXP 備份與還原"^]
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["深入瞭解 BlueXP 備份與還原"^]
 
 * 資料分層
 +
@@ -45,7 +45,7 @@ https://["深入瞭解 BlueXP 備份與還原"^]
 使用 NetApp SnapCenter 功能確保 NetApp Snapshot 複本的一致性。
 
 +
-https://["深入瞭SnapCenter 解功能"^]
+https://docs.netapp.com/us-en/snapcenter/concept/concept_snapcenter_overview.html["深入瞭SnapCenter 解功能"^]
 
 * 資料安全
 +
@@ -56,13 +56,13 @@ https://["深入瞭SnapCenter 解功能"^]
 與 BlueXP 分類整合可協助您瞭解資料內容並識別敏感資料。
 
 +
-https://["深入瞭解 BlueXP 分類"^]
+https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["深入瞭解 BlueXP 分類"^]
 
 
 
 
 NOTE: 不含適用於功能的授權 ONTAP 。 Cloud Volumes ONTAP
 
-https://["檢視支援 Cloud Volumes ONTAP 的支援的支援功能"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["檢視支援 Cloud Volumes ONTAP 的支援的支援功能"^]
 
-https://["深入瞭 Cloud Volumes ONTAP 解功能"^]
+https://cloud.netapp.com/ontap-cloud["深入瞭 Cloud Volumes ONTAP 解功能"^]

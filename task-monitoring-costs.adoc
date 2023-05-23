@@ -24,9 +24,9 @@ BlueXP可讓您檢視在Cloud Volumes ONTAP AWS中執行功能的相關資源成
 +
 .. 確保提供BlueXP權限的IAM原則包含必要的權限。
 +
-https://["檢視所需的權限"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["檢視所需的權限"^]
 
-.. https://["啟動 * 工作環境 Id* 標籤"^]。
+.. https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html["啟動 * 工作環境 Id* 標籤"^]。
 +
 為追蹤AWS成本、BlueXP會指派成本分配標籤給Cloud Volumes ONTAP 各個執行個體。建立第一個工作環境之後、請啟動 * 工作環境 Id* 標籤。使用者定義的標記不會出現在 AWS 帳單報告上、除非您在帳單和成本管理主控台中啟動它們。
 

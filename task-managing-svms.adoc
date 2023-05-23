@@ -23,7 +23,7 @@ summary: 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可�
 
 == 支援的儲存 VM 數量
 
-某些組態支援多個儲存VM。前往 https://["發行說明 Cloud Volumes ONTAP"^] 驗證Cloud Volumes ONTAP 支援的儲存VM數量是否適用於您的版本的支援。
+某些組態支援多個儲存VM。前往 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["發行說明 Cloud Volumes ONTAP"^] 驗證Cloud Volumes ONTAP 支援的儲存VM數量是否適用於您的版本的支援。
 
 
 

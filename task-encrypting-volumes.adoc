@@ -36,7 +36,7 @@ endif::gcp[]
 .您需要的產品
 您的支援系統應該已向 NetApp 註冊。 Cloud Volumes ONTAPNetApp Volume Encryption授權會自動安裝在Cloud Volumes ONTAP 每個註冊NetApp支援的支援系統上。
 
-* https://["在NetApp 支援網站 BlueXP中新增功能帳戶"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["在NetApp 支援網站 BlueXP中新增功能帳戶"^]
 * link:task-registering.html["註冊隨用隨付系統"]
 
 
@@ -44,7 +44,7 @@ endif::gcp[]
 NOTE: BlueXP不會在中國地區的系統上安裝NVE授權。
 
 .步驟
-. 檢閱中支援的關鍵管理程式清單 http://["NetApp 互通性對照表工具"^]。
+. 檢閱中支援的關鍵管理程式清單 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
 +
 
 TIP: 搜尋 * 關鍵經理 * 解決方案。
@@ -55,7 +55,7 @@ TIP: 搜尋 * 關鍵經理 * 解決方案。
 ifdef::aws[]
 
 +
-** AWS ： https://["如ONTAP 需相關指示、請參閱《產品資訊》文件"^]
+** AWS ： https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-external-key-management-overview-concept.html["如ONTAP 需相關指示、請參閱《產品資訊》文件"^]
 
 
 
