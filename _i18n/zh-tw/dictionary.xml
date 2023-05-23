@@ -4663,7 +4663,6 @@
   <block id="d528ab86bd3d69a199b872eae76729c3" category="list-text">從 _ 新增 Aggregate _ 畫面建立 Aggregate 。</block>
   <block id="6f3d3de9b8245394933ccb5a82580032" category="inline-image-macro">顯示新增 Aggregate 進度的螢幕擷取畫面。</block>
   <block id="6d8395606a42c9b4b508b7083fef071b" category="paragraph"><block ref="6d8395606a42c9b4b508b7083fef071b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1f0652f3e88178c774443201328e4d2a" category="paragraph">BlueXP 提供三種升級 Cloud Volumes ONTAP 的方法：</block>
   <block id="61c67604de243e1d1f09464a53018e48" category="list-text">在 Aggregate 標題下、按一下「橢圓」按鈕、然後選取 * 檢視 Aggregate details* 。</block>
   <block id="46804cb5ec7cb836d1b3ea87af016b42" category="paragraph"><block ref="46804cb5ec7cb836d1b3ea87af016b42" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b1d9e8a6210003e4a2d3ad9699698b5c" category="paragraph"><block ref="b1d9e8a6210003e4a2d3ad9699698b5c" category="inline-image-macro-rx" type="image"></block></block>
@@ -4913,4 +4912,5 @@
   <block id="d32bc06f4693559b0941ab221004f77a" category="list-text"><block ref="b537ee4eb64ec01da34737ed00ba85c9" category="inline-link-macro-rx"></block>。</block>
   <block id="0f2fe7f7d7d6e9e8b6985ebcba41a752" category="paragraph">Keystone 訂閱是一項隨成長付費訂閱服務。 <block ref="a4cf1d10eb125cd296862332c2edca47" category="inline-link-macro-rx"></block>。</block>
   <block id="57a6d3c65b0af592c913eb5564c15458" category="admonition">在 URL 中， * image-file-name* 必須遵循格式 "cot.image.9.13.1p2.tgz" 。</block>
+  <block id="bed8a3185a4b2ddb1020be5c9da45358" category="paragraph">BlueXP提供兩種升級Cloud Volumes ONTAP 途徑：</block>
 </blocks>
