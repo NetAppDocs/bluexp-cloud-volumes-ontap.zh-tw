@@ -21,6 +21,10 @@ summary: 支援 NetApp Volume Encryption （ NVE ）和 NetApp Aggregate Encrypt
 
 外部金鑰管理程式支援NVE和NAE。
 
+ifdef::aws[]
+
+endif::aws[]
+
 ifdef::azure[]
 
 endif::azure[]
@@ -29,49 +33,14 @@ ifdef::gcp[]
 
 endif::gcp[]
 
-新的Aggregate在您設定外部金鑰管理程式之後、預設會啟用NAE。非 NAE Aggregate 一部分的新磁碟區預設會啟用 NVE （例如、如果在設定外部金鑰管理程式之前已建立現有的 Aggregate ）。
-
-不支援內建金鑰管理。 Cloud Volumes ONTAP
-
-.您需要的產品
-您的支援系統應該已向 NetApp 註冊。 Cloud Volumes ONTAPNetApp Volume Encryption授權會自動安裝在Cloud Volumes ONTAP 每個註冊NetApp支援的支援系統上。
-
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["在NetApp 支援網站 BlueXP中新增功能帳戶"^]
-* link:task-registering.html["註冊隨用隨付系統"]
-
-
-
-NOTE: BlueXP不會在中國地區的系統上安裝NVE授權。
-
-.步驟
-. 檢閱中支援的關鍵管理程式清單 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
-+
-
-TIP: 搜尋 * 關鍵經理 * 解決方案。
-
-. link:task-connecting-to-otc.html["連線 Cloud Volumes ONTAP 至 CLI"^]。
-. 設定外部金鑰管理。
-+
 ifdef::aws[]
-
-+
-** AWS ： https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-external-key-management-overview-concept.html["如ONTAP 需相關指示、請參閱《產品資訊》文件"^]
-
-
-
 
 endif::aws[]
 
 ifdef::azure[]
 
-* Azure ： link:task-azure-key-vault.html["Azure Key Vault（AKV）"]
-
-
 endif::azure[]
 
 ifdef::gcp[]
-
-* Google Cloud： link:task-google-key-manager.html["Google Cloud金鑰管理服務"]
-
 
 endif::gcp[]
