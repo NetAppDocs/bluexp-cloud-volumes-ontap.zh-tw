@@ -52,7 +52,7 @@ https://www.netapp.com/services/support/active-iq/["《數位顧問》 Active IQ
 +
 image:screenshot_aiq_digital_advisor.png["BlueXP中的功能不一的使用者介面快照Active IQ Digital Advisor 。"]
 
-* 如果您尚未在BlueXP中註冊某個nssa帳戶、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["立即註冊一個nssnss"^] ，之後隨即出現 Active IQ Digital Advisor UI。
+* 如果您尚未在BlueXP中註冊某個nssa帳戶、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["立即註冊一個nssnss"^] ，之後隨即出現 Active IQ Digital Advisor UI。
 
 
 

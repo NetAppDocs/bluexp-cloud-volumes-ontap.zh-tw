@@ -106,7 +106,7 @@ vserver add-aggregates -vserver <svm-name> -aggregates <aggr1,aggr2>
 請注意、BlueXP會在Google Cloud中配置所需的IP位址、並使用資料LIF來建立儲存VM、以進行SMB/NFS存取、並使用iSCSI LIF來進行傳出SMB通訊。
 
 .必要的Google Cloud權限
-Connector需要特定權限、才能建立及管理Cloud Volumes ONTAP 儲存VM、以利執行各種HA配對。所需權限包含在中 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["NetApp 提供的原則"]。
+Connector需要特定權限、才能建立及管理Cloud Volumes ONTAP 儲存VM、以利執行各種HA配對。所需權限包含在中 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["NetApp 提供的原則"]。
 
 .步驟
 . 使用下列API呼叫建立儲存VM：

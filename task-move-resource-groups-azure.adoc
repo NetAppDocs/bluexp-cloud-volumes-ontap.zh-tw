@@ -21,7 +21,7 @@ summary: 支援Azure資源群組移動、但工作流程僅發生在Azure主控�
 .步驟
 . 從* Canvas*移除工作環境。
 +
-若要瞭解如何移除工作環境、請參閱 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-removing.html["移除 Cloud Volumes ONTAP 運作環境"]。
+若要瞭解如何移除工作環境、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-removing.html["移除 Cloud Volumes ONTAP 運作環境"]。
 
 . 在Azure主控台執行資源群組搬移。
 +

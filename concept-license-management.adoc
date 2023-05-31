@@ -21,7 +21,7 @@ TIP: 節點型授權是前一代Cloud Volumes ONTAP 的BYOL for the節點型授�
 
 link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解有關功能多樣的授權選項"]。
 
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["深入瞭解如何管理節點型授權"^]。
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["深入瞭解如何管理節點型授權"^]。
 
 
 
@@ -41,7 +41,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage
 
 當您建立節點型BYOL系統時、BlueXP會提示您輸入授權的序號和NetApp 支援網站 您的效益帳戶。BlueXP使用帳戶從NetApp下載授權檔案、並將其安裝在Cloud Volumes ONTAP 整個作業系統上。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["瞭解如何在NetApp 支援網站 BlueXP中新增功能不一的帳戶"^]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["瞭解如何在NetApp 支援網站 BlueXP中新增功能不一的帳戶"^]。
 
 如果BlueXP無法透過安全的網際網路連線存取授權檔案、您可以這麼做 link:task-manage-node-licenses.html["自行取得檔案、然後手動將檔案上傳至BlueXP"]。
 

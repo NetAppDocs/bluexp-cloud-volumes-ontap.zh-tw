@@ -163,7 +163,7 @@ BlueXP會建立Azure安全性群組、其中包含Cloud Volumes ONTAP 了順利�
 適用於此功能的安全性群組 Cloud Volumes ONTAP 需要傳入和傳出規則。
 
 
-TIP: 正在尋找Connector的相關資訊？ https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["檢視Connector的安全群組規則"^]
+TIP: 正在尋找Connector的相關資訊？ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["檢視Connector的安全群組規則"^]
 
 
 
@@ -435,6 +435,6 @@ NOTE: 來源是 Cloud Volumes ONTAP 指在整個系統上的介面（ IP 位址�
 
 如果您尚未建立連接器、也應該檢閱連接器的網路需求。
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["檢視連接器的網路需求"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Azure中的安全性群組規則"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["檢視連接器的網路需求"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azure中的安全性群組規則"^]
 

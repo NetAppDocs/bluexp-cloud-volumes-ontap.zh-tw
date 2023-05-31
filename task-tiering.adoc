@@ -162,7 +162,7 @@ ifdef::azure[]
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-根據預設、權限會包含在自訂角色中。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["檢視Azure對Connector的權限"^]
+根據預設、權限會包含在自訂角色中。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["檢視Azure對Connector的權限"^]
 
 endif::azure[]
 
@@ -297,7 +297,7 @@ image:screenshot_volumes_change_tiering_policy.png["螢幕擷取畫面、顯示�
 image:screenshot_replication_tiering.gif["快照顯示複寫磁碟區時的 S3 分層選項。"]
 
 +
-如需複寫資料的說明、請參閱 https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["在雲端之間複寫資料"^]。
+如需複寫資料的說明、請參閱 https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["在雲端之間複寫資料"^]。
 
 
 

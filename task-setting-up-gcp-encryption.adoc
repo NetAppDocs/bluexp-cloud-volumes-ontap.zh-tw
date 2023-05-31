@@ -19,7 +19,7 @@ summary: 雖然Google Cloud Storage會在資料寫入磁碟之前先加密資料
 .步驟
 . 確認BlueXP Connector服務帳戶在專案層級（儲存金鑰的專案）擁有正確的權限。
 +
-權限會在中提供 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["連接器服務帳戶權限依預設"^]、但如果您使用雲端金鑰管理服務的替代專案、則可能無法套用。
+權限會在中提供 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["連接器服務帳戶權限依預設"^]、但如果您使用雲端金鑰管理服務的替代專案、則可能無法套用。
 
 +
 權限如下：
@@ -62,4 +62,4 @@ https://cloud.google.com/kms/docs/iam#granting_roles_on_a_resource["Google Cloud
 ----
 
 
-請參閱 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["藍圖XP自動化文件"^] 如需使用「 GcpEncryption 」參數的詳細資訊、
+請參閱 https://docs.netapp.com/us-en/bluexp-automation/index.html["藍圖XP自動化文件"^] 如需使用「 GcpEncryption 」參數的詳細資訊、

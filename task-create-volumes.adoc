@@ -87,7 +87,7 @@ endif::aws[]
 | Volume大小 | 您可以輸入的最大大小、主要取決於您是否啟用精簡配置、這可讓您建立比目前可用實體儲存容量更大的磁碟區。 
 
 
-| 標記 | 您新增至Volume的標記會與相關聯 https://docs.netapp.com/us-en/cloud-manager-app-template/task-using-tags.html["應用程式範本服務"^]可協助您組織及簡化資源管理。 
+| 標記 | 您新增至Volume的標記會與相關聯 https://docs.netapp.com/us-en/bluexp-remediation/task-using-tags.html["應用程式範本服務"^]可協助您組織及簡化資源管理。 
 
 
 | 儲存 VM （ SVM ） | 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可為您的用戶端提供儲存與資料服務。您可能知道這是 SVM 或 Vserver 。根據預設、系統會設定一個儲存 VM 、但部分組態會支援額外的儲存 VM 。 Cloud Volumes ONTAP您可以為新的 Volume 指定儲存 VM 。 
@@ -158,7 +158,7 @@ ifdef::gcp[]
 endif::gcp[]
 
 DNS 網域:: 適用於整個儲存虛擬 Cloud Volumes ONTAP 機器（ SVM ）的 DNS 網域。在大多數情況下、網域與 AD 網域相同。
-NTP 伺服器:: 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["藍圖XP自動化文件"^] 以取得詳細資料。
+NTP 伺服器:: 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱 https://docs.netapp.com/us-en/bluexp-automation/index.html["藍圖XP自動化文件"^] 以取得詳細資料。
 +
 --
 請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。

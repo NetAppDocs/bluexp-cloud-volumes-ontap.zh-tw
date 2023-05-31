@@ -298,11 +298,11 @@ image:screenshot_aggr_volume_overview.png["螢幕擷取畫面：在 Aggregate �
 . 找出 Cloud Volumes ONTAP 具備可用容量的系統、或是部署新系統。
 . 將來源工作環境拖放到目標工作環境、以執行磁碟區的一次性資料複寫。
 +
-如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["在系統之間複寫資料"^]。
+如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["在系統之間複寫資料"^]。
 
 . 移至「複寫狀態」頁面、然後中斷 SnapMirror 關係、將複寫的磁碟區從資料保護磁碟區轉換為讀寫磁碟區。
 +
-如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["管理資料複寫排程和關係"^]。
+如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["管理資料複寫排程和關係"^]。
 
 . 設定磁碟區以進行資料存取。
 +

@@ -109,7 +109,7 @@ link:task-connecting-to-otc.html["瞭解如何從SSH到Cloud Volumes ONTAP 功�
 . 如果狀態仍然失敗、請驗證Cloud Volumes ONTAP 透過連接埠3128驗證顯示的是在連接埠之間與連接器之間是否有連線。
 . 如果狀態ID在驗證是否有連線後仍失敗、請使用SSH連線至連接器。
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["深入瞭解連接至Linux VM for the Connector的相關資訊"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["深入瞭解連接至Linux VM for the Connector的相關資訊"^]
 
 . 請前往「/opt/sapplication/netapp/cloudmanager/dock_occm/data/`」
 . 開啟Proxy組態檔「shquid.conf」

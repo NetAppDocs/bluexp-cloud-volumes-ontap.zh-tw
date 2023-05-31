@@ -184,7 +184,7 @@ HA配對需要四個VPC。每個VPC都可以是共享的或獨立的。例如、
 
 共享 VPC 可讓您設定及集中管理多個專案中的虛擬網路。您可以在 _ 主機專案 _ 中設定共享 VPC 網路、並在 Cloud Volumes ONTAP _ 服務專案 _ 中部署連接器與支援虛擬機器執行個體。 https://cloud.google.com/vpc/docs/shared-vpc["Google Cloud 文件：共享 VPC 總覽"^]。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["檢閱Connector部署所涵蓋的必要共享VPC權限"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["檢閱Connector部署所涵蓋的必要共享VPC權限"^]
 
 
 
@@ -254,7 +254,7 @@ BlueXP會建立Google Cloud防火牆規則、其中包括Cloud Volumes ONTAP 需
 
 
 
-TIP: 正在尋找Connector的相關資訊？ https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["檢視Connector的防火牆規則"^]
+TIP: 正在尋找Connector的相關資訊？ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["檢視Connector的防火牆規則"^]
 
 
 
@@ -509,6 +509,6 @@ NOTE: 若要為新的Google Cloud HA配對部署啟用高速寫入速度、VPC-1
 
 如果您尚未建立連接器、也應該檢閱連接器的網路需求。
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["檢視連接器的網路需求"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Google Cloud中的防火牆規則"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["檢視連接器的網路需求"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Google Cloud中的防火牆規則"^]
 

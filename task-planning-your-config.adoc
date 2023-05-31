@@ -120,7 +120,7 @@ EBS 磁碟大小:: 如果您選擇不支援的組態 link:concept-aws-elastic-vo
 link:reference-default-configs.html#aws["在Cloud Volumes ONTAP AWS中檢視系統資料的預設磁碟"]。
 
 
-TIP: 連接器也需要系統磁碟。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["檢視Connector預設組態的詳細資料"^]。
+TIP: 連接器也需要系統磁碟。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-default-config.html["檢視Connector預設組態的詳細資料"^]。
 
 
 

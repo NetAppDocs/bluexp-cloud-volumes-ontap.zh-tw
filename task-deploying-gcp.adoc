@@ -25,9 +25,9 @@ summary: 您可以在 Cloud Volumes ONTAP 單一系統組態中或在 Google Clo
 [[licensing]]
 * 已啟動並執行的連接器。
 +
-** 您應該擁有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["與工作區相關的連接器"^]。
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["您應該隨時準備好讓 Connector 保持運作"^]。
-** 與 Connector 相關的服務帳戶 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["應具備所需的權限"^]
+** 您應該擁有 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["與工作區相關的連接器"^]。
+** https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["您應該隨時準備好讓 Connector 保持運作"^]。
+** 與 Connector 相關的服務帳戶 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["應具備所需的權限"^]
 
 
 * 瞭解您要使用的組態。
@@ -59,7 +59,7 @@ link:task-set-up-licensing-google.html["瞭解如何設定授權"]。
 . 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . [[訂閱]在「畫版」頁面上、按一下「*新增工作環境*」、然後依照提示進行。
 . * 選擇位置 * ：選擇 * Google Cloud * 和 * Cloud Volumes ONTAP
-. 如果出現提示、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["建立連接器"^]。
+. 如果出現提示、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["建立連接器"^]。
 . *詳細資料與認證*：選取專案、指定叢集名稱、選擇性地選取服務帳戶、選擇性地新增標籤、然後指定認證資料。
 +
 下表說明您可能需要指導的欄位：
@@ -73,7 +73,7 @@ link:task-set-up-licensing-google.html["瞭解如何設定授權"]。
 | 工作環境名稱 | BlueXP使用工作環境名稱來命名Cloud Volumes ONTAP 支援系統和Google Cloud VM執行個體。如果您選取該選項、它也會使用名稱做為預先定義安全性群組的前置詞。 
 
 
-| 服務帳戶名稱 | 如果您打算使用 link:concept-data-tiering.html["資料分層"] 或 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["備份與還原"^] 有了這個功能、您就需要啟用*服務帳戶*、並選取具有預先定義儲存管理員角色的服務帳戶。Cloud Volumes ONTAP link:task-creating-gcp-service-account.html["瞭解如何建立服務帳戶"]。 
+| 服務帳戶名稱 | 如果您打算使用 link:concept-data-tiering.html["資料分層"] 或 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["BlueXP 備份與還原"^] 有了這個功能、您就需要啟用*服務帳戶*、並選取具有預先定義儲存管理員角色的服務帳戶。Cloud Volumes ONTAP link:task-creating-gcp-service-account.html["瞭解如何建立服務帳戶"]。 
 
 
 | 新增標籤 | 標籤是Google Cloud資源的中繼資料。BlueXP會將標籤新增Cloud Volumes ONTAP 至與系統相關的支援系統和Google Cloud資源。建立工作環境時、您最多可以從使用者介面新增四個標籤、然後在建立之後新增更多標籤。請注意、在建立工作環境時、 API 不會限制您使用四個標籤。如需標籤的相關資訊、請參閱 https://cloud.google.com/compute/docs/labeling-resources["Google Cloud 文件：標示資源"^]。 
@@ -88,7 +88,7 @@ link:task-set-up-licensing-google.html["瞭解如何設定授權"]。
 如果在下拉式清單中沒有看到任何其他專案、表示您尚未將BlueXP服務帳戶與其他專案建立關聯。前往 Google Cloud 主控台、開啟 IAM 服務、然後選取專案。將具有BlueXP角色的服務帳戶新增至該專案。您必須針對每個專案重複此步驟。
 
 
-NOTE: 這是您為BlueXP設定的服務帳戶、 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["如本頁所述"^]。
+NOTE: 這是您為BlueXP設定的服務帳戶、 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["如本頁所述"^]。
 
 按一下 * 「新增訂閱」 * 、將選取的認證資料與訂閱建立關聯。
 
@@ -96,7 +96,7 @@ NOTE: 這是您為BlueXP設定的服務帳戶、 link:https://docs.netapp.com/us
 
 |===
 +
-下列影片說明如何將隨用隨付服務市場訂閱關聯至Google Cloud專案。或者、請依照中的步驟訂閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["將Marketplace訂閱與Google Cloud認證建立關聯"^] 區段。
+下列影片說明如何將隨用隨付服務市場訂閱關聯至Google Cloud專案。或者、請依照中的步驟訂閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["將Marketplace訂閱與Google Cloud認證建立關聯"^] 區段。
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
@@ -176,7 +176,7 @@ link:concept-worm.html["深入瞭解 WORM 儲存設備"]。
 
 +
 ** BlueXP會在Cloud Volumes ONTAP 整個過程中設定服務帳戶。此服務帳戶提供資料分層至 Google Cloud Storage 儲存庫的權限。請務必將Connector服務帳戶新增為分層服務帳戶的使用者、否則您無法從BlueXP中選取該帳戶
-** 如需新增Google Cloud帳戶的說明、請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["設定及新增Google Cloud帳戶、以便使用9.6進行資料分層"^]。
+** 如需新增Google Cloud帳戶的說明、請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["設定及新增Google Cloud帳戶、以便使用9.6進行資料分層"^]。
 ** 您可以在建立或編輯磁碟區時、選擇特定的磁碟區分層原則。
 ** 如果停用資料分層、您可以在後續的Aggregate上啟用、但您需要關閉系統、並從Google Cloud主控台新增服務帳戶。
 +
@@ -245,7 +245,9 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 | DNS 網域 | 適用於整個儲存虛擬 Cloud Volumes ONTAP 機器（ SVM ）的 DNS 網域。在大多數情況下、網域與 AD 網域相同。 
 
 
-| NTP 伺服器 | 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["藍圖XP自動化文件"^] 以取得詳細資料。請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。 
+| NTP 伺服器 | 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱 https://docs.netapp.com/us-en/bluexp-automation/index.html["藍圖XP自動化文件"^] 以取得詳細資料。
+
+請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。 
 |===
 . * 使用率設定檔、磁碟類型及分層原則 * ：視需要選擇是否要啟用儲存效率功能、並變更磁碟區分層原則。
 +
@@ -299,7 +301,7 @@ BlueXP部署Cloud Volumes ONTAP 了這個功能完善的系統。您可以追蹤
 | 工作環境名稱 | BlueXP使用工作環境名稱來命名Cloud Volumes ONTAP 支援系統和Google Cloud VM執行個體。如果您選取該選項、它也會使用名稱做為預先定義安全性群組的前置詞。 
 
 
-| 服務帳戶名稱 | 如果您打算使用 link:concept-data-tiering.html["資料分層"] 或 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["備份與還原"^] 服務、您必須啟用 * 服務帳戶 * 交換器、然後選取具有預先定義儲存管理角色的服務帳戶。 
+| 服務帳戶名稱 | 如果您打算使用 link:concept-data-tiering.html["BlueXP 分層"] 或 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["BlueXP 備份與還原"^] 服務、您必須啟用 * 服務帳戶 * 交換器、然後選取具有預先定義儲存管理角色的服務帳戶。 
 
 
 | 新增標籤 | 標籤是Google Cloud資源的中繼資料。BlueXP會將標籤新增Cloud Volumes ONTAP 至與系統相關的支援系統和Google Cloud資源。建立工作環境時、您最多可以從使用者介面新增四個標籤、然後在建立之後新增更多標籤。請注意、在建立工作環境時、 API 不會限制您使用四個標籤。如需標籤的相關資訊、請參閱 https://cloud.google.com/compute/docs/labeling-resources["Google Cloud 文件：標示資源"^]。 
@@ -314,7 +316,7 @@ BlueXP部署Cloud Volumes ONTAP 了這個功能完善的系統。您可以追蹤
 如果在下拉式清單中沒有看到任何其他專案、表示您尚未將BlueXP服務帳戶與其他專案建立關聯。前往 Google Cloud 主控台、開啟 IAM 服務、然後選取專案。將具有BlueXP角色的服務帳戶新增至該專案。您必須針對每個專案重複此步驟。
 
 
-NOTE: 這是您為BlueXP設定的服務帳戶、 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["如本頁所述"^]。
+NOTE: 這是您為BlueXP設定的服務帳戶、 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["如本頁所述"^]。
 
 按一下 * 「新增訂閱」 * 、將選取的認證資料與訂閱建立關聯。
 
@@ -322,7 +324,7 @@ NOTE: 這是您為BlueXP設定的服務帳戶、 link:https://docs.netapp.com/us
 
 |===
 +
-下列影片說明如何將隨用隨付服務市場訂閱關聯至Google Cloud專案。或者、請依照中的步驟訂閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["將Marketplace訂閱與Google Cloud認證建立關聯"^] 區段。
+下列影片說明如何將隨用隨付服務市場訂閱關聯至Google Cloud專案。  或者、請依照中的步驟訂閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["將Marketplace訂閱與Google Cloud認證建立關聯"^] 區段。
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
@@ -392,7 +394,7 @@ link:concept-write-speed.html["深入瞭解寫入速度"]。
 
 +
 
-NOTE: 「*高速*寫入速度」選項提供_Flash Cache、高速寫入速度和更高的最大傳輸單元（MTU）8、896位元組、以及n2-Standard-16、n2-Standard-32、n2-Standard-48和n2-Standard-64執行個體類型。此外、較高的MTU為8、896、需要選擇VPC-1、VPC-2和VPC-3來進行部署。_Flash Cache、高速寫入速度和8、896的MTU是功能相依的、無法在設定的執行個體中個別停用。如需VPC-1、VPC-2和VPC-3的詳細資訊、請參閱 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1、VPC-2和VPC-3的規則"]。
+NOTE: 「*高速*寫入速度」選項提供_Flash Cache、高速寫入速度和更高的最大傳輸單元（MTU）8、896位元組、以及n2-Standard-16、n2-Standard-32、n2-Standard-48和n2-Standard-64執行個體類型。此外、較高的MTU為8、896、需要選擇VPC-1、VPC-2和VPC-3來進行部署。_Flash Cache、高速寫入速度和8、896的MTU是功能相依的、無法在設定的執行個體中個別停用。如需VPC-1、VPC-2和VPC-3的詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1、VPC-2和VPC-3的規則"]。
 
 .. 視需要啟動一次寫入、多次讀取（WORM）儲存設備。
 +
@@ -478,7 +480,9 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 | DNS 網域 | 適用於整個儲存虛擬 Cloud Volumes ONTAP 機器（ SVM ）的 DNS 網域。在大多數情況下、網域與 AD 網域相同。 
 
 
-| NTP 伺服器 | 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["藍圖XP自動化文件"^] 以取得詳細資料。請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。 
+| NTP 伺服器 | 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱 https://docs.netapp.com/us-en/bluexp-automation/index.html["藍圖XP自動化文件"^] 以取得詳細資料。
+
+請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。 
 |===
 . * 使用率設定檔、磁碟類型及分層原則 * ：視需要選擇是否要啟用儲存效率功能、並變更磁碟區分層原則。
 +

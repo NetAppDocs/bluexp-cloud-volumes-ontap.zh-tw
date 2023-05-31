@@ -34,7 +34,7 @@ summary: 利用 NetApp 技術、您可以最佳化雲端儲存成本與效能、
 Cloud Volumes ONTAP 也與 BlueXP 備份與還原整合、提供保護的備份與還原功能、以及雲端資料的長期歸檔。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["深入瞭解 BlueXP 備份與還原"^]
+https://docs.netapp.com/us-en/bluexp-backup-restore/concept-backup-to-cloud.html["深入瞭解 BlueXP 備份與還原"^]
 
 * 資料分層
 +
@@ -56,7 +56,7 @@ https://docs.netapp.com/us-en/snapcenter/concept/concept_snapcenter_overview.htm
 與 BlueXP 分類整合可協助您瞭解資料內容並識別敏感資料。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["深入瞭解 BlueXP 分類"^]
+https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["深入瞭解 BlueXP 分類"^]
 
 
 

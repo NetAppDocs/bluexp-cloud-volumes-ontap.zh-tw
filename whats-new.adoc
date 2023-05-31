@@ -54,7 +54,7 @@ Azure 中的澳洲東部地區現在支援 Cloud Volumes ONTAP 9.12.1 GA 及更�
 * Volume 使用量
 
 
-如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["管理容量型授權"^]。
+如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["管理容量型授權"^]。
 
 
 
@@ -92,7 +92,7 @@ Google Cloud for Cloud Volumes ONTAP 和 Connector for Cloud Volumes ONTAP 9.12.
 
 BlueXP 數位錢包現在顯示您購買的授權容量、並提供市場私有優惠。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["瞭解如何檢視您帳戶中的已用容量"^]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["瞭解如何檢視您帳戶中的已用容量"^]。
 
 
 
@@ -106,7 +106,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capa
 
 BlueXP 現在已重新設計了 Cloud Volumes ONTAP 概觀、磁碟區和集合網頁的使用者介面。並排式設計會在每個方塊中提供更完整的資訊、以提供更好的使用者體驗。
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-resource-page-rn.png["此螢幕擷取畫面會在 Cloud Volumes ONTAP 總覽頁面上顯示重新設計的 BlueXP 使用者介面。各種方塊顯示儲存效率、版本、容量分配、 Cloud Volumes ONTAP 部署、磁碟區、集合體、複製和備份的相關資訊。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-resource-page-rn.png["此螢幕擷取畫面會在 Cloud Volumes ONTAP 總覽頁面上顯示重新設計的 BlueXP 使用者介面。各種方塊顯示儲存效率、版本、容量分配、 Cloud Volumes ONTAP 部署、磁碟區、集合體、複製和備份的相關資訊。"]
 
 
 
@@ -117,9 +117,9 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 NOTE: 目前、您只能在 BlueXP 下檢視現有的 FlexGroup 磁碟區。在 BlueXP 中建立 FlexGroup 磁碟區的功能無法使用、但已計畫在未來版本中使用。
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["顯示 FlexGroup Volume 圖示的螢幕擷取畫面會將文字暫留在 Volumes 磚下方。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["顯示 FlexGroup Volume 圖示的螢幕擷取畫面會將文字暫留在 Volumes 磚下方。"]
 
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html["深入瞭解如何檢視建立的 FlexGroup Volume 。"^]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-volumes.html["深入瞭解如何檢視建立的 FlexGroup Volume 。"^]
 
 
 
@@ -168,7 +168,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["深入瞭Cloud Volum
 
 使用NetApp Volume Encryption時、多租戶外部金鑰管理可讓個別儲存VM（SVM）透過KMIP伺服器維護自己的金鑰。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["瞭解如何使用NetApp加密解決方案來加密磁碟區"^]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html["瞭解如何使用NetApp加密解決方案來加密磁碟區"^]。
 
 
 
@@ -176,9 +176,9 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-
 
 目前支援任何完全隔離網際網路的雲端環境Cloud Volumes ONTAP 。這些環境僅支援節點型授權（BYOL）。不支援容量型授權。若要開始使用、請手動安裝 Connector 軟體、登入 Connector 上執行的 BlueXP 主控台、將 BYOL 授權新增至 BlueXP 數位錢包、然後部署 Cloud Volumes ONTAP 。
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["將Connector安裝在沒有網際網路存取的位置"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["存取Connector上的BlueXP主控台"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["新增未指派的授權"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["將Connector安裝在沒有網際網路存取的位置"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#access-the-local-ui["存取Connector上的BlueXP主控台"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["新增未指派的授權"^]
 
 
 
@@ -201,7 +201,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-
 
 全新組態設定現在可透過AWS HA單一可用度區域（AZ）部署來建立放置群組。現在您可以選擇略過失敗的放置群組建立、並讓AWS HA單一AZ部署順利完成。
 
-如需如何設定放置群組建立設定的詳細資訊、請參閱 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["設定AWS HA單一AZ的放置群組建立"^]。
+如需如何設定放置群組建立設定的詳細資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["設定AWS HA單一AZ的放置群組建立"^]。
 
 
 
@@ -209,7 +209,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-
 
 現在已有新的組態設定可供使用、以便在使用Azure私有連結時、避免在私有DNS區域和虛擬網路之間建立連結。預設會啟用建立。
 
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html#provide-bluexp-with-details-about-your-azure-private-dns["提供您Azure私有DNS的詳細資料給BlueXP"^]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html#provide-bluexp-with-details-about-your-azure-private-dns["提供您Azure私有DNS的詳細資料給BlueXP"^]
 
 
 
@@ -217,7 +217,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabli
 
 現在您可以在建立Cloud Volumes ONTAP 一套或更新版本的版本時、同時啟用資料分層和WORM儲存。利用WORM儲存設備進行資料分層、可將資料分層至雲端的物件存放區。
 
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-worm.html["瞭解WORM儲存設備。"^]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["瞭解WORM儲存設備。"^]
 
 
 
@@ -231,7 +231,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-wor
 
 Google Cloud Volumes ONTAP Cloud Marketplace提供最佳化的Edge Cache容量型授權套件、可作為隨用隨付方案或年度合約、以供使用。
 
-請參閱 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["提供授權Cloud Volumes ONTAP"^]。
+請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["提供授權Cloud Volumes ONTAP"^]。
 
 
 
@@ -239,7 +239,7 @@ Google Cloud Volumes ONTAP Cloud Marketplace提供最佳化的Edge Cache容量�
 
 多租戶加密金鑰管理（MTEKM）授權不再包含在新Cloud Volumes ONTAP 的版次部署中。
 
-如需ONTAP 更多有關隨Cloud Volumes ONTAP 功能自動安裝的功能認證資訊、請參閱 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-default-configs.html["支援的預設組態Cloud Volumes ONTAP"^]。
+如需ONTAP 更多有關隨Cloud Volumes ONTAP 功能自動安裝的功能認證資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html["支援的預設組態Cloud Volumes ONTAP"^]。
 
 
 
@@ -309,7 +309,7 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解
 
 您現在可以將工作環境從同一個資源群組移至Azure中不同的資源群組、並在同一個Azure訂閱中使用。
 
-如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-moving-resource-groups-azure.html["正在移動資源群組"]。
+如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-moving-resource-groups-azure.html["正在移動資源群組"]。
 
 
 
@@ -325,7 +325,7 @@ NDMP複本現已通過認證、可搭配Cloud Volume ONTAP 使用。
 
 新增Azure權限、讓您在建立時加密所有託管磁碟。
 
-如需此新功能的詳細資訊、請參閱 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-azure-encryption.html["設定Cloud Volumes ONTAP 支援使用Azure中客戶管理的金鑰"]。
+如需此新功能的詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-azure-encryption.html["設定Cloud Volumes ONTAP 支援使用Azure中客戶管理的金鑰"]。
 
 
 
@@ -342,11 +342,11 @@ NDMP複本現已通過認證、可搭配Cloud Volume ONTAP 使用。
 這些詳細資料可協助您更深入瞭解如何收取費用、以及是否需要購買額外容量。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["瞭解如何檢視您帳戶中的已用容量"]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["瞭解如何檢視您帳戶中的已用容量"]。
 
 * 您現在可以從單一充電方法變更為最佳化的充電方法。
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["瞭解如何變更充電方法"]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["瞭解如何變更充電方法"]。
 
 
 
@@ -358,7 +358,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capa
 
 選擇工作環境之後、您可以選擇*最佳化成本與效能*選項、以變更Cloud Volumes ONTAP 執行個體類型以供使用。選擇較小的執行個體有助於降低成本、而改用較大的執行個體則有助於最佳化效能。
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-optimize-cost-performance.png["選取工作環境後、可從畫版取得「最佳化成本與安培」選項的快照。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-optimize-cost-performance.png["選取工作環境後、可從畫版取得「最佳化成本與安培」選項的快照。"]
 
 
 
@@ -380,7 +380,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 使用NetApp Volume Encryption時、多租戶外部金鑰管理可讓個別儲存VM（SVM）透過KMIP伺服器維護自己的金鑰。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["瞭解如何使用NetApp加密解決方案來加密磁碟區"]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html["瞭解如何使用NetApp加密解決方案來加密磁碟區"]。
 
 
 
@@ -398,7 +398,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-
 
 您現在可以變更Cloud Volumes ONTAP 使用容量型授權的功能、以供選用的功能。例如、如果您部署Cloud Volumes ONTAP 的是含有Essentials套件的功能完善的系統、則當您的業務需求改變時、可以將其變更為Professional套件。此功能可從Digital Wallet取得。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["瞭解如何變更充電方法"]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["瞭解如何變更充電方法"]。
 
 
 
@@ -406,7 +406,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capa
 
 當您建立Cloud Volumes ONTAP 一個運作環境時、使用者介面現在可讓您選擇是否要讓預先定義的安全性群組僅允許所選網路（建議）或所有網路內的流量。
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-allow-traffic.png["顯示在工作環境精靈中選取安全性群組時可用之「允許內部流量」選項的快照。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-allow-traffic.png["顯示在工作環境精靈中選取安全性群組時可用之「允許內部流量」選項的快照。"]
 
 
 
@@ -422,7 +422,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 * *邊緣快取*：授權 https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volumes Edge快取"^]
 
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["深入瞭解這些授權套件"]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["深入瞭解這些授權套件"]。
 
 
 
@@ -436,7 +436,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 
 數位錢包現在會顯示您帳戶的總使用容量、以及授權套件的使用容量。這有助於瞭解您的收費方式、以及您是否需要購買額外容量。
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-digital-wallet-summary.png["顯示容量型授權的「Digital Wallet」頁面的快照。此頁面概述您帳戶中的已用容量、然後依照授權套件細分已用容量。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-digital-wallet-summary.png["顯示容量型授權的「Digital Wallet」頁面的快照。此頁面概述您帳戶中的已用容量、然後依照授權套件細分已用容量。"]
 
 
 
@@ -444,7 +444,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 在從Cloud Volumes ONTAP 使用者介面建立運作環境時、BlueXP現在支援Amazon EBS彈性磁碟區功能。使用GP3或IO1磁碟時、預設會啟用彈性磁碟區功能。您可以根據儲存需求來選擇初始容量、Cloud Volumes ONTAP 並在部署完畢後加以修改。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["深入瞭解AWS對彈性磁碟區的支援"]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-aws-elastic-volumes.html["深入瞭解AWS對彈性磁碟區的支援"]。
 
 
 
@@ -492,7 +492,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-9111-relnotes["深入瞭Cloud 
 
 此「進階檢視」可作為Cloud Volumes ONTAP Preview搭配使用的版本（含E59.10.0及更新版本）。我們計畫改善這項體驗、並在即將推出的版本中加入增強功能。請使用產品內建聊天功能、向我們傳送意見反應。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-administer-advanced-view.html["深入瞭解進階檢視"]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-advanced-view.html["深入瞭解進階檢視"]。
 
 
 
@@ -502,7 +502,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-administer-
 
 從_new _ Cloud Volumes ONTAP 版本-zhustr9.11.0系統、以及GP3和IO1 EBS磁碟類型開始、即可支援彈性磁碟區。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["深入瞭解彈性磁碟區的支援"]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-aws-elastic-volumes.html["深入瞭解彈性磁碟區的支援"]。
 
 請注意、若要支援彈性磁碟區、連接器需要新的AWS權限：
 
@@ -511,7 +511,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elas
 "ec2:DescribeVolumesModifications",
 "ec2:ModifyVolume",
 ----
-請務必為您新增至BlueXP的每組AWS認證資料提供這些權限。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["檢視AWS的最新Connector原則"^]。
+請務必為您新增至BlueXP的每組AWS認證資料提供這些權限。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["檢視AWS的最新Connector原則"^]。
 
 
 
@@ -527,7 +527,7 @@ link:task-deploy-aws-shared-vpc.html["瞭解如何在共用子網路中部署HA�
 
 現在、當使用vnet服務端點來連接Cloud Volumes ONTAP 時、BlueXP會限制網路存取、以利連接至各個儲存帳戶。如果您停用Azure Private Link連線、則BlueXP會使用服務端點。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["深入瞭解Azure Private Link與Cloud Volumes ONTAP NetApp的連線功能"]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["深入瞭解Azure Private Link與Cloud Volumes ONTAP NetApp的連線功能"]。
 
 
 
@@ -545,7 +545,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-pr
 請注意、您必須使用ONTAP NetApp CLI或System Manager、在單一節點系統上建立儲存VM。
 
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#storage-vm-limits["深入瞭解Google Cloud中的儲存VM限制"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["瞭解如何在Cloud Volumes ONTAP Google Cloud中建立資料服務儲存VM以供其使用"]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["瞭解如何在Cloud Volumes ONTAP Google Cloud中建立資料服務儲存VM以供其使用"]
 
 
 
@@ -574,7 +574,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-9110-relnotes["深入瞭Cloud 
 
 K8s索引標籤已在先前版本中過時、現在已移除。如果您想要搭配Cloud Volumes ONTAP 使用Kubernetes搭配使用、可以將託管Kubernetes叢集新增至Canvas、作為進階資料管理的工作環境。
 
-https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["瞭解BlueXP中的Kubernetes資料管理"^]
+https://docs.netapp.com/us-en/bluexp-kubernetes/concept-kubernetes.html["瞭解BlueXP中的Kubernetes資料管理"^]
 
 
 
@@ -584,7 +584,7 @@ Azure現已透過年度合約提供Essentials與Professional套裝軟體。您�
 
 NetApp與您分享私人優惠之後、您可以在工作環境建立期間、從Azure Marketplace訂閱年度方案。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["深入瞭解授權"]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["深入瞭解授權"]。
 
 
 
@@ -592,7 +592,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 
 您現在可以將階層式資料儲存在Amazon S3 Glacier即時擷取儲存類別中。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html#changing-the-storage-class-for-tiered-data["瞭解如何變更階層式資料的儲存類別"]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html#changing-the-storage-class-for-tiered-data["瞭解如何變更階層式資料的儲存類別"]。
 
 
 
@@ -607,7 +607,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.htm
 ----
 現在需要這些權限、才能最佳化BlueXP建立放置群組的方式。
 
-請務必為您新增至BlueXP的每組AWS認證資料提供這些權限。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["檢視AWS的最新Connector原則"^]。
+請務必為您新增至BlueXP的每組AWS認證資料提供這些權限。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["檢視AWS的最新Connector原則"^]。
 
 
 
@@ -648,7 +648,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 
 當您選擇要搭配Cloud Volumes ONTAP 使用的Google Cloud服務帳戶時、BlueXP現在會顯示與每個服務帳戶相關的電子郵件地址。檢視電子郵件地址可讓您更容易區分共用相同名稱的服務帳戶。
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["服務帳戶欄位的快照"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["服務帳戶欄位的快照"]
 
 
 
@@ -660,7 +660,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 我們已移除Cloud Volumes ONTAP 先前可從功能環境中取得的System Manager連結。
 
-您仍可在連線Cloud Volumes ONTAP 至該系統的網頁瀏覽器中輸入叢集管理IP位址、以連線至System Manager。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-connecting-to-otc.html["深入瞭解連線至System Manager"]。
+您仍可在連線Cloud Volumes ONTAP 至該系統的網頁瀏覽器中輸入叢集管理IP位址、以連線至System Manager。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-connecting-to-otc.html["深入瞭解連線至System Manager"]。
 
 
 
@@ -682,7 +682,7 @@ https://cloud.netapp.com/pricing["瞭解WORM儲存設備的定價"^]。
 
 我們最近推出的「建立新磁碟區精靈」、現在可從*進階分配*選項在特定的集合體上建立磁碟區。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html["瞭解如何在特定的Aggregate上建立磁碟區"]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-create-volumes.html["瞭解如何在特定的Aggregate上建立磁碟區"]。
 
 
 
@@ -708,7 +708,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volu
 
 
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["深入瞭Cloud Volumes ONTAP 解適用於NetApp的授權選項"]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["深入瞭Cloud Volumes ONTAP 解適用於NetApp的授權選項"]。
 
 
 
@@ -722,7 +722,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 
 此動作會撤銷Cloud Volumes ONTAP 此「不支援」授權、並針對相同到期日的服務建立等值金額的授權。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["瞭解如何交換未指派的節點型授權"]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["瞭解如何交換未指派的節點型授權"]。
 
 
 
@@ -931,7 +931,7 @@ image:screenshot_azure_resource_group.png["「建立工作環境」精靈的快�
 "Microsoft.Network/privateEndpoints/delete",
 "Microsoft.Compute/availabilitySets/delete",
 ----
-請務必為您新增至BlueXP的每組Azure認證提供這些權限。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["檢視Azure最新的Connector原則"^]。
+請務必為您新增至BlueXP的每組Azure認證提供這些權限。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["檢視Azure最新的Connector原則"^]。
 
 
 
@@ -1013,7 +1013,7 @@ link:task-tiering.html#changing-the-cooling-period-for-the-auto-tiering-policy["
 
 這項增強功能可移除不再需要的快照、協助降低雲端供應商的成本。
 
-請注意、Connector需要新的權限才能刪除Azure快照。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["檢視Azure最新的Connector原則"^]。
+請注意、Connector需要新的權限才能刪除Azure快照。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["檢視Azure最新的Connector原則"^]。
 
 [source, json]
 ----

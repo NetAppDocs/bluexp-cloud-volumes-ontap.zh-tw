@@ -109,7 +109,7 @@ Google Cloud Compute Engine會強制執行資源使用量配額、因此您應�
 
 
 
-TIP: 連接器也需要系統磁碟。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["檢視Connector預設組態的詳細資料"^]。
+TIP: 連接器也需要系統磁碟。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-default-config.html["檢視Connector預設組態的詳細資料"^]。
 
 
 

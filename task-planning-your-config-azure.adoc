@@ -106,7 +106,7 @@ Azure Premium Storage 的效能與磁碟大小有關。較大的磁碟可提供�
 link:reference-default-configs.html#azure-single-node["在Cloud Volumes ONTAP Azure中檢視系統資料的預設磁碟"]。
 
 
-TIP: 連接器也需要系統磁碟。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["檢視Connector預設組態的詳細資料"^]。
+TIP: 連接器也需要系統磁碟。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-default-config.html["檢視Connector預設組態的詳細資料"^]。
 
 
 

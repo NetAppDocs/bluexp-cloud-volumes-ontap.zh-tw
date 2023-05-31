@@ -22,8 +22,8 @@ summary: 您可以Cloud Volumes ONTAP 在Cloud Volumes ONTAP BlueXP中建立一�
 [[licensing]]
 * 已啟動並執行的連接器。
 +
-** 您應該擁有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["與工作區相關的連接器"^]。
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["您應該隨時準備好讓 Connector 保持運作"^]。
+** 您應該擁有 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["與工作區相關的連接器"^]。
+** https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["您應該隨時準備好讓 Connector 保持運作"^]。
 
 
 * 瞭解您要使用的組態。
@@ -57,7 +57,7 @@ link:task-set-up-licensing-azure.html["瞭解如何設定授權"]。
 . 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . [[訂閱]在「畫版」頁面上、按一下「*新增工作環境*」、然後依照提示進行。
 . *選擇位置*：選擇* Microsoft Azure *和* Cloud Volumes ONTAP 《單一節點*》。
-. 如果出現提示、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["建立連接器"^]。
+. 如果出現提示、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["建立連接器"^]。
 . *詳細資料與認證*：選擇性變更Azure認證與訂閱、指定叢集名稱、視需要新增標籤、然後指定認證資料。
 +
 下表說明您可能需要指導的欄位：
@@ -77,7 +77,7 @@ link:task-set-up-licensing-azure.html["瞭解如何設定授權"]。
 | 使用者名稱和密碼 | 這些是Cloud Volumes ONTAP 適用於整個叢集管理員帳戶的認證資料。您可以使用這些認證資料、 Cloud Volumes ONTAP 透過 System Manager 或其 CLI 連線至功能驗證。保留預設的_admin_使用者名稱、或將其變更為自訂使用者名稱。 
 
 
-| [[video ） ] 編輯認證資料 | 您可以選擇不同的 Azure 認證資料和其他 Azure 訂閱、以搭配此 Cloud Volumes ONTAP 款作業系統使用。您必須將 Azure Marketplace 訂閱與所選 Azure 訂閱建立關聯、才能部署隨用隨付 Cloud Volumes ONTAP 的功能。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html["瞭解如何新增認證"^]。 
+| [[video ） ] 編輯認證資料 | 您可以選擇不同的 Azure 認證資料和其他 Azure 訂閱、以搭配此 Cloud Volumes ONTAP 款作業系統使用。您必須將 Azure Marketplace 訂閱與所選 Azure 訂閱建立關聯、才能部署隨用隨付 Cloud Volumes ONTAP 的功能。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["瞭解如何新增認證"^]。 
 |===
 +
 下列影片說明如何將 Marketplace 訂閱與 Azure 訂閱建立關聯：
@@ -86,8 +86,8 @@ link:task-set-up-licensing-azure.html["瞭解如何設定授權"]。
 video::video_subscribing_azure.mp4[width=848,height=480]
 . * 服務 * ：啟用或停用 Cloud Volumes ONTAP 您不想搭配使用的個別服務。
 +
-** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["深入瞭解 BlueXP 分類"^]
-** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["深入瞭解 BlueXP 備份與還原"^]
+** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["深入瞭解 BlueXP 分類"^]
+** https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["深入瞭解 BlueXP 備份與還原"^]
 +
 
 TIP: 如果您想要使用 WORM 和資料分層功能、您必須停用 BlueXP 備份與還原、並部署 9.8 版或更新版本的 Cloud Volumes ONTAP 工作環境。
@@ -112,7 +112,7 @@ TIP: 如果您想要使用 WORM 和資料分層功能、您必須停用 BlueXP �
 建立Cloud Volumes ONTAP 新的資源群組以供使用、或使用現有的資源群組。最佳實務做法是使用全新的資源群組 Cloud Volumes ONTAP 來進行支援。雖然可以在Cloud Volumes ONTAP 現有的共享資源群組中部署功能、但由於資料遺失的風險、不建議這麼做。如需詳細資料、請參閱上述警告。
 
 
-TIP: 如果您使用的Azure帳戶具有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["必要權限"^]、在Cloud Volumes ONTAP 部署失敗或刪除的情況下、BlueXP會從資源群組移除一些不必要的資源。
+TIP: 如果您使用的Azure帳戶具有 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["必要權限"^]、在Cloud Volumes ONTAP 部署失敗或刪除的情況下、BlueXP會從資源群組移除一些不必要的資源。
 
 
 
@@ -240,7 +240,9 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 | DNS 網域 | 適用於整個儲存虛擬 Cloud Volumes ONTAP 機器（ SVM ）的 DNS 網域。在大多數情況下、網域與 AD 網域相同。 
 
 
-| NTP 伺服器 | 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["藍圖XP自動化文件"^] 以取得詳細資料。請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。 
+| NTP 伺服器 | 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱 https://docs.netapp.com/us-en/bluexp-automation/index.html["藍圖XP自動化文件"^] 以取得詳細資料。
+
+請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。 
 |===
 . * 使用率設定檔、磁碟類型及分層原則 * ：視需要選擇是否要啟用儲存效率功能、並變更磁碟區分層原則。
 +
@@ -280,7 +282,7 @@ BlueXP部署Cloud Volumes ONTAP 了這個功能完善的系統。您可以追蹤
 .步驟
 . 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . [[訂閱]在「畫版」頁面上、按一下「*新增工作環境*」、然後依照提示進行。
-. 如果出現提示、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["建立連接器"^]。
+. 如果出現提示、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["建立連接器"^]。
 . *詳細資料與認證*：選擇性變更Azure認證與訂閱、指定叢集名稱、視需要新增標籤、然後指定認證資料。
 +
 下表說明您可能需要指導的欄位：
@@ -300,7 +302,7 @@ BlueXP部署Cloud Volumes ONTAP 了這個功能完善的系統。您可以追蹤
 | 使用者名稱和密碼 | 這些是Cloud Volumes ONTAP 適用於整個叢集管理員帳戶的認證資料。您可以使用這些認證資料、 Cloud Volumes ONTAP 透過 System Manager 或其 CLI 連線至功能驗證。保留預設的_admin_使用者名稱、或將其變更為自訂使用者名稱。 
 
 
-| [[video ） ] 編輯認證資料 | 您可以選擇不同的 Azure 認證資料和其他 Azure 訂閱、以搭配此 Cloud Volumes ONTAP 款作業系統使用。您必須將 Azure Marketplace 訂閱與所選 Azure 訂閱建立關聯、才能部署隨用隨付 Cloud Volumes ONTAP 的功能。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html["瞭解如何新增認證"^]。 
+| [[video ） ] 編輯認證資料 | 您可以選擇不同的 Azure 認證資料和其他 Azure 訂閱、以搭配此 Cloud Volumes ONTAP 款作業系統使用。您必須將 Azure Marketplace 訂閱與所選 Azure 訂閱建立關聯、才能部署隨用隨付 Cloud Volumes ONTAP 的功能。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["瞭解如何新增認證"^]。 
 |===
 +
 下列影片說明如何將 Marketplace 訂閱與 Azure 訂閱建立關聯：
@@ -309,8 +311,8 @@ BlueXP部署Cloud Volumes ONTAP 了這個功能完善的系統。您可以追蹤
 video::video_subscribing_azure.mp4[width=848,height=480]
 . * 服務 * ：啟用或停用 Cloud Volumes ONTAP 您不想搭配使用的個別服務。
 +
-** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["深入瞭解 BlueXP 分類"^]
-** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["深入瞭解 BlueXP 備份與還原"^]
+** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["深入瞭解 BlueXP 分類"^]
+** https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["深入瞭解 BlueXP 備份與還原"^]
 +
 
 TIP: 如果您想要使用 WORM 和資料分層功能、您必須停用 BlueXP 備份與還原、並部署 9.8 版或更新版本的 Cloud Volumes ONTAP 工作環境。
@@ -345,7 +347,7 @@ TIP: 如果您想要使用 WORM 和資料分層功能、您必須停用 BlueXP �
 您必須使用專屬的資源群組來處理Cloud Volumes ONTAP 您在Azure中部署的每個「EHA配對」。資源群組僅支援一個HA配對。如果您嘗試在Cloud Volumes ONTAP Azure資源群組中部署第二個「鏈接HA配對」、則BlueXP會遇到連線問題。
 
 
-TIP: 如果您使用的Azure帳戶具有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["必要權限"^]、在Cloud Volumes ONTAP 部署失敗或刪除的情況下、BlueXP會從資源群組移除一些不必要的資源。
+TIP: 如果您使用的Azure帳戶具有 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["必要權限"^]、在Cloud Volumes ONTAP 部署失敗或刪除的情況下、BlueXP會從資源群組移除一些不必要的資源。
 
 
 
@@ -485,7 +487,9 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 | DNS 網域 | 適用於整個儲存虛擬 Cloud Volumes ONTAP 機器（ SVM ）的 DNS 網域。在大多數情況下、網域與 AD 網域相同。 
 
 
-| NTP 伺服器 | 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["藍圖XP自動化文件"^] 以取得詳細資料。請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。 
+| NTP 伺服器 | 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱 https://docs.netapp.com/us-en/bluexp-automation/index.html["藍圖XP自動化文件"^] 以取得詳細資料。
+
+請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。 
 |===
 . * 使用率設定檔、磁碟類型及分層原則 * ：視需要選擇是否要啟用儲存效率功能、並變更磁碟區分層原則。
 +

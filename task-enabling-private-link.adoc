@@ -47,7 +47,7 @@ image:screenshot_settings_icon.png["顯示BlueXP主控台右上角「設定」�
 .完成後
 如果您停用Azure私有連結、且Connector使用Proxy伺服器、則必須啟用直接API流量。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-configuring-proxy.html#enable-a-proxy-on-a-connector["瞭解如何在Connector上啟用直接API流量"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html#enable-a-proxy-on-a-connector["瞭解如何在Connector上啟用直接API流量"^]
 
 
 

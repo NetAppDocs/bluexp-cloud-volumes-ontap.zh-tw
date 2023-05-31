@@ -65,7 +65,7 @@ link:concept-licensing.html#freemium-offering["深入瞭解容量型授權"]。
 
 .步驟
 . https://cloud.netapp.com/contact-cds["請聯絡NetApp銷售人員以取得授權"^]
-. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["將NetApp 支援網站 您的不更新帳戶新增至藍圖XP"^]
+. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["將NetApp 支援網站 您的不更新帳戶新增至藍圖XP"^]
 +
 BlueXP會自動查詢NetApp的授權服務、以取得NetApp 支援網站 與您的還原帳戶相關之授權的詳細資料。如果沒有錯誤、 BlueXP 會自動將授權新增至數位錢包。
 
@@ -112,7 +112,7 @@ image:screenshot-professional.png["建立Cloud Volumes ONTAP 功能不正常的�
 link:task-deploying-gcp.html["請參閱逐步指示Cloud Volumes ONTAP 、在Google Cloud中啟動「功能不全」"]。
 
 
-TIP: 您可以從「設定」>「認證」頁面管理與您帳戶相關的Google Cloud Marketplace訂閱。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["瞭解如何管理您的Google Cloud認證與訂閱"^]
+TIP: 您可以從「設定」>「認證」頁面管理與您帳戶相關的Google Cloud Marketplace訂閱。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["瞭解如何管理您的Google Cloud認證與訂閱"^]
 
 
 
