@@ -93,7 +93,7 @@ NOTE: 如果連接器和Cloud Volumes ONTAP 物件系統部署在不同的VNets�
 "user-private-dns-zone-settings" : {
    "resource-group" : "<resource group name of the DNS zone>",
    "subscription" : "<subscription ID>",
-   "use-existing" : true
+   "use-existing" : true,
    "create-private-dns-zone-link" : true
 }
 ....
