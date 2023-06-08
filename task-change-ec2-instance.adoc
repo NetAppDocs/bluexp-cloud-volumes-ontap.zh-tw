@@ -35,6 +35,9 @@ TIP: BlueXP會主動啟動接管並等待回饋、一次只能正常變更一個
 
 
 
+.參考資料
+如需 AWS 中支援的執行個體類型清單、請參閱 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html#supported-ec2-compute["支援的 EC2 執行個體"^]。
+
 .步驟
 . 在 Canvas 頁面上、選取工作環境。
 . 在「概述」標籤上、按一下「功能」面板、然後按一下「 * 執行個體類型 * 」旁邊的鉛筆圖示。
