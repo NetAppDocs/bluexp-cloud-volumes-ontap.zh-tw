@@ -3845,7 +3845,6 @@
   <block id="86f463a1f0f0879749d1274dc94305d9" category="paragraph-title">重要注意事項</block>
   <block id="fdee261787c8d28a1d5af5c07b8580d6" category="list-text">從適用於NVRAM和核心磁碟的《支援支援支援》9.9、1頁7開始ONTAP 、BlueXP使用磁碟加密集來管理受管理磁碟的加密金鑰。較低版本將使用Microsoft管理的金鑰、而非客戶管理的金鑰。</block>
   <block id="d01b00b7df0dd6620e8ab49fb88f67b9" category="list-text">*適用於Volume加密的Azure磁碟加密*（適用於多個區域中的單一節點系統或HA配對）</block>
-  <block id="6337ff9e523cd4d0c21d00ce582cb8ca" category="admonition">單一區域中的HA配對不需要權限。</block>
   <block id="d1432d772b2382ef2395e1eed551d5bb" category="paragraph-title">必要的Google Cloud權限</block>
   <block id="675d38d552c49bbf67606b2c5f1d5bed" category="section-title">什麼是Flash Cache？</block>
   <block id="78d0efd6b2c71cba47286de0ff16747c" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 建立連接器</block>
@@ -4942,4 +4941,32 @@
   <block id="9eecbfaf12c4b441b4b80b15e69b1763" category="paragraph"><block ref="861512b606f6337e516b8d3562c115c3" category="inline-link-macro-rx"></block>。</block>
   <block id="ce8df63e83de2ff4c9315aacad840c85" category="inline-link-macro">支援的 EC2 執行個體</block>
   <block id="eb8249aa4fe7f904487ee8ca24dce280" category="paragraph">如需 AWS 中支援的執行個體類型清單、請參閱 <block ref="ab5d2be79e0f4831293646ade5590437" category="inline-link-macro-rx"></block>。</block>
+  <block id="21d684c5497d7c44f38249fb9317e2ff" category="section-title">建立使用者指派的託管身分識別</block>
+  <block id="c1d9d82ae4f42fc1db168e7b745f9697" category="paragraph">您可以選擇建立稱為使用者指派之託管身分識別的資源。這樣做可讓您在建立 Cloud Volumes ONTAP 工作環境時加密儲存帳戶。建議您在建立金鑰資料保險箱和產生金鑰之前先建立此資源。</block>
+  <block id="2da2bdad0a1c89d70cb7a7586bf14758" category="paragraph">資源具有以下 ID ：<block ref="0169e4e7c078e2230c21c551eaf35e56" prefix=" " category="inline-code"></block>。</block>
+  <block id="2f37b99340ba454bd7f13c34ebaf9799" category="list-text">在 Azure 中、前往 Azure 服務並選取 * 託管身分識別 * 。</block>
+  <block id="f2a42a68e067e481d094b018459ef895" category="list-text">按一下「 * 建立 * 」。</block>
+  <block id="0de11488ec479f7728a12eaa20900087" category="list-text">提供下列詳細資料：</block>
+  <block id="eb6b5e1059f0c14240e0b29450c64244" category="list-text">* 訂閱 * ：選擇訂閱。我們建議您選擇與 Connector 訂閱相同的訂閱。</block>
+  <block id="10a805425ce15433762da2005f065657" category="list-text">* 資源群組 * ：使用現有的資源群組或建立新的資源群組。</block>
+  <block id="da2433e2c4da1ae4d4ccf813bec559d8" category="list-text">* 區域 * ：您也可以選擇與 Connector 相同的區域。</block>
+  <block id="5b75c82ea3a972e4af28cf4cebb17b30" category="list-text">* 名稱 * ：輸入資源的名稱。</block>
+  <block id="a5224fbb5f2e884564b316411dcf1c8b" category="list-text">您也可以新增標記。</block>
+  <block id="8a719e3e1b73b371d427de036115d5ca" category="inline-xref">建立使用者指派的託管身分識別</block>
+  <block id="6290500d5abf30b274cc1c7ddf30e546" category="paragraph">如果您 <block ref="33573eb5764d0fad6438d3a347eee31f" category="inline-xref-macro-rx"></block>在建立金鑰資料保險箱時、您也應該為金鑰資料保險箱建立存取原則。</block>
+  <block id="4fe37dc4f545dffb56459397b5344d4c" category="list-text">如果您建立使用者指派的託管身分識別、則應啟用下列選項：</block>
+  <block id="7761893631ec0e57ca5b1847392a89d1" category="list-text">* 資料保險箱存取原則 *</block>
+  <block id="6b549cac54fb4417d571d2ff5fe2226a" category="list-text">如果您選取了 Vault 存取原則、請按一下「建立」來建立金鑰資料保險箱的存取原則。如果沒有、請跳至步驟 3 。</block>
+  <block id="05d7a493e761863b43bc21c5b24707a8" category="list-text">選取下列權限：</block>
+  <block id="b5eda0a74558a342cf659187f06f746f" category="list-text">取得</block>
+  <block id="10ae9fc7d453b0dd525d0edf2ede7961" category="list-text">清單</block>
+  <block id="9a2d8ce3ffdcdf2123bddd94d79ef200" category="list-text">解密</block>
+  <block id="53c82eba31f6d416f331de9162ebe997" category="list-text">加密</block>
+  <block id="64d6d5cd6bec2e7026a301304363a0f2" category="list-text">解開密鑰</block>
+  <block id="2733a028e38aa84f7ea84735ac7988a6" category="list-text">換行鍵</block>
+  <block id="e8418d1d706cd73548f9f16f1d55ad6e" category="list-text">驗證</block>
+  <block id="04b29480233f4def5c875875b6bdc3b1" category="list-text">簽署</block>
+  <block id="dfbbb3ca890c5e816afc33a0f5d49ec2" category="list-text">選取使用者指派的託管身分識別（資源）做為主體。</block>
+  <block id="0882685275009e45f6167bce4081e668" category="list-text">檢閱並建立存取原則。</block>
+  <block id="1f8370f663ec71e8fac7dc386794543c" category="admonition">包括<block ref="d740baa07e4af19d0de1f45650cf4bc0" prefix=" " category="inline-code"></block> 如果您建立此資源以用於儲存帳戶加密、請輸入此欄位。</block>
 </blocks>

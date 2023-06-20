@@ -76,9 +76,34 @@ Azure HA單一可用度區域::
 
 
 
+== 建立使用者指派的託管身分識別
+
+您可以選擇建立稱為使用者指派之託管身分識別的資源。這樣做可讓您在建立 Cloud Volumes ONTAP 工作環境時加密儲存帳戶。建議您在建立金鑰資料保險箱和產生金鑰之前先建立此資源。
+
+資源具有以下 ID ： `userassignedidentity`。
+
+.步驟
+. 在 Azure 中、前往 Azure 服務並選取 * 託管身分識別 * 。
+. 按一下「 * 建立 * 」。
+. 提供下列詳細資料：
++
+** * 訂閱 * ：選擇訂閱。我們建議您選擇與 Connector 訂閱相同的訂閱。
+** * 資源群組 * ：使用現有的資源群組或建立新的資源群組。
+** * 區域 * ：您也可以選擇與 Connector 相同的區域。
+** * 名稱 * ：輸入資源的名稱。
+
+
+. 您也可以新增標記。
+. 按一下「 * 建立 * 」。
+
+
+
+
 == 建立金鑰保存庫並產生金鑰
 
 金鑰庫必須位於您計畫建立Cloud Volumes ONTAP 此系統的同一個Azure訂閱和地區。
+
+如果您 <<建立使用者指派的託管身分識別,建立使用者指派的託管身分識別>>在建立金鑰資料保險箱時、您也應該為金鑰資料保險箱建立存取原則。
 
 .步驟
 . https://docs.microsoft.com/en-us/azure/key-vault/general/quick-create-portal["在您的Azure訂閱中建立金鑰庫"^]。
@@ -94,6 +119,29 @@ Azure HA單一可用度區域::
 *** *適用於Volume加密的Azure磁碟加密*（適用於多個區域中的單一節點系統或HA配對）
 
 
+** 如果您建立使用者指派的託管身分識別、則應啟用下列選項：
++
+*** * 資料保險箱存取原則 *
+
+
+
+
+. 如果您選取了 Vault 存取原則、請按一下「建立」來建立金鑰資料保險箱的存取原則。如果沒有、請跳至步驟 3 。
++
+.. 選取下列權限：
++
+*** 取得
+*** 清單
+*** 解密
+*** 加密
+*** 解開密鑰
+*** 換行鍵
+*** 驗證
+*** 簽署
+
+
+.. 選取使用者指派的託管身分識別（資源）做為主體。
+.. 檢閱並建立存取原則。
 
 
 . https://docs.microsoft.com/en-us/azure/key-vault/keys/quick-create-portal#add-a-key-to-key-vault["在金鑰保存庫中產生金鑰"^]。
@@ -118,18 +166,15 @@ Azure HA單一可用度區域::
 
 [source, json]
 ----
-"Microsoft.Compute/diskEncryptionSets/read"
+"Microsoft.Compute/diskEncryptionSets/read",
 "Microsoft.Compute/diskEncryptionSets/write",
 "Microsoft.Compute/diskEncryptionSets/delete"
 "Microsoft.KeyVault/vaults/deploy/action",
 "Microsoft.KeyVault/vaults/read",
-"Microsoft.KeyVault/vaults/accessPolicies/write"
+"Microsoft.KeyVault/vaults/accessPolicies/write",
 "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
 ----
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["檢視最新的權限清單"^]
-
-
-NOTE: 單一區域中的HA配對不需要權限。
 
 .步驟
 . 請使用下列BlueXP API呼叫、取得Azure訂閱中的金鑰保存清單。
@@ -172,10 +217,13 @@ https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-
 ----
 "azureEncryptionParameters": {
               "key": "keyName",
-              "vaultName": "vaultName",
-              "userAssignedIdentity": " userAssignedIdentityId", [Optional]***
+              "vaultName": "vaultName"
 }
 ----
++
+
+NOTE: 包括 `"userAssignedIdentity": " userAssignedIdentityId"` 如果您建立此資源以用於儲存帳戶加密、請輸入此欄位。
+
 +
 https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-haworking-environments["深入瞭解此API呼叫"^]。
 
@@ -191,10 +239,13 @@ https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-
 ----
 "azureEncryptionParameters": {
               "key": "keyName",
-              "vaultName": "vaultName",
-              "userAssignedIdentity": " userAssignedIdentityId", [Optional]***
+              "vaultName": "vaultName"
 }
 ----
++
+
+NOTE: 包括 `"userAssignedIdentity": " userAssignedIdentityId"` 如果您建立此資源以用於儲存帳戶加密、請輸入此欄位。
+
 +
 https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-vsaworking-environments["深入瞭解此API呼叫"^]。
 
