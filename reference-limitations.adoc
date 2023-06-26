@@ -31,7 +31,7 @@ NOTE: 在 BlueXP 中建立 FlexGroup 磁碟區的能力已計畫在未來的版�
 
 == BlueXP不支援Cloud Volumes ONTAP S3搭配使用
 
-雖然在某些雲端供應商中、支援S3作為橫向擴充儲存設備的選項、但BlueXP並未針對此功能提供任何管理功能。Cloud Volumes ONTAP使用CLI是設定S3用戶端從Cloud Volumes ONTAP 功能支援的最佳實務做法。如需詳細資訊、請參閱 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html["S3組態電源指南"^]。
+雖然 Cloud Volumes ONTAP 支援 S3 作為橫向擴充儲存設備的選項、但 BlueXP 並未提供任何此功能的管理功能。使用CLI是設定S3用戶端從Cloud Volumes ONTAP 功能支援的最佳實務做法。如需詳細資訊、請參閱 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html["S3組態電源指南"^]。
 
 link:concept-client-protocols.html["深入瞭Cloud Volumes ONTAP 解支援S3和其他用戶端傳輸協定的功能"]。
 

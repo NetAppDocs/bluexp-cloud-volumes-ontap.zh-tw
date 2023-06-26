@@ -3424,7 +3424,6 @@
   <block id="17024db75b14b1900d128c5da0a5c029" category="inline-link">將NetApp 支援網站 您的不更新帳戶新增至藍圖XP</block>
   <block id="f8cf58037c7bed5dced264c41261bad2" category="list-text">返回BlueXP之後、當您到達「充電方法」頁面時、請選取容量型套件。</block>
   <block id="bd143c2af617c5743abf3efb9b36b10a" category="paragraph">當您建立Cloud Volumes ONTAP 一個運作環境時、BlueXP會提示您訂閱Google Cloud Marketplace提供的合約。該訂閱之後會與工作環境建立關聯、以便進行充電。您可以在其他工作環境中使用相同的訂閱。</block>
-  <block id="a719d497acfd7c92ff4bf9224e1de3d0" category="paragraph">雖然在某些雲端供應商中、支援S3作為橫向擴充儲存設備的選項、但BlueXP並未針對此功能提供任何管理功能。Cloud Volumes ONTAP使用CLI是設定S3用戶端從Cloud Volumes ONTAP 功能支援的最佳實務做法。如需詳細資訊、請參閱<block ref="49e8fee748cd4c8d6f01bdb03113fc2a" category="inline-link-rx"></block>。</block>
   <block id="397f1667d1f282be3b879b4e92a63aad" category="paragraph">BlueXP不提供任何儲存VM災難恢復的設定或協調支援。您必須使用 System Manager 或 CLI 。</block>
   <block id="66abe501678500958b330ea34f7f3794" category="admonition">BlueXP會主動啟動接管並等待回饋、一次只能正常變更一個節點。NetApp 的 QA 團隊在這段過程中測試了寫入和讀取檔案的能力、並未發現客戶端有任何問題。隨著連線變更、我們確實看到 I/O 層級的重試次數、但應用程式層卻取代了 NFS/CIFS 連線的這些短「重新連線」。</block>
   <block id="ee8671e0efb5c4ca4bc939aa5f95934e" category="paragraph">當您建立Cloud Volumes ONTAP 不協調作業環境時、BlueXP會自動建立IAM角色、並將其附加至協調者。此角色會假設您在VPC擁有者帳戶中建立的IAM角色、以便變更與HA配對相關的路由表。</block>
@@ -4969,4 +4968,15 @@
   <block id="dfbbb3ca890c5e816afc33a0f5d49ec2" category="list-text">選取使用者指派的託管身分識別（資源）做為主體。</block>
   <block id="0882685275009e45f6167bce4081e668" category="list-text">檢閱並建立存取原則。</block>
   <block id="1f8370f663ec71e8fac7dc386794543c" category="admonition">包括<block ref="d740baa07e4af19d0de1f45650cf4bc0" prefix=" " category="inline-code"></block> 如果您建立此資源以用於儲存帳戶加密、請輸入此欄位。</block>
+  <block id="57a3061930625af99195891e9e561fb2" category="cell">9.13.1.12.9.12.9.</block>
+  <block id="24eacd330f66ba30cc845660c1efa967" category="list-text">對於修補程式（ P ）版本、您可以從一個版本版本升級至下一個版本的任何 P 版本。</block>
+  <block id="99430eacf0d5244d50939eea94bd5962" category="paragraph">以下是幾個範例：</block>
+  <block id="1893a0478b381d08866888a1c7f8607a" category="list-text">9.13.0 &gt; 9.13.1P15</block>
+  <block id="4ae2d614cc725ba442c80c740c08f75f" category="list-text">9.12.1 &gt; 9.13.1P2</block>
+  <block id="a6f0c7a0901d4da8e8ff8a6db3216b38" category="list-text">按 * Proceed* 確認。</block>
+  <block id="e6bab5933e86bee96753d8079fcceaed" category="section-title">2023 年 6 月 26 日</block>
+  <block id="ba106db82d3577b52130dde5ddd372b4" category="section-title">Cloud Volumes ONTAP 9.13.1 RC1</block>
+  <block id="9bc26bf4259fc1662eaaa13a7534abb1" category="paragraph">BlueXP 現在可以在 AWS 、 Azure 和 Google Cloud 中部署和管理 Cloud Volumes ONTAP 9.13.1 。</block>
+  <block id="52801e0e59533cb4c6f4428ad9e239be" category="list-text">9.13.1 RC1</block>
+  <block id="3dc988ad93a3ac0c3a1487fc3b6754cf" category="paragraph">雖然 Cloud Volumes ONTAP 支援 S3 作為橫向擴充儲存設備的選項、但 BlueXP 並未提供任何此功能的管理功能。使用CLI是設定S3用戶端從Cloud Volumes ONTAP 功能支援的最佳實務做法。如需詳細資訊、請參閱<block ref="49e8fee748cd4c8d6f01bdb03113fc2a" category="inline-link-rx"></block>。</block>
 </blocks>
