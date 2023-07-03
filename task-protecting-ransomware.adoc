@@ -47,3 +47,13 @@ TIP: 當您啟動Cloud Volumes ONTAP 有關功能的FPolicy時、BlueXP就會建
 
 
 image:screenshot_ransomware_protection.gif["顯示工作環境中可用之勒索軟體保護頁面的快照。畫面會顯示沒有 Snapshot 原則的磁碟區數量、以及封鎖勒索軟體副檔名的能力。"]
+
+
+
+== 自主勒索軟體保護
+
+Cloud Volumes ONTAP 支援「自動勒索軟體保護」（ ARP ）功能、可對工作負載執行分析、主動偵測並警告可能表示勒索軟體攻擊的異常活動。
+
+ARP 功能僅適用於節點型和容量型授權模式的 BYOL 授權（一、二、三年期限）。您必須聯絡您的 NetApp 銷售代表、以購買新的授權、以搭配 Cloud Volumes ONTAP 中的 ARP 功能使用。
+
+購買授權並將其新增至 Digital Wallet 後、您就可以使用 Cloud Volumes ONTAP 以每個磁碟區為基礎來啟用 ARP 。磁碟區的 ARP 組態是透過 ONTAP 系統管理員和 ONTAP CLI 執行。如需如何使用 ONTAP 系統管理員和 CLI 啟用 ARP 的詳細資訊、請參閱 https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["啟用自發勒索軟體保護"^]。

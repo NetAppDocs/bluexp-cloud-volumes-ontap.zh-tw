@@ -285,7 +285,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["�
 
 如果您尚未配置任何磁碟區、則不適用最低收費。
 
-4 TiB最低容量費用不適用於僅包含次要（資料保護）磁碟區的儲存VM。例如、如果您的儲存虛擬機器擁有1個二線資料的TiB、則只需支付1個TiB的資料費用。
+對於 Essentials 套件、 4 TiB 最低容量費用不適用於僅包含次要（資料保護）磁碟區的儲存 VM 。例如、如果您的儲存虛擬機器擁有1個二線資料的TiB、則只需支付1個TiB的資料費用。對於所有其他非 Essentials 套件類型（最佳化、專業版和邊緣快取）、無論磁碟區類型為何、都會套用 4 TiB 的最低容量充電。
 
 
 
