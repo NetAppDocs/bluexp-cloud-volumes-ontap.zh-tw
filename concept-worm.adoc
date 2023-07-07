@@ -56,6 +56,11 @@ summary: 您可以在 Cloud Volumes ONTAP 一個還原系統上啟動一次寫�
 
 WORM儲存設備的充電時數是每小時一次、視WORM磁碟區的總配置容量而定。
 
+僅適用於 PAYGO 或年度承諾條款、 WORM 授權可透過雲端供應商的市場購買。WORM 支援節點型和容量型授權模式。
+
+
+NOTE: BYOL 授權不適用於 Cloud Volumes ONTAP 上的 WORM 儲存設備。
+
 您應該瞭解Cloud Volumes ONTAP 下列使用支援功能的充電行為：
 
 * 從ONTAP S59.10.1開始、WORM磁碟區和非WORM磁碟區可以存在於同一個集合體上。
