@@ -4990,12 +4990,14 @@
   <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">自主勒索軟體保護</block>
   <block id="ca401b5672c0ad2688c93bc7bc20d2f4" category="paragraph">若要深入瞭解 Cloud Volumes ONTAP 的 ARP 、請參閱<block ref="9a5c0a514fb4b4b0c5abdde049600542" category="inline-link-rx"></block>。</block>
   <block id="6f7a609c476697f17ecdfbfe367e39ad" category="paragraph">Cloud Volumes ONTAP 支援「自動勒索軟體保護」（ ARP ）功能、可對工作負載執行分析、主動偵測並警告可能表示勒索軟體攻擊的異常活動。</block>
-  <block id="75ece8e655ff469f6f78ae805a30c6ad" category="paragraph">ARP 功能僅適用於節點型和容量型授權模式的 BYOL 授權（一、二、三年期限）。您必須聯絡您的 NetApp 銷售代表、以購買新的授權、以搭配 Cloud Volumes ONTAP 中的 ARP 功能使用。</block>
   <block id="e22c3a8f0786d359fea7cca144bbee1b" category="inline-link">啟用自發勒索軟體保護</block>
-  <block id="f4f1116cfaa769b8eb002623deca5f2e" category="paragraph">購買授權並將其新增至 Digital Wallet 後、您就可以使用 Cloud Volumes ONTAP 以每個磁碟區為基礎來啟用 ARP 。磁碟區的 ARP 組態是透過 ONTAP 系統管理員和 ONTAP CLI 執行。如需如何使用 ONTAP 系統管理員和 CLI 啟用 ARP 的詳細資訊、請參閱<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
   <block id="46d7a6dd7db3af97caa5603b84f76cc1" category="paragraph">僅適用於 PAYGO 或年度承諾條款、 WORM 授權可透過雲端供應商的市場購買。WORM 支援節點型和容量型授權模式。</block>
   <block id="66ab7e49c11a830935ab2c9b0bf49e5e" category="admonition">BYOL 授權不適用於 Cloud Volumes ONTAP 上的 WORM 儲存設備。</block>
   <block id="9216a2741f7e54826d99a0fcfc0c7c58" category="section-title">刪除 WORM 檔案</block>
   <block id="728c208823318f76bc30851f92119221" category="paragraph">您可以在保留期間使用權限刪除功能刪除 WORM 檔案。</block>
   <block id="44c48c2759b23de55aafe43a43856a08" category="paragraph">如需相關指示、請參閱<block ref="03bc56e40fb58df28e53112c02ca2ae1" category="inline-link-rx"></block></block>
+  <block id="e220f1ef839bc3256ee110a9a5be5c61" category="paragraph">ARP 功能僅適用於節點型和容量型授權模式的 BYOL 授權（一、二及三年期限）。您必須聯絡您的 NetApp 銷售代表、以購買新的獨立附加授權、以搭配 Cloud Volumes ONTAP 中的 ARP 功能使用。</block>
+  <block id="fa0127eadcc515624ef23babde9aead2" category="paragraph">購買附加授權並將其新增至 Digital Wallet 後、您可以使用 Cloud Volumes ONTAP 以每個磁碟區為基礎來啟用 ARP 。磁碟區的 ARP 組態是透過 ONTAP 系統管理員和 ONTAP CLI 執行。如需如何使用 ONTAP 系統管理員和 CLI 啟用 ARP 的詳細資訊、請參閱<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
+  <block id="a35eb7b32c61adf984cdcc0cc1594b1c" category="inline-image-macro">螢幕擷取畫面顯示 Automware Protection 的附加授權。</block>
+  <block id="97a79a643f303c97f7df9ccd26c34e5e" category="paragraph"><block ref="97a79a643f303c97f7df9ccd26c34e5e" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
