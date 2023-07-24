@@ -1537,7 +1537,6 @@
   <block id="68c43e2b96fbdbfa40796f17526ce49b" category="list-text"><block ref="6cb773c19d321df01c24599ee993e239" category="inline-xref-macro-rx"></block></block>
   <block id="f509056e5113d375c99bca630ad36b66" category="section-title">計畫停機時間</block>
   <block id="13ab03e6ad3ee2215bec95a4c0f024e2" category="paragraph">當您升級單節點系統時、升級程序會使系統離線長達 25 分鐘、在此期間 I/O 會中斷。</block>
-  <block id="00795e3f043d0bab791590ffc0257204" category="paragraph">升級 HA 配對不中斷營運、而且 I/O 不中斷。在此不中斷營運的升級程序中、會同時升級每個節點、以繼續為用戶端提供 I/O 服務。</block>
   <block id="534c7f5fb857a948ecc7186949e8487b" category="section-title">確認自動恢復功能仍啟用</block>
   <block id="9119de3f1b6e3cbe55216fa59da529bf" category="section-title">暫停SnapMirror傳輸</block>
   <block id="a502184baec20af3276eaf812b0bc5e9" category="paragraph">如果 Cloud Volumes ONTAP 某個不活躍的 SnapMirror 關係、最好在更新 Cloud Volumes ONTAP 該軟件之前暫停傳輸。暫停傳輸可防止 SnapMirror 故障。您必須暫停來自目的地系統的傳輸。</block>
@@ -5000,4 +4999,7 @@
   <block id="fa0127eadcc515624ef23babde9aead2" category="paragraph">購買附加授權並將其新增至 Digital Wallet 後、您可以使用 Cloud Volumes ONTAP 以每個磁碟區為基礎來啟用 ARP 。磁碟區的 ARP 組態是透過 ONTAP 系統管理員和 ONTAP CLI 執行。如需如何使用 ONTAP 系統管理員和 CLI 啟用 ARP 的詳細資訊、請參閱<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
   <block id="a35eb7b32c61adf984cdcc0cc1594b1c" category="inline-image-macro">螢幕擷取畫面顯示 Automware Protection 的附加授權。</block>
   <block id="97a79a643f303c97f7df9ccd26c34e5e" category="paragraph"><block ref="97a79a643f303c97f7df9ccd26c34e5e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="59e727e0c151e53fa5beabd59871cb88" category="paragraph">在許多情況下、升級 HA 配對不會中斷營運、 I/O 也不會中斷。在此不中斷營運的升級程序中、會同時升級每個節點、以繼續為用戶端提供 I/O 服務。</block>
+  <block id="67e0d115b5c2df9254836fd8f762d3dc" category="inline-link">請參閱 ONTAP 文件</block>
+  <block id="ff0dae83f1884b2852a33110d07283d1" category="paragraph">工作階段導向的通訊協定可能會在升級期間對某些區域的用戶端和應用程式造成不良影響。如需詳細資訊、<block ref="69d6ddda693aaf09f72544089a10fab3" category="inline-link-rx"></block></block>
 </blocks>
