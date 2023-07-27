@@ -20,6 +20,20 @@ summary: 瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。
 
 
 
+== 2023 年 7 月 26 日
+
+Connector 3.9.31 版本推出下列變更。
+
+
+
+=== Cloud Volumes ONTAP 9.13.1 GA
+
+BlueXP 現在可以在 AWS 、 Azure 和 Google Cloud 中部署和管理 Cloud Volumes ONTAP 9.13.1 通用可用度版本。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]。
+
+
+
 == 2023 年 7 月 2 日
 
 Connector 3.9.31 版本推出下列變更。
@@ -88,9 +102,9 @@ Connector 3.9.29 版隨附下列變更。
 
 
 
-=== 支援 Azure Australia East 的 HA 多重可用度區域部署
+=== 支援 Azure Australia East 的 HA 多重可用性區域部署
 
-Azure 中的澳洲東部地區現在支援 Cloud Volumes ONTAP 9.12.1 GA 及更新版本的 HA 多重可用度區域部署。
+Azure 中的澳洲東部地區現在支援 Cloud Volumes ONTAP 9.12.1 GA 及更新版本的 HA 多重可用性區域部署。
 
 
 
