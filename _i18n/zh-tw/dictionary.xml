@@ -1390,7 +1390,6 @@
   <block id="d9bdad4a2680b0998135ed5fd46e50e3" category="section-title">Azure Private Link Cloud Volumes ONTAP for 功能</block>
   <block id="8f7830ddfb4c3be4f076516f4856d257" category="inline-link">深入瞭解 Azure 私有連結</block>
   <block id="b159a32bd5237dec9c6c28e81628f28a" category="list-text"><block ref="b159a32bd5237dec9c6c28e81628f28a" category="inline-link-rx"></block></block>
-  <block id="a2f09fc910f91b45be16b1d3da056377" category="list-text"><block ref="a2f09fc910f91b45be16b1d3da056377" category="inline-link-macro-rx"></block></block>
   <block id="b10aaff78dfb34e8e7e4c718d4519219" category="summary">如果您想搭配 Cloud Volumes ONTAP 使用 Amazon 加密搭配使用、則需要設定 AWS 金鑰管理服務。</block>
   <block id="e9993ec838a8efa5cfb29506f884deca" category="doc">設定 AWS KMS</block>
   <block id="b7b5da9f4d5594bacc1509df196de5c3" category="paragraph">如果您想搭配 Cloud Volumes ONTAP 使用 Amazon 加密搭配使用、則需要設定 AWS 金鑰管理服務（ KMS ）。</block>
@@ -4585,7 +4584,6 @@
   <block id="baf09c6c43fd26effd8f15e252649384" category="list-text">PAYGO 總容量</block>
   <block id="76101a2de96d735db21249323914bc6c" category="list-text">* Cloud Volumes ONTAP 套件使用 * ：此報告會清楚顯示數位錢包內的套裝卡片內容。除了最佳化的 I/O 套件外、其中包括每個套件的下列資訊：</block>
   <block id="c01bbdbe6721d80a74779e943243486b" category="list-text">* 儲存虛擬機器使用率 * ：此報告顯示如何在 Cloud Volumes ONTAP 系統和儲存虛擬機器（ SVM ）之間分解已計費的容量。此資訊無法在數位錢包的任何畫面上取得。其中包括下列資訊：</block>
-  <block id="b16bfcaa9b0651f05b8e8894a2aebb31" category="list-text">工作環境 ID （顯示為 UUID ）</block>
   <block id="c8e2277ecfb1427838c488c217f99466" category="list-text">雲端</block>
   <block id="4736cd35bf5b3fe63e1b1785fb2aa664" category="list-text">NetApp 帳戶 ID</block>
   <block id="bbfa34e8af02138b821f784c8962669b" category="list-text">工作環境組態</block>
@@ -4740,7 +4738,6 @@
 請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。</block>
   <block id="dabcd93c47c69ecf7688c43957686bb7" category="cell">如果您打算使用 <block ref="b0493934baf26f9529eb4214b9de6c71" category="inline-link-macro-rx"></block> 或<block ref="9a17952183455df523c977039b4fb285" category="inline-link-rx"></block> 服務、您必須啟用 * 服務帳戶 * 交換器、然後選取具有預先定義儲存管理角色的服務帳戶。</block>
   <block id="5355322e972163adefa502954b34d25c" category="paragraph">下列影片說明如何將隨用隨付服務市場訂閱關聯至Google Cloud專案。  或者、請依照中的步驟訂閱<block ref="d9f7e6ae4bc0528c4df5fe3f1a811c3e" category="inline-link-rx"></block> 區段。</block>
-  <block id="5f3d5b090fa9d570cead4124db6f3d69" category="admonition">「*高速*寫入速度」選項提供_Flash Cache、高速寫入速度和更高的最大傳輸單元（MTU）8、896位元組、以及n2-Standard-16、n2-Standard-32、n2-Standard-48和n2-Standard-64執行個體類型。此外、較高的MTU為8、896、需要選擇VPC-1、VPC-2和VPC-3來進行部署。_Flash Cache、高速寫入速度和8、896的MTU是功能相依的、無法在設定的執行個體中個別停用。如需VPC-1、VPC-2和VPC-3的詳細資訊、請參閱<block ref="3af5ff5ce5ff5a68a4b6fb78e7e7794a" category="inline-link-rx"></block>。</block>
   <block id="200bfa431a059f9cb12bdce777845a7e" category="admonition">連接器也需要系統磁碟。<block ref="d20acabc118cd0226229fe484509d871" category="inline-link-rx"></block>。</block>
   <block id="f4e04685569a1b4c66fdec145eb96e7a" category="paragraph">如果您沒有<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block> 然而、帳戶管理員需要建立一個帳戶。<block ref="5b9d2e73755e0f28771296de88f8a39a" category="inline-link-rx"></block></block>
   <block id="3e15a93b8abafd714d90153ac66e4e82" category="paragraph">請注意、如果您想要在Cloud Volumes ONTAP 無法存取網際網路的子網路中部署支援、則必須手動安裝Connector、並存取在該Connector上執行的BlueXP使用者介面。<block ref="dfc982bbe2dfabd644ac809e4b468ae7" category="inline-link-rx"></block></block>
@@ -5005,4 +5002,32 @@
   <block id="cdf14d2156528231a5dbd12ad5c95d3f" category="list-text">選取以變更表格中顯示的欄 <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> 然後選擇您要顯示的欄。</block>
   <block id="348552521b849746260fe8d296d34c15" category="list-text">選取以管理現有案例 <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> 並選擇其中一個可用選項：</block>
   <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">* 結案案例 * ：提供結案原因的詳細資料、並選取 * 結案案例 * 。</block>
+  <block id="80f98bfa8cbe0d66021e6448047c1b5c" category="list-text">* Flash Cache 、寫入速度與 WORM * ：</block>
+  <block id="b67eda3e3db596eb1c104f55326e3754" category="list-text">如有需要、請啟用 * Flash Cache* 。</block>
+  <block id="5f33cf47c262adc4871d3556fcd8c00f" category="admonition">從 Cloud Volumes ONTAP 9.13.1 開始、 n2-Standard-32 、 n2-Standard-48 和 n2-Standard-64 執行個體類型支援 _Flash Caches 。您無法在部署後停用 Flash Cache 。</block>
+  <block id="504ca6d1f97a8949483d99d521a7a500" category="admonition">高寫入速度和高傳輸單位（ MTU ） 8 、 896 位元組可透過 * 高 * 寫入速度選項取得。此外、較高的MTU為8、896、需要選擇VPC-1、VPC-2和VPC-3來進行部署。如需VPC-1、VPC-2和VPC-3的詳細資訊、請參閱<block ref="3af5ff5ce5ff5a68a4b6fb78e7e7794a" category="inline-link-rx"></block>。</block>
+  <block id="e4cfc04d9c35d908faed204900862e80" category="admonition">透過使用 n2-Standard-16 、 n2-Standard-32 、 n2-Standard-48 及 n2-Standard-64 執行個體類型的 * High * 寫入速度選項、可獲得高寫入速度及高傳輸單位（ MTU ） 8 、 896 位元組。此外、較高的MTU為8、896、需要選擇VPC-1、VPC-2和VPC-3來進行部署。高寫入速度和 8 、 896 的 MTU 與功能有關、無法在設定的執行個體中個別停用。如需VPC-1、VPC-2和VPC-3的詳細資訊、請參閱<block ref="3af5ff5ce5ff5a68a4b6fb78e7e7794a" category="inline-link-rx"></block>。</block>
+  <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">2023 年 7 月 30 日</block>
+  <block id="4325a8ea9cec7ffa18f3ee74d15997fe" category="paragraph">Connector 3.9.32 版隨附下列變更。</block>
+  <block id="7741410e87d6144c42e8ca73837c3707" category="section-title">Google Cloud 中的 Flash Cache 和高速寫入支援</block>
+  <block id="4f90c73c3d52d1bd4329e9961707db5c" category="paragraph">Flash Cache 和高速寫入速度可在 Cloud Volumes ONTAP 9.13.1 及更新版本的 Google Cloud 中個別啟用。所有支援的執行個體類型都提供高速寫入速度。Flash Cache 支援下列執行個體類型：</block>
+  <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="list-text">n2-Standard-16</block>
+  <block id="8f66358785ed8f4d9a356630a4ee515c" category="list-text">n2-Standard-32</block>
+  <block id="33031b274bf5d81fbfbd69c1f2ea39a2" category="list-text">n2 標準 -48</block>
+  <block id="7c347fcea29ffaea485ee6128a9d7a06" category="list-text">n2-Standard-64</block>
+  <block id="0891ba6a1f7a37c01cb3698c692751bc" category="paragraph">您可以在單一節點和高可用度配對部署上分別或一起使用這些功能。</block>
+  <block id="1e69916eaa563a1da0ccff3715e2342d" category="paragraph"><block ref="1e69916eaa563a1da0ccff3715e2342d" category="inline-link-macro-rx"></block></block>
+  <block id="ee4272223579f1299444d14f2d185eb5" category="section-title">使用報告增強功能</block>
+  <block id="ec123c8f161f9dfe4383b8db1d8883c4" category="paragraph">使用報告中所顯示資訊的各種改善功能現已推出。以下是使用報告的增強功能：</block>
+  <block id="4c63050f1e33aa32db50cc80b682e805" category="list-text">TiB 單元現在已包含在欄名稱中。</block>
+  <block id="fc7fa4a44c2c9442201bf8725e6237b7" category="list-text">現在包含序號的新「節點」欄位。</block>
+  <block id="68d761e353cd9d529997fa49bfe51f92" category="list-text">儲存 VM 使用量報告中現在包含新的「工作負載類型」一欄。</block>
+  <block id="26f51c309f5237522421f24bf4df04e0" category="list-text">儲存 VM 和 Volume 使用量報告中現在已包含工作環境名稱。</block>
+  <block id="fa3abcbc43662c93139af3f3f6421a6f" category="list-text">Volume 類型「 file 」現在標示為「 Primary （ Read/Write ）（主要（讀取 / 寫入））」。</block>
+  <block id="b259e22e76e27ad956b503941804b4c6" category="list-text">Volume 類型「 Secondary 」現在標示為「 Secondary （ DP ）」（次要（ DP ））。</block>
+  <block id="a8c4bf4701c4d99d778be1176c8c8616" category="paragraph">如需使用報告的詳細資訊、請參閱 <block ref="b9c4007084372a89d5df93919658aa73" category="inline-link-macro-rx"></block>。</block>
+  <block id="c2282365523aa8fbb305c5432e90d5d7" category="paragraph"><block ref="6f9b2ccd962907ef2c43f6fa9517a053" category="inline-link-macro-rx"></block>。</block>
+  <block id="5e167ef814cd8fe02fd01be002ffa235" category="list-text"><block ref="5e167ef814cd8fe02fd01be002ffa235" category="inline-link-macro-rx"></block></block>
+  <block id="4a9ebfe4f0e3302083955176f47a9519" category="list-text">工作環境 ID 和名稱（顯示為 UUID ）</block>
+  <block id="427af860f9733f0c5427a1408195bb2b" category="list-text">工作負載類型</block>
 </blocks>
