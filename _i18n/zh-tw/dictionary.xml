@@ -1165,15 +1165,11 @@
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律聲明提供版權聲明、商標、專利等存取權限。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版權</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 標誌及 NetApp 商標頁面上列出的標章均為 NetApp 、 Inc. 的商標。其他公司與產品名稱可能為其各自所有者的商標。</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">專利</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">如需最新的 NetApp 擁有專利清單、請參閱：</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隱私權政策</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
   <block id="c165494898bc0fbf27151d6359a27936" category="doc">建立Aggregate</block>
@@ -1586,13 +1582,6 @@
   <block id="8f79a5bc1b9725ce4036eb2d94c60de9" category="section-title">移除容量型授權</block>
   <block id="78a946dc090d511b993ffbe9803dff06" category="paragraph">如果容量型授權過期且不再使用、您可以隨時將其移除。</block>
   <block id="40b851aafab82c78484c46169f816fd2" category="list-text">按一下「 * 移除 * 」以確認。</block>
-  <block id="0131f05be010a429416bcb6f853b54f6" category="doc">監控 AWS 資源成本</block>
-  <block id="de4e4bb6bc85c14c6a8601fd20afdca3" category="inline-link">啟動 * 工作環境 Id* 標籤</block>
-  <block id="ee0050b628db7de40e04e661d528d91f" category="list-text"><block ref="541edff71c56eae6d36d5f7a463cfcca" category="inline-link-rx"></block>。</block>
-  <block id="9dfa1bfa6d369f6aee8b4ba09ac15642" category="paragraph">「成本」頁面會顯示目前和過去幾個月的成本、並顯示您每年的 NetApp 節約效益（如果您已啟用 NetApp 的 Volume 節約功能）。</block>
-  <block id="c58c67877e90861ec92c90c10b7ad7f4" category="paragraph">下圖顯示成本頁範例：</block>
-  <block id="37423695a33e814084966c17d451584a" category="inline-image-macro">螢幕擷取畫面：顯示 Cloud Volumes ONTAP 每個月的成本（例如每個實例的成本）。</block>
-  <block id="c3d678c4df92877db53bd1f6e44ec524" category="paragraph"><block ref="c3d678c4df92877db53bd1f6e44ec524" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a1a264e616e24563d4b8f8b5795ea403" category="section-title">一般要求</block>
   <block id="3091fa13c48831b4d7d6e8b6cb4b5bb1" category="paragraph">AWS 必須符合下列要求。</block>
   <block id="5908bdfb58aef23bebf7df36d49b9dfb" category="section-title">對節點的輸出網際網路存取 Cloud Volumes ONTAP</block>
@@ -3199,7 +3188,6 @@
   <block id="3bc8827b2b8b4b47a25fb21994526d52" category="paragraph">如果資料因高速寫入而遺失、事件管理系統（EMS）會報告下列兩個事件：</block>
   <block id="7cd42532925d5e610a9d3694b57652da" category="list-text">零點9.8到9.10.1 Cloud Volumes ONTAP</block>
   <block id="deae9d093dee266b166a3693474231a9" category="paragraph">發生這種情況時Cloud Volumes ONTAP 、無需使用者介入、即可啟動及繼續提供資料。</block>
-  <block id="d0cc9b5d406e02bdbb6a1a9848e6af5f" category="inline-link">檢視所需的權限</block>
   <block id="63e4eec15ba75260d01771611989182b" category="inline-link">檢視AWS的最新Connector原則</block>
   <block id="ea03ff7045a27cd5d2c4f32dcc1e5c1a" category="inline-link">檢視Azure最新的Connector原則</block>
   <block id="0f0088348e85cdf82b3a00d88879bc4d" category="inline-link">檢視Azure對Connector的權限</block>
@@ -3399,12 +3387,6 @@
   <block id="8bb4bde51e0ea674bc0393c5923c7145" category="summary">您可以自行建立集合體、或讓BlueXP在建立磁碟區時為您執行集合體。自行建立集合體的好處在於、您可以選擇基礎磁碟大小、以便根據所需的容量或效能來調整集合體大小。</block>
   <block id="0dca6333e3e343d1b25adfe474ce6b88" category="admonition">所有磁碟和集合體都必須直接從BlueXP建立和刪除。您不應從其他管理工具執行這些動作。這樣做可能會影響系統穩定性、阻礙未來新增磁碟的能力、並可能產生備援雲端供應商費用。</block>
   <block id="5d8d2c55116ea837270739e0c1ee4fb7" category="list-text">從左側導覽功能表中、選取*儲存設備&gt; Canvas*。</block>
-  <block id="421ebcf45d96fab9a6689c09c19a1270" category="summary">BlueXP可讓您檢視在Cloud Volumes ONTAP AWS中執行功能的相關成本。您也可以瞭解使用 NetApp 功能來降低儲存成本、省下多少成本。</block>
-  <block id="5ff00bdddc3139a1154c3432ef4a3e73" category="paragraph">BlueXP可讓您檢視在Cloud Volumes ONTAP AWS中執行功能的相關資源成本。您也可以瞭解使用 NetApp 功能來降低儲存成本、省下多少成本。</block>
-  <block id="947d50be7096c3e69f02ed24b2251b02" category="paragraph">當您重新整理頁面時、BlueXP會更新成本。如需最終成本詳細資料、請參閱 AWS 。</block>
-  <block id="cd5e8c25d1aad520d5f38aad580ccac4" category="list-text">確認BlueXP可從AWS取得成本資訊：</block>
-  <block id="fa1a1d63af1876462d8a89bb1c81da2a" category="list-text">確保提供BlueXP權限的IAM原則包含必要的權限。</block>
-  <block id="5137e20086fbd2e10511433ace3ac154" category="paragraph">為追蹤AWS成本、BlueXP會指派成本分配標籤給Cloud Volumes ONTAP 各個執行個體。建立第一個工作環境之後、請啟動 * 工作環境 Id* 標籤。使用者定義的標記不會出現在 AWS 帳單報告上、除非您在帳單和成本管理主控台中啟動它們。</block>
   <block id="0c29cb137ebcfb10c1b30edf702322ea" category="paragraph">BlueXP提供符合工作負載需求的預先設定套件、或者您也可以建立自己的組態。如果您選擇自己的組態、應該瞭解可用的選項。 <block ref="786d547ede2f0e723e26aaa12a2cb737" category="inline-link-macro-rx"></block>。</block>
   <block id="9c51d38f64e8c1335e2502c05f118401" category="inline-link">從BlueXP建立連接器</block>
   <block id="68de98d1358d2928dcaffc946aeaa266" category="inline-link">BlueXP使用AWS權限的功能</block>
@@ -4402,10 +4384,6 @@
   <block id="055fb099b650eb50b3be2ee6aaa5edaa" category="inline-image-macro">螢幕擷取畫面：顯示 Cloud Volumes ONTAP 系統「功能」面板下的「支援」登錄選項。</block>
   <block id="683ad9be450b1e4aaffcdcab8b33b0c4" category="paragraph"><block ref="683ad9be450b1e4aaffcdcab8b33b0c4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4da26c1efc91c7136517504959cc0687" category="paragraph"><block ref="4da26c1efc91c7136517504959cc0687" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="fc2c97abb2fb8e3c019de4850d91d264" category="list-text">在 Canvas 頁面上、選取 Cloud Volumes ONTAP 工作環境、</block>
-  <block id="6ba9fc3c166e3d53b824216485ae89ee" category="list-text">按一下功能表圖示、然後按一下 * 檢視成本報告 * 。</block>
-  <block id="e657448bf5ab3960e8e1fc068d83deee" category="inline-image-macro">螢幕擷取畫面：顯示「檢視成本報告」功能表選項。</block>
-  <block id="4881300462ed76e4f5ebaf3070d5e7d9" category="paragraph"><block ref="4881300462ed76e4f5ebaf3070d5e7d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6200e275553fcb2d81141061804129aa" category="list-text">在 Canvas 頁面上、按兩下您設定為勒索軟體保護的系統名稱。</block>
   <block id="68e277e7409c8587f5447ff6e1d07bac" category="list-text">在「概述」索引標籤上、按一下「功能」面板、然後按一下 * 勒索軟體保護 * 旁的鉛筆圖示。</block>
   <block id="e44870bfe38bf3731499fca3154b9528" category="inline-image-macro">在「概觀」頁面右上角的「功能」面板下顯示勒索軟體保護設定的螢幕擷取畫面、可在檢視工作環境時顯示。</block>
@@ -4772,7 +4750,6 @@
   <block id="a83ee83b3849362150d7c85a1be1dc34" category="paragraph"><block ref="4cff09ac69609cc9da2148aed42c5230" category="inline-link-rx"></block>。</block>
   <block id="2ffa17dd74caa90edaf33636b3e374b1" category="paragraph"><block ref="792ba555e1629fb9b0b5e00711256a74" category="inline-link-rx"></block>。</block>
   <block id="7881621c3d4c91216ebe58ee1cdc87e0" category="paragraph"><block ref="52c47b6a301b0fb242044f1b14c5f663" category="inline-link-rx"></block>。</block>
-  <block id="feb88be5e52ce4e986f7ef4bfbaf1288" category="paragraph"><block ref="feb88be5e52ce4e986f7ef4bfbaf1288" category="inline-link-rx"></block></block>
   <block id="3965802fcf5e10ce9592a0a18652be93" category="paragraph">您必須先建立連接器、才能變更BlueXP設定。<block ref="844cb231ba4a790d05c855a31c806f9e" category="inline-link-rx"></block>。</block>
   <block id="0da43a7e3c6cfdde29516fa9349ef93a" category="paragraph">如果您沒有<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block> 然而、帳戶管理員需要建立一個帳戶。<block ref="f726618e636b13d16a9541b596528791" category="inline-link-rx"></block></block>
   <block id="170e894372aa99f8bb588bbbfc2f83a2" category="paragraph">下列兩種用途需要Google Cloud服務帳戶：Cloud Volumes ONTAP第一個是啟用時 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 將冷資料分層至Google Cloud中的低成本物件儲存設備。第二個是啟用時<block ref="9a17952183455df523c977039b4fb285" category="inline-link-rx"></block> 將磁碟區備份至低成本的物件儲存設備。</block>
@@ -5030,4 +5007,12 @@
   <block id="5e167ef814cd8fe02fd01be002ffa235" category="list-text"><block ref="5e167ef814cd8fe02fd01be002ffa235" category="inline-link-macro-rx"></block></block>
   <block id="4a9ebfe4f0e3302083955176f47a9519" category="list-text">工作環境 ID 和名稱（顯示為 UUID ）</block>
   <block id="427af860f9733f0c5427a1408195bb2b" category="list-text">工作負載類型</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
 </blocks>
