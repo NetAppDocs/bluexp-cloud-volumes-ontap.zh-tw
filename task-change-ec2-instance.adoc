@@ -42,7 +42,7 @@ TIP: BlueXP會主動啟動接管並等待回饋、一次只能正常變更一個
 . 在 Canvas 頁面上、選取工作環境。
 . 在「概述」標籤上、按一下「功能」面板、然後按一下「 * 執行個體類型 * 」旁邊的鉛筆圖示。
 +
-image:screenshot_features_instance_type.png["在檢視工作環境時、會在「概觀」頁面右上角的「功能」面板下顯示「執行個體類型」設定的螢幕擷取畫面。"]
+image::screenshot_features_instance_type.png[400]
 
 +
 .. 如果您使用的是節點型 PAYGO 授權、您可以選擇不同的授權和執行個體類型、方法是按一下 * 授權類型 * 旁的鉛筆圖示。

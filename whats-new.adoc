@@ -90,7 +90,7 @@ Azure 中的 Japan East 和 Korea Central 現在支援 Cloud Volumes ONTAP 9.12.
 
 Cloud Volumes ONTAP 現在支援自主勒索軟體保護（ ARP ）。Cloud Volumes ONTAP 9.12.1 版及更高版本均提供 ARP 支援。
 
-若要深入瞭解 Cloud Volumes ONTAP 的 ARP 、請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["自主勒索軟體保護"]。
+若要深入瞭解 Cloud Volumes ONTAP 的 ARP 、請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["自主勒索軟體保護"^]。
 
 
 

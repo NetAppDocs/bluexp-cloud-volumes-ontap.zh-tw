@@ -193,4 +193,4 @@ TIP: 如果您在 HA 配對中的節點之間移動磁碟區、則應使用其�
 
 您可以透過 BlueXP 「管理磁碟區」面板下的 _Mount Command_ 選項、輕鬆識別正確的 IP 位址。
 
-image:screenshot_mount_option.png["螢幕擷取畫面：顯示選取 Volume 時可用的 Mount Command 。"]
+image::screenshot_mount_option.png[400]

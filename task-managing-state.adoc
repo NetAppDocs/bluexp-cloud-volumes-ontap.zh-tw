@@ -38,7 +38,7 @@ summary: 您可以從Cloud Volumes ONTAP BlueXP停止並開始執行功能、以
 . 在 Canvas 頁面上、按兩下所需的工作環境。
 . 在「總覽」索引標籤上、按一下「功能」面板、然後按一下 * 排程停機 * 旁的鉛筆圖示。
 +
-image:screenshot_schedule_downtime.png["螢幕擷取畫面：顯示載入自動關機頁面的圖示。"]
+image::screenshot_schedule_downtime.png[400]
 
 . 指定關機排程：
 +

@@ -257,7 +257,7 @@ TIP: 當Aggregate已達到90%使用容量時、BlueXP會顯示這些必要行動
 您應該選擇足夠大的磁碟區來釋放集合體中的空間、以避免未來發生額外的容量問題。
 
 +
-image:screenshot_aggr_volume_overview.png["螢幕擷取畫面：在 Aggregate 資訊對話方塊中顯示 Aggregate 中的磁碟區清單。"]
+image::screenshot_aggr_volume_overview.png[截錄畫面 Aggr Volume 總覽]
 
 
 
@@ -335,7 +335,7 @@ image:screenshot_aggr_volume_overview.png["螢幕擷取畫面：在 Aggregate �
 .. 瀏覽至所需的 Aggregate 方塊、然後按一下 * 。 （橢圓圖示） > 檢視 Aggregate 詳細資料 * 。
 .. 在 Aggregate 方塊下、檢視可用容量（資源配置大小減去使用的 Aggregate 容量）。
 +
-image:screenshot_aggr_capacity.png["螢幕擷取畫面：顯示 Aggregate 資訊對話方塊中可用的總 Aggregate 容量和已使用的 Aggregate 容量。"]
+image::screenshot_aggr_capacity.png[螢幕擷取畫面 Aggr 容量]
 
 
 
@@ -380,7 +380,7 @@ image:screenshot_aggr_capacity.png["螢幕擷取畫面：顯示 Aggregate 資訊
 
 您可以直接透過 BlueXP 中的 Volumes （磁碟區）標籤、檢視透過 CLI 或系統管理員建立的 FlexGroup 磁碟區。BlueXP 與提供給 FlexVol Volume 的資訊相同、透過專用的 Volumes 方塊、提供建立的 FleGroup Volume 的詳細資訊。在「 Volume （磁碟區）」磚下方、您可以透過圖示的暫留文字來識別每個 FlexGroup 磁碟區群組。此外、您也可以透過 Volume 樣式欄、在 Volume 清單檢視下識別及排序 FlexGroup Volume 。
 
-image:screenshot_show_flexgroup_vol.png["顯示 FlexGroup Volume 圖示的螢幕擷取畫面會將文字暫留在 Volumes 磚下方。"]
+image::screenshot_show_flexgroup_vol.png[螢幕擷取畫面顯示 FlexGroup vol]
 
 
 NOTE: 目前、您只能在 BlueXP 下檢視現有的 FlexGroup 磁碟區。在 BlueXP 中建立 FlexGroup 磁碟區的功能無法使用、但已計畫在未來版本中使用。

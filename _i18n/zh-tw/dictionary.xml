@@ -798,7 +798,6 @@
   <block id="e1c0bf56f7a531effc9ef27a4e57f96e" category="inline-image-macro">AWS 主控台的快照、顯示 VPC 1 的路由表。其中包括通往浮動 IP 位址和 VPC 2 的路由、而 VPC 2 是用戶端所在的位置。</block>
   <block id="0a746eb7dceb143e3aac00bd3d507d00" category="paragraph"><block ref="0a746eb7dceb143e3aac00bd3d507d00" category="inline-image-macro-rx" type="image"></block></block>
   <block id="de0c14b39dbeb6aa804318f10069c1ca" category="list-text">使用浮動 IP 位址將磁碟區掛載到用戶端。</block>
-  <block id="d0eb9723d8f743b568ca7af03af706b0" category="inline-image-macro">螢幕擷取畫面：顯示選取 Volume 時可用的 Mount Command 。</block>
   <block id="2e41b6df544fc6e3dae54d0f364e3942" category="list-text">如果您要掛載NFS Volume、請設定匯出原則以符合用戶端VPC的子網路。</block>
   <block id="b5db75984831b38729eaafcd865d67e4" category="inline-link-macro">瞭解如何編輯Volume</block>
   <block id="0da139308525636e62be136978fa7e43" category="paragraph"><block ref="1b5a3ed48a00633adbc203b0ae302c43" category="inline-link-macro-rx"></block>。</block>
@@ -1060,7 +1059,6 @@
   <block id="5a31c45fe6b6d37f4ceeb5b86c4346da" category="list-text">檢視必要行動訊息中的進階資訊、以識別已達到容量上限的集合體。</block>
   <block id="34b14acb1a2ab9863c3c5dad4fd43a16" category="paragraph">例如、進階資訊應該說類似以下的內容： Agggr1 已達到其容量上限。</block>
   <block id="d741de259d45adde48602bde8af2fa1e" category="list-text">識別一個或多個要從集合體移出的磁碟區：</block>
-  <block id="44996e2a556779f9e9d262677dc18a32" category="inline-image-macro">螢幕擷取畫面：在 Aggregate 資訊對話方塊中顯示 Aggregate 中的磁碟區清單。</block>
   <block id="1ac63b40afca7dec0b6be58237e990c5" category="paragraph">您應該選擇足夠大的磁碟區來釋放集合體中的空間、以避免未來發生額外的容量問題。</block>
   <block id="a64d88ebebbadd18db492923a6de8f40" category="list-text">如果系統尚未達到磁碟限制、您應該將磁碟區移至同一個系統上的現有集合體或新集合體。</block>
   <block id="b665b3a7d068d10da4bb1ff6a9eebc76" category="inline-link-macro">將磁碟區移至另一個 Aggregate 、以避免容量問題</block>
@@ -1086,7 +1084,6 @@
   <block id="9b75835d1597be290e865df9d9c03011" category="section-title">將磁碟區移至其他Aggregate、以避免容量問題</block>
   <block id="46532ea93f05a647dcfb9dbb7724acf3" category="paragraph">您可以將一個或多個磁碟區移至另一個 Aggregate 、以避免發生容量問題。</block>
   <block id="b9caee734c459ea1d440e0f169eb1723" category="list-text">驗證現有的 Aggregate 是否具有您需要移動的磁碟區可用容量：</block>
-  <block id="82cf261b628d223daf02ae88b056b424" category="inline-image-macro">螢幕擷取畫面：顯示 Aggregate 資訊對話方塊中可用的總 Aggregate 容量和已使用的 Aggregate 容量。</block>
   <block id="b8bd018e0e8deb966bda4a09610591ac" category="list-text">如有需要、請將磁碟新增至現有的 Aggregate ：</block>
   <block id="3425dbe0168b60aed62d54b2290baad1" category="list-text">選取要新增的磁碟數目、然後按一下 * 「 Add* （新增 * ）」。</block>
   <block id="e272fdd11a7aa99158a093a41c65fdd9" category="list-text">如果沒有集合體具有可用容量、請建立新的集合體。</block>
@@ -1757,7 +1754,6 @@
   <block id="4df66712f957d539001edc73bbb48742" category="list-text">此工作會排程 HA 配對中兩個節點的自動關機。</block>
   <block id="a38060fa2aae177f0fbef99ef2923324" category="list-text">透過Cloud Volumes ONTAP 排定的關機功能關閉功能時、不會建立開機和根磁碟的快照。</block>
   <block id="1f9d590b21cddc0cc992effc141a9be2" category="paragraph">只有在執行手動關機時、才會自動建立快照、如下一節所述。</block>
-  <block id="34e70391062bd14a2cecba6e39595285" category="inline-image-macro">螢幕擷取畫面：顯示載入自動關機頁面的圖示。</block>
   <block id="5f95206b8c2df1268bd8a4454e57f5df" category="list-text">指定關機排程：</block>
   <block id="3a3fb4513da1ae453de12bb3293a3aa1" category="list-text">選擇您要每天、每個工作日、每個週末或三種選項的任意組合來關閉系統。</block>
   <block id="063dc598b5df43ce8c2ce8aebd705d40" category="list-text">指定您要關閉系統的時間、以及關閉系統的時間長度。</block>
@@ -4338,8 +4334,6 @@
   <block id="99388f0fdeac933c80f2d52c95fe6eac" category="list-text">1叢集管理LIF（e0a）</block>
   <block id="07ddec46aac81bd14d6fc7f0d22ee78d" category="list-text">1或2個NAS lifs（e0a）</block>
   <block id="e8c25ea78d67a6ef891f303353422dbd" category="paragraph">+<block ref="45bd8c026c5ef22179001445b3bd636a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2c75d71bcadfabfa7cf8757cbfdd3d85" category="inline-image-macro">「連接器設定」選項的螢幕擷取畫面、位於「設定」圖示下。</block>
-  <block id="473c33023a339a6b370b4ddd3b34813e" category="paragraph"><block ref="473c33023a339a6b370b4ddd3b34813e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2e11b0ec6ed47b1e8f7051aaab70da38" category="list-text">Aggregate Capacity 臨界值 - 可用空間比率</block>
   <block id="c707daf76e9202bb2278e4872c7db485" category="list-text">Aggregate Capacity 臨界值 - 資料分層的可用空間比率</block>
   <block id="93538ad94a332061adf2239e8ac21a4d" category="list-text">在 Canvas 頁面上、選取工作環境。</block>
@@ -4359,8 +4353,6 @@
   <block id="f20c2435bfa2bf017b0a33455e4d252c" category="list-text">選取不包含任何磁碟區的 Aggregate tile 按一下 * 。 （橢圓圖示） &gt; 刪除 * 。</block>
   <block id="44f505566cfb44ab274d6dd37da6a48b" category="list-text">在「 Canvas 」頁面上、按兩下您設定為寫入速度的系統名稱。</block>
   <block id="b9c48f0b7a355bd9b39b3ae2c666ec43" category="list-text">在「總覽」標籤上、按一下「功能」面板、然後按一下「 * 寫入速度 * 」旁邊的鉛筆圖示。</block>
-  <block id="bc3c9695426ff48d40dce0286c7e05f4" category="inline-image-macro">在檢視工作環境時、在「概觀」頁面右上角的「功能」面板下顯示寫入速度設定的螢幕擷取畫面。</block>
-  <block id="98dbfe06324c35bb25c949f4b21d581a" category="paragraph"><block ref="98dbfe06324c35bb25c949f4b21d581a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8e1d6d29fa6bbc00ab6896ec1e677037" category="list-text">按一下 * 儲存 * 、檢閱確認訊息、然後按一下 * 核准 * 。</block>
   <block id="38124763ec69515302fcd6a655b0cb92" category="list-text">在「畫布」頁面上、按兩下 Cloud Volumes ONTAP 工作環境的名稱。</block>
   <block id="67f0f7bdc0b6b3c961c645e5a644b531" category="list-text">在 BlueXP 主控台的右上角、按一下橢圓圖示、然後選取 * 設定密碼 * 。</block>
@@ -4381,15 +4373,10 @@
   <block id="71b669d4d19df676d975ef4911ded7af" category="paragraph"><block ref="71b669d4d19df676d975ef4911ded7af" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a98606dee1787dfd2471d2ef8adeb680" category="list-text">在「 Canvas 」頁面上、按兩下您要登錄的系統名稱。</block>
   <block id="24901c53838efd4b9981ed8ffd510413" category="list-text">在「概述」標籤上、按一下「功能」面板、然後按一下「 * 支援註冊 * 」旁邊的鉛筆圖示。</block>
-  <block id="055fb099b650eb50b3be2ee6aaa5edaa" category="inline-image-macro">螢幕擷取畫面：顯示 Cloud Volumes ONTAP 系統「功能」面板下的「支援」登錄選項。</block>
-  <block id="683ad9be450b1e4aaffcdcab8b33b0c4" category="paragraph"><block ref="683ad9be450b1e4aaffcdcab8b33b0c4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4da26c1efc91c7136517504959cc0687" category="paragraph"><block ref="4da26c1efc91c7136517504959cc0687" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6200e275553fcb2d81141061804129aa" category="list-text">在 Canvas 頁面上、按兩下您設定為勒索軟體保護的系統名稱。</block>
   <block id="68e277e7409c8587f5447ff6e1d07bac" category="list-text">在「概述」索引標籤上、按一下「功能」面板、然後按一下 * 勒索軟體保護 * 旁的鉛筆圖示。</block>
-  <block id="e44870bfe38bf3731499fca3154b9528" category="inline-image-macro">在「概觀」頁面右上角的「功能」面板下顯示勒索軟體保護設定的螢幕擷取畫面、可在檢視工作環境時顯示。</block>
-  <block id="2a39771bd60186d9d0eea3e49bb0d221" category="paragraph"><block ref="2a39771bd60186d9d0eea3e49bb0d221" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d0b1fe5e5e43d6e24cc20f730b8d1742" category="paragraph">您可以透過 BlueXP 「管理磁碟區」面板下的 _Mount Command_ 選項、輕鬆識別正確的 IP 位址。</block>
-  <block id="b717cb7368a7773e8663a0b7444325ad" category="paragraph"><block ref="b717cb7368a7773e8663a0b7444325ad" category="inline-image-macro-rx" type="image"></block></block>
   <block id="36466e75ef3251345a1fc3b957275568" category="list-text">在 Aggregate 索引標籤上、按一下 * 新增 Aggregate * 、然後指定 Aggregate 的詳細資料。</block>
   <block id="3c27c0be3b51a96fbeaf21988a5d0da7" category="paragraph">前往「進階配置」頁面時、您可以識別是否已在集合體上啟用「彈性磁碟區」功能。在下列範例中、 Aggr1 已啟用彈性 Volume 。</block>
   <block id="da881591358a049c4652b06b1054ccb1" category="inline-image-macro">顯示兩個集合體的螢幕擷取畫面、其中一個集合體具有文字「 Elastic Volumes Enabled 」的欄位。</block>
@@ -4439,7 +4426,6 @@
   <block id="2142690a2d1ae8bd820983b7911914d5" category="list-text">按一下 * 目標 IQN* 。</block>
   <block id="a56a5ae6f53f5f4ccfd018cd42004ea1" category="list-text">在 Canvas 頁面上、按兩下所需的工作環境。</block>
   <block id="1db430d5f476ccb7c5abbdfc3d4402d2" category="list-text">在「總覽」索引標籤上、按一下「功能」面板、然後按一下 * 排程停機 * 旁的鉛筆圖示。</block>
-  <block id="16fe8db807301272754ce201908a4d01" category="paragraph"><block ref="16fe8db807301272754ce201908a4d01" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0e1d67ee86981cf82fb4f5195e170da1" category="paragraph">下圖顯示一個排程、指示 BlueXP 每週六下午 20 ： 00 關閉系統（下午 8 ： 00 ） 12 小時。每週一上午12：00、BlueXP會重新啟動系統</block>
   <block id="3d33a0e91197625fe5c19262b8588a5e" category="inline-image-macro">螢幕擷取畫面：顯示排程停機畫面。</block>
   <block id="b7964eed3054006e2dc32e71addc9330" category="paragraph"><block ref="b7964eed3054006e2dc32e71addc9330" category="inline-image-macro-rx" type="image"></block></block>
@@ -4504,16 +4490,11 @@
   <block id="4145a13d965a05b20f37aec1922ef7dd" category="list-text">在工作環境中、按一下 * Aggregate 標籤 * 。</block>
   <block id="7d3d9db5a4178e569561d635871c26ed" category="list-text">瀏覽至所需的 Aggregate 方塊、然後按一下 * 。 （橢圓圖示） &gt; 檢視 Aggregate 詳細資料 * 。</block>
   <block id="920937d0401827a767850d6598f69cf9" category="list-text">在 Aggregate Details 畫面的 Overview （概觀）索引標籤下、檢閱每個 Volume 的大小、然後選擇一個或多個要移出 Aggregate 的 Volume 。</block>
-  <block id="e992ef205a43832966f09572f1eb3492" category="paragraph"><block ref="e992ef205a43832966f09572f1eb3492" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c6d494ac63d05f0797b17cc4e9b671a5" category="list-text">在 Aggregate 方塊下、檢視可用容量（資源配置大小減去使用的 Aggregate 容量）。</block>
-  <block id="448b7e585e92285ee5349bcda1a7acd0" category="paragraph"><block ref="448b7e585e92285ee5349bcda1a7acd0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8fcffd0e2a621979482d32af8df3fa54" category="list-text">選取集合體、然後按一下 * 。 （橢圓圖示） &gt; 新增磁碟 * 。</block>
   <block id="85cbc8c9d17142818868d0deb987b7d4" category="section-title">檢視 FlexGroup Volume</block>
   <block id="bfc66c582a5f0744b4549abc59217c8b" category="paragraph">您可以直接透過 BlueXP 中的 Volumes （磁碟區）標籤、檢視透過 CLI 或系統管理員建立的 FlexGroup 磁碟區。BlueXP 與提供給 FlexVol Volume 的資訊相同、透過專用的 Volumes 方塊、提供建立的 FleGroup Volume 的詳細資訊。在「 Volume （磁碟區）」磚下方、您可以透過圖示的暫留文字來識別每個 FlexGroup 磁碟區群組。此外、您也可以透過 Volume 樣式欄、在 Volume 清單檢視下識別及排序 FlexGroup Volume 。</block>
-  <block id="b732fd66a88d23ecd20ddd54d252bde0" category="paragraph"><block ref="b732fd66a88d23ecd20ddd54d252bde0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="18f38afc08c122a02d1cef0b8f55b13c" category="list-text">在「概述」標籤上、按一下「功能」面板、然後按一下「 * 執行個體類型 * 」旁邊的鉛筆圖示。</block>
-  <block id="246617af3cc2b3a4751f4377e63c90d9" category="inline-image-macro">在檢視工作環境時、會在「概觀」頁面右上角的「功能」面板下顯示「執行個體類型」設定的螢幕擷取畫面。</block>
-  <block id="22d199cf6285224598c87a4bf598fec7" category="paragraph"><block ref="22d199cf6285224598c87a4bf598fec7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e977a40ba12e4cbe82ec5ad1eeca10d3" category="list-text">如果您使用的是節點型 PAYGO 授權、您可以選擇不同的授權和執行個體類型、方法是按一下 * 授權類型 * 旁的鉛筆圖示。</block>
   <block id="dcee8dbc1dce5317d8cfa6588f8f050e" category="list-text">選擇執行個體類型、選取核取方塊以確認您瞭解變更的影響、然後按一下 * 變更 * 。</block>
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
@@ -4943,7 +4924,6 @@
   <block id="bdecbec2a6c25b03595e885ec64c0ea0" category="section-title">自主勒索軟體保護支援</block>
   <block id="ede53fbba4985444af96fca9c3cc6371" category="paragraph">Cloud Volumes ONTAP 現在支援自主勒索軟體保護（ ARP ）。Cloud Volumes ONTAP 9.12.1 版及更高版本均提供 ARP 支援。</block>
   <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">自主勒索軟體保護</block>
-  <block id="ca401b5672c0ad2688c93bc7bc20d2f4" category="paragraph">若要深入瞭解 Cloud Volumes ONTAP 的 ARP 、請參閱<block ref="9a5c0a514fb4b4b0c5abdde049600542" category="inline-link-rx"></block>。</block>
   <block id="6f7a609c476697f17ecdfbfe367e39ad" category="paragraph">Cloud Volumes ONTAP 支援「自動勒索軟體保護」（ ARP ）功能、可對工作負載執行分析、主動偵測並警告可能表示勒索軟體攻擊的異常活動。</block>
   <block id="e22c3a8f0786d359fea7cca144bbee1b" category="inline-link">啟用自發勒索軟體保護</block>
   <block id="46d7a6dd7db3af97caa5603b84f76cc1" category="paragraph">僅適用於 PAYGO 或年度承諾條款、 WORM 授權可透過雲端供應商的市場購買。WORM 支援節點型和容量型授權模式。</block>
@@ -4952,9 +4932,6 @@
   <block id="728c208823318f76bc30851f92119221" category="paragraph">您可以在保留期間使用權限刪除功能刪除 WORM 檔案。</block>
   <block id="44c48c2759b23de55aafe43a43856a08" category="paragraph">如需相關指示、請參閱<block ref="03bc56e40fb58df28e53112c02ca2ae1" category="inline-link-rx"></block></block>
   <block id="e220f1ef839bc3256ee110a9a5be5c61" category="paragraph">ARP 功能僅適用於節點型和容量型授權模式的 BYOL 授權（一、二及三年期限）。您必須聯絡您的 NetApp 銷售代表、以購買新的獨立附加授權、以搭配 Cloud Volumes ONTAP 中的 ARP 功能使用。</block>
-  <block id="fa0127eadcc515624ef23babde9aead2" category="paragraph">購買附加授權並將其新增至 Digital Wallet 後、您可以使用 Cloud Volumes ONTAP 以每個磁碟區為基礎來啟用 ARP 。磁碟區的 ARP 組態是透過 ONTAP 系統管理員和 ONTAP CLI 執行。如需如何使用 ONTAP 系統管理員和 CLI 啟用 ARP 的詳細資訊、請參閱<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
-  <block id="a35eb7b32c61adf984cdcc0cc1594b1c" category="inline-image-macro">螢幕擷取畫面顯示 Automware Protection 的附加授權。</block>
-  <block id="97a79a643f303c97f7df9ccd26c34e5e" category="paragraph"><block ref="97a79a643f303c97f7df9ccd26c34e5e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="59e727e0c151e53fa5beabd59871cb88" category="paragraph">在許多情況下、升級 HA 配對不會中斷營運、 I/O 也不會中斷。在此不中斷營運的升級程序中、會同時升級每個節點、以繼續為用戶端提供 I/O 服務。</block>
   <block id="67e0d115b5c2df9254836fd8f762d3dc" category="inline-link">請參閱 ONTAP 文件</block>
   <block id="ff0dae83f1884b2852a33110d07283d1" category="paragraph">工作階段導向的通訊協定可能會在升級期間對某些區域的用戶端和應用程式造成不良影響。如需詳細資訊、<block ref="69d6ddda693aaf09f72544089a10fab3" category="inline-link-rx"></block></block>
@@ -5015,4 +4992,19 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="a996d75e91b5144977f6dd124cd75572" category="image-alt">截錄畫面 Aggr Volume 總覽</block>
+  <block id="e40eb63a3506950ad93ba909dcf25c90" category="image-alt">螢幕擷取畫面 Aggr 容量</block>
+  <block id="ca7b4e21c879a84e19f4057cd971879d" category="image-alt">螢幕擷取畫面顯示 FlexGroup vol</block>
+  <block id="18d8042386b79e2c279fd162df0205c8" category="image-alt">400</block>
+  <block id="b26d26fe2543d5473bc9e47f43ccf1a0" category="image-alt">螢幕擷取畫面設定連接器按鈕</block>
+  <block id="84ad21dcd6ff9e0e4d117b5b3950020e" category="admonition">若未取得授權、則無法使用授權功能。</block>
+  <block id="3799dfe1ae4f409b181ad79e377574c6" category="paragraph">勒索軟體攻擊可能會耗費一定的時間、資源和商譽。BlueXP 可讓您針對勒索軟體實作兩種 NetApp 解決方案：防範常見的勒索軟體副檔名和自動勒索軟體保護（ ARP ）。這些解決方案可提供有效的工具、以利可見度、偵測和補救。</block>
+  <block id="78cc5cdbd5abab66548d6b3a595b1c6c" category="section-title">防止常見勒索軟體檔案副檔名</block>
+  <block id="3e5f671180bf2c0f088f815be54e2cdf" category="paragraph">透過 BlueXP 、勒索軟體保護設定可讓您利用 ONTAP FPolicy 功能來防範常見的勒索軟體檔案副檔名類型。</block>
+  <block id="d83738f5ec82db660abbb443f4d3eb21" category="inline-link">勒索軟體保護設定</block>
+  <block id="6c32dae7ba2780f8dc42d1813f66ea24" category="paragraph">與透過提供的檔案副檔名保護分開<block ref="1f479b2258cad80f990e85fbf571e95d" category="inline-link-rx"></block>、 ARP 功能會使用工作負載分析、根據偵測到的「異常活動」來警示使用者可能遭受的攻擊。勒索軟體保護設定和 ARP 功能均可搭配使用、以提供全面的勒索軟體保護。</block>
+  <block id="8ba032b0bcbcde63a6545318072ff32b" category="paragraph">購買附加授權並將其新增至 Digital Wallet 後、您可以使用 Cloud Volumes ONTAP 以每個磁碟區為基礎來啟用 ARP 。磁碟區的 ARP 組態是透過 ONTAP 系統管理員和 ONTAP CLI 執行。</block>
+  <block id="dfa314101a62671bea85bd2701b00194" category="paragraph">如需如何使用 ONTAP 系統管理員和 CLI 啟用 ARP 的詳細資訊、請參閱<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
+  <block id="65b6e49abdf1ec103e12f3c1d363d3d8" category="image-alt">螢幕擷取畫面</block>
+  <block id="4f87e49be20cab28b98c082c672f9032" category="paragraph">若要深入瞭解 Cloud Volumes ONTAP 的 ARP 、請參閱<block ref="3ad484b0b391dd26474b87b6bc7f70b6" category="inline-link-rx"></block>。</block>
 </blocks>

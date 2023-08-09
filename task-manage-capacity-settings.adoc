@@ -24,7 +24,7 @@ summary: 新增磁碟、檢視有關集合體的資訊、以及刪除這些磁�
 .步驟
 . 在BlueXP主控台右上角、按一下「設定」圖示、然後選取「*連接器設定*」。
 +
-image:screenshot_settings_connector_button.png["「連接器設定」選項的螢幕擷取畫面、位於「設定」圖示下。"]
+image::screenshot_settings_connector_button.png[螢幕擷取畫面設定連接器按鈕]
 
 . 在* Capacity *下、修改下列任何設定：
 +
