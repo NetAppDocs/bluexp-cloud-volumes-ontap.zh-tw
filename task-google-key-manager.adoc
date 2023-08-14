@@ -11,6 +11,7 @@ summary: 利用 Google 的金鑰管理服務來提供第三方金鑰管理服務
 :imagesdir: ../media/
 
 
+[role="lead"]
 您可以使用 link:https://cloud.google.com/kms/docs["Google Cloud Platform的金鑰管理服務（雲端KMS）"^] 在ONTAP Google Cloud Platform部署的應用程式中保護您的不加密金鑰。
 
 雲端KMS的金鑰管理可透過CLI或ONTAP REST API啟用。
