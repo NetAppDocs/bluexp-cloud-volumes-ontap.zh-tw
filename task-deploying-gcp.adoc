@@ -127,7 +127,7 @@ TIP: 如果您想要使用 WORM 和資料分層功能、您必須停用 BlueXP �
 
 
 
-| 使用現有的防火牆原則 | 如果您使用現有的防火牆原則、請確定其中包含必要的規則。 link:reference-networking-gcp.html#firewall-rules-for-cloud-volumes-ontap["深入瞭Cloud Volumes ONTAP 解適用於此功能的防火牆規則"]。 
+| 使用現有的防火牆原則 | 如果您使用現有的防火牆原則、請確定其中包含必要的規則。連結： https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#firewall-rules[Learn 關於 Cloud Volumes ONTAP 的防火牆規則 ^] 。 
 |===
 . *充電方法與NSS帳戶*：指定您要搭配此系統使用的收費選項、然後指定NetApp支援網站帳戶。
 +
@@ -152,7 +152,7 @@ NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修�
 磁碟大小適用於初始Aggregate中的所有磁碟、以及使用Simple Provisioning選項時、BlueXP所建立的任何其他Aggregate。您可以使用進階配置選項、建立使用不同磁碟大小的集合體。
 
 +
-如需選擇磁碟類型和大小的說明、請參閱 link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["在Google Cloud中調整系統規模"]。
+如需選擇磁碟類型和大小的說明、請參閱 link:task-planning-your-config-gcp.html#size-your-system-in-gcp["在 Google Cloud 中調整系統規模"]。
 
 . * Flash Cache 、寫入速度與 WORM * ：
 +
@@ -260,7 +260,7 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 |===
 . * 使用率設定檔、磁碟類型及分層原則 * ：視需要選擇是否要啟用儲存效率功能、並變更磁碟區分層原則。
 +
-如需詳細資訊、請參閱 link:task-planning-your-config-gcp.html#choosing-a-volume-usage-profile["瞭解 Volume 使用量設定檔"] 和 link:concept-data-tiering.html["資料分層總覽"]。
+如需詳細資訊、請參閱 link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["選擇Volume使用設定檔"] 和 link:concept-data-tiering.html["資料分層總覽"]。
 
 . * 審查與核准 * ：檢閱並確認您的選擇。
 +
@@ -368,7 +368,7 @@ link:reference-networking-gcp.html["深入瞭解網路需求"]。
 
 
 
-| 使用現有的 | 如果您使用現有的防火牆原則、請確定其中包含必要的規則。 link:reference-networking-gcp.html#firewall-rules-for-cloud-volumes-ontap["深入瞭Cloud Volumes ONTAP 解適用於此功能的防火牆規則"]。 
+| 使用現有的 | 如果您使用現有的防火牆原則、請確定其中包含必要的規則。 link:reference-networking-gcp.html#firewall-rules["深入瞭Cloud Volumes ONTAP 解適用於此功能的防火牆規則"]。 
 |===
 . *充電方法與NSS帳戶*：指定您要搭配此系統使用的收費選項、然後指定NetApp支援網站帳戶。
 +
@@ -393,7 +393,7 @@ NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修�
 磁碟大小適用於初始Aggregate中的所有磁碟、以及使用Simple Provisioning選項時、BlueXP所建立的任何其他Aggregate。您可以使用進階配置選項、建立使用不同磁碟大小的集合體。
 
 +
-如需選擇磁碟類型和大小的說明、請參閱 link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["在Google Cloud中調整系統規模"]。
+如需選擇磁碟類型和大小的說明、請參閱 link:task-planning-your-config-gcp.html#size-your-system-in-gcp["在 Google Cloud 中調整系統規模"]。
 
 . * Flash Cache 、寫入速度與 WORM * ：
 +
@@ -500,7 +500,7 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 |===
 . * 使用率設定檔、磁碟類型及分層原則 * ：視需要選擇是否要啟用儲存效率功能、並變更磁碟區分層原則。
 +
-如需詳細資訊、請參閱 link:task-planning-your-config-gcp.html#choosing-a-volume-usage-profile["瞭解 Volume 使用量設定檔"] 和 link:concept-data-tiering.html["資料分層總覽"]。
+如需詳細資訊、請參閱 link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["選擇Volume使用設定檔"] 和 link:concept-data-tiering.html["資料分層總覽"]。
 
 . * 審查與核准 * ：檢閱並確認您的選擇。
 +

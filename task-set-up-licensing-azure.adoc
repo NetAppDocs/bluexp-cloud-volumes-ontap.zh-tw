@@ -20,7 +20,7 @@ summary: 在決定Cloud Volumes ONTAP 要使用哪個授權選項來執行功能
 
 == Freemium
 
-選擇Freemium產品、即可免費使用Cloud Volumes ONTAP 多達500 GiB的配置容量。 link:concept-licensing.html#freemium-offering["深入瞭解Freemium產品"]。
+選擇Freemium產品、即可免費使用Cloud Volumes ONTAP 多達500 GiB的配置容量。 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["深入瞭解Freemium產品"^]。
 
 .步驟
 . 從左側導覽功能表中、選取*儲存設備> Canvas*。
@@ -28,7 +28,7 @@ summary: 在決定Cloud Volumes ONTAP 要使用哪個授權選項來執行功能
 +
 .. 在*詳細資料與認證*頁面上、按一下*編輯認證>新增訂閱*、然後依照提示訂閱Azure Marketplace中的隨用隨付方案。
 +
-除非您超過500 GiB的已配置容量、系統會自動轉換為、否則不會透過市場訂閱付費 link:concept-licensing.html#capacity-based-licensing-packages["Essentials套件"]。
+除非您超過500 GiB的已配置容量、系統會自動轉換為、否則不會透過市場訂閱付費 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#capacity-based-licensing["Essentials套件"^]。
 
 +
 image:screenshot-azure-paygo-subscription.png["建立Cloud Volumes ONTAP 運作環境時、PAYGO訂購選項的快照。"]

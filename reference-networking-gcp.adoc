@@ -220,8 +220,8 @@ TIP: 如果您使用 HA 配對、 HA 中介器不需要傳出網際網路存取�
 --
 請注意、 HA 組態需要兩組防火牆規則：
 
-* VPC-0 中 HA 元件的一組規則。這些規則可讓您存取 Cloud Volumes ONTAP 資料以存取資料。 <<Firewall rules for Cloud Volumes ONTAP,深入瞭解>>。
-* VPC-1 、 VPC-2 和 VPC-3 中的另一組 HA 元件規則。這些規則可用於 HA 元件之間的傳入和傳出通訊。 <<Firewall rules for Cloud Volumes ONTAP,深入瞭解>>。
+* VPC-0 中 HA 元件的一組規則。這些規則可讓您存取 Cloud Volumes ONTAP 資料以存取資料。 <<防火牆規則,深入瞭解>>。
+* VPC-1 、 VPC-2 和 VPC-3 中的另一組 HA 元件規則。這些規則可用於 HA 元件之間的傳入和傳出通訊。 <<防火牆規則,深入瞭解>>。
 
 
 --
@@ -250,7 +250,7 @@ BlueXP會建立Google Cloud防火牆規則、其中包括Cloud Volumes ONTAP 需
 請注意、 HA 組態需要兩組防火牆規則：
 
 * VPC-0 中 HA 元件的一組規則。這些規則可讓您存取 Cloud Volumes ONTAP 資料以存取資料。
-* VPC-1 、 VPC-2 和 VPC-3 中的另一組 HA 元件規則。這些規則可用於 HA 元件之間的傳入和傳出通訊。 <<Rules for VPC-1,VPC-2和VPC-3、深入瞭解>>。
+* VPC-1 、 VPC-2 和 VPC-3 中的另一組 HA 元件規則。這些規則可用於 HA 元件之間的傳入和傳出通訊。 <<rules-for-vpc,深入瞭解>>。
 
 
 

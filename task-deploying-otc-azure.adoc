@@ -125,7 +125,7 @@ TIP: 如果您使用的Azure帳戶具有 https://docs.netapp.com/us-en/bluexp-se
 
 
 
-| 使用現有的 | 如果您選擇現有的安全群組、則必須符合Cloud Volumes ONTAP 下列需求： link:reference-networking-azure.html#security-group-rules-for-cloud-volumes-ontap["檢視預設的安全性群組"]。 
+| 使用現有的 | 如果您選擇現有的安全群組、則必須符合Cloud Volumes ONTAP 下列需求： link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["檢視預設的安全性群組"^]。 
 |===
 . *充電方法與NSS帳戶*：指定您要搭配此系統使用的收費選項、然後指定NetApp支援網站帳戶。
 +
@@ -151,7 +151,7 @@ NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修�
 ** 磁碟類型適用於初始磁碟區。您可以為後續磁碟區選擇不同的磁碟類型。
 ** 磁碟大小適用於初始Aggregate中的所有磁碟、以及使用Simple Provisioning選項時、BlueXP所建立的任何其他Aggregate。您可以使用進階配置選項、建立使用不同磁碟大小的集合體。
 +
-如需選擇磁碟類型和大小的說明、請參閱 link:task-planning-your-config-azure.html#sizing-your-system-in-azure["在 Azure 中調整系統規模"]。
+如需選擇磁碟類型和大小的說明、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["在 Azure 中調整系統規模"^]。
 
 ** 您可以在建立或編輯磁碟區時、選擇特定的磁碟區分層原則。
 ** 如果停用資料分層、您可以在後續的 Aggregate 上啟用。
@@ -246,7 +246,7 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 |===
 . * 使用率設定檔、磁碟類型及分層原則 * ：視需要選擇是否要啟用儲存效率功能、並變更磁碟區分層原則。
 +
-如需詳細資訊、請參閱 link:task-planning-your-config-azure.html#choosing-a-volume-usage-profile["瞭解 Volume 使用量設定檔"] 和 link:concept-data-tiering.html["資料分層總覽"]。
+如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["瞭解 Volume 使用量設定檔"^] 和 link:concept-data-tiering.html["資料分層總覽"^]。
 
 . * 審查與核准 * ：檢閱並確認您的選擇。
 +
@@ -360,7 +360,7 @@ TIP: 如果您使用的Azure帳戶具有 https://docs.netapp.com/us-en/bluexp-se
 
 
 
-| 使用現有的 | 如果您選擇現有的安全群組、則必須符合Cloud Volumes ONTAP 下列需求： link:reference-networking-azure.html#security-group-rules-for-cloud-volumes-ontap["檢視預設的安全性群組"]。 
+| 使用現有的 | 如果您選擇現有的安全群組、則必須符合Cloud Volumes ONTAP 下列需求： link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["檢視預設的安全性群組"^]。 
 |===
 . *充電方法與NSS帳戶*：指定您要搭配此系統使用的收費選項、然後指定NetApp支援網站帳戶。
 +
@@ -385,7 +385,7 @@ NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修�
 +
 ** 磁碟大小適用於初始Aggregate中的所有磁碟、以及使用Simple Provisioning選項時、BlueXP所建立的任何其他Aggregate。您可以使用進階配置選項、建立使用不同磁碟大小的集合體。
 +
-如需選擇磁碟大小的說明、請參閱 link:task-planning-your-config-azure.html#sizing-your-system-in-azure["在 Azure 中調整系統規模"]。
+如需選擇磁碟大小的說明、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["在 Azure 中調整系統規模"^]。
 
 ** 您可以在建立或編輯磁碟區時、選擇特定的磁碟區分層原則。
 ** 如果停用資料分層、您可以在後續的 Aggregate 上啟用。
@@ -493,7 +493,7 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 |===
 . * 使用率設定檔、磁碟類型及分層原則 * ：視需要選擇是否要啟用儲存效率功能、並變更磁碟區分層原則。
 +
-如需詳細資訊、請參閱 link:task-planning-your-config-azure.html#choosing-a-volume-usage-profile["瞭解 Volume 使用量設定檔"] 和 link:concept-data-tiering.html["資料分層總覽"]。
+如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["瞭解 Volume 使用量設定檔"^] 和 link:concept-data-tiering.html["資料分層總覽"^]。
 
 . * 審查與核准 * ：檢閱並確認您的選擇。
 +

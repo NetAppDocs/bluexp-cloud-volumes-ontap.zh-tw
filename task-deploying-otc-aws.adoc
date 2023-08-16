@@ -101,7 +101,7 @@ TIP: 如果您想要使用 WORM 和資料分層功能、您必須停用 BlueXP �
 
 
 
-. *位置與連線*：輸入您在中記錄的網路資訊 link:task-planning-your-config.html#aws-network-information-worksheet["AWS工作表"]。
+. *位置與連線*：輸入您在中記錄的網路資訊 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#collect-networking-information["AWS工作表"^]。
 +
 下表說明您可能需要指導的欄位：
 
@@ -260,7 +260,7 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 |===
 . * 使用率設定檔、磁碟類型及分層原則 * ：視需要選擇是否要啟用儲存效率功能、並編輯磁碟區分層原則。
 +
-如需詳細資訊、請參閱 link:task-planning-your-config.html#choosing-a-volume-usage-profile["瞭解 Volume 使用量設定檔"] 和 link:concept-data-tiering.html["資料分層總覽"]。
+如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["瞭解 Volume 使用量設定檔"^] 和 link:concept-data-tiering.html["資料分層總覽"^]。
 
 . * 審查與核准 * ：檢閱並確認您的選擇。
 +
@@ -377,7 +377,7 @@ TIP: 如果您想要使用 WORM 和資料分層功能、您必須停用 BlueXP �
 . * 連線能力與 SSH 驗證 * ：選擇 HA 配對與中介器的連線方法。
 . * 浮動 IPS* ：如果您選擇多個 AZs 、請指定浮動 IP 位址。
 +
-該地區所有 VPC 的 IP 位址必須位於 CIDR 區塊之外。如需其他詳細資料、請參閱 link:reference-networking-aws.html#aws-networking-requirements-for-cloud-volumes-ontap-ha-in-multiple-azs["AWS 在 Cloud Volumes ONTAP 多個 AZs 中的功能需求"]。
+該地區所有 VPC 的 IP 位址必須位於 CIDR 區塊之外。如需其他詳細資料、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["AWS 在 Cloud Volumes ONTAP 多個 AZs 中的功能需求"^]。
 
 . * 路由表 * ：如果您選擇多個 AZs 、請選取應包含浮動 IP 位址路由的路由表。
 +
@@ -518,7 +518,7 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 |===
 . * 使用率設定檔、磁碟類型及分層原則 * ：視需要選擇是否要啟用儲存效率功能、並編輯磁碟區分層原則。
 +
-如需詳細資訊、請參閱 link:task-planning-your-config.html#choosing-a-volume-usage-profile["瞭解 Volume 使用量設定檔"] 和 link:concept-data-tiering.html["資料分層總覽"]。
+如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["瞭解 Volume 使用量設定檔"^] 和 link:concept-data-tiering.html["資料分層總覽"^]。
 
 . * 審查與核准 * ：檢閱並確認您的選擇。
 +

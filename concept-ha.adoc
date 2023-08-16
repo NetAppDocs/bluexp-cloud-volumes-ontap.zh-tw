@@ -88,7 +88,7 @@ HA 組態可維持資料的高可用度、如下所示：
 
 在跨多個可用區域部署 HA 組態之前、您應該先檢閱浮動 IP 位址和路由表的需求。部署組態時、您必須指定浮動 IP 位址。私有IP位址是由BlueXP自動建立。
 
-如需詳細資訊、請參閱 link:reference-networking-aws.html#aws-networking-requirements-for-cloud-volumes-ontap-ha-in-multiple-azs["AWS 在 Cloud Volumes ONTAP 多個 AZs 中的功能需求"]。
+如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["AWS 在 Cloud Volumes ONTAP 多個 AZs 中的功能需求"^]。
 
 
 

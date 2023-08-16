@@ -18,10 +18,10 @@ summary: 如果您在啟動初始Cloud Volumes ONTAP 的支援功能後需要更
 
 BlueXP提供多種建立新磁碟區的方法：
 
-* 指定新磁碟區的詳細資料、讓BlueXP為您處理基礎資料集合體。 <<建立Volume,深入瞭解>>。
-* 在您選擇的資料集合體上建立磁碟區。 <<建立Volume,深入瞭解>>。
-* 從範本建立磁碟區、以針對特定應用程式（例如資料庫或串流服務）的工作負載需求、最佳化磁碟區。 <<從範本建立Volume,深入瞭解>>。
-* 在HA組態的第二個節點上建立磁碟區。 <<在HA組態的第二個節點上建立磁碟區,深入瞭解>>。
+* 指定新磁碟區的詳細資料、讓BlueXP為您處理基礎資料集合體。 <<create-a-volume,深入瞭解>>
+* 在您選擇的資料集合體上建立磁碟區。 <<create-a-volume,深入瞭解>>
+* 從範本建立磁碟區、以針對特定應用程式（例如資料庫或串流服務）的工作負載需求、最佳化磁碟區。 <<create-a-volume-from-a-template,深入瞭解>>
+* 在HA組態的第二個節點上建立磁碟區。 <<create-volume-second-node,深入瞭解>>
 
 
 
@@ -30,7 +30,7 @@ BlueXP提供多種建立新磁碟區的方法：
 
 關於Volume資源配置的幾點注意事項：
 
-* 建立iSCSI磁碟區時、BlueXP會自動為您建立LUN。我們只要在每個磁碟區建立一個 LUN 、就能輕鬆完成工作、因此不需要管理。建立磁碟區之後、 <<將LUN連接至主機,使用 IQN 從主機連線至 LUN>>。
+* 建立iSCSI磁碟區時、BlueXP會自動為您建立LUN。我們只要在每個磁碟區建立一個 LUN 、就能輕鬆完成工作、因此不需要管理。建立磁碟區之後、 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-connect-lun.html["使用 IQN 從主機連線至 LUN"^]。
 * 您可以從 System Manager 或 CLI 建立其他 LUN 。
 
 
@@ -181,7 +181,7 @@ LUN:: iSCSI 儲存目標稱為 LUN （邏輯單元）、以標準區塊裝置的
 ifdef::aws[]
 
 +
-*** link:task-planning-your-config.html#sizing-your-system-in-aws["在 AWS 中調整系統規模"]
+*** link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#size-your-system-in-aws["在 AWS 中調整系統規模"^]
 
 
 
@@ -192,14 +192,14 @@ endif::aws[]
 
 ifdef::azure[]
 
-* link:task-planning-your-config-azure.html#sizing-your-system-in-azure["在 Azure 中調整系統規模"]
+* link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["在 Azure 中調整系統規模"^]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-* link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["在Google Cloud中調整系統規模"]
+* link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-gcp.html#size-your-system-in-gcp["在Google Cloud中調整系統規模"^]
 
 
 endif::gcp[]
@@ -250,7 +250,7 @@ image:screenshot_define_cvo_vol_from_template.png["顯示空白範本的螢幕�
 
 . 在 _Action_ 面板上、輸入範本的名稱。
 . 在 _context_ 下、工作環境會填入您開始使用的工作環境名稱。選取要建立磁碟區的 * 儲存 VM* 。
-. 新增所有非模板硬編碼的參數值。請參閱 <<create a volume,建立Volume>> 以取得完成 Cloud Volumes ONTAP Volume 部署所需的所有參數詳細資料。
+. 新增所有非模板硬編碼的參數值。請參閱 <<create-a-volume,建立Volume>> 以取得完成 Cloud Volumes ONTAP Volume 部署所需的所有參數詳細資料。
 . 按一下 * 套用 * 將設定的參數儲存至選取的動作。
 . 如果沒有其他需要定義的動作（例如、設定 BlueXP 備份與還原）、請按一下 * 儲存範本 * 。
 +
