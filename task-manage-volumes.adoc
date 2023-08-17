@@ -347,7 +347,7 @@ image::screenshot_aggr_capacity.png[螢幕擷取畫面 Aggr 容量]
 
 . 如果沒有集合體具有可用容量、請建立新的集合體。
 +
-如需詳細資訊、請參閱 link:task-create-aggregates.html["建立 Aggregate"]。
+如需詳細資訊、請參閱 link:task-create-aggregates.html["建立 Aggregate"^]。
 
 . 使用 System Manager 或 CLI 將磁碟區移至 Aggregate 。
 . 在大多數情況下、您可以使用 System Manager 來移動磁碟區。

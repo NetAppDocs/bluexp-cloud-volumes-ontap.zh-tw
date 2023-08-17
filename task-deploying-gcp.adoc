@@ -73,7 +73,7 @@ link:task-set-up-licensing-google.html["瞭解如何設定授權"]。
 | 工作環境名稱 | BlueXP使用工作環境名稱來命名Cloud Volumes ONTAP 支援系統和Google Cloud VM執行個體。如果您選取該選項、它也會使用名稱做為預先定義安全性群組的前置詞。 
 
 
-| 服務帳戶名稱 | 如果您打算使用 link:concept-data-tiering.html["資料分層"] 或 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["BlueXP 備份與還原"^] 有了這個功能、您就需要啟用*服務帳戶*、並選取具有預先定義儲存管理員角色的服務帳戶。Cloud Volumes ONTAP link:task-creating-gcp-service-account.html["瞭解如何建立服務帳戶"]。 
+| 服務帳戶名稱 | 如果您打算使用 link:concept-data-tiering.html["資料分層"] 或 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["BlueXP 備份與還原"^] 有了這個功能、您就需要啟用*服務帳戶*、並選取具有預先定義儲存管理員角色的服務帳戶。Cloud Volumes ONTAP link:task-creating-gcp-service-account.html["瞭解如何建立服務帳戶"^]。 
 
 
 | 新增標籤 | 標籤是Google Cloud資源的中繼資料。BlueXP會將標籤新增Cloud Volumes ONTAP 至與系統相關的支援系統和Google Cloud資源。建立工作環境時、您最多可以從使用者介面新增四個標籤、然後在建立之後新增更多標籤。請注意、在建立工作環境時、 API 不會限制您使用四個標籤。如需標籤的相關資訊、請參閱 https://cloud.google.com/compute/docs/labeling-resources["Google Cloud 文件：標示資源"^]。 
@@ -131,8 +131,8 @@ TIP: 如果您想要使用 WORM 和資料分層功能、您必須停用 BlueXP �
 |===
 . *充電方法與NSS帳戶*：指定您要搭配此系統使用的收費選項、然後指定NetApp支援網站帳戶。
 +
-** link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的授權選項"]。
-** link:task-set-up-licensing-google.html["瞭解如何設定授權"]。
+** link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的授權選項"^]。
+** link:task-set-up-licensing-google.html["瞭解如何設定授權"^]。
 
 
 . * 預先設定的套件 * ：選取其中一個套件以快速部署 Cloud Volumes ONTAP 某個作業系統、或按一下 * 建立我自己的組態 * 。
@@ -152,7 +152,7 @@ NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修�
 磁碟大小適用於初始Aggregate中的所有磁碟、以及使用Simple Provisioning選項時、BlueXP所建立的任何其他Aggregate。您可以使用進階配置選項、建立使用不同磁碟大小的集合體。
 
 +
-如需選擇磁碟類型和大小的說明、請參閱 link:task-planning-your-config-gcp.html#size-your-system-in-gcp["在 Google Cloud 中調整系統規模"]。
+如需選擇磁碟類型和大小的說明、請參閱 link:task-planning-your-config-gcp.html#size-your-system-in-gcp["在 Google Cloud 中調整系統規模"^]。
 
 . * Flash Cache 、寫入速度與 WORM * ：
 +
@@ -167,14 +167,14 @@ link:concept-write-speed.html["深入瞭解寫入速度"]。
 
 +
 
-NOTE: 高寫入速度和高傳輸單位（ MTU ） 8 、 896 位元組可透過 * 高 * 寫入速度選項取得。此外、較高的MTU為8、896、需要選擇VPC-1、VPC-2和VPC-3來進行部署。如需VPC-1、VPC-2和VPC-3的詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1、VPC-2和VPC-3的規則"]。
+NOTE: 高寫入速度和高傳輸單位（ MTU ） 8 、 896 位元組可透過 * 高 * 寫入速度選項取得。此外、較高的MTU為8、896、需要選擇VPC-1、VPC-2和VPC-3來進行部署。如需VPC-1、VPC-2和VPC-3的詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1、VPC-2和VPC-3的規則"^]。
 
 .. 視需要啟動一次寫入、多次讀取（WORM）儲存設備。
 +
 如果啟用Cloud Volumes ONTAP 資料分層功能、無法啟用WORM 9.7版及更低版本。啟用WORM和分層後、將Cloud Volumes ONTAP 會封鎖還原或降級至物件9.8。
 
 +
-link:concept-worm.html["深入瞭解 WORM 儲存設備"]。
+link:concept-worm.html["深入瞭解 WORM 儲存設備"^]。
 
 .. 如果您啟動WORM儲存設備、請選取保留期間。
 
@@ -189,13 +189,13 @@ link:concept-worm.html["深入瞭解 WORM 儲存設備"]。
 ** 您可以在建立或編輯磁碟區時、選擇特定的磁碟區分層原則。
 ** 如果停用資料分層、您可以在後續的Aggregate上啟用、但您需要關閉系統、並從Google Cloud主控台新增服務帳戶。
 +
-link:concept-data-tiering.html["深入瞭解資料分層"]。
+link:concept-data-tiering.html["深入瞭解資料分層"^]。
 
 
 
 . * 建立 Volume * ：輸入新磁碟區的詳細資料、或按一下 * 跳過 * 。
 +
-link:concept-client-protocols.html["瞭解支援的用戶端傳輸協定和版本"]。
+link:concept-client-protocols.html["瞭解支援的用戶端傳輸協定和版本"^]。
 
 +
 本頁中的部分欄位是不知自明的。下表說明您可能需要指導的欄位：
@@ -260,7 +260,7 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 |===
 . * 使用率設定檔、磁碟類型及分層原則 * ：視需要選擇是否要啟用儲存效率功能、並變更磁碟區分層原則。
 +
-如需詳細資訊、請參閱 link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["選擇Volume使用設定檔"] 和 link:concept-data-tiering.html["資料分層總覽"]。
+如需詳細資訊、請參閱 link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["選擇Volume使用設定檔"^] 和 link:concept-data-tiering.html["資料分層總覽"^]。
 
 . * 審查與核准 * ：檢閱並確認您的選擇。
 +
@@ -344,11 +344,11 @@ TIP: 如果您想要使用 WORM 和資料分層功能、您必須停用 BlueXP �
 
 . * HA 部署模式 * ：選擇多個區域（建議）或單一區域進行 HA 組態。然後選取區域和區域。
 +
-link:concept-ha-google-cloud.html["深入瞭解 HA 部署模式"]。
+link:concept-ha-google-cloud.html["深入瞭解 HA 部署模式"^]。
 
 . * 連線能力 * ：為 HA 組態選取四個不同的 VPC 、在每個 VPC 中選取一個子網路、然後選擇防火牆原則。
 +
-link:reference-networking-gcp.html["深入瞭解網路需求"]。
+link:reference-networking-gcp.html["深入瞭解網路需求"^]。
 
 +
 下表說明您可能需要指導的欄位：
@@ -368,12 +368,12 @@ link:reference-networking-gcp.html["深入瞭解網路需求"]。
 
 
 
-| 使用現有的 | 如果您使用現有的防火牆原則、請確定其中包含必要的規則。 link:reference-networking-gcp.html#firewall-rules["深入瞭Cloud Volumes ONTAP 解適用於此功能的防火牆規則"]。 
+| 使用現有的 | 如果您使用現有的防火牆原則、請確定其中包含必要的規則。 link:reference-networking-gcp.html#firewall-rules["深入瞭Cloud Volumes ONTAP 解適用於此功能的防火牆規則"^]。 
 |===
 . *充電方法與NSS帳戶*：指定您要搭配此系統使用的收費選項、然後指定NetApp支援網站帳戶。
 +
-** link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的授權選項"]。
-** link:task-set-up-licensing-google.html["瞭解如何設定授權"]。
+** link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的授權選項"^]。
+** link:task-set-up-licensing-google.html["瞭解如何設定授權"^]。
 
 
 . * 預先設定的套件 * ：選取其中一個套件以快速部署 Cloud Volumes ONTAP 某個作業系統、或按一下 * 建立我自己的組態 * 。
@@ -393,7 +393,7 @@ NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修�
 磁碟大小適用於初始Aggregate中的所有磁碟、以及使用Simple Provisioning選項時、BlueXP所建立的任何其他Aggregate。您可以使用進階配置選項、建立使用不同磁碟大小的集合體。
 
 +
-如需選擇磁碟類型和大小的說明、請參閱 link:task-planning-your-config-gcp.html#size-your-system-in-gcp["在 Google Cloud 中調整系統規模"]。
+如需選擇磁碟類型和大小的說明、請參閱 link:task-planning-your-config-gcp.html#size-your-system-in-gcp["在 Google Cloud 中調整系統規模"^]。
 
 . * Flash Cache 、寫入速度與 WORM * ：
 +
@@ -404,18 +404,18 @@ NOTE: 從 Cloud Volumes ONTAP 9.13.1 開始、 n2-Standard-32 、 n2-Standard-48
 
 .. 如果需要、請選擇*正常*或*高速*寫入速度。
 +
-link:concept-write-speed.html["深入瞭解寫入速度"]。
+link:concept-write-speed.html["深入瞭解寫入速度"^]。
 
 +
 
-NOTE: 透過使用 n2-Standard-16 、 n2-Standard-32 、 n2-Standard-48 及 n2-Standard-64 執行個體類型的 * High * 寫入速度選項、可獲得高寫入速度及高傳輸單位（ MTU ） 8 、 896 位元組。此外、較高的MTU為8、896、需要選擇VPC-1、VPC-2和VPC-3來進行部署。高寫入速度和 8 、 896 的 MTU 與功能有關、無法在設定的執行個體中個別停用。如需VPC-1、VPC-2和VPC-3的詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1、VPC-2和VPC-3的規則"]。
+NOTE: 透過使用 n2-Standard-16 、 n2-Standard-32 、 n2-Standard-48 及 n2-Standard-64 執行個體類型的 * High * 寫入速度選項、可獲得高寫入速度及高傳輸單位（ MTU ） 8 、 896 位元組。此外、較高的MTU為8、896、需要選擇VPC-1、VPC-2和VPC-3來進行部署。高寫入速度和 8 、 896 的 MTU 與功能有關、無法在設定的執行個體中個別停用。如需VPC-1、VPC-2和VPC-3的詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1、VPC-2和VPC-3的規則"^]。
 
 .. 視需要啟動一次寫入、多次讀取（WORM）儲存設備。
 +
 如果啟用Cloud Volumes ONTAP 資料分層功能、無法啟用WORM 9.7版及更低版本。啟用WORM和分層後、將Cloud Volumes ONTAP 會封鎖還原或降級至物件9.8。
 
 +
-link:concept-worm.html["深入瞭解 WORM 儲存設備"]。
+link:concept-worm.html["深入瞭解 WORM 儲存設備"^]。
 
 .. 如果您啟動WORM儲存設備、請選取保留期間。
 
@@ -429,13 +429,13 @@ link:concept-worm.html["深入瞭解 WORM 儲存設備"]。
 ** 您可以在建立或編輯磁碟區時、選擇特定的磁碟區分層原則。
 ** 如果停用資料分層、您可以在後續的Aggregate上啟用、但您需要關閉系統、並從Google Cloud主控台新增服務帳戶。
 +
-link:concept-data-tiering.html["深入瞭解資料分層"]。
+link:concept-data-tiering.html["深入瞭解資料分層"^]。
 
 
 
 . * 建立 Volume * ：輸入新磁碟區的詳細資料、或按一下 * 跳過 * 。
 +
-link:concept-client-protocols.html["瞭解支援的用戶端傳輸協定和版本"]。
+link:concept-client-protocols.html["瞭解支援的用戶端傳輸協定和版本"^]。
 
 +
 本頁中的部分欄位是不知自明的。下表說明您可能需要指導的欄位：
@@ -500,7 +500,7 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 |===
 . * 使用率設定檔、磁碟類型及分層原則 * ：視需要選擇是否要啟用儲存效率功能、並變更磁碟區分層原則。
 +
-如需詳細資訊、請參閱 link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["選擇Volume使用設定檔"] 和 link:concept-data-tiering.html["資料分層總覽"]。
+如需詳細資訊、請參閱 link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["選擇Volume使用設定檔"^] 和 link:concept-data-tiering.html["資料分層總覽"^]。
 
 . * 審查與核准 * ：檢閱並確認您的選擇。
 +

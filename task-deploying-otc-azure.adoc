@@ -28,11 +28,11 @@ summary: 您可以Cloud Volumes ONTAP 在Cloud Volumes ONTAP BlueXP中建立一�
 
 * 瞭解您要使用的組態。
 +
-您應該已經選擇組態、並從系統管理員取得 Azure 網路資訊。如需詳細資訊、請參閱 link:task-planning-your-config-azure.html["規劃 Cloud Volumes ONTAP 您的需求組態"]。
+您應該已經選擇組態、並從系統管理員取得 Azure 網路資訊。如需詳細資訊、請參閱 link:task-planning-your-config-azure.html["規劃 Cloud Volumes ONTAP 您的需求組態"^]。
 
 * 瞭解設定Cloud Volumes ONTAP 驗證功能所需的條件。
 +
-link:task-set-up-licensing-azure.html["瞭解如何設定授權"]。
+link:task-set-up-licensing-azure.html["瞭解如何設定授權"^]。
 
 
 
@@ -129,8 +129,8 @@ TIP: 如果您使用的Azure帳戶具有 https://docs.netapp.com/us-en/bluexp-se
 |===
 . *充電方法與NSS帳戶*：指定您要搭配此系統使用的收費選項、然後指定NetApp支援網站帳戶。
 +
-** link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的授權選項"]。
-** link:task-set-up-licensing-azure.html["瞭解如何設定授權"]。
+** link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的授權選項"^]。
+** link:task-set-up-licensing-azure.html["瞭解如何設定授權"^]。
 
 
 . * 預先設定的套件 * ：選取其中一個套件以快速部署 Cloud Volumes ONTAP 某個作業系統、或按一下 * 建立我自己的組態 * 。
@@ -156,7 +156,7 @@ NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修�
 ** 您可以在建立或編輯磁碟區時、選擇特定的磁碟區分層原則。
 ** 如果停用資料分層、您可以在後續的 Aggregate 上啟用。
 +
-link:concept-data-tiering.html["深入瞭解資料分層"]。
+link:concept-data-tiering.html["深入瞭解資料分層"^]。
 
 
 
@@ -164,24 +164,24 @@ link:concept-data-tiering.html["深入瞭解資料分層"]。
 +
 .. 如果需要、請選擇*正常*或*高速*寫入速度。
 +
-link:concept-write-speed.html["深入瞭解寫入速度"]。
+link:concept-write-speed.html["深入瞭解寫入速度"^]。
 
 .. 視需要啟動一次寫入、多次讀取（WORM）儲存設備。
 +
-此選項僅適用於特定VM類型。若要瞭解支援哪些VM類型、請參閱 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HA配對授權的支援組態"]。
+此選項僅適用於特定VM類型。若要瞭解支援哪些VM類型、請參閱 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HA配對授權的支援組態"^]。
 
 +
 如果啟用Cloud Volumes ONTAP 資料分層功能、無法啟用WORM 9.7版及更低版本。啟用WORM和分層後、將Cloud Volumes ONTAP 會封鎖還原或降級至物件9.8。
 
 +
-link:concept-worm.html["深入瞭解 WORM 儲存設備"]。
+link:concept-worm.html["深入瞭解 WORM 儲存設備"^]。
 
 .. 如果您啟動WORM儲存設備、請選取保留期間。
 
 
 . * 建立 Volume * ：輸入新磁碟區的詳細資料、或按一下 * 跳過 * 。
 +
-link:concept-client-protocols.html["瞭解支援的用戶端傳輸協定和版本"]。
+link:concept-client-protocols.html["瞭解支援的用戶端傳輸協定和版本"^]。
 
 +
 本頁中的部分欄位是不知自明的。下表說明您可能需要指導的欄位：
@@ -364,8 +364,8 @@ TIP: 如果您使用的Azure帳戶具有 https://docs.netapp.com/us-en/bluexp-se
 |===
 . *充電方法與NSS帳戶*：指定您要搭配此系統使用的收費選項、然後指定NetApp支援網站帳戶。
 +
-** link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的授權選項"]。
-** link:task-set-up-licensing-azure.html["瞭解如何設定授權"]。
+** link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的授權選項"^]。
+** link:task-set-up-licensing-azure.html["瞭解如何設定授權"^]。
 
 
 . *預先設定的套件*：選取其中一個套件以快速部署Cloud Volumes ONTAP 一個作業系統、或按一下*變更組態*。
@@ -385,12 +385,12 @@ NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修�
 +
 ** 磁碟大小適用於初始Aggregate中的所有磁碟、以及使用Simple Provisioning選項時、BlueXP所建立的任何其他Aggregate。您可以使用進階配置選項、建立使用不同磁碟大小的集合體。
 +
-如需選擇磁碟大小的說明、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["在 Azure 中調整系統規模"^]。
+如需選擇磁碟大小的說明、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["在Azure中調整系統規模"^]。
 
 ** 您可以在建立或編輯磁碟區時、選擇特定的磁碟區分層原則。
 ** 如果停用資料分層、您可以在後續的 Aggregate 上啟用。
 +
-link:concept-data-tiering.html["深入瞭解資料分層"]。
+link:concept-data-tiering.html["深入瞭解資料分層"^]。
 
 
 
@@ -398,17 +398,17 @@ link:concept-data-tiering.html["深入瞭解資料分層"]。
 +
 .. 如果需要、請選擇*正常*或*高速*寫入速度。
 +
-link:concept-write-speed.html["深入瞭解寫入速度"]。
+link:concept-write-speed.html["深入瞭解寫入速度"^]。
 
 .. 視需要啟動一次寫入、多次讀取（WORM）儲存設備。
 +
-此選項僅適用於特定VM類型。若要瞭解支援哪些VM類型、請參閱 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HA配對授權的支援組態"]。
+此選項僅適用於特定VM類型。若要瞭解支援哪些VM類型、請參閱 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HA配對授權的支援組態"^]。
 
 +
 如果啟用Cloud Volumes ONTAP 資料分層功能、無法啟用WORM 9.7版及更低版本。啟用WORM和分層後、將Cloud Volumes ONTAP 會封鎖還原或降級至物件9.8。
 
 +
-link:concept-worm.html["深入瞭解 WORM 儲存設備"]。
+link:concept-worm.html["深入瞭解 WORM 儲存設備"^]。
 
 .. 如果您啟動WORM儲存設備、請選取保留期間。
 
@@ -418,17 +418,17 @@ link:concept-worm.html["深入瞭解 WORM 儲存設備"]。
 HTTPS連線是Cloud Volumes ONTAP 從一個畫面9.7 HA配對到Azure網頁blob儲存帳戶。請注意、啟用此選項可能會影響寫入效能。您無法在建立工作環境之後變更設定。
 
 +
-link:concept-worm.html["深入瞭解 WORM 儲存設備"]。
+link:concept-worm.html["深入瞭解 WORM 儲存設備"^]。
 
 +
 如果資料分層已啟用、則無法啟用 WORM 。
 
 +
-link:concept-worm.html["深入瞭解 WORM 儲存設備"]。
+link:concept-worm.html["深入瞭解 WORM 儲存設備"^]。
 
 . * 建立 Volume * ：輸入新磁碟區的詳細資料、或按一下 * 跳過 * 。
 +
-link:concept-client-protocols.html["瞭解支援的用戶端傳輸協定和版本"]。
+link:concept-client-protocols.html["瞭解支援的用戶端傳輸協定和版本"^]。
 
 +
 本頁中的部分欄位是不知自明的。下表說明您可能需要指導的欄位：
@@ -493,7 +493,7 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 |===
 . * 使用率設定檔、磁碟類型及分層原則 * ：視需要選擇是否要啟用儲存效率功能、並變更磁碟區分層原則。
 +
-如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["瞭解 Volume 使用量設定檔"^] 和 link:concept-data-tiering.html["資料分層總覽"^]。
+如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["選擇Volume使用設定檔"^] 和 link:concept-data-tiering.html["資料分層總覽"^]。
 
 . * 審查與核准 * ：檢閱並確認您的選擇。
 +

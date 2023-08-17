@@ -31,15 +31,15 @@ summary: 您可以在 Cloud Volumes ONTAP 單一系統組態中或 AWS 中以 HA
 
 * 瞭解您要使用的組態。
 +
-您應該已做好準備、選擇組態、並從系統管理員取得 AWS 網路資訊。如需詳細資訊、請參閱 link:task-planning-your-config.html["規劃 Cloud Volumes ONTAP 您的需求組態"]。
+您應該已做好準備、選擇組態、並從系統管理員取得 AWS 網路資訊。如需詳細資訊、請參閱 link:task-planning-your-config.html["規劃 Cloud Volumes ONTAP 您的需求組態"^]。
 
 * 瞭解設定Cloud Volumes ONTAP 驗證功能所需的條件。
 +
-link:task-set-up-licensing-aws.html["瞭解如何設定授權"]。
+link:task-set-up-licensing-aws.html["瞭解如何設定授權"^]。
 
 * 適用於CIFS組態的DNS與Active Directory。
 +
-如需詳細資訊、請參閱 link:reference-networking-aws.html["AWS 的網路需求 Cloud Volumes ONTAP"]。
+如需詳細資訊、請參閱 link:reference-networking-aws.html["AWS 的網路需求 Cloud Volumes ONTAP"^]。
 
 
 
@@ -123,7 +123,7 @@ TIP: 如果您想要使用 WORM 和資料分層功能、您必須停用 BlueXP �
 
 
 
-| 使用現有的安全性群組 | 如果您使用現有的防火牆原則、請確定其中包含必要的規則。 link:reference-security-groups.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的防火牆規則"]。 
+| 使用現有的安全性群組 | 如果您使用現有的防火牆原則、請確定其中包含必要的規則。 link:reference-security-groups.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的防火牆規則"^]。 
 |===
 . * 資料加密 * ：不選擇資料加密或 AWS 管理的加密。
 +
@@ -134,15 +134,15 @@ TIP: 如果您想要使用 WORM 和資料分層功能、您必須停用 BlueXP �
 TIP: 建立 Cloud Volumes ONTAP 一套系統後、您無法變更 AWS 資料加密方法。
 
 +
-link:task-setting-up-kms.html["瞭解如何設定 AWS KMS for Cloud Volumes ONTAP the 功能"]。
+link:task-setting-up-kms.html["瞭解如何設定 AWS KMS for Cloud Volumes ONTAP the 功能"^]。
 
 +
-link:concept-security.html#encryption-of-data-at-rest["深入瞭解支援的加密技術"]。
+link:concept-security.html#encryption-of-data-at-rest["深入瞭解支援的加密技術"^]。
 
 . *充電方法與NSS帳戶*：指定您要搭配此系統使用的收費選項、然後指定NetApp支援網站帳戶。
 +
-** link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的授權選項"]。
-** link:task-set-up-licensing-aws.html["瞭解如何設定授權"]。
+** link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的授權選項"^]。
+** link:task-set-up-licensing-aws.html["瞭解如何設定授權"^]。
 
 
 . *《*》（僅限AWS Marketplace年度合約）：請檢閱預設組態、然後按一下*「Continue」（繼續）*或按一下*「Change Configuration」（變更組態）*以選取您自己的組態。Cloud Volumes ONTAP
@@ -155,7 +155,7 @@ link:concept-security.html#encryption-of-data-at-rest["深入瞭解支援的加�
 
 . * IAM角色*：最好保留預設選項、讓BlueXP為您建立角色。
 +
-如果您偏好使用自己的原則、就必須符合 link:task-set-up-iam-roles.html["有關節點的原則要求 Cloud Volumes ONTAP"]。
+如果您偏好使用自己的原則、就必須符合 link:task-set-up-iam-roles.html["有關節點的原則要求 Cloud Volumes ONTAP"^]。
 
 . *授權*：視Cloud Volumes ONTAP 需要變更此版本、並選取執行個體類型和執行個體租賃。
 +
@@ -168,12 +168,12 @@ NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修�
 
 +
 ** 磁碟類型適用於初始磁碟區（和Aggregate）。您可以為後續磁碟區（和Aggregate）選擇不同的磁碟類型。
-** 如果您選擇GP3或IO1磁碟、則BlueXP會使用AWS中的彈性磁碟區功能、視需要自動增加基礎儲存磁碟容量。您可以根據儲存需求來選擇初始容量、Cloud Volumes ONTAP 並在部署完畢後加以修改。 link:concept-aws-elastic-volumes.html["深入瞭解AWS對彈性磁碟區的支援"]。
+** 如果您選擇GP3或IO1磁碟、則BlueXP會使用AWS中的彈性磁碟區功能、視需要自動增加基礎儲存磁碟容量。您可以根據儲存需求來選擇初始容量、Cloud Volumes ONTAP 並在部署完畢後加以修改。 link:concept-aws-elastic-volumes.html["深入瞭解AWS對彈性磁碟區的支援"^]。
 ** 如果您選擇gp2或ST1磁碟、則可以針對初始Aggregate中的所有磁碟、以及使用Simple Provisioning選項時、BlueXP所建立的任何其他Aggregate、選取磁碟大小。您可以使用進階配置選項、建立使用不同磁碟大小的集合體。
 ** 您可以在建立或編輯磁碟區時、選擇特定的磁碟區分層原則。
 ** 如果停用資料分層、您可以在後續的 Aggregate 上啟用。
 +
-link:concept-data-tiering.html["瞭解資料分層的運作方式"]。
+link:concept-data-tiering.html["瞭解資料分層的運作方式"^]。
 
 
 
@@ -181,21 +181,21 @@ link:concept-data-tiering.html["瞭解資料分層的運作方式"]。
 +
 .. 如果需要、請選擇*正常*或*高速*寫入速度。
 +
-link:concept-write-speed.html["深入瞭解寫入速度"]。
+link:concept-write-speed.html["深入瞭解寫入速度"^]。
 
 .. 視需要啟動一次寫入、多次讀取（WORM）儲存設備。
 +
 如果啟用Cloud Volumes ONTAP 資料分層功能、無法啟用WORM 9.7版及更低版本。啟用WORM和分層後、將Cloud Volumes ONTAP 會封鎖還原或降級至物件9.8。
 
 +
-link:concept-worm.html["深入瞭解 WORM 儲存設備"]。
+link:concept-worm.html["深入瞭解 WORM 儲存設備"^]。
 
 .. 如果您啟動WORM儲存設備、請選取保留期間。
 
 
 . * 建立 Volume * ：輸入新磁碟區的詳細資料、或按一下 * 跳過 * 。
 +
-link:concept-client-protocols.html["瞭解支援的用戶端傳輸協定和版本"]。
+link:concept-client-protocols.html["瞭解支援的用戶端傳輸協定和版本"^]。
 
 +
 本頁中的部分欄位是不知自明的。下表說明您可能需要指導的欄位：
@@ -351,7 +351,7 @@ TIP: 如果您想要使用 WORM 和資料分層功能、您必須停用 BlueXP �
 
 . * HA 部署模式 * ：選擇 HA 組態。
 +
-如需部署模型的總覽、請參閱 link:concept-ha.html["適用於 AWS 的 HA Cloud Volumes ONTAP"]。
+如需部署模型的總覽、請參閱 link:concept-ha.html["適用於 AWS 的 HA Cloud Volumes ONTAP"^]。
 
 . *位置與連線*（單一AZ）或*地區與VPC*（多個AZ）：輸入您在AWS工作表中記錄的網路資訊。
 +
@@ -372,7 +372,7 @@ TIP: 如果您想要使用 WORM 和資料分層功能、您必須停用 BlueXP �
 
 
 
-| 使用現有的安全性群組 | 如果您使用現有的防火牆原則、請確定其中包含必要的規則。 link:reference-security-groups.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的防火牆規則"]。 
+| 使用現有的安全性群組 | 如果您使用現有的防火牆原則、請確定其中包含必要的規則。 link:reference-security-groups.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的防火牆規則"^]。 
 |===
 . * 連線能力與 SSH 驗證 * ：選擇 HA 配對與中介器的連線方法。
 . * 浮動 IPS* ：如果您選擇多個 AZs 、請指定浮動 IP 位址。
@@ -392,15 +392,15 @@ TIP: 如果您想要使用 WORM 和資料分層功能、您必須停用 BlueXP �
 TIP: 建立 Cloud Volumes ONTAP 一套系統後、您無法變更 AWS 資料加密方法。
 
 +
-link:task-setting-up-kms.html["瞭解如何設定 AWS KMS for Cloud Volumes ONTAP the 功能"]。
+link:task-setting-up-kms.html["瞭解如何設定 AWS KMS for Cloud Volumes ONTAP the 功能"^]。
 
 +
-link:concept-security.html#encryption-of-data-at-rest["深入瞭解支援的加密技術"]。
+link:concept-security.html#encryption-of-data-at-rest["深入瞭解支援的加密技術"^]。
 
 . *充電方法與NSS帳戶*：指定您要搭配此系統使用的收費選項、然後指定NetApp支援網站帳戶。
 +
-** link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的授權選項"]。
-** link:task-set-up-licensing-aws.html["瞭解如何設定授權"]。
+** link:concept-licensing.html["深入瞭Cloud Volumes ONTAP 解適用於此功能的授權選項"^]。
+** link:task-set-up-licensing-aws.html["瞭解如何設定授權"^]。
 
 
 . *《*》（僅限AWS Marketplace年度合約）：請檢閱預設組態、然後按一下*「Continue」（繼續）*或按一下*「Change Configuration」（變更組態）*以選取您自己的組態。Cloud Volumes ONTAP
@@ -413,7 +413,7 @@ link:concept-security.html#encryption-of-data-at-rest["深入瞭解支援的加�
 
 . * IAM角色*：最好保留預設選項、讓BlueXP為您建立角色。
 +
-如果您偏好使用自己的原則、就必須符合 link:task-set-up-iam-roles.html["有關節點和 HA 中介器的原則要求 Cloud Volumes ONTAP"]。
+如果您偏好使用自己的原則、就必須符合 link:task-set-up-iam-roles.html["有關節點和 HA 中介器的原則要求 Cloud Volumes ONTAP"^]。
 
 . *授權*：視Cloud Volumes ONTAP 需要變更此版本、並選取執行個體類型和執行個體租賃。
 +
@@ -426,12 +426,12 @@ NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修�
 
 +
 ** 磁碟類型適用於初始磁碟區（和Aggregate）。您可以為後續磁碟區（和Aggregate）選擇不同的磁碟類型。
-** 如果您選擇GP3或IO1磁碟、則BlueXP會使用AWS中的彈性磁碟區功能、視需要自動增加基礎儲存磁碟容量。您可以根據儲存需求來選擇初始容量、Cloud Volumes ONTAP 並在部署完畢後加以修改。 link:concept-aws-elastic-volumes.html["深入瞭解AWS對彈性磁碟區的支援"]。
+** 如果您選擇GP3或IO1磁碟、則BlueXP會使用AWS中的彈性磁碟區功能、視需要自動增加基礎儲存磁碟容量。您可以根據儲存需求來選擇初始容量、Cloud Volumes ONTAP 並在部署完畢後加以修改。 link:concept-aws-elastic-volumes.html["深入瞭解AWS對彈性磁碟區的支援"^]。
 ** 如果您選擇gp2或ST1磁碟、則可以針對初始Aggregate中的所有磁碟、以及使用Simple Provisioning選項時、BlueXP所建立的任何其他Aggregate、選取磁碟大小。您可以使用進階配置選項、建立使用不同磁碟大小的集合體。
 ** 您可以在建立或編輯磁碟區時、選擇特定的磁碟區分層原則。
 ** 如果停用資料分層、您可以在後續的 Aggregate 上啟用。
 +
-link:concept-data-tiering.html["瞭解資料分層的運作方式"]。
+link:concept-data-tiering.html["瞭解資料分層的運作方式"^]。
 
 
 
@@ -439,21 +439,21 @@ link:concept-data-tiering.html["瞭解資料分層的運作方式"]。
 +
 .. 如果需要、請選擇*正常*或*高速*寫入速度。
 +
-link:concept-write-speed.html["深入瞭解寫入速度"]。
+link:concept-write-speed.html["深入瞭解寫入速度"^]。
 
 .. 視需要啟動一次寫入、多次讀取（WORM）儲存設備。
 +
 如果啟用Cloud Volumes ONTAP 資料分層功能、無法啟用WORM 9.7版及更低版本。啟用WORM和分層後、將Cloud Volumes ONTAP 會封鎖還原或降級至物件9.8。
 
 +
-link:concept-worm.html["深入瞭解 WORM 儲存設備"]。
+link:concept-worm.html["深入瞭解 WORM 儲存設備"^]。
 
 .. 如果您啟動WORM儲存設備、請選取保留期間。
 
 
 . * 建立 Volume * ：輸入新磁碟區的詳細資料、或按一下 * 跳過 * 。
 +
-link:concept-client-protocols.html["瞭解支援的用戶端傳輸協定和版本"]。
+link:concept-client-protocols.html["瞭解支援的用戶端傳輸協定和版本"^]。
 
 +
 本頁中的部分欄位是不知自明的。下表說明您可能需要指導的欄位：
@@ -518,7 +518,7 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 |===
 . * 使用率設定檔、磁碟類型及分層原則 * ：視需要選擇是否要啟用儲存效率功能、並編輯磁碟區分層原則。
 +
-如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["瞭解 Volume 使用量設定檔"^] 和 link:concept-data-tiering.html["資料分層總覽"^]。
+如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["選擇Volume使用設定檔"^] 和 link:concept-data-tiering.html["資料分層總覽"^]。
 
 . * 審查與核准 * ：檢閱並確認您的選擇。
 +
