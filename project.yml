@@ -159,6 +159,8 @@ sidebar:
       - title: 在Google Cloud中建立儲存VM
         flavor: gcp
         url: "/task-managing-svms-gcp.html"
+      - title: 設定 SVM 災難恢復
+        url: "/task-manage-svm-dr.html"
     - title: 安全性與資料加密
       entries:
       - title: 使用 NetApp 加密來加密磁碟區

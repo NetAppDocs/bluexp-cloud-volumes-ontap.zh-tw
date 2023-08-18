@@ -5016,4 +5016,10 @@
   <block id="157452a4d26511160047acedc5ae5b81" category="paragraph"><block ref="2824c251ff24540ca0c877b5ced755b8" category="inline-link-macro-rx"></block>。</block>
   <block id="cf523fc47469c34a8d903bacda7e81e5" category="cell">如果您使用現有的防火牆原則、請確定其中包含必要的規則。 <block ref="bee5d22e907894802468a917716c85b0" category="inline-link-macro-rx"></block>。</block>
   <block id="07a5d71b593f96284694315beb6fe13d" category="admonition">透過使用 n2-Standard-16 、 n2-Standard-32 、 n2-Standard-48 及 n2-Standard-64 執行個體類型的 * High * 寫入速度選項、可獲得高寫入速度及高傳輸單位（ MTU ） 8 、 896 位元組。此外、較高的MTU為8、896、需要選擇VPC-1、VPC-2和VPC-3來進行部署。高寫入速度和 8 、 896 的 MTU 與功能有關、無法在設定的執行個體中個別停用。如需VPC-1、VPC-2和VPC-3的詳細資訊、請參閱<block ref="e0d6e9ceb3d5d27a7e0dc7b744a8cf4a" category="inline-link-rx"></block>。</block>
+  <block id="9f5be27589cc6b51b9720d024782dcb8" category="paragraph">BlueXP 不提供任何儲存 VM （ SVM ）災難恢復的設定或協調支援。您必須使用 System Manager 或 CLI 。</block>
+  <block id="9c6c0a63729c2c1bc8388b9ccd4e4155" category="inline-link-macro">深入瞭解 SVM 災難恢復</block>
+  <block id="5dc0415d3b98038c9ac4667c27633958" category="paragraph"><block ref="9ef9838740c8c73e2e54c1615ffa6adb" category="inline-link-macro-rx"></block>。</block>
+  <block id="74ee0a2fe74e69a19051f0e09c04fc43" category="doc">設定 SVM 災難恢復</block>
+  <block id="f01867033c75f2410ea82d8cbf4634d7" category="paragraph">如果在兩個 Cloud Volumes ONTAP 系統之間設定 SnapMirror SVM 複寫、複寫必須介於兩個 HA 配對系統或兩個單一節點系統之間。您無法在 HA 配對和單一節點系統之間設定 SnapMirror SVM 複寫。</block>
+  <block id="64a88357645876cf49151eb26ffb0021" category="paragraph">如需 CLI 指示、請參閱下列文件。</block>
 </blocks>

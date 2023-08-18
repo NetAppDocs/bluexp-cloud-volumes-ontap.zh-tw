@@ -39,8 +39,6 @@ link:concept-client-protocols.html["深入瞭Cloud Volumes ONTAP 解支援S3和�
 
 == BlueXP不支援儲存VM的災難恢復
 
-BlueXP不提供任何儲存VM災難恢復的設定或協調支援。您必須使用 System Manager 或 CLI 。
+BlueXP 不提供任何儲存 VM （ SVM ）災難恢復的設定或協調支援。您必須使用 System Manager 或 CLI 。
 
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["SVM 災難恢復準備快速指南"^]
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["SVM Disaster Recovery Express 指南"^]
-
+link:task-manage-svm-dr.html["深入瞭解 SVM 災難恢復"]。
