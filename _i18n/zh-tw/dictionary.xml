@@ -2479,7 +2479,6 @@
   <block id="3e46ae3398c8487fda843885c6277e38" category="list-text">在「認證資料」頁面上、輸入 Cloud Volumes ONTAP for the fu位 管理員使用者的密碼、然後按一下「 * 執行 * 」。</block>
   <block id="5ac123f6eee32c0fe88eeab92338a1a4" category="summary">流通量是儲存磁碟區、可快取來源或來源磁碟區的NFS讀取資料。FlexCache後續讀取快取資料會加快該資料的存取速度。</block>
   <block id="d5ce201ca4cc42ba6b38e9166bcef415" category="doc">利用NetApp功能加速資料存取FlexCache</block>
-  <block id="2ddb8d07e9f5af9d9a76333b9ef2a7cb" category="paragraph">流通量是儲存磁碟區、可快取來源（或來源）磁碟區的 NFS 讀取資料。 FlexCache後續讀取快取資料會加快該資料的存取速度。</block>
   <block id="90c624683582774042156c98858d14dc" category="paragraph">您可以使用 FlexCache 功能區來加速資料存取、或卸載大量存取磁碟區的流量。由於資料無需存取來源磁碟區、因此能夠直接提供服務、因此在用戶端需要重複存取相同資料時、支援使用者更能提升效能。 FlexCache適用於讀取密集的系統工作負載的資料量。 FlexCache</block>
   <block id="29e15f4a6477b08e72892d33f28001ce" category="inline-link">《資料存取能力快速指南》的《支援資料量》（英文） FlexCache</block>
   <block id="f2a7a46cc845b377d163ce816c723b41" category="list-text"><block ref="f2a7a46cc845b377d163ce816c723b41" category="inline-link-rx"></block></block>
@@ -3470,8 +3469,6 @@
   <block id="93f5e6c9fa12acc64acdb6b378a09bdd" category="doc">在BlueXP中管理儲存VM</block>
   <block id="50660b7473b276b2ca6ffca877133e87" category="paragraph">BlueXP支援您從System Manager或CLI建立的任何其他儲存VM。</block>
   <block id="891665afb192ec7434051075c05e3e2f" category="list-text">在BlueXP中、識別叢集管理介面的IP位址：</block>
-  <block id="08882f53f80237686337effbc79af710" category="paragraph">現在、BlueXP並未提供FlexCache 對功能區的管理、但您可以使用ONTAP 功能區的CLI或ONTAP 功能區管理程式來建立及管理FlexCache 功能區：</block>
-  <block id="84c7d68ceec07ae1479f5ffd5345fe69" category="paragraph">從3.7.2版開始、BlueXP會為FlexCache 所有新Cloud Volumes ONTAP 的功能齊全的系統產生一個不完整的授權。授權包含500 GiB使用限制。</block>
   <block id="68e3d383b46bd2d1a96c2a6b2ddbc3f5" category="admonition">當HA配對中的節點無法使用時、BlueXP中的工作環境狀態為_Degraded。</block>
   <block id="71279608104bfad0fd0c8e38e3fe117b" category="paragraph">下列動作無法從BlueXP儲存設備接管中使用：</block>
   <block id="83abd5ee8b7f73b0a1f8620e32618f71" category="paragraph">當您需要在Azure訂閱中啟用此功能時、BlueXP會在必要行動訊息中提示您提供這些詳細資料。</block>
@@ -5023,4 +5020,9 @@
   <block id="f01867033c75f2410ea82d8cbf4634d7" category="paragraph">如果在兩個 Cloud Volumes ONTAP 系統之間設定 SnapMirror SVM 複寫、複寫必須介於兩個 HA 配對系統或兩個單一節點系統之間。您無法在 HA 配對和單一節點系統之間設定 SnapMirror SVM 複寫。</block>
   <block id="64a88357645876cf49151eb26ffb0021" category="paragraph">如需 CLI 指示、請參閱下列文件。</block>
   <block id="ead6e5569d8d8a0e0ef737aef13e13d9" category="list-text">若要檢查升級狀態、請按一下「設定」圖示、然後選取 * 時間表 * 。</block>
+  <block id="4255b526fdaa2217071759cd5d05e981" category="paragraph">FlexCache Volume 是一種儲存磁碟區、可從來源（或來源）磁碟區快取 SMB 和 NFS 讀取資料。後續讀取快取資料會加快該資料的存取速度。</block>
+  <block id="5f63db6bf0512dc0612ee852c1faf373" category="inline-link-macro">BlueXP Volume 快取</block>
+  <block id="28495b8712e93ec4d83d5af5db51d535" category="paragraph">BlueXP 提供 FlexCache 磁碟區的管理功能 <block ref="06867f1eea47d22d6d5c52a51ce61294" category="inline-link-macro-rx"></block> 服務：</block>
+  <block id="06156010b52bde259c58b15866491a02" category="paragraph">您也可以使用 ONTAP CLI 或 ONTAP 系統管理員來建立及管理 FlexCache 磁碟區：</block>
+  <block id="6712712f329188ca2226c3cf1d0f925e" category="paragraph">BlueXP 會為所有新的 Cloud Volumes ONTAP 系統產生 FlexCache 授權。授權包含500 GiB使用限制。</block>
 </blocks>
