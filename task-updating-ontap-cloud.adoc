@@ -281,6 +281,7 @@ NOTE: 「升級 Cloud Volumes ONTAP 」頁面預設會選取最新可用的 Clou
 +
 image:screenshot_upgrade_select_versions.png["「升級 Cloud Volumes ONTAP 版本」頁面的螢幕擷取畫面。"]
 
+. 若要檢查升級狀態、請按一下「設定」圖示、然後選取 * 時間表 * 。
 
 
 .結果
