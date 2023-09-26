@@ -4600,7 +4600,6 @@
   <block id="fb4c65b52def4e8355252bcb74eab6be" category="summary">為您的第三方金鑰管理服務使用 AWS 的金鑰管理服務。</block>
   <block id="da8f544047a48addb30292b7f355c64e" category="doc">使用 AWS 金鑰管理服務管理金鑰</block>
   <block id="44d61056f175f112376610c7782283a1" category="inline-link-macro">AWS 的金鑰管理服務（ KMS ）</block>
-  <block id="6ad0c0113b3b55b452407927aa4aa75b" category="paragraph">您可以使用 <block ref="27c0f93edc246c81e0de0dea4ee78543" category="inline-link-macro-rx"></block> 在ONTAP Google Cloud Platform部署的應用程式中保護您的不加密金鑰。</block>
   <block id="c7fa7b72f6d04762c019500275a89386" category="paragraph">您可以使用 CLI 或 ONTAP REST API 來啟用 AWS KMS 的金鑰管理。</block>
   <block id="ce62b1827da5aee89a8c9443b4ca4301" category="paragraph">使用 KMS 時、請注意、根據預設、資料 SVM 的 LIF 會用於與雲端金鑰管理端點通訊。節點管理網路用於與 AWS 的驗證服務進行通訊。如果叢集網路設定不正確、叢集將無法正確使用金鑰管理服務。</block>
   <block id="1a96e698f264a0a04e8665750d57e611" category="list-text">Cloud Volumes ONTAP 必須執行 9.12.0 版或更新版本</block>
@@ -5033,4 +5032,5 @@
   <block id="bc3a07be852924fbf8ece67dbd310169" category="inline-link-macro">檢視 Azure 中 Cloud Volumes ONTAP 的儲存限制</block>
   <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
 <block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
+  <block id="9d0048a7e2f292f2c49dc43d2698028b" category="paragraph">您可以使用 <block ref="27c0f93edc246c81e0de0dea4ee78543" category="inline-link-macro-rx"></block> 保護 AWS 部署應用程式中的 ONTAP 加密金鑰。</block>
 </blocks>
