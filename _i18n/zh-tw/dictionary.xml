@@ -3953,7 +3953,6 @@
   <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">無論選擇哪一項、您都應該這樣做 <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>。</block>
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">9.10.0版及更早版本</block>
   <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">每購買3個Tib容量、就有一個邊緣節點</block>
-  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">支援雲端供應商解決方案</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX for ONTAP Sf</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">適用於 Google Cloud Cloud Volumes Service</block>
@@ -4780,9 +4779,7 @@
   <block id="46f41748d329a2f863d5f787b783bcc5" category="section-title">Cloud Volumes ONTAP 升級版本選擇器更新</block>
   <block id="25c3dcdd6e2c69b30eba973a10e656d8" category="paragraph">現在您可以透過「升級 Cloud Volumes ONTAP 」頁面、選擇升級至最新的 Cloud Volumes ONTAP 版本或舊版。</block>
   <block id="91cf56905c9848b7dbc6e3d59504dcd3" category="paragraph">若要深入瞭解如何透過 BlueXP 升級 Cloud Volumes ONTAP 、請參閱<block ref="9777e426a24de9582e7ed3fdb1795e0a" category="inline-link-rx"></block>。</block>
-  <block id="0c7db2bd63c891adb2c0fa4527805d72" category="paragraph">您的 BlueXP 帳戶和個別 Cloud Volumes ONTAP 系統都需要註冊支援。</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">註冊這兩種類型的序號、即可開啟支援服務單和自動建立個案。如下列所述、將 NetApp 支援網站 （ NSS ）帳戶新增至 BlueXP 即可完成登錄。</block>
-  <block id="e922b9aa0836a1d93e11cac0fe4c9004" category="paragraph">如需下列雲端供應商解決方案的技術支援、請參閱該產品 BlueXP 文件中的「取得說明」。</block>
   <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">註冊您的 BlueXP 帳戶以取得 NetApp 支援</block>
   <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">若要註冊以取得支援並啟動支援授權、 BlueXP 帳戶中的一位使用者必須將 NetApp 支援網站 帳戶與其 BlueXP 登入建立關聯。您如何註冊NetApp支援取決於您是否已擁有NetApp 支援網站 一個NetApp（NSS）帳戶。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">選取 * 新增 NSS 認證 * 、然後遵循 NetApp 支援網站 （ NSS ）驗證提示。</block>
@@ -5033,4 +5030,73 @@
   <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
 <block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
   <block id="9d0048a7e2f292f2c49dc43d2698028b" category="paragraph">您可以使用 <block ref="27c0f93edc246c81e0de0dea4ee78543" category="inline-link-macro-rx"></block> 保護 AWS 部署應用程式中的 ONTAP 加密金鑰。</block>
+  <block id="ece19bab46695021f109a5e50f08bebe" category="paragraph">需要註冊支援、才能獲得 BlueXP 及其儲存解決方案與服務專屬的技術支援。也需要註冊支援、才能啟用 Cloud Volumes ONTAP 系統的重要工作流程。</block>
+  <block id="8a3d807608e632d188a288fc5f4aa7eb" category="paragraph">註冊支援並不會啟用雲端供應商檔案服務的 NetApp 支援。如需雲端供應商檔案服務、其基礎架構或任何使用服務的解決方案的相關技術支援、請參閱該產品的 BlueXP 文件中的「取得說明」。</block>
+  <block id="f316f0dfd566f9d842d2d368b7e3ecbb" category="cell">9.14.0%</block>
+  <block id="303aacd2fb75405c16e06a32d73c9c79" category="summary">有了 Azure 中的 Cloud Volumes ONTAP 、您可以使用不同的網路來隔離 SnapMirror 複寫流量、以增強資料的安全性和效能。</block>
+  <block id="21621fa11949957e26b3e8faa6ac858e" category="doc">分離 Azure 中的 SnapMirror 流量</block>
+  <block id="0f8fc7abeaf93224876aeb20cc640a67" category="paragraph">有了 Azure 中的 Cloud Volumes ONTAP 、您可以將 SnapMirror 複寫流量與資料和管理流量區隔。若要將 SnapMirror 複寫流量與資料流量區隔、您需要新增網路介面卡（ NIC ）、相關的叢集間 LIF 和不可路由的子網路。</block>
+  <block id="9ca833fb1a50865ff88e9da267c0f41f" category="section-title">關於 Azure 中的 SnapMirror 流量分隔</block>
+  <block id="4750291421c319d60eddb36242a2a88e" category="paragraph">根據預設、 BlueXP 會在相同子網路上的 Cloud Volumes ONTAP 部署中設定所有 NIC 和生命。在此類組態中、 SnapMirror 複寫流量和資料與管理流量使用相同的子網路。分離 SnapMirror 流量會利用無法路由傳送至現有子網路的額外子網路、用於資料和管理流量。</block>
+  <block id="60806a484aa67dd4b1f9835cf1de9551" category="paragraph-title">圖 1.</block>
+  <block id="d631a4c5f16e24d65bf4b95667c74ab1" category="paragraph">下圖顯示 SnapMirror 複寫流量與其他 NIC 、相關的叢集間 LIF 和單一節點部署中不可路由的子網路之間的分隔。HA 配對部署稍有不同。</block>
+  <block id="f7142f8300db32ac533cebbf28b1a65c" category="inline-image-macro">此圖說明了在單一節點組態中 SnapMirror 複寫流量的分隔</block>
+  <block id="40126e16e9279ba224718054c8599d19" category="paragraph"><block ref="40126e16e9279ba224718054c8599d19" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2d713c56af0861a0b0bed91ef8da2e18" category="paragraph">請檢閱下列考量事項：</block>
+  <block id="97d737a59c7e796eb8610dce5b0f817a" category="list-text">您只能將單一 NIC 新增至 Cloud Volumes ONTAP 單一節點或 HA 配對部署（ VM 執行個體）、以進行 SnapMirror 流量分隔。</block>
+  <block id="933fe3c7f865ac41ceae93a6e0cb11be" category="list-text">若要新增 NIC 、您部署的 VM 執行個體類型必須有未使用的 NIC 。</block>
+  <block id="e6f791d5fe8a01a86623cb53cef66120" category="list-text">來源叢集和目的地叢集必須位於同一個虛擬網路（ vnet ）、但不在同一個子網路中。</block>
+  <block id="c61486c21b19c2bf3cf6e82a2a1a645b" category="section-title">步驟 1 ：建立額外的 NIC 並附加至目的地 VM</block>
+  <block id="d1348b7908ab7ffc3e987964d5d681f0" category="paragraph">本節提供如何建立其他 NIC 並將其附加至目的地 VM 的說明。目的地 VM 是 Azure 中 Cloud Volumes ONTAP 的單一節點或 HA 配對系統、您可以在其中設定額外的 NIC 。</block>
+  <block id="faa6897ed3f655c419813b3c65575b23" category="list-text">在 ONTAP CLI 中、停止節點。</block>
+  <block id="0a35d6e7621851d0057f60bd59de0033" category="list-text">在 Azure 入口網站中、檢查 VM （節點）狀態是否已停止。</block>
+  <block id="4e4710d224030f7e39ce8b2750fbb740" category="list-text">使用 Azure Cloud Shell 中的 Bash 環境來停止節點。</block>
+  <block id="c5d8f32ad4d62afd3c9e40fef3d1cbd0" category="list-text">停止節點。</block>
+  <block id="8f19990e7da7dad0679229805c3df746" category="list-text">取消分配節點。</block>
+  <block id="9fc7f10dbf9f36fb02a3ff55eb91940d" category="list-text">設定網路安全性群組規則、使兩個子網路（來源叢集子網路和目的地叢集子網路）無法彼此路由。</block>
+  <block id="bd7492db1a0b8c1b34be6a58c6374a50" category="list-text">在目的地 VM 上建立新的 NIC 。</block>
+  <block id="a6b97c800c08f0f47cf048c9cd043899" category="list-text">尋找來源叢集子網路的子網路 ID 。</block>
+  <block id="5a90251e4d045fbd97e56cd055766b1e" category="list-text">在目的 VM 上建立新的 NIC 、並提供來源叢集子網路的子網路 ID 。在此輸入新 NIC 的名稱。</block>
+  <block id="5fd584f186e30730537d22a78bb11616" category="inline-xref">廣播網域、新 NIC 的叢集間 LIF</block>
+  <block id="d863813a11392f8ccc266be047976b56" category="list-text">儲存私有 IP 位址。此 IP 位址 &lt;new_added_nic_primary_addr&gt; 用於在中建立叢集間 LIF <block ref="13642ed959fde49bda6806fad0d107cf" category="inline-xref-macro-rx"></block>。</block>
+  <block id="c720b471b5c9a398d1674113fb61ccb3" category="list-text">將新的 NIC 連接至 VM 。</block>
+  <block id="04144942b75846f169eab289baa03332" category="list-text">啟動 VM （節點）。</block>
+  <block id="891b715fb21f166e1ddefb85f1ada848" category="list-text">在 Azure 入口網站中、前往 * 網路 * 並確認新的 NIC （例如 NIC 新的）存在且已啟用加速網路連線。</block>
+  <block id="0b2645871b4d5e300b856a5676815053" category="paragraph">對於 HA 配對部署、請針對合作夥伴節點重複這些步驟。</block>
+  <block id="75ca82ebaa2ab2a348dab6de8af96db1" category="section-title">步驟 2 ：為新 NIC 建立新的 IPspace 、廣播網域和叢集間 LIF</block>
+  <block id="f81ad401f01ac6ccee4552cee262ea96" category="paragraph">叢集間生命體的獨立 IPspace 可在叢集之間進行複寫的網路功能之間提供邏輯分隔。</block>
+  <block id="bf5db4b0d890ae0f47f0666b4786c11e" category="paragraph">請使用 ONTAP CLI 執行下列步驟。</block>
+  <block id="5caa556e7511fbc031e556f35273b4b5" category="list-text">建立新的 IPspace （ new_IPSpace ）。</block>
+  <block id="c3e846d4c68310f0bbaebfe81b1b016c" category="list-text">在新的 IPspace （ new_IPSpace ）上建立廣播網域、然後新增 NIC 新連接埠。</block>
+  <block id="ec7cd635bbff7496ce854419fbac424d" category="list-text">對於單節點系統、新增的連接埠為 _e0b_ 。對於具有託管磁碟的 HA 配對部署、新增的連接埠為 _e0d_ 。對於具有頁面 Blobs 的 HA 配對部署、新增的連接埠為 _e0e_ 。使用節點名稱而非 VM 名稱。執行即可找到節點名稱<block ref="9cd5e832790132a87592f2958fc2b1a6" prefix=" " category="inline-code"></block>。</block>
+  <block id="9defaa4e7d0a35e22135ad0e2f58e852" category="list-text">在新的廣播網域（ new_bd ）和新的 NIC （ NIC 新）上建立叢集間 LIF 。</block>
+  <block id="be0a702fb4057bb2e91bdd1cc96da2e4" category="list-text">驗證新叢集間 LIF 的建立。</block>
+  <block id="2aea6959bcbac1fa4b42120415127f49" category="section-title">步驟 3 ：驗證來源和目的地系統之間的叢集對等關係</block>
+  <block id="daaed44d8f29e01bf2b9136c812dba11" category="paragraph">本節提供如何驗證來源和目的地系統之間對等關係的指示。</block>
+  <block id="7bd80217b21e266e5b946de878bcd116" category="list-text">確認目的地叢集的叢集間 LIF 可以 ping 通來源叢集的叢集間 LIF 。由於目的地叢集執行此命令、因此目的地 IP 位址是來源上的叢集間 LIF IP 位址。</block>
+  <block id="b10932f9d1b350d60dc8e6ca4ee93b51" category="list-text">確認來源叢集的叢集間 LIF 可以 ping 通目的地叢集的叢集間 LIF 。目的地是在目的地上建立的新 NIC 的 IP 位址。</block>
+  <block id="93abe604e120de65d22caed1aaada374" category="section-title">步驟 4 ：在來源與目的地系統之間建立 SVM 對等關係</block>
+  <block id="75dd127515b5a2b5c961b90596de57ac" category="paragraph">本節提供如何在來源與目的地系統之間建立 SVM 對等關係的指示。</block>
+  <block id="8f3afc07cdf026cecf587706e3f50a9e" category="list-text">使用來源叢集間 LIF IP 位址做為、在目的地上建立叢集對等關係<block ref="e668c84230a87b9121e88eebf5b66a53" prefix=" " category="inline-code"></block>。對於 HA 配對、請將兩個節點的來源叢集間 LIF IP 位址列為<block ref="e668c84230a87b9121e88eebf5b66a53" prefix=" " category="inline-code"></block>。</block>
+  <block id="bddd18b8263487594b76ea4fec379386" category="list-text">輸入並確認通行密碼。</block>
+  <block id="124c978c2ba222186c71a76388ee00be" category="list-text">使用目的地叢集 LIF IP 位址做為、在來源上建立叢集對等關係<block ref="2c00dca3dca5747b8a2b8745956d98a1" prefix=" " category="inline-code"></block>。對於 HA 配對、請將兩個節點的目的地叢集間 LIF IP 位址列為<block ref="e668c84230a87b9121e88eebf5b66a53" prefix=" " category="inline-code"></block>。</block>
+  <block id="a3e35c96ecf9655b55a3dcde79058fa0" category="list-text">檢查叢集是否已對等連接。</block>
+  <block id="5db4c569041073c27e73bd49c013f30a" category="paragraph">在可用度欄位中成功的對等顯示 * 可用 * 。</block>
+  <block id="6321e930bee04054fa8c00750098f3ea" category="list-text">在目的地上建立 SVM 對等關係。來源和目的地 SVM 都應該是資料 SVM 。</block>
+  <block id="91a3470d875fd7cbe36145c7f10cd29a" category="list-text">接受 SVM 對等關係。</block>
+  <block id="3116cb0ef49131786df2af89745dc321" category="list-text">請檢查 SVM 是否有問題。</block>
+  <block id="766b57929d5f2d18ec41dd1965fea420" category="paragraph">對等狀態顯示 <block ref="20df74dd9059112f4ef8506d8ece8b43" prefix="*" category="inline-code"></block>* 並顯示對等應用程式 <block ref="775e6dfb98cc0aadf603bb1ada48a066" prefix="*" category="inline-code"></block>*。</block>
+  <block id="ddf01b8bab877738e14ace0c08658ed2" category="section-title">步驟 5 ：在來源與目的地系統之間建立 SnapMirror 複寫關係</block>
+  <block id="93afe55f4bcb481fc116c93fb5cbd23e" category="paragraph">本節提供如何在來源與目的地系統之間建立 SnapMirror 複寫關係的指示。</block>
+  <block id="1b596d323c1c9ba86accf6e5bd9c3acf" category="list-text">在目的地 SVM 上建立資料保護的 Volume 。</block>
+  <block id="136a01ceb51816607d063508b0344e22" category="list-text">在目的地上建立 SnapMirror 複寫關係、其中包括 SnapMirror 原則和複寫排程。</block>
+  <block id="5ca85e0710f1c97ab63385105a12e084" category="list-text">初始化目的地上的 SnapMirror 複寫關係。</block>
+  <block id="0bcfd2e8ebb39d8c8a0cba2af13462c1" category="list-text">在 ONTAP CLI 中、執行下列命令以驗證 SnapMirror 關係狀態：</block>
+  <block id="3c6eca06b6c8daa748eff1365143a924" category="paragraph">關係狀態為<block ref="d34e79870b17da17e894ddc837954dcc" prefix=" " category="inline-code"></block> 而關係的健全狀況就是<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>。</block>
+  <block id="6016f20f177613d8d26c5d9473f64718" category="list-text">可選：在 ONTAP CLI 中，運行以下命令查看 SnapMirror 關係的操作歷史記錄。</block>
+  <block id="9bc0846f66e4a0d0a36a210fa3342991" category="paragraph">或者、您可以掛載來源和目的地磁碟區、將檔案寫入來源磁碟區、並驗證磁碟區是否正在複寫到目的地。</block>
+  <block id="c9abaf2f2285d7432a5d5112e315cb83" category="list-text">9.14.0 GA</block>
+  <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">取得雲端供應商檔案服務的支援</block>
+  <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">如需雲端供應商檔案服務、其基礎架構或任何使用服務的解決方案的相關技術支援、請參閱該產品的 BlueXP 文件中的「取得說明」。</block>
+  <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">若要獲得 BlueXP 及其儲存解決方案與服務的專屬技術支援、請使用下列支援選項。</block>
 </blocks>

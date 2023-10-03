@@ -218,6 +218,8 @@ sidebar:
           url: "/task-enabling-private-link.html"
         - title: 移動資源群組
           url: "/task-moving-resource-groups-azure.html"
+        - title: 分離 Azure 中的 SnapMirror 流量
+          url: "/task-segregate-snapmirror-azure.html"
       - title: Google Cloud管理
         flavor: gcp
         entries:
