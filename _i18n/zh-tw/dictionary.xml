@@ -5103,4 +5103,20 @@
   <block id="5612c729ea34f27969af31fd815184e0" category="paragraph">Connector 3.9.34 版隨附下列變更。</block>
   <block id="44d133359b344c4542acdebe6209e101" category="section-title">Cloud Volumes ONTAP 9.14.0%</block>
   <block id="c5fa627d231c9a8813c9a2421d86136f" category="paragraph">BlueXP 現在可以在 AWS 、 Azure 和 Google Cloud 中部署和管理 Cloud Volumes ONTAP 9.14.0 通用版本。</block>
+  <block id="b74a118169165fd9778df58b68c1bf8b" category="section-title">使用 C4 、 M4 和 R4 EC2 執行個體類型在 AWS 中升級</block>
+  <block id="86af7a9b6ac6fe8d90191ba2d044c610" category="inline-xref">變更執行個體類型</block>
+  <block id="8354ae441e2d78b9bcafa37a25a3a726" category="inline-xref">啟用增強的網路功能</block>
+  <block id="a583f72f871863a8b0fb3372e07f6823" category="paragraph">Cloud Volumes ONTAP 不再支援 C4 、 M4 和 R4 EC2 執行個體類型。您可以使用這些執行個體類型、將現有部署升級至 Cloud Volumes ONTAP 9.89.12.1 版。在您升級之前、我們建議您 <block ref="e2df0d7629aebc3922335b76bd309d5d" category="inline-xref-macro-rx"></block>。如果您無法變更執行個體類型、則需要 <block ref="b3a6854c27dac7de64ddd47279c1a22c" category="inline-xref-macro-rx"></block> 升級之前。請閱讀下列各節、深入瞭解如何變更執行個體類型及啟用增強網路功能。</block>
+  <block id="f4f3843ed2e020a5db4d25da269e1bdd" category="paragraph">在執行 9.13.0 版及更新版本的 Cloud Volumes ONTAP 中、您無法使用 C4 、 M4 及 R4 EC2 執行個體類型進行升級。在這種情況下、您需要減少磁碟數量、然後再減少 <block ref="e2df0d7629aebc3922335b76bd309d5d" category="inline-xref-macro-rx"></block> 或是使用 C5 、 m5 和 R5 EC2 執行個體類型部署新的 HA 配對組態、然後移轉資料。</block>
+  <block id="029e8552563877cfe5ee29ba1aa99958" category="section-title">變更執行個體類型</block>
+  <block id="42d43bc10a1d2d255ff3af7c71dbad45" category="paragraph">相較於 C5 、 m5 和 R5 EC2 執行個體類型、 C4 、 M4 和 R4 EC2 執行個體類型、每個節點的磁碟數量都會增加。如果您執行的 C4 、 M4 或 R4 EC2 執行個體的每個節點磁碟數低於 C5 、 m5 和 R5 執行個體的每個節點磁碟可用量上限、您可以將 EC2 執行個體類型變更為 C5 、 m5 或 R5 。</block>
+  <block id="e6fc2d799d147f12ca8a764583050b02" category="inline-link-macro">檢查 EC2 執行個體的磁碟和分層限制</block>
+  <block id="da810aedcd7ba8393656517bd8c66c60" category="paragraph"><block ref="4096803f0445bf20b4fc38a33ad6c648" category="inline-link-macro-rx"></block>
+<block ref="89a3d2162cf86c1f721a981e87e54403" category="inline-link-macro-rx"></block></block>
+  <block id="8412a3701e1356e6b7e2211199f14e73" category="paragraph">如果您無法變更執行個體類型、請遵循中的步驟 <block ref="1848b3d2e88d96b981f9b2b83a780938" category="inline-xref-macro-rx"></block>。</block>
+  <block id="44c305a704023f5d643a06ce08c03402" category="section-title">啟用增強的網路功能</block>
+  <block id="2aed0ca02213325feada0ee707489e81" category="inline-link-macro">如何在 AWS Cloud Volumes ONTAP 執行個體上啟用 SR-IOV 或 ENA 等增強型網路</block>
+  <block id="489d7e740d2dd946585a03c48af8f4cf" category="paragraph">若要升級至 Cloud Volumes ONTAP 9.8 版及更新版本、您必須在執行 C4 、 M4 或 R4 執行個體類型的叢集上啟用 _Enhanced networking_ 。若要啟用 ENA 、請參閱知識庫文章 <block ref="a4ba9465250c8fbd5a9415056507370e" category="inline-link-macro-rx"></block>。</block>
+  <block id="4b9b39edb3e09fa20d9a66c33e754c00" category="inline-link-macro">無法將執行個體類型從 R4 變更為 R5 、但發生磁碟數錯誤</block>
+  <block id="58cbae1f4fc410ea043517dc0196bed4" category="paragraph">如果您無法從 C4 、 M4 或 R4 執行個體變更執行個體類型、請參閱知識庫文章 <block ref="ddbe8a0e687a77b95fcbe5dc93c2e464" category="inline-link-macro-rx"></block>。</block>
 </blocks>
