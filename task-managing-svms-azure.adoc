@@ -22,6 +22,9 @@ summary: 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可�
 若要建立額外的資料服務儲存VM、您必須在Azure中配置IP位址、然後執行ONTAP 支援功能指令、以建立儲存VM和資料LIF。
 
 
+NOTE: 若要執行其他 NIC 相關工作、您可以在 Azure 中指派具有適當權限的網路參與者角色或自訂角色。如需這些 NIC 相關權限的詳細資訊、請參閱 https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface?tabs=azure-portal#permissions["Microsoft Azure 文件"^]。
+
+
 
 == 支援的儲存 VM 數量
 
