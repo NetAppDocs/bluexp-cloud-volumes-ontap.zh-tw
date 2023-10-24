@@ -20,6 +20,30 @@ summary: 瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。
 
 
 
+== 2023 年 10 月 23 日
+
+Connector 3.9.34 版隨附下列變更。
+
+
+
+=== Azure 支援 HA 多重可用性區域部署的新區域
+
+Azure 中的下列區域現在支援 Cloud Volumes ONTAP 9.14.0 及更新版本的高可用度多重可用度區域部署：
+
+* 澳洲東部
+* 東南亞
+* 法國中部
+* 北歐洲
+* 卡塔爾中部
+* 瑞典中部
+* 西歐
+* 美國西部 2.
+
+
+如需支援多個可用區域的所有區域清單、請參閱 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure 下的 Global Regions Map"^]。
+
+
+
 == 2023 年 10 月 6 日
 
 Connector 3.9.34 版隨附下列變更。
@@ -44,8 +68,8 @@ Connector 3.9.33 版隨附下列變更。
 
 從 9.13.1 版開始、 Azure 中的 Cloud Volumes ONTAP 現在支援 L48s_v3 和 L64s_v3 執行個體類型、可在單一節點和高可用度配對部署中、在單一和多個可用性區域中部署共用託管磁碟。這些執行個體類型支援 Flash Cache 。
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["檢視 Azure 中 Cloud Volumes ONTAP 支援的組態"]
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["檢視 Azure 中 Cloud Volumes ONTAP 的儲存限制"]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["檢視 Azure 中 Cloud Volumes ONTAP 支援的組態"^]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["檢視 Azure 中 Cloud Volumes ONTAP 的儲存限制"^]
 
 
 
@@ -67,7 +91,7 @@ Flash Cache 和高速寫入速度可在 Cloud Volumes ONTAP 9.13.1 及更新版�
 
 您可以在單一節點和高可用度配對部署上分別或一起使用這些功能。
 
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["在Cloud Volumes ONTAP Google Cloud上啟動"]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["在Cloud Volumes ONTAP Google Cloud上啟動"^]
 
 
 
