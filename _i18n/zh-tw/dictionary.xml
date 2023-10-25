@@ -5134,4 +5134,12 @@
   <block id="500a97f33bcbe3073f32ba66331ac662" category="paragraph"><block ref="dc552a90a374cbb55f942fc8465d623a" category="inline-link-macro-rx"></block>
 <block ref="c6a2e575c9cd7913e0bdc96abdd66269" category="inline-link-macro-rx"></block></block>
   <block id="75cbcf1dd82ddd4349696999b639377f" category="paragraph"><block ref="75cbcf1dd82ddd4349696999b639377f" category="inline-link-macro-rx"></block></block>
+  <block id="d58f9fdbd1d532cc694fdda41e135b6d" category="list-text">將 VPC 的安全性群組設定更新為「所有流量」。</block>
+  <block id="527fd1e92cffc7d0d75228da5dcf987a" category="list-text">按一下 [ 虛擬私有雲 ] 底下的 [ 子網路 ] 。</block>
+  <block id="286864595e223b69a96678aa6ac91be4" category="list-text">按一下 * 路由表 * 索引標籤、為 HA 配對的其中一個浮動 IP 位址選取所需的環境。</block>
+  <block id="e460f9261a4048cd0819c3e6fab5b772" category="list-text">按一下 * 安全性群組 * 。</block>
+  <block id="362c2feb62512390cc0adfe615d08b5e" category="list-text">選取 * 編輯輸入規則 * 。</block>
+  <block id="0444b867f0aca3029a2b9ea7cd093316" category="list-text">按一下*新增規則*。</block>
+  <block id="39eb101f969fe671b016bf47de2d6d12" category="list-text">在 [ 類型 ] 下，選取 [ * 所有流量 ] ，然後選取 VPC IP 位址。</block>
+  <block id="20d3f54acd662a128694ddf527ea22fb" category="list-text">按一下 * 儲存規則 * 以套用變更。</block>
 </blocks>
