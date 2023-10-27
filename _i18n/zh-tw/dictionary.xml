@@ -5041,7 +5041,6 @@
   <block id="2d713c56af0861a0b0bed91ef8da2e18" category="paragraph">請檢閱下列考量事項：</block>
   <block id="97d737a59c7e796eb8610dce5b0f817a" category="list-text">您只能將單一 NIC 新增至 Cloud Volumes ONTAP 單一節點或 HA 配對部署（ VM 執行個體）、以進行 SnapMirror 流量分隔。</block>
   <block id="933fe3c7f865ac41ceae93a6e0cb11be" category="list-text">若要新增 NIC 、您部署的 VM 執行個體類型必須有未使用的 NIC 。</block>
-  <block id="e6f791d5fe8a01a86623cb53cef66120" category="list-text">來源叢集和目的地叢集必須位於同一個虛擬網路（ vnet ）、但不在同一個子網路中。</block>
   <block id="c61486c21b19c2bf3cf6e82a2a1a645b" category="section-title">步驟 1 ：建立額外的 NIC 並附加至目的地 VM</block>
   <block id="d1348b7908ab7ffc3e987964d5d681f0" category="paragraph">本節提供如何建立其他 NIC 並將其附加至目的地 VM 的說明。目的地 VM 是 Azure 中 Cloud Volumes ONTAP 的單一節點或 HA 配對系統、您可以在其中設定額外的 NIC 。</block>
   <block id="faa6897ed3f655c419813b3c65575b23" category="list-text">在 ONTAP CLI 中、停止節點。</block>
@@ -5142,4 +5141,6 @@
   <block id="0444b867f0aca3029a2b9ea7cd093316" category="list-text">按一下*新增規則*。</block>
   <block id="39eb101f969fe671b016bf47de2d6d12" category="list-text">在 [ 類型 ] 下，選取 [ * 所有流量 ] ，然後選取 VPC IP 位址。</block>
   <block id="20d3f54acd662a128694ddf527ea22fb" category="list-text">按一下 * 儲存規則 * 以套用變更。</block>
+  <block id="2fd1ee72a12db129de96b6606fbce188" category="list-text">來源叢集和目的地叢集應可存取相同的虛擬網路（ vnet ）。目的地叢集是 Azure 中的 Cloud Volumes ONTAP 系統。來源叢集可以是 Azure 中的 Cloud Volumes ONTAP 系統、也可以是 ONTAP 系統。</block>
+  <block id="53dbdce3b901c59c8d3bbdae0e91364c" category="paragraph">若要移動現有的 SnapMirror 複寫關係、您必須先中斷現有的 SnapMirror 複寫關係、然後再建立新的 SnapMirror 複寫關係。</block>
 </blocks>
