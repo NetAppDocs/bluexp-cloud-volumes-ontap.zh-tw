@@ -1708,7 +1708,6 @@
   <block id="4edb70089cdbc18de22fa9ead5189bc8" category="section-title">授權您的帳戶</block>
   <block id="daf4ae396784c74ec2cbf002eaaa25f4" category="list-text">如果您看到*歡迎使用NetApp Keystone S不到*頁面、請傳送電子郵件至頁面上所列的地址。</block>
   <block id="16692c26ca4528e651bbb36d93c465c7" category="paragraph">NetApp代表將授權您的使用者帳戶存取訂閱、以處理您的申請。</block>
-  <block id="18dea2097f201a1ab3eb6d3305d42f0a" category="paragraph">連結您要搭配Cloud Volumes ONTAP 使用的訂閱內容。</block>
   <block id="06f358c39bc3b4633cefd78beb67e671" category="section-title">連結訂閱</block>
   <block id="b0afff19aa3343a6f86619d833dbd316" category="inline-image-macro">這是三個並排點的圖示</block>
   <block id="fc6ada65ff8f08c80e7d6167f68c89c2" category="list-text">如需您要連結的訂閱、請按一下 <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 然後選取*連結*。</block>
@@ -3570,7 +3569,6 @@
   <block id="4ddeb33245dab065e616a7abf58b631c" category="paragraph">建立Aggregate時、BlueXP會提示您輸入Aggregate的容量大小。這與您選擇磁碟大小和磁碟數目的其他組態不同。</block>
   <block id="51cbce0195f13997e34cad7a23a2b638" category="paragraph">雖然BlueXP會視需要自動新增容量來集合體、但您可以自行手動增加容量。</block>
   <block id="c01bba3f5cf220440d62298c4287d655" category="paragraph">訂閱內容現已連結至您的BlueXP帳戶、可在建立Cloud Volumes ONTAP 運作環境時選擇。</block>
-  <block id="51865ab5b1a727fd7b6804d74e80a1cd" category="paragraph">如果您需要調整訂閱的已提交容量、可以直接從BlueXP介面傳送要求。</block>
   <block id="ae187bda8f85dfd75202915fcca6b90d" category="paragraph">訂閱內容會從您的BlueXP帳戶中取消連結、因此在建立Cloud Volumes ONTAP 運作中的環境時無法再選取。</block>
   <block id="e3d629eecd6e06869848c53ac5c75380" category="summary">雖然Google Cloud Storage會在資料寫入磁碟之前先加密資料、但您可以使用BlueXP API來建立Cloud Volumes ONTAP 使用客戶管理加密金鑰的功能完善的系統。這些是您使用 Cloud Key Management Service 在 GCP 中產生及管理的金鑰。</block>
   <block id="a14be990a5564462179a98a679a9f0da" category="paragraph">雖然Google Cloud Storage會在資料寫入磁碟之前先加密資料、但您可以使用BlueXP API來建立Cloud Volumes ONTAP 使用_客戶管理的加密金鑰_的支援系統。這些是您使用 Cloud Key Management Service 在 GCP 中產生及管理的金鑰。</block>
@@ -4571,16 +4569,10 @@
   <block id="6994b2fbca796c979abed69e3bd6275c" category="paragraph">BlueXP 備份與還原在設計上不受 Cloud Volumes ONTAP 的保護。BlueXP 備份與還原不會在您刪除 Cloud Volumes ONTAP 系統時自動刪除備份、而且在刪除系統之後、 UI 目前不支援刪除備份。</block>
   <block id="62a206849a655c43470ec1fbe25e35c1" category="list-text">如果您在此工作環境中啟用 BlueXP 分類、且沒有其他工作環境使用此服務、則您必須刪除該服務的執行個體。</block>
   <block id="a69f417641ff2d2784782a6898f8f2de" category="inline-link">深入瞭解 BlueXP 分類執行個體</block>
-  <block id="b6ff46733e9b76bb7c30d80a61516ba8" category="summary">BlueXP 數位錢包頁面可讓您從單一位置管理 Cloud Volumes ONTAP 的授權。您可以新增授權並更新現有授權。</block>
   <block id="ae45517d4d9ba30bece696a3b49d1b3f" category="doc">管理基礎概念訂閱</block>
-  <block id="16c141e06e5f6ba408b4992a97c8b45f" category="paragraph">透過啟用與 Cloud Volumes ONTAP 搭配使用的訂閱、從 BlueXP 數位錢包管理基礎概念訂閱。您也可以要求變更已提交的容量、也可以取消訂閱連結。</block>
-  <block id="a99a383ab90c9f21375613d8a38ea1c8" category="paragraph">Keystone Subscription_ 是 NetApp 提供的隨成長付費儲存服務。</block>
-  <block id="ef32689f1a32fe16e0893f8394486cba" category="paragraph">在 BlueXP 中使用和管理基礎概念訂閱之前、您必須先聯絡 NetApp 、以授權您的 BlueXP 使用者帳戶使用基礎概念訂閱。</block>
   <block id="5da6315cfe65abaef2d0e00c90898ddc" category="list-text">返回 * Keystone Subscription* 檢視您的訂閱。</block>
   <block id="3d6aabe991edb10f282fd60995e725ca" category="inline-image-macro">顯示 Keystone 訂閱清單的螢幕擷取畫面。</block>
   <block id="6fd94fda3665b39867817d4700d184e8" category="paragraph"><block ref="6fd94fda3665b39867817d4700d184e8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b10dd47ec29edab7ffa21c2337ac7f5f" category="paragraph">NetApp 授權您的帳戶後、您需要連結 Keystone 訂閱以搭配 Cloud Volumes ONTAP 使用。此動作可讓使用者選擇訂閱做為新Cloud Volumes ONTAP 版的功能表系統的充電方法。</block>
-  <block id="7ec05ce6a514daa78763d92fa399d1b0" category="paragraph">如果您不再想在新的 Cloud Volumes ONTAP 系統上使用 Keystone 訂閱、您可以取消訂閱的連結。請注意、您只能取消連結未附加至現有Cloud Volumes ONTAP 的訂閱內容的訂閱。</block>
   <block id="c5889acf4592b2ce675b7e0be182268e" category="paragraph">這些限制僅適用於 BlueXP 中的 Cloud Volumes ONTAP 管理。若要檢視Cloud Volumes ONTAP 有關此功能的限制、<block ref="70a3d165b5204ef94ef3f2d7b3d098d2" category="inline-link-rx"></block></block>
   <block id="829bbd3178c74725b58e1817c2135502" category="paragraph">Cloud Volumes ONTAP 也與 BlueXP 備份與還原整合、提供保護的備份與還原功能、以及雲端資料的長期歸檔。</block>
   <block id="d37c9703eabd9a68dc0d1fb0b42d7881" category="paragraph">與 BlueXP 分類整合可協助您瞭解資料內容並識別敏感資料。</block>
@@ -5143,4 +5135,20 @@
   <block id="20d3f54acd662a128694ddf527ea22fb" category="list-text">按一下 * 儲存規則 * 以套用變更。</block>
   <block id="2fd1ee72a12db129de96b6606fbce188" category="list-text">來源叢集和目的地叢集應可存取相同的虛擬網路（ vnet ）。目的地叢集是 Azure 中的 Cloud Volumes ONTAP 系統。來源叢集可以是 Azure 中的 Cloud Volumes ONTAP 系統、也可以是 ONTAP 系統。</block>
   <block id="53dbdce3b901c59c8d3bbdae0e91364c" category="paragraph">若要移動現有的 SnapMirror 複寫關係、您必須先中斷現有的 SnapMirror 複寫關係、然後再建立新的 SnapMirror 複寫關係。</block>
+  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">從 Google Cloud Marketplace 訂閱 BlueXP</block>
+  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">從 Azure Marketplace 訂閱 BlueXP</block>
+  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">從 AWS Marketplace 訂閱 BlueXP</block>
+  <block id="c27b8e6a4f797d237583ca6d38a92cd6" category="summary">從 BlueXP 數位電子錢包管理 Keystone 訂閱、只要啟用 Cloud Volumes ONTAP 訂閱、並要求變更訂閱服務層級的承諾容量即可。為服務層級要求額外容量、可為內部部署 ONTAP 叢集或 Cloud Volumes ONTAP 系統提供更多儲存空間。</block>
+  <block id="52ba144dbaac8239e9b6d8e287db93dc" category="doc">管理 Keystone 訂閱</block>
+  <block id="a3b1d6e06d4fd8ccc20c61ce51e45853" category="paragraph">NetApp Keystone 是彈性的隨成長付費訂閱型服務、可為偏好營運成本而非資本支出或租賃的客戶、提供混合雲體驗。</block>
+  <block id="8635fd9dae0faf14591abf5c00ba4c36" category="inline-link">深入瞭解 Keystone</block>
+  <block id="d9e1f569a60d13d4540b611846d761f5" category="paragraph"><block ref="d9e1f569a60d13d4540b611846d761f5" category="inline-link-rx"></block></block>
+  <block id="79554ac40a8f3a03c9aaedab34165bd3" category="paragraph">在 BlueXP 中使用和管理 Keystone 訂閱之前、您必須先聯絡 NetApp 、以授權您的 BlueXP 使用者帳戶使用 Keystone 訂閱。</block>
+  <block id="8afaab6946e4a914b70539d7502e26ac" category="paragraph">NetApp 授權您的帳戶後、您可以連結 Keystone 訂閱以搭配 Cloud Volumes ONTAP 使用。此動作可讓使用者選擇訂閱做為新Cloud Volumes ONTAP 版的功能表系統的充電方法。</block>
+  <block id="6659aa983422f26fe41e5bcc67fa8466" category="paragraph">如果您想要變更訂閱服務層級的認可容量、可以直接從 BlueXP 傳送要求至 NetApp 。為服務層級要求額外容量、可為內部部署叢集或 Cloud Volumes ONTAP 系統提供更多儲存空間。</block>
+  <block id="ec6e0d1bd46f010ced65478c609b1636" category="section-title">監控使用率</block>
+  <block id="4bb37917188b518967d0e67a2b819327" category="paragraph">BlueXP 數位顧問儀表板可讓您監控 Keystone 訂閱使用量並產生報告。</block>
+  <block id="20ea4c62f4c9e4254314fe7fbbef0319" category="inline-link">深入瞭解監控訂閱使用率</block>
+  <block id="d7105dd212dc96a8b292b6b48f84916f" category="paragraph"><block ref="d7105dd212dc96a8b292b6b48f84916f" category="inline-link-rx"></block></block>
+  <block id="28ca5cda5cdef790c457097830d81ca5" category="paragraph">如果您不想再使用 Keystone Subscription with BlueXP 、您可以取消訂閱連結。請注意、您只能取消連結未附加至現有Cloud Volumes ONTAP 的訂閱內容的訂閱。</block>
 </blocks>

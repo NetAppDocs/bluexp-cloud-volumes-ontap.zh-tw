@@ -83,7 +83,8 @@ link:task-set-up-licensing-azure.html["瞭解如何設定授權"^]。
 下列影片說明如何將 Marketplace 訂閱與 Azure 訂閱建立關聯：
 
 +
-video::video_subscribing_azure.mp4[width=848,height=480]
+.從 Azure Marketplace 訂閱 BlueXP
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 . * 服務 * ：啟用或停用 Cloud Volumes ONTAP 您不想搭配使用的個別服務。
 +
 ** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["深入瞭解 BlueXP 分類"^]
@@ -308,7 +309,8 @@ BlueXP部署Cloud Volumes ONTAP 了這個功能完善的系統。您可以追蹤
 下列影片說明如何將 Marketplace 訂閱與 Azure 訂閱建立關聯：
 
 +
-video::video_subscribing_azure.mp4[width=848,height=480]
+.從 Azure Marketplace 訂閱 BlueXP
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 . * 服務 * ：啟用或停用 Cloud Volumes ONTAP 您不想搭配使用的個別服務。
 +
 ** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["深入瞭解 BlueXP 分類"^]

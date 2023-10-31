@@ -99,7 +99,8 @@ NOTE: 這是您為BlueXP設定的服務帳戶、 link:https://docs.netapp.com/us
 下列影片說明如何將隨用隨付服務市場訂閱關聯至Google Cloud專案。或者、請依照中的步驟訂閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["將Marketplace訂閱與Google Cloud認證建立關聯"^] 區段。
 
 +
-video::video_subscribing_gcp.mp4[width=848,height=480]
+.從 Google Cloud Marketplace 訂閱 BlueXP
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 . * 服務 * ：選取您要在此系統上使用的服務。若要選取 BlueXP 備份與還原、或使用 BlueXP 分層、您必須在步驟 3 中指定服務帳戶。
 +
 
@@ -336,7 +337,8 @@ NOTE: 這是您為BlueXP設定的服務帳戶、 link:https://docs.netapp.com/us
 下列影片說明如何將隨用隨付服務市場訂閱關聯至Google Cloud專案。  或者、請依照中的步驟訂閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["將Marketplace訂閱與Google Cloud認證建立關聯"^] 區段。
 
 +
-video::video_subscribing_gcp.mp4[width=848,height=480]
+.從 Google Cloud Marketplace 訂閱 BlueXP
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 . * 服務 * ：選取您要在此系統上使用的服務。若要選取 BlueXP 備份與還原、或使用 BlueXP 分層、您必須在步驟 3 中指定服務帳戶。
 +
 
