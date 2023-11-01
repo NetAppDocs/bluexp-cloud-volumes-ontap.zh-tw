@@ -20,6 +20,20 @@ summary: 瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。
 
 
 
+== 2023 年 11 月 1 日
+
+Connector 3.9.34 版隨附下列變更。
+
+
+
+=== Google Cloud 現在支援沙烏地阿拉伯地區
+
+現在、 Google Cloud for Cloud Volumes ONTAP 和 Connector for Cloud Volumes ONTAP 9.12.1 GA 及更新版本均支援沙烏地阿拉伯地區。
+
+如需所有區域的清單、請參閱 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloud 下的全球區域地圖"^]。
+
+
+
 == 2023 年 10 月 23 日
 
 Connector 3.9.34 版隨附下列變更。
@@ -28,7 +42,7 @@ Connector 3.9.34 版隨附下列變更。
 
 === Azure 支援 HA 多重可用性區域部署的新區域
 
-Azure 中的下列區域現在支援 Cloud Volumes ONTAP 9.14.0 及更新版本的高可用度多重可用度區域部署：
+Azure 中的下列區域現在支援 Cloud Volumes ONTAP 9.12.1 GA 及更新版本的高可用度多重可用度區域部署：
 
 * 澳洲東部
 * 東南亞

@@ -5113,7 +5113,6 @@
   <block id="e8b3ed24563d59f059354b6c1674f982" category="admonition">BlueXP 備份與還原需要 PAYGO 訂閱、但使用此服務不會產生任何費用。如需設定 BlueXP 備份與還原授權的詳細資訊、請參閱<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>。</block>
   <block id="fb2530f9293a4ba59cfd3ca6492bb972" category="section-title">2023 年 10 月 23 日</block>
   <block id="2bc953fcced4addf338156cc4681b683" category="section-title">Azure 支援 HA 多重可用性區域部署的新區域</block>
-  <block id="13ff77e69df5acabc2f0da9e5ebc94b8" category="paragraph">Azure 中的下列區域現在支援 Cloud Volumes ONTAP 9.14.0 及更新版本的高可用度多重可用度區域部署：</block>
   <block id="cee3f0213dd8b7eb15d7b31824e01754" category="list-text">澳洲東部</block>
   <block id="f74e1c0c8ee8410fa5bfe03676347257" category="list-text">東南亞</block>
   <block id="bea1bd3d23555c539dab5f3f5426184c" category="list-text">法國中部</block>
@@ -5151,4 +5150,10 @@
   <block id="20ea4c62f4c9e4254314fe7fbbef0319" category="inline-link">深入瞭解監控訂閱使用率</block>
   <block id="d7105dd212dc96a8b292b6b48f84916f" category="paragraph"><block ref="d7105dd212dc96a8b292b6b48f84916f" category="inline-link-rx"></block></block>
   <block id="28ca5cda5cdef790c457097830d81ca5" category="paragraph">如果您不想再使用 Keystone Subscription with BlueXP 、您可以取消訂閱連結。請注意、您只能取消連結未附加至現有Cloud Volumes ONTAP 的訂閱內容的訂閱。</block>
+  <block id="499efcb2be11e80e5bdfc003278352e3" category="section-title">2023 年 11 月 1 日</block>
+  <block id="992f57af99811ae146ed6df67eccc26f" category="section-title">Google Cloud 現在支援沙烏地阿拉伯地區</block>
+  <block id="9e06c986efeeff600f0b04c67d5d6354" category="paragraph">現在、 Google Cloud for Cloud Volumes ONTAP 和 Connector for Cloud Volumes ONTAP 9.12.1 GA 及更新版本均支援沙烏地阿拉伯地區。</block>
+  <block id="2bc724993144e8002899059117620062" category="inline-link">Google Cloud 下的全球區域地圖</block>
+  <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">如需所有區域的清單、請參閱<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>。</block>
+  <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">Azure 中的下列區域現在支援 Cloud Volumes ONTAP 9.12.1 GA 及更新版本的高可用度多重可用度區域部署：</block>
 </blocks>
