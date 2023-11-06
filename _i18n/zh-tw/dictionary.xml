@@ -3195,7 +3195,6 @@
   <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="section-title">最佳化</block>
   <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">單獨支付已配置的容量和I/O作業費用。</block>
   <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">單一節點或HA Cloud Volumes ONTAP</block>
-  <block id="ac8875b922d75fca71aa495c421855a6" category="list-text">充電是根據兩個成本元件：儲存與使用（I/O）</block>
   <block id="98b2954d7b26ad04d4f74c70881d3ece" category="section-title">邊際快取</block>
   <block id="0e6fc7a8a0a2e83eed1877313299a807" category="paragraph">提供Cloud Volumes Edge Cache授權。</block>
   <block id="cbea577daebf267793d8d7234ee50729" category="list-text">與Professional套件相同的功能、可為分散式企業提供營運不中斷和資料保護</block>
@@ -3234,7 +3233,6 @@
   <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">*所有VNet*：傳入流量的來源為0.00.0.0/0 IP範圍。</block>
   <block id="990da7f1ae0e8fb8294bff04c936ecaa" category="list-text">不支援變更Edge Cache授權。</block>
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">如果您有來自雲端供應商市場的私人優惠或合約、改用未包含在合約中的收費方法、將會導致依BYOL（如果您向NetApp購買授權）或PAYGO收取費用。</block>
-  <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">您將不需支付與資料複寫（SnapMirror）或NDMP相關的I/O費用。</block>
   <block id="240bee2f94d72e6a18a1263f971266c2" category="cell">使用叢集管理LIF的IP位址、連線到Connector和HTTPS、存取System Manager Web主控台</block>
   <block id="4f9ff6137bed641431cf4f88c0e37ba0" category="inline-image-macro">概念性影像：Cloud Volumes ONTAP 一套概念性影像、顯示出一套關於功能不整的HA配對及其元件。</block>
   <block id="deec4375ad9dbb52932d049564b46c2c" category="paragraph"><block ref="deec4375ad9dbb52932d049564b46c2c" category="inline-image-macro-rx" type="image"></block></block>
@@ -5156,4 +5154,6 @@
   <block id="2bc724993144e8002899059117620062" category="inline-link">Google Cloud 下的全球區域地圖</block>
   <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">如需所有區域的清單、請參閱<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>。</block>
   <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">Azure 中的下列區域現在支援 Cloud Volumes ONTAP 9.12.1 GA 及更新版本的高可用度多重可用度區域部署：</block>
+  <block id="0679d11689909adae41f54cfc8c6ef53" category="list-text">充電是以兩個成本元件為基礎：儲存與使用（ I/O ）。</block>
+  <block id="992a45bae33fb9769eb5bc8c6317149c" category="paragraph">與資料複寫（ SnapMirror ）、備份（ SnapVault ）或 NDMP 相關的 I/O 將不會收取費用。</block>
 </blocks>

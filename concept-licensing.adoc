@@ -75,9 +75,9 @@ NetApp Cloud Volumes ONTAP 免費提供所有的支援功能（仍需支付雲�
 單獨支付已配置的容量和I/O作業費用。
 
 * 單一節點或HA Cloud Volumes ONTAP
-* 充電是根據兩個成本元件：儲存與使用（I/O）
+* 充電是以兩個成本元件為基礎：儲存與使用（ I/O ）。
 +
-您將不需支付與資料複寫（SnapMirror）或NDMP相關的I/O費用。
+與資料複寫（ SnapMirror ）、備份（ SnapVault ）或 NDMP 相關的 I/O 將不會收取費用。
 
 
 
