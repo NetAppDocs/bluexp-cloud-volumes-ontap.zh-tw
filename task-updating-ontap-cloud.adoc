@@ -196,6 +196,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-in
 * <<確認自動恢復功能仍啟用>>
 * <<暫停SnapMirror傳輸>>
 * <<驗證Aggregate是否在線上>>
+* <<確認所有的生命都在主連接埠上>>
 
 
 
@@ -263,6 +264,12 @@ image:screenshots_aggregate_details_state.png["螢幕擷取畫面：當您檢視
 
 
 
+
+
+
+=== 確認所有的生命都在主連接埠上
+
+在升級之前、所有的生命體都必須位於主連接埠上。請參閱的 ONTAP 文件 link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["確認所有的生命都在主連接埠上"]。
 
 
 

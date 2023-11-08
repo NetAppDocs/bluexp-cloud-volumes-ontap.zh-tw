@@ -5156,4 +5156,8 @@
   <block id="0679d11689909adae41f54cfc8c6ef53" category="list-text">充電是以兩個成本元件為基礎：儲存與使用（ I/O ）。</block>
   <block id="992a45bae33fb9769eb5bc8c6317149c" category="paragraph">與資料複寫（ SnapMirror ）、備份（ SnapVault ）或 NDMP 相關的 I/O 將不會收取費用。</block>
   <block id="0b8c1e660d75aa2bec12f002f097dcab" category="list-title">HA 可與多個可用性區域中的共享託管磁碟配對</block>
+  <block id="a710c8d7ee654ea3241f1b07f9f7de05" category="list-text"><block ref="de989a17a1629831650b134e00461edd" category="inline-xref-macro-rx"></block></block>
+  <block id="6d09b3b7b0c828e4faaa038218afc509" category="section-title">確認所有的生命都在主連接埠上</block>
+  <block id="4a0d5f4ccd3c4d2acc213b54daf63f9e" category="inline-link-macro">確認所有的生命都在主連接埠上</block>
+  <block id="0754aed90b1b7e3ecf810f88321b76f5" category="paragraph">在升級之前、所有的生命體都必須位於主連接埠上。請參閱的 ONTAP 文件 <block ref="e645c13326fab640068fe44ceb8154ff" category="inline-link-macro-rx"></block>。</block>
 </blocks>
