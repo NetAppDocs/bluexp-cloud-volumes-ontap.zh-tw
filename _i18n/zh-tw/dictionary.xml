@@ -5009,7 +5009,6 @@
   <block id="06156010b52bde259c58b15866491a02" category="paragraph">您也可以使用 ONTAP CLI 或 ONTAP 系統管理員來建立及管理 FlexCache 磁碟區：</block>
   <block id="6712712f329188ca2226c3cf1d0f925e" category="paragraph">BlueXP 會為所有新的 Cloud Volumes ONTAP 系統產生 FlexCache 授權。授權包含500 GiB使用限制。</block>
   <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023 年 9 月 10 日</block>
-  <block id="3e34162a2379c48e3eaf3f3857b029c0" category="paragraph">Connector 3.9.33 版隨附下列變更。</block>
   <block id="e749c9d187d1531bb81af1a3c9eb73be" category="section-title">支援 Azure 中的 Lsv3 系列 VM</block>
   <block id="cc2bfd53f6bcbc23893aaa8fab8b1eb2" category="paragraph">從 9.13.1 版開始、 Azure 中的 Cloud Volumes ONTAP 現在支援 L48s_v3 和 L64s_v3 執行個體類型、可在單一節點和高可用度配對部署中、在單一和多個可用性區域中部署共用託管磁碟。這些執行個體類型支援 Flash Cache 。</block>
   <block id="c2af1dd6b400531e930c62dad5095f7d" category="inline-link-macro">檢視 Azure 中 Cloud Volumes ONTAP 支援的組態</block>
@@ -5084,7 +5083,6 @@
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">如需雲端供應商檔案服務、其基礎架構或任何使用服務的解決方案的相關技術支援、請參閱該產品的 BlueXP 文件中的「取得說明」。</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">若要獲得 BlueXP 及其儲存解決方案與服務的專屬技術支援、請使用下列支援選項。</block>
   <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">2023 年 10 月 6 日</block>
-  <block id="5612c729ea34f27969af31fd815184e0" category="paragraph">Connector 3.9.34 版隨附下列變更。</block>
   <block id="44d133359b344c4542acdebe6209e101" category="section-title">Cloud Volumes ONTAP 9.14.0%</block>
   <block id="c5fa627d231c9a8813c9a2421d86136f" category="paragraph">BlueXP 現在可以在 AWS 、 Azure 和 Google Cloud 中部署和管理 Cloud Volumes ONTAP 9.14.0 通用版本。</block>
   <block id="b74a118169165fd9778df58b68c1bf8b" category="section-title">使用 C4 、 M4 和 R4 EC2 執行個體類型在 AWS 中升級</block>
@@ -5160,4 +5158,12 @@
   <block id="6d09b3b7b0c828e4faaa038218afc509" category="section-title">確認所有的生命都在主連接埠上</block>
   <block id="4a0d5f4ccd3c4d2acc213b54daf63f9e" category="inline-link-macro">確認所有的生命都在主連接埠上</block>
   <block id="0754aed90b1b7e3ecf810f88321b76f5" category="paragraph">在升級之前、所有的生命體都必須位於主連接埠上。請參閱的 ONTAP 文件 <block ref="e645c13326fab640068fe44ceb8154ff" category="inline-link-macro-rx"></block>。</block>
+  <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">2023 年 11 月 8 日</block>
+  <block id="8e40e7e4940e30b2ce260ff97ad74d25" category="paragraph">在 3.9.35 版 Connector 中引入了以下變更。</block>
+  <block id="bbb4cf526641d95bbb8ab8bada56fa79" category="section-title">AWS 現在支援 Tel Aviv 區域</block>
+  <block id="04afad264aa486baec91a1ade145665a" category="paragraph">AWS for Cloud Volumes ONTAP 9.12.1 GA 及更新版本現在支援 Tel Aviv 區域。</block>
+  <block id="0970aa81dd486fe1c8e03549b29f3d46" category="inline-link">AWS 下的 Global Regions Map</block>
+  <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">如需所有區域的清單、請參閱<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>。</block>
+  <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">連接器 3.9.34 版隨附下列變更。</block>
+  <block id="f4e12e22adfef297cd0c891e4cd2e1a9" category="paragraph">在 3.9.33 版 Connector 中引入了以下變更。</block>
 </blocks>
