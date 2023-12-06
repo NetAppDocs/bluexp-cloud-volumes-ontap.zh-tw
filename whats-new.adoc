@@ -20,6 +20,42 @@ summary: 瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。
 
 
 
+== 2023 年 12 月 5 日
+
+我們進行了下列變更。
+
+
+
+=== Azure 的新區域支援
+
+
+
+==== 單一可用性區域區域支援
+
+以下地區現在支援 Azure 中 Cloud Volumes ONTAP 9.12.1 GA 及更新版本的高可用度單一可用度區域部署：
+
+* 特拉維夫
+* 米蘭
+
+
+
+
+==== 支援多種可用性區域
+
+以下地區現在支援 Azure 中 Cloud Volumes ONTAP 9.12.1 GA 及更新版本的高可用度多重可用度區域部署：
+
+* 印度中部
+* 挪威東部
+* 瑞士北部
+* 南非北部
+* 阿拉伯聯合大公國北部
+* 中國北方 3.
+
+
+如需所有區域的清單、請參閱 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure 下的 Global Regions Map"^]。
+
+
+
 == 2023 年 11 月 10 日
 
 在 3.9.35 版 Connector 中引入了以下變更。

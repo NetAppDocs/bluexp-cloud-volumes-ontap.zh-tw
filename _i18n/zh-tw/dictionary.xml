@@ -5168,4 +5168,20 @@
   <block id="e95c0c487a8aec79b7d3484dc5452526" category="section-title">2023 年 11 月 10 日</block>
   <block id="1c13ec96dac1171608b6dbd65bb2245c" category="section-title">Google Cloud 現在支援柏林地區</block>
   <block id="56e0da46254ac9c6f784da40f466bda0" category="paragraph">現在、 Google Cloud for Cloud Volumes ONTAP 9.12.1 GA 及更新版本均支援柏林地區。</block>
+  <block id="e8a0c291b754a75e0e91ecf69d567912" category="section-title">2023 年 12 月 5 日</block>
+  <block id="1fdbf90814a4e25f5b9e765470846181" category="paragraph">我們進行了下列變更。</block>
+  <block id="de3678aecacdbfc2cde1f365589103a8" category="section-title">Azure 的新區域支援</block>
+  <block id="2d87524b148f67773bbd84eaceabd1a8" category="section-title">單一可用性區域區域支援</block>
+  <block id="b778fb7051f3e08881d95bd99b033b37" category="paragraph">以下地區現在支援 Azure 中 Cloud Volumes ONTAP 9.12.1 GA 及更新版本的高可用度單一可用度區域部署：</block>
+  <block id="b5eed9442adc540b3e59ae08aa129632" category="list-text">特拉維夫</block>
+  <block id="437d461430ecc08e2d51abbcf5ce9b3c" category="list-text">米蘭</block>
+  <block id="657afe0033330876ccc58b79bded6c83" category="section-title">支援多種可用性區域</block>
+  <block id="20576a03f90633178b591a3e73ee5d59" category="paragraph">以下地區現在支援 Azure 中 Cloud Volumes ONTAP 9.12.1 GA 及更新版本的高可用度多重可用度區域部署：</block>
+  <block id="910918c80516a55b4ba940f0b485cea1" category="list-text">印度中部</block>
+  <block id="e57064b31b815fd4c1124aa7f2cc1fd4" category="list-text">挪威東部</block>
+  <block id="524a897e665c757be360f9ceaca6b0a5" category="list-text">瑞士北部</block>
+  <block id="d5daca31a462e138266141f6d01ca814" category="list-text">南非北部</block>
+  <block id="92e19d728517dc371c0f37ee23fa9d03" category="list-text">阿拉伯聯合大公國北部</block>
+  <block id="343c78956fe2e30b58a341de94a8673a" category="list-text">中國北方 3.</block>
+  <block id="ee39417afe0e7b7726a65f6235448846" category="paragraph">如需所有區域的清單、請參閱<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>。</block>
 </blocks>
