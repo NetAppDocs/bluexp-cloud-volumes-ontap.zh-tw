@@ -448,8 +448,6 @@
   <block id="0ea67820edee1410e568b14bb70835d0" category="section-title">資料加密方式</block>
   <block id="145da5369fc47bfb6b1cd09c08d698b0" category="paragraph">建立Cloud Volumes ONTAP 一個設定為使用客戶管理金鑰的功能完善的支援環境之後Cloud Volumes ONTAP 、即可將下列資料加密。</block>
   <block id="b049fcbe8198301adc6bf87634a02845" category="list-text">HA 配對</block>
-  <block id="2301d2b9fcb3fe6f26482aff37ea2c54" category="inline-link">磁碟加密集</block>
-  <block id="5dab396463f2f277886102bf78fe661b" category="list-text">任何新的資料磁碟也會使用相同的磁碟加密集。</block>
   <block id="8764c9ec9f17252b7df37e1710ec9e5a" category="section-title">建立金鑰保存庫並產生金鑰</block>
   <block id="d01b7a4314685f64d972ad7a1fad92aa" category="paragraph">金鑰庫必須位於您計畫建立Cloud Volumes ONTAP 此系統的同一個Azure訂閱和地區。</block>
   <block id="0355ddb77a5b72eb0604153dc1393f12" category="inline-link">在您的Azure訂閱中建立金鑰庫</block>
@@ -3387,7 +3385,6 @@
   <block id="9f3e8e28b8288d2d66ebc481e1f389d6" category="paragraph">除了儲存使用者資料之外、BlueXP也購買雲端儲存設備來儲存系統資料。</block>
   <block id="9c70722de73077ea88b96befb7d1076b" category="paragraph">BlueXP將儲存設備配置如下：</block>
   <block id="ec0c586d512637babfaca236d1a1cc87" category="list-text">從BlueXP中、使用API建立Cloud Volumes ONTAP 使用金鑰的功能不受影響的環境</block>
-  <block id="648dd7242e5228e0d91d90eaf1e79ebd" category="list-text">對於root、開機和資料磁碟、BlueXP會使用a<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>，可透過託管磁碟管理加密金鑰。</block>
   <block id="cf7451c571bdcd94b5852c9167fbb885" category="paragraph">建立金鑰庫並產生加密金鑰之後、您可以建立Cloud Volumes ONTAP 新的、設定為使用金鑰的整套系統。使用BlueXP API可支援這些步驟。</block>
   <block id="2a709f4373163ddbd1d13389c553a2eb" category="paragraph">如果您想將客戶管理的金鑰與單一節點Cloud Volumes ONTAP 的一套系統整合、請確認BlueXP Connector具有下列權限：</block>
   <block id="8be0344d53e72ba6b33ee561546d42ef" category="list-text">請使用下列BlueXP API呼叫、取得Azure訂閱中的金鑰保存清單。</block>
@@ -3702,11 +3699,6 @@
   <block id="edeea5f1bc7f7fc7a2966961ec39210e" category="sidebar">在BlueXP中使用儲存VM</block>
   <block id="ff93781ff90bf605d8b3070c1501b28f" category="sidebar">BlueXP網站部落格</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文件</block>
-  <block id="1223a21ec0a7e82e77ac43bd74628f1e" category="list-text">Azure HA單一可用度區域</block>
-  <block id="dcd61ff34229ba534213e8501446885a" category="list-text">所有的Azure儲存帳戶Cloud Volumes ONTAP 均使用客戶管理的金鑰進行加密</block>
-  <block id="08408518b6366a9a8bb69802d83d5e3c" category="list-text">任何新的儲存帳戶（例如新增磁碟或集合體時）也會使用相同的金鑰</block>
-  <block id="9dca67fbd1fac23e7aff5774ec0afa2a" category="list-text">所有的Azure儲存帳戶Cloud Volumes ONTAP 均使用客戶管理的金鑰進行加密。^1^</block>
-  <block id="8b213ded385c637758f8c3705eb6386a" category="list-title">註腳</block>
   <block id="619dc876da25600cdf36ffbec25d908e" category="summary">支援Azure資源群組移動、但工作流程僅發生在Azure主控台。Cloud Volumes ONTAP</block>
   <block id="6c2dc09b272a4aed6d56a3438a190129" category="doc">正在移動資源群組</block>
   <block id="26d9e2ceeedec062543b6a4a27db01a1" category="paragraph">您可以在同一Azure訂閱中、將工作環境從一個資源群組移至Azure中的其他資源群組。不支援在不同Azure訂閱之間移動資源群組。</block>
@@ -3755,7 +3747,6 @@
   <block id="9832e39264a34e4e40dca8449efd019e" category="section-title">BlueXP不支援儲存VM的災難恢復</block>
   <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">您需要的產品</block>
   <block id="86f463a1f0f0879749d1274dc94305d9" category="paragraph-title">重要注意事項</block>
-  <block id="fdee261787c8d28a1d5af5c07b8580d6" category="list-text">從適用於NVRAM和核心磁碟的《支援支援支援》9.9、1頁7開始ONTAP 、BlueXP使用磁碟加密集來管理受管理磁碟的加密金鑰。較低版本將使用Microsoft管理的金鑰、而非客戶管理的金鑰。</block>
   <block id="d01b00b7df0dd6620e8ab49fb88f67b9" category="list-text">*適用於Volume加密的Azure磁碟加密*（適用於多個區域中的單一節點系統或HA配對）</block>
   <block id="d1432d772b2382ef2395e1eed551d5bb" category="paragraph-title">必要的Google Cloud權限</block>
   <block id="675d38d552c49bbf67606b2c5f1d5bed" category="section-title">什麼是Flash Cache？</block>
@@ -3824,10 +3815,7 @@
   <block id="0514cef4c1e1a5949a3acc085ee50110" category="list-text">從ONTAP S59.10.1開始、WORM磁碟區和非WORM磁碟區可以存在於同一個集合體上。</block>
   <block id="7ec6925d846a27916198adf7334fcae3" category="list-text">如果您在建立Cloud Volumes ONTAP 一個功能不全的環境時啟用WORM、那麼您從BlueXP建立的每個磁碟區都會啟用WORM。不過ONTAP 、您可以使用「功能性CLI」或「系統管理程式」來建立已停用WORM的磁碟區。這些磁碟區不會以WORM速率收費。</block>
   <block id="38aefad2ca205e663da97b7fdd932dcf" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block></block>
-  <block id="b9eeb00cda3e979e1efe9bef61f951fc" category="list-text">Azure HA多重可用度區域</block>
-  <block id="0f8e1302b6dedb536c0490b7602b0b32" category="list-text">從《支援NVRAM和核心磁碟》的《支援範圍》（《支援範圍》）的《支援範圍》（ONTAP<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>，可透過託管磁碟管理加密金鑰。較低版本將使用Microsoft管理的金鑰、而非客戶管理的金鑰。</block>
   <block id="5aabc9069557be7e4aeff466605cbc75" category="list-text">單一節點</block>
-  <block id="41668006fb357f569acf8441fc16a00c" category="list-text">如果您想要在建立儲存帳戶期間加密、則必須在CVO建立要求中建立並提供資源ID。這適用於所有類型的部署。如果您未提供、儲存帳戶仍會加密、但BlueXP會先使用Microsoft管理的金鑰加密來建立儲存帳戶、然後再更新儲存帳戶以使用客戶管理的金鑰。</block>
   <block id="d83f214fdb8074463fb047c3669d0f00" category="list-text">HA配對使用兩種磁碟、以較高的成本為I/O密集型工作負載提供高效能：</block>
   <block id="de017bcc9ee62a910294463646126cd7" category="list-text">_Premium頁面Blobs_、磁碟大小上限為8 TiB</block>
   <block id="2e40430d8621fa0117dad7bd5bd6ce3d" category="list-text">_Managed disks_、磁碟大小上限為32 TiB</block>
@@ -3906,7 +3894,6 @@
   <block id="bf748f930fa11e46773ff6f7b815e480" category="section-title">零件9.12.0 Cloud Volumes ONTAP</block>
   <block id="80df4292f7c986dbd0920bb576487060" category="paragraph">現在、BlueXP可以在Cloud Volumes ONTAP AWS和Google Cloud中部署和管理功能。</block>
   <block id="abd10f7bee2f791a9e8f76bf98163c27" category="paragraph">現在、BlueXP可以部署及管理Cloud Volumes ONTAP 支援全新功能和其他雲端供應商區域的功能。</block>
-  <block id="fdfad4872e8eceed069f74f82808d36e" category="list-text">對於root、開機、NVRAM、核心和資料磁碟、BlueXP使用磁碟加密集來管理受管理磁碟的加密金鑰。</block>
   <block id="3c757e219167079b631dfcb5b1d0c339" category="paragraph">以下是3.9.25版Connector的變更。</block>
   <block id="234213185a1ffd45429411672de5d3e7" category="section-title">Google Cloud提供授權套件</block>
   <block id="54aeb573897a8b2a0c9627ff7030c996" category="paragraph">Google Cloud Volumes ONTAP Cloud Marketplace提供最佳化的Edge Cache容量型授權套件、可作為隨用隨付方案或年度合約、以供使用。</block>
@@ -5164,7 +5151,6 @@
   <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">如需所有區域的清單、請參閱<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>。</block>
   <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">連接器 3.9.34 版隨附下列變更。</block>
   <block id="f4e12e22adfef297cd0c891e4cd2e1a9" category="paragraph">在 3.9.33 版 Connector 中引入了以下變更。</block>
-  <block id="bbb12e7857993612931dbc5c19c5f9dc" category="paragraph">資料分層是 FabricPool 以不同步技術為後盾。Cloud Volumes ONTAP 為所有 Cloud Volumes ONTAP 叢集提供資料分層功能。當您啟用資料分層時、資料階層至物件儲存設備會產生費用。如需物件儲存成本的詳細資訊、請參閱雲端供應商的文件。</block>
   <block id="e95c0c487a8aec79b7d3484dc5452526" category="section-title">2023 年 11 月 10 日</block>
   <block id="1c13ec96dac1171608b6dbd65bb2245c" category="section-title">Google Cloud 現在支援柏林地區</block>
   <block id="56e0da46254ac9c6f784da40f466bda0" category="paragraph">現在、 Google Cloud for Cloud Volumes ONTAP 9.12.1 GA 及更新版本均支援柏林地區。</block>
@@ -5189,4 +5175,17 @@
   <block id="4a76045b19fb3233070f77ae414d5810" category="section-title">Cloud Volumes ONTAP 9.14.1 RC1</block>
   <block id="efb4d9478ba663f514e18b3310c2de65" category="paragraph">BlueXP 現在可以在 AWS 、 Azure 和 Google Cloud 中部署和管理 Cloud Volumes ONTAP 9.14.1 。</block>
   <block id="d544ab02530940d46c43ea00a73d59d3" category="cell">9.14.1.</block>
+  <block id="ed6589af51fe478933944c16eab4377f" category="paragraph">資料分層是 FabricPool 以不同步技術為後盾。Cloud Volumes ONTAP 為所有 Cloud Volumes ONTAP 叢集提供資料分層功能、無需額外授權。當您啟用資料分層時、資料階層至物件儲存設備會產生費用。如需物件儲存成本的詳細資訊、請參閱雲端供應商的文件。</block>
+  <block id="52325e36bf5c9eb022c54f20d2f9d58d" category="paragraph">BlueXP 使用磁碟加密集、可透過託管磁碟管理加密金鑰、而非分頁式分頁。任何新的資料磁碟也會使用相同的磁碟加密集。較低版本將使用Microsoft管理的金鑰、而非客戶管理的金鑰。</block>
+  <block id="8168565911ffa4b4f24fddac74a372bd" category="cell">用於金鑰加密的系統磁碟</block>
+  <block id="d7819c407fe0bef64dea0f538ea5059d" category="cell">用於金鑰加密的資料磁碟</block>
+  <block id="d070b5d05592da755547896113c3e9ef" category="list-text">開機</block>
+  <block id="83168e6cb289d732cc78427b51f93153" category="list-text">核心</block>
+  <block id="e3f3f58b597fba6fefb596c5ce76d468" category="list-text">NVRAM</block>
+  <block id="fa03eb688ad8aa1db593d33dabd89bad" category="list-text">根目錄</block>
+  <block id="f6068daa29dbb05a7ead1e3b5a48bbee" category="list-text">資料</block>
+  <block id="9f9a7e011920aed7b91c7f5809cef3df" category="paragraph">Azure HA 單一可用性區域、含頁面 Blobs</block>
+  <block id="7df51deb241262b7a30e9f895e6b3b75" category="paragraph">Azure HA 單一可用性區域、含共用託管磁碟</block>
+  <block id="75b5d41c945fb77a44a02275e5167f03" category="paragraph">Azure HA 多個可用性區域、含共用託管磁碟</block>
+  <block id="735d36020b1ee0734f4e9ddbbea4948e" category="paragraph">所有的Azure儲存帳戶Cloud Volumes ONTAP 均使用客戶管理的金鑰進行加密。如果您想要在建立儲存帳戶期間加密、則必須在CVO建立要求中建立並提供資源ID。這適用於所有類型的部署。如果您未提供、儲存帳戶仍會加密、但BlueXP會先使用Microsoft管理的金鑰加密來建立儲存帳戶、然後再更新儲存帳戶以使用客戶管理的金鑰。</block>
 </blocks>
