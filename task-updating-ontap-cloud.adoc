@@ -277,6 +277,8 @@ image:screenshots_aggregate_details_state.png["螢幕擷取畫面：當您檢視
 
 在升級之前、所有的生命體都必須位於主連接埠上。請參閱的 ONTAP 文件 link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["確認所有的生命都在主連接埠上"]。
 
+如果發生升級失敗錯誤、請參閱 link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/CVO_upgrade_fails["知識庫文章「 Cloud Volumes ONTAP 升級失敗」"]。
+
 
 
 == 升級Cloud Volumes ONTAP

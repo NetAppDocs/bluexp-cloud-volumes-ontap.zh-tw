@@ -5188,4 +5188,6 @@
   <block id="7df51deb241262b7a30e9f895e6b3b75" category="paragraph">Azure HA 單一可用性區域、含共用託管磁碟</block>
   <block id="75b5d41c945fb77a44a02275e5167f03" category="paragraph">Azure HA 多個可用性區域、含共用託管磁碟</block>
   <block id="735d36020b1ee0734f4e9ddbbea4948e" category="paragraph">所有的Azure儲存帳戶Cloud Volumes ONTAP 均使用客戶管理的金鑰進行加密。如果您想要在建立儲存帳戶期間加密、則必須在CVO建立要求中建立並提供資源ID。這適用於所有類型的部署。如果您未提供、儲存帳戶仍會加密、但BlueXP會先使用Microsoft管理的金鑰加密來建立儲存帳戶、然後再更新儲存帳戶以使用客戶管理的金鑰。</block>
+  <block id="3d398b97e4c42f1072862ca68a5330e0" category="inline-link-macro">知識庫文章「 Cloud Volumes ONTAP 升級失敗」</block>
+  <block id="73f61210747fe91bea8a184200d3fcc5" category="paragraph">如果發生升級失敗錯誤、請參閱 <block ref="60b526b210a3d8d7f028168de61b0c4a" category="inline-link-macro-rx"></block>。</block>
 </blocks>
