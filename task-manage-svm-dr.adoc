@@ -5,15 +5,12 @@ keywords: storage virtual machine, vserver, svm, storage vm, svm dr, disaster re
 summary: BlueXP不提供任何儲存VM災難恢復的設定或協調支援。您必須使用 System Manager 或 CLI 。 
 ---
 = 設定 SVM 災難恢復
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

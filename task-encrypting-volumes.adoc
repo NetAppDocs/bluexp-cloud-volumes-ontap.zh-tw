@@ -5,15 +5,12 @@ keywords: encrypt, encryption, data, volumes, netapp volume encryption, volume e
 summary: 支援 NetApp Volume Encryption （ NVE ）和 NetApp Aggregate Encryption （ NAE ）與外部金鑰管理程式。 Cloud Volumes ONTAP如果您設定外部金鑰管理程式、則預設會啟用 NVE 和 NAE 。 
 ---
 = 使用 NetApp 加密解決方案加密磁碟區
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
