@@ -45,7 +45,7 @@ link:reference-networking-azure.html["深入瞭解網路需求"]。
 
 .相關連結
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["從BlueXP建立連接器"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure.html["從 Azure Marketplace 建立 Connector"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-marketplace.html["從 Azure Marketplace 建立 Connector"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["在 Linux 主機上安裝 Connector 軟體"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["BlueXP具備權限的功能"^]
 
