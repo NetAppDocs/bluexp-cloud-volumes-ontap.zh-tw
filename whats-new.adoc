@@ -20,6 +20,24 @@ summary: 瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。
 
 
 
+== 2024 年 1 月 8 日
+
+
+
+=== Azure 多個可用區域的新 VM
+
+從 Cloud Volumes ONTAP 9.13.1 開始、下列 VM 類型支援 Azure 多個可用性區域、以進行新的和現有的高可用度配對部署：
+
+* L16s_v3
+* L32s_v3
+* L48s_v3
+* L64s_v3
+
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure支援的組態"^]
+
+
+
 == 2023 年 12 月 6 日
 
 
