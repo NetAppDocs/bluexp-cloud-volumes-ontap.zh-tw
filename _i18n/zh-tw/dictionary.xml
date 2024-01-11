@@ -486,7 +486,6 @@
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">社群</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文件</block>
-  <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto：ng-cloudmanager-feedback@netapp.com [意見反應電子郵件]</block>
   <block id="8e9d6d95264b6231f0a1d0ca22c087f7" category="summary">下列指南可協助您在Cloud Volumes ONTAP Google Cloud中開始使用、以符合您的特定使用案例。</block>
   <block id="f540a08b090d18fa948ca4ade8ceb7ff" category="doc">適用於 Google Cloud Cloud Volumes ONTAP</block>
   <block id="f22e86b63856df3737d333499d0d8642" category="inline-link-macro">在Google Cloud中開始Cloud Volumes ONTAP 使用功能：設定逐步解說</block>
@@ -3360,7 +3359,6 @@
   <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">請搜尋BlueXP知識庫、找出有助於疑難排解問題的文章。</block>
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">歡迎加入BlueXP社群、以追蹤後續討論或建立新討論。</block>
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">您目前正在檢視的BlueXP文件。</block>
-  <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">我們非常重視您的意見。提交意見反應、協助我們改善藍圖。</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*服務*：選取問題相關的服務。例如、特定於服務工作流程或功能的技術支援問題的BlueXP。</block>
   <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">工作環境清單位於您在服務的最上層橫幅中所選的BlueXP帳戶、工作區和Connector範圍內。</block>
   <block id="0c726404ad0f4ebb2cb2a2d0bdc04192" category="summary">支援整合到BlueXP UI中、讓您在單一窗口中、將整個叢集的作業、安全性和效能最佳化。Active IQ Digital Advisor ONTAP</block>
@@ -4832,7 +4830,6 @@
   <block id="9216a2741f7e54826d99a0fcfc0c7c58" category="section-title">刪除 WORM 檔案</block>
   <block id="728c208823318f76bc30851f92119221" category="paragraph">您可以在保留期間使用權限刪除功能刪除 WORM 檔案。</block>
   <block id="44c48c2759b23de55aafe43a43856a08" category="paragraph">如需相關指示、請參閱<block ref="03bc56e40fb58df28e53112c02ca2ae1" category="inline-link-rx"></block></block>
-  <block id="e220f1ef839bc3256ee110a9a5be5c61" category="paragraph">ARP 功能僅適用於節點型和容量型授權模式的 BYOL 授權（一、二及三年期限）。您必須聯絡您的 NetApp 銷售代表、以購買新的獨立附加授權、以搭配 Cloud Volumes ONTAP 中的 ARP 功能使用。</block>
   <block id="59e727e0c151e53fa5beabd59871cb88" category="paragraph">在許多情況下、升級 HA 配對不會中斷營運、 I/O 也不會中斷。在此不中斷營運的升級程序中、會同時升級每個節點、以繼續為用戶端提供 I/O 服務。</block>
   <block id="67e0d115b5c2df9254836fd8f762d3dc" category="inline-link">請參閱 ONTAP 文件</block>
   <block id="ff0dae83f1884b2852a33110d07283d1" category="paragraph">工作階段導向的通訊協定可能會在升級期間對某些區域的用戶端和應用程式造成不良影響。如需詳細資訊、<block ref="69d6ddda693aaf09f72544089a10fab3" category="inline-link-rx"></block></block>
@@ -4901,7 +4898,6 @@
   <block id="3e5f671180bf2c0f088f815be54e2cdf" category="paragraph">透過 BlueXP 、勒索軟體保護設定可讓您利用 ONTAP FPolicy 功能來防範常見的勒索軟體檔案副檔名類型。</block>
   <block id="d83738f5ec82db660abbb443f4d3eb21" category="inline-link">勒索軟體保護設定</block>
   <block id="6c32dae7ba2780f8dc42d1813f66ea24" category="paragraph">與透過提供的檔案副檔名保護分開<block ref="1f479b2258cad80f990e85fbf571e95d" category="inline-link-rx"></block>、 ARP 功能會使用工作負載分析、根據偵測到的「異常活動」來警示使用者可能遭受的攻擊。勒索軟體保護設定和 ARP 功能均可搭配使用、以提供全面的勒索軟體保護。</block>
-  <block id="8ba032b0bcbcde63a6545318072ff32b" category="paragraph">購買附加授權並將其新增至 Digital Wallet 後、您可以使用 Cloud Volumes ONTAP 以每個磁碟區為基礎來啟用 ARP 。磁碟區的 ARP 組態是透過 ONTAP 系統管理員和 ONTAP CLI 執行。</block>
   <block id="dfa314101a62671bea85bd2701b00194" category="paragraph">如需如何使用 ONTAP 系統管理員和 CLI 啟用 ARP 的詳細資訊、請參閱<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
   <block id="4f87e49be20cab28b98c082c672f9032" category="paragraph">若要深入瞭解 Cloud Volumes ONTAP 的 ARP 、請參閱<block ref="3ad484b0b391dd26474b87b6bc7f70b6" category="inline-link-rx"></block>。</block>
   <block id="d1c5c359fc2e3c8fe0af6fd09605d616" category="paragraph">與標準AWS區域類似、您可以在中使用Cloud Manager <block ref="25b8ce564d4ee42e840c162aa63df82a" category="inline-link-macro-rx"></block> 部署Cloud Volumes ONTAP 的環境、為您的雲端儲存設備提供企業級功能。AWS C2S是美國專屬的封閉區域智慧社群；本頁的說明僅適用於AWS C2S區域使用者。</block>
@@ -5198,4 +5194,11 @@
   <block id="eb4c08b87f805a62e5af64a0b7c6fb5a" category="paragraph">BlueXP會建立Azure安全性群組、其中包含Cloud Volumes ONTAP 了順利運作所需的傳入和傳出規則。您可能想要參照連接埠進行測試、或是想要使用自己的安全性群組。</block>
   <block id="9864c286612d20c437e06d1612a86f2d" category="summary">BlueXP會建立AWS安全性群組、其中包括Cloud Volumes ONTAP 需要順利運作的傳入和傳出規則。您可能想要參照連接埠進行測試、或是想要使用自己的安全性群組。</block>
   <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXP會建立Google Cloud防火牆規則、其中包括Cloud Volumes ONTAP 需要順利運作的傳入和傳出規則。您可能想要參考連接埠以進行測試、或是想要使用自己的防火牆規則。</block>
+  <block id="f297f6161ef6c027c4e0cd622d4c9f53" category="paragraph">ARP 功能僅適用於以節點為基礎的授權模式和以容量為基礎的授權模式、且僅適用於 BYOL 授權（ 1 至 36 個月期限）。您必須聯絡您的 NetApp 銷售代表、以購買新的獨立附加授權、以搭配 Cloud Volumes ONTAP 中的 ARP 功能使用。</block>
+  <block id="69f67d4caf75d0a80b925b65a04419a0" category="paragraph">ARP 授權被視為「浮動」授權、這表示它不受限於單一 Cloud Volumes ONTAP 執行個體、而且可以套用至多個 Cloud Volumes ONTAP 環境。</block>
+  <block id="9edc62814e18ad5dad22ed4f08602be6" category="admonition">在節點型 Cloud Volumes ONTAP 授權中使用 ARP 功能的情況、目前並未反映在 Digital Wallet 中。未來版本的 Digital Wallet 將提供檢視節點型 ARP 使用率的功能。</block>
+  <block id="36228eb2dbf48b5f5e080f1abf747714" category="paragraph">購買附加授權並將其新增至 Digital Wallet 後、您可以使用 Cloud Volumes ONTAP 以每個磁碟區為基礎來啟用 ARP 。ARP 的收費是根據已啟用 ARP 功能的已配置磁碟區總容量、以磁碟區層級計量。最低授權容量為 1TB 。不過、 ARP 功能沒有最低容量充電量。</block>
+  <block id="2a51dc407e4b9108dfb0e2caff776939" category="paragraph">已啟用 ARP 的磁碟區具有「學習模式」或「作用中」的指定狀態。任何 ARP 狀態為「已停用」的磁碟區都會排除在充電之外。例如、具有 30 TiB 已配置容量的 Cloud Volumes ONTAP 環境、可選擇僅擁有 15 TiB 磁碟區的子集、並啟用 ARP 。</block>
+  <block id="bab89553328d9045a17e6cd7ae426ebe" category="paragraph">磁碟區的 ARP 組態是透過 ONTAP 系統管理員和 ONTAP CLI 執行。</block>
+  <block id="41040f9c93f65d2edb4f6b2d1dc680a4" category="admonition">儲存與網路使用量是以二進位 GB 計算、其中 1GB 為 2^30 位元組。此測量單位也稱為雙位元組（ GiB ）。同樣地、 1TB 為 2^40 位元組、亦即 1024 GB 。</block>
 </blocks>

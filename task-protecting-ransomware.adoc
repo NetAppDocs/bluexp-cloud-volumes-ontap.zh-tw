@@ -63,13 +63,22 @@ Cloud Volumes ONTAP 支援「自動勒索軟體保護」（ ARP ）功能、可�
 
 與透過提供的檔案副檔名保護分開 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#protection-from-common-ransomware-file-extensions["勒索軟體保護設定"]、 ARP 功能會使用工作負載分析、根據偵測到的「異常活動」來警示使用者可能遭受的攻擊。勒索軟體保護設定和 ARP 功能均可搭配使用、以提供全面的勒索軟體保護。
 
-ARP 功能僅適用於節點型和容量型授權模式的 BYOL 授權（一、二及三年期限）。您必須聯絡您的 NetApp 銷售代表、以購買新的獨立附加授權、以搭配 Cloud Volumes ONTAP 中的 ARP 功能使用。
+ARP 功能僅適用於以節點為基礎的授權模式和以容量為基礎的授權模式、且僅適用於 BYOL 授權（ 1 至 36 個月期限）。您必須聯絡您的 NetApp 銷售代表、以購買新的獨立附加授權、以搭配 Cloud Volumes ONTAP 中的 ARP 功能使用。
 
-購買附加授權並將其新增至 Digital Wallet 後、您可以使用 Cloud Volumes ONTAP 以每個磁碟區為基礎來啟用 ARP 。磁碟區的 ARP 組態是透過 ONTAP 系統管理員和 ONTAP CLI 執行。
+ARP 授權被視為「浮動」授權、這表示它不受限於單一 Cloud Volumes ONTAP 執行個體、而且可以套用至多個 Cloud Volumes ONTAP 環境。
+
+
+NOTE: 在節點型 Cloud Volumes ONTAP 授權中使用 ARP 功能的情況、目前並未反映在 Digital Wallet 中。未來版本的 Digital Wallet 將提供檢視節點型 ARP 使用率的功能。
+
+購買附加授權並將其新增至 Digital Wallet 後、您可以使用 Cloud Volumes ONTAP 以每個磁碟區為基礎來啟用 ARP 。ARP 的收費是根據已啟用 ARP 功能的已配置磁碟區總容量、以磁碟區層級計量。最低授權容量為 1TB 。不過、 ARP 功能沒有最低容量充電量。
+
+已啟用 ARP 的磁碟區具有「學習模式」或「作用中」的指定狀態。任何 ARP 狀態為「已停用」的磁碟區都會排除在充電之外。例如、具有 30 TiB 已配置容量的 Cloud Volumes ONTAP 環境、可選擇僅擁有 15 TiB 磁碟區的子集、並啟用 ARP 。
+
+磁碟區的 ARP 組態是透過 ONTAP 系統管理員和 ONTAP CLI 執行。
 
 如需如何使用 ONTAP 系統管理員和 CLI 啟用 ARP 的詳細資訊、請參閱 https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["啟用自發勒索軟體保護"^]。
 
+image::screenshot_arp.png[螢幕擷取畫面顯示 Automware Protection 的附加授權。]
+
 
 NOTE: 若未取得授權、則無法使用授權功能。
-
-image::screenshot_arp.png[螢幕擷取畫面顯示 Automware Protection 的附加授權。]
