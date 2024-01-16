@@ -4804,7 +4804,6 @@
   <block id="0882685275009e45f6167bce4081e668" category="list-text">檢閱並建立存取原則。</block>
   <block id="1f8370f663ec71e8fac7dc386794543c" category="admonition">包括<block ref="d740baa07e4af19d0de1f45650cf4bc0" prefix=" " category="inline-code"></block> 如果您建立此資源以用於儲存帳戶加密、請輸入此欄位。</block>
   <block id="57a3061930625af99195891e9e561fb2" category="cell">9.13.1.12.9.12.9.</block>
-  <block id="24eacd330f66ba30cc845660c1efa967" category="list-text">對於修補程式（ P ）版本、您可以從一個版本版本升級至下一個版本的任何 P 版本。</block>
   <block id="99430eacf0d5244d50939eea94bd5962" category="paragraph">以下是幾個範例：</block>
   <block id="1893a0478b381d08866888a1c7f8607a" category="list-text">9.13.0 &gt; 9.13.1P15</block>
   <block id="4ae2d614cc725ba442c80c740c08f75f" category="list-text">9.12.1 &gt; 9.13.1P2</block>
@@ -5195,10 +5194,18 @@
   <block id="9864c286612d20c437e06d1612a86f2d" category="summary">BlueXP會建立AWS安全性群組、其中包括Cloud Volumes ONTAP 需要順利運作的傳入和傳出規則。您可能想要參照連接埠進行測試、或是想要使用自己的安全性群組。</block>
   <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXP會建立Google Cloud防火牆規則、其中包括Cloud Volumes ONTAP 需要順利運作的傳入和傳出規則。您可能想要參考連接埠以進行測試、或是想要使用自己的防火牆規則。</block>
   <block id="f297f6161ef6c027c4e0cd622d4c9f53" category="paragraph">ARP 功能僅適用於以節點為基礎的授權模式和以容量為基礎的授權模式、且僅適用於 BYOL 授權（ 1 至 36 個月期限）。您必須聯絡您的 NetApp 銷售代表、以購買新的獨立附加授權、以搭配 Cloud Volumes ONTAP 中的 ARP 功能使用。</block>
-  <block id="69f67d4caf75d0a80b925b65a04419a0" category="paragraph">ARP 授權被視為「浮動」授權、這表示它不受限於單一 Cloud Volumes ONTAP 執行個體、而且可以套用至多個 Cloud Volumes ONTAP 環境。</block>
   <block id="9edc62814e18ad5dad22ed4f08602be6" category="admonition">在節點型 Cloud Volumes ONTAP 授權中使用 ARP 功能的情況、目前並未反映在 Digital Wallet 中。未來版本的 Digital Wallet 將提供檢視節點型 ARP 使用率的功能。</block>
   <block id="36228eb2dbf48b5f5e080f1abf747714" category="paragraph">購買附加授權並將其新增至 Digital Wallet 後、您可以使用 Cloud Volumes ONTAP 以每個磁碟區為基礎來啟用 ARP 。ARP 的收費是根據已啟用 ARP 功能的已配置磁碟區總容量、以磁碟區層級計量。最低授權容量為 1TB 。不過、 ARP 功能沒有最低容量充電量。</block>
-  <block id="2a51dc407e4b9108dfb0e2caff776939" category="paragraph">已啟用 ARP 的磁碟區具有「學習模式」或「作用中」的指定狀態。任何 ARP 狀態為「已停用」的磁碟區都會排除在充電之外。例如、具有 30 TiB 已配置容量的 Cloud Volumes ONTAP 環境、可選擇僅擁有 15 TiB 磁碟區的子集、並啟用 ARP 。</block>
   <block id="bab89553328d9045a17e6cd7ae426ebe" category="paragraph">磁碟區的 ARP 組態是透過 ONTAP 系統管理員和 ONTAP CLI 執行。</block>
   <block id="41040f9c93f65d2edb4f6b2d1dc680a4" category="admonition">儲存與網路使用量是以二進位 GB 計算、其中 1GB 為 2^30 位元組。此測量單位也稱為雙位元組（ GiB ）。同樣地、 1TB 為 2^40 位元組、亦即 1024 GB 。</block>
+  <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">2024 年 1 月 16 日</block>
+  <block id="9ed7d4ae8d042664394e899e9c1f5e9a" category="section-title">BlueXP 中的修補程式版本</block>
+  <block id="5c04c0351e9f1e168f13ca5689c21d92" category="paragraph">BlueXP 中只有最新三個版本的 Cloud Volumes ONTAP 才提供修補程式版本。</block>
+  <block id="debc8fcbe9103b95d21857d1276dbb26" category="paragraph"><block ref="debc8fcbe9103b95d21857d1276dbb26" category="inline-link-macro-rx"></block></block>
+  <block id="fa8624c42ea6d2ce73d1dbb434c41dc8" category="paragraph">ARP 授權被視為「浮動」授權、這表示它不受限於單一 Cloud Volumes ONTAP 執行個體、而且可以套用至多個 Cloud Volumes ONTAP 環境。</block>
+  <block id="a7453af7846f7db9aba5aa90fa8093e5" category="paragraph">已啟用 ARP 的磁碟區具有「學習模式」或「作用中」的指定狀態。任何 ARP 狀態為「已停用」的磁碟區都會排除在充電之外。例如、具有 30 TiB 已配置容量的 Cloud Volumes ONTAP 環境、可選擇僅擁有 15 個 TiB 磁碟區的子集、並啟用 ARP 。</block>
+  <block id="677ee5101eb2acd8a357643d03784fa7" category="section-title">修補程式版本</block>
+  <block id="25163e975710186a452c0f2fefe81448" category="inline-xref">下載 ONTAP 映像</block>
+  <block id="17464ff13145a21ed61cc7a0b9513ce7" category="paragraph">自 2024 年 1 月起、只有在 BlueXP 中、如果是三個最新版 Cloud Volumes ONTAP 的修補程式版本、才能進行修補程式升級。我們使用最新的 GA 版本來判斷在 BlueXP 中顯示的三個最新版本。例如、如果目前的 GA 版本為 9.13.1 、則 BlueXP 中會出現 9.11.1.9.13.1 的修補程式。如果您想要升級至 9.11.1 版或更低版本的修補程式版本、您需要使用手動升級程序 <block ref="741f5e59386960528e5ac58506855727" category="inline-xref-macro-rx"></block>。</block>
+  <block id="b0b450f5a78908e6b78f5c13bf6b0da4" category="paragraph">根據補充程式（ P ）版本的一般規則、您可以從一個版本版本升級至目前執行版本或下一個版本的任何 P 版本。</block>
 </blocks>
