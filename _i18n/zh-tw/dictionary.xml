@@ -4039,7 +4039,6 @@
   <block id="a329f820fccae25ebe98d73c85c8006c" category="inline-image-macro">服務端點的螢幕擷取畫面、顯示三個選取的服務</block>
   <block id="892728a8cb7d01d3a80f6c63ad7a3b1a" category="paragraph"><block ref="892728a8cb7d01d3a80f6c63ad7a3b1a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5b430d19ce10cad3c93da5d1a58ae5da" category="list-text">進入進階權限模式ONTAP ：<block ref="b18455e94f1f10f091d6cc4ad2e0507e" prefix=" " category="inline-code"></block></block>
-  <block id="65533a408ee230b29deae5fd1634c46a" category="list-text">使用應用程式登錄後儲存的用戶端ID和租戶ID來啟用Azure Key Vault：<block ref="fc019c518ce1e237021d337077bd96cc" prefix=" " category="inline-code"></block></block>
   <block id="2b92b9eae444abb7f44aa96b856847a4" category="paragraph">如果是<block ref="c02e65ef2be24722283d91b62774dd3d" prefix=" " category="inline-code"></block> 狀態不是<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block>、SVM無法以所有必要的連線和權限來連線至Azure Key Vault服務。請確保您的Azure網路原則和路由不會封鎖您的私有vNet、使其無法到達Azure KeyVault Public端點。如果有、請考慮使用Azure私有端點、從vNet內存取金鑰庫。您可能還需要在SVM上新增靜態主機項目、以解析端點的私有IP位址。</block>
   <block id="840b18b97e1e55325d94f00b965a31cf" category="paragraph">。<block ref="5fb243bae51d7320aff8e09d0bb56325" prefix=" " category="inline-code"></block> 將會報告<block ref="696b031073e74bf2cb98e5ef201d4aa3" prefix=" " category="inline-code"></block> 初始組態時。其狀態將變更為<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block> 加密第一個磁碟區之後。</block>
   <block id="4237e167da34ce4cc54b7915a9ee779a" category="list-text">所有磁碟區都必須停用壓縮功能、才能充分發揮Flash Cache效能提升功能Cloud Volumes ONTAP 、直到更新至VMware版。當您部署或升級Cloud Volumes ONTAP 至盡力9.12.1時、就不需要停用壓縮功能。</block>
@@ -5208,4 +5207,8 @@
   <block id="25163e975710186a452c0f2fefe81448" category="inline-xref">下載 ONTAP 映像</block>
   <block id="17464ff13145a21ed61cc7a0b9513ce7" category="paragraph">自 2024 年 1 月起、只有在 BlueXP 中、如果是三個最新版 Cloud Volumes ONTAP 的修補程式版本、才能進行修補程式升級。我們使用最新的 GA 版本來判斷在 BlueXP 中顯示的三個最新版本。例如、如果目前的 GA 版本為 9.13.1 、則 BlueXP 中會出現 9.11.1.9.13.1 的修補程式。如果您想要升級至 9.11.1 版或更低版本的修補程式版本、您需要使用手動升級程序 <block ref="741f5e59386960528e5ac58506855727" category="inline-xref-macro-rx"></block>。</block>
   <block id="b0b450f5a78908e6b78f5c13bf6b0da4" category="paragraph">根據補充程式（ P ）版本的一般規則、您可以從一個版本版本升級至目前執行版本或下一個版本的任何 P 版本。</block>
+  <block id="6641aeac9c3a566deb4f56b743076e2a" category="list-text">Nae 不可使用 AKV 。Nae 需要外部支援的 KMIP 伺服器。</block>
+  <block id="8f3a7aeceb3049764382da1a82a27238" category="list-text">使用應用程式登錄後儲存的用戶端ID和租戶ID來啟用Azure Key Vault：<block ref="5e256216aa762875258d90fbe836b7b2" prefix=" " category="inline-code"></block></block>
+  <block id="27546657617543a3f0cd8927c3f369c8" category="admonition">。<block ref="ee5ecb949ba751e6c3f7b03d02fc2819" prefix=" " category="inline-code"></block> 價值必須運用<block ref="b5fd887d199c5a44249b4fce7085da7f" prefix=" " category="inline-code"></block> 格式。</block>
+  <block id="b386d04ca3a89226a06701e85f70e33d" category="list-text">成功啟用 Azure Key Vault 後、請輸入<block ref="00c44d3486742ffa7af4a8bfbab4d3d3" prefix=" " category="inline-code"></block> 出現提示時。</block>
 </blocks>
