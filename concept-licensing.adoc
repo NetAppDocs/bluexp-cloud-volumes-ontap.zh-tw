@@ -307,9 +307,10 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["�
 
 ==== Essentials套件
 
-有了Essentials套件、您將依照部署類型（HA或單一節點）和Volume類型（主要或次要）收費。例如、_Essentials HHA與_Essentials次要HA的定價不同。
+有了Essentials套件、您將依照部署類型（HA或單一節點）和Volume類型（主要或次要）收費。從高到低的定價順序如下： _Essentials Primary HA_ 、 _Essentials Primary Single Node_ 、 _Essentials Secondary HHA _ 和 _Essentials Secondary Single Nod_ 。或者、當您購買市場合約或接受私人優惠時、任何部署或 Volume 類型的容量費用都相同。
 
-如果您向 NetApp （ BYOL ）購買 Essentials 授權、且超過該部署和 Volume 類型的授權容量、則 BlueXP 數位錢包會因價格較高的 Essentials 授權（如果您有）而收取超額費用。這是因為我們會先使用您已購買的可用容量作為預付容量、然後再針對市場進行充電。向市場收取費用會增加每月帳單的成本。
+.BYOL
+如果您向 NetApp （ BYOL ）購買 Essentials 授權、且超過該部署和 Volume 類型的授權容量、則 BlueXP 數位錢包會因價格較高的 Essentials 授權（如果您有此授權且有可用容量）而收取超額費用。這是因為我們會先使用您已購買的可用容量作為預付容量、然後再針對市場進行充電。如果您的 BYOL 授權沒有可用容量、則超出的容量將以市場隨選時數費率（ PAYGO ）收取、並將增加每月帳單的成本。
 
 以下是範例。假設您擁有下列Essentials套件授權：
 
@@ -317,9 +318,24 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["�
 * 500 TiB _Essentials單一節點_授權、僅擁有100 TiB的已認可容量
 
 
-另有50個TiB配置在與次要Volume的HA配對上。BlueXP 數位錢包不需向 PAYGO 收取 50 TiB 費用、而是根據 _Essentials Single Node_ 授權收取 50 TiB 超額費用。該授權的價格高於_Essentials二線HA、但比PAYGO價格便宜。
+另有50個TiB配置在與次要Volume的HA配對上。BlueXP 數位錢包不需向 PAYGO 收取 50 TiB 費用、而是根據 _Essentials Single Node_ 授權收取 50 TiB 超額費用。該授權的價格高於 _Essentials 次要 HHA 、但它是使用您已購買的授權、不會在您的每月帳單中增加成本。
 
 在 BlueXP 數位錢包中、 50 TiB 將根據 _Essentials Single Nodon_ 授權收費。
+
+以下是另一個範例。假設您擁有下列Essentials套件授權：
+
+* 500 TiB _Essentials二線HA授權、擁有500 TiB的承諾容量
+* 500 TiB _Essentials單一節點_授權、僅擁有100 TiB的已認可容量
+
+
+另有 100 TiB 是在具有主要磁碟區的 HA 配對上進行佈建。您購買的授權沒有 _Essentials 主要 HA 承諾容量。_Essentials 主要 HA_ 授權的價格高於 _Essentials 主要單一節點 _ 和 _Essentials 次要 HA_ 授權。
+
+在此範例中、 BlueXP 數位錢包會以額外 100 TiB 的市場費率收取超額費用。超額費用會顯示在您的每月帳單上。
+
+.市場合約或私人優惠
+如果您購買的 Essentials 授權屬於市場合約或私有方案的一部分、則 BYOL 邏輯將不適用、而且您必須擁有正確的使用授權類型。授權類型包括 Volume 類型（主要或次要）和部署類型（ HA 或單一節點）。
+
+例如、假設您使用 Essentials 授權部署 Cloud Volumes ONTAP 執行個體。接著、您可以配置讀寫磁碟區（主要單一節點）和唯讀（次要單一節點）磁碟區。您的市場合約或私有方案必須包含 _Essentials 單一節點 _ 和 _Essentials 次要單一節點 _ 的容量、以涵蓋已配置的容量。任何不屬於您市場合約或私人優惠的資源配置容量、都會以隨選時數費率（ PAYGO ）收取費用、並將成本加到您的每月帳單中。
 
 
 
