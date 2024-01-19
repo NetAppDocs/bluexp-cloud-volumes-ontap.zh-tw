@@ -5211,4 +5211,12 @@
   <block id="8f3a7aeceb3049764382da1a82a27238" category="list-text">使用應用程式登錄後儲存的用戶端ID和租戶ID來啟用Azure Key Vault：<block ref="5e256216aa762875258d90fbe836b7b2" prefix=" " category="inline-code"></block></block>
   <block id="27546657617543a3f0cd8927c3f369c8" category="admonition">。<block ref="ee5ecb949ba751e6c3f7b03d02fc2819" prefix=" " category="inline-code"></block> 價值必須運用<block ref="b5fd887d199c5a44249b4fce7085da7f" prefix=" " category="inline-code"></block> 格式。</block>
   <block id="b386d04ca3a89226a06701e85f70e33d" category="list-text">成功啟用 Azure Key Vault 後、請輸入<block ref="00c44d3486742ffa7af4a8bfbab4d3d3" prefix=" " category="inline-code"></block> 出現提示時。</block>
+  <block id="055c53a891e1dcea17b9e4c18351c1e5" category="section-title">300 TiB FlexVol Volume 上限</block>
+  <block id="685bad4432f8d3176689b49c31fcdd5f" category="paragraph">現在、您可以使用系統管理員和 ONTAP CLI 、從 Cloud Volumes ONTAP 9.12.1 P2 和 9.13.0 P2 開始、在 BlueXP 中從 Cloud Volumes ONTAP 9.13.1 開始、建立最大至 300 TiB 的 FlexVol Volume 。</block>
+  <block id="6870aed8e6dfc4f093d5b5c6f8a4d81c" category="inline-link-macro">AWS的儲存限制</block>
+  <block id="a842d2e15b1126ce2e0e58e48ea17212" category="list-text"><block ref="a842d2e15b1126ce2e0e58e48ea17212" category="inline-link-macro-rx"></block></block>
+  <block id="e622ddac1a96836929babb5b993749ba" category="inline-link-macro">Azure的儲存限制</block>
+  <block id="37da66fa8b940c6b66bd42740840f9cd" category="list-text"><block ref="37da66fa8b940c6b66bd42740840f9cd" category="inline-link-macro-rx"></block></block>
+  <block id="c73908091fadeb9dec16abab42821644" category="inline-link-macro">Google Cloud的儲存限制</block>
+  <block id="cf7df70a21568dc1f0d90f876bcb89a1" category="list-text"><block ref="cf7df70a21568dc1f0d90f876bcb89a1" category="inline-link-macro-rx"></block></block>
 </blocks>
