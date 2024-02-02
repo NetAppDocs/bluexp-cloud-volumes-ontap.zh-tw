@@ -5225,4 +5225,13 @@
   <block id="b5131f07b7cc2d9ac372dcfc0789c727" category="paragraph">例如、假設您使用 Essentials 授權部署 Cloud Volumes ONTAP 執行個體。接著、您可以配置讀寫磁碟區（主要單一節點）和唯讀（次要單一節點）磁碟區。您的市場合約或私有方案必須包含 _Essentials 單一節點 _ 和 _Essentials 次要單一節點 _ 的容量、以涵蓋已配置的容量。任何不屬於您市場合約或私人優惠的資源配置容量、都會以隨選時數費率（ PAYGO ）收取費用、並將成本加到您的每月帳單中。</block>
   <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp 使用 Microsoft Entra ID 做為身分識別提供者、提供專為支援與授權所設計的驗證服務。</block>
   <block id="976b4993be588a7b52da07c4e96553c3" category="paragraph"><block ref="581f54bac504640f66f842676676be03" category="inline-link-rx"></block> 您必須在部署 Cloud Volumes ONTAP 的 Google Cloud 子網路中停用。啟用封包鏡射時、無法正常運作。Cloud Volumes ONTAP</block>
+  <block id="d4eb5b4412a01c5991086dff8c51a89f" category="section-title">2024 年 2 月 2 日</block>
+  <block id="4b2d018110adbf4819b09a7a28283445" category="section-title">支援 Azure 中的 Edv5 系列 VM</block>
+  <block id="1ecd861cfd41cf61121b433fcb6f7fed" category="paragraph">從 9.14.1 版開始、 Cloud Volumes ONTAP 現在支援下列 Edv5 系列 VM 、並在單一和多個可用性區域中使用共用的託管磁碟。</block>
+  <block id="0ce1565dc58071deb098bde3e5a6a4b6" category="list-text">E4ds_v5</block>
+  <block id="625fbc51242c48d9e17a8b8b2fe6e5c7" category="list-text">E8ds_v5</block>
+  <block id="d6f19e3dc85d5a64809ab696a35a54ab" category="list-text">E20s_v5</block>
+  <block id="708880d509c52585ca0500cd17ef2166" category="list-text">E32ds_v5</block>
+  <block id="843cc0b63b36e79d0bdf4097a1b84b6a" category="list-text">E48ds_v5</block>
+  <block id="6ec5cb856eb24c85cf7368cdfd11627f" category="list-text">E64ds_v5</block>
 </blocks>
