@@ -52,6 +52,22 @@ NOTE: 儲存與網路使用量是以二進位 GB 計算、其中 1GB 為 2^30 �
 
 下列容量型套件可供Cloud Volumes ONTAP 使用。
 
+如需下列容量型套件支援的 VM 類型清單、請參閱：
+
+ifdef::azure[]
+
+* link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure支援的組態"^]
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Google Cloud支援的組態"^]
+
+
+endif::gcp[]
+
 
 
 ==== Freemium
@@ -94,23 +110,6 @@ endif::azure[]
 ifdef::gcp[]
 
 * 可在Google Cloud Marketplace以隨用隨付方案或年度合約形式提供
-
-
-endif::gcp[]
-
-* 支援所選VM類型：
-
-
-ifdef::azure[]
-
-* Azure ： E4s_v3 、 E4ds_v4 、 DS4_v2 、 DS13_v2 、 E8s_v3 、 E8ds_v4 、 E4ds_v5 和 E8ds_v5
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
-* Google Cloud：n2-Standard-4、n2-Standard/8
 
 
 endif::gcp[]

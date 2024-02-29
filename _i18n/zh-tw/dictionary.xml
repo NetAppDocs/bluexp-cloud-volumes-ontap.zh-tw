@@ -3894,8 +3894,6 @@
   <block id="a1299d36f8821164c4414c1a5ab986dd" category="inline-link-macro">支援的預設組態Cloud Volumes ONTAP</block>
   <block id="d4a6e54c4d6405336cdeb07c50490008" category="list-text">您可在Azure Marketplace以隨用隨付方案或年度合約形式取得</block>
   <block id="18daf9881514241d393343911b3c6b0d" category="list-text">可在Google Cloud Marketplace以隨用隨付方案或年度合約形式提供</block>
-  <block id="0fbc0a0fa746d19ef30c136beb33ee6e" category="list-text">支援所選VM類型：</block>
-  <block id="2efd0683ed3ad3ba3a383a25bc466303" category="list-text">Google Cloud：n2-Standard-4、n2-Standard/8</block>
   <block id="3ee54ac340ad12860ef4b993b12b351c" category="summary">在ONTAP 您建立全新Cloud Volumes ONTAP 的支援環境時、BlueXP可讓您從多個不同的支援版本中進行選擇。</block>
   <block id="aa74aee23f6f151917b2bab3bcdb7635" category="doc">支援的新部署版本</block>
   <block id="f97f94b14bab297536041160e29c5828" category="paragraph">新部署不支援所有其他Cloud Volumes ONTAP 的版本。</block>
@@ -5233,5 +5231,7 @@
   <block id="843cc0b63b36e79d0bdf4097a1b84b6a" category="list-text">E48ds_v5</block>
   <block id="6ec5cb856eb24c85cf7368cdfd11627f" category="list-text">E64ds_v5</block>
   <block id="d94bc26a7eea05003dc921a469161911" category="paragraph">Cloud Volumes ONTAP 現在支援從 9.14.1 版開始的下列 Edv5 系列 VM 。</block>
-  <block id="ea2cd969d5e6f95c064e4157ecab0c9e" category="list-text">Azure ： E4s_v3 、 E4ds_v4 、 DS4_v2 、 DS13_v2 、 E8s_v3 、 E8ds_v4 、 E4ds_v5 和 E8ds_v5</block>
+  <block id="7ea0c0fa41faeaaeec6f14b1d795d6fc" category="paragraph">如需下列容量型套件支援的 VM 類型清單、請參閱：</block>
+  <block id="9e931b1cee40a7346d1f06dd6a75ba8e" category="inline-link-macro">Google Cloud支援的組態</block>
+  <block id="d8643ec11a6eaa26d934c76df70f05f3" category="list-text"><block ref="d8643ec11a6eaa26d934c76df70f05f3" category="inline-link-macro-rx"></block></block>
 </blocks>
