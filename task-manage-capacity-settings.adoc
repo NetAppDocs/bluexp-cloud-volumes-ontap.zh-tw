@@ -19,12 +19,12 @@ summary: 新增磁碟、檢視有關集合體的資訊、以及刪除這些磁�
 這些設定會影響Cloud Volumes ONTAP 由Connector管理的所有功能不全系統。如果您有另一個Connector、則可以以不同的方式設定。
 
 .必要權限
-修改Connector設定需要帳戶管理員權限。
+修改 Cloud Volumes ONTAP 設定需要帳戶管理權限。
 
 .步驟
-. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取「*連接器設定*」。
+. 在 BlueXP 主控台的右上角、按一下「設定」圖示、然後選取 * 「 Cloud Volumes ONTAP 設定 * 」。
 +
-image::screenshot_settings_connector_button.png[螢幕擷取畫面設定連接器按鈕]
+image::screenshot-settings-cloud-volumes-ontap.png[Cloud Volumes ONTAP 設定選項的螢幕擷取畫面、位於「設定」圖示下。]
 
 . 在* Capacity *下、修改下列任何設定：
 +

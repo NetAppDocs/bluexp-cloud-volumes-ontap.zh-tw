@@ -35,7 +35,7 @@ summary: 使用Azure Private Link連線至相關儲存帳戶。Cloud Volumes ONT
 連接器應部署在Cloud Volumes ONTAP 其所管理的或所管理的各個系統所在的Azure區域 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure區域配對"^] 適用於整個系統。Cloud Volumes ONTAP
 
 .步驟
-. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取「*連接器設定*」。
+. 在 BlueXP 主控台的右上角、按一下「設定」圖示、然後選取 * 「 Cloud Volumes ONTAP 設定 * 」。
 +
 image:screenshot_settings_icon.png["顯示BlueXP主控台右上角「設定」圖示的快照。"]
 
