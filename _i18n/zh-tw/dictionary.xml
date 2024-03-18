@@ -3168,7 +3168,6 @@
   <block id="68519dd54d9e3922e66ec5b7a67c39e0" category="paragraph">當您建立Cloud Volumes ONTAP 一個運作環境時、使用者介面現在可讓您選擇是否要讓預先定義的安全性群組僅允許所選網路（建議）或所有網路內的流量。</block>
   <block id="2261cc540df38326c53234c3d2d87794" category="inline-image-macro">顯示在工作環境精靈中選取安全性群組時可用之「允許內部流量」選項的快照。</block>
   <block id="662442d32a5fd91298fcf8b6391fdf17" category="section-title">變更充電方法</block>
-  <block id="a117b4a94f6f90aef089573b1f002d26" category="paragraph">您可以變更Cloud Volumes ONTAP 使用容量型授權的一套適用於整個系統的充電方法。例如、如果您部署Cloud Volumes ONTAP 的是含有Essentials套件的功能完善的系統、則當您的業務需求改變時、可以將其變更為Professional套件。</block>
   <block id="3397777d22d2d5f746157ca31f0d8460" category="list-text">在* Cloud Volumes ONTAP 《*》索引標籤上、按一下「*變更充電方法*」。</block>
   <block id="de4b4e176958ea7181911ce715504321" category="list-text">選取工作環境、選擇新的充電方法、然後確認您瞭解變更套件類型將會影響服務費用。</block>
   <block id="b0d246ceb3cd290ace3abd509e982f73" category="inline-image-macro">「變更充電方法」對話方塊的快照、可讓您為Cloud Volumes ONTAP 運作中的環境選擇新的充電方法。</block>
@@ -3222,7 +3221,6 @@
   <block id="2d66a0b2e45838b2ebcec83efd6c765c" category="inline-link">深入瞭解這些授權套件</block>
   <block id="c3c41ceeecb96e561c7ec71ffc1c62fe" category="list-text">*僅限所選vnet*：傳入流量的來源是vnet的子網路範圍、Cloud Volumes ONTAP 以及連接器所在vnet的子網路範圍。這是建議的選項。</block>
   <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">*所有VNet*：傳入流量的來源為0.00.0.0/0 IP範圍。</block>
-  <block id="990da7f1ae0e8fb8294bff04c936ecaa" category="list-text">不支援變更Edge Cache授權。</block>
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">如果您有來自雲端供應商市場的私人優惠或合約、改用未包含在合約中的收費方法、將會導致依BYOL（如果您向NetApp購買授權）或PAYGO收取費用。</block>
   <block id="240bee2f94d72e6a18a1263f971266c2" category="cell">使用叢集管理LIF的IP位址、連線到Connector和HTTPS、存取System Manager Web主控台</block>
   <block id="4f9ff6137bed641431cf4f88c0e37ba0" category="inline-image-macro">概念性影像：Cloud Volumes ONTAP 一套概念性影像、顯示出一套關於功能不整的HA配對及其元件。</block>
@@ -3736,7 +3734,6 @@
   <block id="56fe439ee061f5bc2e940368c1d73fa3" category="section-title">BlueXP不支援Cloud Volumes ONTAP S3搭配使用</block>
   <block id="9832e39264a34e4e40dca8449efd019e" category="section-title">BlueXP不支援儲存VM的災難恢復</block>
   <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">您需要的產品</block>
-  <block id="86f463a1f0f0879749d1274dc94305d9" category="paragraph-title">重要注意事項</block>
   <block id="d01b00b7df0dd6620e8ab49fb88f67b9" category="list-text">*適用於Volume加密的Azure磁碟加密*（適用於多個區域中的單一節點系統或HA配對）</block>
   <block id="d1432d772b2382ef2395e1eed551d5bb" category="paragraph-title">必要的Google Cloud權限</block>
   <block id="675d38d552c49bbf67606b2c5f1d5bed" category="section-title">什麼是Flash Cache？</block>
@@ -5243,4 +5240,9 @@
   <block id="6f0bb9f0803011314813e6aad3d926bf" category="list-text">在 BlueXP 主控台的右上角、按一下 * 設定 * 圖示、然後選取 * Cloud Volumes ONTAP 設定 * 。</block>
   <block id="d4b0cdcc1cd5c09a803de195e4f82296" category="paragraph">修改 Cloud Volumes ONTAP 設定需要帳戶管理權限。</block>
   <block id="13cdcbf94ff7381b25ca5784f874a9b6" category="image-alt">Cloud Volumes ONTAP 設定選項的螢幕擷取畫面、位於「設定」圖示下。</block>
+  <block id="970af11c442d109ac4d016f7c57f63fb" category="paragraph">容量型授權的形式為_package_。建立 Cloud Volumes ONTAP 工作環境時、您可以根據業務需求、從多個授權套件中選擇。如果您在建立工作環境之後需要變更、您可以隨時變更套件。例如、您可以將 Essentials 套件變更為專業版套件。</block>
+  <block id="58dcfad3183b701a8f1b8781a5644d09" category="inline-link">深入瞭解容量型授權套件</block>
+  <block id="8e8751cb9b796773a6b79b4d5c3dc7b2" category="paragraph"><block ref="0205926668933cbb2cb5f56900594078" category="inline-link-rx"></block>。</block>
+  <block id="3e4729f0b91cf008c10b8ab719ea9e99" category="list-text">變更收費方式並不會影響您是透過從 NetApp （ BYOL ）購買的授權或雲端供應商的市場（隨用付費）收取費用。</block>
+  <block id="07456d1e170e8be27eaff1e39e1ccdf6" category="paragraph">BlueXP 一律會先嘗試根據授權收費。如果沒有可用的授權、就會根據市場訂閱收費。BYOL 不需要「轉換」即可訂閱市場、反之亦然。</block>
 </blocks>
