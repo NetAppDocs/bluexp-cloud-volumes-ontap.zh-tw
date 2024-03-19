@@ -20,6 +20,9 @@ _容量型授權_可讓您針對Cloud Volumes ONTAP 每個TiB的容量付費。
 
 _BlueXP 數位錢包 _ 可讓您從單一位置管理 Cloud Volumes ONTAP 的授權。您可以新增授權並更新現有授權。
 
+
+NOTE: 雖然 BlueXP 管理的產品和服務的實際使用量和計量都是以 GiB 和 TiB 計算、但是會交替使用「 GB/GiB 」和「 TB/TiB 」這兩個詞彙。這會反映在 Cloud Marketplace 清單、價格報價、上市說明及其他支援文件中
+
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["深入瞭Cloud Volumes ONTAP 解不知如何取得授權"]。
 
 
