@@ -16,11 +16,13 @@ summary: BlueXP可讓您管理磁碟區和CIFS伺服器。它也會提示您移�
 [role="lead"]
 BlueXP可讓您管理磁碟區和CIFS伺服器。它也會提示您移動磁碟區、以避免發生容量問題。
 
+您可以在 BlueXP 標準檢視或進階檢視中管理磁碟區。「標準檢視」提供一組有限的選項來修改您的磁碟區。進階檢視提供進階管理層級、例如複製、調整大小、變更反勒索軟體的設定、分析、保護和活動追蹤、以及跨階層移動磁碟區。請參閱 link:task-administer-advanced-view.html["使用進階檢視來管理Cloud Volumes ONTAP"]。
+
 
 
 == 管理磁碟區
 
-您可以在儲存需求變更時管理磁碟區。您可以檢視、編輯、複製、還原及刪除磁碟區。
+透過 BlueXP 標準檢視、您可以根據儲存需求來管理磁碟區。您可以檢視、編輯、複製、還原及刪除磁碟區。
 
 .步驟
 . 從左側導覽功能表中、選取*儲存設備> Canvas*。
@@ -131,9 +133,23 @@ NOTE: BlueXP會將磁碟區移至現有的Aggregate、該集合體使用所選�
 
 == 調整磁碟區大小
 
-根據預設、當磁碟區空間不足時、它會自動增加至最大大小。預設值為1、000、表示磁碟區的大小可增加至11倍。此值可在連接器的設定中設定。
+根據預設、當磁碟區空間不足時、它會自動增加至最大大小。預設值為 1 、 000 、這表示磁碟區的大小可增加至 11 倍。此值可在 Connector 的設定中設定。
 
-如果您需要調整磁碟區大小、您可以透過調整磁碟區大小 link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["系統管理程式ONTAP"^]。調整磁碟區大小時、請務必將系統的容量限制列入考量。前往 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["發行說明 Cloud Volumes ONTAP"^] 以取得更多詳細資料。
+如果您需要調整磁碟區大小、可以從 BlueXP 的「進階檢視」進行調整。
+
+.步驟
+. 開啟「進階檢視」、透過 System Manager 調整磁碟區大小。請參閱 link:task-administer-advanced-view.html#how-to-get-started["如何開始使用"]。
+. 從左側導覽功能表中、選取 * 儲存 > 磁碟區 * 。
+. 從磁碟區清單中、找出您應該調整大小的磁碟區。
+. 按一下選項圖示 image:screenshot_gallery_options.gif["kabob圖示"]。
+. 選取 * 調整大小 * 。
+. 在 * 調整 Volume 大小 * 畫面上、視需要編輯容量和 Snapshot 保留百分比。您可以將現有的可用空間與修改後的容量進行比較。
+. 按一下「 * 儲存 * 」。
+
+
+image:screenshot-resize-volume.png["螢幕會在調整磁碟區大小後顯示修改後的容量"]
+
+調整磁碟區大小時、請務必將系統的容量限制列入考量。前往 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["發行說明 Cloud Volumes ONTAP"^] 以取得更多詳細資料。
 
 
 

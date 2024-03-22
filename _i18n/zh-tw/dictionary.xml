@@ -995,7 +995,6 @@
   <block id="f5061de48feb872d5a805e7385702973" category="list-text">藉由壓縮主儲存設備、次儲存設備和歸檔儲存設備上磁碟區內的資料、來減少儲存資料所需的實體容量。</block>
   <block id="9038e7cfcfe9bb9df9afd31371070be8" category="doc">管理現有磁碟區</block>
   <block id="e2439a8512b353f75391ba9c346bc84d" category="section-title">管理磁碟區</block>
-  <block id="78b58016122bb23db763832d3df72599" category="paragraph">您可以在儲存需求變更時管理磁碟區。您可以檢視、編輯、複製、還原及刪除磁碟區。</block>
   <block id="ad125360a406d7d2d9b4c68551674284" category="list-text">在「畫版」頁面上、按兩下 Cloud Volumes ONTAP 您要管理磁碟區的「功能區」工作環境。</block>
   <block id="289d57ca7886b8016f08f4d17ad68a55" category="cell">檢視磁碟區的相關資訊</block>
   <block id="fa66a5498542b41c797489000210e5cb" category="cell">編輯磁碟區（僅限讀寫磁碟區）</block>
@@ -1019,8 +1018,6 @@
   <block id="150cd3111dfd7ae68aaeb429e7e50847" category="list-text">選取磁碟區、然後按一下 * 刪除 * 。</block>
   <block id="a87e9e2d6f69725c3669d99fad70371d" category="list-text">再按一下 * 刪除 * 以確認。</block>
   <block id="f003f3d16df55f060f81ad4dddd2fbf9" category="section-title">調整磁碟區大小</block>
-  <block id="983731c4568a7ed436142da8a63f9442" category="paragraph">根據預設、當磁碟區空間不足時、它會自動增加至最大大小。預設值為1、000、表示磁碟區的大小可增加至11倍。此值可在連接器的設定中設定。</block>
-  <block id="6ad5e0a20f49ad6a370454bb3afc9a9e" category="inline-link">系統管理程式ONTAP</block>
   <block id="6b851ed63a549d28a80d2c974afcec80" category="section-title">修改CIFS伺服器</block>
   <block id="fd549a6bcd2d53b8accb49a7225fcfa0" category="paragraph">如果您變更 DNS 伺服器或 Active Directory 網域、您需要在 Cloud Volumes ONTAP 更新版中修改 CIFS 伺服器、以便繼續將儲存設備提供給用戶端。</block>
   <block id="47839a059e385e1317a08bc188364e78" category="list-text">指定 CIFS 伺服器的設定：</block>
@@ -2841,7 +2838,6 @@
   <block id="652f5bb57cb09b4930d22c8b8241e77c" category="summary">利用此功能、您可以執行所有的管理命令、這是進階工作或使用CLI時的最佳選擇。Cloud Volumes ONTAP您可以使用SSH連線至CLI。</block>
   <block id="f92c0062f5f51f34505c72b0a5c9b3be" category="doc">從Cloud Volumes ONTAP CLI管理</block>
   <block id="eb548256fe08b2a0e5f541bc56282edf" category="doc">使用進階檢視來管理Cloud Volumes ONTAP</block>
-  <block id="74593b49f99b6e21d38ca3d969b213f3" category="paragraph">此「進階檢視」可作為預覽使用。我們計畫改善這項體驗、並在即將推出的版本中加入增強功能。請使用產品內建聊天功能、向我們傳送意見反應。</block>
   <block id="f3c3ee89c80d32726f5f937c07631d1c" category="list-text">進階儲存管理</block>
   <block id="81988711ef6c9af40c8e8973f25c0bed" category="paragraph">管理一致性群組、共用區、qtree、配額和儲存VM。</block>
   <block id="62735a856683757bf28f1f02f97c151c" category="list-text">網路管理</block>
@@ -4046,7 +4042,6 @@
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在「*資源*」頁面上、選擇「技術支援」下的其中一個可用選項：</block>
   <block id="5db69347f06a9f63ed1f4c90e8b874e5" category="inline-link-macro">瞭解S3多重傳輸協定的運作方式</block>
   <block id="e48cc3153e7d667d87986f8e162ea872" category="paragraph"><block ref="8674fe872330e1769235c43fb746c3f7" category="inline-link-macro-rx"></block>。<block ref="5b24747aa1a4fd51dbcea213f97833c7" category="inline-link-macro-rx"></block>。</block>
-  <block id="80f73203717d2460e95dcb08c0b8c6a2" category="paragraph">如果您需要調整磁碟區大小、您可以透過調整磁碟區大小 <block ref="03bbffa71060830678a71c986c6c0e67" category="inline-link-macro-rx"></block>。調整磁碟區大小時、請務必將系統的容量限制列入考量。前往<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 以取得更多詳細資料。</block>
   <block id="2ff4be1dced06cb9c588fc9e6efd1009" category="cell">提供 CIFS 伺服器名稱解析的 DNS 伺服器 IP 位址。列出的 DNS 伺服器必須包含所需的服務位置記錄（ SRV), 才能找到 CIFS 伺服器要加入之網域的 Active Directory LDAP 伺服器和網域控制器。ifdef：：GCP[]如果您正在設定Google Managed Active Directory、則AD預設可透過169.254.169.254 IP位址存取。endif::GCP[]</block>
   <block id="0031307525b9c7232536c8489912acba" category="list-text">若要將Azure AD網域服務設定為Cloud Volumes ONTAP AD伺服器以供使用、請在此欄位中輸入* OID=AADDC computers*或* OID=AADDC使用者*。<block ref="6cfd09a964ae125f104125f00208f340" category="inline-link-macro-rx"></block></block>
   <block id="8c69b575c72fa1fcd5f27c44ebda605c" category="list-text">若要將Google託管Microsoft AD設定為Cloud Volumes ONTAP AD伺服器以供使用、請在此欄位中輸入* OU=computers,OU=Cloud *。<block ref="1b7ab571d5a2f9c86fda846ee11b6c13" category="inline-link-macro-rx"></block></block>
@@ -5248,4 +5243,18 @@
   <block id="ce46ac36501bd1de8616d715ef7ee1c2" category="paragraph"><block ref="ce46ac36501bd1de8616d715ef7ee1c2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3e509b6c896c67a8b8ec2afa8f3aa8eb" category="admonition">如需如何取得授權檔案的詳細資訊、請參閱<block ref="c65aa3342130b0295e06cd938a12ad5e" category="inline-link-rx"></block>。</block>
   <block id="6b5c2460f150173d3723de8a857a4d33" category="paragraph"><block ref="179c8a3ed717f2c4de3149f0e9edf685" category="inline-link-rx"></block>。</block>
+  <block id="61f0796ced324a7d0b1f387e74f545a7" category="paragraph">您可以在 BlueXP 標準檢視或進階檢視中管理磁碟區。「標準檢視」提供一組有限的選項來修改您的磁碟區。進階檢視提供進階管理層級、例如複製、調整大小、變更反勒索軟體的設定、分析、保護和活動追蹤、以及跨階層移動磁碟區。請參閱 <block ref="76b22e8ed647224335daed95530df604" category="inline-link-macro-rx"></block>。</block>
+  <block id="632ac3f99447a16bd75e4d1a0b8b691e" category="paragraph">透過 BlueXP 標準檢視、您可以根據儲存需求來管理磁碟區。您可以檢視、編輯、複製、還原及刪除磁碟區。</block>
+  <block id="5f9f6fee108a1a2e24bfa11e0350dbed" category="paragraph">根據預設、當磁碟區空間不足時、它會自動增加至最大大小。預設值為 1 、 000 、這表示磁碟區的大小可增加至 11 倍。此值可在 Connector 的設定中設定。</block>
+  <block id="d83032202b952a29eb304290049be8f3" category="paragraph">如果您需要調整磁碟區大小、可以從 BlueXP 的「進階檢視」進行調整。</block>
+  <block id="b5101115b0cf1c430920e0b83ef354c6" category="list-text">開啟「進階檢視」、透過 System Manager 調整磁碟區大小。請參閱 <block ref="1bf7174b0a06a67edc83de5c18b2bf58" category="inline-link-macro-rx"></block>。</block>
+  <block id="a6bfbc7160bd5efb8fda7e791efd9e47" category="list-text">從左側導覽功能表中、選取 * 儲存 &gt; 磁碟區 * 。</block>
+  <block id="d875eee3d594951433259f6da1cc1729" category="list-text">從磁碟區清單中、找出您應該調整大小的磁碟區。</block>
+  <block id="52c148109936ec0cc34f1b38fb262428" category="inline-image-macro">kabob圖示</block>
+  <block id="10261f98990e70ba53ecbcb1e0119090" category="list-text">按一下選項圖示 <block ref="ac91b27a7720c4844510cacb9be7afe5" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="782635f18c9a4c6e77f10be3b478b27a" category="list-text">選取 * 調整大小 * 。</block>
+  <block id="4812655c0b87865bcb417f79c8eccc6c" category="list-text">在 * 調整 Volume 大小 * 畫面上、視需要編輯容量和 Snapshot 保留百分比。您可以將現有的可用空間與修改後的容量進行比較。</block>
+  <block id="239d4539cd51c06a2b10a7f62d000f71" category="inline-image-macro">螢幕會在調整磁碟區大小後顯示修改後的容量</block>
+  <block id="b819ad9e0e6bb0675a6052fe63ec61dc" category="paragraph"><block ref="b819ad9e0e6bb0675a6052fe63ec61dc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bcbb72cb4f456c876a454b11cbf5cdaf" category="paragraph">調整磁碟區大小時、請務必將系統的容量限制列入考量。前往<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 以取得更多詳細資料。</block>
 </blocks>
