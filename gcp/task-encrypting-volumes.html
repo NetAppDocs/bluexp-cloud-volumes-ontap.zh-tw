@@ -1,0 +1,2497 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head class="at-element-marker">
+  <title>使用 NetApp 加密解決方案加密磁碟區 | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="使用 NetApp 加密解決方案加密磁碟區 | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-tw/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html" />
+	<meta property="og:description" content="支援 NetApp Volume Encryption （ NVE ）和 NetApp Aggregate Encryption （ NAE ）與外部金鑰管理程式。 Cloud Volumes ONTAP如果您設定外部金鑰管理程式、則預設會啟用 NVE 和 NAE 。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-tw/bluexp-cloud-volumes-ontap/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="支援 NetApp Volume Encryption （ NVE ）和 NetApp Aggregate Encryption （ NAE ）與外部金鑰管理程式。 Cloud Volumes ONTAP如果您設定外部金鑰管理程式、則預設會啟用 NVE 和 NAE 。">
+  <meta name="keywords" content=" encrypt, encryption, data, volumes, netapp volume encryption, volume encryption, nve, key managers, kmip, key management servers, license, ssl certificates, nae, netapp aggregate encryption"><!-- Icons -->
+  <link rel="icon" href="/zh-tw/bluexp-cloud-volumes-ontap/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/zh-tw/bluexp-cloud-volumes-ontap/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/bluexp-cloud-volumes-ontap/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/zh-tw/bluexp-cloud-volumes-ontap/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-tw/bluexp-cloud-volumes-ontap/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/zh-tw/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-tw/bluexp-cloud-volumes-ontap/js/na-search.js'></script><script src='/zh-tw/bluexp-cloud-volumes-ontap/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/zh-tw/bluexp-cloud-volumes-ontap/js/custom-dropdown.js'></script>
+  <script src='/zh-tw/bluexp-cloud-volumes-ontap/js/FileSaver.min.js'></script>
+  <script src='/zh-tw/bluexp-cloud-volumes-ontap/js/jszip-utils.min.js'></script>
+  <script src='/zh-tw/bluexp-cloud-volumes-ontap/js/jszip.min.js'></script><script src='/zh-tw/bluexp-cloud-volumes-ontap/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="gcp">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/zh-tw/bluexp-cloud-volumes-ontap/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/tw">
+                <image id="ie-header-logo" src="/zh-tw/bluexp-cloud-volumes-ontap/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">文件</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">繁體中文</span>
+                    <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">所有 NetApp</span>
+                    <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">支援</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">知識庫</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">訓練</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/zh-tw/bluexp-cloud-volumes-ontap/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">所有文件</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">雲端文件</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/zh-tw/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/zh-tw/bluexp-cloud-volumes-ontap/">-->
+      Cloud Volumes ONTAP
+    <!--</a>-->
+  </div>
+</div>
+
+            
+<div id="ie-selectors">
+<div id="flavor-dropdown" class="custom-dropdown" data-url="/zh-tw/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html">
+  
+  
+  <div class="custom-dropdown-select selected" title="Google Cloud">
+    <label>雲端供應商</label>
+    <div>Google Cloud</div>  
+    <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown flavor invisible" />
+    <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup flavor" />
+    <!--<img src="/zh-tw/bluexp-cloud-volumes-ontap/images/dismiss.svg" class="custom-icon selected" id="remove-flavor" alt="" />-->
+  </div>
+  
+
+  <ul class="custom-dropdown-menu">
+    
+    
+    <li data-value="aws" data-url="/zh-tw/bluexp-cloud-volumes-ontap/aws/task-encrypting-volumes.html">Amazon Web Services
+    </li>
+    
+    
+    
+    <li data-value="gcp" data-url="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-encrypting-volumes.html">Google Cloud
+    </li>
+    
+    
+    
+    <li data-value="azure" data-url="/zh-tw/bluexp-cloud-volumes-ontap/azure/task-encrypting-volumes.html">Microsoft Azure
+    </li>
+    
+    
+    <li data-url="/zh-tw/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html">所有雲端供應商</li>
+  </ul>
+</div>
+</div>
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/zh-tw/bluexp-cloud-volumes-ontap/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/zh-tw/bluexp-cloud-volumes-ontap/gcp/search.html" 
+        data-type="widget"
+        data-placeholder="搜尋說明文件"
+        data-no-results-found="找不到 {query} 的結果"
+        data-did-you-mean="搜尋 {suggestion}。"
+        data-no-results-found-did-you-mean="找不到 {query} 的結果。您的意思是 {suggestion} 嗎？"
+        data-results-found="找到 {hitCount} 個結果"
+        data-error-message="發生錯誤。請再試一次。"
+        data-error-reset="重設搜尋"
+        data-sk-es-pf-indexes="" 
+        data-flavor="gcp">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="文件Cloud Volumes ONTAP"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/index.html">
+        文件Cloud Volumes ONTAP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="版本資訊"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 版本資訊</div>-->
+         版本資訊
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="新增功能"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/whats-new.html">
+        新增功能
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="已知限制"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/reference-limitations.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/reference-limitations.html">
+        已知限制
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="發行說明 Cloud Volumes ONTAP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/whats-new-ontap.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/whats-new-ontap.html">
+        發行說明 Cloud Volumes ONTAP
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="開始使用"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 開始使用</div>-->
+         開始使用
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="深入瞭解 Cloud Volumes ONTAP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/concept-overview-cvo.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/concept-overview-cvo.html">
+        深入瞭解 Cloud Volumes ONTAP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="支援的新部署版本"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/reference-versions.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/reference-versions.html">
+        支援的新部署版本
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="開始使用Google Cloud"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 開始使用Google Cloud</div>-->
+         開始使用Google Cloud
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="快速入門"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-getting-started-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-getting-started-gcp.html">
+        快速入門
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="規劃您的組態"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-planning-your-config-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-planning-your-config-gcp.html">
+        規劃您的組態
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定您的網路"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/reference-networking-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/reference-networking-gcp.html">
+        設定您的網路
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="規劃VPC服務控制"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/reference-vpc-service-controls-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/reference-vpc-service-controls-gcp.html">
+        規劃VPC服務控制
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="建立服務帳戶"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-creating-gcp-service-account.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-creating-gcp-service-account.html">
+        建立服務帳戶
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用客戶管理的加密金鑰"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-setting-up-gcp-encryption.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-setting-up-gcp-encryption.html">
+        使用客戶管理的加密金鑰
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定授權"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-set-up-licensing-google.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-set-up-licensing-google.html">
+        設定授權
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="在Cloud Volumes ONTAP Google Cloud上啟動"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-deploying-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-deploying-gcp.html">
+        在Cloud Volumes ONTAP Google Cloud上啟動
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud Platform映像驗證"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Google Cloud Platform映像驗證</div>-->
+         Google Cloud Platform映像驗證
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="總覽"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/concept-gcp-image-verification.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/concept-gcp-image-verification.html">
+        總覽
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="將GCP上的映像轉換成原始格式"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-gcp-convert-image-raw.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-gcp-convert-image-raw.html">
+        將GCP上的映像轉換成原始格式
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="影像簽名驗證"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 影像簽名驗證</div>-->
+         影像簽名驗證
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="驗證GCP簽署映像"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/concept-gcp-verify-signed-image.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/concept-gcp-verify-signed-image.html">
+        驗證GCP簽署映像
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用OpenSSL驗證內容"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-verify-openssl-gcp.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-verify-openssl-gcp.html">
+        使用OpenSSL驗證內容
+      </a></li></ul></li></ul></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用Cloud Volumes ONTAP"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 使用Cloud Volumes ONTAP</div>-->
+         使用Cloud Volumes ONTAP
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="授權管理"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 授權管理</div>-->
+         授權管理
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理容量型授權"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-manage-capacity-licenses.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-manage-capacity-licenses.html">
+        管理容量型授權
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理 Keystone 訂閱"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-manage-keystone.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-manage-keystone.html">
+        管理 Keystone 訂閱
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理節點型授權"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-manage-node-licenses.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-manage-node-licenses.html">
+        管理節點型授權
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Volume與LUN管理"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Volume與LUN管理</div>-->
+         Volume與LUN管理
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="建立磁碟區"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-create-volumes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-create-volumes.html">
+        建立磁碟區
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理現有磁碟區"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-manage-volumes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-manage-volumes.html">
+        管理現有磁碟區
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="將非作用中資料分層至物件儲存設備"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-tiering.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-tiering.html">
+        將非作用中資料分層至物件儲存設備
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="將LUN連接至主機"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-connect-lun.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-connect-lun.html">
+        將LUN連接至主機
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="利用NetApp加速資料存取FlexCache"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-accelerate-data-access.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-accelerate-data-access.html">
+        利用NetApp加速資料存取FlexCache
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Aggregate管理"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Aggregate管理</div>-->
+         Aggregate管理
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="建立Aggregate"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-create-aggregates.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-create-aggregates.html">
+        建立Aggregate
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理現有的集合體"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-manage-aggregates.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-manage-aggregates.html">
+        管理現有的集合體
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理容量設定"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-manage-capacity-settings.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-manage-capacity-settings.html">
+        管理容量設定
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="儲存VM管理"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 儲存VM管理</div>-->
+         儲存VM管理
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="在BlueXP中使用儲存VM"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-managing-svms.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-managing-svms.html">
+        在BlueXP中使用儲存VM
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="在Google Cloud中建立儲存VM"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-managing-svms-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-managing-svms-gcp.html">
+        在Google Cloud中建立儲存VM
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定 SVM 災難恢復"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-manage-svm-dr.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-manage-svm-dr.html">
+        設定 SVM 災難恢復
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安全性與資料加密"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 安全性與資料加密</div>-->
+         安全性與資料加密
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用 NetApp 加密來加密磁碟區"
+      data-li-level="3#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-encrypting-volumes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-encrypting-volumes.html">
+        使用 NetApp 加密來加密磁碟區
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="利用Google Cloud KMS管理金鑰"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-google-key-manager.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-google-key-manager.html">
+        利用Google Cloud KMS管理金鑰
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="改善勒索軟體保護"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-protecting-ransomware.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-protecting-ransomware.html">
+        改善勒索軟體保護
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="系統管理"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 系統管理</div>-->
+         系統管理
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="升級Cloud Volumes ONTAP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-updating-ontap-cloud.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-updating-ontap-cloud.html">
+        升級Cloud Volumes ONTAP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="註冊隨用隨付系統"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-registering.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-registering.html">
+        註冊隨用隨付系統
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="停止並啟動系統"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-managing-state.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-managing-state.html">
+        停止並啟動系統
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="同步系統時間"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-sync-time.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-sync-time.html">
+        同步系統時間
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="修改系統寫入速度"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-modify-write-speed.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-modify-write-speed.html">
+        修改系統寫入速度
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="變更系統密碼"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-change-password.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-change-password.html">
+        變更系統密碼
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="新增、移除或刪除系統"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 新增、移除或刪除系統</div>-->
+         新增、移除或刪除系統
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="新增現有系統"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-adding-systems.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-adding-systems.html">
+        新增現有系統
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="移除工作環境"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-removing.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-removing.html">
+        移除工作環境
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="刪除系統"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-deleting-working-env.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-deleting-working-env.html">
+        刪除系統
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud管理"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Google Cloud管理</div>-->
+         Google Cloud管理
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="變更機器類型"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-change-gcp-machine.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-change-gcp-machine.html">
+        變更機器類型
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="系統管理員的系統管理"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-administer-advanced-view.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-administer-advanced-view.html">
+        系統管理員的系統管理
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="從CLI進行管理"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-connecting-to-otc.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-connecting-to-otc.html">
+        從CLI進行管理
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="系統健全狀況與事件"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 系統健全狀況與事件</div>-->
+         系統健全狀況與事件
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="驗AutoSupport 證此設定"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-verify-autosupport.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-verify-autosupport.html">
+        驗AutoSupport 證此設定
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定EMS"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-configure-ems.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-configure-ems.html">
+        設定EMS
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="概念"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 概念</div>-->
+         概念
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="授權"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/concept-licensing.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/concept-licensing.html">
+        授權
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="儲存設備"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 儲存設備</div>-->
+         儲存設備
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="用戶端傳輸協定"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/concept-client-protocols.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/concept-client-protocols.html">
+        用戶端傳輸協定
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="磁碟與集合體"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/concept-storage.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/concept-storage.html">
+        磁碟與集合體
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="資料分層"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/concept-data-tiering.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/concept-data-tiering.html">
+        資料分層
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="儲存管理"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/concept-storage-management.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/concept-storage-management.html">
+        儲存管理
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="寫入速度"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/concept-write-speed.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/concept-write-speed.html">
+        寫入速度
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Flash 快取"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/concept-flash-cache.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/concept-flash-cache.html">
+        Flash 快取
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="WORM 儲存設備"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/concept-worm.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/concept-worm.html">
+        WORM 儲存設備
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="高可用度配對"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 高可用度配對</div>-->
+         高可用度配對
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="GCP 中的 HA 配對"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/concept-ha-google-cloud.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/concept-ha-google-cloud.html">
+        GCP 中的 HA 配對
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="儲存設備接管期間的行動"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/concept-degraded-ha-pair.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/concept-degraded-ha-pair.html">
+        儲存設備接管期間的行動
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安全性"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/concept-security.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/concept-security.html">
+        安全性
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="效能"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/concept-performance.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/concept-performance.html">
+        效能
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理節點型BYOL"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/concept-license-management.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/concept-license-management.html">
+        管理節點型BYOL
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="不再是不知道的數位顧問AutoSupport Active IQ"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/concept-active-iq.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/concept-active-iq.html">
+        不再是不知道的數位顧問AutoSupport Active IQ
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="預設組態"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/reference-default-configs.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/reference-default-configs.html">
+        預設組態
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="知識與支援"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 知識與支援</div>-->
+         知識與支援
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="註冊以取得支援"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-support-registration.html">
+        註冊以取得支援
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="取得協助"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/task-get-help.html">
+        取得協助
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="法律聲明"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-encrypting-volumes.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/bluexp-cloud-volumes-ontap/gcp/legal-notices.html">
+        法律聲明
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/zh-tw/bluexp-cloud-volumes-ontap"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/zh-tw/bluexp-cloud-volumes-ontap"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 本繁體中文版使用機器翻譯，譯文僅供參考，若與英文版本牴觸，應以英文版本為準。 </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">使用 NetApp 加密解決方案加密磁碟區</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2023-12-13 19:30:34 +0000">12/13/2023</time>
+        
+    
+    
+        <span>貢獻者
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/zh-tw/bluexp-cloud-volumes-ontap/images/discuss-sm.svg" alt="" class="github-icon" />建議變更</span>
+        <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-cloud-volumes-ontap.zh-tw/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/zh-tw/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html&page-title=使用 NetApp 加密解決方案加密磁碟區" class="page-nav-contribute-link" role="button">請求文件變更</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-cloud-volumes-ontap/blob/main/task-encrypting-volumes.adoc" class="page-nav-contribute-link" role="button">編輯本頁</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >瞭解如何貢獻</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/zh-tw/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/fullsite-sidebar/本文檔Cloud_Volumes_ONTAP.pdf" >
+                    <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>此文件 PDF 的網站</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/版本資訊.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            版本資訊
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/開始使用.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            開始使用
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/Amazon_Web_Services入門.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Amazon Web Services入門
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/設定您的網路.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            設定您的網路
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/開始使用Microsoft_Azure.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            開始使用Microsoft Azure
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/開始使用Google_Cloud.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            開始使用Google Cloud
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/Google_Cloud_Platform映像驗證.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud Platform映像驗證
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/影像簽名驗證.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            影像簽名驗證
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/使用Cloud_Volumes_ONTAP.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            使用Cloud Volumes ONTAP
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/授權管理.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            授權管理
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/Volume與LUN管理.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Volume與LUN管理
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/Aggregate管理.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Aggregate管理
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/儲存VM管理.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            儲存VM管理
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/安全性與資料加密.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            安全性與資料加密
+          </a>
+          
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/系統管理.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            系統管理
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/新增_移除或刪除系統.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            新增、移除或刪除系統
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/AWS管理.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            AWS管理
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/Azure管理.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Azure管理
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/Google_Cloud管理.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud管理
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/系統健全狀況與事件.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            系統健全狀況與事件
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/概念.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            概念
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/儲存設備.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            儲存設備
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/高可用度配對.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            高可用度配對
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-cloud-volumes-ontap/pdfs/gcp/sidebar/知識與支援.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            知識與支援
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>個別的 PDF 文件集合<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div class="paragraph lead">
+<p>支援NetApp Volume Encryption（NVE）和NetApp Aggregate Encryption（NAE）Cloud Volumes ONTAP 。NVE和NAE是軟體型解決方案、可啟用FIPS 140-2標準的磁碟區閒置資料加密功能。 <a href="concept-security.html">"深入瞭解這些加密解決方案"</a>。</p>
+</div>
+<div class="paragraph">
+<p>外部金鑰管理程式支援NVE和NAE。</p>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/zh-tw/bluexp-cloud-volumes-ontap/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/zh-tw/bluexp-cloud-volumes-ontap/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">在本頁</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">使用條款</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">隱私權政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie 政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">傳送有關本網頁的意見反應</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-tw/bluexp-cloud-volumes-ontap/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-tw/bluexp-cloud-volumes-ontap/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-tw/bluexp-cloud-volumes-ontap/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-tw/bluexp-cloud-volumes-ontap/js/ie-tabbed-blocks.js'></script>
+    <script src='/zh-tw/bluexp-cloud-volumes-ontap/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
