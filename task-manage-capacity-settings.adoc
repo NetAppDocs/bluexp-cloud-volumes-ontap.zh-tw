@@ -34,12 +34,15 @@ image::screenshot-settings-cloud-volumes-ontap.png[Cloud Volumes ONTAP 設定選
 link:concept-storage-management.html#capacity-management["瞭解容量管理模式的運作方式"]。
 
 --
-Aggregate Capacity 臨界值 - 可用空間比率:: 當Aggregate上的可用空間比率低於指定臨界值時觸發通知。
+Aggregate Capacity 臨界值 - 可用空間比率:: 此比率是容量管理決策的關鍵參數、無論您是處於自動或手動的容量管理模式、瞭解其影響都是不可或缺的。建議您根據您的特定儲存需求和預期成長來設定此臨界值、以在資源使用率和成本之間維持平衡。
 +
 --
-可用空間比率的計算方式如下：
+在手動模式中、如果集合體上的可用空間比率降至低於指定臨界值、就會觸發通知、提醒您應採取行動來解決可用空間比率過低的問題。請務必監控這些通知、並手動管理彙總容量、以避免服務中斷並確保最佳效能。
 
+可用空間比率的計算方式如下：
 （Aggregate capcap處理 能力- Aggregate上的總使用容量）/ Aggregate cap處理 能力
+
+請參閱 link:concept-storage-management.html#automatic-capacity-management["自動容量管理"] 若要立即瞭解、容量會自動在 Cloud Volumes ONTAP 中管理。
 
 --
 Aggregate Capacity 臨界值 - 資料分層的可用空間比率:: 定義將資料分層至容量層（物件儲存）時、效能層（磁碟）需要多少可用空間。

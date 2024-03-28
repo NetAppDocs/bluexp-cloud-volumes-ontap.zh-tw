@@ -2581,7 +2581,6 @@
   <block id="2986f3edb85e34a7556b412028be57fb" category="paragraph">沒有執行個體或容量限制。您可以任意部署Cloud Volumes ONTAP 多個不需付費的功能、並視需要配置多餘的容量、30天內即可免費部署。免費試用版會在30天後自動轉換為付費的每小時訂閱。</block>
   <block id="631556a144b10d5d5f19603b18176e32" category="paragraph">雖然不收取Cloud Volumes ONTAP 每小時的軟體授權費用、但您的雲端供應商仍需支付基礎架構費用。</block>
   <block id="6c30ec25f9c157f6acd5cb63a6abee29" category="list-text">其中一個集合體使用舊的物件命名配置。兩個 Aggregate 都必須使用相同的名稱格式。</block>
-  <block id="ea17490349895c296964a806a4f6a8d1" category="paragraph">請注意、可用空間現在可在原始 Aggregate 上使用。現有磁碟區或新磁碟區可以使用該空間。在此案例中、無法將空間傳回雲端產品。</block>
   <block id="181e3299a212253d089ee23c58a37a10" category="list-text">Essentials套件與專業版套件現已在所有雲端供應商的市場中推出。</block>
   <block id="e399fe858ae4c467e1c830b512b1718c" category="list-text">所有雲端供應商市場的個別節點授權已過時、不再適用於新訂閱者。這包括年度合約和每小時訂閱（Explore、Standard和Premium）。</block>
   <block id="73af9e90d6d077cf277e49f829259963" category="section-title">支援其他Azure VM類型</block>
@@ -3022,9 +3021,6 @@
   <block id="03c93da41831d72dcea5fc724b2b4658" category="list-text">在* Capacity *下、修改下列任何設定：</block>
   <block id="af1f64d74440547a71a0dfdd077d8a15" category="inline-link-macro">瞭解容量管理模式的運作方式</block>
   <block id="46e6171a2e84c75269ac8bcb3c5004d8" category="paragraph"><block ref="f8a3c55f9fa8638c083e126aaf830b07" category="inline-link-macro-rx"></block>。</block>
-  <block id="314b05c3387324c9621b3b3cd58816d4" category="list-text">當Aggregate上的可用空間比率低於指定臨界值時觸發通知。</block>
-  <block id="a27b16792f86cfcc4c0f28d5d58e43f4" category="paragraph">可用空間比率的計算方式如下：</block>
-  <block id="b9fbc310908f08e909d0f601f964b6d5" category="paragraph">（Aggregate capcap處理 能力- Aggregate上的總使用容量）/ Aggregate cap處理 能力</block>
   <block id="0bc3c683bdb3389ca9d8d2211fce0878" category="list-text">定義將資料分層至容量層（物件儲存）時、效能層（磁碟）需要多少可用空間。</block>
   <block id="3e230a58ba269a917d314abcc623818e" category="paragraph">這種比率對於災難恢復方案非常重要。從容量層讀取資料時Cloud Volumes ONTAP 、將資料移至效能層、以提供更好的效能。如果空間不足、Cloud Volumes ONTAP 則無法移動資料。</block>
   <block id="99a583bf10de030bdac538c8b15f5b45" category="paragraph">此行為由連接器上的_Capacity Management Mode_決定。容量管理模式會影響Cloud Volumes ONTAP 由該Connector管理的所有不完整系統。如果您有另一個Connector、則可以以不同的方式設定。</block>
@@ -3423,11 +3419,7 @@
   <block id="0324104f71311abe508e504d778bc57c" category="paragraph">例如、BlueXP可能會選擇下列磁碟大小：</block>
   <block id="d4a9c8ba8bf84d6db4571dbd344dcbaf" category="paragraph">您可以自行管理Aggregate、而非讓BlueXP為您管理Aggregate。 <block ref="2414ef63108c7ecff38292e17ac61802" category="inline-link-macro-rx"></block>、您可以建立新的集合體、包括特定數量的磁碟、新增磁碟至現有的集合體、以及在特定的集合體中建立磁碟區。</block>
   <block id="6c79cf02eee66f58213ada5570b62345" category="paragraph">客戶管理員可以選擇是否要由BlueXP通知您儲存容量決策、或是由BlueXP自動管理您的容量需求。</block>
-  <block id="31748071ef0ac7523fb5016c8403ccb1" category="paragraph">容量管理模式預設為自動。在此模式中、當Cloud Volumes ONTAP 需要更多容量時、BlueXP會自動購買新的磁碟以供執行個體使用、刪除未使用的磁碟集合（Aggregate）、視需要在Aggregate之間移動磁碟區、以及嘗試取消故障磁碟。</block>
   <block id="285c2353d7e4311eda264e18d4088019" category="list-text">如果某個Aggregate達到容量臨界值、而且有空間容納更多磁碟、則BlueXP會自動為該Aggregate購買新的磁碟、讓磁碟區持續成長。</block>
-  <block id="299ae1a44a6e0d4621ce06dd61d33997" category="paragraph">BlueXP每15分鐘檢查一次可用空間比率、以判斷是否需要購買額外的磁碟。</block>
-  <block id="8dae36b62c1431be15fd76d673a4c132" category="list-text">如果Aggregate達到容量臨界值、但無法支援任何其他磁碟、則BlueXP會自動將磁碟區從該Aggregate移至具有可用容量的Aggregate、或移至新的Aggregate。</block>
-  <block id="2fe7b16790072005d08a88ee39c34588" category="paragraph">如果BlueXP為磁碟區建立新的Aggregate、則會選擇適合該磁碟區大小的磁碟大小。</block>
   <block id="64705a9631169f2d9e4b9999578694d2" category="list-text">如果Aggregate不包含超過12小時的磁碟區、則BlueXP會將其刪除。</block>
   <block id="972fa623b0e87f35c9ebd90cd251cc2c" category="paragraph">如果帳戶管理員將容量管理模式設為手動、則必須決定容量時、BlueXP會顯示必要行動訊息。自動模式中所述的相同範例適用於手動模式、但您必須接受這些動作。</block>
   <block id="19d775edcaac93a63ae82c037f339d34" category="paragraph">當您建立Cloud Volumes ONTAP 一個運作環境時、BlueXP會提示您訂閱Azure Marketplace提供的合約。該訂閱之後會與工作環境建立關聯、以便進行充電。您可以在其他工作環境中使用相同的訂閱。</block>
@@ -5257,4 +5249,17 @@
   <block id="239d4539cd51c06a2b10a7f62d000f71" category="inline-image-macro">螢幕會在調整磁碟區大小後顯示修改後的容量</block>
   <block id="b819ad9e0e6bb0675a6052fe63ec61dc" category="paragraph"><block ref="b819ad9e0e6bb0675a6052fe63ec61dc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bcbb72cb4f456c876a454b11cbf5cdaf" category="paragraph">調整磁碟區大小時、請務必將系統的容量限制列入考量。前往<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 以取得更多詳細資料。</block>
+  <block id="399201ba872f71746b096bfe0d58a764" category="list-text">此比率是容量管理決策的關鍵參數、無論您是處於自動或手動的容量管理模式、瞭解其影響都是不可或缺的。建議您根據您的特定儲存需求和預期成長來設定此臨界值、以在資源使用率和成本之間維持平衡。</block>
+  <block id="93f4bd32a6e537cd1ab17baa3d621ac4" category="paragraph">在手動模式中、如果集合體上的可用空間比率降至低於指定臨界值、就會觸發通知、提醒您應採取行動來解決可用空間比率過低的問題。請務必監控這些通知、並手動管理彙總容量、以避免服務中斷並確保最佳效能。</block>
+  <block id="ac058d48498674f54471806ec9e42567" category="paragraph">可用空間比率的計算方式如下：
+（Aggregate capcap處理 能力- Aggregate上的總使用容量）/ Aggregate cap處理 能力</block>
+  <block id="65d315c33e8fd2f0f7a6e3356d5f2d73" category="paragraph">請參閱 <block ref="23da02e053be6485f9a66477404bdb14" category="inline-link-macro-rx"></block> 若要立即瞭解、容量會自動在 Cloud Volumes ONTAP 中管理。</block>
+  <block id="7bb6ec1cdb28bfc72a7c85c04e804190" category="paragraph">容量管理模式預設為自動。在此模式中、 BlueXP 會每 15 分鐘檢查一次可用空間比率、以判斷可用空間比率是否低於指定的臨界值。如果需要更多容量、 BlueXP 會自動開始購買新磁碟、刪除未使用的磁碟集合（集合體）、視需要在集合體之間移動磁碟區、並嘗試防止磁碟故障。</block>
+  <block id="8e2f854c2327eeb07b90d796ba7a111e" category="paragraph">如果 AWS 中支援彈性磁碟區的集合體、 BlueXP 也會增加 RAID 群組中磁碟的大小。 <block ref="e64e49a1cded5f4109adae46b4faa045" category="inline-link-macro-rx"></block>。</block>
+  <block id="bbf4148ff0d0c2577fa92ce466c7bf7b" category="paragraph">+
+* 如果集合體達到容量臨界值、而且無法支援任何其他磁碟、 BlueXP 會自動將該集合體的磁碟區移至具有可用容量的集合體、或移至新的集合體。</block>
+  <block id="aa30dc6b7b6afa43fc2df335e8f683b3" category="paragraph">+
+如果BlueXP為磁碟區建立新的Aggregate、則會選擇適合該磁碟區大小的磁碟大小。</block>
+  <block id="7f1e9230df284aec888c734befc03867" category="paragraph">+
+請注意、可用空間現在可在原始 Aggregate 上使用。現有磁碟區或新磁碟區可以使用該空間。在此案例中、空間無法傳回給雲端供應商。</block>
 </blocks>
