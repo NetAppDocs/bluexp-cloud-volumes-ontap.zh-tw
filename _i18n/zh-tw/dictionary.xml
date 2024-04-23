@@ -1239,7 +1239,6 @@
   <block id="f13e5738aeb376300b20ef726f2fe2e3" category="section-title">Volume建立增強功能</block>
   <block id="9f6be88742d739e1a17345387ce1fbb2" category="paragraph">我們在Volume建立方面做了一些增強：</block>
   <block id="c393c88c641a6c18da56fffa85b9c78c" category="list-text">我們重新設計了「建立Volume精靈」、以方便使用。</block>
-  <block id="6b7e7cce69c13d91130e2e673b1da322" category="list-text">您新增至磁碟區的標記現在已與應用程式範本服務相關聯、可協助您組織及簡化資源管理。</block>
   <block id="69582189d37c402edf59b0f133df7c09" category="list-text">您現在可以選擇NFS的自訂匯出原則。</block>
   <block id="7ab20d098d6605f542bfe595351b4d64" category="inline-image-macro">建立新Volume時顯示「Protocol（傳輸協定）」頁面的快照。</block>
   <block id="7aece74ebc88a7e88e14656ceaecf9cf" category="paragraph"><block ref="7aece74ebc88a7e88e14656ceaecf9cf" category="inline-image-macro-rx" type="image"></block></block>
@@ -2401,8 +2400,6 @@
   <block id="108a74a6cbb575c986177039e07dc411" category="list-text">依照精靈中的步驟建立磁碟區。</block>
   <block id="3b0e375a08fe94a129cba31916c9d2dc" category="paragraph">此頁面上的部分欄位是不知自明的。下列清單說明您可能需要指引的欄位：</block>
   <block id="191fac23c2b2ea4e948178972521292f" category="cell">Volume大小</block>
-  <block id="189f63f277cd73395561651753563065" category="cell">標記</block>
-  <block id="d7ab5fe4cd7b86ba1ce9a35dbe34ee4b" category="inline-link">應用程式範本服務</block>
   <block id="8df799ab4a27609ef1087c249676bbc5" category="list-text">*傳輸協定*：為磁碟區（NFS、CIFS或iSCSI）選擇傳輸協定、然後提供所需的資訊。</block>
   <block id="e1a274ec8eecfec4a5a3c7954eb80e0b" category="paragraph">以下各節將說明您可能需要指引的欄位。說明會依傳輸協定加以組織。</block>
   <block id="65bd83537129be15c8027ec94bec5bd3" category="list-text">存取控制</block>
@@ -2423,23 +2420,6 @@
   <block id="13aa0c9cafb05f7d1436239215621d90" category="list-text">*使用率設定檔與分層原則*：選擇是否啟用或停用磁碟區上的儲存效率功能、然後選取 <block ref="45393a767ab360c2ba9e7110c6cbc830" category="inline-link-macro-rx"></block>。</block>
   <block id="1fd2dba2020c106a2c49da0e6ad7e868" category="paragraph">包含多項儲存效率功能、可減少您所需的總儲存容量。 ONTAPNetApp 儲存效率功能提供下列效益：</block>
   <block id="eb5c6869b3fc04254530622723507f79" category="list-text">*審查*：檢閱磁碟區的詳細資料、然後按一下*新增*。</block>
-  <block id="2fd8ed01b53ab930ba045f6316aa8fbf" category="section-title">從範本建立Volume</block>
-  <block id="027921a6306ed2c54f25607de975d377" category="paragraph">如果貴組織已建立Cloud Volumes ONTAP 了適用於特定應用程式工作負載需求最佳化的功能、以便部署這些磁碟區、請依照本節中的步驟進行。</block>
-  <block id="bc41c927b050313fabe4e7bfa9c82224" category="paragraph">此範本應能讓您的工作更輕鬆、因為範本中已定義了某些Volume參數、例如磁碟類型、大小、傳輸協定、快照原則、雲端供應商、 以及更多資訊。當參數已預先定義時、您只需跳至下一個Volume參數即可。</block>
-  <block id="395f4870d887a81edabc6ad40f5a84f0" category="admonition">使用範本時、您只能建立NFS或CIFS磁碟區。</block>
-  <block id="3464a6536597fb17300e864f33f6b63d" category="list-text">在「畫版」頁面上、按一下Cloud Volumes ONTAP 您要配置Volume的功能區系統名稱。</block>
-  <block id="74099e7b70c30e3a55db543cda9bfc1e" category="inline-image-macro">顯示如何從範本新增磁碟區的快照。</block>
-  <block id="5b33742921c3a09b3c0916cff2d87632" category="list-text">在「選取範本_」頁面中、選取您要用來建立磁碟區的範本、然後按一下「*下一步*」。</block>
-  <block id="41fdbb8293e553892079d0e7ad8a9ad9" category="inline-image-macro">可用應用程式範本的快照。</block>
-  <block id="f2a6f7bb83d518b8832e241b44419c17" category="paragraph"><block ref="f2a6f7bb83d518b8832e241b44419c17" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="19f5b7f92268b2f8e63e4083819666c9" category="inline-image-macro">顯示空白範本的螢幕快照、您必須填寫才能建立Volume。</block>
-  <block id="f9fb39421cb5c84a9897e58b19c84510" category="paragraph"><block ref="f9fb39421cb5c84a9897e58b19c84510" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="db382d688e4cb3e09b6e7a743ce00edb" category="paragraph">如果還有其他動作、請按一下左窗格中的動作、以顯示您需要完成的參數。</block>
-  <block id="a31e4f2aa7f454321015e4c5b02bae97" category="inline-image-macro">螢幕快照顯示如何選取需要完成的其他動作。</block>
-  <block id="0fdf861b8e72c9acd6caea0924545667" category="paragraph"><block ref="0fdf861b8e72c9acd6caea0924545667" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f97c61e27cbf22f850ec5f0412358f0b" category="paragraph">此功能會配置磁碟區並顯示頁面、以便您查看進度。Cloud Volumes ONTAP</block>
-  <block id="40136e65ff57723941fc2af2bf21d54a" category="inline-image-macro">快照顯示從範本建立新磁碟區的進度。</block>
-  <block id="d1ad4ec8d83a0a6b7ef8ac4c5acc2d2f" category="paragraph"><block ref="d1ad4ec8d83a0a6b7ef8ac4c5acc2d2f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="841221afb195f2b9f58a8b1dc6a57132" category="section-title">在HA組態的第二個節點上建立磁碟區</block>
   <block id="60a2834a97bdfe49641e5ed1d42e4116" category="list-text">在「畫版」頁面上、按兩下 Cloud Volumes ONTAP 您要管理集合體的運作環境名稱。</block>
   <block id="c8f3514620e31924fc247388a82834fa" category="list-text">對於主節點、請在 HA 配對中選擇第二個節點。</block>
@@ -4321,19 +4301,10 @@
   <block id="d3c83108d2d70bd2eb22fbd1bb485f2f" category="paragraph">在「概觀」標籤上、瀏覽至「 Volume 」磚、然後按一下「 * 新增 Volume * 」。<block ref="d66b0ca71189f0ddd53cd4b3e65bbf57" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d67d87305db3f29260c81473dd44e3f1" category="inline-image-macro">Aggregate 索引標籤下的 Add Volume （新增 Volume ）按鈕的螢幕擷取畫面。</block>
   <block id="13f1658d880a29010b36402880b7742d" category="paragraph">在 Aggregate 索引標籤上、瀏覽至所需的 Aggregate 動態磚。按一下功能表圖示、然後按一下 * 新增 Volume * 。<block ref="90511a2a61b219fe659f6c6204d0e9f4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5359c0cc8b61614ec08d953783fef7e9" category="list-text">* Volume 、 Details 、 Protection 和 Tag* ：輸入有關該卷的基本詳細信息並選擇 Snapshot 策略。</block>
   <block id="5a33fdd3ad048388d676b3cfe62a76b4" category="cell">Volume名稱</block>
   <block id="da791c0c870c83e87ff0b50e41446b5f" category="cell">您可以為新磁碟區輸入的可識別名稱。</block>
   <block id="8bc5e99f50f67c6de120548d75821d83" category="cell">儲存 VM （ SVM ）</block>
   <block id="360a6a454911fe3432462fbd11f3588c" category="cell">儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可為您的用戶端提供儲存與資料服務。您可能知道這是 SVM 或 Vserver 。根據預設、系統會設定一個儲存 VM 、但部分組態會支援額外的儲存 VM 。 Cloud Volumes ONTAP您可以為新的 Volume 指定儲存 VM 。</block>
-  <block id="83153603fdc3097c323cd6a9c354a74c" category="list-text">瀏覽至 Volumes （磁碟區）標籤、然後按一下 * Add Volume （新增磁碟區） * &gt; * New Volume from Template* （從範本</block>
-  <block id="d5b72c940ba2727afcbba5dd037893f5" category="paragraph"><block ref="d5b72c940ba2727afcbba5dd037893f5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ac2c13cd2f76af0753933c8630446e5f" category="paragraph">隨即顯示 _Editor_ 頁面。</block>
-  <block id="18a9b2315ac5b98381d542571ba28299" category="list-text">在 _Action_ 面板上、輸入範本的名稱。</block>
-  <block id="74f7c9266baa87f8e4aceef158811143" category="list-text">在 _context_ 下、工作環境會填入您開始使用的工作環境名稱。選取要建立磁碟區的 * 儲存 VM* 。</block>
-  <block id="746037c3b6a0eec6bb1e41959d51e07e" category="list-text">按一下 * 套用 * 將設定的參數儲存至選取的動作。</block>
-  <block id="be2645489c0ae0149fc30f6dc8d80bbb" category="paragraph">例如、如果「啟用雲端備份 on Volume 」動作需要您選取備份原則、您現在可以這麼做。</block>
-  <block id="f0131c80c45b00e70cb9a1d8c9e3448a" category="list-text">完成範本動作的組態設定後、按一下 * 儲存範本 * 。</block>
   <block id="bc321d6d3a5b549e1c0961440ef815f4" category="list-text">在 Aggregate 索引標籤上、按一下 * 新增 Aggregate * 。</block>
   <block id="d528ab86bd3d69a199b872eae76729c3" category="list-text">從 _ 新增 Aggregate _ 畫面建立 Aggregate 。</block>
   <block id="6f3d3de9b8245394933ccb5a82580032" category="inline-image-macro">顯示新增 Aggregate 進度的螢幕擷取畫面。</block>
@@ -4354,10 +4325,6 @@
   <block id="8f56224592abe10774e5575500874b11" category="cell">在「管理磁碟區」面板的「 Volume Actions 」（ Volume 動作）下、按一下「 * 檢視磁碟區詳細資料 * 」</block>
   <block id="d4c98b540182b809e992d8b4a580423e" category="list-text">在「管理磁碟區」面板的「 Volume Actions 」（ Volume 動作）下、按一下「 * 掛載命令 * 」。</block>
   <block id="98c56e9d0291f443f1ed942549039cc3" category="list-text">在「管理磁碟區」面板的「 Volume Actions 」（磁碟區動作）下、按一下「 * Clone the volume * 」（</block>
-  <block id="c36ae8709c4f5551dcd33c1fa09b1144" category="cell">編輯 Volume 標記（僅限讀寫磁碟區）</block>
-  <block id="0c76e6ded4e12f0dc0b2564def628aae" category="list-text">在「管理磁碟區」面板的「 Volume Actions 」（ Volume 動作）下、按一下 * 「 Edit Volume Tags* 」（編輯磁碟區標記 * ）以修改指派給所選磁碟區的 Volume 標記。</block>
-  <block id="186ac335ead3bdabcd70b18a0e6f40ed" category="list-text">在提供的欄位下輸入 Volume 標記金鑰和值。</block>
-  <block id="cf92c264f59ad57e63ae663106047d25" category="list-text">若要加入其他標記、請按一下 * 新增標記 * 。</block>
   <block id="29f680a1731a2250d73a33aede73a2eb" category="list-text">在「管理磁碟區」面板的「 Volume Actions 」（磁碟區動作）下、按一下 * 「 Edit Volume settings* 」（</block>
   <block id="ac11ccea860c1468f49807407e073557" category="list-text">修改磁碟區的 Snapshot 原則、 NFS 傳輸協定版本、 NFS 存取控制清單（匯出原則）或共用權限、然後按一下 * 套用 * 。</block>
   <block id="6271604d64ad8f6bcdad901be64df292" category="list-text">在「管理磁碟區」面板的「 Volume Actions 」（磁碟區動作）下、按一下「 * 刪除磁碟區 * 」</block>
@@ -4487,8 +4454,6 @@
   <block id="b7553c7fbdeaddba3cf075caca1654ea" category="paragraph">將節點型授權新增至 BlueXP 數位錢包、以便在建立新的 Cloud Volumes ONTAP 系統時選取授權。數位錢包會將這些授權識別為 _disally_.</block>
   <block id="5fd0d116f88accf7d18b80d146d87953" category="paragraph">BlueXP 將授權新增至數位錢包。授權將被識別為未指派、直到您將其與新Cloud Volumes ONTAP 的一套系統關聯為止。之後、授權便會移至數位錢包中的 * BYOL* 標籤。</block>
   <block id="637413a6c4ca962adade95ae4bcc1109" category="paragraph">如果您尚未使用未指派的 Cloud Volumes ONTAP 節點型授權、則可將授權轉換為 BlueXP 備份與還原授權、 BlueXP 分類授權或 BlueXP 分層授權、以交換授權。</block>
-  <block id="84494b1e674f56df077cb2b7eca2b569" category="list-text">如果沒有其他需要定義的動作（例如、設定 BlueXP 備份與還原）、請按一下 * 儲存範本 * 。</block>
-  <block id="3cb732600caeb6ed3e89ade08544187b" category="paragraph">此外、如果範本中實作任何次要動作、例如在磁碟區上啟用 BlueXP 備份與還原、則也會執行該動作。</block>
   <block id="726d1cad4d0527532460d1a853919ebc" category="inline-link">深入瞭解 BlueXP 分類</block>
   <block id="723a81a7ee0b42134a46c1aaa0d99371" category="inline-link">深入瞭解 BlueXP 備份與還原</block>
   <block id="fc0a70bcada485a87b25779f9232cd77" category="summary">下列兩種用途需要Google Cloud服務帳戶：Cloud Volumes ONTAP第一種方法是讓資料分層、將冷資料分層至Google Cloud中的低成本物件儲存設備。第二個是啟用 BlueXP 備份與還原功能、將磁碟區備份到低成本物件儲存設備。</block>
@@ -4614,7 +4579,6 @@
   <block id="f9f4082179938e25ee1e3141d4b4b61d" category="paragraph"><block ref="f9f4082179938e25ee1e3141d4b4b61d" category="inline-link-rx"></block></block>
   <block id="882d5f98206dd8157654127073c920f2" category="paragraph"><block ref="882d5f98206dd8157654127073c920f2" category="inline-link-rx"></block></block>
   <block id="f870932f389b07a18c35e61ebc668c91" category="paragraph"><block ref="161ab28684c427e4961f0c360c1dbce7" category="inline-link-rx"></block>。</block>
-  <block id="63c9832895bcd0b024988b034d19fa69" category="cell">您新增至Volume的標記會與相關聯<block ref="b6951a270b848f0d80ace1368ae797fd" category="inline-link-rx"></block>可協助您組織及簡化資源管理。</block>
   <block id="ccd8fe0f54baad6a01a1827625b8a699" category="list-text">選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="781a31b225d61ebbabe5dd84830d307a" category="list-text">您應該擁有<block ref="531433bd83668140eff1dc8bd40e140e" category="inline-link-rx"></block>。</block>
   <block id="0a878535ad1a6e2ef955aba255e762cd" category="list-text">如果出現提示、<block ref="b03d5bfc016d24f5269c25486d5c5105" category="inline-link-rx"></block>。</block>
@@ -4887,13 +4851,11 @@
   <block id="c865f6da9bcfc07ba082737620200b41" category="paragraph">除非您超過500 GiB的已配置容量、系統會自動轉換為、否則不會透過市場訂閱付費 <block ref="ec72849d6ddd1aa67c619efd7a434388" category="inline-link-macro-rx"></block>。</block>
   <block id="a8f0efbc9639c258065d01ea6552a320" category="list-text">指定新磁碟區的詳細資料、讓BlueXP為您處理基礎資料集合體。 <block ref="7d09ed3a2e8adfd1ea66dd5eff6c8d13" category="inline-xref-macro-rx"></block></block>
   <block id="f2354151259450918b28c0dd2ce20606" category="list-text">在您選擇的資料集合體上建立磁碟區。 <block ref="7d09ed3a2e8adfd1ea66dd5eff6c8d13" category="inline-xref-macro-rx"></block></block>
-  <block id="b9269bf669334245761162ed1b5f67fc" category="list-text">從範本建立磁碟區、以針對特定應用程式（例如資料庫或串流服務）的工作負載需求、最佳化磁碟區。 <block ref="2e0c3dc13b95af01c6b2fc43579657db" category="inline-xref-macro-rx"></block></block>
   <block id="6acfe5d47cf8e7d4ce1ddef9604984d8" category="list-text">在HA組態的第二個節點上建立磁碟區。 <block ref="8d20c8ec5d13d4f8ec83a1bb8e2e1e5d" category="inline-xref-macro-rx"></block></block>
   <block id="765aadd821cf82bcd286359e2eb25476" category="list-text">建立iSCSI磁碟區時、BlueXP會自動為您建立LUN。我們只要在每個磁碟區建立一個 LUN 、就能輕鬆完成工作、因此不需要管理。建立磁碟區之後、 <block ref="9b65fd4fba31c27fb58a4653a54defad" category="inline-link-macro-rx"></block>。</block>
   <block id="34b51cb01d3605c2b908600c2b516152" category="list-text"><block ref="34b51cb01d3605c2b908600c2b516152" category="inline-link-macro-rx"></block></block>
   <block id="2a79e18dae8df0be0a0d70d12cf4bfec" category="list-text"><block ref="2a79e18dae8df0be0a0d70d12cf4bfec" category="inline-link-macro-rx"></block></block>
   <block id="14c10e4dfdbfa7bb1944c39086904d79" category="list-text"><block ref="14c10e4dfdbfa7bb1944c39086904d79" category="inline-link-macro-rx"></block></block>
-  <block id="ff89f21886369313040dff71f31e89db" category="list-text">新增所有非模板硬編碼的參數值。請參閱 <block ref="8a193d900c598af224bec0dcf7cbba7e" category="inline-xref-macro-rx"></block> 以取得完成 Cloud Volumes ONTAP Volume 部署所需的所有參數詳細資料。</block>
   <block id="f784e2eca8423af6d4b6e02cd9dc17b6" category="list-text">VPC-0 中 HA 元件的一組規則。這些規則可讓您存取 Cloud Volumes ONTAP 資料以存取資料。 <block ref="1a421f2e5e3047ae3801063040dbe3fb" category="inline-xref-macro-rx"></block>。</block>
   <block id="29642aeaa8aff442388842cc2c36f19d" category="list-text">VPC-1 、 VPC-2 和 VPC-3 中的另一組 HA 元件規則。這些規則可用於 HA 元件之間的傳入和傳出通訊。 <block ref="1a421f2e5e3047ae3801063040dbe3fb" category="inline-xref-macro-rx"></block>。</block>
   <block id="b0082432bdd8f260c6c2bf11437fb1b7" category="list-text">VPC-1 、 VPC-2 和 VPC-3 中的另一組 HA 元件規則。這些規則可用於 HA 元件之間的傳入和傳出通訊。 <block ref="07ead3ac53ea1b122b25bf61bd233110" category="inline-xref-macro-rx"></block>。</block>
@@ -5273,4 +5235,7 @@
   <block id="1d0f99876d748759fce5e852f79fca96" category="list-text">加拿大中部</block>
   <block id="0b745a8416b0a8e3b89e7e01ba13af65" category="section-title">Google Cloud 現在支援約翰內斯堡地區</block>
   <block id="ec826289e3407edb59d3c5ed0aca5c74" category="paragraph">約翰內斯堡地區 <block ref="6d1d2d77b70fb38d060e5653977838a2" prefix="(" category="inline-code"></block> Google Cloud for Cloud Volumes ONTAP 9.12.1 GA 及更新版本現在均支援區域）。</block>
+  <block id="ee94ea94211470599a81d49f8c4b586f" category="section-title">不再支援 Volume 範本和標籤</block>
+  <block id="96b0b2a19dd9deb6b94e53f2e29f4387" category="paragraph">您無法再從範本建立磁碟區、也無法編輯磁碟區的標籤。這些動作與 BlueXP 補救服務相關聯、而 BlueXP 補救服務已無法使用。</block>
+  <block id="9691bf3a7c5f05b620ab3b20437b6123" category="list-text">*詳細資料、保護及標記*：輸入有關磁碟區的基本詳細資料、然後選取Snapshot原則。</block>
 </blocks>

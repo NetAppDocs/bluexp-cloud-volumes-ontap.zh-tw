@@ -59,15 +59,6 @@ image:screenshot_manage_vol_button.png["「 Volume 」索引標籤下的「 Mana
 
 
 
-| 編輯 Volume 標記（僅限讀寫磁碟區）  a| 
-.. 在「管理磁碟區」面板的「 Volume Actions 」（ Volume 動作）下、按一下 * 「 Edit Volume Tags* 」（編輯磁碟區標記 * ）以修改指派給所選磁碟區的 Volume 標記。
-.. 在提供的欄位下輸入 Volume 標記金鑰和值。
-.. 若要加入其他標記、請按一下 * 新增標記 * 。
-.. 按一下「 * 儲存 * 」。
-
-
-
-
 | 編輯磁碟區（僅限讀寫磁碟區）  a| 
 .. 在「管理磁碟區」面板的「 Volume Actions 」（磁碟區動作）下、按一下 * 「 Edit Volume settings* 」（
 .. 修改磁碟區的 Snapshot 原則、 NFS 傳輸協定版本、 NFS 存取控制清單（匯出原則）或共用權限、然後按一下 * 套用 * 。

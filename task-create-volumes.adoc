@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-create-volumes.html 
-keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates, cloud backup 
+keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, cloud backup 
 summary: 如果您在啟動初始Cloud Volumes ONTAP 的支援功能後需要更多儲存設備、您可以從FlexVol BlueXP建立新的支援NFS、CIFS或iSCSI的支援功能。 
 ---
 = 建立FlexVol 功能區
@@ -20,7 +20,6 @@ BlueXP提供多種建立新磁碟區的方法：
 
 * 指定新磁碟區的詳細資料、讓BlueXP為您處理基礎資料集合體。 <<create-a-volume,深入瞭解>>
 * 在您選擇的資料集合體上建立磁碟區。 <<create-a-volume,深入瞭解>>
-* 從範本建立磁碟區、以針對特定應用程式（例如資料庫或串流服務）的工作負載需求、最佳化磁碟區。 <<create-a-volume-from-a-template,深入瞭解>>
 * 在HA組態的第二個節點上建立磁碟區。 <<create-volume-second-node,深入瞭解>>
 
 
@@ -71,7 +70,7 @@ endif::aws[]
 ====
 . 依照精靈中的步驟建立磁碟區。
 +
-.. * Volume 、 Details 、 Protection 和 Tag* ：輸入有關該卷的基本詳細信息並選擇 Snapshot 策略。
+.. *詳細資料、保護及標記*：輸入有關磁碟區的基本詳細資料、然後選取Snapshot原則。
 +
 此頁面上的部分欄位是不知自明的。下列清單說明您可能需要指引的欄位：
 
@@ -85,9 +84,6 @@ endif::aws[]
 
 
 | Volume大小 | 您可以輸入的最大大小、主要取決於您是否啟用精簡配置、這可讓您建立比目前可用實體儲存容量更大的磁碟區。 
-
-
-| 標記 | 您新增至Volume的標記會與相關聯 https://docs.netapp.com/us-en/bluexp-remediation/task-using-tags.html["應用程式範本服務"^]可協助您組織及簡化資源管理。 
 
 
 | 儲存 VM （ SVM ） | 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可為您的用戶端提供儲存與資料服務。您可能知道這是 SVM 或 Vserver 。根據預設、系統會設定一個儲存 VM 、但部分組態會支援額外的儲存 VM 。 Cloud Volumes ONTAP您可以為新的 Volume 指定儲存 VM 。 
@@ -219,58 +215,6 @@ endif::gcp[]
 
 .結果
 BlueXP會在Cloud Volumes ONTAP 整個系統上建立磁碟區。
-
-
-
-== 從範本建立Volume
-
-如果貴組織已建立Cloud Volumes ONTAP 了適用於特定應用程式工作負載需求最佳化的功能、以便部署這些磁碟區、請依照本節中的步驟進行。
-
-此範本應能讓您的工作更輕鬆、因為範本中已定義了某些Volume參數、例如磁碟類型、大小、傳輸協定、快照原則、雲端供應商、 以及更多資訊。當參數已預先定義時、您只需跳至下一個Volume參數即可。
-
-
-NOTE: 使用範本時、您只能建立NFS或CIFS磁碟區。
-
-.步驟
-. 從左側導覽功能表中、選取*儲存設備> Canvas*。
-. 在「畫版」頁面上、按一下Cloud Volumes ONTAP 您要配置Volume的功能區系統名稱。
-. 瀏覽至 Volumes （磁碟區）標籤、然後按一下 * Add Volume （新增磁碟區） * > * New Volume from Template* （從範本
-+
-image:screenshot_add_volume_template.png["顯示如何從範本新增磁碟區的快照。"]
-
-. 在「選取範本_」頁面中、選取您要用來建立磁碟區的範本、然後按一下「*下一步*」。
-+
-image:screenshot_select_template_cvo.png["可用應用程式範本的快照。"]
-
-+
-隨即顯示 _Editor_ 頁面。
-
-+
-image:screenshot_define_cvo_vol_from_template.png["顯示空白範本的螢幕快照、您必須填寫才能建立Volume。"]
-
-. 在 _Action_ 面板上、輸入範本的名稱。
-. 在 _context_ 下、工作環境會填入您開始使用的工作環境名稱。選取要建立磁碟區的 * 儲存 VM* 。
-. 新增所有非模板硬編碼的參數值。請參閱 <<create-a-volume,建立Volume>> 以取得完成 Cloud Volumes ONTAP Volume 部署所需的所有參數詳細資料。
-. 按一下 * 套用 * 將設定的參數儲存至選取的動作。
-. 如果沒有其他需要定義的動作（例如、設定 BlueXP 備份與還原）、請按一下 * 儲存範本 * 。
-+
-如果還有其他動作、請按一下左窗格中的動作、以顯示您需要完成的參數。
-
-+
-image:screenshot_template_select_next_action.png["螢幕快照顯示如何選取需要完成的其他動作。"]
-
-+
-例如、如果「啟用雲端備份 on Volume 」動作需要您選取備份原則、您現在可以這麼做。
-
-. 完成範本動作的組態設定後、按一下 * 儲存範本 * 。
-
-
-.結果
-此功能會配置磁碟區並顯示頁面、以便您查看進度。Cloud Volumes ONTAP
-
-image:screenshot_template_creating_resource_cvo.png["快照顯示從範本建立新磁碟區的進度。"]
-
-此外、如果範本中實作任何次要動作、例如在磁碟區上啟用 BlueXP 備份與還原、則也會執行該動作。
 
 
 
