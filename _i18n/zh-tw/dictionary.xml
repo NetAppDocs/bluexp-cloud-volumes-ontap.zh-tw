@@ -5262,4 +5262,15 @@
 如果BlueXP為磁碟區建立新的Aggregate、則會選擇適合該磁碟區大小的磁碟大小。</block>
   <block id="7f1e9230df284aec888c734befc03867" category="paragraph">+
 請注意、可用空間現在可在原始 Aggregate 上使用。現有磁碟區或新磁碟區可以使用該空間。在此案例中、空間無法傳回給雲端供應商。</block>
+  <block id="31e2ca9cb7755d06bc40e30fd8e408d3" category="section-title">2024 年 4 月 23 日</block>
+  <block id="a2fefc65df2136938b995f8abbe643c2" category="section-title">Azure 支援多個可用區域部署的新區域</block>
+  <block id="0cc914ed23f0f7d6bc902ae731843213" category="paragraph">以下地區現在支援 Azure 中的 HA 多重可用性區域部署、適用於 Cloud Volumes ONTAP 9.12.1 GA 及更新版本：</block>
+  <block id="1dab3491cdeeb2a6d567b21ee3063ae4" category="list-text">德國中西部</block>
+  <block id="26b4bdc11dfead08029a688129c42cf9" category="list-text">波蘭中部</block>
+  <block id="64fb50bb758fe12b94faa568a567e13c" category="list-text">美國西部 3.</block>
+  <block id="eb1aea8107eeeb90c841d5710262dd52" category="list-text">以色列中部</block>
+  <block id="6c2cb03afda0af373b8df47f9dc47ed7" category="list-text">義大利北部</block>
+  <block id="1d0f99876d748759fce5e852f79fca96" category="list-text">加拿大中部</block>
+  <block id="0b745a8416b0a8e3b89e7e01ba13af65" category="section-title">Google Cloud 現在支援約翰內斯堡地區</block>
+  <block id="ec826289e3407edb59d3c5ed0aca5c74" category="paragraph">約翰內斯堡地區 <block ref="6d1d2d77b70fb38d060e5653977838a2" prefix="(" category="inline-code"></block> Google Cloud for Cloud Volumes ONTAP 9.12.1 GA 及更新版本現在均支援區域）。</block>
 </blocks>

@@ -20,6 +20,34 @@ summary: 瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。
 
 
 
+== 2024 年 4 月 23 日
+
+
+
+=== Azure 支援多個可用區域部署的新區域
+
+以下地區現在支援 Azure 中的 HA 多重可用性區域部署、適用於 Cloud Volumes ONTAP 9.12.1 GA 及更新版本：
+
+* 德國中西部
+* 波蘭中部
+* 美國西部 3.
+* 以色列中部
+* 義大利北部
+* 加拿大中部
+
+
+如需所有區域的清單、請參閱 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure 下的 Global Regions Map"^]。
+
+
+
+=== Google Cloud 現在支援約翰內斯堡地區
+
+約翰內斯堡地區 (`africa-south1` Google Cloud for Cloud Volumes ONTAP 9.12.1 GA 及更新版本現在均支援區域）。
+
+如需所有區域的清單、請參閱 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloud 下的全球區域地圖"^]。
+
+
+
 == 2024 年 3 月 8 日
 
 
