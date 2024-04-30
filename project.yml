@@ -66,7 +66,7 @@ sidebar:
         url: "/task-set-up-licensing-aws.html"
       - title: 在Cloud Volumes ONTAP AWS中啟動
         url: "/task-deploying-otc-aws.html"
-      - title: 開始使用 AWS C2S
+      - title: 在 AWS 秘密區域部署 Cloud Volumes ONTAP
         url: "/task-getting-started-aws-c2s.html"
     - title: 開始使用Microsoft Azure
       flavor: azure

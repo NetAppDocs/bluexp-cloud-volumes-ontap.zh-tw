@@ -52,8 +52,8 @@ link:reference-networking-aws.html["深入瞭解網路需求"]。
 按一下「 * 新增工作環境 * 」、選取您要部署的系統類型、然後完成精靈中的步驟。 link:task-deploying-otc-aws.html["閱讀逐步指示"]。
 
 .相關連結
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["從BlueXP建立連接器"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws.html["從 AWS Marketplace 啟動 Connector"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["在 Linux 主機上安裝 Connector 軟體"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["BlueXP使用AWS權限的功能"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-bluexp.html["在AWS中從BlueXP建立連接器"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-marketplace.html["從AWS Marketplace建立連接器"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["在內部部署安裝並設定 Connector"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["Connector的AWS權限"^]
 

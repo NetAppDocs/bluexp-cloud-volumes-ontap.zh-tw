@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-getting-started-aws-c2s.html 
-keywords: commercial cloud services, c2s, secret region, aws secret region, cloud manager, BlueXP 
-summary: 與標準 AWS 區域類似、您可以在 AWS 商業雲端服務（ C2S ）環境中使用 BlueXP 來部署 Cloud Volumes ONTAP 、為您的雲端儲存設備提供企業級功能。AWS C2S是美國專屬的封閉區域智慧社群；本頁的說明僅適用於AWS C2S區域使用者。 
+keywords: commercial cloud services, c2s, secret cloud, top secret cloud, aws secret region, BlueXP 
+summary: 與標準 AWS 區域類似、您可以在 AWS Secret Cloud 和 Top Secret Cloud 環境中使用 BlueXP 來部署 Cloud Volumes ONTAP 、為您的雲端儲存設備提供企業級功能。AWS Secret Cloud 和 Top Secret Cloud 地區是美國特有的封閉區域智慧社群：本頁的指示僅適用於 AWS Secret Cloud 和 Top Secret Cloud 地區使用者。 
 ---
-= 開始使用Cloud Volumes ONTAP AWS C2S環境中的功能
+= 在 AWS Secret Cloud 和 Top Secret Cloud 地區部署 Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,83 +14,32 @@ summary: 與標準 AWS 區域類似、您可以在 AWS 商業雲端服務（ C2S
 
 
 [role="lead"]
-與標準AWS區域類似、您可以在中使用Cloud Manager link:https://aws.amazon.com/federal/us-intelligence-community/["AWS商業雲端服務（C2S）"^] 部署Cloud Volumes ONTAP 的環境、為您的雲端儲存設備提供企業級功能。AWS C2S是美國專屬的封閉區域智慧社群；本頁的說明僅適用於AWS C2S區域使用者。
+與標準 AWS 區域類似、您可以在中使用 BlueXP link:https://aws.amazon.com/federal/secret-cloud/["AWS Secret Cloud"^] 和 link:https://aws.amazon.com/federal/top-secret-cloud/["AWS Top Secret Cloud"^] 部署 Cloud Volumes ONTAP 、為您的雲端儲存設備提供企業級功能。AWS Secret Cloud 和 Top Secret Cloud 是美國特有的封閉區域智慧社群：本頁的指示僅適用於 AWS Secret Cloud 和 Top Secret Cloud 地區使用者。
 
+.開始之前
+開始之前、請先檢閱 AWS Secret Cloud 和 Top Secret Cloud 中支援的版本、並瞭解 BlueXP 中的私有模式。
 
-
-== 在C2S中支援的版本
-
-* 支援的是支援的部分Cloud Volumes ONTAP
-* 支援連接器3.9.4版
+* 檢閱 AWS Secret Cloud 和 Top Secret Cloud 中支援的下列版本：
 +
-Connector是在Cloud Volumes ONTAP AWS中部署和管理功能所需的軟體。您將從安裝在Connector執行個體上的軟體登入Cloud Manager。C2S環境不支援適用於Cloud Manager的SaaS網站。
-
-
-
-
-NOTE: Cloud Manager最近重新命名為BlueXP、但我們仍將其稱為C2S中的Cloud Manager、因為Connector 3.9.4版所含的使用者介面仍稱為Cloud Manager。
-
-
-
-== C2S支援的功能
-
-Cloud Manager在C2S環境中提供下列功能：
-
-* Cloud Volumes ONTAP
-* 資料複寫
-* 稽核時間表
-
-
-對於這個功能、您可以建立單一節點系統或HA配對。Cloud Volumes ONTAP這兩種授權選項皆可供使用：隨用隨付及自帶授權（BYOL）。
-
-在C2S中、也支援Cloud Volumes ONTAP 將資料分層至S3的功能。
-
-
-
-== 限制
-
-* Cloud Manager不提供任何NetApp的雲端服務。
-* 由於在C2S環境中無法存取網際網路、因此下列功能也無法使用：
+** Cloud Volumes ONTAP 9.12.1 P2
+** Connector 3.9.32 版
 +
-** 從Cloud Manager自動升級軟體
-** NetApp AutoSupport
-** AWS Cloud Volumes ONTAP 有關資源的成本資訊
-
-
-* C2S環境不支援Freemium授權。
+Connector是在Cloud Volumes ONTAP AWS中部署和管理功能所需的軟體。您將從安裝在Connector執行個體上的軟體登入BlueXP。AWS Secret Cloud 和 Top Secret Cloud 不支援 BlueXP 的 SaaS 網站。
 
 
 
-
-== 部署總覽
-
-在C2S中開始使用功能包括幾個步驟。Cloud Volumes ONTAP
-
-. <<準備AWS環境>>
+* 瞭解私有模式
 +
-這包括設定網路、訂閱Cloud Volumes ONTAP 功能、設定權限、以及選擇性設定AWS KMS。
-
-. <<安裝Connector並設定Cloud Manager>>
-+
-在開始使用Cloud Manager部署Cloud Volumes ONTAP 功能時、您必須先建立_Connector_。Connector可讓Cloud Manager管理公有雲環境中的資源和程序（包括Cloud Volumes ONTAP
+在 AWS Secret Cloud 和 Top Secret Cloud 中、 BlueXP 以 _private 模式運作。在私有模式中、無法連線至 BlueXP SaaS 層。使用者可從 Connector 提供的網路型主控台、而非從 SaaS 層、在本機存取 BlueXP 。
 
 +
-您將從安裝在Connector執行個體上的軟體登入Cloud Manager。
-
-. <<從Cloud Volumes ONTAP Cloud Manager啟動>>
-
-
-以下說明每個步驟。
+若要深入瞭解私有模式的運作方式、請參閱 link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["BlueXP 私有部署模式"^]。
 
 
 
-== 準備AWS環境
-
-您的AWS環境必須滿足幾項需求。
 
 
-
-=== 設定您的網路
+== 步驟 1 ：設定您的網路
 
 設定AWS網路、Cloud Volumes ONTAP 使其能夠正常運作。
 
@@ -105,37 +54,148 @@ Cloud Manager在C2S環境中提供下列功能：
 
 
 
-=== 訂閱Cloud Volumes ONTAP 此功能
+== 步驟 2 ：設定權限
 
-需要訂閱Marketplace才能從Cloud Volumes ONTAP Cloud Manager部署功能。
-
-.步驟
-. 前往AWS Intelligence Community Marketplace搜尋Cloud Volumes ONTAP 功能。
-. 選取您要部署的產品項目。
-. 檢閱條款、然後按一下*接受*。
-. 如果您打算部署其他產品、請針對這些產品重複上述步驟。
-+
-您必須使用Cloud Manager來啟動Cloud Volumes ONTAP 執行個體。您不得Cloud Volumes ONTAP 從EC2主控台啟動支援的執行個體。
-
-
-
-
-
-=== 設定權限
-
-設定IAM原則和角色、讓Connector和Cloud Volumes ONTAP 支援人員擁有在AWS商業雲端服務環境中執行動作所需的權限。
+設定 IAM 原則和角色、為 Connector 和 Cloud Volumes ONTAP 提供在 AWS Secret Cloud 或 Top Secret Cloud 中執行動作所需的權限。
 
 您需要IAM原則和IAM角色來執行下列各項：
 
 * Connector執行個體
 * 執行個體Cloud Volumes ONTAP
-* 不只是執行個體（如果您想部署HA配對）Cloud Volumes ONTAP
+* 對於 HA 配對、 Cloud Volumes ONTAP HA 中介執行個體（如果您想要部署 HA 配對）
 
 
 .步驟
 . 移至AWS IAM主控台、然後按一下* Policies *。
 . 建立Connector執行個體的原則。
 +
+
+NOTE: 您可以建立這些原則來支援 AWS 環境中的 S3 儲存區。稍後建立貯體時、請確定貯體名稱以開頭 `fabric-pool-`。這項要求同時適用於 AWS Secret Cloud 和 Top Secret Cloud 地區。
+
++
+[role="tabbed-block"]
+====
+.秘密區域
+--
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:DescribeRouteTables",
+                "ec2:DescribeImages",
+                "ec2:CreateTags",
+                "ec2:CreateVolume",
+                "ec2:DescribeVolumes",
+                "ec2:ModifyVolumeAttribute",
+                "ec2:DeleteVolume",
+                "ec2:CreateSecurityGroup",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DeleteNetworkInterface",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeDhcpOptions",
+                "ec2:CreateSnapshot",
+                "ec2:DeleteSnapshot",
+                "ec2:DescribeSnapshots",
+                "ec2:GetConsoleOutput",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DeleteTags",
+                "ec2:DescribeTags",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:ValidateTemplate",
+                "iam:PassRole",
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:PutRolePolicy",
+                "iam:ListInstanceProfiles",
+                "iam:CreateInstanceProfile",
+                "iam:DeleteRolePolicy",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "s3:GetObject",
+                "s3:ListBucket",
+                "s3:GetBucketTagging",
+                "s3:GetBucketLocation",
+                "s3:ListAllMyBuckets",
+                "kms:List*",
+                "kms:Describe*",
+                "ec2:AssociateIamInstanceProfile",
+                "ec2:DescribeIamInstanceProfileAssociations",
+                "ec2:DisassociateIamInstanceProfile",
+                "ec2:DescribeInstanceAttribute",
+                "ec2:CreatePlacementGroup",
+                "ec2:DeletePlacementGroup"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "fabricPoolPolicy",
+            "Effect": "Allow",
+            "Action": [
+                "s3:DeleteBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions"
+            ],
+            "Resource": [
+                "arn:aws-iso-b:s3:::fabric-pool*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/WorkingEnvironment": "*"
+                }
+            },
+            "Resource": [
+                "arn:aws-iso-b:ec2:*:*:instance/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws-iso-b:ec2:*:*:volume/*"
+            ]
+        }
+    ]
+}
+----
+--
+.最高機密區域
+--
 [source, json]
 ----
 {
@@ -252,8 +312,43 @@ Cloud Manager在C2S環境中提供下列功能：
     ]
 }
 ----
+--
+====
 . 建立Cloud Volumes ONTAP 一套適用於此功能的原則。
 +
+[role="tabbed-block"]
+====
+.秘密區域
+--
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Action": "s3:ListAllMyBuckets",
+        "Resource": "arn:aws-iso-b:s3:::*",
+        "Effect": "Allow"
+    }, {
+        "Action": [
+            "s3:ListBucket",
+            "s3:GetBucketLocation"
+        ],
+        "Resource": "arn:aws-iso-b:s3:::fabric-pool-*",
+        "Effect": "Allow"
+    }, {
+        "Action": [
+            "s3:GetObject",
+            "s3:PutObject",
+            "s3:DeleteObject"
+        ],
+        "Resource": "arn:aws-iso-b:s3:::fabric-pool-*",
+        "Effect": "Allow"
+    }]
+}
+----
+--
+.最高機密區域
+--
 [source, json]
 ----
 {
@@ -280,7 +375,11 @@ Cloud Manager在C2S環境中提供下列功能：
     }]
 }
 ----
-. 如果您計畫部署Cloud Volumes ONTAP 一個「叢集HA配對」、請為HA中介者建立原則。
+--
+====
++
+對於 HA 配對、如果您打算部署 Cloud Volumes ONTAP HA 配對、請為 HA 協調器建立原則。
+
 +
 [source, json]
 ----
@@ -305,21 +404,22 @@ Cloud Manager在C2S環境中提供下列功能：
 ----
 . 使用角色類型Amazon EC2建立IAM角色、並附加您在先前步驟中建立的原則。
 +
-與原則類似、您應該有一個IAM角色用於連接器、一個用於Cloud Volumes ONTAP 鏈結節點、另一個用於HA中介器（如果您要部署HA配對）。
+.建立角色：
+與原則類似、您應該有一個用於連接器的 IAM 角色、另一個用於 Cloud Volumes ONTAP 節點。
+對於 HA 配對：與原則類似、您應該有一個用於連接器的 IAM 角色、一個用於 Cloud Volumes ONTAP 節點、另一個用於 HA 協調器（如果您想要部署 HA 配對）。
 
 +
-啟動Connector執行個體時、您必須選取Connector IAM角色。
-
-+
-從Cloud Manager建立一套可運作的環境時、您可以選擇IAM角色做Cloud Volumes ONTAP 為功能性的部分、以及HA中介器Cloud Volumes ONTAP 。
-
+.選取角色：
+啟動Connector執行個體時、您必須選取Connector IAM角色。從 BlueXP 建立 Cloud Volumes ONTAP 工作環境時、您可以為 Cloud Volumes ONTAP 選取 IAM 角色。
+對於 HA 配對、您可以在從 BlueXP 建立 Cloud Volumes ONTAP 工作環境時、為 Cloud Volumes ONTAP 和 HA 協調器選取 IAM 角色。
 
 
 
 
-=== 設定 AWS KMS
 
-如果您想搭配Cloud Volumes ONTAP 使用Amazon加密搭配使用、請確保AWS金鑰管理服務符合要求。
+== 步驟 3 ：設定 AWS KMS
+
+如果您想搭配 Cloud Volumes ONTAP 使用 Amazon 加密、請確保 AWS 金鑰管理服務（ KMS ）符合要求。
 
 .步驟
 . 請確定您的帳戶或其他AWS帳戶中存在使用中的客戶主金鑰（CMK）。
@@ -328,28 +428,32 @@ CMK 可以是 AWS 託管的 CMK 、也可以是客戶託管的 CMK 。
 
 . 如果CMK位於AWS帳戶中、而該帳戶與您打算部署Cloud Volumes ONTAP 的帳戶不同、則您需要取得該金鑰的ARN。
 +
-建立 Cloud Volumes ONTAP 一套系統時、您必須提供 ARN 給 Cloud Manager 。
+建立Cloud Volumes ONTAP 一套系統時、您必須提供ARN給BlueXP。
 
 . 將Connector執行個體的IAM角色新增至CMK的主要使用者清單。
 +
-這讓Cloud Manager有權將CMK搭配Cloud Volumes ONTAP 使用。
+如此一來、BlueXP就有權將CMK搭配Cloud Volumes ONTAP 使用。
 
 
 
 
 
-== 安裝Connector並設定Cloud Manager
+== 步驟 4 ：安裝 Connector 並設定 BlueXP
 
-您Cloud Volumes ONTAP 必須先從AWS Marketplace啟動Connector執行個體、然後登入並設定Cloud Manager、才能在AWS中啟動此類系統。
+在開始使用 BlueXP 在 AWS 中部署 Cloud Volumes ONTAP 之前、您必須先安裝並設定 BlueXP Connector 。Connector讓BlueXP能夠管理公有雲環境中的資源和程序（包括Cloud Volumes ONTAP 整個過程）。
 
 .步驟
 . 取得由憑證授權單位（CA）簽署的根憑證（採用隱私權增強型郵件（PEF）Base - 64編碼的X．509格式）。請參閱貴組織的原則與程序、以取得該憑證。
 +
-您必須在設定程序期間上傳憑證。Cloud Manager透過HTTPS將要求傳送至AWS時、會使用信任的憑證。
+
+NOTE: 對於 AWS Secret Cloud 地區、您應該上傳 `NSS Root CA 2` 憑證、以及 Top Secret Cloud 的 `Amazon Root CA 4` 憑證：請務必僅上傳這些憑證、而非整個鏈結。憑證鏈結的檔案很大、上傳可能會失敗。如果您有其他憑證、您可以在稍後上傳、如下一步所述。
+
++
+您必須在設定程序期間上傳憑證。透過HTTPS傳送要求至AWS時、BlueXP會使用信任的憑證。
 
 . 啟動Connector執行個體：
 +
-.. 前往適用於Cloud Manager的AWS Intelligence Community Marketplace頁面。
+.. 前往適用於BlueXP的AWS Intelligence Community Marketplace頁面。
 .. 在「自訂啟動」索引標籤上、選擇從EC2主控台啟動執行個體的選項。
 .. 依照提示設定執行個體。
 +
@@ -357,23 +461,26 @@ CMK 可以是 AWS 託管的 CMK 、也可以是客戶託管的 CMK 。
 
 +
 *** 建議使用T3.xLarge。
-*** 您必須選擇在準備AWS環境時所建立的IAM角色。
+*** 您必須選擇設定權限時所建立的 IAM 角色。
 *** 您應該保留預設的儲存選項。
 *** Connector所需的連線方法如下：SSH、HTTP和HTTPS。
 
 
 
 
-. 從連線至Connector執行個體的主機設定Cloud Manager：
+. 從連線至Connector執行個體的主機設定BlueXP：
 +
 .. 開啟網頁瀏覽器並輸入 https://_ipaddress_[] 其中 _ipaddress_ 是您安裝 Connector 的 Linux 主機的 IP 位址。
 .. 指定用於連線至AWS服務的Proxy伺服器。
 .. 上傳您在步驟1中取得的憑證。
-.. 完成設定精靈中的步驟以設定Cloud Manager。
+.. 選取 * 設定新的 BlueXP* 、然後依照提示設定系統。
 +
-*** *系統詳細資料*：輸入此Cloud Manager執行個體的名稱、並提供貴公司名稱。
-*** *建立使用者*：建立您將用來管理Cloud Manager的管理使用者。
-*** *審查*：檢閱詳細資料並核准終端使用者授權合約。
+*** *系統詳細資料*：輸入Connector的名稱及您的公司名稱。
+*** *建立管理使用者*：建立系統的管理使用者。
++
+此使用者帳戶在本機系統上執行。無法透過BlueXP連線至驗證0服務。
+
+*** * 審查 * ：檢閱詳細資料、接受授權合約、然後選取 * 設定 * 。
 
 
 .. 若要完成CA簽署憑證的安裝、請從EC2主控台重新啟動Connector執行個體。
@@ -384,279 +491,217 @@ CMK 可以是 AWS 託管的 CMK 、也可以是客戶託管的 CMK 。
 
 
 
-== 從Cloud Volumes ONTAP Cloud Manager啟動
+== 步驟 5 ：（選用）安裝私有模式憑證
 
-您可以Cloud Volumes ONTAP 在Cloud Manager中建立新的工作環境、在AWS商業雲端服務環境中啟動執行個體。
+此步驟對於 AWS Secret Cloud 和 Top Secret Cloud 地區為選用步驟、只有在您有其他憑證（除了您在前一步驟中安裝的根憑證）時才需要。
 
-.您需要的產品
-* 如果您購買授權、則必須擁有從NetApp收到的授權檔案。授權檔案是Json格式的.NLF檔案。
-* 需要金鑰配對、才能對HA中介器啟用金鑰型SSH驗證。
+.步驟
+. 列出現有的已安裝憑證。
++
+.. 若要收集 occm Container 泊塢視窗 ID （識別名稱為「 DS-occm-1 」）、請執行下列命令：
++
+[source, CLI]
+----
+docker ps
+----
+.. 若要進入 occm 容器、請執行下列命令：
++
+[source, CLI]
+----
+docker exec -it <docker-id> /bin/sh
+----
+.. 若要從 "trust 儲存區密碼 " 環境變數收集密碼、請執行下列命令：
++
+[source, CLI]
+----
+env
+----
+.. 若要列出信任存放區中所有已安裝的憑證、請執行下列命令、並使用上一步收集的密碼：
++
+[source, CLI]
+----
+keytool -list -v -keystore occm.truststore
+----
 
+
+. 新增憑證。
++
+.. 若要收集 occm Container 泊塢視窗 id （識別名稱為「 DS-occm-1 」）、請執行下列命令：
++
+[source, CLI]
+----
+docker ps
+----
+.. 若要進入 occm 容器、請執行下列命令：
++
+[source, CLI]
+----
+docker exec -it <docker-id> /bin/sh
+----
++
+將新的憑證檔案儲存在內。
+
+.. 若要從 "trust 儲存區密碼 " 環境變數收集密碼、請執行下列命令：
++
+[source, CLI]
+----
+env
+----
+.. 若要將憑證新增至信任存放區、請執行下列命令、並使用上一步的密碼：
++
+[source, CLI]
+----
+keytool -import -alias <alias-name> -file <certificate-file-name> -keystore occm.truststore
+----
+.. 若要檢查是否已安裝憑證、請執行下列命令：
++
+[source, CLI]
+----
+keytool -list -v -keystore occm.truststore -alias <alias-name>
+----
+.. 若要結束 occm 容器、請執行下列命令：
++
+[source, CLI]
+----
+exit
+----
+.. 若要重設 occm 容器、請執行下列命令：
++
+[source, CLI]
+----
+docker restart <docker-id>
+----
+
+
+
+
+--
+
+--
+
+
+== 步驟 6 ：新增授權至 BlueXP 數位錢包
+
+如果您向 NetApp 購買授權、則需要將其新增至 BlueXP 數位錢包、以便在建立新的 Cloud Volumes ONTAP 系統時選取授權。數位錢包會將這些授權識別為未指派。
+
+.步驟
+. 從BlueXP導覽功能表中、選取*管理>數位錢包*。
+. 在* Cloud Volumes ONTAP 《*》*索引標籤上、從下拉式清單中選取「*節點型授權*」。
+. 按一下*未指派*。
+. 按一下「*新增未指派的授權*」。
+. 輸入授權的序號或上傳授權檔案。
+. 如果您還沒有使用許可檔案、則需要從 netapp.com 手動上傳使用許可檔案。
++
+.. 前往 link:https://register.netapp.com/site/vsnr/register/getlicensefile["NetApp 授權檔案產生器"^] 並使用您的 NetApp 支援網站認證資料登入。
+.. 輸入您的密碼、選擇產品、輸入序號、確認您已閱讀並接受隱私權政策、然後按一下 * 提交 * 。
+.. 選擇您要透過電子郵件或直接下載來接收 serialNumber.NLF Json 檔案。
+
+
+. 按一下「 * 新增授權 * 」。
+
+
+.結果
+BlueXP 將授權新增至數位錢包。授權將被識別為未指派、直到您將其與新Cloud Volumes ONTAP 的一套系統關聯為止。之後、授權便會移至數位錢包中的 BYOL 標籤。
+
+
+
+== 步驟 7 ：從 BlueXP 啟動 Cloud Volumes ONTAP
+
+您可以在 BlueXP 中建立新的工作環境、在 AWS Secret Cloud 和 Top Secret Cloud 中啟動 Cloud Volumes ONTAP 執行個體。
+
+.開始之前
+對於 HA 配對、必須有金鑰配對、才能啟用金鑰型 SSH 驗證給 HA 中介者。
 
 .步驟
 . 在「工作環境」頁面上、按一下「*新增工作環境*」。
-. 在「Create（建立）」下、選取Cloud Volumes ONTAP 「HseHA」或Cloud Volumes ONTAP 「
+. 在 * 建立 * 下、選取 Cloud Volumes ONTAP 。
++
+對於 HA ：在 * 建立 * 下、選取 Cloud Volumes ONTAP 或 Cloud Volumes ONTAP HA 。
+
 . 完成精靈中的步驟以啟動Cloud Volumes ONTAP 整套系統。
 +
+
+CAUTION: 在精靈中進行選擇時、請勿在 * 服務 * 下選取 * 資料感知與法規遵循 * 和 * 備份至雲端 * 。在 * 預先設定的封裝 * 下、選取 * 僅變更組態 * 、並確定您尚未選取任何其他選項。AWS Secret Cloud 和 Top Secret Cloud 地區不支援預先設定的套件、如果選取、您的部署將會失敗。
+
+
+
+.在多個可用性區域中部署 Cloud Volumes ONTAP HA 的注意事項
+當您完成 HA 配對精靈時、請注意下列事項。
+
+* 當您在多個可用性區域（ AZs ）中部署 Cloud Volumes ONTAP HA 時、應該設定傳輸閘道。請參閱 link:task-setting-up-transit-gateway.html["設定 AWS 傳輸閘道"]。
+* 部署組態如下、因為在發佈時、 AWS Top Secret Cloud 只有兩個 AZs 可用：
++
+** 節點1：可用度區域A
+** 節點2：可用度區域B
+** 中介：可用度區域A或B
+
+
+
+
+.在單一和 HA 節點上部署 Cloud Volumes ONTAP 的注意事項
 完成精靈時請注意下列事項：
 
-+
-** 如果您想要在Cloud Volumes ONTAP 多個可用度區域中部署SeseHA、請依照下列方式部署組態、因為在發佈時AWS商業雲端服務環境中只有兩個AZs可用：
-+
-*** 節點1：可用度區域A
-*** 節點2：可用度區域B
-*** 中介：可用度區域A或B
-
-
-** 您應該保留預設選項、以使用產生的安全性群組。
+* 您應該保留預設選項、以使用產生的安全性群組。
 +
 預先定義的安全性群組包含Cloud Volumes ONTAP 一些規則、這些規則是讓整個公司順利運作所需的。如果您需要使用自己的安全性、請參閱下方的安全性群組一節。
 
-** 您必須選擇在準備AWS環境時所建立的IAM角色。
-** 基礎AWS磁碟類型適用於初始Cloud Volumes ONTAP 的流通量。
+* 您必須選擇在準備AWS環境時所建立的IAM角色。
+* 基礎AWS磁碟類型適用於初始Cloud Volumes ONTAP 的流通量。
 +
 您可以為後續磁碟區選擇不同的磁碟類型。
 
-** AWS磁碟的效能與磁碟大小有關。
+* AWS磁碟的效能與磁碟大小有關。
 +
 您應該選擇能提供所需持續效能的磁碟大小。如需EBS效能的詳細資訊、請參閱AWS文件。
 
-** 磁碟大小是系統上所有磁碟的預設大小。
+* 磁碟大小是系統上所有磁碟的預設大小。
 +
 
 NOTE: 如果您稍後需要不同的大小、可以使用「進階配置」選項來建立使用特定大小磁碟的集合體。
 
-** 儲存效率功能可改善儲存使用率、並減少所需的儲存總容量。
-
-
 
 
 .結果
-Cloud Manager 會啟動 Cloud Volumes ONTAP 此功能。您可以追蹤時間表的進度。
+BlueXP會啟動Cloud Volumes ONTAP 這個執行個體。您可以追蹤時間表的進度。
 
 
 
-== 安全性群組規則
+== 步驟 8 ：安裝資料分層的安全性憑證
 
-Cloud Manager會建立安全群組、其中包括Cloud Manager和Cloud Volumes ONTAP NetApp在雲端成功運作所需的傳入和傳出規則。您可能想要參照連接埠進行測試、或是想要使用自己的安全性群組。
+您必須手動安裝安全性憑證、才能在 AWS Secret Cloud 和 Top Secret Cloud 區域中進行資料分層。
 
+.開始之前
+. 建立 S3 儲存區。
++
 
+NOTE: 請確定貯體名稱以開頭 `fabric-pool-.` 例如 `fabric-pool-testbucket`。
 
-=== Connector的安全性群組
+. 保留您安裝的根憑證 `step 4` 方便。
 
-Connector 的安全性群組需要傳入和傳出規則。
 
+.步驟
+. 從您安裝的根憑證複製文字 `step 4`。
+. 使用 CLI 安全連線至 Cloud Volumes ONTAP 系統。
+. 安裝根憑證。您可能需要按下 `ENTER` 金鑰多次：
++
+[listing]
+----
+security certificate install -type server-ca -cert-name <certificate-name>
+----
+. 出現提示時、輸入完整複製的文字、包括和寄件者 `----- BEGIN CERTIFICATE -----` 至 `----- END CERTIFICATE -----`。
+. 保留 CA 簽署數位憑證的複本、以供日後參考。
+. 保留 CA 名稱和憑證序號。
+. 為 AWS Secret Cloud 和 Top Secret Cloud 區域設定物件存放區： `set -privilege advanced -confirmations off`
+. 執行此命令以設定物件存放區。
++
 
+NOTE: 所有 Amazon 資源名稱（ ARN ）都應以後綴為後綴 `-iso-b`、例如 `arn:aws-iso-b`。例如、如果某個資源需要區域的 ARN 、對於 Top Secret Cloud 、請使用命名慣例 AS `us-iso-b` 適用於 `-server` 旗標。若為 AWS Secret Cloud 、請使用 `us-iso-b-1`。
 
-==== 傳入規則
++
+[listing]
+----
+storage aggregate object-store config create -object-store-name <S3Bucket> -provider-type AWS_S3 -auth-type EC2-IAM -server <s3.us-iso-b-1.server_name> -container-name <fabric-pool-testbucket> -is-ssl-enabled true -port 443
+----
+. 確認物件存放區已成功建立： `storage aggregate object-store show -instance`
+. 將物件存放區附加至 Aggregate 。每個新的集合體都應該重複此步驟： `storage aggregate object-store attach -aggregate <aggr1> -object-store-name <S3Bucket>`
 
-[cols="10,10,80"]
-|===
-| 傳輸協定 | 連接埠 | 目的 
-
-
-| SSH | 22 | 提供對 Connector 主機的 SSH 存取權 
-
-
-| HTTP | 80 | 提供從用戶端 Web 瀏覽器到本機使用者介面的 HTTP 存取 
-
-
-| HTTPS | 443.. | 提供 HTTPS 存取、從用戶端網頁瀏覽器存取本機使用者介面 
-|===
-
-
-==== 傳出規則
-
-Connector 的預先定義安全性群組包括下列傳出規則。
-
-[cols="20,20,60"]
-|===
-| 傳輸協定 | 連接埠 | 目的 
-
-
-| 所有 TCP | 全部 | 所有傳出流量 
-
-
-| 所有的 udp | 全部 | 所有傳出流量 
-|===
-
-
-=== 安全性群組Cloud Volumes ONTAP
-
-適用於不支援節點的安全群組Cloud Volumes ONTAP 需要傳入和傳出規則。
-
-
-
-==== 傳入規則
-
-當您建立工作環境並選擇預先定義的安全性群組時、可以選擇允許下列其中一項的流量：
-
-* *僅限選定VPC *：傳入流量的來源是VPC的子網路範圍（適用於Cloud Volumes ONTAP 整個系統）、以及連接器所在VPC的子網路範圍。這是建議的選項。
-* *所有VPC*：傳入流量的來源為0.00.0.0/0 IP範圍。
-
-
-[cols="10,10,80"]
-|===
-| 傳輸協定 | 連接埠 | 目的 
-
-
-| 所有 ICMP | 全部 | Ping 執行個體 
-
-
-| HTTP | 80 | 使用叢集管理 LIF 的 IP 位址、以 HTTP 存取 System Manager Web 主控台 
-
-
-| HTTPS | 443.. | 使用叢集管理 LIF 的 IP 位址、以 HTTPS 存取 System Manager 網路主控台 
-
-
-| SSH | 22 | SSH 存取叢集管理 LIF 的 IP 位址或節點管理 LIF 
-
-
-| TCP | 111. | 遠端程序需要 NFS 
-
-
-| TCP | 139. | CIFS 的 NetBios 服務工作階段 
-
-
-| TCP | 161-162 | 簡單的網路管理傳輸協定 
-
-
-| TCP | 445 | Microsoft SMB/CIFS over TCP 搭配 NetBios 架構 
-
-
-| TCP | 635 | NFS 掛載 
-
-
-| TCP | 749 | Kerberos 
-
-
-| TCP | 2049 | NFS 伺服器精靈 
-
-
-| TCP | 3260 | 透過 iSCSI 資料 LIF 存取 iSCSI 
-
-
-| TCP | 4045 | NFS 鎖定精靈 
-
-
-| TCP | 4046 | NFS 的網路狀態監控 
-
-
-| TCP | 10000 | 使用 NDMP 備份 
-
-
-| TCP | 11104. | 管理 SnapMirror 的叢集間通訊工作階段 
-
-
-| TCP | 11105. | 使用叢集間生命體進行 SnapMirror 資料傳輸 
-
-
-| UDP | 111. | 遠端程序需要 NFS 
-
-
-| UDP | 161-162 | 簡單的網路管理傳輸協定 
-
-
-| UDP | 635 | NFS 掛載 
-
-
-| UDP | 2049 | NFS 伺服器精靈 
-
-
-| UDP | 4045 | NFS 鎖定精靈 
-
-
-| UDP | 4046 | NFS 的網路狀態監控 
-
-
-| UDP | 4049 | NFS rquotad 傳輸協定 
-|===
-
-
-==== 傳出規則
-
-適用於此功能的預先定義安全性群組 Cloud Volumes ONTAP 包括下列傳出規則。
-
-[cols="20,20,60"]
-|===
-| 傳輸協定 | 連接埠 | 目的 
-
-
-| 所有 ICMP | 全部 | 所有傳出流量 
-
-
-| 所有 TCP | 全部 | 所有傳出流量 
-
-
-| 所有的 udp | 全部 | 所有傳出流量 
-|===
-
-
-=== HA中介器的外部安全群組
-
-針對此功能、預先定義 Cloud Volumes ONTAP 的外部安全群組包括下列傳入和傳出規則。
-
-
-
-==== 傳入規則
-
-傳入規則的來源是來自連接器所在VPC的流量。
-
-[cols="20,20,60"]
-|===
-| 傳輸協定 | 連接埠 | 目的 
-
-
-| SSH | 22 | SSH 連線至 HA 中介器 
-
-
-| TCP | 3000 | 從 Connector 進行 RESTful API 存取 
-|===
-
-
-==== 傳出規則
-
-HA 中介器的預先定義安全性群組包括下列傳出規則。
-
-[cols="20,20,60"]
-|===
-| 傳輸協定 | 連接埠 | 目的 
-
-
-| 所有 TCP | 全部 | 所有傳出流量 
-
-
-| 所有的 udp | 全部 | 所有傳出流量 
-|===
-
-
-=== HA中介器的內部安全群組
-
-針對此功能、預先定義 Cloud Volumes ONTAP 的內部安全群組包含下列規則：Cloud Manager 一律會建立這個安全群組。您沒有使用自己的選項。
-
-
-
-==== 傳入規則
-
-預先定義的安全性群組包含下列傳入規則。
-
-[cols="20,20,60"]
-|===
-| 傳輸協定 | 連接埠 | 目的 
-
-
-| 所有流量 | 全部 | HA 中介器與 HA 節點之間的通訊 
-|===
-
-
-==== 傳出規則
-
-預先定義的安全性群組包括下列傳出規則。
-
-[cols="20,20,60"]
-|===
-| 傳輸協定 | 連接埠 | 目的 
-
-
-| 所有流量 | 全部 | HA 中介器與 HA 節點之間的通訊 
-|===
