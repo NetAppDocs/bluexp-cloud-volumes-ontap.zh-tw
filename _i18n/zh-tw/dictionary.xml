@@ -479,14 +479,7 @@
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">社群</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文件</block>
-  <block id="8e9d6d95264b6231f0a1d0ca22c087f7" category="summary">下列指南可協助您在Cloud Volumes ONTAP Google Cloud中開始使用、以符合您的特定使用案例。</block>
   <block id="f540a08b090d18fa948ca4ade8ceb7ff" category="doc">適用於 Google Cloud Cloud Volumes ONTAP</block>
-  <block id="f22e86b63856df3737d333499d0d8642" category="inline-link-macro">在Google Cloud中開始Cloud Volumes ONTAP 使用功能：設定逐步解說</block>
-  <block id="a480525c508abef033c6011b6b8ae5db" category="list-text"><block ref="a480525c508abef033c6011b6b8ae5db" category="inline-link-macro-rx"></block></block>
-  <block id="85536ede959e4a62b6eeb8fa7da21b71" category="inline-link-macro">將內部部署的資料複寫到ONTAP NetApp Cloud Volumes ONTAP 解決方案以進行災難恢復</block>
-  <block id="8b26f0918bd84f8f658268af9e2d60ac" category="list-text"><block ref="8b26f0918bd84f8f658268af9e2d60ac" category="inline-link-macro-rx"></block></block>
-  <block id="ebd1806e62b51cb0c1b6db8082e0666d" category="inline-link-macro">如何在FlexCache Google Cloud上部署Cloud Volumes ONTAP NetApp解決方案</block>
-  <block id="dd8a20d5a7875f2be225fbdc1a4c18bf" category="list-text"><block ref="dd8a20d5a7875f2be225fbdc1a4c18bf" category="inline-link-macro-rx"></block></block>
   <block id="d39a322c0902d3bf2bf75781b1e1c8ab" category="doc">建立資料分層與備份的服務帳戶</block>
   <block id="5632566b6a310163e5233af96d1f233d" category="paragraph">使用服務帳戶存取及管理階層資料的儲存庫、以及另一個儲存庫進行備份。Cloud Volumes ONTAP</block>
   <block id="ab6fcc124e86604f6bab5da13aaea51a" category="inline-link">前往「服務帳戶」頁面</block>
@@ -5248,4 +5241,5 @@
   <block id="059ef6b8ce45a93c6445c0f41c224068" category="list-text"><block ref="059ef6b8ce45a93c6445c0f41c224068" category="inline-link-rx"></block></block>
   <block id="8d248e3b0efc80b62fc62ba57027d13f" category="admonition">AWS Secret Cloud 需要提供您自己的 IAM 角色。 <block ref="af622e808f4363be4413c4e256d0f137" category="inline-link-macro-rx"></block>。</block>
   <block id="275e611a605380e34988066f6fa53eae" category="sidebar">在 AWS 秘密區域部署 Cloud Volumes ONTAP</block>
+  <block id="3f0b36cd14ec7bfa0b4b01e076c44477" category="sidebar">AWS Top Secret / Secret Cloud 地區快速入門</block>
 </blocks>
