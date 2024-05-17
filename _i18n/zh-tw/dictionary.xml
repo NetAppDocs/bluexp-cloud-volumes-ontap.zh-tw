@@ -4909,8 +4909,6 @@
   <block id="44c305a704023f5d643a06ce08c03402" category="section-title">啟用增強的網路功能</block>
   <block id="2aed0ca02213325feada0ee707489e81" category="inline-link-macro">如何在 AWS Cloud Volumes ONTAP 執行個體上啟用 SR-IOV 或 ENA 等增強型網路</block>
   <block id="489d7e740d2dd946585a03c48af8f4cf" category="paragraph">若要升級至 Cloud Volumes ONTAP 9.8 版及更新版本、您必須在執行 C4 、 M4 或 R4 執行個體類型的叢集上啟用 _Enhanced networking_ 。若要啟用 ENA 、請參閱知識庫文章 <block ref="a4ba9465250c8fbd5a9415056507370e" category="inline-link-macro-rx"></block>。</block>
-  <block id="4b9b39edb3e09fa20d9a66c33e754c00" category="inline-link-macro">無法將執行個體類型從 R4 變更為 R5 、但發生磁碟數錯誤</block>
-  <block id="58cbae1f4fc410ea043517dc0196bed4" category="paragraph">如果您無法從 C4 、 M4 或 R4 執行個體變更執行個體類型、請參閱知識庫文章 <block ref="ddbe8a0e687a77b95fcbe5dc93c2e464" category="inline-link-macro-rx"></block>。</block>
   <block id="f9f7c1c9687f8f087477f0ae4cac6b45" category="inline-link">Microsoft Azure 文件</block>
   <block id="75640f19259f0f28da8136565db5cc22" category="admonition">若要執行其他 NIC 相關工作、您可以在 Azure 中指派具有適當權限的網路參與者角色或自訂角色。如需這些 NIC 相關權限的詳細資訊、請參閱<block ref="66f156d6b7e425dd982efc44f4fabac6" category="inline-link-rx"></block>。</block>
   <block id="2cf711540cadf3cbb4cac96dba2d9464" category="list-text">包括使用 BlueXP 備份與還原的不限數量的 Volume 備份、但僅適用於使用專業版套件的 Cloud Volumes ONTAP 系統。</block>
@@ -5242,4 +5240,6 @@
   <block id="8d248e3b0efc80b62fc62ba57027d13f" category="admonition">AWS Secret Cloud 需要提供您自己的 IAM 角色。 <block ref="af622e808f4363be4413c4e256d0f137" category="inline-link-macro-rx"></block>。</block>
   <block id="275e611a605380e34988066f6fa53eae" category="sidebar">在 AWS 秘密區域部署 Cloud Volumes ONTAP</block>
   <block id="3f0b36cd14ec7bfa0b4b01e076c44477" category="sidebar">AWS Top Secret / Secret Cloud 地區快速入門</block>
+  <block id="daa9928416a167d9b7399ff9cc7d8ca0" category="inline-link-macro">將 AWS Xen CVO 執行個體轉換為 Nitro （ KVM ）</block>
+  <block id="77c35fc79180e21cd19319ed21d08508" category="paragraph">如果您無法從 C4 、 M4 或 R4 執行個體變更執行個體類型、請參閱知識庫文章 <block ref="609c7ea2ea8625480f6266b3b7e7b947" category="inline-link-macro-rx"></block>。</block>
 </blocks>
