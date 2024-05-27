@@ -36,6 +36,20 @@ summary: 在 Cloud Volumes ONTAP AWS 中部署時、您可以選擇符合工作�
 
 
 
+=== 選擇支援的本機區域
+
+某些 AWS 本機區域（包括新加坡）支援 Cloud Volumes ONTAP 。選擇本機區域是選擇性的。
+
+link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["檢視本機區域的完整清單"^]。
+您必須先啟用本機區域、才能在這些區域中建立和管理資源。
+
+link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["瞭解如何啟用本機區域"^]。
+
+
+NOTE: Phoenix 不是支援的本機區域。
+
+
+
 == 選擇支援的執行個體
 
 根據您選擇的授權類型、支援多種執行個體類型。 Cloud Volumes ONTAP

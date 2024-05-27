@@ -805,9 +805,6 @@
   <block id="3817a9574884aed9f0b3c675344f4cc5" category="paragraph">如果某個節點發生故障、另一個節點可以提供資料給其合作夥伴、以提供持續的資料服務。用戶端可以從合作夥伴節點存取相同的資料、因為資料會同步鏡射至合作夥伴。</block>
   <block id="7e952af66e2161f4e073af5d550ff30c" category="paragraph">節點重新開機後、合作夥伴必須重新同步資料、才能退回儲存設備。重新同步資料所需的時間、取決於節點當機時資料的變更量。</block>
   <block id="218815dee60a5e42cd50732e4ad90420" category="section-title">HA 部署模式</block>
-  <block id="a2efc5fc54fd68c09324deea01c6bc06" category="paragraph">您可以在多個可用度區域（ AZs ）或單一 AZ 中部署 HA 組態、確保資料的高可用度。您應該檢閱每個組態的詳細資料、以選擇最符合您需求的組態。</block>
-  <block id="bc2a46f921494df9fc5f911909c03874" category="section-title">多個可用度區域</block>
-  <block id="28cbbb231a21034634b99c799eadc9ce" category="paragraph">在多個可用度區域（ AZs ）中部署 HA 組態、可確保當 AZ 或執行 Cloud Volumes ONTAP 此節點的執行個體發生故障時、資料的高可用度。您應該瞭解 NAS IP 位址如何影響資料存取和儲存容錯移轉。</block>
   <block id="7657d465c1c0f4f6bfa9bdc17df2b08c" category="section-title">NFS 與 CIFS 資料存取</block>
   <block id="9f0c295d98b756eb0b4e5810df0a50b2" category="inline-link-macro">設定 AWS 傳輸閘道</block>
   <block id="34df161a9c0315272455a0dcc8b35711" category="paragraph">當 HA 組態分佈於多個可用區域時、 _浮 點 IP 位址 _ 可啟用 NAS 用戶端存取。在發生故障時、浮動 IP 位址必須位於該區域所有 VPC 的 CIDR 區塊之外、可以在節點之間移轉。除非您、否則 VPC 外部的用戶端無法原生存取這些功能 <block ref="f196b90949d1249f4f3797eb7257a21d" category="inline-link-macro-rx"></block>。</block>
@@ -822,8 +819,6 @@
   <block id="a97184b57d4c599265a6c857744616a6" category="paragraph"><block ref="a97184b57d4c599265a6c857744616a6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="24c0cd8b26bb96fcfde0ec7aa356e67c" category="paragraph">如果發生故障、用於外部 VPC 存取的 NAS 資料 IP 將無法在節點之間移轉。如果節點離線、您必須使用另一個節點上的 IP 位址、將磁碟區手動重新掛載至 VPC 外部的用戶端。</block>
   <block id="59cd6fed99392db807d679317017b518" category="paragraph">故障節點恢復上線後、請使用原始 IP 位址將用戶端重新掛載至磁碟區。此步驟是為了避免在兩個 HA 節點之間傳輸不必要的資料、這可能會對效能和穩定性造成重大影響。</block>
-  <block id="213cb4fa8613615178e793d9dcd42165" category="section-title">單一可用度區域</block>
-  <block id="b593d41d188d87529aac0e57d6b4594a" category="paragraph">在單一可用度區域（ AZ ）中部署 HA 組態、可確保執行 Cloud Volumes ONTAP 此節點的執行個體故障時、資料的高可用度。所有資料均可從 VPC 外部原生存取。</block>
   <block id="31ac8d1ac9d098205b95d495a0a3f93a" category="inline-link">AWS 分散配置群組</block>
   <block id="7f87e6839b7919bf607ad546427cfbe1" category="section-title">資料存取</block>
   <block id="c60d8180a8553c026163df72ec4bf40d" category="paragraph">由於此組態位於單一 AZ 、因此不需要浮動 IP 位址。您可以使用相同的 IP 位址、從 VPC 內部和 VPC 外部存取資料。</block>
@@ -3372,7 +3367,6 @@
   <block id="639c4a9b76126cf4712751dee5546383" category="paragraph">同時、BlueXP針對VPC-1、VPC-2和VPC-3中的執行個體所建立的預先定義防火牆規則、可透過_all_傳輸協定和連接埠進行入侵通訊。這些規則可在HA節點之間進行通訊。</block>
   <block id="3ef69cb41da937aa60ab5fbab53eb42a" category="list-text">升級Cloud Volumes ONTAP 時、BlueXP也會視需要更新中介執行個體。</block>
   <block id="5d345d14f8662bfe45d8562fba90c487" category="list-text">當Cloud Volumes ONTAP 您從BlueXP建立一套功能不全的HA配對時、系統會提示您提供一個用於中介執行個體的金鑰配對。您可以使用該金鑰配對來進行SSH存取<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> 使用者：</block>
-  <block id="b4af2eb1a5c665c00f00d9b68f64d5be" category="paragraph">在跨多個可用區域部署 HA 組態之前、您應該先檢閱浮動 IP 位址和路由表的需求。部署組態時、您必須指定浮動 IP 位址。私有IP位址是由BlueXP自動建立。</block>
   <block id="bf20805083b34c4479e326ea7f16966f" category="paragraph">選取磁碟區並按一下*掛載Command*、即可從BlueXP輕鬆識別正確的IP位址。</block>
   <block id="bf75afe84fa4d8e8637d67f46da78447" category="admonition">BlueXP會建立一個<block ref="69dad99e4ae4952ff167137be3a42452" category="inline-link-rx"></block> 然後啟動該放置群組中的兩個 HA 節點。放置群組可將執行個體分散到不同的基礎硬體、藉此降低同時發生故障的風險。此功能可從運算角度而非磁碟故障角度改善備援。</block>
   <block id="c884e72132fe774e964d45203b2dda4d" category="paragraph">當您建立新的磁碟區並需要額外的磁碟時、BlueXP會將相同數量的磁碟分配給兩個節點、建立鏡射的Aggregate、然後建立新的磁碟區。例如、如果磁碟區需要兩個磁碟、則BlueXP會在每個節點上配置兩個磁碟、總共四個磁碟。</block>
@@ -5244,4 +5238,48 @@
   <block id="21374a20e08d3e0c8ca328133d8fe5f4" category="list-text">在 BlueXP 主控台的右上角、按一下省略符號圖示、然後選取 * 從工作區移除 * 。</block>
   <block id="b724364be6320cfd44126523f60ef584" category="inline-link">市場產品的程式化部署</block>
   <block id="1466cb0ca0af8994440faa54da634c8d" category="list-text">* 訂閱 Azure Marketplace* ：如果 BlueXP 無法啟用 Cloud Volumes ONTAP 的程式設計部署、您會看到此頁面。請依照畫面上列出的步驟進行。請參閱<block ref="bc817edffaba6b19533f23cdb879088c" category="inline-link-rx"></block> 以取得更多資訊。</block>
+  <block id="64d1ac557c8992bc5d65b98a95e0b497" category="section-title">選擇支援的本機區域</block>
+  <block id="951d6dba79708fba245b5798bb84dde6" category="paragraph">某些 AWS 本機區域（包括新加坡）支援 Cloud Volumes ONTAP 。選擇本機區域是選擇性的。</block>
+  <block id="b1968c5681446da9bdcedadbf7a34131" category="inline-link-macro">檢視本機區域的完整清單</block>
+  <block id="a455e3549f40e60e4a9c2e8c6580a6a2" category="paragraph"><block ref="27bdb425ba8206d688a379332282fbb4" category="inline-link-macro-rx"></block>。
+您必須先啟用本機區域、才能在這些區域中建立和管理資源。</block>
+  <block id="7d273ac4682ff6458339567063ef099c" category="inline-link-macro">瞭解如何啟用本機區域</block>
+  <block id="9d27b872e974d3d08bf3a26f3677a159" category="paragraph"><block ref="4d81cb3a41369feab014b9955336458e" category="inline-link-macro-rx"></block>。</block>
+  <block id="f5d7776a3ddb7ca1ecdd36a3e71b0903" category="admonition">Phoenix 不是支援的本機區域。</block>
+  <block id="14f93e26a64410a779a8f05ff019c578" category="paragraph">您可以跨多個可用性區域（ AZs ）或單一可用性區域（ AZ ）部署 HA 組態、確保資料的高可用度。您應該檢閱每個組態的詳細資料、以選擇最符合您需求的組態。</block>
+  <block id="086e808bdf46a8027609222c8bc2ae0b" category="section-title">多個可用性區域</block>
+  <block id="1f0c75dd86d99f8dd501e6ad73083cb9" category="paragraph">在多個可用性區域（ AZs ）中部署 HA 組態、可確保在 AZ 或執行 Cloud Volumes ONTAP 節點的執行個體發生故障時、資料的高可用度。您應該瞭解 NAS IP 位址如何影響資料存取和儲存容錯移轉。</block>
+  <block id="9e1e9460b8dc471c1ab072416162e7fd" category="paragraph">在跨多個可用性區域部署 HA 組態之前、您應該先檢閱浮動 IP 位址和路由表的需求。部署組態時、您必須指定浮動 IP 位址。私有IP位址是由BlueXP自動建立。</block>
+  <block id="9915334dccd6082757486cc7db7c4599" category="section-title">單一可用性區域</block>
+  <block id="4214b1507155cb0c63890d5526690625" category="paragraph">在單一可用性區域（ AZ ）中部署 HA 組態、可確保執行 Cloud Volumes ONTAP 節點的執行個體發生故障時、資料的高可用度。所有資料均可從 VPC 外部原生存取。</block>
+  <block id="e0b08acf0828bf4594a0b9bd6411df1b" category="section-title">AWS 本機區域</block>
+  <block id="bc54c20d96244cbf865df76934081bb9" category="paragraph">AWS 本機區域是一種基礎架構部署、其中儲存、運算、資料庫和其他精選 AWS 服務都位於大城市和產業區域附近。有了 AWS 本機區域、您就能讓 AWS 服務更接近您、進而改善工作負載的延遲、並在本機維護資料庫。</block>
+  <block id="ac654b16577855244ce7dae48d89fba9" category="paragraph">您可以在 AWS 本機區域中部署單一 AZ 或多個 AZ 組態。</block>
+  <block id="2a6302a8529ac1ec37d01886ead088d0" category="section-title">AWS 本機區域組態範例</block>
+  <block id="19af59a268c506bb19268e318e2e9e5f" category="paragraph">以下為範例組態：</block>
+  <block id="cc9d5d3b16643a54feae6e4778e4d7b9" category="list-text">單一可用性區域：叢集節點和介面位於同一個本機區域。</block>
+  <block id="9f1aad520102b4f5b24cb8c2d5dce3eb" category="list-text">多個可用性區域
+在多個可用性區域組態中、有三個執行個體、兩個節點和一個中介器。三個執行個體中的一個執行個體必須位於個別的區域中。您可以選擇設定方式。</block>
+  <block id="693e51513559ce9e3ac257ad0f07f744" category="paragraph">以下是三種組態範例：</block>
+  <block id="23cfd96026421dbbdfa6a706c9b57047" category="list-text">每個叢集節點位於不同的本機區域、而介面位於公用可用性區域中。</block>
+  <block id="e7b2b5f10ffa3982dbe023fcc44d9809" category="list-text">本機區域中的一個叢集節點、本機區域中的中介節點、以及第二個叢集節點位於可用性區域中。</block>
+  <block id="7f1ca580f0235d8ecd120f9905161358" category="list-text">每個叢集節點和介面位於不同的本機區域中。</block>
+  <block id="53e8d12efd0a1f3029b5796a1b3b6d97" category="section-title">支援的磁碟和執行個體類型</block>
+  <block id="b725b06baf48d4e1dcf97d094f7fa465" category="paragraph">唯一支援的磁碟類型是 GP2 。</block>
+  <block id="3d3c8175d796b0c12230914779b33fbb" category="paragraph">目前支援下列 EC2 執行個體類型系列、其大小為 xlarge 到 4xlarge ：</block>
+  <block id="3f44a84e6e34fdb5a2f89c68d8c36175" category="list-text">M5</block>
+  <block id="fea813d4ddba3c46cf8b8e664b92cdaa" category="list-text">c5</block>
+  <block id="82bce2d16d12d889961dbfbfac9b0015" category="list-text">C5d</block>
+  <block id="e1b8054c9cdd622c9eeecfe71f26054a" category="list-text">R5</block>
+  <block id="513e8fcb60809102e57ea96961daab7c" category="list-text">R5d</block>
+  <block id="5eaba9c26c7009842affe7562eb137d3" category="inline-link-macro">您應該參閱 AWS 、以取得本機區域中支援的 EC2 執行個體類型的最新完整詳細資料</block>
+  <block id="5a38beb8a35f70ab33e7cb660b004cf6" category="paragraph"><block ref="3d9029b658475a88eed4e09e15fa8cce" category="inline-link-macro-rx"></block>。</block>
+  <block id="6d79fc3df77a055abb0043c41477add1" category="paragraph">有些 AWS 本機區域可供使用。</block>
+  <block id="b40c89ea76edb69b0a84d7a6a1be7455" category="inline-link-macro">AWS 教學課程「開始使用 AWS 本機區域部署低延遲應用程式」</block>
+  <block id="f8945f9c0b29d6212c5c9654ff1b7ed3" category="paragraph">您必須先啟用本機區域、並在 AWS 帳戶的本機區域中建立子網路、才能使用 AWS 本機區域。請遵循 * 選擇加入 AWS 本機區域 * 、並 * 將 Amazon VPC 延伸至中的本機區域 * 步驟 <block ref="08374900627773b5f0e169d9824fde8a" category="inline-link-macro-rx"></block>。</block>
+  <block id="c0d8b980523f619bb9dff8ef93a968c9" category="paragraph">如果您執行的是 Connector 3.9.36 版或更低版本、則必須在 AWS EC2 主控台中、將下列權限新增至 AWS Connector 角色： DescribeAvailabilityZones 。</block>
+  <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">2024 年 5 月 17 日</block>
+  <block id="b3e67e9d7f5be7902fd87917d0acb3e0" category="section-title">Amazon Web Services 本機區域支援</block>
+  <block id="6f9fa4d02a6081aa6d33b131d8532328" category="paragraph">Cloud Volumes ONTAP HA 部署現在支援 AWS 本機區域。AWS 本機區域是一種基礎架構部署、其中儲存、運算、資料庫和其他精選 AWS 服務都位於大城市和產業區域附近。</block>
+  <block id="b75accaa363606f733ab4203f45f8193" category="paragraph">如需更多關於具有 HA 部署的 AWS 本機區域的資訊、請參閱 <block ref="6830ae69d7be576a68a954338edafef9" category="inline-link-macro-rx"></block>。</block>
 </blocks>

@@ -304,6 +304,15 @@ BlueXP會啟動Cloud Volumes ONTAP 這個執行個體。您可以追蹤時間表
 . 從左側導覽功能表中、選取*儲存設備> Canvas*。
 . 在「畫版」頁面上、按一下「 * 新增工作環境 * 」、然後依照提示進行。
 . *選擇位置*：選擇* Amazon Web Services*和* Cloud Volumes ONTAP 《*》HA *。
++
+有些 AWS 本機區域可供使用。
+
++
+您必須先啟用本機區域、並在 AWS 帳戶的本機區域中建立子網路、才能使用 AWS 本機區域。請遵循 * 選擇加入 AWS 本機區域 * 、並 * 將 Amazon VPC 延伸至中的本機區域 * 步驟 link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["AWS 教學課程「開始使用 AWS 本機區域部署低延遲應用程式」"^]。
+
++
+如果您執行的是 Connector 3.9.36 版或更低版本、則必須在 AWS EC2 主控台中、將下列權限新增至 AWS Connector 角色： DescribeAvailabilityZones 。
+
 . * 詳細資料與認證 * ：選擇性地變更 AWS 認證資料與訂閱、輸入工作環境名稱、視需要新增標記、然後輸入密碼。
 +
 本頁中的部分欄位是不知自明的。下表說明您可能需要指導的欄位：
