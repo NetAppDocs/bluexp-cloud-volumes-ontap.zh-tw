@@ -4117,20 +4117,13 @@
   <block id="2057f11c69807ba4cbd27e1e921f7823" category="paragraph"><block ref="2057f11c69807ba4cbd27e1e921f7823" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8bcb080f300b6dfd8ee09d89bb85d060" category="paragraph"><block ref="8bcb080f300b6dfd8ee09d89bb85d060" category="inline-image-macro-rx" type="image"></block></block>
   <block id="021ed7718b4d1f8ff42ac2d9a653d143" category="list-text">在工作環境中、按一下 * Aggregate * 標籤。</block>
-  <block id="a83fde1416b692585ab72d55276e43ee" category="list-text">在 Aggregate 索引標籤上、瀏覽至所需標題、然後按一下 * 。 （橢圓圖示） * 。</block>
   <block id="4940ff7a33940e4ec33b7d78f146648a" category="inline-image-macro">集合體功能表選項的螢幕擷取畫面。</block>
   <block id="65c989c474db774160c441e94f03ddfc" category="paragraph"><block ref="65c989c474db774160c441e94f03ddfc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="116812c107d40280e65a3a0f4f5c3440" category="cell">在 ... 下 （橢圓圖示）功能表、按一下 * 檢視 Aggregate details* 。</block>
-  <block id="2e59a4ccfe2d0087aa6ece23a0922ea4" category="cell">在 ... 下 （橢圓圖示）功能表、按一下 * 新增 Volume * 。</block>
-  <block id="64209bde9f2d422a086f99622664bb4b" category="list-text">在 ... 下 （橢圓圖示）功能表、按一下 * 新增磁碟 * 。</block>
-  <block id="54afa16678d9fa49dd4f37f5d8d62d51" category="list-text">在 ... 下 （橢圓圖示）功能表、按一下 * 增加容量 * 。</block>
   <block id="cacd62863a1aec474ea14c7ba39b9f28" category="list-text">輸入您要新增的額外容量、然後按一下 * 增加 * 。</block>
-  <block id="f20c2435bfa2bf017b0a33455e4d252c" category="list-text">選取不包含任何磁碟區的 Aggregate tile 按一下 * 。 （橢圓圖示） &gt; 刪除 * 。</block>
   <block id="44f505566cfb44ab274d6dd37da6a48b" category="list-text">在「 Canvas 」頁面上、按兩下您設定為寫入速度的系統名稱。</block>
   <block id="b9c48f0b7a355bd9b39b3ae2c666ec43" category="list-text">在「總覽」標籤上、按一下「功能」面板、然後按一下「 * 寫入速度 * 」旁邊的鉛筆圖示。</block>
   <block id="8e1d6d29fa6bbc00ab6896ec1e677037" category="list-text">按一下 * 儲存 * 、檢閱確認訊息、然後按一下 * 核准 * 。</block>
   <block id="38124763ec69515302fcd6a655b0cb92" category="list-text">在「畫布」頁面上、按兩下 Cloud Volumes ONTAP 工作環境的名稱。</block>
-  <block id="67f0f7bdc0b6b3c961c645e5a644b531" category="list-text">在 BlueXP 主控台的右上角、按一下橢圓圖示、然後選取 * 設定密碼 * 。</block>
   <block id="a18ec44ef07922a650e590de9dd0a36e" category="inline-image-macro">螢幕擷取畫面顯示工作環境中的可用功能表、其中包含設定密碼動作。</block>
   <block id="6daca7a21673390f9b4946d99b575dbc" category="paragraph"><block ref="6daca7a21673390f9b4946d99b575dbc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="906b0fc78378feea1883fe721c72e648" category="list-text">在「概述」索引標籤上、按一下「功能」面板、然後按一下「 * 機器類型 * 」旁邊的鉛筆圖示。</block>
@@ -4157,7 +4150,6 @@
   <block id="da881591358a049c4652b06b1054ccb1" category="inline-image-macro">顯示兩個集合體的螢幕擷取畫面、其中一個集合體具有文字「 Elastic Volumes Enabled 」的欄位。</block>
   <block id="6d62cbba5d5d4db651e497c57ee98339" category="paragraph"><block ref="6d62cbba5d5d4db651e497c57ee98339" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3f5b7e3773583b9ca6b634b5264139c7" category="list-text">在 Canvas 頁面上、按兩下您要移除的工作環境。</block>
-  <block id="a9d8201fa61b52d04aa8d5efa98407ef" category="list-text">在 BlueXP 主控台的右上角、按一下橢圓圖示、然後選取 * 從工作區移除 * 。</block>
   <block id="41aeb32afbd7adcd7344a525b524aa2e" category="inline-image-macro">在 BlueXP 主控台右上角顯示「從工作區移除」選項的螢幕擷取畫面。</block>
   <block id="68dff8388aadd10577c0c664fc4fa756" category="paragraph"><block ref="68dff8388aadd10577c0c664fc4fa756" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ccc69ca3b9f50bd572baa407834f41ed" category="list-text">在「從工作區檢閱」視窗中、按一下 * 移除 * 。</block>
@@ -4193,7 +4185,6 @@
   <block id="78cffa6560689ac98432ba58e17e78ff" category="inline-image-macro">螢幕擷取畫面、顯示可用於變更磁碟區分層原則的選項。</block>
   <block id="e0e0725f5ef956857b33c008a39af157" category="paragraph"><block ref="e0e0725f5ef956857b33c008a39af157" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fd6a9430e3d3dc98292b8abddc9d77ff" category="paragraph">如果Cloud Volumes ONTAP 您使用_auto_分層原則在某個SURFVolume上啟用資料分層、您可以根據業務需求調整預設的冷卻時間。此動作僅支援使用 API 和 CLI 。</block>
-  <block id="0f6046d8813989f95f3ce9353dba26a5" category="list-text">在 BlueXP 主控台的右上角、按一下橢圓圖示、然後選取 * 刪除 * 。</block>
   <block id="ec8e04c7758ae04f1375383b387929a1" category="paragraph"><block ref="ec8e04c7758ae04f1375383b387929a1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e46b959133eadbb0d00ac0a308843f30" category="list-text">在刪除工作環境視窗下、輸入工作環境的名稱、然後按一下 * 刪除 * 。</block>
   <block id="c4bd89564dafc82c9b2027b549fa45f2" category="list-text">在工作環境中、按一下 * Volumes （磁碟區） * 標籤。</block>
@@ -4218,7 +4209,6 @@
   <block id="d528ab86bd3d69a199b872eae76729c3" category="list-text">從 _ 新增 Aggregate _ 畫面建立 Aggregate 。</block>
   <block id="6f3d3de9b8245394933ccb5a82580032" category="inline-image-macro">顯示新增 Aggregate 進度的螢幕擷取畫面。</block>
   <block id="6d8395606a42c9b4b508b7083fef071b" category="paragraph"><block ref="6d8395606a42c9b4b508b7083fef071b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="61c67604de243e1d1f09464a53018e48" category="list-text">在 Aggregate 標題下、按一下「橢圓」按鈕、然後選取 * 檢視 Aggregate details* 。</block>
   <block id="46804cb5ec7cb836d1b3ea87af016b42" category="paragraph"><block ref="46804cb5ec7cb836d1b3ea87af016b42" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b1d9e8a6210003e4a2d3ad9699698b5c" category="paragraph"><block ref="b1d9e8a6210003e4a2d3ad9699698b5c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c0db33b74d957aee90885031cc634b6" category="paragraph">如果有新版本可用、則會在「概觀」索引標籤中顯示通知：</block>
@@ -4249,10 +4239,8 @@
   <block id="350c5507976ce0078fb3fab36bf47f9b" category="cell">選取 Cloud Volume ONTAP 儲存虛擬機器（ SVM ）會顯示其已設定的 CIFS 資訊。</block>
   <block id="1aad0c623c80b59d018f9ae6c07ca0bf" category="list-text">按一下 * 設定 * 。</block>
   <block id="4145a13d965a05b20f37aec1922ef7dd" category="list-text">在工作環境中、按一下 * Aggregate 標籤 * 。</block>
-  <block id="7d3d9db5a4178e569561d635871c26ed" category="list-text">瀏覽至所需的 Aggregate 方塊、然後按一下 * 。 （橢圓圖示） &gt; 檢視 Aggregate 詳細資料 * 。</block>
   <block id="920937d0401827a767850d6598f69cf9" category="list-text">在 Aggregate Details 畫面的 Overview （概觀）索引標籤下、檢閱每個 Volume 的大小、然後選擇一個或多個要移出 Aggregate 的 Volume 。</block>
   <block id="c6d494ac63d05f0797b17cc4e9b671a5" category="list-text">在 Aggregate 方塊下、檢視可用容量（資源配置大小減去使用的 Aggregate 容量）。</block>
-  <block id="8fcffd0e2a621979482d32af8df3fa54" category="list-text">選取集合體、然後按一下 * 。 （橢圓圖示） &gt; 新增磁碟 * 。</block>
   <block id="85cbc8c9d17142818868d0deb987b7d4" category="section-title">檢視 FlexGroup Volume</block>
   <block id="bfc66c582a5f0744b4549abc59217c8b" category="paragraph">您可以直接透過 BlueXP 中的 Volumes （磁碟區）標籤、檢視透過 CLI 或系統管理員建立的 FlexGroup 磁碟區。BlueXP 與提供給 FlexVol Volume 的資訊相同、透過專用的 Volumes 方塊、提供建立的 FleGroup Volume 的詳細資訊。在「 Volume （磁碟區）」磚下方、您可以透過圖示的暫留文字來識別每個 FlexGroup 磁碟區群組。此外、您也可以透過 Volume 樣式欄、在 Volume 清單檢視下識別及排序 FlexGroup Volume 。</block>
   <block id="18f38afc08c122a02d1cef0b8f55b13c" category="list-text">在「概述」標籤上、按一下「功能」面板、然後按一下「 * 執行個體類型 * 」旁邊的鉛筆圖示。</block>
@@ -4399,7 +4387,6 @@
   <block id="5d52a8b51c505c42c6cec9d89c67795a" category="paragraph"><block ref="3abd3a0b5353b2721a22292e3b71aa39" category="inline-link-rx"></block> 整合至 BlueXP UI 、讓您在單一窗口中最佳化 Cloud Volumes ONTAP 系統的作業、安全性和效能。</block>
   <block id="990d530a36683451e6ac666b1b224270" category="paragraph">在 BlueXP 數位錢包中管理節點型授權、以確保每個 Cloud Volumes ONTAP 系統都擁有具有所需容量的有效授權。</block>
   <block id="11a72b1b7122c65d1d6f13efb867113a" category="paragraph">BlueXP會自動命名為其所建立的Cloud Volumes ONTAP 單一儲存VM、以利執行效能。如果您有嚴格的命名標準、則可以從 System Manager 、 CLI 或 API 修改儲存 VM 的名稱。例如、您可能希望名稱與您為 ONTAP 自己的叢集命名儲存虛擬機器的方式相符。</block>
-  <block id="c916a82ca6e79a33689505d2642c711c" category="list-text">在 BlueXP 的工作環境中、按一下 * 。 （橢圓圖示） * 、然後按一下 * 更新 Cloud Volumes ONTAP * 。</block>
   <block id="31a578b8e294d03f4be50639f79e8160" category="list-text">在「更新 Cloud Volumes ONTAP 版本」頁面上、輸入 URL 、然後按一下 * 變更映像 * 。</block>
   <block id="d32bc06f4693559b0941ab221004f77a" category="list-text"><block ref="b537ee4eb64ec01da34737ed00ba85c9" category="inline-link-macro-rx"></block>。</block>
   <block id="0f2fe7f7d7d6e9e8b6985ebcba41a752" category="paragraph">Keystone 訂閱是一項隨成長付費訂閱服務。 <block ref="a4cf1d10eb125cd296862332c2edca47" category="inline-link-macro-rx"></block>。</block>
@@ -5242,4 +5229,19 @@
   <block id="3f0b36cd14ec7bfa0b4b01e076c44477" category="sidebar">AWS Top Secret / Secret Cloud 地區快速入門</block>
   <block id="daa9928416a167d9b7399ff9cc7d8ca0" category="inline-link-macro">將 AWS Xen CVO 執行個體轉換為 Nitro （ KVM ）</block>
   <block id="77c35fc79180e21cd19319ed21d08508" category="paragraph">如果您無法從 C4 、 M4 或 R4 執行個體變更執行個體類型、請參閱知識庫文章 <block ref="609c7ea2ea8625480f6266b3b7e7b947" category="inline-link-macro-rx"></block>。</block>
+  <block id="4d3482cab23eb402cf41eedc8626a3b7" category="list-text">按一下 Aggregate 標題下的省略符號按鈕、然後選取 * 檢視 Aggregate details* 。</block>
+  <block id="12cf9bddd8c4164812494d4fa3077665" category="list-text">在 BlueXP 的工作環境中、按一下 * 。 （省略號圖示） * 、然後按一下 * 更新 Cloud Volumes ONTAP * 。</block>
+  <block id="f2f8cb191116ce13c9353aba365ae95e" category="list-text">瀏覽至所需的 Aggregate 方塊、然後按一下 * 。 （省略符號圖示） &gt; 檢視 Aggregate 詳細資料 * 。</block>
+  <block id="138ffbf4a93266d3e7b39c528c04d8c7" category="list-text">選取集合體、然後按一下 * 。 （省略號圖示） &gt; 新增磁碟 * 。</block>
+  <block id="4c71965d58af1f26dd6e9a862f318b07" category="list-text">在 Aggregate 索引標籤上、瀏覽至所需標題、然後按一下 * 。 （省略符號圖示） * 。</block>
+  <block id="79af7751c40a5bdf0f691ca3f8994daa" category="cell">在 ... （省略符號圖示）功能表下、按一下 * 檢視 Aggregate details* 。</block>
+  <block id="aa2920a3834825d262230b29a81f049d" category="cell">在 ... （省略號圖示）功能表下、按一下 * 新增 Volume * 。</block>
+  <block id="e85c530b7823cc4004b235aef0a57796" category="list-text">在 ... （省略號圖示）功能表下、按一下 * 新增磁碟 * 。</block>
+  <block id="ffce78aa73104a63f2c157847b6ffc7c" category="list-text">在 ... （省略符號圖示）功能表下、按一下 * 增加容量 * 。</block>
+  <block id="2edc419b0e18ec1ac829938d9101535e" category="list-text">選取不包含任何磁碟區的 Aggregate tile 按一下 * 。 （省略符號圖示） &gt; 刪除 * 。</block>
+  <block id="8c4fbb7e9bd5b396b627cc7e7862fbba" category="list-text">在 BlueXP 主控台的右上角、按一下省略符號圖示、然後選取 * 刪除 * 。</block>
+  <block id="a0655fd5613af03dfa2a11af68b42b2e" category="list-text">在 BlueXP 主控台的右上角、按一下省略符號圖示、然後選取 * 設定密碼 * 。</block>
+  <block id="21374a20e08d3e0c8ca328133d8fe5f4" category="list-text">在 BlueXP 主控台的右上角、按一下省略符號圖示、然後選取 * 從工作區移除 * 。</block>
+  <block id="b724364be6320cfd44126523f60ef584" category="inline-link">市場產品的程式化部署</block>
+  <block id="1466cb0ca0af8994440faa54da634c8d" category="list-text">* 訂閱 Azure Marketplace* ：如果 BlueXP 無法啟用 Cloud Volumes ONTAP 的程式設計部署、您會看到此頁面。請依照畫面上列出的步驟進行。請參閱<block ref="bc817edffaba6b19533f23cdb879088c" category="inline-link-rx"></block> 以取得更多資訊。</block>
 </blocks>

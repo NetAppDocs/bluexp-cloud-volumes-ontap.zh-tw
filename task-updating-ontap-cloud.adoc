@@ -264,7 +264,7 @@ NOTE: 您要從哪個電腦存取BlueXP、必須有連到Cloud Volumes ONTAP 該
 
 .步驟
 . 在工作環境中、按一下 * Aggregate * 標籤。
-. 在 Aggregate 標題下、按一下「橢圓」按鈕、然後選取 * 檢視 Aggregate details* 。
+. 按一下 Aggregate 標題下的省略符號按鈕、然後選取 * 檢視 Aggregate details* 。
 +
 image:screenshots_aggregate_details_state.png["螢幕擷取畫面：當您檢視 Aggregate 的資訊時、會顯示 State 欄位。"]
 
@@ -375,7 +375,7 @@ NOTE: 預設情況下、預先定義Cloud Volumes ONTAP 的「支援HTTP連線�
 ** /`op/application/NetApp/cloudmanager/ontONTAP /映像/`
 
 
-. 在 BlueXP 的工作環境中、按一下 * 。 （橢圓圖示） * 、然後按一下 * 更新 Cloud Volumes ONTAP * 。
+. 在 BlueXP 的工作環境中、按一下 * 。 （省略號圖示） * 、然後按一下 * 更新 Cloud Volumes ONTAP * 。
 . 在「更新 Cloud Volumes ONTAP 版本」頁面上、輸入 URL 、然後按一下 * 變更映像 * 。
 +
 如果您將軟體映像複製到上述路徑中的Connector、請輸入下列URL：

@@ -143,7 +143,7 @@ TIP: 如果您使用的Azure帳戶具有 https://docs.netapp.com/us-en/bluexp-se
 
 NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修補程式版本、則在建立工作環境時、BlueXP會將系統更新至該版本。例如、如果您選擇Cloud Volumes ONTAP 了「更新」功能、就會進行更新。更新不會從一個版本發生到另一個版本、例如從 9.6 到 9.7 。
 
-. *從Azure Marketplace訂閱*：如果BlueXP無法啟用Cloud Volumes ONTAP 程式化部署的功能、請依照下列步驟進行。
+. * 訂閱 Azure Marketplace* ：如果 BlueXP 無法啟用 Cloud Volumes ONTAP 的程式設計部署、您會看到此頁面。請依照畫面上列出的步驟進行。請參閱 https://learn.microsoft.com/en-us/marketplace/programmatic-deploy-of-marketplace-products["市場產品的程式化部署"^] 以取得更多資訊。
 . * 基礎儲存資源 * ：選擇初始 Aggregate 的設定：磁碟類型、每個磁碟的大小、以及是否應啟用資料分層至 Blob 儲存設備。
 +
 請注意下列事項：
