@@ -5273,7 +5273,6 @@
   <block id="6d79fc3df77a055abb0043c41477add1" category="paragraph">有些 AWS 本機區域可供使用。</block>
   <block id="b40c89ea76edb69b0a84d7a6a1be7455" category="inline-link-macro">AWS 教學課程「開始使用 AWS 本機區域部署低延遲應用程式」</block>
   <block id="f8945f9c0b29d6212c5c9654ff1b7ed3" category="paragraph">您必須先啟用本機區域、並在 AWS 帳戶的本機區域中建立子網路、才能使用 AWS 本機區域。請遵循 * 選擇加入 AWS 本機區域 * 、並 * 將 Amazon VPC 延伸至中的本機區域 * 步驟 <block ref="08374900627773b5f0e169d9824fde8a" category="inline-link-macro-rx"></block>。</block>
-  <block id="c0d8b980523f619bb9dff8ef93a968c9" category="paragraph">如果您執行的是 Connector 3.9.36 版或更低版本、則必須在 AWS EC2 主控台中、將下列權限新增至 AWS Connector 角色： DescribeAvailabilityZones 。</block>
   <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">2024 年 5 月 17 日</block>
   <block id="b3e67e9d7f5be7902fd87917d0acb3e0" category="section-title">Amazon Web Services 本機區域支援</block>
   <block id="6f9fa4d02a6081aa6d33b131d8532328" category="paragraph">Cloud Volumes ONTAP HA 部署現在支援 AWS 本機區域。AWS 本機區域是一種基礎架構部署、其中儲存、運算、資料庫和其他精選 AWS 服務都位於大城市和產業區域附近。</block>
@@ -5283,4 +5282,6 @@
   <block id="10e3d4119b538d4a3b1943da285229fc" category="admonition">在某些區域中、可用的 EBS 磁碟類型只能是 gp2 。</block>
   <block id="0c14d315376234aa666bf4213aa88aec" category="list-text">T3-micro</block>
   <block id="5dde3a7c362c6b03a35cf3c0b3374d14" category="list-text">兩個 ST1 磁碟、 8 GiB 和 4 GiB</block>
+  <block id="d3f932730561572a0dc4f8911dc7b758" category="paragraph">如果您執行的是 Connector 3.9.36 版或更低版本、則必須在 AWS EC2 主控台中、將下列權限新增至 AWS Connector 角色： DescribeAvailabilityZones 。</block>
+  <block id="d4cffcdfb4fe4fc69dc234950d0f4151" category="admonition">在標準模式下使用 BlueXP 時、支援 AWS 本機區域。目前、在受限模式或私有模式下使用 BlueXP 時、並不支援 AWS 本機區域。</block>
 </blocks>

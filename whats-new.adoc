@@ -28,6 +28,9 @@ summary: 瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。
 
 Cloud Volumes ONTAP HA 部署現在支援 AWS 本機區域。AWS 本機區域是一種基礎架構部署、其中儲存、運算、資料庫和其他精選 AWS 服務都位於大城市和產業區域附近。
 
+
+NOTE: 在標準模式下使用 BlueXP 時、支援 AWS 本機區域。目前、在受限模式或私有模式下使用 BlueXP 時、並不支援 AWS 本機區域。
+
 如需更多關於具有 HA 部署的 AWS 本機區域的資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["AWS 本機區域"^]。
 
 
