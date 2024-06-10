@@ -2727,7 +2727,6 @@
   <block id="f8b475a3fefebada77a30229238d0a1a" category="section-title">2022年6月7日</block>
   <block id="650bbb3fd1c3ec1cf13fbf6dc440ce1c" category="paragraph">以下是3.9.19版本的Connector所做的變更。</block>
   <block id="daa1014700acb24b76e93296bfc813fb" category="section-title">零點9.11.1. Cloud Volumes ONTAP</block>
-  <block id="0d69949c9de36f8752d49be7f0ec9aed" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block></block>
   <block id="ffe3ec3b5faef58a758d9449470882a0" category="section-title">新的進階檢視</block>
   <block id="07bba549da0c5d9af2f0531199cb73e0" category="paragraph">此「進階檢視」可作為Cloud Volumes ONTAP Preview搭配使用的版本（含E59.10.0及更新版本）。我們計畫改善這項體驗、並在即將推出的版本中加入增強功能。請使用產品內建聊天功能、向我們傳送意見反應。</block>
   <block id="f303a87fe6efba259b752f5a9e11064b" category="inline-link-macro">深入瞭解進階檢視</block>
@@ -3756,8 +3755,6 @@
   <block id="d4a6e54c4d6405336cdeb07c50490008" category="list-text">您可在Azure Marketplace以隨用隨付方案或年度合約形式取得</block>
   <block id="18daf9881514241d393343911b3c6b0d" category="list-text">可在Google Cloud Marketplace以隨用隨付方案或年度合約形式提供</block>
   <block id="3ee54ac340ad12860ef4b993b12b351c" category="summary">在ONTAP 您建立全新Cloud Volumes ONTAP 的支援環境時、BlueXP可讓您從多個不同的支援版本中進行選擇。</block>
-  <block id="aa74aee23f6f151917b2bab3bcdb7635" category="doc">支援的新部署版本</block>
-  <block id="f97f94b14bab297536041160e29c5828" category="paragraph">新部署不支援所有其他Cloud Volumes ONTAP 的版本。</block>
   <block id="94a06e39ad7d8a5f30a29ceb12e0cf9d" category="list-text">9.12.1 RC1</block>
   <block id="b783301cf6b68b7d026b486472da6add" category="list-text">9.12.0 P1</block>
   <block id="3c1b6c5437336ba57e79705c297e33dc" category="list-text">9.11.1 P3</block>
@@ -3942,7 +3939,6 @@
   <block id="1dd36b5da1220777ad9e1ab31632d911" category="paragraph">將映像匯出至雲端儲存設備的首選方法是使用<block ref="a4c66ff2f3c53397780a048fb09314b7" category="inline-link-rx"></block>。此命令會取得所提供的映像、並將其轉換成磁碟.原始 檔案、並取得tar和gzipped。產生的檔案會儲存在目的地URL、然後下載以供驗證。</block>
   <block id="26b2216a4240ad7d761b87056bdd08d6" category="paragraph">使用者/帳戶必須擁有存取及寫入所需儲存區、匯出映像及雲端建置（Google用於匯出映像）的權限、才能執行此作業。</block>
   <block id="d5d1915ba486e63c35a1f3a88839e1b0" category="paragraph">*使用gCloud匯出Google Cloud映像*</block>
-  <block id="d2816514636c054ad7c6ba2f7c056434" category="example-title">按一下以顯示指令碼</block>
   <block id="b9231f744254be27be6f8180edb2c230" category="paragraph">*解壓縮檔案*</block>
   <block id="7687a452778371a352ce867b57724b93" category="inline-link">匯出影像的Google Cloud文件</block>
   <block id="c32a24baf89135bb87bdf6dbe099b487" category="admonition">請參閱<block ref="c7e947f0888e30efd1d729c87ccc8502" category="inline-link-rx"></block> 如需如何透過Google Cloud匯出影像的詳細資訊、</block>
@@ -3984,16 +3980,12 @@
   <block id="e197da4f69193c85d129866a2675f762" category="list-text">簽名摘要（.sig）</block>
   <block id="6763cb37e125279317bf8422431cb36a" category="list-text">包含公開金鑰（.pem）的憑證</block>
   <block id="41008194a87291660d5b8cbbcf4e901b" category="list-text">憑證鏈結（.pem）</block>
-  <block id="20578512149c6e3b4e6524f4afc81315" category="inline-image-macro">顯示包含摘要檔案tar.gz下載的NSS/頁面的映像</block>
-  <block id="956855c49a0e0c3b22aa13808aac916f" category="paragraph"><block ref="956855c49a0e0c3b22aa13808aac916f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="81b811e1bb7358a9bfbd1be493ad5e08" category="list-text">下載轉換後的disk.原始 檔案</block>
   <block id="f4580c24dd557ee68edae3101b584307" category="list-text">使用憑證鏈結驗證憑證</block>
   <block id="c6843882530be14543f812c098985cdb" category="list-text">使用含有公開金鑰的憑證來驗證已簽署的摘要</block>
   <block id="98774f82cdc945a9f4d0e57b8bc015ca" category="list-text">使用公開金鑰解密已簽署的摘要、以擷取映像檔摘要</block>
   <block id="aa709fc45e05f2a5e2dd888ef8a945d0" category="list-text">建立已下載磁碟.原始 檔案的摘要</block>
   <block id="997f5d3364a511663fd4bf677e6ccd0d" category="list-text">比較兩個摘要檔案以進行驗證</block>
-  <block id="80f2dd223bbef33f12a6f95c73d7f282" category="inline-image-macro">顯示映像簽名驗證程序的映像</block>
-  <block id="acd7963bcfab60ed9803b6ce962f013d" category="paragraph"><block ref="acd7963bcfab60ed9803b6ce962f013d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023年3月5日</block>
   <block id="eed8585d0b45afc4676b1c89f6f22a9a" category="paragraph">以下是3.9.27版Connector的變更。</block>
   <block id="e2c7f196cec5020e2b840087f6a8e068" category="section-title">Azure支援16 TiB和32 Tib</block>
@@ -4040,7 +4032,6 @@
   <block id="07524ae3949ffd6bf3d8864e62191d5c" category="paragraph">如果您不打算存取容量層中的非作用中資料、可以改用_cle__儲存層來降低儲存成本。當您將儲存層變更為冷卻時、非作用中的容量層資料會直接移至冷卻儲存層。</block>
   <block id="5b420079bca1c870914caa221b31442e" category="section-title">支援的支援Cloud Volumes ONTAP</block>
   <block id="ad598f033e541927e862b0c5e17319ec" category="paragraph">現在、BlueXP可以在Cloud Volumes ONTAP AWS、Azure和Google Cloud中部署和管理支援功能。</block>
-  <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>。</block>
   <block id="12169a51b108f73888655f2a089d493a" category="list-text">中國地區僅支援具有BYOL的單一節點系統。</block>
   <block id="ac1c722990c18687e956d9488b59bd3d" category="admonition">若要為新的Google Cloud HA配對部署啟用高速寫入速度、VPC-1、VPC-2和VPC-3至少需要8、896位元組的最大傳輸單元（MTU）。如果您選擇將現有VPC-1、VPC-2和VPC-3升級為8、896位元組的MTU、則必須在組態程序期間使用這些VPC關閉所有現有的HA系統。</block>
   <block id="8ffbbcac612c8285be31d80ec1c1454d" category="admonition">從9.13.0版開始、Google Cloud中的「*高速*寫入速度Cloud Volumes ONTAP 」選項可搭配支援。</block>
@@ -5284,4 +5275,128 @@
   <block id="5dde3a7c362c6b03a35cf3c0b3374d14" category="list-text">兩個 ST1 磁碟、 8 GiB 和 4 GiB</block>
   <block id="d3f932730561572a0dc4f8911dc7b758" category="paragraph">如果您執行的是 Connector 3.9.36 版或更低版本、則必須在 AWS EC2 主控台中、將下列權限新增至 AWS Connector 角色： DescribeAvailabilityZones 。</block>
   <block id="d4cffcdfb4fe4fc69dc234950d0f4151" category="admonition">在標準模式下使用 BlueXP 時、支援 AWS 本機區域。目前、在受限模式或私有模式下使用 BlueXP 時、並不支援 AWS 本機區域。</block>
+  <block id="dd9c0a56896702fcd7616d8a05a5734b" category="example-title">按一下以顯示</block>
+  <block id="66477356c169bae503b8e5b68efae8f9" category="summary">透過 Mac OS 上的 Cloud Volumes ONTAP 影像摘要檔案工具、驗證匯出的 VHD 檔案簽章</block>
+  <block id="f2dc1728581c6da0e20498b1ddc33375" category="doc">Mac OS 上的檔案簽章驗證</block>
+  <block id="7dfe290ea310f3175330a9ea2e3f87f9" category="paragraph">您可以依照下列步驟、驗證 Mac OS 匯出的 VHD 檔案簽章。</block>
+  <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp 支援網站</block>
+  <block id="182f014f4c613a2ea00430b0555c0cfe" category="list-text">從下載 Azure Image Digest 檔案<block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block> 然後擷取摘要檔案（ .SIG ）、公開金鑰憑證檔案（ .pem ）和鏈結憑證檔案（ .pem ）。</block>
+  <block id="3ea81971526171c18d55f5c21b99575c" category="inline-link">下載 Azure Image Digest File</block>
+  <block id="448e33b68aea58b7fecc024d2c2b5dc4" category="paragraph">請參閱<block ref="5fc79e069847e547e3ea31d52f49c511" category="inline-link-rx"></block> 以取得更多資訊。</block>
+  <block id="1c70ba48a8faaae47a72ab185f6f3572" category="list-text">驗證信任鏈結。</block>
+  <block id="cd01d0f8e467738f2625378653bc8d43" category="list-text">移除前導的 1MB （ 1048576 位元組）、並結束 512 位元組的 VHD 檔案。</block>
+  <block id="a7997886de4e4c54fffe826bcd17411e" category="paragraph">如果使用「 tail 」、選項「 -c +K 」會以 KTH 位元組開始輸出位元組
+指定檔案的。因此、 1048577 會傳送至 'tail -c 。大約需要 13 分鐘
+以在 Mac OS 上完成 tail 命令。</block>
+  <block id="eb7e6b99b56676dfe5f808750410e68a" category="list-text">使用 openssl 從憑證擷取公開金鑰、並驗證等量分割
+檔案（ sign.tmp ）、含簽章檔案和公開金鑰。</block>
+  <block id="ccde39ff9aff3f514ac48f4d13e6d0f5" category="paragraph">如果輸入檔案通過驗證、命令會顯示「驗證正常」。
+否則將顯示「驗證失敗」。</block>
+  <block id="7c00abf63371811634839eb405ec4038" category="list-text">清理工作區。</block>
+  <block id="4f366ac6c42231f45c88efd5aa987abb" category="cell">9.15.0</block>
+  <block id="e7e9a24e123538eed11a70e0eeb566a1" category="summary">瞭解如何透過 Cloud Volumes ONTAP 映像摘要檔案工具驗證匯出的 VHD 檔案簽章。</block>
+  <block id="a781d076243f95e28ab486d8c31b6ba4" category="doc">檔案簽章驗證</block>
+  <block id="437beb58ba8cb874df3b92dce25308d4" category="paragraph">Azure 影像驗證程序將使用雜湊功能、從 VHD 檔案產生內含前導式 1MB 等量區塊的摘要、並結束 512B 等量區塊區塊區塊。為了符合簽署程序、使用 SHA256 進行雜湊。您需要從 VHD 檔案移除前導式 1MB 和最終版 512B 、然後驗證 VHD 檔案的其餘部分。</block>
+  <block id="f98e4b86cca760be2447f72ea72c4f88" category="section-title">檔案簽章驗證工作流程摘要</block>
+  <block id="9454f651ecd65349c0f152b92965f048" category="paragraph">以下是檔案簽章驗證工作流程程序的概觀。</block>
+  <block id="7c00934b1da44ca90cfaed118a5c7000" category="image-alt">圖形 azure 檢查簽名</block>
+  <block id="1e34d13948b6b17e50f7142a37354bd7" category="list-text">從公開金鑰憑證（ .pem ）擷取公開金鑰（ .pub ）。</block>
+  <block id="7879ab866e35c7b7f3b9fad5b096f64f" category="list-text">解壓縮的公開金鑰用於解密摘要檔案。然後將結果與從映像檔案建立的新未加密暫存檔案摘要進行比較、並移除前導式 1MB 與結尾 512 位元組的檔案。</block>
+  <block id="561627cfa40a818097c26ee0df685e81" category="paragraph">此步驟可透過下列 openssl 命令來達成。</block>
+  <block id="43d4aabb0efd580944e1beb8c4db11b8" category="list-text">一般 CLI 聲明如下所示：</block>
+  <block id="c9fd91db7f23dc5a00305ec8fc9ab1fe" category="list-text">如果檔案相符、則 Openssl CLI 工具會顯示「驗證成功」訊息、如果檔案不符、則會顯示「驗證失敗」訊息。</block>
+  <block id="ab1fa593a9d1b960b00310273793f399" category="summary">在 Linux 上、透過 Cloud Volumes ONTAP 影像摘要檔案工具驗證匯出的 VHD 檔案簽章</block>
+  <block id="b0c7ab0c2b10d16b69a121eb12047c21" category="doc">Linux 上的檔案簽章驗證</block>
+  <block id="81a109e7e4df0170a877c862452626e0" category="paragraph">您可以依照下列步驟驗證匯出的 VHD 檔案簽章適用於 Linux 。</block>
+  <block id="99f6987f9f2f12754bef6acd4538d2b1" category="list-text">移除前導的 1MB （ 1048576 位元組）、並結束 512 位元組的 VHD 檔案。</block>
+  <block id="3b31a12051ccfe742940ab733efa90d2" category="paragraph">如果使用「 tail 」、選項「 -c +K 」會以指定檔案的 KTH 位元組開始輸出位元組。因此、 1048577 會傳送至 'tail -c 。</block>
+  <block id="4ca7d41e605902966252c31ef2c1bc50" category="list-text">使用 openssl 從憑證擷取公開金鑰、並使用簽章檔案和公開金鑰驗證等量分佈的檔案（ sign.tmp ）。</block>
+  <block id="e4127a353155a2ad0d83da1e1edcbaa5" category="paragraph">如果輸入檔通過驗證、則會顯示命令
+" 驗證正常 " 。否則將顯示「驗證失敗」。</block>
+  <block id="51bbda97c30ecb8962c4be9cf6e522a3" category="doc">支援的新部署 ONTAP 版本</block>
+  <block id="c029fc43772b048e933e1408a0a0a6a6" category="paragraph">此處列出的 Cloud Volumes ONTAP 版本以外的版本不適用於新部署。如需有關升級的資訊、請參閱 <block ref="edc516954278e6b04bf6c1ef0d737956" category="inline-link-macro-rx"></block>。</block>
+  <block id="e6e83b7fc493536990c5a90ed0363355" category="list-text">9.15.0 P1</block>
+  <block id="bc7b48cc8cbeb831f1e1c92e4edd2a73" category="summary">驗證 Azure VHD 映像檔案簽章檔案。</block>
+  <block id="cbb113be9bdc758fab3f1f20b2d70fb1" category="doc">Azure 影像驗證總覽</block>
+  <block id="855546822713dfa86f90e0f04d628460" category="paragraph">Azure 影像驗證符合增強的 NetApp 安全要求。雖然驗證映像檔案是一項簡單的程序、但 Azure 映像簽章驗證確實需要特別的資料、才能將其傳送至知名的 Azure VHD 映像檔、因為 Azure 市場已進行了一次替代。</block>
+  <block id="dc9332f8d6da3cf29879331701e1392b" category="admonition">Cloud Volumes ONTAP 軟體 9.15.0 版或更新版本支援 Azure 影像驗證。</block>
+  <block id="87a09a86dbf9477334c237c696cbf41c" category="section-title">Azure 對已發佈 VHD 檔案的變更</block>
+  <block id="69819291c7392ee878ca4ba0d8250573" category="paragraph">Azure 修改了領先業界的 1MB （ 1048576 位元組）和結束 512 位元組 VHD 檔案。NetApp 映像簽署會略過前導的 1MB 並結束 512 個位元組、然後簽署剩餘的 VHD 映像部分。</block>
+  <block id="a1d8f8fd0a1ed092e3a32c903199e6fe" category="inline-image-macro">顯示 Azure 10GB VHD 檔案交替的映像</block>
+  <block id="8d1e285a8c66f27a66a5b99050840700" category="paragraph"><block ref="8d1e285a8c66f27a66a5b99050840700" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8c0945efb6cfc754835754066079f778" category="paragraph">例如、上圖顯示大小為 10GB 的 VHD 檔案。但 NetApp 簽署部分會以綠色標示、大小為 10GB - 1MB - 512B 。</block>
+  <block id="489b496cbe75299f2e7a58a43404a586" category="summary">您可以從 Azure Marketplace 匯出 ONTAP 映像、以驗證 VHD 檔案的簽章。</block>
+  <block id="00d40efb33e0ee105c97fed4c5722515" category="doc">映像從 Azure Marketplace 匯出</block>
+  <block id="7aa3d9edd6d375ddf241b7e3af36818a" category="paragraph">一旦 VHD 映像發佈至 Azure 雲端、該映像就不再由 NetApp 管理。而是將發佈的映像放在 Azure 市場上。Azure 對 VHD 的領先 1MB 和結尾 512B 的變更是在 Azure 市場上分段及發佈映像時發生的。若要驗證 VHD 檔案的簽章、 Azure 修改的 VHD 映像必須先從 Azure 市場匯出。</block>
+  <block id="05cd2a2bb059643c43d9e767a4032a24" category="paragraph">您必須在系統上安裝必要的程式。</block>
+  <block id="0bcf8212654f6e73defd0e810da79d80" category="list-text">Azure CLI 已安裝、或 Azure Cloud Shell 透過 Azure 入口網站隨時可供使用。</block>
+  <block id="1d03b797e238252da705789b819d0d7c" category="inline-link">Azure 說明文件：如何安裝 Azure CLI</block>
+  <block id="453bffd3997e9ea26d624ae8219fd346" category="admonition">如需如何安裝 Azure CLI 的詳細資訊、請參閱<block ref="bb8fb2fba9b918c590d549f3c97582d7" category="inline-link-rx"></block>。</block>
+  <block id="995134c4eafdfb0af4373db79dfb90cf" category="list-text">使用 version_readme.Me 檔案的內容、將 ONTAP 版本對應至 Azure 市場映像版本。</block>
+  <block id="a10146f718ca1ae9de28501f0472cee1" category="paragraph">對於版本 _ 讀我檔案中列出的每個版本對應、 ONTAP 版本以「 buildname 」表示、 Azure 市場映像版本以「 version 」表示。</block>
+  <block id="03340c307e6a7221016970d046db2a97" category="paragraph">例如、在下列版本 _ 讀我檔案中、 ONTAP 版本「 9.15.0P1 」對應至 Azure 市場映像版本「 9150.01000024.05090105 」。此 Azure 市場映像版本稍後會用於設定映像 URN 。</block>
+  <block id="756c97654f989d1a779d50abe0847e31" category="list-text">識別您要建立 VM 的區域名稱。</block>
+  <block id="e03d271d662bcb0fab1d9537df279ef3" category="paragraph">設定市場映像的 URN 時、此區域名稱會用作「 locName 」變數的值。</block>
+  <block id="0bcd35ecf261a40cdfb4cbae00a11aa2" category="list-text">若要接收可用區域的清單、請輸入<block ref="84ed3d395e738381fb9826cd0e156c91" prefix=" " category="inline-code"></block> 命令。</block>
+  <block id="30bf950af492b8ab681c83ec104628f7" category="paragraph">在下表中、區域名稱稱為「名稱」欄位。</block>
+  <block id="5bedba73a6050611e792e12c6329c1dd" category="list-text">請從下表中檢閱對應 VM 部署類型的 SKU 名稱。</block>
+  <block id="0abd8188de5678bc75e8b9d823375978" category="paragraph">當設定市場映像的 URN 時、 SKU 名稱會用作「 skuName 」變數的值。</block>
+  <block id="81d9630c492a3a15f34b8eb9c8e68a40" category="paragraph">例如、單一節點部署應使用「 ONTAP 雲端 byol 」 SKU 名稱。</block>
+  <block id="393d71d9f35267234158498682014c6a" category="cell">VM 部署類型</block>
+  <block id="045ad270536218882ac46065d2a725a8" category="cell">SKU 名稱</block>
+  <block id="5b1c50a57995120cd7360ea46184cdd7" category="cell">單一節點</block>
+  <block id="b2b27ade506086d79b3e7defdb321673" category="cell">ONTAP 雲端</block>
+  <block id="520b661a272c9e6f55f469cc9c24193d" category="cell">高可用度</block>
+  <block id="68593f3fae72dbec1b29acfd76c1aa17" category="cell">ONTAP 雲端 _ byol_ha</block>
+  <block id="fc7898b425992521a2ae92bc34f6fa79" category="list-text">ONTAP 版本和 Azure 市場映像對應完成後、即可透過 Azure Cloud Shell 或 Azure CLI 、從 Azure 市場匯出 VHD 檔案。</block>
+  <block id="4192872f9b14e75090d91ad3b58d627e" category="section-title">透過 Azure 入口網站上的 Azure Cloud Shell 匯出 VHD 檔案</block>
+  <block id="7809e31621ae0deb07b629189d23bb1f" category="list-text">從 Azure Cloud Shell 將市場映像匯出至 vhd （ image2 、例如 9150.01000024.05090105.vhd ）、然後下載至您的本機機器（例如 Linux 機器或 Windows PC ）。</block>
+  <block id="ce9805281812d5566785ffa90edc97c3" category="section-title">從本機 Linux 機器透過 Azure CLI 匯出 VHD 檔案</block>
+  <block id="39ed6293eab956c9455664d389299103" category="list-text">從本機 Linux 機器透過 Azure CLI 將市場映像匯出至 vhd 。</block>
+  <block id="96bd5fbfab590d16a7e4f221d5efbe02" category="summary">您可以從 NetApp 支援網站 下載 Azure Image Digest File 。</block>
+  <block id="c94570a50f1ce2dc5922d4591072ac73" category="paragraph">Azure Image Digest File 可從下載<block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block>。下載檔案為 tar.gz 格式、包含用於影像簽章驗證的檔案。</block>
+  <block id="d3722e7531fbbcdfe3ca8955ec26bed2" category="inline-link">NetApp 支援網站 上的 Cloud Volumes ONTAP 產品頁面</block>
+  <block id="b529bb252fa6fa7ead3dbf955fc61b55" category="list-text">前往<block ref="5003136445bb4fa028e23c93c86053e6" category="inline-link-rx"></block> 並在「下載」區段下載所需的軟體版本。</block>
+  <block id="27363a072eabeaf6d8f44930f92fec72" category="list-text">在 Cloud Volumes ONTAP 下載頁面下、按一下 Azure 影像摘要檔案的 * 下載按鈕 * 、即可下載 TAR 。 gz 檔案。</block>
+  <block id="697ac446273be6ad7395fbb843a37765" category="image-alt">螢幕快照 Cloud Volumes ONTAP tar.gz</block>
+  <block id="5b7b593c571013e3aad0faa73cd02227" category="list-text">對於 Linux 和 MacOS 、您必須執行下列步驟、才能取得下載 Azure Image Digest 檔案的 md5sum 和 shav256sum 。</block>
+  <block id="719b12f978ea8563ea430f99e4edbe65" category="list-text">若為 md5sum 、請輸入<block ref="c8f1ee9a7c5fd4b3c66d7559e99807d0" prefix=" " category="inline-code"></block> 命令。</block>
+  <block id="1bdb05c72c1193c8d7770deac3a7119c" category="list-text">若為 shaf256sum 、請輸入<block ref="948bfc754ae7f359e9d17a0a0efcb325" prefix=" " category="inline-code"></block> 命令。</block>
+  <block id="074df801eea148714f051719110d791a" category="list-text">驗證<block ref="c8f1ee9a7c5fd4b3c66d7559e99807d0" prefix=" " category="inline-code"></block> 和<block ref="948bfc754ae7f359e9d17a0a0efcb325" prefix=" " category="inline-code"></block> 值符合 Azure Image Digest File 下載。</block>
+  <block id="d25f22bb422f625ed7957622cda0ccdf" category="list-text">在 Linux 和 Mac OS 上、執行<block ref="b83523a8ca29d91ebd710492f899931c" prefix=" " category="inline-code"></block> 擷取 tar.gz 檔案的命令。</block>
+  <block id="db1a854223ab47e95d5013d13683efbb" category="paragraph">擷取的 TAR 。 gz 檔案包含摘要檔案（ .sig ）、公開金鑰憑證檔案（ .pem ）和鏈結憑證檔案（ .pem ）。</block>
+  <block id="73443c640d5252fdbab1820bcca19262" category="paragraph">* 列出解壓縮 tar.gz 檔案的結果 *</block>
+  <block id="8009eebf05fd33b87750f8b4048986f7" category="section-title">2024 年 6 月 10 日</block>
+  <block id="1601188d2b39087206296933e9255990" category="section-title">Cloud Volumes ONTAP 9.15.0</block>
+  <block id="c6ee0c74323b0d984d764b4be950bd87" category="paragraph">BlueXP 現在可以在 AWS 、 Azure 和 Google Cloud 中部署和管理 Cloud Volumes ONTAP 9.15.0 。</block>
+  <block id="9ea413115dc959af9548be4f5d617ddb" category="paragraph"><block ref="dc3ac605cd51fd75c2f53b7ca5cdca83" category="inline-link-macro-rx"></block>。</block>
+  <block id="feea08a3a67e2b1eccac60507f69a583" category="paragraph"><block ref="b699e4f77f195a0a7faa782938505593" category="inline-link-macro-rx"></block>。</block>
+  <block id="6bb07d88b3c9509f75c9dac67608faf1" category="paragraph"><block ref="9a6eb60fff451fa6cb3ecfc5f4121002" category="inline-link-macro-rx"></block>。</block>
+  <block id="97a4e219dca6e7d10f98bae2e8bffec5" category="paragraph"><block ref="b51e72d129db508138e20f7a4f67c8ee" category="inline-link-rx"></block>。</block>
+  <block id="f66bd8eaa3bcbb435906ae79cf48d6a6" category="paragraph"><block ref="8873bd645a0966abedb61ab5d87b1fb7" category="inline-link-rx"></block>。</block>
+  <block id="ea949d9a7c8d0243148a6ff1179b5684" category="paragraph"><block ref="ea949d9a7c8d0243148a6ff1179b5684" category="inline-link-rx"></block></block>
+  <block id="a82d7316122aa2922142d92274736324" category="summary">參考連結 Azure 影像驗證</block>
+  <block id="fd4d7ac54ce50ee523c51c89d6bbd1b8" category="doc">何處可以找到 Azure 影像驗證的其他資訊</block>
+  <block id="27e5cdda0e1aa3ec5a2dda81e23a8bb1" category="paragraph">如需 Azure 影像驗證的其他資訊、請參閱下列連結。以下連結將帶您前往非 NetApp 網站。</block>
+  <block id="d95867deadfe690e40f42068d6b59df8" category="section-title">參考資料</block>
+  <block id="05c789229ae9c06f891314c500b8a66f" category="inline-link">網頁故障部落格：如何使用 OpenSSL 簽署及驗證</block>
+  <block id="6c725cff14a48db0cca266746daa5dd6" category="list-text"><block ref="6c725cff14a48db0cca266746daa5dd6" category="inline-link-rx"></block></block>
+  <block id="0e6945600d86c2e68fa37166775efd63" category="inline-link">使用 Azure Marketplace 映像為 Azure Stack Edge Pro GPU 建立 VM 映像 | Microsoft Learn</block>
+  <block id="141797ded48c509cfa8cd89fa2d45736" category="list-text"><block ref="141797ded48c509cfa8cd89fa2d45736" category="inline-link-rx"></block></block>
+  <block id="c124122c226bf5405653af1402cb522d" category="inline-link">使用 Azure CLI 將託管磁碟匯出 / 複製到儲存帳戶 | Microsoft Learn</block>
+  <block id="17104239f8f9caf6f2b1eeede0f1e84e" category="list-text"><block ref="17104239f8f9caf6f2b1eeede0f1e84e" category="inline-link-rx"></block></block>
+  <block id="d62ac4146a8441a5c35cd9d20202b7d5" category="inline-link">Azure Cloud Shell Quickstart - Bash | Microsoft Learn</block>
+  <block id="1bf4c05bfcaa610ea589c6ba979a8e86" category="list-text"><block ref="1bf4c05bfcaa610ea589c6ba979a8e86" category="inline-link-rx"></block></block>
+  <block id="3296019e43888272e5b0e66657910a2b" category="inline-link">如何安裝 Azure CLI | Microsoft Learn</block>
+  <block id="2fcf4353f3ed3e1f02a467834e3503c2" category="list-text"><block ref="2fcf4353f3ed3e1f02a467834e3503c2" category="inline-link-rx"></block></block>
+  <block id="3429d2f8aa30def5861b6cf11677982a" category="inline-link">AZ 儲存資源膨脹複本 | Microsoft Learn</block>
+  <block id="9510056d5bb6540c58fdbfa856eb74cb" category="list-text"><block ref="9510056d5bb6540c58fdbfa856eb74cb" category="inline-link-rx"></block></block>
+  <block id="bc3bc1db6420b2b20ed5fd575461af53" category="inline-link">使用 Azure CLI 登入：登入與驗證 | Microsoft Learn</block>
+  <block id="c49d114e973270aafd10c3c90200f635" category="list-text"><block ref="c49d114e973270aafd10c3c90200f635" category="inline-link-rx"></block></block>
+  <block id="3ce3a6bc20350062d124e844899c78cb" category="sidebar">Azure 平台影像驗證</block>
+  <block id="df87714369784ad20a87cf1ecab656c0" category="sidebar">下載 Azure Image Digest File</block>
+  <block id="e15cc8414d8d61bbcd5fd0d0eccda0f7" category="sidebar">映像匯出</block>
+  <block id="ea676e4072617197b2e26d0a11c13554" category="sidebar">Linux 檔案簽章驗證</block>
+  <block id="088e8318708fce80162f63284a86929f" category="sidebar">Mac OS 檔案簽章驗證</block>
+  <block id="0f68b904e33d9ac04605aecc958bcf52" category="sidebar">其他資訊</block>
 </blocks>

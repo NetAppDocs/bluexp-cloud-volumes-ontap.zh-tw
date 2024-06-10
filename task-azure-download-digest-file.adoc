@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: task-azure-download-digest-file.html 
+keywords: Azure, image, image signature, download, digest file, decompress, Linux, Mac OS, md5, sha256 
+summary: 您可以從 NetApp 支援網站 下載 Azure Image Digest File 。 
+---
+= 下載 Azure Image Digest File
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Azure Image Digest File 可從下載 https://mysupport.netapp.com/site/["NetApp 支援網站"^]。下載檔案為 tar.gz 格式、包含用於影像簽章驗證的檔案。
+
+.步驟
+. 前往 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["NetApp 支援網站 上的 Cloud Volumes ONTAP 產品頁面"^] 並在「下載」區段下載所需的軟體版本。
+. 在 Cloud Volumes ONTAP 下載頁面下、按一下 Azure 影像摘要檔案的 * 下載按鈕 * 、即可下載 TAR 。 gz 檔案。
++
+image::screenshot_cloud_volumes_ontap_tar.gz.png[螢幕快照 Cloud Volumes ONTAP tar.gz]
+
+. 對於 Linux 和 MacOS 、您必須執行下列步驟、才能取得下載 Azure Image Digest 檔案的 md5sum 和 shav256sum 。
++
+.. 若為 md5sum 、請輸入 `md5sum` 命令。
+.. 若為 shaf256sum 、請輸入 `sha256sum` 命令。
+
+
+. 驗證 `md5sum` 和 `sha256sum` 值符合 Azure Image Digest File 下載。
+. 在 Linux 和 Mac OS 上、執行 `tar -xzf` 擷取 tar.gz 檔案的命令。
++
+擷取的 TAR 。 gz 檔案包含摘要檔案（ .sig ）、公開金鑰憑證檔案（ .pem ）和鏈結憑證檔案（ .pem ）。
+
++
+* 列出解壓縮 tar.gz 檔案的結果 *
+
++
+[listing]
+----
+$ ls cert/ -l
+-rw-r----- 1 netapp netapp  384 May  13 13:00 9.15.0P1_azure_digest.sig
+-rw-r----- 1 netapp netapp 2365 May  13 13:00 Certificate-9.15.0P1_azure.pem
+-rw-r----- 1 netapp netapp 8537 May  13 13:00 Certificate-Chain-9.15.0P1_azure.pem
+-rw-r----- 1 netapp netapp 8537 May  13 13:00 version_readme
+----
+

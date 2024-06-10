@@ -4,7 +4,7 @@ permalink: reference-versions.html
 keywords: versions, supported versions, new versions, cloud volumes ontap version 
 summary: 在ONTAP 您建立全新Cloud Volumes ONTAP 的支援環境時、BlueXP可讓您從多個不同的支援版本中進行選擇。 
 ---
-= 支援的新部署版本
+= 支援的新部署 ONTAP 版本
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,7 +16,7 @@ summary: 在ONTAP 您建立全新Cloud Volumes ONTAP 的支援環境時、BlueXP
 [role="lead"]
 在ONTAP 您建立全新Cloud Volumes ONTAP 的支援環境時、BlueXP可讓您從多個不同的支援版本中進行選擇。
 
-新部署不支援所有其他Cloud Volumes ONTAP 的版本。
+此處列出的 Cloud Volumes ONTAP 版本以外的版本不適用於新部署。如需有關升級的資訊、請參閱 link:task-updating-ontap-cloud.html#supported-upgrade-paths["支援的升級途徑"]。
 
 ifdef::aws[]
 
@@ -27,6 +27,7 @@ ifdef::aws[]
 單一節點::
 +
 --
+* 9.15.0 P1
 * 9.14.1 GA
 * 9.14.1 RC1
 * 9.14.0 GA
@@ -46,6 +47,7 @@ ifdef::aws[]
 HA配對::
 +
 --
+* 9.15.0 P1
 * 9.14.1 GA
 * 9.14.1 RC1
 * 9.14.0 GA
@@ -75,6 +77,7 @@ ifdef::azure[]
 單一節點::
 +
 --
+* 9.15.0 P1
 * 9.14.1 GA
 * 9.14.1 RC1
 * 9.14.0 GA
@@ -94,6 +97,7 @@ ifdef::azure[]
 HA配對::
 +
 --
+* 9.15.0 P1
 * 9.14.1 GA
 * 9.14.1 RC1
 * 9.14.0 GA
@@ -122,6 +126,7 @@ ifdef::gcp[]
 單一節點::
 +
 --
+* 9.15.0 P1
 * 9.14.1 GA
 * 9.14.1 RC1
 * 9.14.0 GA
@@ -140,6 +145,7 @@ ifdef::gcp[]
 HA配對::
 +
 --
+* 9.15.0 P1
 * 9.14.1 GA
 * 9.14.1 RC1
 * 9.14.0 GA

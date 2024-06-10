@@ -43,7 +43,7 @@ summary: 透過Google Cloud命令列、將匯出的映像轉換成disk.RAW格式
 
 *使用gCloud匯出Google Cloud映像*
 
-.按一下以顯示指令碼
+.按一下以顯示
 [%collapsible]
 ====
 [source]

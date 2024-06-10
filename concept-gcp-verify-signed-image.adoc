@@ -28,7 +28,7 @@ summary: 透過Cloud Volumes ONTAP 「鏡射影像摘要檔案」工具驗證匯
 ** 包含公開金鑰（.pem）的憑證
 ** 憑證鏈結（.pem）
 +
-image:screenshot_cloud_volumes_ontap_tar.gz.png["顯示包含摘要檔案tar.gz下載的NSS/頁面的映像"]
+image::screenshot_cloud_volumes_ontap_tar.gz.png[螢幕快照 Cloud Volumes ONTAP tar.gz]
 
 
 
@@ -40,7 +40,7 @@ image:screenshot_cloud_volumes_ontap_tar.gz.png["顯示包含摘要檔案tar.gz�
 ** 建立已下載磁碟.原始 檔案的摘要
 ** 比較兩個摘要檔案以進行驗證
 +
-image:graphic_azure_check_signature.png["顯示映像簽名驗證程序的映像"]
+image::graphic_azure_check_signature.png[圖形 azure 檢查簽名]
 
 
 
