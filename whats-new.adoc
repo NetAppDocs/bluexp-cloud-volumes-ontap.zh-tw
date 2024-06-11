@@ -89,7 +89,7 @@ NOTE: 在標準模式下使用 BlueXP 時、支援 AWS 本機區域。目前、�
 
 在 AWS 、 Cloud Volumes ONTAP 、 Mediator 和 Connector 中、現在所有功能都支援 Amazon Instant 中繼資料服務 v2 （ IMDSv2 ）。IMDSv2 提供更強大的保護功能、防範弱點。之前僅支援 IMDSv1 。
 
-如果您的安全性原則要求、您可以將 EC2 執行個體設定為使用 IMDSv2 。如需相關指示、請參閱 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["用於管理現有連接器的 BlueXP 安裝與管理文件"^]。
+如果您的安全性原則要求、您可以將 EC2 執行個體設定為使用 IMDSv2 。如需相關指示、請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-require-imdsv2.html["用於管理現有連接器的 BlueXP 安裝與管理文件"^]。
 
 
 
@@ -566,7 +566,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes
 目前支援任何完全隔離網際網路的雲端環境Cloud Volumes ONTAP 。這些環境僅支援節點型授權（BYOL）。不支援容量型授權。若要開始使用、請手動安裝 Connector 軟體、登入 Connector 上執行的 BlueXP 主控台、將 BYOL 授權新增至 BlueXP 數位錢包、然後部署 Cloud Volumes ONTAP 。
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["將Connector安裝在沒有網際網路存取的位置"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#access-the-local-ui["存取Connector上的BlueXP主控台"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-logging-in.html["存取Connector上的BlueXP主控台"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["新增未指派的授權"^]
 
 
