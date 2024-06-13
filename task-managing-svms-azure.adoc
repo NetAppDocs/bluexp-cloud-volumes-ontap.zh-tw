@@ -126,6 +126,7 @@ DNS通訊需要iSCSI LIF。iSCSI LIF用於此用途、因為它不會在容錯�
 .. 在*設定*下、按一下*前端IP組態*。
 .. 按一下「 * 新增 * 」。
 .. 輸入前端IP的名稱、選取Cloud Volumes ONTAP 該子網路做為「靜態HA配對」、保留「*動態*」選項、並在「可用區域」中保留「*區域-備援*」選項、以確保區域故障時IP位址仍可繼續使用。
+.. 按一下「 * 儲存 * 」。
 +
 image:screenshot_azure_frontend_ip.png["在Azure入口網站中新增前端IP位址的快照、其中會選取名稱和子網路。"]
 
@@ -203,6 +204,7 @@ NOTE: 前端IP只能在每個對應SVM的NIC 0下建立。如需如何將IP位�
 .. 在*設定*下、按一下*前端IP組態*。
 .. 按一下「 * 新增 * 」。
 .. 輸入前端IP的名稱、選取Cloud Volumes ONTAP 該子網路做為「靜態HA配對」、保留「*動態*」選項、並在「可用區域」中保留「*區域-備援*」選項、以確保區域故障時IP位址仍可繼續使用。
+.. 按一下「 * 儲存 * 」。
 +
 image:screenshot_azure_frontend_ip.png["在Azure入口網站中新增前端IP位址的快照、其中會選取名稱和子網路。"]
 
@@ -347,7 +349,7 @@ network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nas-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
+network interface create -vserver <svm-name> -lif <lif-name> -service-policy default-data-files -address <nas-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
 ----
 . 選用：建立儲存VM管理LIF。
 +
@@ -387,7 +389,7 @@ network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nas-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
+network interface create -vserver <svm-name> -lif <lif-name> -service-policy default-data-files -address <nas-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
 ----
 . 選用：建立儲存VM管理LIF。
 +
@@ -523,13 +525,13 @@ network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe1>
+network interface create -vserver <svm-name> -lif <lif-name> -service-policy default-data-files -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe1>
 ----
 .. 使用下列命令在節點2上建立NAS LIF。
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node2> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe2>
+network interface create -vserver <svm-name> -lif <lif-name> -service-policy default-data-files -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node2> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe2>
 ----
 
 
@@ -633,13 +635,13 @@ network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe1>
+network interface create -vserver <svm-name> -lif <lif-name> -service-policy default-data-files -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe1>
 ----
 .. 使用下列命令在節點2上建立NAS LIF。
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node2> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe2>
+network interface create -vserver <svm-name> -lif <lif-name> -service-policy default-data-files -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node2> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe2>
 ----
 
 

@@ -24,8 +24,8 @@ Azure中的資料會使用自動加密Cloud Volumes ONTAP https://azure.microsof
 
 如果您想要使用客戶管理的支援服務金鑰Cloud Volumes ONTAP 搭配使用、則必須完成下列步驟：
 
-. 從Azure建立金鑰保存庫、然後在該保存庫中產生金鑰
-. 從BlueXP中、使用API建立Cloud Volumes ONTAP 使用金鑰的功能不受影響的環境
+. 從Azure建立金鑰保存庫、然後在該保存庫中產生金鑰。
+. 從BlueXP中、使用API建立Cloud Volumes ONTAP 使用金鑰的功能不受影響的環境。
 
 
 
@@ -144,7 +144,11 @@ Azure HA 多個可用性區域、含共用託管磁碟
 +
 *** *軟刪除*（此選項預設為啟用、但不可停用）
 *** *清除保護*
-*** *適用於Volume加密的Azure磁碟加密*（適用於多個區域中的單一節點系統或HA配對）
+*** * 適用於磁碟區加密的 Azure 磁碟加密 * （適用於單一節點系統、多個區域中的 HA 配對、以及 HA 單一 AZ 部署）
++
+
+NOTE: Azure 客戶託管加密金鑰的使用取決於已啟用 Azure Disk 加密的金鑰庫。
+
 
 
 ** 如果您建立使用者指派的託管身分識別、則應啟用下列選項：
