@@ -295,7 +295,7 @@ sidebar:
       url: "/concept-performance.html"
     - title: 管理節點型BYOL
       url: "/concept-license-management.html"
-    - title: 不再是不知道的數位顧問AutoSupport Active IQ
+    - title: AutoSupport 與數位顧問
       url: "/concept-active-iq.html"
     - title: 預設組態
       url: "/reference-default-configs.html"

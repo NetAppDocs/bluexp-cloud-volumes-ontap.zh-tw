@@ -1070,7 +1070,6 @@
   <block id="9113e1288a38b047165dc10153c90a7b" category="section-title">在 Azure 中調整系統規模</block>
   <block id="803d8f94a55b7915e4d09ac9d6ca5588" category="paragraph">調整 Cloud Volumes ONTAP 您的支援規模、有助於滿足效能與容量的需求。在選擇 VM 類型、磁碟類型和磁碟大小時、您應該注意幾個關鍵點：</block>
   <block id="c9b46e5d3304a0f098a9b6c39d3c78cc" category="list-text">虛擬機器類型</block>
-  <block id="c31555ebab3cc6d019fa007862395153" category="list-text">請查看中支援的虛擬機器類型<block ref="f922a7787320953a33ee2591f979f78c" category="inline-link-rx"></block> 然後檢閱每種受支援 VM 類型的詳細資料。請注意、每種 VM 類型都支援特定數量的資料磁碟。</block>
   <block id="4191963ff40b7c0644356ab2e8d2bbd2" category="inline-link">Azure 文件：通用虛擬機器大小</block>
   <block id="03cd53d9a632404d9be539683276c7a2" category="list-text"><block ref="03cd53d9a632404d9be539683276c7a2" category="inline-link-rx"></block></block>
   <block id="6fd456d71c345eb38fe1c0337056dc63" category="inline-link">Azure 文件：記憶體最佳化的虛擬機器大小</block>
@@ -1874,22 +1873,17 @@
   <block id="1e57268fd975664444ddbda428e56bf7" category="list-text">如果您已配置 CIFS 共用區、請授予使用者或群組檔案和資料夾的權限、並確認這些使用者可以存取共用區並建立檔案。</block>
   <block id="feb7357289c65eddf5b19d1b295a95c9" category="list-text">如果您要將配額套用至磁碟區、請使用 System Manager 或 CLI 。</block>
   <block id="d3a8708751ac3ed361daf8babcdabcc4" category="paragraph">配額可讓您限制或追蹤使用者、群組或 qtree 所使用的磁碟空間和檔案數量。</block>
-  <block id="4aea138a21bb343e460b0084ce3eb8d8" category="doc">使用Cloud Volumes ONTAP 「e數位顧問」最佳化您的不實系統Active IQ</block>
   <block id="dab2edf9eaac3950e92c281ce358af01" category="inline-link">《數位顧問》 Active IQ</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">功能</block>
-  <block id="c07876874959817c312d5d151cdbf9fe" category="paragraph">您可以使用Active IQ 「知識庫數位顧問」、在報價表層級檢視儲存系統的整體狀態、系統健全狀況的高階資訊、庫存管理、規劃、以及寶貴的見解。</block>
   <block id="cd5d4df84a7902a777304de9ff13e8a8" category="list-text">分析並最佳化儲存系統的健全狀況</block>
   <block id="9d4e486fd4968dd03a1921222e688c12" category="list-text">深入瞭解儲存系統的所有風險、以及降低風險的行動</block>
   <block id="4c8438807538fa50db0d24cda516c562" category="list-text">檢視效能資料的圖形格式、以分析儲存設備的效能</block>
   <block id="63a792f0efaeee81d9e7f3ba251637c2" category="list-text">取得超過90%容量或接近90%容量的系統詳細資料</block>
   <block id="696fbf3ecd0e89c737f9c5b7adddfb8e" category="section-title">支援ONTAP 的支援的支援系統</block>
-  <block id="4b094536c4cca99df693f08aaf755f4d" category="paragraph">《支援資料》提供您在NSS.帳戶內所有內部部署的系統及支援資料。Active IQ ONTAP Cloud Volumes ONTAP</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
   <block id="7524f7a154d0b13a1e895c56c832c376" category="inline-link">立即註冊一個nssnss</block>
   <block id="48c7c08bdc82dde24c342aee125d0f2f" category="inline-link">如需詳細資料、請參閱此常見問題集</block>
   <block id="c0f65045a034bd8451814ab893994b7b" category="admonition">截至2021年12月3日、NetApp已改用新方法來登錄新的NSS帳戶 認證資料。<block ref="aa125d01c1b555d9e118821165394c02" category="inline-link-rx"></block>。如果您的NSS帳戶使用舊的一組認證資料、您將需要將帳戶更新為新的認證資料。</block>
-  <block id="8aec6a2bcfb78af1fffa4f2c52dfe49d" category="inline-link">《數位顧問》文件 Active IQ</block>
-  <block id="e778b936b44de5bd4765be37fb61b14b" category="paragraph">請參閱<block ref="6b8a787f5f28cd8a65ef0852e940136e" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="b5fc4208e494804d1484996e111220af" category="summary">您可以在 Cloud Volumes ONTAP 單一系統組態中或 AWS 中以 HA 配對的形式來啟動執行個體。</block>
   <block id="45fa74d97bba23976f6236bb8a583eb3" category="paragraph">您可以 Cloud Volumes ONTAP 在單一系統組態中或 AWS 中以 HA 配對的形式啟動功能。</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">開始之前</block>
@@ -2010,23 +2004,11 @@
   <block id="622931dd0b6724a34dfe5a4f99b9a820" category="list-text">使用下列命令在節點1上建立NAS LIF。</block>
   <block id="0cffe85429bb79552ce3607190d9dbad" category="list-text">使用下列命令在節點2上建立NAS LIF。</block>
   <block id="6c6c472de3f0cea0f21c8e31be81490c" category="list-text">建立NAS資料生命量：</block>
-  <block id="d6e98757d1df5cdc1234e534f0d83efe" category="summary">這個功能的元件會收集遙測資料並傳送給分析人員。AutoSupport ONTAP支援以支援技術分析資料、並提供主動式的照護與最佳化功能。Active IQ AutoSupport利用人工智慧、Active IQ 即可識別潛在問題、並在問題影響企業之前協助您解決問題。</block>
-  <block id="0f68b2b3e9b96354c8791aefa8416cb6" category="doc">不再是不知道的數位顧問AutoSupport Active IQ</block>
-  <block id="534cf99258be6454cc1c45fef4893c42" category="paragraph">透過雲端型入口網站和行動應用程式、提供可據以行動的預測分析和主動式支援、讓您能夠在全球混合雲中最佳化資料基礎架構。Active IQ所有擁有有效的NetApp客戶都能從NetApp獲得資料導向的見解和建議Active IQ （功能因產品和支援層而異）SupportEdge 。</block>
-  <block id="4bb6101fde7dd3c4118f6c5807213e74" category="paragraph">以下是Active IQ 您可以利用下列功能來執行的作業：</block>
   <block id="c47f9b3777f430e38cd3c0ae2055b8d1" category="list-text">規劃升級。</block>
-  <block id="4d29491e869afe09d1800a5dfad089f6" category="paragraph">可識別環境中的問題、這些問題可透過升級至更新版本的VMware知識來解決、而升級顧問元件則可協助您規劃成功的升級方案。Active IQ ONTAP</block>
   <block id="945e0025643b0030db4eb79effddf1e9" category="list-text">檢視系統健全狀況。</block>
-  <block id="589b90e2e2daa989170300c9cd948b00" category="paragraph">您的「不健全狀況」儀表板會回報任何問題、並協助您修正這些問題。Active IQ監控系統容量、確保儲存空間永遠不會耗盡。檢視系統的支援案例。</block>
   <block id="20e2eede2c5919a473004ca356d93413" category="list-text">管理效能：</block>
-  <block id="ecd6bb6a4fc5a84223f5f3e0d766d80a" category="paragraph">顯示系統效能的時間比您在《VMware系統管理程式》中看到的更長。Active IQ ONTAP找出影響您效能的組態和系統問題。最大化效率。檢視儲存效率指標、找出在更少空間中儲存更多資料的方法。</block>
   <block id="f09f89f93d1b162f9bb2ce8cba2684c4" category="list-text">檢視庫存與組態。</block>
-  <block id="e42a107e48352d575a987f69367e797c" category="paragraph">顯示完整的庫存、軟體和硬體組態資訊。Active IQ查看服務合約何時到期並續約、以確保您仍享有支援。</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="list-title">相關資訊</block>
-  <block id="8ebe1398dcefc296b0072bc4530c150c" category="inline-link">NetApp文件：Active IQ 《Data Advisor》</block>
-  <block id="9ef1865545667eeff8a540374f3a7bfc" category="list-text"><block ref="9ef1865545667eeff8a540374f3a7bfc" category="inline-link-rx"></block></block>
-  <block id="a783a523d1f410c5aed80b24061544fb" category="inline-link">產品Active IQ 發表</block>
-  <block id="5070674230fc0cc73a00eee7e2e2c117" category="list-text"><block ref="5070674230fc0cc73a00eee7e2e2c117" category="inline-link-rx"></block></block>
   <block id="c5511c7773a6c5295d79f6a8496c4458" category="inline-link">部門服務SupportEdge</block>
   <block id="ea0b284b83d41ae97d5b96dc6fc68e39" category="list-text"><block ref="ea0b284b83d41ae97d5b96dc6fc68e39" category="inline-link-rx"></block></block>
   <block id="282267afd7416dee4eb19ac3837e1b47" category="summary">在Cloud Volumes ONTAP Microsoft Azure中啟動時、您可以從多種VM類型中進行選擇。您可以隨時變更VM類型、只要判斷其規模過小或過大、就能滿足您的需求。</block>
@@ -3257,14 +3239,7 @@
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">您目前正在檢視的BlueXP文件。</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*服務*：選取問題相關的服務。例如、特定於服務工作流程或功能的技術支援問題的BlueXP。</block>
   <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">工作環境清單位於您在服務的最上層橫幅中所選的BlueXP帳戶、工作區和Connector範圍內。</block>
-  <block id="0c726404ad0f4ebb2cb2a2d0bdc04192" category="summary">支援整合到BlueXP UI中、讓您在單一窗口中、將整個叢集的作業、安全性和效能最佳化。Active IQ Digital Advisor ONTAP</block>
   <block id="442a1ebc0b1897741c68b149d0cff869" category="paragraph">透過BlueXP使用此服務不需付費。</block>
-  <block id="58d982bcac1ea01385942d6f57a7656f" category="section-title">如何搭配BlueXP運作Active IQ Digital Advisor</block>
-  <block id="bdb3a911549ab88300157732d091478f" category="paragraph">此功能已完全整合在BlueXP中。Active IQ Digital Advisor</block>
-  <block id="9c1995b7c5ce5be79cf95a5a51900431" category="paragraph">在BlueXP中、按一下* Active IQ 《*》服務。</block>
-  <block id="932530744f32a475e9aa2429537d3a83" category="list-text">如果您已在BlueXP中註冊現有的NSS帳戶、Active IQ Digital Advisor 則會像您在的獨立實作中看到的一樣、顯示此UI<block ref="a550a333ee33d06042f0abf049084bb9" category="inline-link-rx"></block>。</block>
-  <block id="e82ddc6cf5a70635ce4d69e536b0dfc8" category="inline-image-macro">BlueXP中的功能不一的使用者介面快照Active IQ Digital Advisor 。</block>
-  <block id="53b16518a30b773b00426877f83d628f" category="paragraph"><block ref="53b16518a30b773b00426877f83d628f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c88f764485548292578f2128d1953adc" category="paragraph">如果BlueXP通知您AutoSupport 無法傳送資訊、 <block ref="b6432223d87858d9cd4e446578247e88" category="inline-link-macro-rx"></block>。</block>
   <block id="a972bcad179af301a93e1049da5fbbbb" category="paragraph">請注意、BlueXP會在HA配對上建立SVM管理LIF、但不會在Azure中的單一節點系統上建立。</block>
   <block id="6065260b6e2ca957f806162cf33800f6" category="paragraph">您也可以視業務需求而停用「私有連結」連線。如果您停用連結、則BlueXP會設定Cloud Volumes ONTAP 使用服務端點的功能。</block>
@@ -4362,7 +4337,6 @@
   <block id="c5889acf4592b2ce675b7e0be182268e" category="paragraph">這些限制僅適用於 BlueXP 中的 Cloud Volumes ONTAP 管理。若要檢視Cloud Volumes ONTAP 有關此功能的限制、<block ref="70a3d165b5204ef94ef3f2d7b3d098d2" category="inline-link-rx"></block></block>
   <block id="829bbd3178c74725b58e1817c2135502" category="paragraph">Cloud Volumes ONTAP 也與 BlueXP 備份與還原整合、提供保護的備份與還原功能、以及雲端資料的長期歸檔。</block>
   <block id="d37c9703eabd9a68dc0d1fb0b42d7881" category="paragraph">與 BlueXP 分類整合可協助您瞭解資料內容並識別敏感資料。</block>
-  <block id="5d52a8b51c505c42c6cec9d89c67795a" category="paragraph"><block ref="3abd3a0b5353b2721a22292e3b71aa39" category="inline-link-rx"></block> 整合至 BlueXP UI 、讓您在單一窗口中最佳化 Cloud Volumes ONTAP 系統的作業、安全性和效能。</block>
   <block id="990d530a36683451e6ac666b1b224270" category="paragraph">在 BlueXP 數位錢包中管理節點型授權、以確保每個 Cloud Volumes ONTAP 系統都擁有具有所需容量的有效授權。</block>
   <block id="11a72b1b7122c65d1d6f13efb867113a" category="paragraph">BlueXP會自動命名為其所建立的Cloud Volumes ONTAP 單一儲存VM、以利執行效能。如果您有嚴格的命名標準、則可以從 System Manager 、 CLI 或 API 修改儲存 VM 的名稱。例如、您可能希望名稱與您為 ONTAP 自己的叢集命名儲存虛擬機器的方式相符。</block>
   <block id="31a578b8e294d03f4be50639f79e8160" category="list-text">在「更新 Cloud Volumes ONTAP 版本」頁面上、輸入 URL 、然後按一下 * 變更映像 * 。</block>
@@ -4523,7 +4497,6 @@
   <block id="4c1dfec10f54a14c066eb4fde624e32b" category="paragraph"><block ref="4c1dfec10f54a14c066eb4fde624e32b" category="inline-link-rx"></block></block>
   <block id="875ddb644dbb19174e249bb15473dd4b" category="paragraph">根據預設、權限會包含在自訂角色中。<block ref="b7d06976ba0f29792527e383824a0357" category="inline-link-rx"></block></block>
   <block id="ef0007b779e97cd98e0fd4e6d256d699" category="paragraph">如需複寫資料的說明、請參閱<block ref="19794cdf55ccd5ccb5c886ae036a6c7c" category="inline-link-rx"></block>。</block>
-  <block id="111605ffc2720ee271322511d8e418e9" category="list-text">如果您尚未在BlueXP中註冊某個nssa帳戶、<block ref="fa1dd20a91aad716fe7b27583a904c1e" category="inline-link-rx"></block> ，之後隨即出現 Active IQ Digital Advisor UI。</block>
   <block id="f9a3a3f013c1705985786496412a0de0" category="paragraph">如果您沒有<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block> 然而、帳戶管理員需要建立一個帳戶。<block ref="de51f8f797fd6bb6357ef338b87ca66d" category="inline-link-rx"></block></block>
   <block id="de6c35943505135e58a4af4389b1768d" category="list-text"><block ref="de6c35943505135e58a4af4389b1768d" category="inline-link-rx"></block></block>
   <block id="9ae78035ef81aaff6187ef9a11cd1f03" category="list-text"><block ref="9ae78035ef81aaff6187ef9a11cd1f03" category="inline-link-rx"></block></block>
@@ -5025,7 +4998,6 @@
   <block id="63e7dad437ffdf90e141f5642e1654d2" category="paragraph">如果您購買的 Essentials 授權屬於市場合約或私有方案的一部分、則 BYOL 邏輯將不適用、而且您必須擁有正確的使用授權類型。授權類型包括 Volume 類型（主要或次要）和部署類型（ HA 或單一節點）。</block>
   <block id="b5131f07b7cc2d9ac372dcfc0789c727" category="paragraph">例如、假設您使用 Essentials 授權部署 Cloud Volumes ONTAP 執行個體。接著、您可以配置讀寫磁碟區（主要單一節點）和唯讀（次要單一節點）磁碟區。您的市場合約或私有方案必須包含 _Essentials 單一節點 _ 和 _Essentials 次要單一節點 _ 的容量、以涵蓋已配置的容量。任何不屬於您市場合約或私人優惠的資源配置容量、都會以隨選時數費率（ PAYGO ）收取費用、並將成本加到您的每月帳單中。</block>
   <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp 使用 Microsoft Entra ID 做為身分識別提供者、提供專為支援與授權所設計的驗證服務。</block>
-  <block id="976b4993be588a7b52da07c4e96553c3" category="paragraph"><block ref="581f54bac504640f66f842676676be03" category="inline-link-rx"></block> 您必須在部署 Cloud Volumes ONTAP 的 Google Cloud 子網路中停用。啟用封包鏡射時、無法正常運作。Cloud Volumes ONTAP</block>
   <block id="d4eb5b4412a01c5991086dff8c51a89f" category="section-title">2024 年 2 月 2 日</block>
   <block id="4b2d018110adbf4819b09a7a28283445" category="section-title">支援 Azure 中的 Edv5 系列 VM</block>
   <block id="0ce1565dc58071deb098bde3e5a6a4b6" category="list-text">E4ds_v5</block>
@@ -5398,4 +5370,34 @@
   <block id="59232a2e0b92b4018a48415d0d13c3b4" category="list-text"><block ref="59232a2e0b92b4018a48415d0d13c3b4" category="inline-link-rx"></block></block>
   <block id="312fcba055a7ab6b8314cb541c1f1b4f" category="list-text">* 適用於磁碟區加密的 Azure 磁碟加密 * （適用於單一節點系統、多個區域中的 HA 配對、以及 HA 單一 AZ 部署）</block>
   <block id="4b63d3239df3134d1faedabb0e8eb859" category="admonition">Azure 客戶託管加密金鑰的使用取決於已啟用 Azure Disk 加密的金鑰庫。</block>
+  <block id="941288a863ad97154034dd3c71f32245" category="paragraph"><block ref="581f54bac504640f66f842676676be03" category="inline-link-rx"></block> 您必須在部署 Cloud Volumes ONTAP 的 Google Cloud 子網路中停用。</block>
+  <block id="2c5f519b4286c7c769b12f8716b7cbe9" category="summary">數位顧問已整合至 BlueXP UI 、因此您可以在單一窗口中最佳化 ONTAP 叢集的作業、安全性和效能。</block>
+  <block id="285f8a8636eadf330259391137203f48" category="doc">使用數位顧問最佳化您的 Cloud Volumes ONTAP 系統</block>
+  <block id="bacbb0b2aa879f7a92df5711cad337d4" category="paragraph"><block ref="3abd3a0b5353b2721a22292e3b71aa39" category="inline-link-rx"></block> （也稱為數位顧問）已整合至 BlueXP UI 、因此您可以在單一窗口中最佳化 Cloud Volumes ONTAP 系統的作業、安全性和效能。</block>
+  <block id="a832e927c8b42d501555813b999b7221" category="paragraph">您可以使用 Digital Advisor 、在觀察清單層級檢視儲存系統的整體狀態、系統健全狀況的高階資訊、庫存、規劃、以及寶貴的見解。</block>
+  <block id="1dba3e6a495ee6df07aa2319c84850b9" category="paragraph">Digital Advisor可提供ONTAP 您在您的NSS.帳戶中所有內部部署的系統及Cloud Volumes ONTAP 支援系統的相關資訊。</block>
+  <block id="1708a7899dbb54c155b6283363ffb7ca" category="section-title">數位顧問如何與BlueXP搭配運作</block>
+  <block id="999a89522cee5b44d9f30075a15443d9" category="paragraph">Digital Advisor 使用者介面已完全整合至 BlueXP 。</block>
+  <block id="7db975397b61b6560d2a672acae2c79c" category="paragraph">在 BlueXP 中、按一下 * 數位顧問 * 服務。</block>
+  <block id="29b5b34f04dbd3d66b34bd6f9a6887b4" category="list-text">如果您已在 BlueXP 中註冊現有的 NSS 帳戶、 Digital Advisor UI 就像您在上的獨立實作中看到的一樣<block ref="a550a333ee33d06042f0abf049084bb9" category="inline-link-rx"></block>。</block>
+  <block id="d8bfc5e94810ca08a42561c6641c3041" category="inline-image-macro">BlueXP 中數位顧問使用者介面的螢幕擷取畫面。</block>
+  <block id="270af6699089e1fd528db30a8e59039c" category="paragraph"><block ref="270af6699089e1fd528db30a8e59039c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a635be2c2772e7448a88461a1a2a2060" category="list-text">如果您尚未在BlueXP中註冊某個nssa帳戶、<block ref="fa1dd20a91aad716fe7b27583a904c1e" category="inline-link-rx"></block> 接著會出現數位顧問 UI 。</block>
+  <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link">數位顧問文件</block>
+  <block id="04b829e5c9f049ac625c2f31a74c3cba" category="paragraph">請參閱<block ref="f2e318b984927d4781fb278ddc8ba233" category="inline-link-rx"></block> 以取得詳細資料。</block>
+  <block id="32dfa86e33fe03388c6e88e19e1782f8" category="list-text">請查看中支援的虛擬機器類型<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 然後檢閱每種受支援 VM 類型的詳細資料。請注意、每種 VM 類型都支援特定數量的資料磁碟。</block>
+  <block id="2e0977c81182f3cd8c9bc0ca8b2381c8" category="summary">這個功能的元件會收集遙測資料並傳送給分析人員。AutoSupport ONTAP數位顧問會分析 AutoSupport 的資料、並提供主動式照護與最佳化。使用人工智慧、 Digital Advisor 可識別潛在問題、並協助您在問題影響企業之前加以解決。</block>
+  <block id="c8ce69fcaf4de8a55daf1224f6f1c749" category="doc">AutoSupport 與數位顧問</block>
+  <block id="61f3d1fea52e4a93226203c7f3da9cc7" category="paragraph">這個功能的元件會收集遙測資料並傳送給分析人員。AutoSupport ONTAPActive IQ Digital Advisor （也稱為數位顧問）會分析 AutoSupport 的資料、並提供主動式照護與最佳化。使用人工智慧、 Digital Advisor 可識別潛在問題、並協助您在問題影響企業之前加以解決。</block>
+  <block id="cab2272fdd4010056508f4fa09827383" category="paragraph">Digital Advisor可透過雲端型入口網站和行動應用程式、提供可據以行動的預測分析和主動式支援、讓您在全球混合雲中最佳化資料基礎架構。所有擁有有效 SupportEdge 合約的 NetApp 客戶、都能從數位顧問獲得資料導向的洞見和建議（功能因產品和支援層而異）。</block>
+  <block id="e6f43a9e138f23960dcfc8b35dda3828" category="paragraph">以下是數位顧問的一些功能：</block>
+  <block id="1f4968722cbd705311c87377fd259f10" category="paragraph">數位顧問可識別環境中可透過升級至較新版本的 ONTAP 來解決的問題、而升級顧問元件則可協助您規劃成功的升級。</block>
+  <block id="dda5fb5d139dfab82bf01a2b11f7b9bb" category="paragraph">數位顧問儀表板會回報任何健康問題、並協助您修正這些問題。監控系統容量、確保儲存空間永遠不會耗盡。檢視系統的支援案例。</block>
+  <block id="4464f839c33dfbff0ded4f85b2f31226" category="paragraph">Digital Advisor 顯示系統效能的時間比您在 ONTAP 系統管理員中看到的時間更長。找出影響您效能的組態和系統問題。
+最大化效率。檢視儲存效率指標、找出在更少空間中儲存更多資料的方法。</block>
+  <block id="dd93c0ad910a337acb87fc21af76f465" category="paragraph">Digital Advisor 會顯示完整的庫存及軟體與硬體組態資訊。查看服務合約何時到期並續約、以確保您仍享有支援。</block>
+  <block id="96b8ef630a3f6fd5c5d555ac85237d8c" category="inline-link">NetApp 文件：數位顧問</block>
+  <block id="4ac58369201dcb717d1d1d37ee990c1c" category="list-text"><block ref="4ac58369201dcb717d1d1d37ee990c1c" category="inline-link-rx"></block></block>
+  <block id="dc538d1e88cb00b045ab5c768441ff92" category="inline-link">啟動 Digital Advisor</block>
+  <block id="c0b168a4d72d74292c8b4f5299b9541e" category="list-text"><block ref="c0b168a4d72d74292c8b4f5299b9541e" category="inline-link-rx"></block></block>
 </blocks>

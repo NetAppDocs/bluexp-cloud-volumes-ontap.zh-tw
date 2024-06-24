@@ -54,7 +54,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azur
 
 調整 Cloud Volumes ONTAP 您的支援規模、有助於滿足效能與容量的需求。在選擇 VM 類型、磁碟類型和磁碟大小時、您應該注意幾個關鍵點：
 
-虛擬機器類型:: 請查看中支援的虛擬機器類型 http://docs.netapp.com/cloud-volumes-ontap/us-en/index.html["發行說明 Cloud Volumes ONTAP"^] 然後檢閱每種受支援 VM 類型的詳細資料。請注意、每種 VM 類型都支援特定數量的資料磁碟。
+虛擬機器類型:: 請查看中支援的虛擬機器類型 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["發行說明 Cloud Volumes ONTAP"^] 然後檢閱每種受支援 VM 類型的詳細資料。請注意、每種 VM 類型都支援特定數量的資料磁碟。
 +
 --
 * https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-general#dsv2-series["Azure 文件：通用虛擬機器大小"^]

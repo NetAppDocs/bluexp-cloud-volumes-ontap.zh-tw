@@ -190,7 +190,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-goog
 
 === VPC中的封包鏡射
 
-https://cloud.google.com/vpc/docs/packet-mirroring["封包鏡射"^] 您必須在部署 Cloud Volumes ONTAP 的 Google Cloud 子網路中停用。啟用封包鏡射時、無法正常運作。Cloud Volumes ONTAP
+https://cloud.google.com/vpc/docs/packet-mirroring["封包鏡射"^] 您必須在部署 Cloud Volumes ONTAP 的 Google Cloud 子網路中停用。
 
 
 

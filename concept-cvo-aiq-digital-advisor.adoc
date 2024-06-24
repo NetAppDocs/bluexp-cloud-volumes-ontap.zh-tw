@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concept-cvo-aiq-digital-advisor.html 
-keywords: concepts, active iq digital advisor, cloud volumes ontap, cloud manager, BlueXP 
-summary: 支援整合到BlueXP UI中、讓您在單一窗口中、將整個叢集的作業、安全性和效能最佳化。Active IQ Digital Advisor ONTAP 
+keywords: concepts, digital advisor, cloud volumes ontap, cloud manager, BlueXP 
+summary: 數位顧問已整合至 BlueXP UI 、因此您可以在單一窗口中最佳化 ONTAP 叢集的作業、安全性和效能。 
 ---
-= 使用Cloud Volumes ONTAP 「e數位顧問」最佳化您的不實系統Active IQ
+= 使用數位顧問最佳化您的 Cloud Volumes ONTAP 系統
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: 支援整合到BlueXP UI中、讓您在單一窗口中、將整個叢�
 
 
 [role="lead"]
-https://www.netapp.com/services/support/active-iq/["《數位顧問》 Active IQ"] 整合至 BlueXP UI 、讓您在單一窗口中最佳化 Cloud Volumes ONTAP 系統的作業、安全性和效能。
+https://www.netapp.com/services/support/active-iq/["《數位顧問》 Active IQ"] （也稱為數位顧問）已整合至 BlueXP UI 、因此您可以在單一窗口中最佳化 Cloud Volumes ONTAP 系統的作業、安全性和效能。
 
 
 
 == 功能
 
-您可以使用Active IQ 「知識庫數位顧問」、在報價表層級檢視儲存系統的整體狀態、系統健全狀況的高階資訊、庫存管理、規劃、以及寶貴的見解。
+您可以使用 Digital Advisor 、在觀察清單層級檢視儲存系統的整體狀態、系統健全狀況的高階資訊、庫存、規劃、以及寶貴的見解。
 
 * 分析並最佳化儲存系統的健全狀況
 * 深入瞭解儲存系統的所有風險、以及降低風險的行動
@@ -32,7 +32,7 @@ https://www.netapp.com/services/support/active-iq/["《數位顧問》 Active IQ
 
 == 支援ONTAP 的支援的支援系統
 
-《支援資料》提供您在NSS.帳戶內所有內部部署的系統及支援資料。Active IQ ONTAP Cloud Volumes ONTAP
+Digital Advisor可提供ONTAP 您在您的NSS.帳戶中所有內部部署的系統及Cloud Volumes ONTAP 支援系統的相關資訊。
 
 
 
@@ -42,17 +42,17 @@ https://www.netapp.com/services/support/active-iq/["《數位顧問》 Active IQ
 
 
 
-== 如何搭配BlueXP運作Active IQ Digital Advisor
+== 數位顧問如何與BlueXP搭配運作
 
-此功能已完全整合在BlueXP中。Active IQ Digital Advisor
+Digital Advisor 使用者介面已完全整合至 BlueXP 。
 
-在BlueXP中、按一下* Active IQ 《*》服務。
+在 BlueXP 中、按一下 * 數位顧問 * 服務。
 
-* 如果您已在BlueXP中註冊現有的NSS帳戶、Active IQ Digital Advisor 則會像您在的獨立實作中看到的一樣、顯示此UI https://activeiq.netapp.com/[]。
+* 如果您已在 BlueXP 中註冊現有的 NSS 帳戶、 Digital Advisor UI 就像您在上的獨立實作中看到的一樣 https://activeiq.netapp.com/[]。
 +
-image:screenshot_aiq_digital_advisor.png["BlueXP中的功能不一的使用者介面快照Active IQ Digital Advisor 。"]
+image:screenshot_aiq_digital_advisor.png["BlueXP 中數位顧問使用者介面的螢幕擷取畫面。"]
 
-* 如果您尚未在BlueXP中註冊某個nssa帳戶、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["立即註冊一個nssnss"^] ，之後隨即出現 Active IQ Digital Advisor UI。
+* 如果您尚未在BlueXP中註冊某個nssa帳戶、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["立即註冊一個nssnss"^] 接著會出現數位顧問 UI 。
 
 
 
@@ -62,4 +62,4 @@ NOTE: 截至2021年12月3日、NetApp已改用新方法來登錄新的NSS帳戶 
 
 == 下一步
 
-請參閱 https://docs.netapp.com/us-en/active-iq/index.html["《數位顧問》文件 Active IQ"] 以取得詳細資料。
+請參閱 https://docs.netapp.com/us-en/active-iq/index.html["數位顧問文件"] 以取得詳細資料。
