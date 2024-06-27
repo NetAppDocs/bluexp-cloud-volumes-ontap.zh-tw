@@ -205,7 +205,6 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9141-relnotes/["深入瞭
 * 瑞士北部
 * 南非北部
 * 阿拉伯聯合大公國北部
-* 中國北方 3.
 
 
 如需所有區域的清單、請參閱 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure 下的 Global Regions Map"^]。
