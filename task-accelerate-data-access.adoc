@@ -29,3 +29,43 @@ BlueXP 提供 FlexCache 磁碟區的管理功能 link:https://docs.netapp.com/us
 BlueXP 會為所有新的 Cloud Volumes ONTAP 系統產生 FlexCache 授權。授權包含500 GiB使用限制。
 
 video::PBNPVRUeT1o[youtube,width=848,height=480]
+
+
+== 在原始伺服器加密時使用 FlexCache
+
+在原始磁碟區已加密的 Cloud Volumes ONTAP 系統上設定 FlexCache 時、需要額外的步驟、以確保 FlexCache 磁碟區能夠正確存取及快取加密資料。
+
+.您需要的產品
+. * 加密設定 * ：確保來源磁碟區已完全加密並可運作。對於 Cloud Volumes ONTAP 系統、這需要與雲端專屬的金鑰管理服務整合。
+
+
+ifdef::aws[]
+
+對於 AWS 而言、這通常表示使用 AWS 金鑰管理服務（ KMS ）。如需相關資訊、請 link:task-aws-key-management.html["使用 AWS 金鑰管理服務管理金鑰"]參閱。
+
+endif::aws[]
+
+ifdef::azure[]
+
+對於 Azure 、您需要設定 Azure Key Vault for NetApp Volume Encryption （ NVE ）。如需相關資訊、請 link:task-azure-key-vault.html["使用Azure Key Vault管理金鑰"]參閱。
+
+endif::azure[]
+
+ifdef::gcp[]
+
+對於 Google Cloud 、這是 Google Cloud Key Management Service 。如需相關資訊、請 link:task-google-key-manager.html["使用 Google 的 Cloud Key Management Service 管理金鑰"]參閱。
+
+endif::gcp[]
+
+. * 金鑰管理服務 * ：在建立 FlexCache Volume 之前、請確認 Cloud Volumes ONTAP 系統上的金鑰管理服務已正確設定。此組態對於 FlexCache Volume 解密來源 Volume 的資料至關重要。
+. * 授權 * ：確認有效的 FlexCache 授權可在 Cloud Volumes ONTAP 系統上取得並啟動。BlueXP 會為所有新 Cloud Volumes ONTAP 系統產生 FlexCache 授權、其使用量上限為 500 GiB 。
+. * ONTAP 版本 * ：確保 Cloud Volumes ONTAP 系統的 ONTAP 版本支援具有加密磁碟區的 FlexCache 。如需詳細資訊、請參閱最新版 https://docs.netapp.com/us-en/ontap/release-notes/index.html["發行說明ONTAP"^] 或相容性對照表。
+. * 網路組態 * ：確保網路組態允許原始磁碟區與 FlexCache 磁碟區之間的無縫通訊。這包括在雲端環境中適當的路由和 DNS 解析。
+
+
+.步驟
+在具有加密來源磁碟區的 Cloud Volumes ONTAP 系統上建立 FlexCache 磁碟區。如需詳細步驟和其他考量、請參閱下列各節：
+
+* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-fc-mgmt/home.html["《資料存取能力快速指南》的《支援資料量》（英文） FlexCache"^]
+* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-07F4C213-076D-4FE8-A8E3-410F49498D49.html["在 FlexCache System Manager 中建立功能區"^]
+
