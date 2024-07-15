@@ -1140,7 +1140,6 @@
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">深入瞭Cloud Volumes ONTAP 解本版的更新功能</block>
   <block id="a0834297e8b28b9a51d59500441c7351" category="section-title">強化中介升級</block>
   <block id="e6e5b99786bfefd88e32c940b7547ab3" category="section-title">K8s標籤已移除</block>
-  <block id="6eb7d1343cce33ec7d31b57edd9f3aef" category="paragraph">K8s索引標籤已在先前版本中過時、現在已移除。如果您想要搭配Cloud Volumes ONTAP 使用Kubernetes搭配使用、可以將託管Kubernetes叢集新增至Canvas、作為進階資料管理的工作環境。</block>
   <block id="7475abfb4039c00bb03fd05d6d792b3d" category="section-title">Azure年度合約</block>
   <block id="52b398f13b1acf3e73584a9cb106e989" category="paragraph">Azure現已透過年度合約提供Essentials與Professional套裝軟體。您可以聯絡NetApp銷售代表以購買年度合約。該合約可在Azure Marketplace以私人優惠形式提供。</block>
   <block id="ba089edca33f314482ad946ae680f1eb" category="inline-link">深入瞭解授權</block>
@@ -3519,7 +3518,6 @@
   <block id="f161f6edfaf6d911de2566d694781369" category="paragraph">從9.11.1版開始、Cloud Volumes ONTAP Google Cloud現在支援多個使用支援的儲存VM。從本版Connector開始、BlueXP可讓您Cloud Volumes ONTAP 使用API、在Google Cloud的「以雙埠HA配對」上建立儲存VM。</block>
   <block id="dbb2a3618007fc68b403b5db7a27888c" category="paragraph">現在、BlueXP可以部署及管理Cloud Volumes ONTAP 功能更新9.11.0。</block>
   <block id="17cc55e2cfcef39231025dad282b0760" category="paragraph">當BlueXP升級HA配對的中介程式時、它現在會在刪除開機磁碟之前驗證是否有新的中介映像可用。此變更可確保在升級程序失敗時、中介程序仍能繼續順利運作。</block>
-  <block id="998eb27e3e05260958103da3d27eb4ac" category="inline-link">瞭解BlueXP中的Kubernetes資料管理</block>
   <block id="496550dfa4d3b1c3955fe8ab428eedbf" category="paragraph">現在需要這些權限、才能最佳化BlueXP建立放置群組的方式。</block>
   <block id="1fcd17a990e75722697d64df5dd2ffde" category="list-text">當您Cloud Volumes ONTAP 在Google Cloud中建立一個「叢集式HA配對」時、BlueXP現在會在VPC中顯示所有現有的防火牆原則。</block>
   <block id="46fc311e1b8dc6670926551c44511f90" category="paragraph">之前、BlueXP不會在VPC-1、VPC-2或VPC-3中顯示任何沒有目標標記的原則。</block>
@@ -4477,7 +4475,6 @@
   <block id="8ade4dc1ca161da57728a6bf29be1db9" category="paragraph">請務必為您新增至BlueXP的每組AWS認證資料提供這些權限。<block ref="64ae4f789cd26cb4c9b5096ed42d2482" category="inline-link-rx"></block>。</block>
   <block id="ac1bc6f2b2358438076867200e537370" category="paragraph"><block ref="7abbb63a2cd3cab475ace2a577aa3de3" category="inline-link-rx"></block>。</block>
   <block id="07e4a4acdb333fe3d7b8dac1958d6459" category="list-text"><block ref="07e4a4acdb333fe3d7b8dac1958d6459" category="inline-link-rx"></block></block>
-  <block id="755c513b451157c807794bf1213fd1f9" category="paragraph"><block ref="755c513b451157c807794bf1213fd1f9" category="inline-link-rx"></block></block>
   <block id="73f030bd359abb41dc1089c470531542" category="paragraph"><block ref="37698926d26a2683d3b5c90c9b2406a6" category="inline-link-rx"></block>。</block>
   <block id="2e56aeba3c1fc24d42b0f15df12a08f9" category="paragraph"><block ref="5d4901194aa2380bf45bcc72c63f2763" category="inline-link-rx"></block>。</block>
   <block id="7abee0635d8cb81d3ae89fd8d82a442a" category="paragraph"><block ref="7abee0635d8cb81d3ae89fd8d82a442a" category="inline-image-macro-rx" type="image"></block></block>
@@ -5424,4 +5421,5 @@
   <block id="543cc078f66d581004934cfaa8988453" category="list-text">* ONTAP 版本 * ：確保 Cloud Volumes ONTAP 系統的 ONTAP 版本支援具有加密磁碟區的 FlexCache 。如需詳細資訊、請參閱最新版<block ref="9ec4657ceea5a1d054b2b0fa2482a129" category="inline-link-rx"></block> 或相容性對照表。</block>
   <block id="38d57b85102d8663bf30488289425e48" category="list-text">* 網路組態 * ：確保網路組態允許原始磁碟區與 FlexCache 磁碟區之間的無縫通訊。這包括在雲端環境中適當的路由和 DNS 解析。</block>
   <block id="51aa8ce93131e7a6746f62c49df04fe2" category="paragraph">在具有加密來源磁碟區的 Cloud Volumes ONTAP 系統上建立 FlexCache 磁碟區。如需詳細步驟和其他考量、請參閱下列各節：</block>
+  <block id="9a06593a786548bb3b7320df7c76e7f1" category="paragraph">K8s 標籤在先前版本中已過時、現在已移除。</block>
 </blocks>

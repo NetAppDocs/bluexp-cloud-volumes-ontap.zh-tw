@@ -960,9 +960,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-9110-relnotes["深入瞭Cloud 
 
 === K8s標籤已移除
 
-K8s索引標籤已在先前版本中過時、現在已移除。如果您想要搭配Cloud Volumes ONTAP 使用Kubernetes搭配使用、可以將託管Kubernetes叢集新增至Canvas、作為進階資料管理的工作環境。
-
-https://docs.netapp.com/us-en/bluexp-kubernetes/concept-kubernetes.html["瞭解BlueXP中的Kubernetes資料管理"^]
+K8s 標籤在先前版本中已過時、現在已移除。
 
 
 
