@@ -215,22 +215,6 @@ TIP: 如果您使用 HA 配對、 HA 中介器不需要傳出網際網路存取�
 
 如果BlueXP通知您AutoSupport 無法傳送資訊、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["疑難排解AutoSupport 您的VMware組態"]。
 
-防火牆規則:: 您不需要建立防火牆規則、因為BlueXP會為您執行這些規則。如果您需要使用自己的防火牆、請參閱下列防火牆規則。
-+
---
-請注意、 HA 組態需要兩組防火牆規則：
-
-* VPC-0 中 HA 元件的一組規則。這些規則可讓您存取 Cloud Volumes ONTAP 資料以存取資料。 <<防火牆規則,深入瞭解>>。
-* VPC-1 、 VPC-2 和 VPC-3 中的另一組 HA 元件規則。這些規則可用於 HA 元件之間的傳入和傳出通訊。 <<防火牆規則,深入瞭解>>。
-
-
---
-
-
-如果您想要將冷資料分層至 Google Cloud Storage 資源桶、 Cloud Volumes ONTAP 則必須將駐留的子網路設定為私有 Google Access （如果您使用 HA 配對、則此子網路位於 VPC-0 ）。如需相關指示、請參閱 https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud 文件：設定私有 Google Access"^]。
-
-如需在BlueXP中設定資料分層所需的其他步驟、請參閱 link:task-tiering.html["將冷資料分層至低成本物件儲存設備"]。
-
 
 
 === 連線 ONTAP 至其他網路中的不二系統

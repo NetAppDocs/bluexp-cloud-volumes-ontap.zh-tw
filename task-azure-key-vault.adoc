@@ -30,7 +30,8 @@ AKV可用於保護 link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/c
 
 .限制
 * AKV只能在資料SVM上設定
-* Nae 不可使用 AKV 。Nae 需要外部支援的 KMIP 伺服器。
+* Nae 無法使用 AKV 。Nae 需要外部支援的 KMIP 伺服器。
+* Cloud Volumes ONTAP 節點每 15 分鐘輪詢一次 AKV 、以確認可存取性和金鑰可用度。此輪詢期間不可設定、在輪詢嘗試連續四次失敗（總計 1 小時）後、磁碟區會離線。
 
 
 

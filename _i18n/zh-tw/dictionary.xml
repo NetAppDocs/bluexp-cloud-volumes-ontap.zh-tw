@@ -327,7 +327,6 @@
   <block id="139bae98c3a8ead645c078cb26b93bd1" category="list-text">\https://support.netapp.com/asupprod/post/1.0/postAsup</block>
   <block id="1d9e509ddb93a176b7d369a91ad7deaf" category="section-title">IP位址</block>
   <block id="0af87aead9b1478c9d33afc90cbcbf02" category="section-title">安全連線至Azure服務</block>
-  <block id="465b92b3276cc18a4183d48ccf476d6a" category="inline-link-macro">將冷資料分層至低成本物件儲存設備</block>
   <block id="c444761212c29ddb96943c613e011090" category="inline-link-macro">深入瞭解如何搭配 Cloud Volumes ONTAP 使用 Azure 私有 Link 搭配使用功能</block>
   <block id="1fc84e37bead390cd8921abb886256a5" category="paragraph"><block ref="a2f09fc910f91b45be16b1d3da056377" category="inline-link-macro-rx"></block>。</block>
   <block id="87b7d9ff8a42dbb6c0bcd13ae09f6010" category="section-title">連線至其他ONTAP 的系統</block>
@@ -627,8 +626,6 @@
   <block id="2be40f62b7c4e1d13a18dcc030852bf8" category="paragraph">LIF 是與實體連接埠相關聯的 IP 位址。諸如VMware等管理工具需要儲存VM（SVM）管理LIF SnapCenter 。</block>
   <block id="4dfddd1829f7fb340bd9b36bff6e3130" category="list-text">防火牆規則</block>
   <block id="2a361a1f21cbd928455b1bd06df94169" category="paragraph">請注意、 HA 組態需要兩組防火牆規則：</block>
-  <block id="5e74b536fe3c8bd111e49f783c8e991c" category="inline-link">Google Cloud 文件：設定私有 Google Access</block>
-  <block id="9e0ae4847043d43d71330ce503e69ac8" category="list-text">如果您想要將冷資料分層至 Google Cloud Storage 資源桶、 Cloud Volumes ONTAP 則必須將駐留的子網路設定為私有 Google Access （如果您使用 HA 配對、則此子網路位於 VPC-0 ）。如需相關指示、請參閱<block ref="6db326f0ee07df97e25069fccf883deb" category="inline-link-rx"></block>。</block>
   <block id="df025646ed6854c0696237c0ac916446" category="list-text">連線 ONTAP 至其他網路中的不二系統</block>
   <block id="2fbb401eef4220b4a89cce3e59325dcb" category="inline-link">Google Cloud 文件：雲端 VPN 概述</block>
   <block id="6d1472a8434e4945740fa177e609f886" category="paragraph">如需相關指示、請參閱<block ref="1bc8aad79f56acf8c242cfb981c11ee1" category="inline-link-rx"></block>。</block>
@@ -3330,7 +3327,6 @@
   <block id="0d5b8e06664cffcf9f498e7821c89481" category="list-text">您可以跨多個區域或單一區域部署HA組態、確保資料的高可用度。建立HA配對時、BlueXP會提示您選擇多個區域或單一區域。</block>
   <block id="44b028753f7a7976b8be9d11b1afed32" category="paragraph">在建立HA配對時、BlueXP會提示您選擇四個VPC：</block>
   <block id="c44db905496bb7220714be5427afb035" category="paragraph">如果傳出的網際網路連線無法傳送AutoSupport 功能性訊息、則BlueXP會自動將Cloud Volumes ONTAP 您的功能性更新系統設定為使用Connector做為Proxy伺服器。唯一的需求是確保連接器的防火牆允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
-  <block id="33e7d975fa9a0910415fa300d8bf304a" category="paragraph">如需在BlueXP中設定資料分層所需的其他步驟、請參閱 <block ref="9ae9bcf59853ba48ce2658a41db24feb" category="inline-link-macro-rx"></block>。</block>
   <block id="639c4a9b76126cf4712751dee5546383" category="paragraph">同時、BlueXP針對VPC-1、VPC-2和VPC-3中的執行個體所建立的預先定義防火牆規則、可透過_all_傳輸協定和連接埠進行入侵通訊。這些規則可在HA節點之間進行通訊。</block>
   <block id="3ef69cb41da937aa60ab5fbab53eb42a" category="list-text">升級Cloud Volumes ONTAP 時、BlueXP也會視需要更新中介執行個體。</block>
   <block id="5d345d14f8662bfe45d8562fba90c487" category="list-text">當Cloud Volumes ONTAP 您從BlueXP建立一套功能不全的HA配對時、系統會提示您提供一個用於中介執行個體的金鑰配對。您可以使用該金鑰配對來進行SSH存取<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> 使用者：</block>
@@ -4049,7 +4045,6 @@
   <block id="a00377c792cd8ccb6a0c832ffec2c1dc" category="list-text">2個叢集LIF（e0b）</block>
   <block id="bbe8dbabe5bfd1d32eaa2131b90c191a" category="list-text">2個HA互連IP位址（e0c）</block>
   <block id="0baf3fbe98870c6047f6b10e5370bff7" category="list-text">2個RSMiSCSI IP位址（e0d）</block>
-  <block id="c3872c89a315822852621c448e41aac4" category="list-text">您不需要建立防火牆規則、因為BlueXP會為您執行這些規則。如果您需要使用自己的防火牆、請參閱下列防火牆規則。</block>
   <block id="e2f177a250a8772cd8ebbe4839390958" category="paragraph">BlueXP會將6個IP位址分配給單一節點系統。</block>
   <block id="b4f6a6268e9ed79637c765266075ab8c" category="paragraph">下表提供與每個私有IP位址相關聯的LIF詳細資料。</block>
   <block id="6d0c9e6ffd2de679838428abdea38009" category="cell">透過iSCSI傳輸協定進行用戶端存取。系統也用於其他重要的網路工作流程。此LIF為必填項目、不應刪除。</block>
@@ -4693,8 +4688,6 @@
   <block id="34b51cb01d3605c2b908600c2b516152" category="list-text"><block ref="34b51cb01d3605c2b908600c2b516152" category="inline-link-macro-rx"></block></block>
   <block id="2a79e18dae8df0be0a0d70d12cf4bfec" category="list-text"><block ref="2a79e18dae8df0be0a0d70d12cf4bfec" category="inline-link-macro-rx"></block></block>
   <block id="14c10e4dfdbfa7bb1944c39086904d79" category="list-text"><block ref="14c10e4dfdbfa7bb1944c39086904d79" category="inline-link-macro-rx"></block></block>
-  <block id="f784e2eca8423af6d4b6e02cd9dc17b6" category="list-text">VPC-0 中 HA 元件的一組規則。這些規則可讓您存取 Cloud Volumes ONTAP 資料以存取資料。 <block ref="1a421f2e5e3047ae3801063040dbe3fb" category="inline-xref-macro-rx"></block>。</block>
-  <block id="29642aeaa8aff442388842cc2c36f19d" category="list-text">VPC-1 、 VPC-2 和 VPC-3 中的另一組 HA 元件規則。這些規則可用於 HA 元件之間的傳入和傳出通訊。 <block ref="1a421f2e5e3047ae3801063040dbe3fb" category="inline-xref-macro-rx"></block>。</block>
   <block id="b0082432bdd8f260c6c2bf11437fb1b7" category="list-text">VPC-1 、 VPC-2 和 VPC-3 中的另一組 HA 元件規則。這些規則可用於 HA 元件之間的傳入和傳出通訊。 <block ref="07ead3ac53ea1b122b25bf61bd233110" category="inline-xref-macro-rx"></block>。</block>
   <block id="d2d30bf70c79bbb95b5e7ce630b66c21" category="cell">如果您選擇現有的安全群組、則必須符合Cloud Volumes ONTAP 下列需求： <block ref="c840f14212255ea9808d6d3aa32adaf9" category="inline-link-macro-rx"></block>。</block>
   <block id="4956de48e08bd2176b53bb70ae88a9ea" category="paragraph">如需選擇磁碟類型和大小的說明、請參閱 <block ref="2a79e18dae8df0be0a0d70d12cf4bfec" category="inline-link-macro-rx"></block>。</block>
@@ -4972,7 +4965,6 @@
   <block id="25163e975710186a452c0f2fefe81448" category="inline-xref">下載 ONTAP 映像</block>
   <block id="17464ff13145a21ed61cc7a0b9513ce7" category="paragraph">自 2024 年 1 月起、只有在 BlueXP 中、如果是三個最新版 Cloud Volumes ONTAP 的修補程式版本、才能進行修補程式升級。我們使用最新的 GA 版本來判斷在 BlueXP 中顯示的三個最新版本。例如、如果目前的 GA 版本為 9.13.1 、則 BlueXP 中會出現 9.11.1.9.13.1 的修補程式。如果您想要升級至 9.11.1 版或更低版本的修補程式版本、您需要使用手動升級程序 <block ref="741f5e59386960528e5ac58506855727" category="inline-xref-macro-rx"></block>。</block>
   <block id="b0b450f5a78908e6b78f5c13bf6b0da4" category="paragraph">根據補充程式（ P ）版本的一般規則、您可以從一個版本版本升級至目前執行版本或下一個版本的任何 P 版本。</block>
-  <block id="6641aeac9c3a566deb4f56b743076e2a" category="list-text">Nae 不可使用 AKV 。Nae 需要外部支援的 KMIP 伺服器。</block>
   <block id="8f3a7aeceb3049764382da1a82a27238" category="list-text">使用應用程式登錄後儲存的用戶端ID和租戶ID來啟用Azure Key Vault：<block ref="5e256216aa762875258d90fbe836b7b2" prefix=" " category="inline-code"></block></block>
   <block id="27546657617543a3f0cd8927c3f369c8" category="admonition">。<block ref="ee5ecb949ba751e6c3f7b03d02fc2819" prefix=" " category="inline-code"></block> 價值必須運用<block ref="b5fd887d199c5a44249b4fce7085da7f" prefix=" " category="inline-code"></block> 格式。</block>
   <block id="b386d04ca3a89226a06701e85f70e33d" category="list-text">成功啟用 Azure Key Vault 後、請輸入<block ref="00c44d3486742ffa7af4a8bfbab4d3d3" prefix=" " category="inline-code"></block> 出現提示時。</block>
@@ -5422,4 +5414,6 @@
   <block id="38d57b85102d8663bf30488289425e48" category="list-text">* 網路組態 * ：確保網路組態允許原始磁碟區與 FlexCache 磁碟區之間的無縫通訊。這包括在雲端環境中適當的路由和 DNS 解析。</block>
   <block id="51aa8ce93131e7a6746f62c49df04fe2" category="paragraph">在具有加密來源磁碟區的 Cloud Volumes ONTAP 系統上建立 FlexCache 磁碟區。如需詳細步驟和其他考量、請參閱下列各節：</block>
   <block id="9a06593a786548bb3b7320df7c76e7f1" category="paragraph">K8s 標籤在先前版本中已過時、現在已移除。</block>
+  <block id="526b16be728da42dd3eb25f5c378e218" category="list-text">Nae 無法使用 AKV 。Nae 需要外部支援的 KMIP 伺服器。</block>
+  <block id="70004026f1ac6c7f08784ebf0a55c142" category="list-text">Cloud Volumes ONTAP 節點每 15 分鐘輪詢一次 AKV 、以確認可存取性和金鑰可用度。此輪詢期間不可設定、在輪詢嘗試連續四次失敗（總計 1 小時）後、磁碟區會離線。</block>
 </blocks>
