@@ -1740,7 +1740,6 @@
   <block id="fcba7bd474eb1fdf49705827bbb6f28c" category="list-text">AWS 金鑰管理服務</block>
   <block id="d988a92cb3f4d22d80f5a79f6d0df13d" category="list-text">Google Cloud Platform 預設加密</block>
   <block id="1948af9c9d5426628760bb0ef4a35cdf" category="inline-link">NetApp Volume Encryption（NVE）與NetApp Aggregate Encryption（NAE）</block>
-  <block id="ea345086090743ba32da6aae6c9b6998" category="paragraph">支援Cloud Volumes ONTAP<block ref="ae505195628dd60ca701666c408297af" category="inline-link-rx"></block>。NVE 和 NAE 是軟體型解決方案、可對磁碟區進行（ FIPS ） 140-2 相容的閒置資料加密。NVE 和 NAE 都使用 AES 256 位元加密。</block>
   <block id="0bf3330853877ab4b76b4f1e00d3ace2" category="list-text">NVE 一次加密閒置的資料一個磁碟區。每個資料磁碟區都有其專屬的加密金鑰。</block>
   <block id="988d5e992ea371904581e6f8ad13bac7" category="list-text">Nae 是 NVE 的延伸、它會加密每個磁碟區的資料、而且磁碟區會在整個集合體之間共用金鑰。Nae 也允許對集合體中所有磁碟區的通用區塊進行重複資料刪除。</block>
   <block id="e1bf87c98edd3bee07d170ae8b118aeb" category="paragraph">新的Aggregate在您設定外部金鑰管理程式之後、預設會啟用NetApp Aggregate Encryption（NAE）。非 NAE Aggregate 一部分的新磁碟區、預設會啟用 NetApp Volume Encryption （ NVE ）（例如、如果您有在設定外部金鑰管理程式之前建立的現有 Aggregate ）。</block>
@@ -5416,4 +5415,5 @@
   <block id="9a06593a786548bb3b7320df7c76e7f1" category="paragraph">K8s 標籤在先前版本中已過時、現在已移除。</block>
   <block id="526b16be728da42dd3eb25f5c378e218" category="list-text">Nae 無法使用 AKV 。Nae 需要外部支援的 KMIP 伺服器。</block>
   <block id="70004026f1ac6c7f08784ebf0a55c142" category="list-text">Cloud Volumes ONTAP 節點每 15 分鐘輪詢一次 AKV 、以確認可存取性和金鑰可用度。此輪詢期間不可設定、在輪詢嘗試連續四次失敗（總計 1 小時）後、磁碟區會離線。</block>
+  <block id="368b5e8e02b8134e8d1009fff74bf2bc" category="paragraph">Cloud Volumes ONTAP 支援<block ref="09aecd5417a289ba24f2f00949971fbc" category="inline-link-rx"></block>。NVE 和 NAE 是軟體型解決方案、可對磁碟區進行（ FIPS ） 140-2 相容的閒置資料加密。NVE 和 NAE 都使用 AES 256 位元加密。</block>
 </blocks>

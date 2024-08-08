@@ -52,7 +52,7 @@ endif::gcp[]
 
 === NetApp 加密解決方案（ NVE 和 NAE ）
 
-支援Cloud Volumes ONTAP https://www.netapp.com/us/media/ds-3899.pdf["NetApp Volume Encryption（NVE）與NetApp Aggregate Encryption（NAE）"^]。NVE 和 NAE 是軟體型解決方案、可對磁碟區進行（ FIPS ） 140-2 相容的閒置資料加密。NVE 和 NAE 都使用 AES 256 位元加密。
+Cloud Volumes ONTAP 支援 https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NetApp Volume Encryption（NVE）與NetApp Aggregate Encryption（NAE）"^]。NVE 和 NAE 是軟體型解決方案、可對磁碟區進行（ FIPS ） 140-2 相容的閒置資料加密。NVE 和 NAE 都使用 AES 256 位元加密。
 
 * NVE 一次加密閒置的資料一個磁碟區。每個資料磁碟區都有其專屬的加密金鑰。
 * Nae 是 NVE 的延伸、它會加密每個磁碟區的資料、而且磁碟區會在整個集合體之間共用金鑰。Nae 也允許對集合體中所有磁碟區的通用區塊進行重複資料刪除。
