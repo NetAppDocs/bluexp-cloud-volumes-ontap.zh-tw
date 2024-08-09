@@ -866,7 +866,6 @@
   <block id="fdde7a7f3783aa0ce1e585f8be9c2def" category="list-text">如果授權期限已到期</block>
   <block id="36e4d5ff70cec517180ae18f1c34d2fd" category="list-text">如果您有市場的年度合約、Cloud Volumes ONTAP 您所部署的_all_系統將根據該合約付費。您無法與BYOL混搭一年一度的市場合約。</block>
   <block id="e22ac25b066b201473de7aa700ef5d92" category="section-title">定價</block>
-  <block id="25b035aed2fdd6599b8102a76363fdec" category="section-title">免費試用</block>
   <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">支援的組態</block>
   <block id="4e4c431843fe55f93c074808800bf7d0" category="paragraph">以容量為基礎的授權套件可搭配Cloud Volumes ONTAP 使用於NetApp 9.7及更新版本。</block>
   <block id="37040d43404231d8205705e4353af733" category="section-title">容量限制</block>
@@ -888,7 +887,6 @@
   <block id="72aa254218c757aad3e3703bdaf90694" category="inline-link-macro">連結您的訂閱內容以供Cloud Volumes ONTAP 搭配使用</block>
   <block id="cf2d2d8d3f12faf0a0924f5c5c89598b" category="list-text">NetApp授權您的帳戶之後、 <block ref="92e1d32055031f48c102a52373394710" category="inline-link-macro-rx"></block>。</block>
   <block id="a2f6a3e98ea1849ed1ab07d821bf6a18" category="section-title">節點型授權</block>
-  <block id="361abfc2eaabdb045de49dafd20dbdf1" category="paragraph">節點型授權是前一代的授權模式、可讓您依Cloud Volumes ONTAP 節點授權使用。此授權模式不適用於新客戶、也不提供免費試用。副節點充電已由上述的副容量充電方法取代。</block>
   <block id="749b4d71be76e8fee5fe7895ae5ff71d" category="paragraph">現有客戶仍可使用節點型授權：</block>
   <block id="04c40151a6d53f981d0364aef6215bd0" category="list-text">如果您擁有有效授權、BYOL僅適用於授權續約。</block>
   <block id="358962d4cc759ccb4c98e87cc3396033" category="list-text">如果您有有效的市場訂閱、仍可透過該訂閱付費。</block>
@@ -2471,8 +2469,6 @@
   <block id="783e44882ef395447a1b422181ebb3d4" category="section-title">支援Google Cloud</block>
   <block id="c0a92ff7cf6e8a1570f1775a4a7c563d" category="list-text">Google Cloud支援資料分層功能、從Cloud Volumes ONTAP 推出的功能僅支援32個9.6個。</block>
   <block id="0285440088a9a63b47028bcc1bccb076" category="section-title">功能互通性</block>
-  <block id="2986f3edb85e34a7556b412028be57fb" category="paragraph">沒有執行個體或容量限制。您可以任意部署Cloud Volumes ONTAP 多個不需付費的功能、並視需要配置多餘的容量、30天內即可免費部署。免費試用版會在30天後自動轉換為付費的每小時訂閱。</block>
-  <block id="631556a144b10d5d5f19603b18176e32" category="paragraph">雖然不收取Cloud Volumes ONTAP 每小時的軟體授權費用、但您的雲端供應商仍需支付基礎架構費用。</block>
   <block id="6c30ec25f9c157f6acd5cb63a6abee29" category="list-text">其中一個集合體使用舊的物件命名配置。兩個 Aggregate 都必須使用相同的名稱格式。</block>
   <block id="181e3299a212253d089ee23c58a37a10" category="list-text">Essentials套件與專業版套件現已在所有雲端供應商的市場中推出。</block>
   <block id="e399fe858ae4c467e1c830b512b1718c" category="list-text">所有雲端供應商市場的個別節點授權已過時、不再適用於新訂閱者。這包括年度合約和每小時訂閱（Explore、Standard和Premium）。</block>
@@ -3066,13 +3062,6 @@
   <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="section-title">最佳化</block>
   <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">單獨支付已配置的容量和I/O作業費用。</block>
   <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">單一節點或HA Cloud Volumes ONTAP</block>
-  <block id="98b2954d7b26ad04d4f74c70881d3ece" category="section-title">邊際快取</block>
-  <block id="0e6fc7a8a0a2e83eed1877313299a807" category="paragraph">提供Cloud Volumes Edge Cache授權。</block>
-  <block id="cbea577daebf267793d8d7234ee50729" category="list-text">與Professional套件相同的功能、可為分散式企業提供營運不中斷和資料保護</block>
-  <block id="90083db3dbad73e69a817501be172673" category="list-text">智慧型邊緣快取功能、可透過每個位置佔用空間較小的Windows VM進行快取</block>
-  <block id="7c4c7c30514b4cc21e76f21acfaacf2a" category="inline-link">深入瞭解Cloud Volumes Edge Cache如何協助您的企業發展</block>
-  <block id="20044e95e1ba41fb44c428898ee01dc2" category="paragraph"><block ref="20044e95e1ba41fb44c428898ee01dc2" category="inline-link-rx"></block></block>
-  <block id="54dcd2c31a61414eef44d6ac931b8f57" category="paragraph">+請注意、最佳化和邊緣快取套件無法搭配BYOL使用。</block>
   <block id="69ab7c49a4285d04bdc7e75b51a4a476" category="section-title">變更套件</block>
   <block id="5bdd4028830bea76f4939d67baa460ff" category="paragraph">部署完成後、您可以變更Cloud Volumes ONTAP 使用容量型授權的一套功能、以利執行一套功能。例如、如果您部署Cloud Volumes ONTAP 的是含有Essentials套件的功能完善的系統、則當您的業務需求改變時、可以將其變更為Professional套件。</block>
   <block id="ec3e25d80cfc0e5561493729eadecef7" category="paragraph"><block ref="ea19fa0e06a6047bcaabb9af62b066c3" category="inline-link-macro-rx"></block>。</block>
@@ -3356,8 +3345,6 @@
   <block id="16c274138bfaf739b851a1b611d4cdb0" category="list-text">如果Cloud Volumes ONTAP 供應的資料系統容量超過500 GiB、則BlueXP會將系統轉換成Essentials套件。</block>
   <block id="2cfe7b7de2a1df6b585bf1321d37fb8a" category="inline-link">NetApp BlueXP網站</block>
   <block id="490f0cb4ab517a2c88f9d425fc84b42d" category="paragraph">如需定價的詳細資訊、請前往<block ref="c412404f1934ae5bd4e59f00ec0e79b9" category="inline-link-rx"></block>。</block>
-  <block id="d6887d442590b333a9ed7ab379a87bec" category="inline-image-macro">BlueXP介面中通知的螢幕快照顯示、免費試用期僅剩7天。</block>
-  <block id="25e3832249c9db3c8e31fc1a1a13b691" category="admonition">您將會在BlueXP中收到一則通知、告知免費試用開始、剩餘7天、以及剩餘1天。例如：<block ref="5b65ab6646c17c41bf724ce3fdc19942" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4f6ffa2529265a9e4fcff29a28a16ebe" category="paragraph">每個資料服務儲存VM至少要有一個主要（讀寫）磁碟區、至少需支付4 TiB的最低費用。如果主要磁碟區的總和低於4 TiB、則BlueXP會將4 TiB最低收費套用至該儲存VM。</block>
   <block id="3116f8acc3e396f2ab1859f3fbe8234e" category="summary">您可以從Cloud Volumes ONTAP BlueXP停止並開始執行功能、以管理雲端運算成本。</block>
   <block id="d4cf496f112c8443c55c77f819b95b4b" category="paragraph">您可能想要在 Cloud Volumes ONTAP 特定時間間隔內關閉此功能、以降低運算成本。您可以將BlueXP設定為自動關機、然後在特定時間重新啟動系統、而非手動執行此動作。</block>
@@ -3745,7 +3732,6 @@
   <block id="3cbff90f9e1dd222c93cec86291eb0d2" category="inline-xref">瞭解充電的運作方式</block>
   <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">無論選擇哪一項、您都應該這樣做 <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>。</block>
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">9.10.0版及更早版本</block>
-  <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">每購買3個Tib容量、就有一個邊緣節點</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX for ONTAP Sf</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">適用於 Google Cloud Cloud Volumes Service</block>
@@ -3858,7 +3844,6 @@
   <block id="5b430d19ce10cad3c93da5d1a58ae5da" category="list-text">進入進階權限模式ONTAP ：<block ref="b18455e94f1f10f091d6cc4ad2e0507e" prefix=" " category="inline-code"></block></block>
   <block id="2b92b9eae444abb7f44aa96b856847a4" category="paragraph">如果是<block ref="c02e65ef2be24722283d91b62774dd3d" prefix=" " category="inline-code"></block> 狀態不是<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block>、SVM無法以所有必要的連線和權限來連線至Azure Key Vault服務。請確保您的Azure網路原則和路由不會封鎖您的私有vNet、使其無法到達Azure KeyVault Public端點。如果有、請考慮使用Azure私有端點、從vNet內存取金鑰庫。您可能還需要在SVM上新增靜態主機項目、以解析端點的私有IP位址。</block>
   <block id="840b18b97e1e55325d94f00b965a31cf" category="paragraph">。<block ref="5fb243bae51d7320aff8e09d0bb56325" prefix=" " category="inline-code"></block> 將會報告<block ref="696b031073e74bf2cb98e5ef201d4aa3" prefix=" " category="inline-code"></block> 初始組態時。其狀態將變更為<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block> 加密第一個磁碟區之後。</block>
-  <block id="4237e167da34ce4cc54b7915a9ee779a" category="list-text">所有磁碟區都必須停用壓縮功能、才能充分發揮Flash Cache效能提升功能Cloud Volumes ONTAP 、直到更新至VMware版。當您部署或升級Cloud Volumes ONTAP 至盡力9.12.1時、就不需要停用壓縮功能。</block>
   <block id="dd1852694a70af4fe454fcf679ab1071" category="inline-link-macro">Azure區域配對</block>
   <block id="ab83b37918dd75da5385d47425e5a41b" category="paragraph">如果貴企業需要、您可以變更BlueXP中的設定、使Cloud Volumes ONTAP 其設定使用服務端點、而非Azure私有連結。變更此設定會套用Cloud Volumes ONTAP 至您所建立的新版資訊系統。服務端點僅在中受支援 <block ref="143d2b52aa05d0c2b5e02a98661c9a57" category="inline-link-macro-rx"></block> 連接器與Cloud Volumes ONTAP 胎心之間。</block>
   <block id="23c74e586b63f34de771242b40d88dcf" category="paragraph">連接器應部署在Cloud Volumes ONTAP 其所管理的或所管理的各個系統所在的Azure區域<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> 適用於整個系統。Cloud Volumes ONTAP</block>
@@ -4300,7 +4285,6 @@
   <block id="fc0a70bcada485a87b25779f9232cd77" category="summary">下列兩種用途需要Google Cloud服務帳戶：Cloud Volumes ONTAP第一種方法是讓資料分層、將冷資料分層至Google Cloud中的低成本物件儲存設備。第二個是啟用 BlueXP 備份與還原功能、將磁碟區備份到低成本物件儲存設備。</block>
   <block id="3051092d4bbc438c196cba870b70c79f" category="paragraph">此步驟僅適用於資料分層。BlueXP 備份與還原不需要此功能。</block>
   <block id="aaaac746aa3fb70f64bdaf1919aefe27" category="admonition">雖然 BlueXP 備份與還原使用 SnapMirror 實作來建立備份檔案（稱為 SnapMirror Cloud ）、但系統升級時不需要暫停備份。</block>
-  <block id="35ae8932a2c6f1191cf21157a991b4dd" category="paragraph">您可以在雲端供應商的市場中、透過隨用隨付訂閱取得30天的免費試用版。免費試用包括 Cloud Volumes ONTAP 和 BlueXP 備份與還原。試用版會在您訂閱市場上的產品項目時開始。</block>
   <block id="26ee3f5587dc47d76226ef9b570828ff" category="paragraph">在 BlueXP 數位錢包中、 50 TiB 將根據 _Essentials Single Nodon_ 授權收費。</block>
   <block id="3ea1315566755c191cc8996f86a9af02" category="paragraph">充電是根據 Keystone 訂閱中一或多個 Cloud Volumes ONTAP HA 配對的承諾容量大小而定。</block>
   <block id="46b39bb522bc6ece1b6bf75e81db3cbf" category="paragraph">系統會定期彙總每個 Volume 的已配置容量、並將其與 Keystone 訂閱上的已認可容量進行比較、而任何超額資料都會在 Keystone 訂閱上以暴增方式收費。</block>
@@ -4578,7 +4562,6 @@
   <block id="ba106db82d3577b52130dde5ddd372b4" category="section-title">Cloud Volumes ONTAP 9.13.1 RC1</block>
   <block id="9bc26bf4259fc1662eaaa13a7534abb1" category="paragraph">BlueXP 現在可以在 AWS 、 Azure 和 Google Cloud 中部署和管理 Cloud Volumes ONTAP 9.13.1 。</block>
   <block id="3dc988ad93a3ac0c3a1487fc3b6754cf" category="paragraph">雖然 Cloud Volumes ONTAP 支援 S3 作為橫向擴充儲存設備的選項、但 BlueXP 並未提供任何此功能的管理功能。使用CLI是設定S3用戶端從Cloud Volumes ONTAP 功能支援的最佳實務做法。如需詳細資訊、請參閱<block ref="49e8fee748cd4c8d6f01bdb03113fc2a" category="inline-link-rx"></block>。</block>
-  <block id="2db3dc5428f2e0831511cd891db676b1" category="paragraph">對於 Essentials 套件、 4 TiB 最低容量費用不適用於僅包含次要（資料保護）磁碟區的儲存 VM 。例如、如果您的儲存虛擬機器擁有1個二線資料的TiB、則只需支付1個TiB的資料費用。對於所有其他非 Essentials 套件類型（最佳化、專業版和邊緣快取）、無論磁碟區類型為何、都會套用 4 TiB 的最低容量充電。</block>
   <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2023 年 7 月 2 日</block>
   <block id="a6d6a466484f2718bba09926e0dfb2c7" category="paragraph">Connector 3.9.31 版本推出下列變更。</block>
   <block id="0888a7f5d81ff73f5ec9fa719b091bdc" category="section-title">支援 Azure 中的 HA 多重可用性區域部署</block>
@@ -5416,4 +5399,18 @@
   <block id="526b16be728da42dd3eb25f5c378e218" category="list-text">Nae 無法使用 AKV 。Nae 需要外部支援的 KMIP 伺服器。</block>
   <block id="70004026f1ac6c7f08784ebf0a55c142" category="list-text">Cloud Volumes ONTAP 節點每 15 分鐘輪詢一次 AKV 、以確認可存取性和金鑰可用度。此輪詢期間不可設定、在輪詢嘗試連續四次失敗（總計 1 小時）後、磁碟區會離線。</block>
   <block id="368b5e8e02b8134e8d1009fff74bf2bc" category="paragraph">Cloud Volumes ONTAP 支援<block ref="09aecd5417a289ba24f2f00949971fbc" category="inline-link-rx"></block>。NVE 和 NAE 是軟體型解決方案、可對磁碟區進行（ FIPS ） 140-2 相容的閒置資料加密。NVE 和 NAE 都使用 AES 256 位元加密。</block>
+  <block id="c89c4d58a7009250769a012cf2451410" category="list-text">在 AWS 上設定 Cloud Volumes ONTAP 9.12.0 或更早版本的 Flash Cache 時、必須在所有磁碟區上停用壓縮、才能充分利用 Flash Cache 效能的改善。當您部署或升級至 Cloud Volumes ONTAP 9.12.1 或更新版本時、不需要停用壓縮。</block>
+  <block id="f21def4319b19574f5ca7ab45389822b" category="paragraph">+ 請注意、 BYOL 並未提供最佳化套件。</block>
+  <block id="e2299e8e355a9b503858d1f8d800ccaa" category="paragraph">對於 Essentials 套件、 4 TiB 最低容量費用不適用於僅包含次要（資料保護）磁碟區的儲存 VM 。例如、如果您的儲存虛擬機器擁有1個二線資料的TiB、則只需支付1個TiB的資料費用。對於所有其他非 Essentials 套件類型（最佳化版和專業版）、無論 Volume 類型為何、都適用 4 TiB 的最低容量充電。</block>
+  <block id="ea4ba4158f6b2b895b0418072f2ba06d" category="paragraph">節點型授權是前一代的授權模式、可讓您依Cloud Volumes ONTAP 節點授權使用。此授權模式不適用於新客戶。副節點充電已由上述的副容量充電方法取代。</block>
+  <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">2024 年 8 月 8 日</block>
+  <block id="e84c1e70dc9a2186ec21e22a3e9cbda0" category="section-title">Edge Cache 授權套件已過時</block>
+  <block id="882b50ca44d46bfb8d9502390cfeaf96" category="paragraph">Edge Cache 容量型授權套件將不再適用於未來部署的 Cloud Volumes ONTAP 。不過、您可以使用 API 來使用此功能。</block>
+  <block id="a5729938408dc232ea97fb5d7d00b71c" category="section-title">Azure 上 Flash Cache 支援的最低 ONTAP 版本</block>
+  <block id="9eed4224485f0ec8f22ac2ca0b031514" category="paragraph">在 Azure 上設定 Flash Cache 所需的最低 ONTAP 版本為 9.13.1 GA 。只有 ONTAP 9.13.1 GA 和更新版本可用於在適用於 Azure 的 Cloud Volumes ONTAP 系統上部署 Flash Cache 。</block>
+  <block id="2936dc7efe93e6248aca38d21b92cc62" category="paragraph">如需支援的組態、請參閱<block ref="10c1bb30d666a83202b9e687d7b06d1b" category="inline-link-rx"></block>。</block>
+  <block id="bc5af032a5cd69ef4ac57b8c2cd1f1d6" category="section-title">市場訂閱的免費試用版已過時</block>
+  <block id="860dc5e7395e0f2c15a42ffdef98eca4" category="paragraph">Cloud Volumes ONTAP 不再提供雲端供應商市場的隨用隨付訂閱 30 天自動免費試用。任何類型的市場訂閱（ PAYGO 或年度合約）的收費將從首次使用開始啟動、不需任何免費試用期。</block>
+  <block id="2c8ad7deb621eae9ecb23ccf84d9c22c" category="section-title">加拿大西部地區現在支援 AWS</block>
+  <block id="184c928c73aa00c7569ba55c0b9e0064" category="paragraph">AWS for Cloud Volumes ONTAP 9.12.1 GA 及更新版本現在支援加拿大西部地區。</block>
 </blocks>
