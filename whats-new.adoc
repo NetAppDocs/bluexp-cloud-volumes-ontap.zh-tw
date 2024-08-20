@@ -44,14 +44,6 @@ Cloud Volumes ONTAP 不再提供雲端供應商市場的隨用隨付訂閱 30 �
 
 
 
-=== 加拿大西部地區現在支援 AWS
-
-AWS for Cloud Volumes ONTAP 9.12.1 GA 及更新版本現在支援加拿大西部地區。
-
-如需所有區域的清單、請參閱 https://bluexp.netapp.com/cloud-volumes-global-regions["AWS 下的 Global Regions Map"^]。
-
-
-
 == 2024 年 6 月 10 日
 
 
