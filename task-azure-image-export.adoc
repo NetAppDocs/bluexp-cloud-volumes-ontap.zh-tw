@@ -22,7 +22,7 @@ summary: 您可以從 Azure Marketplace 匯出 ONTAP 映像、以驗證 VHD 檔�
 * Azure CLI 已安裝、或 Azure Cloud Shell 透過 Azure 入口網站隨時可供使用。
 +
 
-NOTE: 如需如何安裝 Azure CLI 的詳細資訊、請參閱 https://learn.microsoft.com/en-us/cli/azure/install-azure-cli["Azure 說明文件：如何安裝 Azure CLI"^]。
+NOTE: 如需更多有關如何安裝 Azure CLI 的資訊 https://learn.microsoft.com/en-us/cli/azure/install-azure-cli["Azure 說明文件：如何安裝 Azure CLI"^]、請參閱。
 
 
 

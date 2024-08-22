@@ -96,7 +96,7 @@ image:screenshot_cmk_add_accounts_dialog.gif["此螢幕快照顯示 AWS KMS 主�
 }
 ----
 +
-如需此程序的其他詳細資料、請參閱 https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html["AWS文件：允許其他帳戶的使用者使用KMS金鑰"^]。
+如需此程序的其他詳細資訊，請參閱 https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html["AWS文件：允許其他帳戶的使用者使用KMS金鑰"^]。
 
 
 

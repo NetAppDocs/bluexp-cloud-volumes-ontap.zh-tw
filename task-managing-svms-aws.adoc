@@ -64,7 +64,7 @@ image:screenshot_aws_e0a.gif["AWS主控台的快照、顯示網路介面上的�
 +
 您應該已經在本頁上一節中找出每個介面支援的IP位址上限。
 
-.. 選用：前往CLI Cloud Volumes ONTAP 執行*網路介面show*以確認每個IP位址都在使用中。
+.. 選用：移至 ONTAP CLI for Cloud Volumes ONTAP 並執行 * 網路介面 show* 、確認每個 IP 位址都在使用中。
 +
 如果IP位址未在使用中、您可以將其與新的儲存VM搭配使用。
 

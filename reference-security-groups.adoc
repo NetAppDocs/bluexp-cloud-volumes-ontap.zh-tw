@@ -40,10 +40,10 @@ BlueXP會建立AWS安全性群組、其中包括Cloud Volumes ONTAP 需要順利
 | 所有 ICMP | 全部 | Ping 執行個體 
 
 
-| HTTP | 80 | 使用叢集管理 LIF 的 IP 位址、以 HTTP 存取 System Manager Web 主控台 
+| HTTP | 80 | 使用叢集管理 LIF 的 IP 位址、透過 HTTP 存取 ONTAP 系統管理員網頁主控台 
 
 
-| HTTPS | 443.. | 使用叢集管理LIF的IP位址、連線到Connector和HTTPS、存取System Manager Web主控台 
+| HTTPS | 443.. | 使用叢集管理 LIF 的 IP 位址、與連接器和 HTTPS 連線、存取 ONTAP 系統管理員網頁主控台 
 
 
 | SSH | 22 | SSH 存取叢集管理 LIF 的 IP 位址或節點管理 LIF 

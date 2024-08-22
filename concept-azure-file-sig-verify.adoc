@@ -26,7 +26,7 @@ image::graphic_azure_check_signature.png[圖形 azure 檢查簽名]
 
 * 從下載 Azure Image Digest 檔案 https://mysupport.netapp.com/site/["NetApp 支援網站"^] 然後擷取摘要檔案（ .SIG ）、公開金鑰憑證檔案（ .pem ）和鏈結憑證檔案（ .pem ）。
 +
-請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["下載 Azure Image Digest File"^] 以取得更多資訊。
+如需詳細資訊、請參閱 link:task-azure-download-digest-file.html["下載 Azure Image Digest File"] 。
 
 * 驗證信任鏈結。
 * 從公開金鑰憑證（ .pem ）擷取公開金鑰（ .pub ）。

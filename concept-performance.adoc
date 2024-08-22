@@ -56,4 +56,4 @@ endif::gcp[]
 
 從雲端供應商的監控工具中、顯示出使用率極高（超過90%）的節點。Cloud Volumes ONTAP這是因為ONTAP 、當需要時、支援的所有vCPU都會保留在虛擬機器上。
 
-如需協助、請參閱 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/Monitoring_CPU_utilization_before_an_ONTAP_upgrade["NetApp知識庫文章、說明如何ONTAP 使用CLI監控不實的CPU使用率"^]
+如需相關資訊、請參閱 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/Monitoring_CPU_utilization_before_an_ONTAP_upgrade["NetApp知識庫文章、說明如何ONTAP 使用CLI監控不實的CPU使用率"^]

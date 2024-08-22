@@ -28,7 +28,7 @@ summary: 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可�
 
 == 建立儲存VM
 
-如果授權支援、您可以在單一節點系統或HA配對上建立多個儲存VM。請注意、您必須使用BlueXP API在HA配對上建立儲存VM、而您可以使用CLI或System Manager在單一節點系統上建立儲存VM。
+如果授權支援、您可以在單一節點系統或HA配對上建立多個儲存VM。請注意、您必須使用 BlueXP  API 在 HA 配對上建立儲存 VM 、而您可以使用 ONTAP 系統管理員或 ONTAP CLI 在單一節點系統上建立儲存 VM 。
 
 
 
@@ -98,7 +98,7 @@ vserver add-aggregates -vserver <svm-name> -aggregates <aggr1,aggr2>
 
 === HA配對
 
-您必須使用BlueXP API在Cloud Volumes ONTAP Google Cloud的某個系統上建立儲存VM。由於BlueXP會使用所需的LIF服務來設定儲存VM、以及輸出SMB/CIFS通訊所需的iSCSI LIF、因此需要使用API（而非System Manager或CLI）。
+您必須使用BlueXP API在Cloud Volumes ONTAP Google Cloud的某個系統上建立儲存VM。由於 BlueXP  使用必要的 LIF 服務以及輸出 SMB/CIFS 通訊所需的 iSCSI LIF 、因此需要使用 API （而非 ONTAP 系統管理員或 ONTAP CLI ）來設定儲存 VM 。
 
 請注意、BlueXP會在Google Cloud中配置所需的IP位址、並使用資料LIF來建立儲存VM、以進行SMB/NFS存取、並使用iSCSI LIF來進行傳出SMB通訊。
 

@@ -47,7 +47,7 @@ summary: 可主動監控系統健全狀況、並傳送訊息給NetApp技術支�
 請依照下列步驟來解決此問題。
 
 .步驟
-. SSH到Cloud Volumes ONTAP 支援系統、以便從CLI管理系統。
+. SSH 至 Cloud Volumes ONTAP 系統、以便您從 ONTAP CLI 管理系統。
 +
 link:task-connecting-to-otc.html["瞭解如何從SSH到Cloud Volumes ONTAP 功能"]。
 

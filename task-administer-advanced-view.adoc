@@ -48,7 +48,7 @@ BlueXP的進階檢視可讓您存取其他管理功能：
 
 == 支援的組態
 
-透過System Manager進階管理功能、Cloud Volumes ONTAP 可在標準雲端區域中以支援使用支援的版本為0、10.0及更新版本。
+Cloud Volumes ONTAP 9.10.0 及更新版本在標準雲端區域支援透過 ONTAP 系統管理員進行進階管理。
 
 不支援在GovCloud區域或沒有外傳網際網路存取的區域整合System Manager。
 

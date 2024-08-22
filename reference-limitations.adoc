@@ -22,7 +22,7 @@ summary: 已知限制指出本產品版本不支援的平台、裝置或功能�
 
 == BlueXP 不支援建立 FlexGroup Volume
 
-雖然 Cloud Volumes ONTAP 支援 FlexGroup 磁碟區、但 BlueXP 目前不支援建立 FlexGroup 磁碟區。如果FlexGroup 您從System Manager或CLI建立一個支援功能區、則應將BlueXP的容量管理模式設為手動。自動模式可能無法與 FlexGroup 功能不全的功能搭配使用。
+雖然 Cloud Volumes ONTAP 支援 FlexGroup 磁碟區、但 BlueXP 目前不支援建立 FlexGroup 磁碟區。如果您從 ONTAP 系統管理員或 ONTAP CLI 建立 FlexGroup Volume 、則應將 BlueXP  的容量管理模式設定為手動。自動模式可能無法與 FlexGroup 功能不全的功能搭配使用。
 
 
 NOTE: 在 BlueXP 中建立 FlexGroup 磁碟區的能力已計畫在未來的版本中推出。
@@ -39,6 +39,6 @@ link:concept-client-protocols.html["深入瞭Cloud Volumes ONTAP 解支援S3和�
 
 == BlueXP不支援儲存VM的災難恢復
 
-BlueXP 不提供任何儲存 VM （ SVM ）災難恢復的設定或協調支援。您必須使用 System Manager 或 CLI 。
+BlueXP 不提供任何儲存 VM （ SVM ）災難恢復的設定或協調支援。您必須使用 ONTAP 系統管理員或 ONTAP CLI 。
 
 link:task-manage-svm-dr.html["深入瞭解 SVM 災難恢復"]。

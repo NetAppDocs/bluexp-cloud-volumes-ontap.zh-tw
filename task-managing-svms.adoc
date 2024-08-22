@@ -26,7 +26,7 @@ summary: 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可�
 
 == 使用多個儲存VM
 
-BlueXP支援您從System Manager或CLI建立的任何其他儲存VM。
+BlueXP  支援您從 ONTAP 系統管理員或 ONTAP CLI 建立的任何其他儲存 VM 。
 
 例如、下圖顯示如何在建立 Volume 時選擇儲存 VM 。
 
@@ -40,4 +40,4 @@ image:screenshot_replicate_volume_svm.gif["螢幕快照顯示您可以選取要�
 
 == 修改預設儲存VM的名稱
 
-BlueXP會自動命名為其所建立的Cloud Volumes ONTAP 單一儲存VM、以利執行效能。如果您有嚴格的命名標準、則可以從 System Manager 、 CLI 或 API 修改儲存 VM 的名稱。例如、您可能希望名稱與您為 ONTAP 自己的叢集命名儲存虛擬機器的方式相符。
+BlueXP會自動命名為其所建立的Cloud Volumes ONTAP 單一儲存VM、以利執行效能。如果您有嚴格的命名標準、則可以從 ONTAP 系統管理員、 ONTAP CLI 或 API 修改儲存 VM 的名稱。例如、您可能希望名稱與您為 ONTAP 自己的叢集命名儲存虛擬機器的方式相符。

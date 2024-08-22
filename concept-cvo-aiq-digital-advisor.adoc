@@ -52,14 +52,14 @@ Digital Advisor 使用者介面已完全整合至 BlueXP 。
 +
 image:screenshot_aiq_digital_advisor.png["BlueXP 中數位顧問使用者介面的螢幕擷取畫面。"]
 
-* 如果您尚未在BlueXP中註冊某個nssa帳戶、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["立即註冊一個nssnss"^] 接著會出現數位顧問 UI 。
+* 如果您尚未在 BlueXP  中註冊 NSS 帳戶、請立即註冊 NSS 帳戶、然後就會出現數位顧問 UI 。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["管理與BlueXP帳戶相關聯的NSS認證"]如需相關指示、請參閱。
 
 
 
-NOTE: 截至2021年12月3日、NetApp已改用新方法來登錄新的NSS帳戶 認證資料。 https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["如需詳細資料、請參閱此常見問題集"]。如果您的NSS帳戶使用舊的一組認證資料、您將需要將帳戶更新為新的認證資料。
+NOTE: 截至2021年12月3日、NetApp已改用新方法來登錄新的NSS帳戶 認證資料。如需詳細資訊、請 https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["此FAQ"]參閱。如果您的NSS帳戶使用舊的一組認證資料、您將需要將帳戶更新為新的認證資料。
 
 
 
 == 下一步
 
-請參閱 https://docs.netapp.com/us-en/active-iq/index.html["數位顧問文件"] 以取得詳細資料。
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/active-iq/index.html["數位顧問文件"] 。

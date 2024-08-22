@@ -31,7 +31,7 @@ summary: 您可以在 Cloud Volumes ONTAP 單一系統組態中或 AWS 中以 HA
 
 * 瞭解您要使用的組態。
 +
-您應該已做好準備、選擇組態、並從系統管理員取得 AWS 網路資訊。如需詳細資訊、請參閱 link:task-planning-your-config.html["規劃 Cloud Volumes ONTAP 您的需求組態"^]。
+您應該先選擇組態、然後從系統管理員取得AWS網路資訊、以做好準備。如需詳細資訊、請 link:task-planning-your-config.html["規劃 Cloud Volumes ONTAP 您的需求組態"^]參閱。
 
 * 瞭解設定Cloud Volumes ONTAP 驗證功能所需的條件。
 +
@@ -39,7 +39,7 @@ link:task-set-up-licensing-aws.html["瞭解如何設定授權"^]。
 
 * 適用於CIFS組態的DNS與Active Directory。
 +
-如需詳細資訊、請參閱 link:reference-networking-aws.html["AWS 的網路需求 Cloud Volumes ONTAP"^]。
+如需詳細資訊、請 link:reference-networking-aws.html["AWS 的網路需求 Cloud Volumes ONTAP"^]參閱。
 
 
 
@@ -73,7 +73,7 @@ link:task-set-up-licensing-aws.html["瞭解如何設定授權"^]。
 | 新增標記 | AWS 標籤是 AWS 資源的中繼資料。BlueXP會將標記新增Cloud Volumes ONTAP 至該執行個體、以及與該執行個體相關聯的每個AWS資源。建立工作環境時、您最多可以從使用者介面新增四個標記、然後在建立之後新增更多標記。請注意、在建立工作環境時、 API 不會限制您使用四個標記。如需標記的相關資訊、請參閱 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html["AWS 文件：標記 Amazon EC2 資源"^]。 
 
 
-| 使用者名稱和密碼 | 這些是Cloud Volumes ONTAP 適用於整個叢集管理員帳戶的認證資料。您可以使用這些認證資料、 Cloud Volumes ONTAP 透過 System Manager 或其 CLI 連線至功能驗證。保留預設的_admin_使用者名稱、或將其變更為自訂使用者名稱。 
+| 使用者名稱和密碼 | 這些是Cloud Volumes ONTAP 適用於整個叢集管理員帳戶的認證資料。您可以使用這些認證、透過 ONTAP 系統管理員或 ONTAP CLI 連線至 Cloud Volumes ONTAP 。保留預設的_admin_使用者名稱、或將其變更為自訂使用者名稱。 
 
 
 | 編輯認證資料 | 選擇與您要部署此系統之帳戶相關的AWS認證資料。您也可以將AWS Marketplace訂閱與此Cloud Volumes ONTAP 款作業系統建立關聯。
@@ -161,7 +161,7 @@ link:concept-security.html#encryption-of-data-at-rest["深入瞭解支援的加�
 . *授權*：視Cloud Volumes ONTAP 需要變更此版本、並選取執行個體類型和執行個體租賃。
 +
 
-NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修補程式版本、則在建立工作環境時、BlueXP會將系統更新至該版本。例如、如果您選擇Cloud Volumes ONTAP 了「更新」功能、就會進行更新。更新不會從一個版本發生到另一個版本、例如從 9.6 到 9.7 。
+NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修補程式版本、則在建立工作環境時、BlueXP會將系統更新至該版本。例如、如果您選取 Cloud Volumes ONTAP 9.13.1 和 9.13.1 P4 、就會進行更新。更新不會從一個版本發生到另一個版本、例如從 9.13 到 9.14 。
 
 . *基礎儲存資源*：選擇磁碟類型、設定基礎儲存設備、然後選擇是否要啟用資料分層。
 +
@@ -255,9 +255,7 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 | DNS 網域 | 適用於整個儲存虛擬 Cloud Volumes ONTAP 機器（ SVM ）的 DNS 網域。在大多數情況下、網域與 AD 網域相同。 
 
 
-| NTP 伺服器 | 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱 https://docs.netapp.com/us-en/bluexp-automation/index.html["藍圖XP自動化文件"^] 以取得詳細資料。
-
-請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。 
+| NTP 伺服器 | 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-automation/index.html["藍圖XP自動化文件"^] 。請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。 
 |===
 . * 使用率設定檔、磁碟類型及分層原則 * ：視需要選擇是否要啟用儲存效率功能、並編輯磁碟區分層原則。
 +
@@ -282,7 +280,7 @@ BlueXP會啟動Cloud Volumes ONTAP 這個執行個體。您可以追蹤時間表
 
 .完成後
 * 如果您已配置 CIFS 共用區、請授予使用者或群組檔案和資料夾的權限、並確認這些使用者可以存取共用區並建立檔案。
-* 如果您要將配額套用至磁碟區、請使用 System Manager 或 CLI 。
+* 如果您想要將配額套用至磁碟區、請使用 ONTAP 系統管理員或 ONTAP CLI 。
 +
 配額可讓您限制或追蹤使用者、群組或 qtree 所使用的磁碟空間和檔案數量。
 
@@ -329,7 +327,7 @@ BlueXP會啟動Cloud Volumes ONTAP 這個執行個體。您可以追蹤時間表
 | 新增標記 | AWS 標籤是 AWS 資源的中繼資料。BlueXP會將標記新增Cloud Volumes ONTAP 至該執行個體、以及與該執行個體相關聯的每個AWS資源。建立工作環境時、您最多可以從使用者介面新增四個標記、然後在建立之後新增更多標記。請注意、在建立工作環境時、 API 不會限制您使用四個標記。如需標記的相關資訊、請參閱 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html["AWS 文件：標記 Amazon EC2 資源"^]。 
 
 
-| 使用者名稱和密碼 | 這些是Cloud Volumes ONTAP 適用於整個叢集管理員帳戶的認證資料。您可以使用這些認證資料、 Cloud Volumes ONTAP 透過 System Manager 或其 CLI 連線至功能驗證。保留預設的_admin_使用者名稱、或將其變更為自訂使用者名稱。 
+| 使用者名稱和密碼 | 這些是Cloud Volumes ONTAP 適用於整個叢集管理員帳戶的認證資料。您可以使用這些認證、透過 ONTAP 系統管理員或 ONTAP CLI 連線至 Cloud Volumes ONTAP 。保留預設的_admin_使用者名稱、或將其變更為自訂使用者名稱。 
 
 
 | 編輯認證資料 | 選擇 AWS 認證資料和市場訂閱、以搭配此 Cloud Volumes ONTAP 款功能系統使用。
@@ -362,7 +360,7 @@ TIP: 如果您想要使用 WORM 和資料分層功能、您必須停用 BlueXP �
 
 . * HA 部署模式 * ：選擇 HA 組態。
 +
-如需部署模型的總覽、請參閱 link:concept-ha.html["適用於 AWS 的 HA Cloud Volumes ONTAP"^]。
+有關部署模型的概述，請參閱link:concept-ha.html["適用於 AWS 的 HA Cloud Volumes ONTAP"^]。
 
 . *位置與連線*（單一AZ）或*地區與VPC*（多個AZ）：輸入您在AWS工作表中記錄的網路資訊。
 +
@@ -388,11 +386,11 @@ TIP: 如果您想要使用 WORM 和資料分層功能、您必須停用 BlueXP �
 . * 連線能力與 SSH 驗證 * ：選擇 HA 配對與中介器的連線方法。
 . * 浮動 IPS* ：如果您選擇多個 AZs 、請指定浮動 IP 位址。
 +
-該地區所有 VPC 的 IP 位址必須位於 CIDR 區塊之外。如需其他詳細資料、請參閱 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["AWS 在 Cloud Volumes ONTAP 多個 AZs 中的功能需求"^]。
+該地區所有 VPC 的 IP 位址必須位於 CIDR 區塊之外。如需其他詳細資料link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["AWS 在 Cloud Volumes ONTAP 多個 AZs 中的功能需求"^]、請參閱。
 
 . * 路由表 * ：如果您選擇多個 AZs 、請選取應包含浮動 IP 位址路由的路由表。
 +
-如果您有多個路由表、請務必選取正確的路由表。否則、部分用戶端可能無法存取 Cloud Volumes ONTAP 此功能配對。如需路由表的詳細資訊、請參閱 http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html["AWS 文件：路由表"^]。
+如果您有多個路由表、請務必選取正確的路由表。否則、部分用戶端可能無法存取 Cloud Volumes ONTAP 此功能配對。有關路由表的詳細信息，請參閱 http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html["AWS 文件：路由表"^]。
 
 . * 資料加密 * ：不選擇資料加密或 AWS 管理的加密。
 +
@@ -429,7 +427,7 @@ link:concept-security.html#encryption-of-data-at-rest["深入瞭解支援的加�
 . *授權*：視Cloud Volumes ONTAP 需要變更此版本、並選取執行個體類型和執行個體租賃。
 +
 
-NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修補程式版本、則在建立工作環境時、BlueXP會將系統更新至該版本。例如、如果您選擇Cloud Volumes ONTAP 了「更新」功能、就會進行更新。更新不會從一個版本發生到另一個版本、例如從 9.6 到 9.7 。
+NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修補程式版本、則在建立工作環境時、BlueXP會將系統更新至該版本。例如、如果您選取 Cloud Volumes ONTAP 9.13.1 和 9.13.1 P4 、就會進行更新。更新不會從一個版本發生到另一個版本、例如從 9.13 到 9.14 。
 
 . *基礎儲存資源*：選擇磁碟類型、設定基礎儲存設備、然後選擇是否要啟用資料分層。
 +
@@ -523,9 +521,7 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 | DNS 網域 | 適用於整個儲存虛擬 Cloud Volumes ONTAP 機器（ SVM ）的 DNS 網域。在大多數情況下、網域與 AD 網域相同。 
 
 
-| NTP 伺服器 | 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱 https://docs.netapp.com/us-en/bluexp-automation/index.html["藍圖XP自動化文件"^] 以取得詳細資料。
-
-請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。 
+| NTP 伺服器 | 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-automation/index.html["藍圖XP自動化文件"^] 。請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。 
 |===
 . * 使用率設定檔、磁碟類型及分層原則 * ：視需要選擇是否要啟用儲存效率功能、並編輯磁碟區分層原則。
 +
@@ -550,7 +546,7 @@ BlueXP會啟動Cloud Volumes ONTAP 「更新HA配對」。您可以追蹤時間�
 
 .完成後
 * 如果您已配置 CIFS 共用區、請授予使用者或群組檔案和資料夾的權限、並確認這些使用者可以存取共用區並建立檔案。
-* 如果您要將配額套用至磁碟區、請使用 System Manager 或 CLI 。
+* 如果您想要將配額套用至磁碟區、請使用 ONTAP 系統管理員或 ONTAP CLI 。
 +
 配額可讓您限制或追蹤使用者、群組或 qtree 所使用的磁碟空間和檔案數量。
 

@@ -32,7 +32,7 @@ summary: 您可以在 Cloud Volumes ONTAP 單一系統組態中或在 Google Clo
 
 * 瞭解您要使用的組態。
 +
-您應該已做好準備、選擇組態、並向系統管理員取得Google Cloud網路資訊。如需詳細資訊、請參閱 link:task-planning-your-config-gcp.html["規劃 Cloud Volumes ONTAP 您的需求組態"]。
+您應該已做好準備、選擇組態、並向系統管理員取得Google Cloud網路資訊。如需詳細資訊、請 link:task-planning-your-config-gcp.html["規劃 Cloud Volumes ONTAP 您的需求組態"]參閱。
 
 * 瞭解設定Cloud Volumes ONTAP 驗證功能所需的條件。
 +
@@ -79,7 +79,7 @@ link:task-set-up-licensing-google.html["瞭解如何設定授權"]。
 | 新增標籤 | 標籤是Google Cloud資源的中繼資料。BlueXP會將標籤新增Cloud Volumes ONTAP 至與系統相關的支援系統和Google Cloud資源。建立工作環境時、您最多可以從使用者介面新增四個標籤、然後在建立之後新增更多標籤。請注意、在建立工作環境時、 API 不會限制您使用四個標籤。如需標籤的相關資訊、請參閱 https://cloud.google.com/compute/docs/labeling-resources["Google Cloud 文件：標示資源"^]。 
 
 
-| 使用者名稱和密碼 | 這些是Cloud Volumes ONTAP 適用於整個叢集管理員帳戶的認證資料。您可以使用這些認證資料、 Cloud Volumes ONTAP 透過 System Manager 或其 CLI 連線至功能驗證。保留預設的_admin_使用者名稱、或將其變更為自訂使用者名稱。 
+| 使用者名稱和密碼 | 這些是Cloud Volumes ONTAP 適用於整個叢集管理員帳戶的認證資料。您可以使用這些認證、透過 ONTAP 系統管理員或 ONTAP CLI 連線至 Cloud Volumes ONTAP 。保留預設的_admin_使用者名稱、或將其變更為自訂使用者名稱。 
 
 
 | 編輯專案  a| 
@@ -143,7 +143,7 @@ TIP: 如果您想要使用 WORM 和資料分層功能、您必須停用 BlueXP �
 . *授權*：視Cloud Volumes ONTAP 需要變更此版本、然後選取機器類型。
 +
 
-NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修補程式版本、則在建立工作環境時、BlueXP會將系統更新至該版本。例如、如果您選擇Cloud Volumes ONTAP 了「更新」功能、就會進行更新。更新不會從一個版本發生到另一個版本、例如從 9.6 到 9.7 。
+NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修補程式版本、則在建立工作環境時、BlueXP會將系統更新至該版本。例如、如果您選取 Cloud Volumes ONTAP 9.13.1 和 9.13.1 P4 、就會進行更新。更新不會從一個版本發生到另一個版本、例如從 9.13 到 9.14 。
 
 . * 基礎儲存資源 * ：選擇初始 Aggregate 的設定：每個磁碟的磁碟類型和大小。
 +
@@ -153,7 +153,7 @@ NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修�
 磁碟大小適用於初始Aggregate中的所有磁碟、以及使用Simple Provisioning選項時、BlueXP所建立的任何其他Aggregate。您可以使用進階配置選項、建立使用不同磁碟大小的集合體。
 
 +
-如需選擇磁碟類型和大小的說明、請參閱 link:task-planning-your-config-gcp.html#size-your-system-in-gcp["在 Google Cloud 中調整系統規模"^]。
+有關選擇磁碟類型和大小的說明，請參閱link:task-planning-your-config-gcp.html#size-your-system-in-gcp["在 Google Cloud 中調整系統規模"^]。
 
 . * Flash Cache 、寫入速度與 WORM * ：
 +
@@ -168,7 +168,7 @@ link:concept-write-speed.html["深入瞭解寫入速度"]。
 
 +
 
-NOTE: 高寫入速度和高傳輸單位（ MTU ） 8 、 896 位元組可透過 * 高 * 寫入速度選項取得。此外、較高的MTU為8、896、需要選擇VPC-1、VPC-2和VPC-3來進行部署。如需VPC-1、VPC-2和VPC-3的詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1、VPC-2和VPC-3的規則"^]。
+NOTE: 高寫入速度和高傳輸單位（ MTU ） 8 、 896 位元組可透過 * 高 * 寫入速度選項取得。此外、較高的MTU為8、896、需要選擇VPC-1、VPC-2和VPC-3來進行部署。有關 VPC-1 、 VPC-2 和 VPC-3 的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1、VPC-2和VPC-3的規則"^]。
 
 .. 視需要啟動一次寫入、多次讀取（WORM）儲存設備。
 +
@@ -186,7 +186,7 @@ link:concept-worm.html["深入瞭解 WORM 儲存設備"^]。
 
 +
 ** BlueXP會在Cloud Volumes ONTAP 整個過程中設定服務帳戶。此服務帳戶提供資料分層至 Google Cloud Storage 儲存庫的權限。請務必將Connector服務帳戶新增為分層服務帳戶的使用者、否則您無法從BlueXP中選取該帳戶
-** 如需新增Google Cloud帳戶的說明、請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["設定及新增Google Cloud帳戶、以便使用9.6進行資料分層"^]。
+** 如需新增 Google Cloud 帳戶的說明、請 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["設定及新增Google Cloud帳戶、以便使用9.6進行資料分層"^]參閱。
 ** 您可以在建立或編輯磁碟區時、選擇特定的磁碟區分層原則。
 ** 如果停用資料分層、您可以在後續的Aggregate上啟用、但您需要關閉系統、並從Google Cloud主控台新增服務帳戶。
 +
@@ -255,9 +255,7 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 | DNS 網域 | 適用於整個儲存虛擬 Cloud Volumes ONTAP 機器（ SVM ）的 DNS 網域。在大多數情況下、網域與 AD 網域相同。 
 
 
-| NTP 伺服器 | 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱 https://docs.netapp.com/us-en/bluexp-automation/index.html["藍圖XP自動化文件"^] 以取得詳細資料。
-
-請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。 
+| NTP 伺服器 | 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。如需 https://docs.netapp.com/us-en/bluexp-automation/index.html["藍圖XP自動化文件"^]詳細資訊、請參閱。請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。 
 |===
 . * 使用率設定檔、磁碟類型及分層原則 * ：視需要選擇是否要啟用儲存效率功能、並變更磁碟區分層原則。
 +
@@ -282,7 +280,7 @@ BlueXP部署Cloud Volumes ONTAP 了這個功能完善的系統。您可以追蹤
 
 .完成後
 * 如果您已配置 CIFS 共用區、請授予使用者或群組檔案和資料夾的權限、並確認這些使用者可以存取共用區並建立檔案。
-* 如果您要將配額套用至磁碟區、請使用 System Manager 或 CLI 。
+* 如果您想要將配額套用至磁碟區、請使用 ONTAP 系統管理員或 ONTAP CLI 。
 +
 配額可讓您限制或追蹤使用者、群組或 qtree 所使用的磁碟空間和檔案數量。
 
@@ -317,7 +315,7 @@ BlueXP部署Cloud Volumes ONTAP 了這個功能完善的系統。您可以追蹤
 | 新增標籤 | 標籤是Google Cloud資源的中繼資料。BlueXP會將標籤新增Cloud Volumes ONTAP 至與系統相關的支援系統和Google Cloud資源。建立工作環境時、您最多可以從使用者介面新增四個標籤、然後在建立之後新增更多標籤。請注意、在建立工作環境時、 API 不會限制您使用四個標籤。如需標籤的相關資訊、請參閱 https://cloud.google.com/compute/docs/labeling-resources["Google Cloud 文件：標示資源"^]。 
 
 
-| 使用者名稱和密碼 | 這些是Cloud Volumes ONTAP 適用於整個叢集管理員帳戶的認證資料。您可以使用這些認證資料、 Cloud Volumes ONTAP 透過 System Manager 或其 CLI 連線至功能驗證。保留預設的_admin_使用者名稱、或將其變更為自訂使用者名稱。 
+| 使用者名稱和密碼 | 這些是Cloud Volumes ONTAP 適用於整個叢集管理員帳戶的認證資料。您可以使用這些認證、透過 ONTAP 系統管理員或 ONTAP CLI 連線至 Cloud Volumes ONTAP 。保留預設的_admin_使用者名稱、或將其變更為自訂使用者名稱。 
 
 
 | 編輯專案  a| 
@@ -385,7 +383,7 @@ link:reference-networking-gcp.html["深入瞭解網路需求"^]。
 . *授權*：視Cloud Volumes ONTAP 需要變更此版本、然後選取機器類型。
 +
 
-NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修補程式版本、則在建立工作環境時、BlueXP會將系統更新至該版本。例如、如果您選擇Cloud Volumes ONTAP 了「更新」功能、就會進行更新。更新不會從一個版本發生到另一個版本、例如從 9.6 到 9.7 。
+NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修補程式版本、則在建立工作環境時、BlueXP會將系統更新至該版本。例如、如果您選取 Cloud Volumes ONTAP 9.13.1 和 9.13.1 P4 、就會進行更新。更新不會從一個版本發生到另一個版本、例如從 9.13 到 9.14 。
 
 . * 基礎儲存資源 * ：選擇初始 Aggregate 的設定：每個磁碟的磁碟類型和大小。
 +
@@ -395,7 +393,7 @@ NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修�
 磁碟大小適用於初始Aggregate中的所有磁碟、以及使用Simple Provisioning選項時、BlueXP所建立的任何其他Aggregate。您可以使用進階配置選項、建立使用不同磁碟大小的集合體。
 
 +
-如需選擇磁碟類型和大小的說明、請參閱 link:task-planning-your-config-gcp.html#size-your-system-in-gcp["在 Google Cloud 中調整系統規模"^]。
+有關選擇磁碟類型和大小的說明，請參閱link:task-planning-your-config-gcp.html#size-your-system-in-gcp["在 Google Cloud 中調整系統規模"^]。
 
 . * Flash Cache 、寫入速度與 WORM * ：
 +
@@ -410,7 +408,7 @@ link:concept-write-speed.html["深入瞭解寫入速度"^]。
 
 +
 
-NOTE: 透過使用 n2-Standard-16 、 n2-Standard-32 、 n2-Standard-48 及 n2-Standard-64 執行個體類型的 * High * 寫入速度選項、可獲得高寫入速度及高傳輸單位（ MTU ） 8 、 896 位元組。此外、較高的MTU為8、896、需要選擇VPC-1、VPC-2和VPC-3來進行部署。高寫入速度和 8 、 896 的 MTU 與功能有關、無法在設定的執行個體中個別停用。如需VPC-1、VPC-2和VPC-3的詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1、VPC-2和VPC-3的規則"^]。
+NOTE: 透過使用 n2-Standard-16 、 n2-Standard-32 、 n2-Standard-48 及 n2-Standard-64 執行個體類型的 * High * 寫入速度選項、可獲得高寫入速度及高傳輸單位（ MTU ） 8 、 896 位元組。此外、較高的MTU為8、896、需要選擇VPC-1、VPC-2和VPC-3來進行部署。高寫入速度和 8 、 896 的 MTU 與功能有關、無法在設定的執行個體中個別停用。有關 VPC-1 、 VPC-2 和 VPC-3 的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1、VPC-2和VPC-3的規則"^]。
 
 .. 視需要啟動一次寫入、多次讀取（WORM）儲存設備。
 +
@@ -496,9 +494,7 @@ image:screenshot_cot_vol.gif["螢幕擷取畫面：顯示針對 Cloud Volumes ON
 | DNS 網域 | 適用於整個儲存虛擬 Cloud Volumes ONTAP 機器（ SVM ）的 DNS 網域。在大多數情況下、網域與 AD 網域相同。 
 
 
-| NTP 伺服器 | 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱 https://docs.netapp.com/us-en/bluexp-automation/index.html["藍圖XP自動化文件"^] 以取得詳細資料。
-
-請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。 
+| NTP 伺服器 | 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-automation/index.html["藍圖XP自動化文件"^] 。請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。 
 |===
 . * 使用率設定檔、磁碟類型及分層原則 * ：視需要選擇是否要啟用儲存效率功能、並變更磁碟區分層原則。
 +
@@ -523,7 +519,7 @@ BlueXP部署Cloud Volumes ONTAP 了這個功能完善的系統。您可以追蹤
 
 .完成後
 * 如果您已配置 CIFS 共用區、請授予使用者或群組檔案和資料夾的權限、並確認這些使用者可以存取共用區並建立檔案。
-* 如果您要將配額套用至磁碟區、請使用 System Manager 或 CLI 。
+* 如果您想要將配額套用至磁碟區、請使用 ONTAP 系統管理員或 ONTAP CLI 。
 +
 配額可讓您限制或追蹤使用者、群組或 qtree 所使用的磁碟空間和檔案數量。
 

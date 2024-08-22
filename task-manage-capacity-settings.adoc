@@ -42,7 +42,7 @@ Aggregate Capacity 臨界值 - 可用空間比率:: 此比率是容量管理決�
 可用空間比率的計算方式如下：
 （Aggregate capcap處理 能力- Aggregate上的總使用容量）/ Aggregate cap處理 能力
 
-請參閱 link:concept-storage-management.html#automatic-capacity-management["自動容量管理"] 若要立即瞭解、容量會自動在 Cloud Volumes ONTAP 中管理。
+請參閱link:concept-storage-management.html#automatic-capacity-management["自動容量管理"]「立即瞭解」、 Cloud Volumes ONTAP 會自動管理容量。
 
 --
 Aggregate Capacity 臨界值 - 資料分層的可用空間比率:: 定義將資料分層至容量層（物件儲存）時、效能層（磁碟）需要多少可用空間。

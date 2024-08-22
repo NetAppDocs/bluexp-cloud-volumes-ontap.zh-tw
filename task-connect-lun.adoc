@@ -19,7 +19,7 @@ summary: 建立iSCSI磁碟區時、BlueXP會自動為您建立LUN。我們只要
 請注意下列事項：
 
 * BlueXP的自動容量管理不適用於LUN。當BlueXP建立LUN時、會停用自動擴充功能。
-* 您可以從 System Manager 或 CLI 建立其他 LUN 。
+* 您可以從 ONTAP 系統管理員或 ONTAP CLI 建立其他 LUN 。
 
 
 .步驟

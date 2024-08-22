@@ -71,7 +71,7 @@ GCP 磁碟類型:: 當您建立 Cloud Volumes ONTAP 用於資料的 Volume 時�
 * _分區平衡的持續磁碟_：這些SSD可提供較低的每GB IOPS、以平衡效能與成本。
 * _Zonal Standard持續式磁碟_：標準持續式磁碟經濟實惠、可處理連續讀寫作業。
 +
-如需詳細資料、請參閱 https://cloud.google.com/compute/docs/disks/#pdspecs["Google Cloud 文件：分區持續磁碟（標準和 SSD ）"^]。
+如需更多詳細資料 https://cloud.google.com/compute/docs/disks/#pdspecs["Google Cloud 文件：分區持續磁碟（標準和 SSD ）"^]、請參閱。
 
 
 

@@ -30,12 +30,12 @@ BlueXP提供多種建立新磁碟區的方法：
 關於Volume資源配置的幾點注意事項：
 
 * 建立iSCSI磁碟區時、BlueXP會自動為您建立LUN。我們只要在每個磁碟區建立一個 LUN 、就能輕鬆完成工作、因此不需要管理。建立磁碟區之後、 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-connect-lun.html["使用 IQN 從主機連線至 LUN"^]。
-* 您可以從 System Manager 或 CLI 建立其他 LUN 。
+* 您可以從 ONTAP 系統管理員或 ONTAP CLI 建立其他 LUN 。
 
 
 ifdef::aws[]
 
-* 如果您想在 AWS 中使用 CIFS 、則必須設定 DNS 和 Active Directory 。如需詳細資訊、請參閱 link:reference-networking-aws.html["AWS 的 Cloud Volumes ONTAP 網路需求"]。
+* 如果您想在 AWS 中使用 CIFS 、則必須設定 DNS 和 Active Directory 。如需詳細資訊、請 link:reference-networking-aws.html["AWS 的 Cloud Volumes ONTAP 網路需求"]參閱。
 * 如果Cloud Volumes ONTAP 您的支援Amazon EBS彈性Volume功能的組態、您可能會想要 link:concept-aws-elastic-volumes.html["深入瞭解建立Volume時會發生什麼事"]。
 
 
@@ -154,7 +154,7 @@ ifdef::gcp[]
 endif::gcp[]
 
 DNS 網域:: 適用於整個儲存虛擬 Cloud Volumes ONTAP 機器（ SVM ）的 DNS 網域。在大多數情況下、網域與 AD 網域相同。
-NTP 伺服器:: 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。請參閱 https://docs.netapp.com/us-en/bluexp-automation/index.html["藍圖XP自動化文件"^] 以取得詳細資料。
+NTP 伺服器:: 選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。如需相關資訊 https://docs.netapp.com/us-en/bluexp-automation/index.html["藍圖XP自動化文件"^]、請參閱。
 +
 --
 請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。
@@ -251,4 +251,4 @@ endif::aws[]
 
 如果您已配置 CIFS 共用區、請授予使用者或群組檔案和資料夾的權限、並確認這些使用者可以存取共用區並建立檔案。
 
-如果要將配額套用至磁碟區、則必須使用 System Manager 或 CLI 。配額可讓您限制或追蹤使用者、群組或 qtree 所使用的磁碟空間和檔案數量。
+如果您要將配額套用至磁碟區、則必須使用 ONTAP 系統管理員或 ONTAP CLI 。配額可讓您限制或追蹤使用者、群組或 qtree 所使用的磁碟空間和檔案數量。

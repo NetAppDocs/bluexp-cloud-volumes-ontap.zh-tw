@@ -31,14 +31,14 @@ http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D
 
 +
 
-TIP: BlueXP會主動啟動接管並等待回饋、一次只能正常變更一個節點。NetApp 的 QA 團隊在這段過程中測試了寫入和讀取檔案的能力、並未發現客戶端有任何問題。隨著連線變更、我們確實看到 I/O 層級的重試次數、但應用程式層卻取代了 NFS/CIFS 連線的這些短「重新連線」。
+TIP: BlueXP  一次變更一個節點、方法是啟動接管並等待回饋。NetApp 的品質保證團隊在此程序中測試了寫入和讀取檔案、但在用戶端方面沒有發現任何問題。當連線變更時、在 I/O 層級上會觀察到一些重試、但應用程式層會取代 NFS/CIFS 連線的重新配線。
 
 
 
 .參考資料
-如需 AWS 中支援的執行個體類型清單、請參閱 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html#supported-ec2-compute["支援的 EC2 執行個體"^]。
+如需 AWS 中支援的執行個體類型清單、請link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html#supported-ec2-compute["支援的 EC2 執行個體"^]參閱。
 
-如果您無法從 C4 、 M4 或 R4 執行個體變更執行個體類型、請參閱知識庫文章 link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Converting_an_AWS_Xen_CVO_instance_to_Nitro_(KVM)["將 AWS Xen CVO 執行個體轉換為 Nitro （ KVM ）"^]。
+如果無法將執行個體類型從 C4 、 M4 或 R4 執行個體變更、請參閱知識庫文章link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Converting_an_AWS_Xen_CVO_instance_to_Nitro_(KVM)["將 AWS Xen CVO 執行個體轉換為 Nitro （ KVM ）"^]。
 
 .步驟
 . 在 Canvas 頁面上、選取工作環境。

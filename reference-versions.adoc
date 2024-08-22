@@ -16,7 +16,7 @@ summary: 在ONTAP 您建立全新Cloud Volumes ONTAP 的支援環境時、BlueXP
 [role="lead"]
 在ONTAP 您建立全新Cloud Volumes ONTAP 的支援環境時、BlueXP可讓您從多個不同的支援版本中進行選擇。
 
-此處列出的 Cloud Volumes ONTAP 版本以外的版本不適用於新部署。如需有關升級的資訊、請參閱 link:task-updating-ontap-cloud.html#supported-upgrade-paths["支援的升級途徑"]。
+此處列出的 Cloud Volumes ONTAP 版本以外的版本不適用於新部署。如需升級的相關資訊、請link:task-updating-ontap-cloud.html#supported-upgrade-paths["支援的升級途徑"]參閱。
 
 ifdef::aws[]
 

@@ -14,7 +14,7 @@ summary: 您可以將熱資料的 SSD 或 HDD 效能層與非作用中資料的�
 
 
 [role="lead"]
-您可以將熱資料的 SSD 或 HDD 效能層與非作用中資料的物件儲存容量層合併、藉此降低 Cloud Volumes ONTAP VMware 的儲存成本。資料分層是 FabricPool 以不同步技術為後盾。如需詳細概述、請參閱 link:concept-data-tiering.html["資料分層總覽"]。
+您可以將熱資料的 SSD 或 HDD 效能層與非作用中資料的物件儲存容量層合併、藉此降低 Cloud Volumes ONTAP VMware 的儲存成本。資料分層是 FabricPool 以不同步技術為後盾。有關高級概述，請參閱link:concept-data-tiering.html["資料分層總覽"]。
 
 若要設定資料分層、您需要執行下列動作：
 
@@ -141,7 +141,7 @@ ifdef::aws[]
 
 === 將冷資料分層至 AWS S3 的需求
 
-確保 Cloud Volumes ONTAP 與 S3 建立連線。提供此連線的最佳方法是建立 VPC 端點至 S3 服務。如需相關指示、請參閱 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS 文件：建立閘道端點"^]。
+確保 Cloud Volumes ONTAP 與 S3 建立連線。提供此連線的最佳方法是建立 VPC 端點至 S3 服務。有關說明，請參閱 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS 文件：建立閘道端點"^]。
 
 當您建立 VPC 端點時、請務必選取與 Cloud Volumes ONTAP 該實例相對應的區域、 VPC 和路由表。您也必須修改安全性群組、以新增允許流量到 S3 端點的傳出 HTTPS 規則。否則 Cloud Volumes ONTAP 、無法連線至 S3 服務。
 
@@ -195,7 +195,7 @@ endif::gcp[]
 
 === 在實作需求之後啟用資料分層
 
-只要沒有連線或權限問題、在建立系統時、BlueXP就會建立Cold資料的物件存放區。如果您在建立系統之後才實作上述需求、則需要透過建立物件存放區的 API 或系統管理員手動啟用分層功能。
+只要沒有連線或權限問題、在建立系統時、BlueXP就會建立Cold資料的物件存放區。如果您在建立系統之後才實作上述需求、則必須透過建立物件存放區的 API 或 ONTAP 系統管理員手動啟用分層功能。
 
 
 NOTE: 未來的 Cloud Volumes ONTAP 版本將提供透過 BlueXP 使用者介面進行分層的功能。
@@ -212,7 +212,7 @@ NOTE: 未來的 Cloud Volumes ONTAP 版本將提供透過 BlueXP 使用者介面
 
 * * 現有磁碟區 *
 +
-如果您想要在現有磁碟區上啟用資料分層、則必須確保已在基礎 Aggregate 上啟用資料分層。如果在現有的 Aggregate 上未啟用資料分層、則需要使用 System Manager 將現有的 Aggregate 附加至物件存放區。
+如果您想要在現有磁碟區上啟用資料分層、則必須確保已在基礎 Aggregate 上啟用資料分層。如果現有的 Aggregate 上未啟用資料分層功能、則您需要使用 ONTAP 系統管理員將現有的 Aggregate 附加至物件存放區。
 
 
 
@@ -226,7 +226,7 @@ image:screenshot_aggregate_tiering_enabled.png["快照顯示有關BlueXP中包�
 
 
 .在集合體上啟用分層的步驟
-. 在 System Manager 中、按一下 * Storage > Tiers* 。
+. 在 ONTAP 系統管理員中、按一下 * 儲存 > Tiers* 。
 . 按一下 Aggregate 的動作功能表、然後選取 * 附加 Cloud Tiers* 。
 . 選取要附加的雲端層、然後按一下「 * 儲存 * 」。
 
@@ -255,7 +255,7 @@ image:screenshot_aggregate_tiering_enabled.png["快照顯示有關BlueXP中包�
 |===
 . 選取分層原則。
 +
-如需這些原則的說明、請參閱 link:concept-data-tiering.html["資料分層總覽"]。
+有關這些策略的說明，請參閱link:concept-data-tiering.html["資料分層總覽"]。
 
 +
 * 範例 *
@@ -297,7 +297,7 @@ image:screenshot_replication_tiering.gif["快照顯示複寫磁碟區時的 S3 �
 
 階層式資料的儲存類別是全系統的、並非每個 Volume 都有。
 
-如需支援的儲存類別資訊、請參閱 link:concept-data-tiering.html["資料分層總覽"]。
+有關支持的存儲類的信息，請參閱link:concept-data-tiering.html["資料分層總覽"]。
 
 .步驟
 . 在工作環境中、按一下功能表圖示、然後按一下「 * 儲存類別 * 」或「 * Blob 儲存分層 * 」。
@@ -330,7 +330,7 @@ image:screenshot_settings_icon.png["顯示BlueXP主控台右上角「設定」�
 
 == 變更自動分層原則的冷卻週期
 
-如果Cloud Volumes ONTAP 您使用_auto_分層原則在某個SURFVolume上啟用資料分層、您可以根據業務需求調整預設的冷卻時間。此動作僅支援使用 API 和 CLI 。
+如果Cloud Volumes ONTAP 您使用_auto_分層原則在某個SURFVolume上啟用資料分層、您可以根據業務需求調整預設的冷卻時間。此動作僅支援使用 ONTAP CLI 和 API 。
 
 冷卻期間是指磁碟區中的使用者資料在被視為「冷」並移至物件儲存設備之前、必須保持非作用中狀態的天數。
 

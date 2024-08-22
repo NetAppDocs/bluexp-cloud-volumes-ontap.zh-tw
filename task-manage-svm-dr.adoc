@@ -14,11 +14,11 @@ summary: BlueXP不提供任何儲存VM災難恢復的設定或協調支援。您
 
 
 [role="lead"]
-BlueXP 不提供任何儲存 VM （ SVM ）災難恢復的設定或協調支援。您必須使用 System Manager 或 CLI 。
+BlueXP 不提供任何儲存 VM （ SVM ）災難恢復的設定或協調支援。您必須使用 ONTAP 系統管理員或 ONTAP CLI 。
 
 如果在兩個 Cloud Volumes ONTAP 系統之間設定 SnapMirror SVM 複寫、複寫必須介於兩個 HA 配對系統或兩個單一節點系統之間。您無法在 HA 配對和單一節點系統之間設定 SnapMirror SVM 複寫。
 
-如需 CLI 指示、請參閱下列文件。
+如需 ONTAP CLI 的說明、請參閱下列文件。
 
 * https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["SVM 災難恢復準備快速指南"^]
 * https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["SVM Disaster Recovery Express 指南"^]

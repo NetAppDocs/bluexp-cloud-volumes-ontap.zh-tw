@@ -14,7 +14,7 @@ summary: 利用 Google 的金鑰管理服務來提供第三方金鑰管理服務
 [role="lead"]
 您可以使用 link:https://cloud.google.com/kms/docs["Google Cloud Platform的金鑰管理服務（雲端KMS）"^] 在ONTAP Google Cloud Platform部署的應用程式中保護您的不加密金鑰。
 
-雲端KMS的金鑰管理可透過CLI或ONTAP REST API啟用。
+您可以使用 ONTAP CLI 或 ONTAP REST API 來啟用雲端 KMS 的金鑰管理。
 
 使用 Cloud KMS 時、請注意、根據預設、會使用 Data SVM 的 LIF 與雲端金鑰管理端點通訊。節點管理網路用於與雲端供應商的驗證服務（oauth2.googleapis.com）進行通訊。如果叢集網路設定不正確、叢集將無法正確使用金鑰管理服務。
 

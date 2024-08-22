@@ -145,7 +145,7 @@ endif::gcp[]
 * 包括使用 BlueXP 備份與還原的不限數量的 Volume 備份、但僅適用於使用專業版套件的 Cloud Volumes ONTAP 系統。
 +
 
-NOTE: BlueXP 備份與還原需要 PAYGO 訂閱、但使用此服務不會產生任何費用。如需設定 BlueXP 備份與還原授權的詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-licensing-cloud-backup.html["設定 BlueXP 備份與還原的授權"^]。
+NOTE: BlueXP 備份與還原需要 PAYGO 訂閱、但使用此服務不會產生任何費用。如需設定 BlueXP  備份與還原授權的詳細資訊，請 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-licensing-cloud-backup.html["設定 BlueXP 備份與還原的授權"^]參閱。
 
 * 以額外成本附加任何NetApp的雲端資料服務
 

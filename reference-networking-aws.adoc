@@ -50,7 +50,7 @@ AWS 必須符合下列要求。
 
 HA 中介執行個體必須具有 AWS EC2 服務的傳出連線、才能協助進行儲存容錯移轉。若要提供連線、您可以新增公用 IP 位址、指定 Proxy 伺服器或使用手動選項。
 
-手動選項可以是從目標子網路到 AWS EC2 服務的 NAT 閘道或介面 VPC 端點。如需 VPC 端點的詳細資訊、請參閱 http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-interface.html["AWS 文件：介面 VPC 端點（ AWS Private Link ）"^]。
+手動選項可以是從目標子網路到 AWS EC2 服務的 NAT 閘道或介面 VPC 端點。如需 VPC 端點的詳細資訊、請 http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-interface.html["AWS 文件：介面 VPC 端點（ AWS Private Link ）"^]參閱。
 
 
 
@@ -182,7 +182,7 @@ TIP: 正在尋找Connector的相關資訊？ https://docs.netapp.com/us-en/bluex
 
 === 資料分層連線
 
-如果您想要將 EBS 當作效能層、將 AWS S3 當作容量層、您必須確保 Cloud Volumes ONTAP 將該連接到 S3 。提供此連線的最佳方法是建立 VPC 端點至 S3 服務。如需相關指示、請參閱 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS 文件：建立閘道端點"^]。
+如果您想要將 EBS 當作效能層、將 AWS S3 當作容量層、您必須確保 Cloud Volumes ONTAP 將該連接到 S3 。提供此連線的最佳方法是建立 VPC 端點至 S3 服務。有關說明，請參閱 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS 文件：建立閘道端點"^]。
 
 當您建立 VPC 端點時、請務必選取與 Cloud Volumes ONTAP 該實例相對應的區域、 VPC 和路由表。您也必須修改安全性群組、以新增允許流量到 S3 端點的傳出 HTTPS 規則。否則 Cloud Volumes ONTAP 、無法連線至 S3 服務。
 
@@ -192,7 +192,7 @@ TIP: 正在尋找Connector的相關資訊？ https://docs.netapp.com/us-en/bluex
 
 === 連線ONTAP 至功能鏈接
 
-若要在Cloud Volumes ONTAP AWS系統和ONTAP 其他網路中的更新系統之間複寫資料、您必須在AWS VPC和其他網路（例如您的公司網路）之間建立VPN連線。如需相關指示、請參閱 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/SetUpVPNConnections.html["AWS 文件：設定 AWS VPN 連線"^]。
+若要在Cloud Volumes ONTAP AWS系統和ONTAP 其他網路中的更新系統之間複寫資料、您必須在AWS VPC和其他網路（例如您的公司網路）之間建立VPN連線。有關說明，請參閱 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/SetUpVPNConnections.html["AWS 文件：設定 AWS VPN 連線"^]。
 
 
 
@@ -202,7 +202,7 @@ TIP: 正在尋找Connector的相關資訊？ https://docs.netapp.com/us-en/bluex
 
 DNS 伺服器必須為 Active Directory 環境提供名稱解析服務。您可以將 DHCP 選項集設定為使用預設 EC2 DNS 伺服器、此伺服器不得是 Active Directory 環境所使用的 DNS 伺服器。
 
-如需相關指示、請參閱 https://aws-quickstart.github.io/quickstart-microsoft-activedirectory/["AWS 文件： AWS Cloud 上的 Active Directory 網域服務：快速入門參考部署"^]。
+有關說明，請參閱 https://aws-quickstart.github.io/quickstart-microsoft-activedirectory/["AWS 文件： AWS Cloud 上的 Active Directory 網域服務：快速入門參考部署"^]。
 
 
 
@@ -218,7 +218,7 @@ link:task-deploy-aws-shared-vpc.html["瞭解如何在共用子網路中部署HA�
 
 其他 AWS 網路需求適用於 Cloud Volumes ONTAP 使用多個可用區域（ AZs ）的 SestHA 組態。在啟動HA配對之前、您應該先檢閱這些需求、因為在建立工作環境時、您必須在BlueXP中輸入網路詳細資料。
 
-若要瞭解 HA 配對的運作方式、請參閱 link:concept-ha.html["高可用度配對"]。
+若要瞭解 HA 配對的運作方式、請link:concept-ha.html["高可用度配對"]參閱。
 
 可用度區域:: 此 HA 部署模式使用多個 AZs 來確保資料的高可用度。您應該使用專屬的 AZ 來處理每 Cloud Volumes ONTAP 個實例、並使用中介執行個體、以提供 HA 配對之間的通訊通道。
 
@@ -254,7 +254,7 @@ NOTE: BlueXP會自動建立靜態IP位址、以供iSCSI存取及從VPC外部用�
 
 例如、您可能有兩個子網路與不同的路由表相關聯。如果您選取路由表 A 而非路由表 B 、則與路由表 A 相關聯的子網路中的用戶端可以存取 HA 配對、但與路由表 B 相關的子網路中的用戶端則無法存取。
 
-如需路由表的詳細資訊、請參閱 http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html["AWS 文件：路由表"^]。
+有關路由表的詳細信息，請參閱 http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html["AWS 文件：路由表"^]。
 
 --
 連線至 NetApp 管理工具:: 若要將 NetApp 管理工具搭配多個 AZs 中的 HA 組態使用、您有兩種連線選項：

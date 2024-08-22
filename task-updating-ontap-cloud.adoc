@@ -26,7 +26,7 @@ summary: 從Cloud Volumes ONTAP BlueXP升級以取得最新的新功能與增強
 
 === 僅從BlueXP升級
 
-必須從BlueXP完成升級。Cloud Volumes ONTAP您不應 Cloud Volumes ONTAP 使用 System Manager 或 CLI 來升級功能。這樣做可能會影響系統穩定性。
+必須從BlueXP完成升級。Cloud Volumes ONTAP您不應使用 ONTAP 系統管理員或 ONTAP CLI 來升級 Cloud Volumes ONTAP 。這樣做可能會影響系統穩定性。
 
 
 
@@ -241,7 +241,7 @@ http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D
 NOTE: 雖然 BlueXP 備份與還原使用 SnapMirror 實作來建立備份檔案（稱為 SnapMirror Cloud ）、但系統升級時不需要暫停備份。
 
 .關於這項工作
-這些步驟說明如何使用系統管理程式來執行 9.3 版及更新版本。
+這些步驟說明如何使用適用於 9.3 版及更新版本的 ONTAP 系統管理員。
 
 .步驟
 . 從目的地系統登入System Manager。
@@ -263,7 +263,7 @@ NOTE: 您要從哪個電腦存取BlueXP、必須有連到Cloud Volumes ONTAP 該
 更新軟體之前、必須先在線上安裝適用於 Cloud Volumes ONTAP 此功能的 Aggregate 。在大多數的組態中、 Aggregate 都應該處於線上狀態、但如果沒有、則應該將其上線。
 
 .關於這項工作
-這些步驟說明如何使用系統管理程式來執行 9.3 版及更新版本。
+這些步驟說明如何使用適用於 9.3 版及更新版本的 ONTAP 系統管理員。
 
 .步驟
 . 在工作環境中、按一下 * Aggregate * 標籤。
@@ -291,9 +291,9 @@ image:screenshots_aggregate_details_state.png["螢幕擷取畫面：當您檢視
 
 == 升級Cloud Volumes ONTAP
 
-當有新版本可供升級時、BlueXP會通知您。您可以從此通知開始升級程序。如需詳細資訊、請參閱 <<從BlueXP通知升級>>。
+當有新版本可供升級時、BlueXP會通知您。您可以從此通知開始升級程序。如需更多資訊、請參閱 <<從BlueXP通知升級>>。
 
-使用外部URL上的映像執行軟體升級的另一種方法。如果BlueXP無法存取S3儲存區來升級軟體、或是您已獲得修補程式、此選項很有幫助。如需詳細資訊、請參閱 <<從URL提供的映像升級>>。
+使用外部URL上的映像執行軟體升級的另一種方法。如果BlueXP無法存取S3儲存區來升級軟體、或是您已獲得修補程式、此選項很有幫助。如需更多資訊、請參閱 <<從URL提供的映像升級>>。
 
 
 

@@ -183,7 +183,7 @@ TIP: 正在尋找Connector的相關資訊？ https://docs.netapp.com/us-en/bluex
 | 1000 inbound SSH | 22 TCP | 任意 | SSH 存取叢集管理 LIF 的 IP 位址或節點管理 LIF 
 
 
-| 1001 inbound http | 80 TCP | 任意 | 使用叢集管理 LIF 的 IP 位址、以 HTTP 存取 System Manager Web 主控台 
+| 1001 inbound http | 80 TCP | 任意 | 使用叢集管理 LIF 的 IP 位址、透過 HTTP 存取 ONTAP 系統管理員網頁主控台 
 
 
 | 1002inbound （入站） _111_TCP | 111 TCP | 任意 | 遠端程序需要 NFS 
@@ -201,7 +201,7 @@ TIP: 正在尋找Connector的相關資訊？ https://docs.netapp.com/us-en/bluex
 | 1006 inbound （傳入） _161-162 _udp | 161-162 udp | 任意 | 簡單的網路管理傳輸協定 
 
 
-| 1007 inbound _443 | 443 TCP | 任意 | 使用叢集管理LIF的IP位址、連線到Connector和HTTPS、存取System Manager Web主控台 
+| 1007 inbound _443 | 443 TCP | 任意 | 使用叢集管理 LIF 的 IP 位址、與連接器和 HTTPS 連線、存取 ONTAP 系統管理員網頁主控台 
 
 
 | 1008 inbound _445 | 445 TCP | 任意 | Microsoft SMB/CIFS over TCP 搭配 NetBios 架構 
@@ -269,7 +269,7 @@ NOTE: HA 系統的傳入規則少於單一節點系統、因為傳入資料流�
 | 優先順序和名稱 | 連接埠與傳輸協定 | 來源與目的地 | 說明 
 
 
-| 100 inbound （傳入） _443 | 443 任何傳輸協定 | 任意 | 使用叢集管理LIF的IP位址、連線到Connector和HTTPS、存取System Manager Web主控台 
+| 100 inbound （傳入） _443 | 443 任何傳輸協定 | 任意 | 使用叢集管理 LIF 的 IP 位址、與連接器和 HTTPS 連線、存取 ONTAP 系統管理員網頁主控台 
 
 
 | 101 inbound （傳入） _111_TCP | 111 任何傳輸協定 | 任意 | 遠端程序需要 NFS 

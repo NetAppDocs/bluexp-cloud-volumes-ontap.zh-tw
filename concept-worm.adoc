@@ -58,8 +58,8 @@ https://cloud.netapp.com/pricing["瞭解WORM儲存設備的定價"^]
 
 當您建立Cloud Volumes ONTAP 全新的支援環境時、系統會提示您啟用或停用WORM儲存設備：
 
-* 如果您在建立工作環境時啟用WORM儲存、則您從BlueXP建立的每個Volume都會啟用WORM。但您可以使用System Manager或CLI來建立已停用WORM的磁碟區。
-* 如果您在建立工作環境時停用WORM儲存設備、則從BlueXP、System Manager或CLI建立的每個Volume都會停用WORM。如果您想要在Cloud Volumes ONTAP 建立期間未啟用的支援環境中啟用WORM、您必須建立支援票證、並提供NetApp支援以取得協助。
+* 如果您在建立工作環境時啟用WORM儲存、則您從BlueXP建立的每個Volume都會啟用WORM。但是您可以使用 ONTAP 系統管理員或 ONTAP CLI 來建立已停用 WORM 的磁碟區。
+* 如果您在建立工作環境時停用 WORM 儲存、則從 BlueXP  、 ONTAP 系統管理員或 ONTAP CLI 建立的每個磁碟區都會停用 WORM 。如果您想要在Cloud Volumes ONTAP 建立期間未啟用的支援環境中啟用WORM、您必須建立支援票證、並提供NetApp支援以取得協助。
 
 
 無論選擇哪一項、您都應該這樣做 <<充電,瞭解充電的運作方式>>。

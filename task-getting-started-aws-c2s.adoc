@@ -628,7 +628,7 @@ CAUTION: 在精靈中進行選擇時、請勿在 * 服務 * 下選取 * 資料�
 .在多個可用性區域中部署 Cloud Volumes ONTAP HA 的注意事項
 當您完成 HA 配對精靈時、請注意下列事項。
 
-* 當您在多個可用性區域（ AZs ）中部署 Cloud Volumes ONTAP HA 時、應該設定傳輸閘道。請參閱 link:task-setting-up-transit-gateway.html["設定 AWS 傳輸閘道"]。
+* 當您在多個可用性區域（ AZs ）中部署 Cloud Volumes ONTAP HA 時、應該設定傳輸閘道。有關說明，請參閱link:task-setting-up-transit-gateway.html["設定 AWS 傳輸閘道"]。
 * 部署組態如下、因為在發佈時、 AWS Top Secret Cloud 只有兩個 AZs 可用：
 +
 ** 節點1：可用度區域A

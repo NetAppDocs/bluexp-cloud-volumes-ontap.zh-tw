@@ -19,7 +19,7 @@ summary: 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可�
 若要建立額外的資料服務儲存VM、您必須在Azure中配置IP位址、然後執行ONTAP 支援功能指令、以建立儲存VM和資料LIF。
 
 
-NOTE: 若要執行其他 NIC 相關工作、您可以在 Azure 中指派具有適當權限的網路參與者角色或自訂角色。如需這些 NIC 相關權限的詳細資訊、請參閱 https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface?tabs=azure-portal#permissions["Microsoft Azure 文件"^]。
+NOTE: 若要執行其他 NIC 相關工作、您可以在 Azure 中指派具有適當權限的網路參與者角色或自訂角色。有關這些 NIC 相關權限的詳細信息，請參閱 https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface?tabs=azure-portal#permissions["Microsoft Azure 文件"^]。
 
 
 
@@ -198,7 +198,7 @@ DNS和SMB通訊需要iSCSI LIF。iSCSI LIF用於此用途、因為它不會在�
 . 僅為資料和SVM LIF建立所需的前端IP組態數目：
 +
 
-NOTE: 前端IP只能在每個對應SVM的NIC 0下建立。如需如何將IP位址新增至SVM NIC 0的詳細資訊、請參閱「步驟7 [hyperlink]」
+NOTE: 前端IP只能在每個對應SVM的NIC 0下建立。如需如何將 IP 位址新增至 SVM NIC0 的詳細資訊、請參閱「步驟 7 [ 超連結 ] 」
 
 +
 .. 在*設定*下、按一下*前端IP組態*。

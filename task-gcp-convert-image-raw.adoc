@@ -146,4 +146,4 @@ total 1565036
 $ tar -xf CVO_GCP_Signed_Digest.tar.gz
 ----
 
-NOTE: 請參閱 https://cloud.google.com/compute/docs/images/export-image#console["匯出影像的Google Cloud文件"^] 如需如何透過Google Cloud匯出影像的詳細資訊、
+NOTE: 如需如何透過 Google Cloud 匯出影像的詳細資訊、請 https://cloud.google.com/compute/docs/images/export-image#console["匯出影像的Google Cloud文件"^]參閱。

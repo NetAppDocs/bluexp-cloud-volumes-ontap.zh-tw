@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-ha-azure.html 
-keywords: high availability, HA, concepts, understanding, overview, takeover, giveback, rpo, rto, nondisruptive, ha pairs, node, nodes, recovery point objective, recovery time objective, nas, nfs, cifs, iscsi, mpio, alua, failover, failure, azure, shared storage, active, passive, load balancer, availability set, storage accounts, page blobs 
+keywords: high availability, HA, concepts, understanding, overview, takeover, giveback, rpo, rto, nondisruptive, ha pairs, node, nodes, recovery point objective, recovery time objective, nas, nfs, cifs, iscsi, mpio, alua, failover, failure, azure, shared storage, active, passive, load balancer, storage accounts, page blobs 
 summary: 在雲端環境發生故障時、提供企業級的可靠性和持續運作。 Cloud Volumes ONTAP在 Azure 中、儲存設備會在兩個節點之間共享。 
 ---
 = Azure 中的高可用度配對
@@ -26,12 +26,12 @@ summary: 在雲端環境發生故障時、提供企業級的可靠性和持續�
 
 Azure中的一套「功能」頁面Blob組態包括下列元件Cloud Volumes ONTAP ：
 
-image:diagram_ha_azure.png["概念性映像顯示負載平衡器、可管理來自BlueXP和用戶端的傳入流量、Cloud Volumes ONTAP 可用度集內的兩個支援節點、開機資料的SSD磁碟、以及客戶資料的Page Blobs。"]
+image:diagram_ha_azure.png["這是一個概念性影像、顯示負載平衡器來管理來自 BlueXP  和用戶端的傳入流量、 VMSS Flex 中的兩個 Cloud Volumes ONTAP 節點、用於開機資料的 SSD 磁碟、以及用於客戶資料的頁面 Blobs 。"]
 
 請注意以下關於BlueXP部署給您的Azure元件：
 
 Azure 標準負載平衡器:: 負載平衡器負責管理 Cloud Volumes ONTAP 傳入流量至 the ireHA 配對。
-可用度設定:: Azure可用度集是Cloud Volumes ONTAP 一個由各個節點組成的邏輯群組。可用度集可確保節點處於不同的故障狀態、並更新網域以提供備援和可用度。 https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["如需可用度集的詳細資訊、請參閱Azure文件"^]。
+單一可用區域中的 VM:: 從 Cloud Volumes ONTAP 9.15.1 開始、您可以在單一可用性區域（ AZ ）中建立及管理異質虛擬機器（ VM ）。您可以在同一個 AZ 的個別故障網域中部署高可用度（ HA ）節點、以確保最佳可用度。若要深入瞭解啟用此功能的彈性協調模式、請參閱 https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Microsoft Azure 文件：虛擬機器擴充集"^]。
 磁碟:: 客戶資料位於 Premium Storage 頁面上。每個節點均可存取其他節點的儲存設備。也需要額外的儲存空間 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["開機、 root 和核心資料"^]。
 儲存帳戶::
 +
@@ -39,7 +39,7 @@ Azure 標準負載平衡器:: 負載平衡器負責管理 Cloud Volumes ONTAP �
 * 託管磁碟需要一個儲存帳戶。
 * 由於達到每個儲存帳戶的磁碟容量限制、因此 Premium Storage 頁面區塊需要一個或多個儲存帳戶。
 +
-https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-targets["Azure 文件： Azure 儲存設備擴充性與儲存帳戶效能目標"^]。
+https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-targets["Microsoft Azure 文件：適用於儲存帳戶的 Azure 儲存設備擴充性與效能目標"^]。
 
 * 資料分層至 Azure Blob 儲存設備需要一個儲存帳戶。
 * 從NetApp 9.7開始Cloud Volumes ONTAP 、BlueXP為HA配對建立的儲存帳戶是通用的v2儲存帳戶。
@@ -55,13 +55,13 @@ https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-target
 
 在共享託管磁碟上執行的一個僅有一個可用度區域組態包含下列元件Cloud Volumes ONTAP ：
 
-image:diagram_ha_azure_saz_lrs.png["概念性映像顯示負載平衡器、可管理來自BlueXP和用戶端的傳入流量、Cloud Volumes ONTAP 可用度集內的兩個支援節點、開機資料的SSD磁碟、以及客戶資料的LRS託管磁碟。"]
+image:diagram_ha_azure_saz_lrs.png["這是一個概念性影像、顯示負載平衡器來管理來自 BlueXP  和用戶端的傳入流量、 VMSS Flex 中的兩個 Cloud Volumes ONTAP 節點、用於開機資料的 SSD 磁碟、以及用於客戶資料的 LRS 託管磁碟。"]
 
 請注意以下關於BlueXP部署給您的Azure元件：
 
 Azure 標準負載平衡器:: 負載平衡器負責管理 Cloud Volumes ONTAP 傳入流量至 the ireHA 配對。
-可用度設定:: Azure可用度集是Cloud Volumes ONTAP 一個由各個節點組成的邏輯群組。可用度集可確保節點處於不同的故障狀態、並更新網域以提供備援和可用度。 https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["如需可用度集的詳細資訊、請參閱Azure文件"^]。
-磁碟:: 客戶資料位於本機備援儲存設備（LRS）託管磁碟上。每個節點均可存取其他節點的儲存設備。也需要額外的儲存空間 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["開機、root、合作夥伴root、核心和NVRAM資料"^]。
+單一可用區域中的 VM:: 從 Cloud Volumes ONTAP 9.15.1 開始、您可以在單一可用性區域（ AZ ）中建立及管理異質虛擬機器（ VM ）。您可以在同一個 AZ 的個別故障網域中部署高可用度（ HA ）節點、以確保最佳可用度。若要深入瞭解啟用此功能的彈性協調模式、請參閱 https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Microsoft Azure 文件：虛擬機器擴充集"^]。
+磁碟:: 客戶資料位於本機備援儲存設備（ LRS ）託管磁碟上。每個節點均可存取其他節點的儲存設備。也需要額外的儲存link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["開機、root、合作夥伴root、核心和NVRAM資料"^]空間。
 儲存帳戶:: 儲存帳戶用於託管式磁碟型部署、以處理診斷記錄並分層處理至blob儲存設備。
 
 
@@ -76,7 +76,7 @@ image:diagram_ha_azure_maz.png["概念性映像顯示負載平衡器、可管理
 請注意以下關於BlueXP部署給您的Azure元件：
 
 Azure 標準負載平衡器:: 負載平衡器負責管理 Cloud Volumes ONTAP 傳入流量至 the ireHA 配對。
-可用度區域:: 將兩Cloud Volumes ONTAP 個靜態節點部署至不同的可用度區域。可用度區域可確保節點位於不同的故障網域中。 https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks["如需Azure區域備援儲存設備的詳細資訊、請參閱Azure文件"^]。
+可用度區域:: HA 多重可用性區域組態採用部署模式、將兩個 Cloud Volumes ONTAP 節點部署到不同的可用性區域、確保節點位於不同的故障網域中、以提供備援和可用性。若要瞭解靈活協調模式中的虛擬機器擴充集如何使用 Azure 中的可用性區域 https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-use-availability-zones?tabs=cli-1%2Cportal-2["Microsoft Azure 文件：建立使用可用性區域的虛擬機器規模集"^]、請參閱。
 磁碟:: 客戶資料位於區域備援儲存設備（ZRS）託管磁碟上。每個節點均可存取其他節點的儲存設備。也需要額外的儲存空間 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["開機、root、合作夥伴root及核心資料"^]。
 儲存帳戶:: 儲存帳戶用於託管式磁碟型部署、以處理診斷記錄並分層處理至blob儲存設備。
 
@@ -102,7 +102,7 @@ HA 組態可維持資料的高可用度、如下所示：
 對於 iSCSI 、 Cloud Volumes ONTAP Reality 使用多重路徑 I/O （ MPIO ）和非對稱邏輯單元存取（ ALUA ）來管理主動最佳化和非最佳化路徑之間的路徑容錯移轉。
 
 
-NOTE: 如需哪些特定主機組態支援 ALUA 的相關資訊、請參閱 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以及主機作業系統的主機公用程式安裝與設定指南。
+NOTE: 如需哪些特定主機組態支援 ALUA 的相關資訊、請參閱 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]和、 https://docs.netapp.com/us-en/ontap-sanhost/["SAN 主機與雲端用戶端指南"]以取得主機作業系統的。
 
 儲存設備接管、重新同步及還原均為預設自動執行。不需要使用者採取任何行動。
 

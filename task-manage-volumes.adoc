@@ -16,7 +16,7 @@ summary: BlueXP可讓您管理磁碟區和CIFS伺服器。它也會提示您移�
 [role="lead"]
 BlueXP可讓您管理磁碟區和CIFS伺服器。它也會提示您移動磁碟區、以避免發生容量問題。
 
-您可以在 BlueXP 標準檢視或進階檢視中管理磁碟區。「標準檢視」提供一組有限的選項來修改您的磁碟區。進階檢視提供進階管理層級、例如複製、調整大小、變更反勒索軟體的設定、分析、保護和活動追蹤、以及跨階層移動磁碟區。請參閱 link:task-administer-advanced-view.html["使用進階檢視來管理Cloud Volumes ONTAP"]。
+您可以在 BlueXP 標準檢視或進階檢視中管理磁碟區。「標準檢視」提供一組有限的選項來修改您的磁碟區。進階檢視提供進階管理層級、例如複製、調整大小、變更反勒索軟體的設定、分析、保護和活動追蹤、以及跨階層移動磁碟區。如需相關資訊、請 link:task-administer-advanced-view.html["使用進階檢視來管理Cloud Volumes ONTAP"]參閱。
 
 
 
@@ -65,7 +65,7 @@ image:screenshot_manage_vol_button.png["「 Volume 」索引標籤下的「 Mana
 
 
 
-NOTE: 如果您需要自訂 Snapshot 原則、可以使用 System Manager 來建立。
+NOTE: 如果您需要自訂的 Snapshot 原則、可以使用 ONTAP 系統管理員來建立它們。
 
 
 
@@ -129,7 +129,7 @@ NOTE: BlueXP會將磁碟區移至現有的Aggregate、該集合體使用所選�
 如果您需要調整磁碟區大小、可以從 BlueXP 的「進階檢視」進行調整。
 
 .步驟
-. 開啟「進階檢視」、透過 System Manager 調整磁碟區大小。請參閱 link:task-administer-advanced-view.html#how-to-get-started["如何開始使用"]。
+. 開啟「進階檢視」、透過 ONTAP 系統管理員調整磁碟區大小。請參閱 link:task-administer-advanced-view.html#how-to-get-started["如何開始使用"]。
 . 從左側導覽功能表中、選取 * 儲存 > 磁碟區 * 。
 . 從磁碟區清單中、找出您應該調整大小的磁碟區。
 . 按一下選項圖示 image:screenshot_gallery_options.gif["kabob圖示"]。
@@ -140,7 +140,7 @@ NOTE: BlueXP會將磁碟區移至現有的Aggregate、該集合體使用所選�
 
 image:screenshot-resize-volume.png["螢幕會在調整磁碟區大小後顯示修改後的容量"]
 
-調整磁碟區大小時、請務必將系統的容量限制列入考量。前往 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["發行說明 Cloud Volumes ONTAP"^] 以取得更多詳細資料。
+調整磁碟區大小時、請務必將系統的容量限制列入考量。如 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["發行說明 Cloud Volumes ONTAP"^]需詳細資訊、請前往。
 
 
 
@@ -213,15 +213,15 @@ endif::gcp[]
 
 移動磁碟區以提高容量使用率、改善效能、並達成服務層級協議。
 
-您可以在 System Manager 中移動磁碟區、方法是選取磁碟區和目的地 Aggregate 、啟動磁碟區移動作業、以及選擇性地監控磁碟區移動工作。使用 System Manager 時、磁碟區移動作業會自動完成。
+您可以在 ONTAP 系統管理員中移動磁碟區、方法是選取磁碟區和目的地集合體、啟動磁碟區移動作業、以及選擇性地監控磁碟區移動工作。使用 System Manager 時、磁碟區移動作業會自動完成。
 
 .步驟
-. 使用 System Manager 或 CLI 將磁碟區移至 Aggregate 。
+. 使用 ONTAP 系統管理員或 ONTAP CLI 將磁碟區移至 Aggregate 。
 +
 在大多數情況下、您可以使用 System Manager 來移動磁碟區。
 
 +
-如需相關指示、請參閱 link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["《》《 9 Volume Move Express Guide 》（英文） ONTAP"^]。
+有關說明，請參閱link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["《》《 9 Volume Move Express Guide 》（英文） ONTAP"^]。
 
 
 
@@ -270,18 +270,18 @@ image::screenshot_aggr_volume_overview.png[截錄畫面 Aggr Volume 總覽]
 
 . 如果系統尚未達到磁碟限制、您應該將磁碟區移至同一個系統上的現有集合體或新集合體。
 +
-如需詳細資訊、請參閱 <<move-volumes-aggregate-capacity,將磁碟區移至其他Aggregate、以避免容量問題>>。
+如需相關資訊、請 <<move-volumes-aggregate-capacity,將磁碟區移至其他Aggregate、以避免容量問題>>參閱。
 
 . 如果系統已達到磁碟限制、請執行下列任何一項：
 +
 .. 刪除所有未使用的磁碟區。
 .. 重新排列磁碟區、以釋放集合體上的空間。
 +
-如需詳細資訊、請參閱 <<move-volumes-aggregate-capacity,將磁碟區移至其他Aggregate、以避免容量問題>>。
+如需相關資訊、請 <<move-volumes-aggregate-capacity,將磁碟區移至其他Aggregate、以避免容量問題>>參閱。
 
 .. 將兩個或多個磁碟區移至另一個有空間的系統。
 +
-如需詳細資訊、請參閱 <<move-volumes-aggregate-capacity,將磁碟區移至其他Aggregate、以避免容量問題>>。
+如需相關資訊、請 <<move-volumes-aggregate-capacity,將磁碟區移至其他Aggregate、以避免容量問題>>參閱。
 
 
 
@@ -305,19 +305,19 @@ image::screenshot_aggr_volume_overview.png[截錄畫面 Aggr Volume 總覽]
 . 找出 Cloud Volumes ONTAP 具備可用容量的系統、或是部署新系統。
 . 將來源工作環境拖放到目標工作環境、以執行磁碟區的一次性資料複寫。
 +
-如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["在系統之間複寫資料"^]。
+如需相關資訊、請 link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["在系統之間複寫資料"^]參閱。
 
 . 移至「複寫狀態」頁面、然後中斷 SnapMirror 關係、將複寫的磁碟區從資料保護磁碟區轉換為讀寫磁碟區。
 +
-如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["管理資料複寫排程和關係"^]。
+如需相關資訊、請 link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["管理資料複寫排程和關係"^]參閱。
 
 . 設定磁碟區以進行資料存取。
 +
-如需設定目的地 Volume 以進行資料存取的相關資訊、請參閱 link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["《》《 9 Volume Disaster Recovery Express 指南》 ONTAP"^]。
+如需設定目的地 Volume 以進行資料存取的相關資訊，請參閱link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["《》《 9 Volume Disaster Recovery Express 指南》 ONTAP"^]。
 
 . 刪除原始 Volume 。
 +
-如需詳細資訊、請參閱 link:task-manage-volumes.html#manage-volumes["管理磁碟區"]。
+如需相關資訊、請 link:task-manage-volumes.html#manage-volumes["管理磁碟區"]參閱。
 
 
 
@@ -354,12 +354,12 @@ image::screenshot_aggr_capacity.png[螢幕擷取畫面 Aggr 容量]
 
 . 如果沒有集合體具有可用容量、請建立新的集合體。
 +
-如需詳細資訊、請參閱 link:task-create-aggregates.html["建立 Aggregate"^]。
+如需相關資訊、請 link:task-create-aggregates.html["建立 Aggregate"^]參閱。
 
-. 使用 System Manager 或 CLI 將磁碟區移至 Aggregate 。
+. 使用 ONTAP 系統管理員或 ONTAP CLI 將磁碟區移至 Aggregate 。
 . 在大多數情況下、您可以使用 System Manager 來移動磁碟區。
 +
-如需相關指示、請參閱 link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["《》《 9 Volume Move Express Guide 》（英文） ONTAP"^]。
+有關說明，請參閱link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["《》《 9 Volume Move Express Guide 》（英文） ONTAP"^]。
 
 
 
@@ -385,7 +385,7 @@ image::screenshot_aggr_capacity.png[螢幕擷取畫面 Aggr 容量]
 
 == 檢視 FlexGroup Volume
 
-您可以直接透過 BlueXP 中的 Volumes （磁碟區）標籤、檢視透過 CLI 或系統管理員建立的 FlexGroup 磁碟區。BlueXP 與提供給 FlexVol Volume 的資訊相同、透過專用的 Volumes 方塊、提供建立的 FleGroup Volume 的詳細資訊。在「 Volume （磁碟區）」磚下方、您可以透過圖示的暫留文字來識別每個 FlexGroup 磁碟區群組。此外、您也可以透過 Volume 樣式欄、在 Volume 清單檢視下識別及排序 FlexGroup Volume 。
+您可以直接透過 BlueXP  中的 Volumes （磁碟區）標籤、檢視透過 ONTAP 系統管理員或 ONTAP CLI 建立的 FlexGroup 磁碟區。BlueXP 與提供給 FlexVol Volume 的資訊相同、透過專用的 Volumes 方塊、提供建立的 FleGroup Volume 的詳細資訊。在「 Volume （磁碟區）」磚下方、您可以透過圖示的暫留文字來識別每個 FlexGroup 磁碟區群組。此外、您也可以透過 Volume 樣式欄、在 Volume 清單檢視下識別及排序 FlexGroup Volume 。
 
 image::screenshot_show_flexgroup_vol.png[螢幕擷取畫面顯示 FlexGroup vol]
 

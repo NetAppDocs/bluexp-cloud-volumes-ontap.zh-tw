@@ -37,7 +37,7 @@ summary: 支援Amazon EBS Elastic Volumes功能搭配Cloud Volumes ONTAP 使用�
 
 
 
-https://aws.amazon.com/ebs/features/["深入瞭解AWS的彈性磁碟區"^]
+https://aws.amazon.com/ebs/features/["AWS 文件：深入瞭解 AWS 的彈性 Volume"^]
 
 
 
