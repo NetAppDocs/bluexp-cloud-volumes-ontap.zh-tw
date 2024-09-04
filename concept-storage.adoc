@@ -100,9 +100,10 @@ HA 配對:: HA配對使用兩種磁碟、以較高的成本為I/O密集型工作
 
 * 相關連結 *
 
+* link:task-planning-your-config-azure.html["瞭解如何在 Azure 中為您的系統選擇磁碟類型和磁碟大小"]
+* link:task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure["在Cloud Volumes ONTAP Azure中啟動一套功能完善的"]
 * https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure文件：Azure託管磁碟類型"^]
 * https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-pageblob-overview["Microsoft Azure文件：Azure網頁瀏覽總覽"^]
-* link:task-planning-your-config-azure.html["瞭解如何在 Azure 中為您的系統選擇磁碟類型和磁碟大小"]
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["檢閱 Cloud Volumes ONTAP Azure 的儲存限制"^]
 
 

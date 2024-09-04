@@ -61,6 +61,16 @@ image:diagram_ha_azure_saz_lrs.png["這是一個概念性影像、顯示負載�
 
 Azure 標準負載平衡器:: 負載平衡器負責管理 Cloud Volumes ONTAP 傳入流量至 the ireHA 配對。
 單一可用區域中的 VM:: 從 Cloud Volumes ONTAP 9.15.1 開始、您可以在單一可用性區域（ AZ ）中建立及管理異質虛擬機器（ VM ）。您可以在同一個 AZ 的個別故障網域中部署高可用度（ HA ）節點、以確保最佳可用度。若要深入瞭解啟用此功能的彈性協調模式、請參閱 https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Microsoft Azure 文件：虛擬機器擴充集"^]。
++
+--
+當符合下列條件時、分區部署會使用 Premium SSD v2 託管磁碟：
+
+* Cloud Volumes ONTAP 版本為 9.15.1 或更新版本。
+* 所選區域和區域支援 Premium SSD v2 託管磁碟。如需支援區域的相關資訊、請 https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Microsoft Azure 網站：依地區提供的產品"^]參閱。
+* 訂閱已註冊 Microsoft link:task-saz-feature.html["Microsoft.Compute/VMOrchestratorZonalMultiFD 功能"]。
+
+
+--
 磁碟:: 客戶資料位於本機備援儲存設備（ LRS ）託管磁碟上。每個節點均可存取其他節點的儲存設備。也需要額外的儲存link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["開機、root、合作夥伴root、核心和NVRAM資料"^]空間。
 儲存帳戶:: 儲存帳戶用於託管式磁碟型部署、以處理診斷記錄並分層處理至blob儲存設備。
 

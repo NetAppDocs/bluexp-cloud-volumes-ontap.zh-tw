@@ -5351,11 +5351,7 @@
   <block id="d91c9bd9d601398d431e2acc5559f7bf" category="paragraph">如需詳細資訊、請參閱 <block ref="f7e49e28b2875e2913382dd3096ff790" category="inline-link-macro-rx"></block> 和 <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>。</block>
   <block id="8c286011c74e75b22d1d90dbeb4504b6" category="list-text">* 服務 * ：根據您是否要搭配 Cloud Volumes ONTAP 使用個別服務、來啟用或停用這些服務。</block>
   <block id="e9e34ff3ab97c79b3c316c17375f6ff1" category="inline-link-macro">為單一可用性區域啟用 VMOrchestratorZonalMultiFD</block>
-  <block id="5d53fdb6098c234fa40898b914a4f5db" category="paragraph">從 Cloud Volumes ONTAP 9.15.1 開始、您可以在本機備援儲存設備（ LRS ）單一可用性區域中部署 VM 執行個體。這也需要<block ref="fdfb47698b60e554acc8cff3a6065992" prefix=" " category="inline-code"></block>為您的訂閱啟用此功能。此功能可協助您在相同的可用性區域中部署高可用度（ HA ）配對。請參閱<block ref="8237f408225e4c565d3ae8daf52a7def" category="inline-link-macro-rx"></block>和<block ref="88705e19880d9fa1af5df70699e53b95" category="inline-link-macro-rx"></block>。</block>
-  <block id="2976779596586c38da75f46052ad2926" category="list-text">針對單一可用性區域、請選取 Azure 區域、可用性區域、 vnet 和子網路。從 Cloud Volumes ONTAP 9.15.1 開始、您可以在單一可用區域中安裝 VM 執行個體。您需要選取支援此模式的區域。如果您選取的區域不支援分區部署、則會遵循先前的 LRS 非分區部署模式。</block>
-  <block id="fcb7516396bf1d9722f3e765d3004427" category="inline-link">Microsoft Azure 文件： Virtual Machine Scale Set 文件</block>
   <block id="840f8de5c9f54f772062c77429778e38" category="inline-link">Microsoft Azure 網站：依地區提供的產品</block>
-  <block id="6d613bce1a88fcb164ac593c1058e246" category="paragraph">若要深入瞭解此部署模式和支援的 Azure 區域、請參閱<block ref="a0eb41cb535bf2a39d70134c95375180" category="inline-link-rx"></block>和<block ref="4cad7f2a2d9c49229b747bad0a9e56da" category="inline-link-rx"></block>。</block>
   <block id="e4eaa3d391d7d55d8c20cbf06dc81915" category="list-text">對於多個可用區域、請選取區域、 vnet 、子網路、節點 1 的區域、以及節點 2 的區域。</block>
   <block id="407f144abfa1ac000a5a8035a2a3eb77" category="paragraph">有關選擇磁碟大小的說明，請參閱<block ref="693042947faf99c4ded2e1854ea1714d" category="inline-link-macro-rx"></block>。</block>
   <block id="561bec0387138d2b07f137df6774960c" category="paragraph">如需詳細資訊、請參閱 <block ref="b12f776b16b59fa8d20c1c83946e77ac" category="inline-link-macro-rx"></block> 和 <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>。</block>
@@ -5445,4 +5441,13 @@
   <block id="2c8ad7deb621eae9ecb23ccf84d9c22c" category="section-title">加拿大西部地區現在支援 AWS</block>
   <block id="184c928c73aa00c7569ba55c0b9e0064" category="paragraph">AWS for Cloud Volumes ONTAP 9.12.1 GA 及更新版本現在支援加拿大西部地區。</block>
   <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">如需所有區域的清單，請參閱<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>。</block>
+  <block id="208717af2c6557faae5e8d47b38680bd" category="paragraph">當符合下列條件時、分區部署會使用 Premium SSD v2 託管磁碟：</block>
+  <block id="6326d313b843fff1d57ed50ec7c000f1" category="list-text">Cloud Volumes ONTAP 版本為 9.15.1 或更新版本。</block>
+  <block id="fd4ec163c1cf6efd42bc780358b7fb84" category="list-text">所選區域和區域支援 Premium SSD v2 託管磁碟。如需支援區域的相關資訊、請<block ref="4cad7f2a2d9c49229b747bad0a9e56da" category="inline-link-rx"></block>參閱。</block>
+  <block id="a9b7d8164fa6256aced367d79aa2abab" category="inline-link-macro">Microsoft.Compute/VMOrchestratorZonalMultiFD 功能</block>
+  <block id="218949100f9bb1c7fe8ef525701547a0" category="list-text">訂閱已註冊 Microsoft <block ref="b47370f17ae59423c751ec1694c9ca74" category="inline-link-macro-rx"></block>。</block>
+  <block id="d63d6372ae20eb19f707718f270a6b48" category="list-text"><block ref="d63d6372ae20eb19f707718f270a6b48" category="inline-link-macro-rx"></block></block>
+  <block id="fadac06c68e9ffce4bb17bd0d6ec5f2b" category="paragraph">您可以在單一可用性區域中部署 HA 配對、並在符合下列條件時使用 Premium SSD v2 託管磁碟：</block>
+  <block id="ed0e2426cd36bf5b4eb9a140ae9a7508" category="list-text">針對單一可用性區域、請選取 Azure 區域、可用性區域、 vnet 和子網路。</block>
+  <block id="e09953ef98be5a0cd4cc4ad0c288c775" category="paragraph">從 Cloud Volumes ONTAP 9.15.1 開始、您可以在 Azure 的單一可用性區域（ AZs ）中、以 HA 模式部署虛擬機器（ VM ）執行個體。您需要選取支援此部署的區域和區域。如果區域或區域不支援分區部署、則會遵循 LRS 先前的非分區部署模式。如需瞭解共享託管磁碟的支援組態<block ref="2148c58538cc3adf327c3ade110b8487" category="inline-link-macro-rx"></block>、請參閱。</block>
 </blocks>

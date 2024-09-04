@@ -229,9 +229,15 @@ NOTE: 快照會在重新開機時自動建立。
 * 兩個 512 GiB Premium SSD 共享管理磁碟、用於根磁碟區（每個節點一個）
 * 兩個1024 GiB標準HDD磁碟、可節省核心（每個節點一個）
 * 兩個 512 GiB Premium SSD 託管磁碟、適用於 NVRAM （每個節點一個）
-+
+
+
 如果您的虛擬機器支援將優質 SSD v2 託管磁碟做為資料磁碟、則會使用 32 個適用於 NVRAM 的 GiB Premium SSD v2 託管磁碟、以及用於根磁碟區的 512 個 GiB Premium SSD v2 共享託管磁碟。
 
+您可以在單一可用性區域中部署 HA 配對、並在符合下列條件時使用 Premium SSD v2 託管磁碟：
+
+* Cloud Volumes ONTAP 版本為 9.15.1 或更新版本。
+* 所選區域和區域支援 Premium SSD v2 託管磁碟。如需支援區域的相關資訊、請 https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Microsoft Azure 網站：依地區提供的產品"^]參閱。
+* 訂閱已註冊 Microsoft link:task-saz-feature.html["Microsoft.Compute/VMOrchestratorZonalMultiFD 功能"]。
 
 
 endif::azure[]
