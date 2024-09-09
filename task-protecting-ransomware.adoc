@@ -70,9 +70,9 @@ ARP 授權被視為「浮動」授權、這表示它不受限於單一 Cloud Vol
 
 NOTE: 在節點型 Cloud Volumes ONTAP 授權中使用 ARP 功能的情況、目前並未反映在 Digital Wallet 中。未來版本的 Digital Wallet 將提供檢視節點型 ARP 使用率的功能。
 
-購買附加授權並將其新增至 Digital Wallet 後、您可以使用 Cloud Volumes ONTAP 以每個磁碟區為基礎來啟用 ARP 。ARP 的收費是根據已啟用 ARP 功能的已配置磁碟區總容量、以磁碟區層級計量。最低授權容量為 1TB 。不過、 ARP 功能沒有最低容量充電量。
+購買附加授權並將其新增至 Digital Wallet 後、您可以使用 Cloud Volumes ONTAP 以每個磁碟區為基礎來啟用 ARP 。
 
-已啟用 ARP 的磁碟區具有「學習模式」或「作用中」的指定狀態。任何 ARP 狀態為「已停用」的磁碟區都會排除在充電之外。例如、具有 30 TiB 已配置容量的 Cloud Volumes ONTAP 環境、可選擇僅擁有 15 個 TiB 磁碟區的子集、並啟用 ARP 。
+已啟用 ARP 的磁碟區具有「學習模式」或「作用中」的指定狀態。
 
 磁碟區的 ARP 組態是透過 ONTAP 系統管理員和 ONTAP CLI 執行。
 
