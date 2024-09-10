@@ -5442,9 +5442,18 @@
   <block id="c728dacf8c5d7e9da86b3512e6ea5301" category="paragraph">已啟用 ARP 的磁碟區具有「學習模式」或「作用中」的指定狀態。</block>
   <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">2024 年 9 月 9 日</block>
   <block id="cdd78645b017b927a25b5449e345f823" category="section-title">WORM 和 ARP 功能不再收費</block>
-  <block id="f1967946737edb98fc1947e0768aa8bf" category="paragraph">WORM （一次寫入多次讀取）與 ARP （自主勒索軟體保護）的內建資料保護與安全功能、將免費隨附於所有 Cloud Volumes ONTAP 授權中。這將適用於節點型和容量型授權的全新和現有 BYOL 和 PAYGO/ 市場部署。新的定價模式適用於所有雲端供應商和部署類型、包括單一節點和高可用度（ HA ）組態。</block>
-  <block id="be80dbfae56af07d4af9dfce1c36cc75" category="paragraph">將提供下列優點：</block>
-  <block id="c2cf1fd5e48d77ab96276adb197066c3" category="list-text">使用 WORM 和 ARP 的現有帳戶將不再收取這些功能的費用。您將依此變更之前適用的容量使用量計費。WORM 和 ARP 將在未來計費中排除。</block>
-  <block id="404e8d1aa5724e9535ccf69bb3ee9c54" category="list-text">如果您的現有帳戶中沒有啟用這些功能、現在您可以選擇 WORM 和 ARP 、而無需額外付費。</block>
-  <block id="3ed34d6b3fd7cd8c4e08b032a9f2dc07" category="list-text">對於新帳戶、所有 Cloud Volumes ONTAP 產品都將免除 WORM 和 ARP 費用。</block>
+  <block id="8ddfd051601ea88c75625c16c542a149" category="paragraph">BlueXP  也會<block ref="891e111023ee3cccd4407be6ddd24c21" prefix=" " category="inline-code"></block>從 NAS 資料生命期移除下列服務、並將其新增至 iSCSI 資料生命期、藉此修改資料儲存 VM 上的原則：</block>
+  <block id="e522a238c22a673b40cfb6b6b240f37b" category="list-text"><block ref="2548ff9e63092532a81a79e1ceebe91e" prefix="" category="inline-code"></block></block>
+  <block id="9c3ffe3e739ef0b406e2216de2c403b7" category="list-text"><block ref="c33d2f2401cef76503005b2317a0870d" prefix="" category="inline-code"></block></block>
+  <block id="23061a7b150b62a269bdf5346feaa7d1" category="list-text"><block ref="1f4fa402fb905ee626761b74cd1a4c87" prefix="" category="inline-code"></block></block>
+  <block id="58a7b8379178f95002ceeceb82feb029" category="list-text"><block ref="0d409a8ed03d0fa3e161460f3f21e0b4" prefix="" category="inline-code"></block></block>
+  <block id="3c1cec80e048088b9c829a18b7d5111b" category="list-text"><block ref="8e6e205a8b8f4f22cf306f9b85bd6c2c" prefix="" category="inline-code"></block></block>
+  <block id="7fd6d2c43ef162414a32b6569dfcc99a" category="paragraph">WORM （一次寫入多次讀取）和 ARP （自動勒索軟體保護）的內建資料保護與安全功能、將免費提供 Cloud Volumes ONTAP 授權。新的定價模式同時適用於 AWS 、 Azure 和 Google Cloud 的全新和現有 BYOL 和 PAYGO/ 市場訂閱。容量型和節點型授權都包含 ARP 和 WORM 、適用於所有組態、包括單一節點和高可用度（ HA ）配對、不需額外付費。</block>
+  <block id="9dab6b96899670128353b1e92c2b8997" category="paragraph">簡化的定價可為您帶來以下好處：</block>
+  <block id="000f6c26eec43af35931bc5e6fbf9f49" category="list-text">目前包含 WORM 和 ARP 的帳戶將不再需要支付這些功能的費用。接下來、您的帳單將只會收取容量使用費、就像此變更之前一樣。WORM 和 ARP 將不再包含在您未來的帳單中。</block>
+  <block id="3817bf50b7761fc5155c59e4a334d37a" category="list-text">如果您目前的帳戶不包含這些功能、您現在可以選擇不需額外成本的 WORM 和 ARP 。</block>
+  <block id="1974af11cb1ac87d0b58d8696f893e4d" category="list-text">任何新帳戶的所有 Cloud Volumes ONTAP 產品都將排除 WORM 和 ARP 費用。</block>
+  <block id="0e3986fb787ff1e55f1d15206f8b39d9" category="paragraph">深入瞭解這些功能：</block>
+  <block id="a7cf7c6eee288b3a91bcae2e6522aa7a" category="list-text"><block ref="a7cf7c6eee288b3a91bcae2e6522aa7a" category="inline-link-rx"></block></block>
+  <block id="a100999de1d9ee815d7e13741acf163d" category="list-text"><block ref="a100999de1d9ee815d7e13741acf163d" category="inline-link-rx"></block></block>
 </blocks>
