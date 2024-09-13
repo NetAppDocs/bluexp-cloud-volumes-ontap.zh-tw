@@ -63,7 +63,7 @@ Cloud Volumes ONTAP 支援「自動勒索軟體保護」（ ARP ）功能、可�
 
 與透過提供的檔案副檔名保護分開 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#protection-from-common-ransomware-file-extensions["勒索軟體保護設定"]、 ARP 功能會使用工作負載分析、根據偵測到的「異常活動」來警示使用者可能遭受的攻擊。勒索軟體保護設定和 ARP 功能均可搭配使用、以提供全面的勒索軟體保護。
 
-ARP 功能僅適用於以節點為基礎的授權模式和以容量為基礎的授權模式、且僅適用於 BYOL 授權（ 1 至 36 個月期限）。您必須聯絡您的 NetApp 銷售代表、以購買新的獨立附加授權、以搭配 Cloud Volumes ONTAP 中的 ARP 功能使用。
+ARP 功能可與 BYOL 和市場訂閱搭配使用、適用於節點型和容量型授權、無需額外付費。請聯絡您的 NetApp 銷售代表、將 ARP 新增至您目前的授權。
 
 ARP 授權被視為「浮動」授權、這表示它不受限於單一 Cloud Volumes ONTAP 執行個體、而且可以套用至多個 Cloud Volumes ONTAP 環境。
 

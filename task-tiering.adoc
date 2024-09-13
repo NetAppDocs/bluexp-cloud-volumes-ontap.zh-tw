@@ -313,7 +313,7 @@ image:screenshot_replication_tiering.gif["快照顯示複寫磁碟區時的 S3 �
 例如、您可以選擇少於10%的可用空間、以確保您使用購買的容量。然後、當需要額外容量時、BlueXP可以為您購買額外的磁碟（直到達到Aggregate的磁碟限制為止）。
 
 
-CAUTION: 如果空間不足、Cloud Volumes ONTAP 則無法移動資料、可能會導致效能降低。任何變更都應謹慎進行。如果您不確定、請聯絡NetApp支援部門以取得指引。
+CAUTION: 如果空間不足、 Cloud Volumes ONTAP 就無法移動資料、您可能會遇到效能降低的問題。任何變更都應謹慎進行。如果您不確定、請聯絡 NetApp 支援部門以取得指引。
 
 此比率對災難恢復案例非常重要、因為Cloud Volumes ONTAP 當資料從物件儲存區讀取時、將資料移至SSD/HDD以提供更好的效能。如果空間不足、Cloud Volumes ONTAP 則無法移動資料。在變更比率時、請將此納入考量、以便符合您的業務需求。
 

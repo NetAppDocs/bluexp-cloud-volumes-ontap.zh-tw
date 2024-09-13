@@ -402,6 +402,9 @@ endif::gcp[]
 
 節點型授權是前一代的授權模式、可讓您依Cloud Volumes ONTAP 節點授權使用。此授權模式不適用於新客戶。副節點充電已由上述的副容量充電方法取代。
 
+
+IMPORTANT: NetApp 很快就會取代以節點為基礎的授權、而這將由容量型授權所取代。如需相關資訊、請 https://mysupport.netapp.com/info/communications/CPC-00589.html["客戶公報： CPS-00589"^]參閱。
+
 現有客戶仍可使用節點型授權：
 
 * 如果您擁有有效授權、BYOL僅適用於授權續約。

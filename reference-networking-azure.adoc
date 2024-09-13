@@ -26,6 +26,60 @@ Azure 必須符合下列網路需求。
 
 === 傳出網際網路存取
 
+Cloud Volumes ONTAP 節點需要輸出網際網路存取、才能存取各種功能的外部端點。如果這些端點在安全性要求嚴苛的環境中遭到封鎖、 Cloud Volumes ONTAP 就無法正常運作。
+
+
+
+==== Cloud Volumes ONTAP 端點
+
+Cloud Volumes ONTAP 需要外送網際網路存取、才能聯絡各種端點、以進行日常作業。
+
+下列端點是 Cloud Volumes ONTAP 特有的。Connector 也會與多個端點聯絡、以進行日常作業、以及 BlueXP  網路型主控台。請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-3-set-up-networking["檢視 Connector 聯絡的端點"^] 和 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-networking-saas-console.html["準備使用 BlueXP 主控台的網路連線"^]。
+
+[cols="5*"]
+|===
+| 端點 | 適用對象 | 目的 | BlueXP 部署模式 | 如果無法取得、則會產生影響 
+
+
+| \https://netapp-cloud-account.auth0.com | 驗證  a| 
+用於 BlueXP  驗證。
+| 標準和受限模式。  a| 
+使用者驗證失敗、下列服務仍無法使用：
+
+* Cloud Volumes ONTAP 服務
+* ONTAP 服務
+* 傳輸協定和 Proxy 服務
+
+
+
+
+| \https://keyvault-production-aks.vault.azure.net | 金鑰庫 | 用於從 Azure Key Vault 擷取用戶端秘密金鑰、以便與 S3 儲存區通訊、以處理中繼資料。Cloud Volumes ONTAP 服務會在內部使用此元件。 | 標準模式、限制模式和私有模式。 | Cloud Volumes ONTAP 服務無法使用。 
+
+
+| \https://cloudmanager.cloud.netapp.com/tenancy | 租賃 | 用於從 BlueXP  佔用擷取 Cloud Volumes ONTAP 資源、以授權資源和使用者。 | 標準和受限模式。 | Cloud Volumes ONTAP 資源和使用者未經授權。 
+
+
+| https://support 。 NetApp 。 com/aods/asupmessage \https://support 。 NetApp 。 com/asupprod/post/1.0/postAsup | AutoSupport | 用於將 AutoSupport 遙測資料傳送給 NetApp 支援。 | 標準和受限模式。 | AutoSupport 資訊仍未傳送。 
+
+
+| \https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | 公共區域 | 與 Azure 服務的通訊。 | 標準模式、限制模式和私有模式。 | Cloud Volumes ONTAP 無法與 Azure 服務通訊、因此無法在 Azure 上執行特定的 BlueXP  作業。 
+
+
+| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | 中國地區 | 與 Azure 服務的通訊。 | 標準模式、限制模式和私有模式。 | Cloud Volumes ONTAP 無法與 Azure 服務通訊、因此無法在 Azure 上執行特定的 BlueXP  作業。 
+
+
+| \https://management.microsoftazure.de \https://login.microsoftonline.de \https://blob.core.cloudapi.de \https://core.cloudapi.de | 德國地區 | 與 Azure 服務的通訊。 | 標準模式、限制模式和私有模式。 | Cloud Volumes ONTAP 無法與 Azure 服務通訊、因此無法在 Azure 上執行特定的 BlueXP  作業。 
+
+
+| \https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net | 政府區域 | 與 Azure 服務的通訊。 | 標準模式、限制模式和私有模式。 | Cloud Volumes ONTAP 無法與 Azure 服務通訊、因此無法在 Azure 上執行特定的 BlueXP  作業。 
+
+
+| \https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud | 政府 DoD 地區 | 與 Azure 服務的通訊。 | 標準模式、限制模式和私有模式。 | Cloud Volumes ONTAP 無法與 Azure 服務通訊、因此無法在 Azure 上執行特定的 BlueXP  作業。 
+|===
+
+
+==== NetApp AutoSupport 的輸出網際網路存取
+
 支援NetApp功能的支援節點需要外傳網際網路存取功能、此功能可主動監控系統健全狀況、並將訊息傳送給NetApp技術支援部門。Cloud Volumes ONTAP AutoSupport
 
 路由和防火牆原則必須允許將 HTTP / HTTPS 流量傳送至下列端點、 Cloud Volumes ONTAP 才能讓下列端點傳送 AutoSupport 動態訊息：

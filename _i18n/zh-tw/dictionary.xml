@@ -713,7 +713,6 @@
   <block id="5bb29017b3feae0bd72d137d95ec631c" category="list-text">選擇一個儲存類別、然後按一下 * 「 Save 」（儲存） * 。</block>
   <block id="2cca3ca6096bf8fb9c832683c582250c" category="section-title">變更資料分層的可用空間比率</block>
   <block id="0f25882e78be6d7c0e2d9cd5c7808fb5" category="paragraph">資料分層的可用空間比率定義Cloud Volumes ONTAP 將資料分層儲存至物件儲存時、需要多少空間才能在物件SSD/HDD上使用。預設設定為10%可用空間、但您可以根據需求調整設定。</block>
-  <block id="e62da289d1df9b17e78658d0c7639034" category="admonition">如果空間不足、Cloud Volumes ONTAP 則無法移動資料、可能會導致效能降低。任何變更都應謹慎進行。如果您不確定、請聯絡NetApp支援部門以取得指引。</block>
   <block id="2aa3b7e505c0c56df0a2f60f7d4f87cc" category="paragraph">此比率對災難恢復案例非常重要、因為Cloud Volumes ONTAP 當資料從物件儲存區讀取時、將資料移至SSD/HDD以提供更好的效能。如果空間不足、Cloud Volumes ONTAP 則無法移動資料。在變更比率時、請將此納入考量、以便符合您的業務需求。</block>
   <block id="804f26a0bc44f8e04d1fb697d33eb4d8" category="list-text">在* Capacity *下、按一下* Aggregate Capacity臨界值- Free Space Ratio for Data Tiering *。</block>
   <block id="c389556b61d8e54624252a2563fdfc17" category="list-text">根據您的需求變更可用空間比率、然後按一下「*儲存*」。</block>
@@ -1409,7 +1408,6 @@
   <block id="2383344da5e27a7119b263bf26937e0b" category="paragraph">不Cloud Volumes ONTAP 支援還原或降級至先前版本的功能。</block>
   <block id="f27169ac5aa5f54fdbb9b0d8da56efb0" category="section-title">支援註冊</block>
   <block id="1d4a4bd5e79a1d078c7cb5902a3481e8" category="inline-link-macro">手動登錄 PAYGO 系統</block>
-  <block id="a683dcc97e9a8443ac38b6298ea937aa" category="paragraph">必須向 NetApp 支援部門註冊、才能使用本頁所述的任何方法來升級軟體。 Cloud Volumes ONTAP這適用於 PAYGO 和 BYOL 。您需要 <block ref="f7029dacbf10b8aa72bca74845a64729" category="inline-link-macro-rx"></block>、但 BYOL 系統預設為註冊。</block>
   <block id="aae82a5812996f78df0dae81c1668bcd" category="section-title">HA中介程序的升級</block>
   <block id="82107b1d3adefdea392b36f7697a120d" category="section-title">準備升級</block>
   <block id="911cf4ff3ccc51b692025e8025561572" category="paragraph">執行升級之前、您必須先確認系統已就緒、並進行任何必要的組態變更。</block>
@@ -3791,7 +3789,6 @@
   <block id="01277cd6d5e8d9a803f07b849cedae4b" category="summary">驗證Google Cloud映像檔案簽名檔案。</block>
   <block id="5567cef37155e1157348c6775226af57" category="doc">Google Cloud映像驗證總覽</block>
   <block id="248cdc66c441a6612309f6e2ce80a63c" category="inline-link">NSS</block>
-  <block id="1c6fb094d8ad58a6db78e6b557985243" category="paragraph">Google Cloud映像驗證符合增強的NetApp安全要求。已對產生映像的指令碼進行變更、以便在過程中使用專為此工作所產生的私密金鑰來簽署映像。您可以使用已簽署的Google Cloud摘要與公開憑證來驗證GCP映像的完整性、此憑證可透過下載<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block> 以取得特定版本。</block>
   <block id="5745e537e1e3a11e00e50f67820a46a1" category="admonition">支援Google Cloud映像驗證Cloud Volumes ONTAP 功能的更新版本為9.13.0或更新版本。</block>
   <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">管理支援案例（預覽）</block>
   <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">您可以直接從BlueXP檢視及管理作用中和已解決的支援案例。您可以管理與您的NSS帳戶和貴公司相關的個案。</block>
@@ -4768,7 +4765,6 @@
   <block id="eb4c08b87f805a62e5af64a0b7c6fb5a" category="paragraph">BlueXP會建立Azure安全性群組、其中包含Cloud Volumes ONTAP 了順利運作所需的傳入和傳出規則。您可能想要參照連接埠進行測試、或是想要使用自己的安全性群組。</block>
   <block id="9864c286612d20c437e06d1612a86f2d" category="summary">BlueXP會建立AWS安全性群組、其中包括Cloud Volumes ONTAP 需要順利運作的傳入和傳出規則。您可能想要參照連接埠進行測試、或是想要使用自己的安全性群組。</block>
   <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXP會建立Google Cloud防火牆規則、其中包括Cloud Volumes ONTAP 需要順利運作的傳入和傳出規則。您可能想要參考連接埠以進行測試、或是想要使用自己的防火牆規則。</block>
-  <block id="f297f6161ef6c027c4e0cd622d4c9f53" category="paragraph">ARP 功能僅適用於以節點為基礎的授權模式和以容量為基礎的授權模式、且僅適用於 BYOL 授權（ 1 至 36 個月期限）。您必須聯絡您的 NetApp 銷售代表、以購買新的獨立附加授權、以搭配 Cloud Volumes ONTAP 中的 ARP 功能使用。</block>
   <block id="9edc62814e18ad5dad22ed4f08602be6" category="admonition">在節點型 Cloud Volumes ONTAP 授權中使用 ARP 功能的情況、目前並未反映在 Digital Wallet 中。未來版本的 Digital Wallet 將提供檢視節點型 ARP 使用率的功能。</block>
   <block id="bab89553328d9045a17e6cd7ae426ebe" category="paragraph">磁碟區的 ARP 組態是透過 ONTAP 系統管理員和 ONTAP CLI 執行。</block>
   <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">2024 年 1 月 16 日</block>
@@ -5113,7 +5109,6 @@
   <block id="96bd5fbfab590d16a7e4f221d5efbe02" category="summary">您可以從 NetApp 支援網站 下載 Azure Image Digest File 。</block>
   <block id="c94570a50f1ce2dc5922d4591072ac73" category="paragraph">Azure Image Digest File 可從下載<block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block>。下載檔案為 tar.gz 格式、包含用於影像簽章驗證的檔案。</block>
   <block id="d3722e7531fbbcdfe3ca8955ec26bed2" category="inline-link">NetApp 支援網站 上的 Cloud Volumes ONTAP 產品頁面</block>
-  <block id="b529bb252fa6fa7ead3dbf955fc61b55" category="list-text">前往<block ref="5003136445bb4fa028e23c93c86053e6" category="inline-link-rx"></block> 並在「下載」區段下載所需的軟體版本。</block>
   <block id="27363a072eabeaf6d8f44930f92fec72" category="list-text">在 Cloud Volumes ONTAP 下載頁面下、按一下 Azure 影像摘要檔案的 * 下載按鈕 * 、即可下載 TAR 。 gz 檔案。</block>
   <block id="697ac446273be6ad7395fbb843a37765" category="image-alt">螢幕快照 Cloud Volumes ONTAP tar.gz</block>
   <block id="5b7b593c571013e3aad0faa73cd02227" category="list-text">對於 Linux 和 MacOS 、您必須執行下列步驟、才能取得下載 Azure Image Digest 檔案的 md5sum 和 shav256sum 。</block>
@@ -5456,4 +5451,77 @@
   <block id="0e3986fb787ff1e55f1d15206f8b39d9" category="paragraph">深入瞭解這些功能：</block>
   <block id="a7cf7c6eee288b3a91bcae2e6522aa7a" category="list-text"><block ref="a7cf7c6eee288b3a91bcae2e6522aa7a" category="inline-link-rx"></block></block>
   <block id="a100999de1d9ee815d7e13741acf163d" category="list-text"><block ref="a100999de1d9ee815d7e13741acf163d" category="inline-link-rx"></block></block>
+  <block id="2a57c4c48ac4fed7319e97ba358228fe" category="paragraph">Google Cloud映像驗證符合增強的NetApp安全要求。已對產生映像的指令碼進行變更、以便在過程中使用專為此工作所產生的私密金鑰來簽署映像。您可以使用已簽署的 Google Cloud 摘要和公開憑證來驗證 Google Cloud 映像的完整性<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block>、您可以透過下載、以取得特定版本。</block>
+  <block id="92d90815a32824fbae3b0e1cc8bbf0bf" category="inline-link">客戶公報： CPS-00589</block>
+  <block id="86cd1a1bf629b4d25461fa99ef89719f" category="admonition">NetApp 很快就會取代以節點為基礎的授權、而這將由容量型授權所取代。如需相關資訊、請<block ref="f09d1138443525e41476e551a1dde747" category="inline-link-rx"></block>參閱。</block>
+  <block id="c4dbcb8cfcc96461b41d3911e9d893a3" category="paragraph">Cloud Volumes ONTAP 節點需要外部網際網路存取、才能聯絡下列端點進行日常作業。</block>
+  <block id="760b52b586ad97b520ea1071bb2f9839" category="section-title">Cloud Volumes ONTAP 端點</block>
+  <block id="26d5c70af8a128834ad7ae9714c92190" category="paragraph">Cloud Volumes ONTAP 需要外送網際網路存取、才能聯絡各種端點、以進行日常作業。</block>
+  <block id="5d17fe0f5737fcf131ca89bbb8891fd6" category="inline-link">檢視 Connector 聯絡的端點</block>
+  <block id="13ba2efb4fd4a349dae9e57188cc7124" category="inline-link">準備使用 BlueXP 主控台的網路連線</block>
+  <block id="1633003ddfc1abefd1ac5659e539f81c" category="paragraph">下列端點是 Cloud Volumes ONTAP 特有的。Connector 也會與多個端點聯絡、以進行日常作業、以及 BlueXP  網路型主控台。請參閱<block ref="0a8949f1130beab385180d157118cad5" category="inline-link-rx"></block> 和<block ref="979bd9d5982d3343248cd50bd0e0a8e2" category="inline-link-rx"></block>。</block>
+  <block id="b8724da75fb917e992576b17378e66b3" category="cell">端點</block>
+  <block id="b5d798aa448124265adcb904b18f9ca3" category="cell">適用對象</block>
+  <block id="2579d10862aa7770a64b058fb84ce858" category="cell">BlueXP 部署模式</block>
+  <block id="121183f21cee81ef502651a940e3847f" category="cell">端點無法使用時的影響</block>
+  <block id="300f031c227ed1b4448a8bb51abec2bb" category="cell">\https://netapp-cloud-account.auth0.com</block>
+  <block id="c75f7811d70d17dbcd88e9d03752cbed" category="cell">驗證</block>
+  <block id="465a9a40bd3237aa6bf5afe05fec84f5" category="paragraph">用於 BlueXP  驗證。</block>
+  <block id="c1ff24e4d084f59ac94218efd028cbf7" category="cell">標準和受限模式。</block>
+  <block id="1f61140efd623e78c839d13f4b14b9f7" category="paragraph">使用者驗證失敗、下列服務仍無法使用：</block>
+  <block id="b5f4badb0c4d684d68e611a2bcca58e8" category="list-text">Cloud Volumes ONTAP 服務</block>
+  <block id="437fe4cf0ba94eac0cc14bbc45cbe74f" category="list-text">ONTAP 服務</block>
+  <block id="43ede35f19d46142596efa16b1ee32c5" category="list-text">傳輸協定和 Proxy 服務</block>
+  <block id="f08159fec04f3c63047352bdded5b5ff" category="cell">\https://keyvault-production-aks.vault.azure.net</block>
+  <block id="cce8a0225002a3fa8095ed8782f394a3" category="cell">金鑰庫</block>
+  <block id="3d41451698b9c800b8f44837a532d5db" category="cell">用於從 Azure Key Vault 擷取用戶端秘密金鑰、以便與 S3 儲存區通訊、以處理中繼資料。Cloud Volumes ONTAP 服務會在內部使用此元件。</block>
+  <block id="bcf88b7ababd6bfaff375da727117c30" category="cell">標準模式、限制模式和私有模式。</block>
+  <block id="f4308ae3bc914b647813d26d0551a6ba" category="cell">Cloud Volumes ONTAP 服務無法使用。</block>
+  <block id="648b7f3d6699305c92d33129e6ea00fe" category="cell">\https://cloudmanager.cloud.netapp.com/tenancy</block>
+  <block id="0bf0f769c264b3c3d3bf11d6925ef4df" category="cell">租賃</block>
+  <block id="59e5578f7aa3f992a39e475101ba0652" category="cell">用於從 BlueXP  佔用擷取 Cloud Volumes ONTAP 資源、以授權資源和使用者。</block>
+  <block id="3ad6fd4f53574fb15275384634ba2522" category="cell">Cloud Volumes ONTAP 資源和使用者未經授權。</block>
+  <block id="7985dddd602dc43cc2554ebe73ac02fe" category="cell">https://support 。 NetApp 。 com/aods/asupmessage \https://support 。 NetApp 。 com/asupprod/post/1.0/postAsup</block>
+  <block id="770d24223a90208fcc25adc73041cea4" category="cell">用於將 AutoSupport 遙測資料傳送給 NetApp 支援。</block>
+  <block id="34a061380a1a8a5348641db2b91fa88d" category="cell">AutoSupport 資訊仍未傳送。</block>
+  <block id="a8d5c9f7d1799515e6cf2c0e6f2ee339" category="inline-link">AWS 文件以取得詳細資料</block>
+  <block id="2ec9aedecc16507ab2c1b3dc7e9b69b7" category="cell">AWS 服務的確切商業端點（以後綴<block ref="3441ddb447d90616fe905a033c8acc75" prefix=" " category="inline-code"></block>表示）取決於您使用的 AWS 區域。請參閱<block ref="64ce6654519d9f0f8ba928cfee473505" category="inline-link-rx"></block>。</block>
+  <block id="58e3bfbabf904de43a6a22aca509b0d8" category="list-text">CloudForation</block>
+  <block id="9d4942b614d2d8583bdf09c75ba94f3d" category="list-text">彈性運算雲端（ EC2 ）</block>
+  <block id="5fe5bde89ae88d436f1f8ba2d3a64130" category="list-text">身分識別與存取管理（ IAM ）</block>
+  <block id="b7f432287355914a89f542bcac4bbdb0" category="list-text">金鑰管理服務（ KMS ）</block>
+  <block id="5ea79461f4d299dc0735dc824ffeb854" category="list-text">安全性權杖服務（ STOS ）</block>
+  <block id="ec646b7b2f70895a68ca206afb2d6108" category="list-text">簡易儲存服務（ S3 ）</block>
+  <block id="02531491f0d0247a340a45ad3a6032bf" category="cell">與 AWS 服務通訊。</block>
+  <block id="381e070260ac3be2e38deaa9e933f870" category="cell">標準和私有模式。</block>
+  <block id="a0a2d7678c0bb085b4fa04adceb32cab" category="cell">Cloud Volumes ONTAP 無法與 AWS 服務通訊、無法在 AWS 上執行特定的 BlueXP  作業。</block>
+  <block id="976c42b7559c0a758617695729b92226" category="inline-link">AWS SDK</block>
+  <block id="ca6c1b8dd23dea0cefa49ccce01e7bf6" category="inline-link">Amazon 文件</block>
+  <block id="6ac9d9128a75fd3ed101cf091ff7b6cd" category="cell">AWS 服務的確切政府端點取決於您使用的 AWS 區域。端點的後綴是<block ref="3441ddb447d90616fe905a033c8acc75" prefix=" " category="inline-code"></block>和<block ref="9418634abcbc8743a13685b8ac2ee79b" prefix=" " category="inline-code"></block>。<block ref="a5c675e1d96015bd51012d29ec2a093b" category="inline-link-rx"></block><block ref="681746188c4b856bd684247ebb305be7" category="inline-link-rx"></block>如需詳細資訊、請參閱和。</block>
+  <block id="f01dcf4246a1f130eae10e4fb90b9fed" category="cell">受限模式。</block>
+  <block id="dab36868c1a7d7f560e209ac6adf5a57" category="section-title">NetApp AutoSupport 的輸出網際網路存取</block>
+  <block id="12fd9367eea1001986ee9a0f050035dd" category="paragraph">Cloud Volumes ONTAP 節點需要輸出網際網路存取、才能存取各種功能的外部端點。如果這些端點在安全性要求嚴苛的環境中遭到封鎖、 Cloud Volumes ONTAP 就無法正常運作。</block>
+  <block id="6486582264c3651aad9b7bb2237218eb" category="cell">如果無法取得、則會產生影響</block>
+  <block id="7dfb843f052469a3cc66d13554feb0f4" category="cell">\https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net</block>
+  <block id="347be217cfefaa7b87992105cf67635d" category="cell">公共區域</block>
+  <block id="a72d71e82249aa5ef151ce0b35800a79" category="cell">與 Azure 服務的通訊。</block>
+  <block id="f03941b6eac25da119925fc0a459eab0" category="cell">Cloud Volumes ONTAP 無法與 Azure 服務通訊、因此無法在 Azure 上執行特定的 BlueXP  作業。</block>
+  <block id="6d03c18e4e6ecfac89f686c621314d96" category="cell">\https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn</block>
+  <block id="f228f9d91d22049a9acd9986793c0cdd" category="cell">中國地區</block>
+  <block id="49c0c7c0d67b204fb961e40a94b636eb" category="cell">\https://management.microsoftazure.de \https://login.microsoftonline.de \https://blob.core.cloudapi.de \https://core.cloudapi.de</block>
+  <block id="6008f2d5f116c898672557df36f86391" category="cell">德國地區</block>
+  <block id="6e3cecb8c14fa9293d2b497e9f907cbd" category="cell">\https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net</block>
+  <block id="472e9a5d1518a4cd75c33a3972db2768" category="cell">政府區域</block>
+  <block id="b2723147717f1c60a42e0b1cbdb0ad6c" category="cell">\https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud</block>
+  <block id="08c0a2896fee0160c8083277678851f6" category="cell">政府 DoD 地區</block>
+  <block id="98179c4c799c9419b4ba6f502cd22783" category="cell">BlueXP  部署模式</block>
+  <block id="7b8d76983ab84b3978e67a05e145f16e" category="cell">用於從 Azure Key Vault 擷取用戶端秘密金鑰、以便與 S3 儲存區通訊、以處理中繼資料。Cloud Volumes ONTAP 服務會在內部使用此元件。</block>
+  <block id="f235e1a740b92e59100dda0cf4e3d76b" category="cell">\https://www.googleapis.com/compute/v1/projects/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects \https://compute.googleapis.com/compute/v1</block>
+  <block id="342804fdcc569427f0c6f21b0757653d" category="cell">Google Cloud （商業用途）。</block>
+  <block id="bec523fb694fd6fe80736494c1a45a30" category="cell">與 Google Cloud 服務的通訊。</block>
+  <block id="958a7d50dde5e697e4e9a16ba64515e6" category="cell">Cloud Volumes ONTAP 無法與 Google Cloud 服務通訊、以在 Google Cloud 上執行特定的 BlueXP  作業。</block>
+  <block id="12acb6948c0c5fe54c5651d99ff9fd04" category="list-text">移至<block ref="5003136445bb4fa028e23c93c86053e6" category="inline-link-rx"></block>、然後在「下載」區段下載所需的軟體版本。</block>
+  <block id="c3288ce29225fc4244fa01d5aef04aa3" category="paragraph">ARP 功能可與 BYOL 和市場訂閱搭配使用、適用於節點型和容量型授權、無需額外付費。請聯絡您的 NetApp 銷售代表、將 ARP 新增至您目前的授權。</block>
+  <block id="5ee4faea784afb4b7750a3c91c073449" category="admonition">如果空間不足、 Cloud Volumes ONTAP 就無法移動資料、您可能會遇到效能降低的問題。任何變更都應謹慎進行。如果您不確定、請聯絡 NetApp 支援部門以取得指引。</block>
+  <block id="becb0288ca83df315765f9f31eb5847f" category="paragraph">Cloud Volumes ONTAP 必須向 NetApp 支援部門註冊、才能使用本頁所述的任何方法來升級軟體。這適用於 PAYGO 和 BYOL 。您需要<block ref="f7029dacbf10b8aa72bca74845a64729" category="inline-link-macro-rx"></block>、而 BYOL 系統則預設為註冊。</block>
 </blocks>
