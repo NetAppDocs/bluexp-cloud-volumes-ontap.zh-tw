@@ -77,9 +77,9 @@ Edge Cache 容量型授權套件將不再適用於未來部署的 Cloud Volumes 
 
 
 
-=== Azure 上 Flash Cache 支援的最低 ONTAP 版本
+=== Azure 上 Flash Cache 的最低版本支援
 
-在 Azure 上設定 Flash Cache 所需的最低 ONTAP 版本為 9.13.1 GA 。您只能使用 ONTAP 9 。 13.1 GA 和更新版本、在適用於 Azure 的 Cloud Volumes ONTAP 系統上部署 Flash Cache 。
+在 Azure 上設定 Flash Cache 所需的最低 Cloud Volumes ONTAP 版本為 9.13.1 GA 。您只能使用 ONTAP 9 。 13.1 GA 和更新版本、在適用於 Azure 的 Cloud Volumes ONTAP 系統上部署 Flash Cache 。
 
 如需支援的組態、請參閱 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Azure支援的組態"^]。
 
