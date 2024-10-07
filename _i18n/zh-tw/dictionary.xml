@@ -284,7 +284,6 @@
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
   <block id="e2d4a517cbcae1c0966d5e478d743531" category="list-text">WORM儲存在Cloud Volumes ONTAP 「受信任的儲存管理員」模式下運作。儘管WORM檔案受到保護、不會遭到竄改或修改、但即使這些磁碟區包含未過期的WORM資料、叢集管理員仍可刪除這些磁碟區。</block>
   <block id="6d0cc0f6b100bdce8cb06276811faff9" category="list-text">除了值得信賴的儲存管理員模式之外Cloud Volumes ONTAP 、在「值得信賴的雲端管理員」模式下、WORM儲存設備也會以隱含方式運作。雲端管理員可以直接從雲端供應商移除或編輯雲端儲存設備、在WORM資料到期日前刪除。</block>
-  <block id="f5c4745b8a5809c2aa248d1297288719" category="summary">在雲端環境發生故障時、提供企業級的可靠性和持續運作。 Cloud Volumes ONTAP在 Azure 中、儲存設備會在兩個節點之間共享。</block>
   <block id="ca010532511b0575d0c11648404720a6" category="doc">Azure 中的高可用度配對</block>
   <block id="39579c446d8c5e21ff1d2b6c3e65c086" category="section-title">HA 元件</block>
   <block id="957e0d287584ed2cb6cff5c8c76e1be1" category="list-text">Azure 標準負載平衡器</block>
@@ -757,7 +756,6 @@
   <block id="cb40226a2bb7df8b2fb910c64cdaa306" category="list-text"><block ref="cb40226a2bb7df8b2fb910c64cdaa306" category="inline-link-macro-rx"></block></block>
   <block id="fa6508c512d74f7de26a21390af6951b" category="inline-link-macro">AWS 的網路需求 Cloud Volumes ONTAP</block>
   <block id="5e41481253f1e5476c9db04d39b740c0" category="list-text"><block ref="5e41481253f1e5476c9db04d39b740c0" category="inline-link-macro-rx"></block></block>
-  <block id="521c31e5e6d2868178e36a845afac351" category="summary">支援高可用度（ HA ）組態、可提供不中斷營運及容錯功能。 Cloud Volumes ONTAP在 AWS 中、資料會在兩個節點之間同步鏡射。</block>
   <block id="828fb65f829775430308146b1ce7cd2e" category="paragraph">在 AWS 中 Cloud Volumes ONTAP 、不含下列元件：</block>
   <block id="481cd89d21864bf4d528a439dfb59421" category="list-text">兩 Cloud Volumes ONTAP 個彼此同步鏡射資料的鏡射節點。</block>
   <block id="698f8a0a0a3a85268f0cd5c4cea8ba28" category="list-text">一種中介執行個體、可在節點之間提供通訊通道、以協助儲存接管和恢復程序。</block>
@@ -1425,7 +1423,6 @@
   <block id="9f4fc08ee817c29b22638b7544f0a27a" category="list-text">按一下「 * 儲存設備 &gt; 集合體與磁碟 &gt; Aggregate * 」。</block>
   <block id="c8a8f302f21fc7d1accf5a0eb3025496" category="list-text">選取 Aggregate 、然後按一下 * 更多動作 &gt; 狀態 &gt; 線上 * 。</block>
   <block id="3a3843b2672bd389702bef2d50b13ac2" category="section-title">升級Cloud Volumes ONTAP</block>
-  <block id="31d167cba5cdd422c65657c793b962dc" category="inline-image-macro">螢幕擷取畫面：顯示選取工作環境後、在「畫版」頁面中顯示的「可用新版本」通知。</block>
   <block id="1e565fae8cb8375a73df9abf2e99667a" category="paragraph">您可以從此通知開始升級程序、從 S3 儲存區取得軟體映像、安裝映像、然後重新啟動系統、藉此自動化程序。</block>
   <block id="d51a07decbe601cbb24e543eb1a87686" category="list-text">選取工作環境。</block>
   <block id="9a5aec1f134672fe587fc8acffcdf87f" category="paragraph">如果您暫停 SnapMirror 傳輸、請使用 System Manager 繼續傳輸。</block>
@@ -2411,9 +2408,7 @@
   <block id="85ec9558f558eed2eff28acdf93d0e5d" category="paragraph">您可以使用NetApp加密解決方案搭配雲端供應商提供的原生加密、以加密Hypervisor層級的資料。這樣做會提供雙重加密、這可能是非常敏感的資料所需要的。存取加密資料時、加密資料會兩次未加密、一次是 Hypervisor 層級（使用雲端供應商提供的金鑰）、然後再次使用 NetApp 加密解決方案（使用外部金鑰管理程式的金鑰）。</block>
   <block id="154811f59111df605f6aebc9999a1135" category="paragraph">外部金鑰管理程式支援NVE和NAE。</block>
   <block id="f6ff5ec319049af5e46c8b306858252c" category="doc">在Cloud Volumes ONTAP Azure中覆寫CIFS鎖、以利執行不需使用的功能</block>
-  <block id="d7f3b0a003c7b0fa058047d5df76abae" category="summary">支援不中斷營運和容錯功能的高可用度組態。 Cloud Volumes ONTAP在Google Cloud中、資料會在兩個節點之間同步鏡射。</block>
   <block id="d17c4281542937487475a76b3afea508" category="doc">Google Cloud的高可用度配對</block>
-  <block id="36b2e0baf475c546a7d804d50bd41be4" category="paragraph">支援高可用度（ HA ）組態、可提供不中斷營運及容錯功能。 Cloud Volumes ONTAP在Google Cloud中、資料會在兩個節點之間同步鏡射。</block>
   <block id="f406c9d6eeead7db4c0d7c4436e4365f" category="paragraph">Google Cloud的NetApp HA組態包括下列元件：Cloud Volumes ONTAP</block>
   <block id="3844834e9306a66948e49d6149c5a299" category="section-title">Google Cloud中的資料分層</block>
   <block id="f6535844f45781691afa19e3fe67a627" category="paragraph">當您在Google Cloud中啟用資料分層時、Cloud Volumes ONTAP VMware會使用持續性磁碟做為熱資料的效能層、並使用Google Cloud Storage儲存庫做為非作用中資料的容量層。</block>
@@ -2854,19 +2849,14 @@
   <block id="2bce87c6b4b3176bac40c2e0439a5737" category="paragraph">「安全性GroupId」欄位應指定您在VPC擁有者帳戶中建立的安全性群組（請參閱上述步驟2）。</block>
   <block id="b11fdc24b5ec8e29c24abb5b80715fc3" category="list-text">「haParam」物件中的「assugerme勞力Arn」</block>
   <block id="d02c51c501566fb6b3f4693ca83b01ea" category="paragraph">「assume勞力arn」欄位應包含您在VPC擁有者帳戶中建立的IAM角色ARN（請參閱上述步驟3）。</block>
-  <block id="f4cf4636284848695d07f7eb4c75e531" category="summary">Microsoft Azure的高可用度模式應可減少非計畫性容錯移轉時間、並啟用NFSv4 for Cloud Volumes ONTAP 功能。</block>
-  <block id="e50998a44626779ff3f707014e804bb6" category="doc">在Azure中啟用高可用度模式</block>
-  <block id="8c3a857138568ac83d0c9e6b5e13c75e" category="paragraph">從發行版《S21》開始Cloud Volumes ONTAP 、我們縮短Cloud Volumes ONTAP 了在Microsoft Azure上執行的《21個HA配對》的非計畫性容錯移轉時間、並增加了對NFSv4的支援。若要讓Cloud Volumes ONTAP 這些增強功能適用於整個過程、您必須啟用Azure訂閱的高可用度功能。</block>
   <block id="4b86a9bfe35da8d5b3e1175b8664656d" category="list-text">高可用度Cloud Volumes ONTAP 的不存在任何問題。此Azure功能可搭配ONTAP 使用、以減少因非計畫性容錯移轉事件而導致NFS傳輸協定的應用程式停機時間。</block>
   <block id="74c86f2714a033254b4bc8058a066937" category="list-text">啟用此功能對Cloud Volumes ONTAP 功能不中斷運作、不中斷對功能的支援。</block>
   <block id="7dbbac252a198b9c7c543b30ca9455a6" category="list-text">在您的Azure訂閱中啟用此功能、不會對其他VM造成問題。</block>
   <block id="3a3aee537f8eb946ce95b303a0b0cde6" category="paragraph">具備「擁有者」權限的Azure使用者可從Azure CLI啟用此功能。</block>
   <block id="dede8f1d754e5872747fd6fdd219a9da" category="inline-link">從Azure Portal存取Azure Cloud Shell</block>
   <block id="826fb3564b49a63adcbf5c36eec58144" category="list-text"><block ref="826fb3564b49a63adcbf5c36eec58144" category="inline-link-rx"></block></block>
-  <block id="17cecf34f6070ab2eecf2740c05f04fb" category="list-text">註冊高可用度模式功能：</block>
   <block id="f2c8cae480fd1319bed5bc6dad61485e" category="list-text">（可選）驗證功能是否已註冊：</block>
   <block id="3f8d6716204225738a12373603bece28" category="paragraph">Azure CLI應傳回類似下列的結果：</block>
-  <block id="0b6cbfb7fa10ae2ac77ae5d3273ea95e" category="sidebar">啟用高可用度模式</block>
   <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">2022年7月3日</block>
   <block id="11df15715c1f580c53cb06d73a344574" category="paragraph">以下是3.9.20版Connector的變更。</block>
   <block id="986e1f3279b4d74444bd32d4f833afbd" category="section-title">數位錢包</block>
@@ -3371,7 +3361,6 @@
   <block id="148eea3d970f89d59b862b24a3433cf7" category="list-text">將原則附加至IAM角色或IAM使用者、以提供對BlueXP的權限。</block>
   <block id="d0502ee159adf47b0d3fcb82ee37bdf6" category="paragraph">下列原則提供BlueXP從外部AWS帳戶使用CMK所需的權限。請務必修改「資源」區段中的區域和帳戶 ID 。</block>
   <block id="0853921f611064d44675e4508e0fae9e" category="list-text">部署 Cloud Volumes ONTAP 一套系統時、您需要選擇初始磁碟大小。之後、您可以讓BlueXP為您管理系統容量、但如果您想自行建置集合體、請注意下列事項：</block>
-  <block id="1fb183d03128aa46689bbfc76f997a80" category="paragraph">BlueXP可讓您選擇Cloud Volumes ONTAP 適合的寫入速度設定、但Google Cloud中的高可用度（HA）配對除外。在您選擇寫入速度之前、您應該先瞭解一般與高設定之間的差異、以及使用高速寫入速度時的風險與建議。 <block ref="12222f10612c9f092ca31c9e99478649" category="inline-link-macro-rx"></block>。</block>
   <block id="9d9d5448fe99790931a55c5e19b2bf67" category="paragraph">請注意以下關於BlueXP部署給您的Azure元件：</block>
   <block id="156a3c6e72f6f36b96ffa2a53bc4b125" category="list-text">從NetApp 9.7開始Cloud Volumes ONTAP 、BlueXP為HA配對建立的儲存帳戶是通用的v2儲存帳戶。</block>
   <block id="5891037085a8d7a4e0c6d1c1177dc1b1" category="paragraph">當您建立Cloud Volumes ONTAP 一個運作環境時、BlueXP會提示您訂閱AWS Marketplace提供的合約。該訂閱之後會與工作環境建立關聯、以便進行充電。您可以在其他工作環境中使用相同的訂閱。</block>
@@ -3545,7 +3534,6 @@
   <block id="2e40430d8621fa0117dad7bd5bd6ce3d" category="list-text">_Managed disks_、磁碟大小上限為32 TiB</block>
   <block id="ec3e0203f4a9c74546691ee9a62623bb" category="summary">支援iSCSI、NFS、SMB、NVMe-TCP及S3用戶端傳輸協定Cloud Volumes ONTAP 。</block>
   <block id="ad18d9aa7c4c9bdbf86e39bd6dd5b727" category="section-title">NVMe TCP</block>
-  <block id="23c4b82f7249c5985875e4b099d8089b" category="paragraph">如果您使用Cloud Volumes ONTAP 的是版本為9.12.1或更新版本、則支援適用於雲端供應商的NVMe-TCP。BlueXP不提供任何適用於NVMe TCP的管理功能。</block>
   <block id="a441b4ab4a68e599e4c2acbfa61f336e" category="inline-link">設定NVMe的儲存VM</block>
   <block id="607cc86a46864bcd2f3a17351fea91fe" category="section-title">HA單一可用度區域組態與分頁區組態</block>
   <block id="28440751cbe2a16368822f02f298a2f4" category="section-title">HA單一可用度區域組態與共享的託管磁碟</block>
@@ -3658,7 +3646,6 @@
   <block id="0a44bfce0bc775d87f0ac6a57bdba584" category="list-text">視需要啟動一次寫入、多次讀取（WORM）儲存設備。</block>
   <block id="6aeb3713e488b71d0dcbb96914a7951f" category="paragraph">如果啟用Cloud Volumes ONTAP 資料分層功能、無法啟用WORM 9.7版及更低版本。啟用WORM和分層後、將Cloud Volumes ONTAP 會封鎖還原或降級至物件9.8。</block>
   <block id="02675533e5e8f922a01de0dd3f2892ad" category="list-text">如果您啟動WORM儲存設備、請選取保留期間。</block>
-  <block id="94fb201facd8c99956b25af1c56a2562" category="paragraph">當放置群組建立失敗時、可在單一可用度區域（AZ）中容錯並回復AWS高可用度（HA）組態的新部署Cloud Volumes ONTAP 。如有需要、您可以設定放置群組、在建立失敗時略過復原程序、以強制成功完成部署。</block>
   <block id="4b80314a98cf05dbcb3b2c5f33f9e79f" category="paragraph">根據預設、只要放置群組在HA單一可用度區域工作環境的建立程序失敗、部署就會失敗並復原。建立放置群組也會失敗、如果Cloud Volumes ONTAP 既不存在任何節點、也不存在中介執行個體、則會回復。</block>
   <block id="65f98964e7d8889df16715139a88da9d" category="paragraph">只要放置群組建立失敗、您就可以跳過復原程序、並設定app.conf檔案、讓部署繼續進行。繞過復原程序時、部署作業成功完成、系統會產生通知、指出建立放置群組失敗、狀態為「不完整」。</block>
   <block id="8dbf64cf105a5f307a9741aab14c6d90" category="section-title">停用放置群組故障時的復原功能</block>
@@ -3810,7 +3797,6 @@
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023年3月5日</block>
   <block id="eed8585d0b45afc4676b1c89f6f22a9a" category="paragraph">以下是3.9.27版Connector的變更。</block>
   <block id="e2c7f196cec5020e2b840087f6a8e068" category="section-title">Azure支援16 TiB和32 Tib</block>
-  <block id="bfb9ab5387a727da709a7377d950cee0" category="paragraph">目前支援16個TiB和32個TiB磁碟大小、可在Azure的託管磁碟上執行高可用度部署Cloud Volumes ONTAP 。</block>
   <block id="8f9e72f80a7dd402a28a4b46aca286f9" category="inline-link">Azure支援的磁碟大小</block>
   <block id="9bc26ebd17008cdc39569edf382f0b5e" category="paragraph">深入瞭解<block ref="e55b1d7df019ac083c7ffec036e8de25" category="inline-link-rx"></block>。</block>
   <block id="3cc0e97defd245de4dee36cae1e4c485" category="paragraph">多租戶加密金鑰管理（MTEKM）授權現已隨Cloud Volumes ONTAP 附於執行9.12.1 GA或更新版本的全新及現有的支援系統中。</block>
@@ -3843,7 +3829,6 @@
   <block id="b73b2829274aee64ee8dcd0fc7290f49" category="list-text">啟用從目標VPC for NetApp AutoSupport 的傳出網際網路存取功能。</block>
   <block id="f26437251ef23953176712de75dc4d69" category="paragraph">如果您在Cloud Volumes ONTAP 無法存取網際網路的位置部署支援、則不需要執行此步驟。</block>
   <block id="824be8b95270c8a8618f49cb7fb21ae8" category="inline-link">BlueXP使用Google Cloud權限的功能</block>
-  <block id="c8f6e82c7aad23d387dc5633fe484591" category="paragraph">從功能部件支援的版本起、您可以選擇在Volume層級啟用或停用WORM Cloud Volumes ONTAP 。</block>
   <block id="f4b6aa85f64f47d1816ec182949156ef" category="paragraph">您可以在 Cloud Volumes ONTAP 建立新的工作環境時、在一個可靠的系統上啟動 WORM 儲存設備。您從BlueXP建立的每個磁碟區都已啟用WORM。您無法停用個別磁碟區上的WORM儲存設備。</block>
   <block id="39c6a1c30ae1faf01f4bd99a4757f7ae" category="paragraph">如果您停用Azure私有連結、且Connector使用Proxy伺服器、則必須啟用直接API流量。</block>
   <block id="40e86593118ce089551b3691f6bba919" category="inline-link">瞭解如何在Connector上啟用直接API流量</block>
@@ -4004,11 +3989,9 @@
   <block id="6f3d3de9b8245394933ccb5a82580032" category="inline-image-macro">顯示新增 Aggregate 進度的螢幕擷取畫面。</block>
   <block id="6d8395606a42c9b4b508b7083fef071b" category="paragraph"><block ref="6d8395606a42c9b4b508b7083fef071b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="46804cb5ec7cb836d1b3ea87af016b42" category="paragraph"><block ref="46804cb5ec7cb836d1b3ea87af016b42" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b1d9e8a6210003e4a2d3ad9699698b5c" category="paragraph"><block ref="b1d9e8a6210003e4a2d3ad9699698b5c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c0db33b74d957aee90885031cc634b6" category="paragraph">如果有新版本可用、則會在「概觀」索引標籤中顯示通知：</block>
   <block id="9646f8f8111c91fa6c731c727c894c5f" category="inline-image-macro">顯示「立即升級！」的螢幕擷取畫面 「概觀」索引標籤下的連結。</block>
   <block id="96189d65a45e7fa44a02098d1c2994b3" category="paragraph"><block ref="96189d65a45e7fa44a02098d1c2994b3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c8a40603d5d9f8240beba1de505700ab" category="list-text">如果有新版本可用、請按一下 * 立即升級！ *</block>
   <block id="e4e172ed018cf6c10be6941fd7282e6f" category="list-text">在「升級 Cloud Volumes ONTAP 」頁面中、閱讀 EULA 、然後選取 * 我閱讀並核准 EULA * 。</block>
   <block id="f6e8db7e26c18ff77395c70107114b81" category="list-text">按一下*升級*。</block>
   <block id="aac15e5127b7a8b7e9fa2c9cd925e9b5" category="paragraph">BlueXP會啟動軟體升級。軟體更新完成後、您可以在工作環境中執行動作。</block>
@@ -4346,9 +4329,6 @@
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">您必須提供您的NSS帳戶、才能讓BlueXP上傳授權金鑰、並啟用您所購買期間的訂閱。這包括定期續約的自動更新。</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">升級Cloud Volumes ONTAP 更新版的更新版</block>
   <block id="b164b6fd89d2aa03544d045cf180f639" category="admonition">您必須先擁有 NetApp 支援網站 帳戶、才能透過 BlueXP 通知升級 Cloud Volumes ONTAP 。</block>
-  <block id="1284a776b9f3feb49d88b74d4068f85f" category="inline-link">支援的升級路徑清單</block>
-  <block id="08c727e5413b02eb0e2eaebdfa595ec1" category="admonition">「升級 Cloud Volumes ONTAP 」頁面預設會選取最新可用的 Cloud Volumes ONTAP 版本進行升級。如果有舊版 Cloud Volumes ONTAP 、您可以按一下 * 選擇舊版 * 來選擇升級版本。
-請參閱<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></block> 根據您目前的 Cloud Volumes ONTAP 版本、取得適當的升級路徑。</block>
   <block id="40a5b297d7fc7d1cb7f4639309d92351" category="inline-image-macro">「升級 Cloud Volumes ONTAP 版本」頁面的螢幕擷取畫面。</block>
   <block id="94730a34db857a8cffa1610edfc7314d" category="paragraph"><block ref="94730a34db857a8cffa1610edfc7314d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d9b8cca0e5a3840c29a71a4c6f13a917" category="inline-link-macro">深入瞭解 NetApp Keystone</block>
@@ -4383,7 +4363,6 @@
   <block id="0882685275009e45f6167bce4081e668" category="list-text">檢閱並建立存取原則。</block>
   <block id="1f8370f663ec71e8fac7dc386794543c" category="admonition">包括<block ref="d740baa07e4af19d0de1f45650cf4bc0" prefix=" " category="inline-code"></block> 如果您建立此資源以用於儲存帳戶加密、請輸入此欄位。</block>
   <block id="57a3061930625af99195891e9e561fb2" category="cell">9.13.1.12.9.12.9.</block>
-  <block id="99430eacf0d5244d50939eea94bd5962" category="paragraph">以下是幾個範例：</block>
   <block id="1893a0478b381d08866888a1c7f8607a" category="list-text">9.13.0 &gt; 9.13.1P15</block>
   <block id="4ae2d614cc725ba442c80c740c08f75f" category="list-text">9.12.1 &gt; 9.13.1P2</block>
   <block id="a6f0c7a0901d4da8e8ff8a6db3216b38" category="list-text">按 * Proceed* 確認。</block>
@@ -4526,7 +4505,6 @@
   <block id="5f63db6bf0512dc0612ee852c1faf373" category="inline-link-macro">BlueXP Volume 快取</block>
   <block id="28495b8712e93ec4d83d5af5db51d535" category="paragraph">BlueXP 提供 FlexCache 磁碟區的管理功能 <block ref="06867f1eea47d22d6d5c52a51ce61294" category="inline-link-macro-rx"></block> 服務：</block>
   <block id="06156010b52bde259c58b15866491a02" category="paragraph">您也可以使用 ONTAP CLI 或 ONTAP 系統管理員來建立及管理 FlexCache 磁碟區：</block>
-  <block id="6712712f329188ca2226c3cf1d0f925e" category="paragraph">BlueXP 會為所有新的 Cloud Volumes ONTAP 系統產生 FlexCache 授權。授權包含500 GiB使用限制。</block>
   <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023 年 9 月 10 日</block>
   <block id="e749c9d187d1531bb81af1a3c9eb73be" category="section-title">支援 Azure 中的 Lsv3 系列 VM</block>
   <block id="cc2bfd53f6bcbc23893aaa8fab8b1eb2" category="paragraph">從 9.13.1 版開始、 Azure 中的 Cloud Volumes ONTAP 現在支援 L48s_v3 和 L64s_v3 執行個體類型、可在單一節點和高可用度配對部署中、在單一和多個可用性區域中部署共用託管磁碟。這些執行個體類型支援 Flash Cache 。</block>
@@ -5166,7 +5144,6 @@
   <block id="2f3839adaa606a1f97c79876fe7c1c58" category="inline-link-macro">使用 Google 的 Cloud Key Management Service 管理金鑰</block>
   <block id="ee361a3f988700740b3fadeca2bdd1e0" category="paragraph">對於 Google Cloud 、這是 Google Cloud Key Management Service 。如需相關資訊、請 <block ref="9a0de177eaebd309cc4f26a09b5d5013" category="inline-link-macro-rx"></block>參閱。</block>
   <block id="e29e14dbb5385db3b2de688e4fbe1a6b" category="list-text">* 金鑰管理服務 * ：在建立 FlexCache Volume 之前、請確認 Cloud Volumes ONTAP 系統上的金鑰管理服務已正確設定。此組態對於 FlexCache Volume 解密來源 Volume 的資料至關重要。</block>
-  <block id="5d6ac79246155b5f33cacd0077c2172a" category="list-text">* 授權 * ：確認有效的 FlexCache 授權可在 Cloud Volumes ONTAP 系統上取得並啟動。BlueXP 會為所有新 Cloud Volumes ONTAP 系統產生 FlexCache 授權、其使用量上限為 500 GiB 。</block>
   <block id="0f40216c1ad47c12e8ccc087d555570f" category="inline-link">發行說明ONTAP</block>
   <block id="543cc078f66d581004934cfaa8988453" category="list-text">* ONTAP 版本 * ：確保 Cloud Volumes ONTAP 系統的 ONTAP 版本支援具有加密磁碟區的 FlexCache 。如需詳細資訊、請參閱最新版<block ref="9ec4657ceea5a1d054b2b0fa2482a129" category="inline-link-rx"></block> 或相容性對照表。</block>
   <block id="38d57b85102d8663bf30488289425e48" category="list-text">* 網路組態 * ：確保網路組態允許原始磁碟區與 FlexCache 磁碟區之間的無縫通訊。這包括在雲端環境中適當的路由和 DNS 解析。</block>
@@ -5401,7 +5378,6 @@
   <block id="23061a7b150b62a269bdf5346feaa7d1" category="list-text"><block ref="1f4fa402fb905ee626761b74cd1a4c87" prefix="" category="inline-code"></block></block>
   <block id="58a7b8379178f95002ceeceb82feb029" category="list-text"><block ref="0d409a8ed03d0fa3e161460f3f21e0b4" prefix="" category="inline-code"></block></block>
   <block id="3c1cec80e048088b9c829a18b7d5111b" category="list-text"><block ref="8e6e205a8b8f4f22cf306f9b85bd6c2c" prefix="" category="inline-code"></block></block>
-  <block id="7fd6d2c43ef162414a32b6569dfcc99a" category="paragraph">WORM （一次寫入多次讀取）和 ARP （自動勒索軟體保護）的內建資料保護與安全功能、將免費提供 Cloud Volumes ONTAP 授權。新的定價模式同時適用於 AWS 、 Azure 和 Google Cloud 的全新和現有 BYOL 和 PAYGO/ 市場訂閱。容量型和節點型授權都包含 ARP 和 WORM 、適用於所有組態、包括單一節點和高可用度（ HA ）配對、不需額外付費。</block>
   <block id="9dab6b96899670128353b1e92c2b8997" category="paragraph">簡化的定價可為您帶來以下好處：</block>
   <block id="000f6c26eec43af35931bc5e6fbf9f49" category="list-text">目前包含 WORM 和 ARP 的帳戶將不再需要支付這些功能的費用。接下來、您的帳單將只會收取容量使用費、就像此變更之前一樣。WORM 和 ARP 將不再包含在您未來的帳單中。</block>
   <block id="3817bf50b7761fc5155c59e4a334d37a" category="list-text">如果您目前的帳戶不包含這些功能、您現在可以選擇不需額外成本的 WORM 和 ARP 。</block>
@@ -5525,4 +5501,33 @@
   <block id="0ca08a23718c0a91743dd6c0146ca353" category="paragraph">若要為 Cloud Volumes ONTAP 啟用下列關鍵工作流程、必須將 NetApp 支援網站認證與您的 BlueXP  組織建立關聯：</block>
   <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">將 NSS 認證與您的 BlueXP  組織建立關聯、不同於與 BlueXP  使用者登入相關聯的 NSS 帳戶。</block>
   <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">這些 NSS 認證會與您的特定 BlueXP  組織 ID 相關聯。屬於 BlueXP  組織的使用者可從 * 支援 &gt; NSS 管理 * 存取這些認證。</block>
+  <block id="6c0a4a49afd7a59a236f66bcd2c36132" category="paragraph">從 ONTAP 9.12.1 版開始、 NVMe TCP 支援雲端供應商。BlueXP不提供任何適用於NVMe TCP的管理功能。</block>
+  <block id="c735549ebe0b83aaa44f1cb8cf914b26" category="summary">Cloud Volumes ONTAP 高可用度（ HA ）配對可在雲端環境發生故障時、提供企業級可靠性和持續營運。在 Azure 中、儲存設備會在兩個節點之間共享。</block>
+  <block id="c60675d0dad7e91669b8a7d700995f3a" category="summary">Cloud Volumes ONTAP 高可用度組態可提供不中斷營運和容錯功能。在Google Cloud中、資料會在兩個節點之間同步鏡射。</block>
+  <block id="a24987227442914c4ad6acf3f96fecc8" category="paragraph">Cloud Volumes ONTAP 高可用度（ HA ）組態可提供不中斷營運和容錯功能。在Google Cloud中、資料會在兩個節點之間同步鏡射。</block>
+  <block id="9d009c8b1de318075d9a1a7ebbea12ba" category="summary">Cloud Volumes ONTAP 高可用度（ HA ）組態可提供不中斷營運和容錯功能。在 AWS 中、資料會在兩個節點之間同步鏡射。</block>
+  <block id="818463a565efd170c3b438984db3eb77" category="paragraph">HA 組態可維持資料的高可用度、如下所示：</block>
+  <block id="8a0f22007e4d3655ce31d0f694736801" category="paragraph">從 Cloud Volumes ONTAP 9.10.1 開始、您可以選擇在 Volume 層級啟用或停用 WORM 。</block>
+  <block id="cd0f7e99403d8fa2d51f79da8490c871" category="list-text">* 授權 * ：確認有效的 FlexCache 授權可在 Cloud Volumes ONTAP 系統上取得並啟動。</block>
+  <block id="d2a65c4b3d7d612fe9fcff1cd53a7468" category="summary">應啟用 Microsoft Azure 的高可用度模式、以縮短非計畫性容錯移轉時間、並啟用 Cloud Volumes ONTAP 的 NFSv4 支援。</block>
+  <block id="5bc18ee7996a6b2f47f52d9c0d64c84c" category="doc">在 Azure 中啟用高可用度模式</block>
+  <block id="f9d5342a5ffe6f23e9e7c99df8a42301" category="paragraph">從發行版《S21》開始Cloud Volumes ONTAP 、我們縮短Cloud Volumes ONTAP 了在Microsoft Azure上執行的《21個HA配對》的非計畫性容錯移轉時間、並增加了對NFSv4的支援。為了讓 Cloud Volumes ONTAP 能夠使用這些增強功能、您必須在 Azure 訂閱中啟用高可用度功能。</block>
+  <block id="3cad9b9a9f4d8a66f7f9dabc18c3c350" category="list-text">註冊高可用度模式功能：</block>
+  <block id="55b69e64ede595e0a10eefb4d9199033" category="paragraph">Cloud Volumes ONTAP 會在佈局群組建立失敗時、在單一可用性區域（ AZ ）中容錯並回復 AWS 高可用度（ HA ）組態的新部署。如有需要、您可以設定放置群組、在建立失敗時略過復原程序、以強制成功完成部署。</block>
+  <block id="43c795154e3b7bf74f7abd49f2e26e1a" category="paragraph">BlueXP  可讓您選擇 Cloud Volumes ONTAP 的寫入速度設定、但 Google Cloud 中的高可用度（ HA ）配對除外。在您選擇寫入速度之前、您應該先瞭解一般與高設定之間的差異、以及使用高速寫入速度時的風險與建議。<block ref="12222f10612c9f092ca31c9e99478649" category="inline-link-macro-rx"></block>。</block>
+  <block id="473579de7dd820e9afa2d1deba8066a3" category="paragraph">以下是幾個範例：</block>
+  <block id="f7cd19fdb1155c901cb27faf15e77439" category="list-text">如果您想要升級已安裝的 Cloud Volumes ONTAP 版本、請按一下 * 立即升級！ *依預設、您會看到最新的相容版本以進行升級。</block>
+  <block id="9e86b6254cc29df18fac17b280fac325" category="paragraph">如果您想要升級到其他版本、請按一下 * 選取其他版本 * 。您會看到列出的最新 Cloud Volumes ONTAP 版本、也與系統上安裝的版本相容。例如、系統上安裝的版本為 9.12.1P3 、且提供下列相容版本：</block>
+  <block id="d4814bca9862afd417c1a260eff25dcd" category="list-text">9.12.1P4 至 9.12.1P14</block>
+  <block id="48237032fa691734071e589539cdca15" category="list-text">9.13.1 和 9.13.1P1 您會看到 9.13.1P1 為升級的預設版本、 9.12.1P13 、 9.13.1P14 、 9.13.1 和 9.13.1P1 為其他可用版本。</block>
+  <block id="407a24a0e5b59702955c0dcc294f7527" category="list-text">您也可以按一下 * 所有版本 * 來輸入您要升級的另一個版本（例如、安裝版本的下一個修補程式）。如需目前 Cloud Volumes ONTAP 版本的相容升級路徑、請參閱<block ref="edc516954278e6b04bf6c1ef0d737956" category="inline-link-macro-rx"></block>。</block>
+  <block id="9e4cdb05c97e8577ba53a001bce78c3b" category="inline-image-macro">螢幕擷取畫面會顯示可供升級的可用版本。</block>
+  <block id="b452606099f6a8b77fe9005a225c9276" category="list-text">按一下 * 儲存 * 、然後按一下 * 套用 * 。<block ref="6b667d1b749c4cd029bb5e750df2c060" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e5182edc3707e8e354c40ab7fa819f39" category="section-title">2024 年 10 月 7 日</block>
+  <block id="1b658f77da3dfa84be0559359889c6d1" category="section-title">在選擇升級版本時、增強使用者體驗</block>
+  <block id="76723ae6fdfacae29242fdb7085394b0" category="paragraph">從本版本開始、當您嘗試使用 BlueXP  通知來升級 Cloud Volumes ONTAP 時、將會收到使用預設、最新及相容版本的指引。此外、您現在也可以選取與 Cloud Volumes ONTAP 執行個體相容的最新修補程式或主要版本、或手動輸入要升級的版本。</block>
+  <block id="c2f5c6d8ccd2cc8bdc92db0ad0c79342" category="paragraph"><block ref="c2f5c6d8ccd2cc8bdc92db0ad0c79342" category="inline-link-rx"></block></block>
+  <block id="c5686848892b4de33534dcc294c33fff" category="paragraph">WORM （一次寫入多次讀取）和 ARP （自動勒索軟體保護）的內建資料保護與安全功能、將免費提供 Cloud Volumes ONTAP 授權。新的定價模式同時適用於 AWS 、 Azure 和 Google Cloud 的全新和現有 BYOL 和 PAYGO/ 市場訂閱。容量型和節點型授權都包含 ARP 和 WORM 、適用於所有組態、包括單一節點和高可用度（ HA ）配對、不需額外付費。</block>
+  <block id="9da5d2f7e476f47c6a26d4ededfa4837" category="paragraph">Cloud Volumes ONTAP 現在支援 16 TiB 和 32 TiB 磁碟大小、可在 Azure 的託管磁碟上執行高可用度部署。</block>
+  <block id="c4603a2a1f5be3fcdbe4e7ce09178104" category="sidebar">啟用高可用度模式</block>
 </blocks>

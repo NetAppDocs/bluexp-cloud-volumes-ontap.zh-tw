@@ -20,6 +20,18 @@ summary: 瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。
 
 
 
+== 2024 年 10 月 7 日
+
+
+
+=== 在選擇升級版本時、增強使用者體驗
+
+從本版本開始、當您嘗試使用 BlueXP  通知來升級 Cloud Volumes ONTAP 時、將會收到使用預設、最新及相容版本的指引。此外、您現在也可以選取與 Cloud Volumes ONTAP 執行個體相容的最新修補程式或主要版本、或手動輸入要升級的版本。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["升級Cloud Volumes ONTAP 版軟體"^]
+
+
+
 == 2024 年 9 月 9 日
 
 
@@ -617,7 +629,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-9130-relnotes["深入瞭Cloud 
 
 === Azure支援16 TiB和32 Tib
 
-目前支援16個TiB和32個TiB磁碟大小、可在Azure的託管磁碟上執行高可用度部署Cloud Volumes ONTAP 。
+Cloud Volumes ONTAP 現在支援 16 TiB 和 32 TiB 磁碟大小、可在 Azure 的託管磁碟上執行高可用度部署。
 
 深入瞭解 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#supported-disk-sizes["Azure支援的磁碟大小"^]。
 

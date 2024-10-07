@@ -202,7 +202,7 @@ TIP: 連接器也需要系統磁碟。 https://docs.netapp.com/us-en/bluexp-setu
 
 == 選擇寫入速度
 
-BlueXP可讓您選擇Cloud Volumes ONTAP 適合的寫入速度設定、但Google Cloud中的高可用度（HA）配對除外。在您選擇寫入速度之前、您應該先瞭解一般與高設定之間的差異、以及使用高速寫入速度時的風險與建議。 link:concept-write-speed.html["深入瞭解寫入速度"]。
+BlueXP  可讓您選擇 Cloud Volumes ONTAP 的寫入速度設定、但 Google Cloud 中的高可用度（ HA ）配對除外。在您選擇寫入速度之前、您應該先瞭解一般與高設定之間的差異、以及使用高速寫入速度時的風險與建議。link:concept-write-speed.html["深入瞭解寫入速度"]。
 
 
 

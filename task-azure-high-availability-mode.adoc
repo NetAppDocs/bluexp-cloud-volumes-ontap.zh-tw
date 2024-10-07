@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-azure-high-availability-mode.html 
 keywords: high availability mode, EnableHighAvailabilityMode, action required, nfsv4 
-summary: Microsoft Azure的高可用度模式應可減少非計畫性容錯移轉時間、並啟用NFSv4 for Cloud Volumes ONTAP 功能。 
+summary: 應啟用 Microsoft Azure 的高可用度模式、以縮短非計畫性容錯移轉時間、並啟用 Cloud Volumes ONTAP 的 NFSv4 支援。 
 ---
-= 在Azure中啟用高可用度模式
+= 在 Azure 中啟用高可用度模式
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: Microsoft Azure的高可用度模式應可減少非計畫性容錯移�
 
 
 [role="lead"]
-Microsoft Azure的高可用度模式應可減少非計畫性容錯移轉時間、並啟用NFSv4 for Cloud Volumes ONTAP 功能。
+應啟用 Microsoft Azure 的高可用度模式、以縮短非計畫性容錯移轉時間、並啟用 Cloud Volumes ONTAP 的 NFSv4 支援。
 
-從發行版《S21》開始Cloud Volumes ONTAP 、我們縮短Cloud Volumes ONTAP 了在Microsoft Azure上執行的《21個HA配對》的非計畫性容錯移轉時間、並增加了對NFSv4的支援。若要讓Cloud Volumes ONTAP 這些增強功能適用於整個過程、您必須啟用Azure訂閱的高可用度功能。
+從發行版《S21》開始Cloud Volumes ONTAP 、我們縮短Cloud Volumes ONTAP 了在Microsoft Azure上執行的《21個HA配對》的非計畫性容錯移轉時間、並增加了對NFSv4的支援。為了讓 Cloud Volumes ONTAP 能夠使用這些增強功能、您必須在 Azure 訂閱中啟用高可用度功能。
 
 當您需要在Azure訂閱中啟用此功能時、BlueXP會在必要行動訊息中提示您提供這些詳細資料。
 

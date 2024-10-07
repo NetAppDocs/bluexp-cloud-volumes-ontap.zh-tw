@@ -14,7 +14,7 @@ summary: 使用Azure Private Link連線至相關儲存帳戶。Cloud Volumes ONT
 
 
 [role="lead"]
-當放置群組建立失敗時、可在單一可用度區域（AZ）中容錯並回復AWS高可用度（HA）組態的新部署Cloud Volumes ONTAP 。如有需要、您可以設定放置群組、在建立失敗時略過復原程序、以強制成功完成部署。
+Cloud Volumes ONTAP 會在佈局群組建立失敗時、在單一可用性區域（ AZ ）中容錯並回復 AWS 高可用度（ HA ）組態的新部署。如有需要、您可以設定放置群組、在建立失敗時略過復原程序、以強制成功完成部署。
 
 
 

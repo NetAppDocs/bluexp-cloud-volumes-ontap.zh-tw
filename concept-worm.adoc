@@ -34,7 +34,7 @@ summary: 您可以在 Cloud Volumes ONTAP 一個還原系統上啟動一次寫�
 
 === 9.10.1版及更新版本
 
-從功能部件支援的版本起、您可以選擇在Volume層級啟用或停用WORM Cloud Volumes ONTAP 。
+從 Cloud Volumes ONTAP 9.10.1 開始、您可以選擇在 Volume 層級啟用或停用 WORM 。
 
 當您建立Cloud Volumes ONTAP 全新的支援環境時、系統會提示您啟用或停用WORM儲存設備：
 

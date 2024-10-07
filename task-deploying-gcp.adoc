@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploying-gcp.html 
-keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create,  BYOL, license key, serial number, location, license, preconfigured packages, programmatic deployments, disk size, write speed, access control, volume protection, usage profile, register, CIFS share, quota, qtree, HA, high availability, google cloud ha, ha in google cloud, ha pair, cloud backup, cloud tiering 
+keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create,  BYOL, license key, serial number, location, license, preconfigured packages, programmatic deployments, disk size, write speed, access control, volume protection, usage profile, register, CIFS share, quota, qtree, HA, high-availability, google cloud ha, ha in google cloud, ha pair, cloud backup, cloud tiering 
 summary: 您可以在 Cloud Volumes ONTAP 單一系統組態中或在 Google Cloud Platform 中以 HA 配對的形式啟動功能。 
 ---
 = 在Cloud Volumes ONTAP Google Cloud上啟動
