@@ -25,7 +25,7 @@ summary: 您可以在 Cloud Volumes ONTAP 單一系統組態中或 AWS 中以 HA
 [[licensing]]
 * 已啟動並執行的連接器。
 +
-** 您應該擁有 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["與工作區相關的連接器"^]。
+** 您應該擁有 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["與專案或工作區相關聯的連接器"^] .
 ** https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["您應該隨時準備好讓 Connector 保持運作"^]。
 
 

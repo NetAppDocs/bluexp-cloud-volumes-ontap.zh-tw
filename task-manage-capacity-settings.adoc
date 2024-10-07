@@ -19,7 +19,7 @@ summary: 新增磁碟、檢視有關集合體的資訊、以及刪除這些磁�
 這些設定會影響Cloud Volumes ONTAP 由Connector管理的所有功能不全系統。如果您有另一個Connector、則可以以不同的方式設定。
 
 .必要權限
-修改 Cloud Volumes ONTAP 設定需要帳戶管理權限。
+需要 BlueXP  組織或帳戶管理員 Privileges 才能修改 Cloud Volumes ONTAP 設定。
 
 .步驟
 . 在 BlueXP 主控台的右上角、按一下「設定」圖示、然後選取 * 「 Cloud Volumes ONTAP 設定 * 」。

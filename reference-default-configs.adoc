@@ -117,7 +117,7 @@ NOTE: 根據Cloud Volumes ONTAP 雲端供應商的需求、根據預設、LIF容
 1 、 000 %
 
 
-NOTE: 帳戶管理員可從「設定」頁面修改此值。
+NOTE: BlueXP  組織或帳戶管理員可從「設定」頁面修改此值。
 
 
 

@@ -52,7 +52,7 @@ Digital Advisor 使用者介面已完全整合至 BlueXP 。
 +
 image:screenshot_aiq_digital_advisor.png["BlueXP 中數位顧問使用者介面的螢幕擷取畫面。"]
 
-* 如果您尚未在 BlueXP  中註冊 NSS 帳戶、請立即註冊 NSS 帳戶、然後就會出現數位顧問 UI 。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["管理與BlueXP帳戶相關聯的NSS認證"]如需相關指示、請參閱。
+* 如果您尚未在 BlueXP  中註冊 NSS 帳戶、請立即註冊 NSS 帳戶、然後就會出現數位顧問 UI 。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["管理與 BlueXP  組織或帳戶相關的 NSS 認證"]如需相關指示、請參閱。
 
 
 

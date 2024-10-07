@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-overriding-cifs-locks.html 
 keywords: CIFS locks, azure maintenance, maintenance events, cifs sessions, storage failover, storage giveback, giveback 
-summary: 帳戶管理員可在BlueXP中啟用一項設定、以防止Cloud Volumes ONTAP 在Azure維護活動期間發生有關還原儲存設備的問題。啟用此設定時 Cloud Volumes ONTAP 、不支援 CIFS 會鎖定並重設作用中的 CIFS 工作階段。 
+summary: BlueXP  組織或帳戶管理員可在 BlueXP  中啟用一項設定、以防止 Cloud Volumes ONTAP 儲存設備在 Azure 維護事件期間恢復故障。啟用此設定時 Cloud Volumes ONTAP 、不支援 CIFS 會鎖定並重設作用中的 CIFS 工作階段。 
 ---
 = 在Cloud Volumes ONTAP Azure中覆寫CIFS鎖、以利執行不需使用的功能
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 帳戶管理員可在BlueXP中啟用一項設定、以防止Cloud Volum
 
 
 [role="lead"]
-帳戶管理員可在BlueXP中啟用一項設定、以防止Cloud Volumes ONTAP 在Azure維護活動期間發生有關還原儲存設備的問題。啟用此設定時 Cloud Volumes ONTAP 、不支援 CIFS 會鎖定並重設作用中的 CIFS 工作階段。
+BlueXP  組織或帳戶管理員可在 BlueXP  中啟用一項設定、以防止 Cloud Volumes ONTAP 儲存設備在 Azure 維護事件期間恢復故障。啟用此設定時 Cloud Volumes ONTAP 、不支援 CIFS 會鎖定並重設作用中的 CIFS 工作階段。
 
 .關於這項工作
 Microsoft Azure 會排程在其虛擬機器上定期進行維護活動。當某個維護事件發生在Cloud Volumes ONTAP 一個不支援的HA配對上時、HA配對會啟動儲存設備接管。如果在此維護事件期間有作用中的CIFS工作階段、則CIFS檔案上的鎖定功能可能會妨礙儲存設備恢復。

@@ -22,7 +22,7 @@ summary: 您可以Cloud Volumes ONTAP 在Cloud Volumes ONTAP BlueXP中建立一�
 [[licensing]]
 * 已啟動並執行的連接器。
 +
-** 您應該擁有 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["與工作區相關的連接器"^]。
+** 您應該擁有 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["與專案或工作區相關聯的連接器"^] .
 ** https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["您應該隨時準備好讓 Connector 保持運作"^]。
 
 

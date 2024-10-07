@@ -82,11 +82,8 @@ System Manager不支援集合管理（包括本機層級和雲端層）。您必
 
 .步驟
 . 從左側導覽功能表中、選取*儲存設備> Canvas*。
-. 在「畫版」頁面上、按兩下Cloud Volumes ONTAP 某個系統的名稱。
-. 在右上角、按一下*切換至進階檢視*。
-+
-image:screenshot_advanced_view.png["顯示「切換至進階檢視」選項的「不工作環境」快照Cloud Volumes ONTAP 。"]
-
+. 在 Canvas 頁面上、選取 Cloud Volumes ONTAP 系統。
+. 從右側面板的 * 服務 * 下、找到 * 系統管理員 * 、然後選取 * 開啟 * 。
 . 如果出現確認訊息、請仔細閱讀、然後按一下*關閉*。
 . 使用System Manager來管理Cloud Volumes ONTAP 功能。
 . 如有需要、請按一下*切換至標準檢視*、透過BlueXP返回標準管理。

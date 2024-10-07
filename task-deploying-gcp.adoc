@@ -25,7 +25,7 @@ summary: 您可以在 Cloud Volumes ONTAP 單一系統組態中或在 Google Clo
 [[licensing]]
 * 已啟動並執行的連接器。
 +
-** 您應該擁有 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["與工作區相關的連接器"^]。
+** 您應該擁有 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["與專案或工作區相關聯的連接器"^] .
 ** https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["您應該隨時準備好讓 Connector 保持運作"^]。
 ** 與 Connector 相關的服務帳戶 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["應具備所需的權限"^]
 
