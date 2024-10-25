@@ -811,8 +811,6 @@
   <block id="8efc36afc2e7202a9c9bda00b8e8a75d" category="section-title">授權總覽</block>
   <block id="f008ecd5469e24eee31eb4e2e4a1e23f" category="paragraph">下列授權選項適用於新客戶。</block>
   <block id="27d0a1d0fc95280fbaf78c65ff6b37fb" category="list-text">Essentials套件</block>
-  <block id="57050f826fe75d25457ab448568ae53d" category="list-text">依容量付費Cloud Volumes ONTAP 、以供各種不同組態使用。</block>
-  <block id="a7c9ae4b871102b7553565c7089cf839" category="list-text">以隨成長付費訂閱為基礎的服務、為HA配對提供無縫的混合雲體驗。</block>
   <block id="0e1a6eb7eed81777ed9d0610be51df3b" category="paragraph">先前的個別節點授權模式仍適用於已購買授權或正在訂閱市場的現有客戶。</block>
   <block id="08598187312665a33ac3ebb5fc060c00" category="paragraph">以下各節提供這些選項的詳細資訊。</block>
   <block id="d7c357dcc3b8476a2eeba19c87ec383d" category="paragraph">NetApp Cloud Volumes ONTAP 免費提供所有的支援功能（仍需支付雲端供應商費用）。</block>
@@ -4936,10 +4934,8 @@
   <block id="9915334dccd6082757486cc7db7c4599" category="section-title">單一可用性區域</block>
   <block id="4214b1507155cb0c63890d5526690625" category="paragraph">在單一可用性區域（ AZ ）中部署 HA 組態、可確保執行 Cloud Volumes ONTAP 節點的執行個體發生故障時、資料的高可用度。所有資料均可從 VPC 外部原生存取。</block>
   <block id="e0b08acf0828bf4594a0b9bd6411df1b" category="section-title">AWS 本機區域</block>
-  <block id="bc54c20d96244cbf865df76934081bb9" category="paragraph">AWS 本機區域是一種基礎架構部署、其中儲存、運算、資料庫和其他精選 AWS 服務都位於大城市和產業區域附近。有了 AWS 本機區域、您就能讓 AWS 服務更接近您、進而改善工作負載的延遲、並在本機維護資料庫。</block>
   <block id="ac654b16577855244ce7dae48d89fba9" category="paragraph">您可以在 AWS 本機區域中部署單一 AZ 或多個 AZ 組態。</block>
   <block id="2a6302a8529ac1ec37d01886ead088d0" category="section-title">AWS 本機區域組態範例</block>
-  <block id="19af59a268c506bb19268e318e2e9e5f" category="paragraph">以下為範例組態：</block>
   <block id="cc9d5d3b16643a54feae6e4778e4d7b9" category="list-text">單一可用性區域：叢集節點和介面位於同一個本機區域。</block>
   <block id="9f1aad520102b4f5b24cb8c2d5dce3eb" category="list-text">多個可用性區域
 在多個可用性區域組態中、有三個執行個體、兩個節點和一個中介器。三個執行個體中的一個執行個體必須位於個別的區域中。您可以選擇設定方式。</block>
@@ -4948,8 +4944,6 @@
   <block id="e7b2b5f10ffa3982dbe023fcc44d9809" category="list-text">本機區域中的一個叢集節點、本機區域中的中介節點、以及第二個叢集節點位於可用性區域中。</block>
   <block id="7f1ca580f0235d8ecd120f9905161358" category="list-text">每個叢集節點和介面位於不同的本機區域中。</block>
   <block id="53e8d12efd0a1f3029b5796a1b3b6d97" category="section-title">支援的磁碟和執行個體類型</block>
-  <block id="b725b06baf48d4e1dcf97d094f7fa465" category="paragraph">唯一支援的磁碟類型是 GP2 。</block>
-  <block id="3d3c8175d796b0c12230914779b33fbb" category="paragraph">目前支援下列 EC2 執行個體類型系列、其大小為 xlarge 到 4xlarge ：</block>
   <block id="3f44a84e6e34fdb5a2f89c68d8c36175" category="list-text">M5</block>
   <block id="fea813d4ddba3c46cf8b8e664b92cdaa" category="list-text">c5</block>
   <block id="82bce2d16d12d889961dbfbfac9b0015" category="list-text">C5d</block>
@@ -5195,7 +5189,6 @@
   <block id="1a08696b6a25e68d9e9c3ade6c185546" category="admonition">如果您在 HA 配對中的節點之間移動磁碟區、則應使用其他節點的 IP 位址來重新掛載磁碟區。否則、您可能會遇到效能降低的情況。如果用戶端支援 NFSv4 轉介或 CIFS 資料夾重新導向、您可以在 Cloud Volumes ONTAP 支撐系統上啟用這些功能、以避免重新掛載磁碟區。如需詳細資訊、請參閱 ONTAP 文件。</block>
   <block id="a9c5983e35ef10e7675e8d4743ca9b78" category="paragraph">如需詳細資訊、請 <block ref="e677af9e7ca6c446fefd39f21658da89" category="inline-link-macro-rx"></block>參閱。</block>
   <block id="13adeba04a9bbea1e4724de79afe951f" category="inline-link-macro">本機區域中的 EC2 執行個體類型</block>
-  <block id="98e2f4a9a2f3a4c17ad6b8f877a88762" category="paragraph">有關所支持的最新完整詳細信息<block ref="a4408f4d4cfd81ced6d2ec2b8da89160" category="inline-link-macro-rx"></block>，請參閱 AWS 文檔。</block>
   <block id="973154cd70a812583853f9af98175e4b" category="admonition">如果您在 HA 配對中的節點之間移動磁碟區、則應使用其他節點的 IP 位址來重新掛載磁碟區。否則、您可能會遇到效能降低的情況。如果用戶端支援 NFSv4 轉介或 CIFS 資料夾重新導向、您可以在 Cloud Volumes ONTAP 支撐系統上啟用這些功能、以避免重新掛載磁碟區。如需詳細資訊、請參閱 ONTAP 文件。</block>
   <block id="a91a698de1a811c466dcfeeb6a0b5b2c" category="admonition">BlueXP 備份與還原需要 PAYGO 訂閱、但使用此服務不會產生任何費用。如需設定 BlueXP  備份與還原授權的詳細資訊，請<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>參閱。</block>
   <block id="1598bd897bc443f364d77a0ead2b386d" category="paragraph">如需相關資訊、請參閱<block ref="07e6a6e4814dabc1a0870a10a70c4b44" category="inline-link-rx"></block></block>
@@ -5385,7 +5378,6 @@
   <block id="a100999de1d9ee815d7e13741acf163d" category="list-text"><block ref="a100999de1d9ee815d7e13741acf163d" category="inline-link-rx"></block></block>
   <block id="2a57c4c48ac4fed7319e97ba358228fe" category="paragraph">Google Cloud映像驗證符合增強的NetApp安全要求。已對產生映像的指令碼進行變更、以便在過程中使用專為此工作所產生的私密金鑰來簽署映像。您可以使用已簽署的 Google Cloud 摘要和公開憑證來驗證 Google Cloud 映像的完整性<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block>、您可以透過下載、以取得特定版本。</block>
   <block id="92d90815a32824fbae3b0e1cc8bbf0bf" category="inline-link">客戶公報： CPS-00589</block>
-  <block id="86cd1a1bf629b4d25461fa99ef89719f" category="admonition">NetApp 很快就會取代以節點為基礎的授權、而這將由容量型授權所取代。如需相關資訊、請<block ref="f09d1138443525e41476e551a1dde747" category="inline-link-rx"></block>參閱。</block>
   <block id="c4dbcb8cfcc96461b41d3911e9d893a3" category="paragraph">Cloud Volumes ONTAP 節點需要外部網際網路存取、才能聯絡下列端點進行日常作業。</block>
   <block id="760b52b586ad97b520ea1071bb2f9839" category="section-title">Cloud Volumes ONTAP 端點</block>
   <block id="26d5c70af8a128834ad7ae9714c92190" category="paragraph">Cloud Volumes ONTAP 需要外送網際網路存取、才能聯絡各種端點、以進行日常作業。</block>
@@ -5530,4 +5522,30 @@
   <block id="c4603a2a1f5be3fcdbe4e7ce09178104" category="sidebar">啟用高可用度模式</block>
   <block id="7c27c9e51d561399ee84fb8d2259328c" category="paragraph">訂閱現已連結至您的 BlueXP  組織或帳戶、可在建立 Cloud Volumes ONTAP 工作環境時加以選擇。</block>
   <block id="287c693dd0bc6ec48aa0fc3f4b950a9e" category="paragraph">訂閱將與您的 BlueXP  組織或帳戶解除連結、因此在建立 Cloud Volumes ONTAP 工作環境時無法再選擇。</block>
+  <block id="bae74b170f7e19d783c68e9e4e5e5a70" category="paragraph">AWS 本機區域是一種基礎架構部署、其中儲存、運算、資料庫和其他精選 AWS 服務都位於大城市和產業區域附近。有了 AWS 本機區域、您就能讓 AWS 服務更接近您、進而改善工作負載的延遲、並在本機維護資料庫。在 Cloud Volumes ONTAP 上、</block>
+  <block id="12132105a5861c2a904da865554d4e62" category="admonition">在標準和私有模式中使用 BlueXP  時、支援 AWS 本機區域。目前、在受限模式下使用 BlueXP  時不支援 AWS 本機區域。</block>
+  <block id="87836512100e1272a8e293d9b1584ca0" category="paragraph">Cloud Volumes ONTAP 僅支援 AWS 本機區域中的 HA 部署。以下為範例組態：</block>
+  <block id="15c32962b3a74affab8eda8b723d5a9d" category="paragraph">唯一支援的磁碟類型是 GP2 。目前支援下列 EC2 執行個體類型系列、其大小為 xlarge 到 4xlarge ：</block>
+  <block id="238181028bdcb33e3ea129371a6d2545" category="paragraph">Cloud Volumes ONTAP 僅支援這些組態。在 AWS 本機區域組態中為 Cloud Volumes ONTAP 選取任何其他磁碟類型或 EC2 執行個體、可能會導致部署失敗。請參閱 AWS 文件以取得最新完整的詳細資料<block ref="a4408f4d4cfd81ced6d2ec2b8da89160" category="inline-link-macro-rx"></block>。</block>
+  <block id="a02d03fc43afe508f920c7ac72a54af6" category="list-text">以隨成長付費訂閱為基礎的服務、為高可用度（ HA ）配對提供順暢的混合雲體驗。</block>
+  <block id="e7c597b04ce35f0f025ccab446eee809" category="paragraph">您可以在多種不同組態中依容量付費：</block>
+  <block id="53e6fd574dbf70e62183a00bd6dce317" category="paragraph">授權完全以在 Cloud Volumes ONTAP 系統中建立的 Volume 類型為基礎：</block>
+  <block id="596c5d8dcae750f891e49d8906d45469" category="list-text">Essentials 單一節點：只使用一個 ONTAP 節點、在 Cloud Volumes ONTAP 系統上建立讀寫磁碟區。</block>
+  <block id="71f99453811d19ef15d9324559b4818c" category="list-text">Essentials HA ：使用兩個 ONTAP 節點的讀取 / 寫入磁碟區、可在不中斷資料存取的情況下互相容錯移轉。</block>
+  <block id="788e4b8f4de48df585a507f6facd4562" category="list-text">Essentials 次要單一節點：資料保護（ DP ）類型的磁碟區（通常是唯讀的 SnapMirror 或 SnapVault 目的地磁碟區）、僅使用一個 ONTAP 節點在 Cloud Volumes ONTAP 系統上建立。</block>
+  <block id="7d16eeb76acfceb848e2519cce58c471" category="admonition">如果唯讀 /DP 磁碟區變成主要磁碟區、 BlueXP  會將其視為主要資料、而充電成本則是根據磁碟區處於讀取 / 寫入模式的時間來計算。當磁碟區再次設為唯讀 /DP 時、 BlueXP  會再次將其視為次要資料、並使用數位錢包中最符合的授權進行收費。</block>
+  <block id="7e634413e3c77c89dba2562f5b7c1937" category="list-text">Essentials 次要 HA ：資料保護（ DP ）類型的磁碟區（通常是唯讀的 SnapMirror 或 SnapVault 目的地磁碟區）、是在使用兩個 ONTAP 節點的 Cloud Volumes ONTAP 系統上建立、可在不中斷資料存取的情況下互相容錯移轉。</block>
+  <block id="8bf4a89637b88a17fe1be4dad5d23488" category="paragraph">請注意以下幾點：</block>
+  <block id="71f51fd779e6f30ac906929b2dcb02df" category="list-text">最低費用：每個資料服務儲存 VM 至少有一個主要（讀寫）磁碟區、最低需支付 4 TiB 費用。對於 Essentials 套件、這項最低費用不適用於只有次要（資料保護）磁碟區的儲存 VM 。</block>
+  <block id="42a9ff8d7662759290ac08e2ee0929f4" category="list-text">超額：如果超過授權容量、就會以市場費率收取超額費用、並優先使用其他授權的可用容量。</block>
+  <block id="f93da9b042a7ade0f4d86a091309ed87" category="list-text">FlexClone 和 FlexCache Volumes ： FlexClone Volume 不收費。來源和目的地 FlexCache 磁碟區被視為主要資料、並根據已配置的空間收費。</block>
+  <block id="371519ace7adec1f0d1a909854d1cbec" category="list-text">HA 配對充電：對於 HA 配對、只會對節點上的已配置容量進行充電。同步鏡射至合作夥伴節點的資料不會收費。</block>
+  <block id="0099e212d78247cd7545328dc1350ae0" category="admonition">NetApp 將於短期內終止節點型授權的供應。可用性結束後、節點型授權將需要轉換成容量型授權。如需相關資訊、請<block ref="f09d1138443525e41476e551a1dde747" category="inline-link-rx"></block>參閱。</block>
+  <block id="2bb8a9ed1433f0f845b92c7da5440dea" category="section-title">2024 年 10 月 25 日</block>
+  <block id="dc1815932afdea52f1a4c12d73f2eed0" category="section-title">N1 系列機器無法在 BlueXP  上選擇</block>
+  <block id="1bb0d11a534c8ee967cd62e4d75e3da3" category="paragraph">在 Google Cloud 中部署新的 Cloud Volumes ONTAP 執行個體時、 BlueXP  不再提供 N1 系列機器供您選擇。N1 系列機器將僅保留在舊版現有系統中、並受到支援。Cloud Volumes ONTAP 的新部署僅從 9.8 版開始支援 Google Cloud 。建議您切換至與 Cloud Volumes ONTAP 9.8 及更新版本相容的 n2 系列機器類型。不過、 N1 系列機器將可用於透過 API 執行的新部署。</block>
+  <block id="e55067e1e9c0716bdbc0866b4393aa68" category="paragraph"><block ref="55218e2079fe45aad8bd65bcb61a1a9f" category="inline-link-rx"></block>。</block>
+  <block id="e8ae21b110baed89680dca18585c158c" category="section-title">本機區域在私有模式中支援 Amazon Web Services</block>
+  <block id="b32702079d81c2fd1e39448319edfa06" category="paragraph">BlueXP  現在支援 AWS 本機區域、以私有模式進行 Cloud Volumes ONTAP 高可用度（ HA ）部署。先前僅限於標準模式的支援現在已延伸至包含私有模式。</block>
+  <block id="648169096ce56c8569ce36a4abebe9c7" category="admonition">在受限模式下使用 BlueXP  時不支援 AWS 本機區域。</block>
 </blocks>

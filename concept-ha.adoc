@@ -153,18 +153,18 @@ NOTE: 如需哪些特定主機組態支援 ALUA 的相關資訊、請參閱 http
 
 === AWS 本機區域
 
-AWS 本機區域是一種基礎架構部署、其中儲存、運算、資料庫和其他精選 AWS 服務都位於大城市和產業區域附近。有了 AWS 本機區域、您就能讓 AWS 服務更接近您、進而改善工作負載的延遲、並在本機維護資料庫。
+AWS 本機區域是一種基礎架構部署、其中儲存、運算、資料庫和其他精選 AWS 服務都位於大城市和產業區域附近。有了 AWS 本機區域、您就能讓 AWS 服務更接近您、進而改善工作負載的延遲、並在本機維護資料庫。在 Cloud Volumes ONTAP 上、
 
 您可以在 AWS 本機區域中部署單一 AZ 或多個 AZ 組態。
 
 
-NOTE: 在標準模式下使用 BlueXP 時、支援 AWS 本機區域。目前、在受限模式或私有模式下使用 BlueXP 時、並不支援 AWS 本機區域。
+NOTE: 在標準和私有模式中使用 BlueXP  時、支援 AWS 本機區域。目前、在受限模式下使用 BlueXP  時不支援 AWS 本機區域。
 
 
 
 ==== AWS 本機區域組態範例
 
-以下為範例組態：
+Cloud Volumes ONTAP 僅支援 AWS 本機區域中的 HA 部署。以下為範例組態：
 
 * 單一可用性區域：叢集節點和介面位於同一個本機區域。
 * 多個可用性區域
@@ -184,9 +184,7 @@ NOTE: 在標準模式下使用 BlueXP 時、支援 AWS 本機區域。目前、�
 
 ==== 支援的磁碟和執行個體類型
 
-唯一支援的磁碟類型是 GP2 。
-
-目前支援下列 EC2 執行個體類型系列、其大小為 xlarge 到 4xlarge ：
+唯一支援的磁碟類型是 GP2 。目前支援下列 EC2 執行個體類型系列、其大小為 xlarge 到 4xlarge ：
 
 * M5
 * c5
@@ -195,7 +193,7 @@ NOTE: 在標準模式下使用 BlueXP 時、支援 AWS 本機區域。目前、�
 * R5d
 
 
-有關所支持的最新完整詳細信息link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["本機區域中的 EC2 執行個體類型"^]，請參閱 AWS 文檔。
+Cloud Volumes ONTAP 僅支援這些組態。在 AWS 本機區域組態中為 Cloud Volumes ONTAP 選取任何其他磁碟類型或 EC2 執行個體、可能會導致部署失敗。請參閱 AWS 文件以取得最新完整的詳細資料link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["本機區域中的 EC2 執行個體類型"^]。
 
 
 
