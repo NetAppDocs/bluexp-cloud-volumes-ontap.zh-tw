@@ -38,15 +38,15 @@ summary: 在 Cloud Volumes ONTAP AWS 中部署時、您可以選擇符合工作�
 
 === 選擇支援的本機區域
 
-某些 AWS 本機區域（包括新加坡）支援 Cloud Volumes ONTAP 。選擇本機區域是選擇性的。
+選擇本機區域是選擇性的。某些 AWS 本機區域（包括新加坡）支援 Cloud Volumes ONTAP 。AWS 中的 Cloud Volumes ONTAP 僅支援單一可用性區域中的高可用度（ HA ）模式。不支援單一節點部署。
+
+
+NOTE: Cloud Volumes ONTAP 不支援 AWS 本機區域中的資料分層和雲端分層。此外，不支援具有未符合 Cloud Volumes ONTAP 資格執行個體的本機區域。其中一個例子是邁阿密，因為它只有第 6 代執行個體不受支援且不合格，因此無法作為本機區域使用。
 
 link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["檢視本機區域的完整清單"^]。
 您必須先啟用本機區域、才能在這些區域中建立和管理資源。
 
 link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["瞭解如何啟用本機區域"^]。
-
-
-NOTE: Phoenix 不是支援的本機區域。
 
 
 
@@ -102,7 +102,7 @@ EBS 磁碟類型:: EBS磁碟類型之間的差異較高、如下所示。若要�
 * _Throued Optimized HDD（ST1）_磁碟適用於經常存取的工作負載、這些工作負載需要以較低的價格提供快速且一致的處理量。
 +
 
-NOTE: 使用處理量最佳化的HDD（ST1）時、不建議將資料分層至物件儲存設備。
+NOTE: AWS 本機區域無法使用 AWS S3 的資料分層功能，因為連線能力不足。
 
 
 

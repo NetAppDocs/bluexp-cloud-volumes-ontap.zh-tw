@@ -225,8 +225,9 @@ TIP: 正在尋找Connector的相關資訊？ https://docs.netapp.com/us-en/bluex
 
 當您建立工作環境並選擇預先定義的安全性群組時、可以選擇允許下列其中一項的流量：
 
-* *僅限所選vnet*：傳入流量的來源是vnet的子網路範圍、Cloud Volumes ONTAP 以及連接器所在vnet的子網路範圍。這是建議的選項。
-* *所有VNet*：傳入流量的來源為0.00.0.0/0 IP範圍。
+* * 僅選取的 vnet * ：傳入流量的來源是 Cloud Volumes ONTAP 系統的 vnet 子網路範圍，以及 Connector 所在的 vnet 子網路範圍。這是建議的選項。
+* * 所有 VNet* ：傳入流量的來源為 0.0.0.0/0 IP 範圍。
+* * 停用 * ：此選項會限制公用網路存取您的儲存帳戶，並停用 Cloud Volumes ONTAP 系統的資料分層。如果您的私有 IP 位址因安全法規和原則而不應暴露在同一個 vnet 內，則建議使用此選項。
 
 
 [cols="4*"]
@@ -311,12 +312,15 @@ TIP: 正在尋找Connector的相關資訊？ https://docs.netapp.com/us-en/bluex
 
 當您建立工作環境並選擇預先定義的安全性群組時、可以選擇允許下列其中一項的流量：
 
-* *僅限所選vnet*：傳入流量的來源是vnet的子網路範圍、Cloud Volumes ONTAP 以及連接器所在vnet的子網路範圍。這是建議的選項。
-* *所有VNet*：傳入流量的來源為0.00.0.0/0 IP範圍。
+* * 僅選取的 vnet * ：傳入流量的來源是 Cloud Volumes ONTAP 系統的 vnet 子網路範圍，以及 Connector 所在的 vnet 子網路範圍。這是建議的選項。
+* * 所有 VNet* ：傳入流量的來源為 0.0.0.0/0 IP 範圍。
 
 
 
 NOTE: HA 系統的傳入規則少於單一節點系統、因為傳入資料流量會流經 Azure Standard Load Balancer 。因此、來自負載平衡器的流量應開啟、如「 AllowAzureLoadBalancerInBound 」規則所示。
+
+* * 停用 * ：此選項會限制公用網路存取您的儲存帳戶，並停用 Cloud Volumes ONTAP 系統的資料分層。如果您的私有 IP 位址因安全法規和原則而不應暴露在同一個 vnet 內，則建議使用此選項。
+
 
 [cols="4*"]
 |===

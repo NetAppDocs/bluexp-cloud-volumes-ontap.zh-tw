@@ -14,7 +14,7 @@ summary: NetApp提供的支援包含Cloud Volumes ONTAP 在整個過程中、但
 
 
 [role="lead"]
-NetApp提供的支援包含Cloud Volumes ONTAP 在整個過程中、但您必須先向NetApp註冊系統、才能啟動支援。
+NetApp 的支援隨附於 Cloud Volumes ONTAP 隨付隨用（ PAYGO ）系統中，但您必須先向 NetApp 註冊系統來啟動支援。
 
 向 NetApp 註冊 PAYGO 系統時、必須 ONTAP 使用任何方法來升級 __LW_NETAPP 軟體 link:task-updating-ontap-cloud.html["本頁說明"]。
 

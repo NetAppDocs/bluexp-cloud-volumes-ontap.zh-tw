@@ -204,6 +204,8 @@ sidebar:
         url: "/task-updating-ontap-cloud.html"
       - title: 註冊隨用隨付系統
         url: "/task-registering.html"
+      - title: 轉換節點型授權
+        url: "/task-convert-node-capacity.html"
       - title: 停止並啟動系統
         url: "/task-managing-state.html"
       - title: 同步系統時間
@@ -260,7 +262,11 @@ sidebar:
   - title: 概念
     entries:
     - title: 授權
-      url: "/concept-licensing.html"
+      entries:
+      - title: Cloud Volumes ONTAP 中的授權
+        url: "/concept-licensing.html"
+      - title: 更多關於容量型授權的資訊
+        url: "/concept-licensing-charging.html"
     - title: 儲存設備
       entries:
       - title: 用戶端傳輸協定

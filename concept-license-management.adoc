@@ -14,7 +14,7 @@ summary: 每個採用節點型BYOL的系統都必須安裝有效訂閱的系統�
 
 
 [role="lead"]
-每個採用節點型BYOL的系統都必須安裝有效訂閱的系統授權。Cloud Volumes ONTAPBlueXP可管理您的授權、並在授權到期前顯示警告、藉此簡化程序。
+每個具有節點型的 Cloud Volumes ONTAP 系統都必須擁有自己的授權（ BYOL ），而且必須安裝有效訂閱的系統授權。BlueXP可管理您的授權、並在授權到期前顯示警告、藉此簡化程序。
 
 
 TIP: 節點型授權是前一代Cloud Volumes ONTAP 的BYOL for the節點型授權僅適用於授權續約。

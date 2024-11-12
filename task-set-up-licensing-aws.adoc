@@ -51,7 +51,7 @@ link:task-deploying-otc-aws.html["請參閱逐步指示、以在Cloud Volumes ON
 
 Essentials和Professional套件可搭配下列消費模式使用：
 
-* 向NetApp購買的授權（BYOL）
+* 從 NetApp 購買的授權（自帶授權（ BYOL ））
 * 從AWS Marketplace訂閱時數小時隨付（PAYGO）
 * AWS Marketplace的年度合約
 

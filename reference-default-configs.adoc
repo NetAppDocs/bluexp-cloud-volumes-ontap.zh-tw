@@ -31,7 +31,7 @@ summary: 瞭解 Cloud Volumes ONTAP 根據預設設定的功能可協助您設�
 ** FlexClone
 ** iSCSI
 ** 多租戶加密金鑰管理（MTEKM）、從Cloud Volumes ONTAP 版本號為E9.12.1 GA開始
-** NetApp Volume Encryption （僅適用於 BYOL 或註冊的 PAYGO 系統）
+** NetApp Volume Encryption （僅適用於自帶授權（ BYOL ）或已註冊的隨用隨付（ PAYGO ）系統）
 ** NFS
 
 

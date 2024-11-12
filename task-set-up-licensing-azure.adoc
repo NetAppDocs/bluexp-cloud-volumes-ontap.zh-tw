@@ -51,7 +51,7 @@ link:task-deploying-otc-azure.html["請參閱Cloud Volumes ONTAP 逐步指示、
 
 Essentials和Professional套件可搭配下列消費模式使用：
 
-* 向NetApp購買的授權（BYOL）
+* 從 NetApp 購買的授權（自帶授權（ BYOL ））
 * Azure Marketplace的每小時隨付隨付（PAYGO）訂閱
 * 年度合約
 

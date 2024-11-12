@@ -44,10 +44,10 @@ BlueXP 數位錢包可顯示您帳戶的總使用容量、以及授權套件所�
 .步驟
 . 從BlueXP導覽功能表中、選取*管理>數位錢包*。
 . 在 * Cloud Volumes ONTAP * 標籤上、選取 * 容量型授權 * 。
-. 檢視套件摘要、其中會顯示您已耗用的容量、預先認可的總容量和 PAYGO 總容量。
+. 檢視套件摘要，其中會顯示您的使用容量，預先配置的總容量，以及總使用成本（ PAYGO ）容量。
 +
 ** _總使用容量_是Cloud Volumes ONTAP NetApp帳戶中所有供應系統的總容量。無論磁碟區內的本機、已用、已儲存或有效空間為何、充電都是根據每個磁碟區的已配置大小而計算。
-** _Total preconted capacity_ 是您從 NetApp 購買的總授權容量（ BYOL 或 Marketplace Contract ）。
+** _Total preconted capacity_ 是您從 NetApp 購買的總授權容量（自帶授權（ BYOL ）或 Marketplace Contract ）。
 ** _Total PAYGO_是使用雲端市場訂閱的已配置總容量。只有當使用容量高於授權容量、或 BlueXP 數位錢包中沒有 BYOL 授權時、才會使用 PAYGO 進行收費。
 +
 以下是 BlueXP 數位錢包中 Cloud Volumes ONTAP 套件摘要的範例：

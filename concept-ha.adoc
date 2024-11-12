@@ -164,7 +164,11 @@ NOTE: 在標準和私有模式中使用 BlueXP  時、支援 AWS 本機區域�
 
 ==== AWS 本機區域組態範例
 
-Cloud Volumes ONTAP 僅支援 AWS 本機區域中的 HA 部署。以下為範例組態：
+AWS 中的 Cloud Volumes ONTAP 僅支援單一可用性區域中的高可用度（ HA ）模式。不支援單一節點部署。
+
+Cloud Volumes ONTAP 不支援 AWS 本機區域中的資料分層，雲端分層和不合格執行個體。
+
+以下為範例組態：
 
 * 單一可用性區域：叢集節點和介面位於同一個本機區域。
 * 多個可用性區域
@@ -193,7 +197,10 @@ Cloud Volumes ONTAP 僅支援 AWS 本機區域中的 HA 部署。以下為範例
 * R5d
 
 
-Cloud Volumes ONTAP 僅支援這些組態。在 AWS 本機區域組態中為 Cloud Volumes ONTAP 選取任何其他磁碟類型或 EC2 執行個體、可能會導致部署失敗。請參閱 AWS 文件以取得最新完整的詳細資料link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["本機區域中的 EC2 執行個體類型"^]。
+
+NOTE: Cloud Volumes ONTAP 僅支援這些組態。在 AWS 本機區域組態中選取不支援的磁碟類型或不合格的執行個體，可能會導致部署失敗。AWS 本機區域無法使用 AWS S3 的資料分層功能，因為連線能力不足。
+
+請參閱 AWS 文件以取得最新完整的詳細資料link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["本機區域中的 EC2 執行個體類型"^]。
 
 
 

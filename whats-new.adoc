@@ -20,6 +20,60 @@ summary: 瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。
 
 
 
+== 2024 年 11 月 11 日
+
+
+
+=== 終止節點型授權的可用度
+
+NetApp 已規劃終止供應（ EOA ）和終止支援（ EOS ）的 Cloud Volumes ONTAP 節點型授權。自 2024 年 11 月 11 日起，節點型授權的有限可用度已終止。節點型授權支援將於 2024 年 12 月 31 日終止。在節點型授權的 EOA 之後，您應該使用 BlueXP  授權轉換工具，轉換為容量型授權。
+
+若為年度或長期承諾， NetApp 建議您在 EOA 日期或授權到期日之前聯絡 NetApp 代表，以確保移轉的先決條件已就緒。如果您沒有 Cloud Volumes ONTAP 節點的長期合約，而且是根據隨選 PAYGO 訂閱來執行系統，請務必在 EOS 日期之前規劃您的轉換。對於長期合約和 PAYGO 訂閱，您可以使用 BlueXP  授權轉換工具進行無縫轉換。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["終止節點型授權的可用性"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["將節點型授權轉換為容量型"^]
+
+
+
+=== 從 BlueXP  移除節點型部署
+
+使用節點型授權來部署 Cloud Volumes ONTAP 系統的選項在 BlueXP  上已過時。除了少數特殊情況，您無法為任何雲端供應商使用節點型授權來部署 Cloud Volumes ONTAP 。
+
+NetApp 瞭解下列符合合約義務和營運需求的獨特授權要求，並將在這些情況下繼續支援節點型授權：
+
+* USPS 客戶
+* 以私有模式部署
+* 在 AWS 中部署 Cloud Volumes ONTAP 的中國地區
+* 如果您擁有有效且未過期的個別節點，請自行攜帶授權（ BYOL 授權）
+
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["終止節點型授權的可用性"^]
+
+
+
+=== 在 Azure Blob 儲存設備上新增 Cloud Volumes ONTAP 資料的 Cold 層
+
+BlueXP  現在可讓您選取一個冷層，將非作用中容量層資料儲存在 Azure Blob 儲存設備上。在現有的熱和冷卻層中加入冷層，可為您提供更經濟實惠的儲存選項，並提升成本效率。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html#data-tiering-in-azure["Azure 中的資料分層"^]
+
+
+
+=== 選項可限制 Azure 儲存帳戶的公開存取
+
+您現在可以選擇限制對 Azure 上 Cloud Volumes ONTAP 系統的儲存帳戶進行公開存取。停用存取功能後，即使在同一個 vnet 內也能保護私有 IP 位址不受洩漏，只要您需要遵守組織的安全原則即可。此選項也會停用 Cloud Volumes ONTAP 系統的資料分層功能，並同時適用於單一節點和高可用度配對。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["安全性群組規則"^]。
+
+
+
+=== 部署 Cloud Volumes ONTAP 之後啟用 WORM
+
+之前，您可以在 BlueXP  上建立 Cloud Volumes ONTAP 工作環境時啟用 WORM 儲存。現在， BlueXP  提供您在工作環境中啟用 WORM 的選項，即使在建立時未啟用 WORM 也沒問題。啟用後，您就無法停用 WORM 。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html#enabling-worm-on-a-cloud-volumes-ontap-working-environment["在 Cloud Volumes ONTAP 工作環境中啟用 WORM"^]
+
+
+
 == 2024 年 10 月 25 日
 
 

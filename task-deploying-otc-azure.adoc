@@ -146,6 +146,7 @@ NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修�
 請注意下列事項：
 
 +
+** 如果在 vnet 內停用對儲存帳戶的公開存取，您就無法在 Cloud Volumes ONTAP 系統中啟用資料分層功能。如需相關資訊、請 link:reference-networking-azure.html#security-group-rules["安全性群組規則"]參閱。
 ** 磁碟類型適用於初始磁碟區。您可以為後續磁碟區選擇不同的磁碟類型。
 ** 磁碟大小適用於初始Aggregate中的所有磁碟、以及使用Simple Provisioning選項時、BlueXP所建立的任何其他Aggregate。您可以使用進階配置選項、建立使用不同磁碟大小的集合體。
 +
@@ -386,6 +387,7 @@ NOTE: 如果所選版本有較新的發行候選版本、一般可用度或修�
 +
 有關選擇磁碟大小的說明，請參閱link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["在Azure中調整系統規模"^]。
 
+** 如果在 vnet 內停用對儲存帳戶的公開存取，您就無法在 Cloud Volumes ONTAP 系統中啟用資料分層功能。如需相關資訊、請 link:reference-networking-azure.html#security-group-rules["安全性群組規則"]參閱。
 ** 您可以在建立或編輯磁碟區時、選擇特定的磁碟區分層原則。
 ** 如果停用資料分層、您可以在後續的 Aggregate 上啟用。
 +

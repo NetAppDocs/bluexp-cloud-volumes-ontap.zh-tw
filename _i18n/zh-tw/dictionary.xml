@@ -23,7 +23,6 @@
   <block id="f24ce81f056d5acd59788df7f5ab36a1" category="list-text">FlexCache</block>
   <block id="a701f5d044348085ee4f97fef6636845" category="list-text">FlexClone</block>
   <block id="e4e1c13bb0b14f6cb7608cbecea948ef" category="list-text">iSCSI</block>
-  <block id="1ea97bc51cb5d4c0ad79186aeb4e4775" category="list-text">NetApp Volume Encryption （僅適用於 BYOL 或註冊的 PAYGO 系統）</block>
   <block id="1d1a594959ec615f56516f5d0f5e8ddb" category="list-text">NFS</block>
   <block id="794cb725c5631ad99b5b7c000307f0df" category="list-text">SnapMirror</block>
   <block id="82ef718f4ebe0c276814ee3d51e33361" category="list-text">SnapRestore</block>
@@ -811,7 +810,6 @@
   <block id="8efc36afc2e7202a9c9bda00b8e8a75d" category="section-title">授權總覽</block>
   <block id="f008ecd5469e24eee31eb4e2e4a1e23f" category="paragraph">下列授權選項適用於新客戶。</block>
   <block id="27d0a1d0fc95280fbaf78c65ff6b37fb" category="list-text">Essentials套件</block>
-  <block id="0e1a6eb7eed81777ed9d0610be51df3b" category="paragraph">先前的個別節點授權模式仍適用於已購買授權或正在訂閱市場的現有客戶。</block>
   <block id="08598187312665a33ac3ebb5fc060c00" category="paragraph">以下各節提供這些選項的詳細資訊。</block>
   <block id="d7c357dcc3b8476a2eeba19c87ec383d" category="paragraph">NetApp Cloud Volumes ONTAP 免費提供所有的支援功能（仍需支付雲端供應商費用）。</block>
   <block id="24996c045717f17c4e40ebb44791b2af" category="list-text">不需要授權或合約。</block>
@@ -836,7 +834,6 @@
   <block id="6246af80c9ea9c857c70d2c643fcb249" category="list-text">如果您超過授權容量</block>
   <block id="fdde7a7f3783aa0ce1e585f8be9c2def" category="list-text">如果授權期限已到期</block>
   <block id="36e4d5ff70cec517180ae18f1c34d2fd" category="list-text">如果您有市場的年度合約、Cloud Volumes ONTAP 您所部署的_all_系統將根據該合約付費。您無法與BYOL混搭一年一度的市場合約。</block>
-  <block id="e22ac25b066b201473de7aa700ef5d92" category="section-title">定價</block>
   <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">支援的組態</block>
   <block id="4e4c431843fe55f93c074808800bf7d0" category="paragraph">以容量為基礎的授權套件可搭配Cloud Volumes ONTAP 使用於NetApp 9.7及更新版本。</block>
   <block id="37040d43404231d8205705e4353af733" category="section-title">容量限制</block>
@@ -858,11 +855,6 @@
   <block id="72aa254218c757aad3e3703bdaf90694" category="inline-link-macro">連結您的訂閱內容以供Cloud Volumes ONTAP 搭配使用</block>
   <block id="cf2d2d8d3f12faf0a0924f5c5c89598b" category="list-text">NetApp授權您的帳戶之後、 <block ref="92e1d32055031f48c102a52373394710" category="inline-link-macro-rx"></block>。</block>
   <block id="a2f6a3e98ea1849ed1ab07d821bf6a18" category="section-title">節點型授權</block>
-  <block id="749b4d71be76e8fee5fe7895ae5ff71d" category="paragraph">現有客戶仍可使用節點型授權：</block>
-  <block id="04c40151a6d53f981d0364aef6215bd0" category="list-text">如果您擁有有效授權、BYOL僅適用於授權續約。</block>
-  <block id="358962d4cc759ccb4c98e87cc3396033" category="list-text">如果您有有效的市場訂閱、仍可透過該訂閱付費。</block>
-  <block id="7a216ec4d6977719ed1b40a4322bfd8f" category="section-title">授權轉換</block>
-  <block id="7bd090ccc30738cd79592e7431dee17b" category="paragraph">如果您想要轉換至其他授權方法、可以購買授權、使用Cloud Volumes ONTAP 該授權部署新的一套作業系統、然後將資料複寫到新系統。</block>
   <block id="170d227d215fb560bb4c8ad4e345183a" category="section-title">最大系統數</block>
   <block id="fc2be74c7bf9f46e12967c2298a899ba" category="inline-link">深入瞭解NetApp客戶</block>
   <block id="72d7d9fbd92253175591abfdb19dc6a1" category="summary">在 Cloud Volumes ONTAP AWS 中部署時、您可以選擇符合工作負載需求的預先設定系統、也可以建立自己的組態。如果您選擇自己的組態、應該瞭解可用的選項。</block>
@@ -1958,7 +1950,6 @@
   <block id="de55eaa977cb9b3376bd6729e1a97107" category="paragraph">按一下「 * 新增工作環境 * 」、選取您要部署的系統類型、然後完成精靈中的步驟。 <block ref="168f7f4d4c37c8fac9b64fb187eb00a2" category="inline-link-macro-rx"></block>。</block>
   <block id="de94398a333e3b7bdafad2ddf3232331" category="doc">管理節點型授權</block>
   <block id="4627bd080634e9380c75a1cc04a09486" category="paragraph">_Node型授權_是前一代授權模式（不適用於新客戶）：</block>
-  <block id="81f9d97336a30fb7be6f8d770fee25eb" category="list-text">向NetApp購買BYOL授權</block>
   <block id="17ac9e85cf5b6f7b77acf61fb7721242" category="list-text">從雲端供應商的市場訂閱每小時隨付（PAYGO）</block>
   <block id="9426b05d2fc423b761e34f9d75b4066d" category="section-title">管理PAYGO授權</block>
   <block id="87089bacab591352ad6ad6579e34d93e" category="list-text">按一下* PAYGO*。</block>
@@ -2462,7 +2453,6 @@
   <block id="9d43d6f0219326b62a38c7746df96925" category="paragraph"><block ref="c1037565bcb6e1d770690e1d252b358c" category="inline-link-macro-rx"></block>。</block>
   <block id="376c581ebe9ec9aa8853377f8538ebbd" category="section-title">容量型授權</block>
   <block id="f63eded59a08a3b3bd8dd4b30f5cd2d8" category="paragraph">容量型授權可讓您針對Cloud Volumes ONTAP 容量的每個TiB付費。容量型授權的形式為_package_：Essentials套件或Professional套件。</block>
-  <block id="64e2a2e379eafbf4fdc21f4b5b6b9670" category="list-text">向NetApp購買的授權（BYOL）</block>
   <block id="fdbbc45fde04fd31543205fa0418c269" category="list-text">Azure Marketplace的每小時隨付隨付（PAYGO）訂閱</block>
   <block id="e627d7610d38524265b212be19391938" category="list-text">年度合約</block>
   <block id="3d241a11657521246cf272331a926bbb" category="inline-link-macro">深入瞭解容量型授權</block>
@@ -2802,8 +2792,6 @@
   <block id="870789b9d0beec538c84e00432400091" category="list-text">在Google Cloud中、移至Cloud Volumes ONTAP 「實例」、並為每個LIF新增一個IP位址至nic0。</block>
   <block id="b961ba228f0253598e8fe47f55865219" category="list-text">輸入前端IP的名稱、選取Cloud Volumes ONTAP 該子網路做為「靜態HA配對」、保留「*動態*」選項、並在「可用區域」中保留「*區域-備援*」選項、以確保區域故障時IP位址仍可繼續使用。</block>
   <block id="c00e2d19af360558425fe43036ba7057" category="paragraph"><block ref="c00e2d19af360558425fe43036ba7057" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5505ffcb759fb1c9c3793b2dd386cd82" category="inline-link-macro">瞭解如何在PAYGO和BYOL之間切換</block>
-  <block id="b71c93cf4431b3a81c64a35fe6dbe9cf" category="paragraph">請注意、不支援將系統從PAYGO節點授權轉換成BYOL節點授權（反之亦然）。您需要部署新系統、然後將資料複寫到該系統。 <block ref="d81e4230804422351d525c6f4d42f594" category="inline-link-macro-rx"></block>。</block>
   <block id="594cb44c6500d8855ad820b0653e02c7" category="section-title">在PAYGO和BYOL之間切換</block>
   <block id="a704128156d562fe5860508e9584ee34" category="paragraph">不支援將系統從PAYGO的節點授權轉換成BYOL的節點授權（反之亦然）。如果您想要在隨用隨付訂閱和BYOL訂閱之間切換、則必須部署新系統、並將資料從現有系統複寫到新系統。</block>
   <block id="7f7c7e70efe0e6e29f5d0b207145f30e" category="list-text">打造全新 Cloud Volumes ONTAP 的運作環境。</block>
@@ -2885,8 +2873,6 @@
   <block id="fdb568933703a9268c5ba46f3208f414" category="list-text">提供Cloud Volumes ONTAP 任何功能組態的授權</block>
   <block id="2b7a2bda81dcf84ff8d6b600415c5e52" category="paragraph">單一節點或HA、以相同速率為主要和次要磁碟區充電</block>
   <block id="728fd439c2abdc887c4a5e678d7c8708" category="paragraph">下列消費模式提供容量型授權套件：</block>
-  <block id="fcbd09a2622ccd7b58495c6277262566" category="list-text">* BYOL*：向NetApp購買的授權、可用於在Cloud Volumes ONTAP 任何雲端供應商中部署</block>
-  <block id="1e101142b61a711e7fbc92238adf9d20" category="list-text">* PAYGO*：每小時向雲端供應商的市場訂購一次。</block>
   <block id="146cb6145f5238f0a019636047844250" category="list-text">*年度*：雲端供應商市場的年度合約。</block>
   <block id="e26935ad375965079b7681b616fa96eb" category="paragraph">下列詳細資料可協助您瞭解充電方式如何搭配容量型授權使用。</block>
   <block id="10297bdbea13a5f039ea0c228d352388" category="section-title">最低收費</block>
@@ -3002,8 +2988,6 @@
   <block id="e4bdb4038975db929f91098fe2d7ec12" category="inline-link">Cloud Volumes Edge快取</block>
   <block id="acc34707a7642d8ca31b72c25ca50920" category="list-text">*邊緣快取*：授權<block ref="1bc1fd590dd203d9bb10cdd372d8de71" category="inline-link-rx"></block></block>
   <block id="2d66a0b2e45838b2ebcec83efd6c765c" category="inline-link">深入瞭解這些授權套件</block>
-  <block id="c3c41ceeecb96e561c7ec71ffc1c62fe" category="list-text">*僅限所選vnet*：傳入流量的來源是vnet的子網路範圍、Cloud Volumes ONTAP 以及連接器所在vnet的子網路範圍。這是建議的選項。</block>
-  <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">*所有VNet*：傳入流量的來源為0.00.0.0/0 IP範圍。</block>
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">如果您有來自雲端供應商市場的私人優惠或合約、改用未包含在合約中的收費方法、將會導致依BYOL（如果您向NetApp購買授權）或PAYGO收取費用。</block>
   <block id="4f9ff6137bed641431cf4f88c0e37ba0" category="inline-image-macro">概念性影像：Cloud Volumes ONTAP 一套概念性影像、顯示出一套關於功能不整的HA配對及其元件。</block>
   <block id="deec4375ad9dbb52932d049564b46c2c" category="paragraph"><block ref="deec4375ad9dbb52932d049564b46c2c" category="inline-image-macro-rx" type="image"></block></block>
@@ -3829,7 +3813,6 @@
   <block id="39c6a1c30ae1faf01f4bd99a4757f7ae" category="paragraph">如果您停用Azure私有連結、且Connector使用Proxy伺服器、則必須啟用直接API流量。</block>
   <block id="40e86593118ce089551b3691f6bba919" category="inline-link">瞭解如何在Connector上啟用直接API流量</block>
   <block id="aa036f3aad369ff5710a7a7d5043dcbc" category="list-text">Azure 中階層式資料的預設儲存存取層為 _hot_ 層。熱層是容量層中經常存取資料的理想選擇。</block>
-  <block id="07524ae3949ffd6bf3d8864e62191d5c" category="paragraph">如果您不打算存取容量層中的非作用中資料、可以改用_cle__儲存層來降低儲存成本。當您將儲存層變更為冷卻時、非作用中的容量層資料會直接移至冷卻儲存層。</block>
   <block id="5b420079bca1c870914caa221b31442e" category="section-title">支援的支援Cloud Volumes ONTAP</block>
   <block id="ad598f033e541927e862b0c5e17319ec" category="paragraph">現在、BlueXP可以在Cloud Volumes ONTAP AWS、Azure和Google Cloud中部署和管理支援功能。</block>
   <block id="12169a51b108f73888655f2a089d493a" category="list-text">中國地區僅支援具有BYOL的單一節點系統。</block>
@@ -3907,9 +3890,7 @@
   <block id="906b0fc78378feea1883fe721c72e648" category="list-text">在「概述」索引標籤上、按一下「功能」面板、然後按一下「 * 機器類型 * 」旁邊的鉛筆圖示。</block>
   <block id="6466b41798117de76beee910171ffc8f" category="inline-image-macro">在檢視工作環境時、會在「概觀」頁面右上角的「功能」面板下顯示「機器類型」設定的螢幕擷取畫面。</block>
   <block id="65501384f1f7cf6e689e492914a698c1" category="paragraph"><block ref="65501384f1f7cf6e689e492914a698c1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6ccb38ae114176203c2592f430a889d7" category="list-text">如果您使用的是節點型 PAYGO 授權、您可以選擇不同的授權和機器類型、方法是按一下 * 授權類型 * 旁的鉛筆圖示。</block>
   <block id="f5e2fedd06abf8315436e3971f9755de" category="list-text">選擇機器類型、勾選核取方塊以確認您瞭解變更的影響、然後按一下 * 變更 * 。</block>
-  <block id="def968f0e18d0f7aed6421ac81039272" category="list-text">_Total preconted capacity_ 是您從 NetApp 購買的總授權容量（ BYOL 或 Marketplace Contract ）。</block>
   <block id="af61e314a8c2484dfcfef0afc2e5b8b9" category="list-text">耗用容量 _ 顯示該套件的磁碟區容量。如需特定套件的詳細資料、請將滑鼠游標移到工具提示上。</block>
   <block id="cfc852810f89c13febd473e12117d828" category="list-text">_ 預先承諾容量 _ 是您從 NetApp 購買的授權容量（ BYOL 或 Marketplace 合約）。</block>
   <block id="b35741916171a2b4d1210c1ccf6e3920" category="list-text">_BYOL_ 顯示您從 NetApp 購買的此套件類型的授權容量。</block>
@@ -3947,7 +3928,6 @@
   <block id="df8131ce273465a002c95cb0c5cf8a39" category="list-text">按一下 [ 概觀 ] 索引標籤上的 [ 功能 ] 面板，然後按一下 *VM 類型 * 旁邊的鉛筆圖示。</block>
   <block id="838630480d269a60c2c6bb929717f964" category="inline-image-macro">檢視工作環境時、會在「概觀」頁面右上角的「功能」面板下顯示虛擬機器類型設定的螢幕擷取畫面。</block>
   <block id="4782218bc1564550fa76897e159be9bf" category="paragraph"><block ref="4782218bc1564550fa76897e159be9bf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e257ba6100e7f02e04c1d8b474024a3c" category="list-text">如果您使用的是節點型 PAYGO 授權、您可以選擇不同的授權和 VM 類型、方法是按一下 * 授權類型 * 旁的鉛筆圖示。</block>
   <block id="0b52c0f8f311ea5465845d81cc4401f1" category="list-text">選取 VM 類型、選取核取方塊以確認您瞭解變更的影響、然後按一下 * 變更 * 。</block>
   <block id="c529c6170bed402afd9deff05a6b3d0d" category="paragraph">您可以透過 BlueXP 中「管理磁碟區」面板下的 * 掛載命令 * 選項、在 BlueXP 中找到正確的 IP 位址。</block>
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">* 附件（選填） * ：上傳最多五個附件、一次上傳一個。</block>
@@ -4016,7 +3996,6 @@
   <block id="c6d494ac63d05f0797b17cc4e9b671a5" category="list-text">在 Aggregate 方塊下、檢視可用容量（資源配置大小減去使用的 Aggregate 容量）。</block>
   <block id="85cbc8c9d17142818868d0deb987b7d4" category="section-title">檢視 FlexGroup Volume</block>
   <block id="18f38afc08c122a02d1cef0b8f55b13c" category="list-text">在「概述」標籤上、按一下「功能」面板、然後按一下「 * 執行個體類型 * 」旁邊的鉛筆圖示。</block>
-  <block id="e977a40ba12e4cbe82ec5ad1eeca10d3" category="list-text">如果您使用的是節點型 PAYGO 授權、您可以選擇不同的授權和執行個體類型、方法是按一下 * 授權類型 * 旁的鉛筆圖示。</block>
   <block id="dcee8dbc1dce5317d8cfa6588f8f050e" category="list-text">選擇執行個體類型、選取核取方塊以確認您瞭解變更的影響、然後按一下 * 變更 * 。</block>
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
   <block id="38d4d167f6dd9174c3535fc5c7ba4b76" category="section-title">2023 年 4 月 4 日</block>
@@ -4027,7 +4006,6 @@
   <block id="66d5639668d7c3e585771304940a252b" category="paragraph">我們縮短了在Cloud Volumes ONTAP Microsoft Azure或Google Cloud中部署運作環境所需的時間（啟用正常寫入速度時）。部署時間現在平均縮短3-4分鐘。</block>
   <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">從BlueXP導覽功能表中、選取*管理&gt;數位錢包*。</block>
   <block id="e83a5b2754cd537ac6467dc025115726" category="list-text">在 * Cloud Volumes ONTAP * 標籤上、選取 * 容量型授權 * 。</block>
-  <block id="2bd469c6a2a1a44818909050205d416b" category="list-text">檢視套件摘要、其中會顯示您已耗用的容量、預先認可的總容量和 PAYGO 總容量。</block>
   <block id="492847bcbc9ec0bd3075b612aa43e4a7" category="list-text">選取 * Keystone * 。</block>
   <block id="ece137c555d8c53c8378fee53f6273c4" category="paragraph">AKV可用於保護 <block ref="defc94716dcceab396c0509ed7db9366" category="inline-link-macro-rx"></block> 僅適用於資料SVM。</block>
   <block id="c6a56bb8eca094c529c75a2c22c92bcc" category="inline-link-macro">深入瞭解如何管理節點型授權</block>
@@ -4131,7 +4109,6 @@
   <block id="100bae5c7e0821077de0fde9621000c1" category="list-text"><block ref="bc493c0c6367fdf80f51179db159d9ed" category="inline-link-rx"></block>。</block>
   <block id="73511701791994e2ed3cc40c68089746" category="paragraph">HA 配對支援 Keystone 訂閱。目前單一節點系統不支援此授權選項。</block>
   <block id="9a762a1c55d92068610f4f2bc3e42d91" category="paragraph">瞭解如何開始使用 Keystone 訂閱：</block>
-  <block id="fc757430059ba1c5429f69be6c92e93b" category="paragraph">不Cloud Volumes ONTAP 支援將現有的支援系統轉換成其他授權方法。目前的三種授權方法是容量型授權、基礎概念訂閱和節點型授權。例如、您無法將系統從節點型授權轉換成容量型授權（反之亦然）。</block>
   <block id="221a174f8f629fb4aa230caa988c2112" category="summary">瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。</block>
   <block id="24794b3bdde84ec6ccbec9ca5a92cf43" category="section-title">BlueXP 數位錢包增強功能</block>
   <block id="ca8d7ad5e36d40f4e29b0a489cf94294" category="paragraph">BlueXP 數位錢包現在顯示您購買的授權容量、並提供市場私有優惠。</block>
@@ -4236,13 +4213,6 @@
 <block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>。</block>
   <block id="f55b18eeaddb29e4e968d14603f99e82" category="list-text"><block ref="f55b18eeaddb29e4e968d14603f99e82" category="inline-link-rx"></block></block>
   <block id="d7e4497b251053c3a95e730a472e0f1a" category="list-text"><block ref="d7e4497b251053c3a95e730a472e0f1a" category="inline-link-rx"></block></block>
-  <block id="85c76e0af4d25f0011f167d772dba6ab" category="cell">選擇 AWS 認證資料和市場訂閱、以搭配此 Cloud Volumes ONTAP 款功能系統使用。
-
-按一下*新增訂閱*、將所選認證資料與新的AWS Marketplace訂閱建立關聯。訂閱可以是一年一度的合約、或Cloud Volumes ONTAP 是以每小時的費率支付。
-
-如果直接向NetApp（BYOL）購買授權、則無需訂閱AWS。
-
-<block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>。</block>
   <block id="f647c880dd21951d680e6e9b7ad216f0" category="list-text"><block ref="f647c880dd21951d680e6e9b7ad216f0" category="inline-link-rx"></block></block>
   <block id="31506a250b099663a98d7d365371bda0" category="paragraph">權限會在中提供<block ref="7aa097bb85d23c6d9f43a1db610a79f9" category="inline-link-rx"></block>、但如果您使用雲端金鑰管理服務的替代專案、則可能無法套用。</block>
   <block id="f0b4f84896926e6a2dbb48986fffd0a3" category="paragraph">請參閱<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block> 如需使用「 GcpEncryption 」參數的詳細資訊、</block>
@@ -4378,7 +4348,6 @@
   <block id="e22c3a8f0786d359fea7cca144bbee1b" category="inline-link">啟用自發勒索軟體保護</block>
   <block id="9216a2741f7e54826d99a0fcfc0c7c58" category="section-title">刪除 WORM 檔案</block>
   <block id="728c208823318f76bc30851f92119221" category="paragraph">您可以在保留期間使用權限刪除功能刪除 WORM 檔案。</block>
-  <block id="44c48c2759b23de55aafe43a43856a08" category="paragraph">如需相關指示、請參閱<block ref="03bc56e40fb58df28e53112c02ca2ae1" category="inline-link-rx"></block></block>
   <block id="59e727e0c151e53fa5beabd59871cb88" category="paragraph">在許多情況下、升級 HA 配對不會中斷營運、 I/O 也不會中斷。在此不中斷營運的升級程序中、會同時升級每個節點、以繼續為用戶端提供 I/O 服務。</block>
   <block id="67e0d115b5c2df9254836fd8f762d3dc" category="inline-link">請參閱 ONTAP 文件</block>
   <block id="ff0dae83f1884b2852a33110d07283d1" category="paragraph">工作階段導向的通訊協定可能會在升級期間對某些區域的用戶端和應用程式造成不良影響。如需詳細資訊、<block ref="69d6ddda693aaf09f72544089a10fab3" category="inline-link-rx"></block></block>
@@ -4687,7 +4656,6 @@
   <block id="9f9a7e011920aed7b91c7f5809cef3df" category="paragraph">Azure HA 單一可用性區域、含頁面 Blobs</block>
   <block id="7df51deb241262b7a30e9f895e6b3b75" category="paragraph">Azure HA 單一可用性區域、含共用託管磁碟</block>
   <block id="75b5d41c945fb77a44a02275e5167f03" category="paragraph">Azure HA 多個可用性區域、含共用託管磁碟</block>
-  <block id="735d36020b1ee0734f4e9ddbbea4948e" category="paragraph">所有的Azure儲存帳戶Cloud Volumes ONTAP 均使用客戶管理的金鑰進行加密。如果您想要在建立儲存帳戶期間加密、則必須在CVO建立要求中建立並提供資源ID。這適用於所有類型的部署。如果您未提供、儲存帳戶仍會加密、但BlueXP會先使用Microsoft管理的金鑰加密來建立儲存帳戶、然後再更新儲存帳戶以使用客戶管理的金鑰。</block>
   <block id="3d398b97e4c42f1072862ca68a5330e0" category="inline-link-macro">知識庫文章「 Cloud Volumes ONTAP 升級失敗」</block>
   <block id="73f61210747fe91bea8a184200d3fcc5" category="paragraph">如果發生升級失敗錯誤、請參閱 <block ref="60b526b210a3d8d7f028168de61b0c4a" category="inline-link-macro-rx"></block>。</block>
   <block id="9239af3d88d2e7788330e1bb0d8cd044" category="list-text"><block ref="9239af3d88d2e7788330e1bb0d8cd044" category="inline-link-rx"></block></block>
@@ -4703,13 +4671,11 @@
   <block id="eb4c08b87f805a62e5af64a0b7c6fb5a" category="paragraph">BlueXP會建立Azure安全性群組、其中包含Cloud Volumes ONTAP 了順利運作所需的傳入和傳出規則。您可能想要參照連接埠進行測試、或是想要使用自己的安全性群組。</block>
   <block id="9864c286612d20c437e06d1612a86f2d" category="summary">BlueXP會建立AWS安全性群組、其中包括Cloud Volumes ONTAP 需要順利運作的傳入和傳出規則。您可能想要參照連接埠進行測試、或是想要使用自己的安全性群組。</block>
   <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXP會建立Google Cloud防火牆規則、其中包括Cloud Volumes ONTAP 需要順利運作的傳入和傳出規則。您可能想要參考連接埠以進行測試、或是想要使用自己的防火牆規則。</block>
-  <block id="9edc62814e18ad5dad22ed4f08602be6" category="admonition">在節點型 Cloud Volumes ONTAP 授權中使用 ARP 功能的情況、目前並未反映在 Digital Wallet 中。未來版本的 Digital Wallet 將提供檢視節點型 ARP 使用率的功能。</block>
   <block id="bab89553328d9045a17e6cd7ae426ebe" category="paragraph">磁碟區的 ARP 組態是透過 ONTAP 系統管理員和 ONTAP CLI 執行。</block>
   <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">2024 年 1 月 16 日</block>
   <block id="9ed7d4ae8d042664394e899e9c1f5e9a" category="section-title">BlueXP 中的修補程式版本</block>
   <block id="5c04c0351e9f1e168f13ca5689c21d92" category="paragraph">BlueXP 中只有最新三個版本的 Cloud Volumes ONTAP 才提供修補程式版本。</block>
   <block id="debc8fcbe9103b95d21857d1276dbb26" category="paragraph"><block ref="debc8fcbe9103b95d21857d1276dbb26" category="inline-link-macro-rx"></block></block>
-  <block id="fa8624c42ea6d2ce73d1dbb434c41dc8" category="paragraph">ARP 授權被視為「浮動」授權、這表示它不受限於單一 Cloud Volumes ONTAP 執行個體、而且可以套用至多個 Cloud Volumes ONTAP 環境。</block>
   <block id="677ee5101eb2acd8a357643d03784fa7" category="section-title">修補程式版本</block>
   <block id="25163e975710186a452c0f2fefe81448" category="inline-xref">下載 ONTAP 映像</block>
   <block id="17464ff13145a21ed61cc7a0b9513ce7" category="paragraph">自 2024 年 1 月起、只有在 BlueXP 中、如果是三個最新版 Cloud Volumes ONTAP 的修補程式版本、才能進行修補程式升級。我們使用最新的 GA 版本來判斷在 BlueXP 中顯示的三個最新版本。例如、如果目前的 GA 版本為 9.13.1 、則 BlueXP 中會出現 9.11.1.9.13.1 的修補程式。如果您想要升級至 9.11.1 版或更低版本的修補程式版本、您需要使用手動升級程序 <block ref="741f5e59386960528e5ac58506855727" category="inline-xref-macro-rx"></block>。</block>
@@ -4920,13 +4886,11 @@
   <block id="21374a20e08d3e0c8ca328133d8fe5f4" category="list-text">在 BlueXP 主控台的右上角、按一下省略符號圖示、然後選取 * 從工作區移除 * 。</block>
   <block id="b724364be6320cfd44126523f60ef584" category="inline-link">市場產品的程式化部署</block>
   <block id="64d1ac557c8992bc5d65b98a95e0b497" category="section-title">選擇支援的本機區域</block>
-  <block id="951d6dba79708fba245b5798bb84dde6" category="paragraph">某些 AWS 本機區域（包括新加坡）支援 Cloud Volumes ONTAP 。選擇本機區域是選擇性的。</block>
   <block id="b1968c5681446da9bdcedadbf7a34131" category="inline-link-macro">檢視本機區域的完整清單</block>
   <block id="a455e3549f40e60e4a9c2e8c6580a6a2" category="paragraph"><block ref="27bdb425ba8206d688a379332282fbb4" category="inline-link-macro-rx"></block>。
 您必須先啟用本機區域、才能在這些區域中建立和管理資源。</block>
   <block id="7d273ac4682ff6458339567063ef099c" category="inline-link-macro">瞭解如何啟用本機區域</block>
   <block id="9d27b872e974d3d08bf3a26f3677a159" category="paragraph"><block ref="4d81cb3a41369feab014b9955336458e" category="inline-link-macro-rx"></block>。</block>
-  <block id="f5d7776a3ddb7ca1ecdd36a3e71b0903" category="admonition">Phoenix 不是支援的本機區域。</block>
   <block id="14f93e26a64410a779a8f05ff019c578" category="paragraph">您可以跨多個可用性區域（ AZs ）或單一可用性區域（ AZ ）部署 HA 組態、確保資料的高可用度。您應該檢閱每個組態的詳細資料、以選擇最符合您需求的組態。</block>
   <block id="086e808bdf46a8027609222c8bc2ae0b" category="section-title">多個可用性區域</block>
   <block id="1f0c75dd86d99f8dd501e6ad73083cb9" category="paragraph">在多個可用性區域（ AZs ）中部署 HA 組態、可確保在 AZ 或執行 Cloud Volumes ONTAP 節點的執行個體發生故障時、資料的高可用度。您應該瞭解 NAS IP 位址如何影響資料存取和儲存容錯移轉。</block>
@@ -5163,13 +5127,9 @@
   <block id="61631dd1eb0609d79c27c109e55de5c8" category="paragraph">如需詳細資訊、請參閱<block ref="f2e318b984927d4781fb278ddc8ba233" category="inline-link-rx"></block> 。</block>
   <block id="5baa1341b4ee5dbbcf72c1bca3fb5576" category="inline-link">Amazon S3 文件：深入瞭解 Amazon S3 儲存課程</block>
   <block id="39298274cceb2a817c0b454941ec8e9a" category="paragraph">如果您確實存取資料、則存取成本會較高、因此請在變更儲存類別之前先將其納入考量。<block ref="0c2470317fad27a81908b0930cf9e62d" category="inline-link-rx"></block>。</block>
-  <block id="f2d057ba2400451d6e60c2bfbcdd515f" category="paragraph">您可以在建立工作環境時選取儲存類別、之後隨時變更。有關更改儲存類別的說明，請參閱<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
   <block id="db9ff71bc9bf52beb98f0d113ff7ccbf" category="inline-link">Microsoft Azure 文件：深入瞭解 Azure Blob 儲存設備存取層</block>
-  <block id="3b03939d4e383d03bdf27286fcbfba97" category="paragraph">如果您確實存取資料、存取成本會較高、因此請在變更儲存層之前先將其納入考量。<block ref="30699d9b3a005c39386e73a7c4627191" category="inline-link-rx"></block>。</block>
-  <block id="dfb39f09588961540489e064238fc85a" category="paragraph">您可以在建立工作環境時選取儲存層、之後隨時變更。如需變更儲存層的詳細資訊、請<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>參閱。</block>
   <block id="2071f090de049a0bafd6e8e9ebc886a4" category="inline-link">Google Cloud 文件：儲存類別</block>
   <block id="b7394e89ab52c2644e6abe3428b0bdee" category="paragraph">如果您確實存取資料、存取成本就會較高、因此在變更儲存類別之前、請先將此納入考量。若要深入瞭解<block ref="3f6491f63b376fc9e505b3fd50e825aa" category="inline-link-rx"></block>、請參閱。</block>
-  <block id="0573e6b6d29f7e14bd02accced1264d7" category="paragraph">您可以在建立工作環境時選取儲存層、之後隨時變更。如需變更儲存類別的詳細資訊、請<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>參閱。</block>
   <block id="2fb88c61a4ec945d000763abb10cbd1d" category="paragraph">有關說明和支持的配置列表，請參閱<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
   <block id="38850f8a756c82c89e87237ed4f91234" category="inline-image-macro">這是一個概念性影像、顯示負載平衡器來管理來自 BlueXP  和用戶端的傳入流量、 VMSS Flex 中的兩個 Cloud Volumes ONTAP 節點、用於開機資料的 SSD 磁碟、以及用於客戶資料的頁面 Blobs 。</block>
   <block id="fb33ca393b61decaf86e6a0dccadd3c1" category="paragraph"><block ref="fb33ca393b61decaf86e6a0dccadd3c1" category="inline-image-macro-rx" type="image"></block></block>
@@ -5190,7 +5150,6 @@
   <block id="a9c5983e35ef10e7675e8d4743ca9b78" category="paragraph">如需詳細資訊、請 <block ref="e677af9e7ca6c446fefd39f21658da89" category="inline-link-macro-rx"></block>參閱。</block>
   <block id="13adeba04a9bbea1e4724de79afe951f" category="inline-link-macro">本機區域中的 EC2 執行個體類型</block>
   <block id="973154cd70a812583853f9af98175e4b" category="admonition">如果您在 HA 配對中的節點之間移動磁碟區、則應使用其他節點的 IP 位址來重新掛載磁碟區。否則、您可能會遇到效能降低的情況。如果用戶端支援 NFSv4 轉介或 CIFS 資料夾重新導向、您可以在 Cloud Volumes ONTAP 支撐系統上啟用這些功能、以避免重新掛載磁碟區。如需詳細資訊、請參閱 ONTAP 文件。</block>
-  <block id="a91a698de1a811c466dcfeeb6a0b5b2c" category="admonition">BlueXP 備份與還原需要 PAYGO 訂閱、但使用此服務不會產生任何費用。如需設定 BlueXP  備份與還原授權的詳細資訊，請<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>參閱。</block>
   <block id="1598bd897bc443f364d77a0ead2b386d" category="paragraph">如需相關資訊、請參閱<block ref="07e6a6e4814dabc1a0870a10a70c4b44" category="inline-link-rx"></block></block>
   <block id="e35f4f28f28dcf48ae9d3ccf0f0cefa5" category="paragraph">如果您要使用此加密選項、則必須確保 AWS KMS 設定適當。如需相關資訊、請 <block ref="01123efe4d08d28ad1b6d58169335a21" category="inline-link-macro-rx"></block>參閱。</block>
   <block id="31bba8b3ba9d8527af7c728ba014c87c" category="paragraph">如需 VScan 支援的廠商、軟體及版本的相關資訊，請參閱<block ref="ae69c67e09c854d61b64be1ef166878d" category="inline-link-rx"></block>。</block>
@@ -5198,7 +5157,6 @@
   <block id="f9a29c4f12d918677aac4f08102edf1b" category="list-text">單一節點系統可使用以下類型的 Azure 託管磁碟：</block>
   <block id="747d4ec445455d90b072fa27bca4895a" category="list-text">_Premium SSD v2 託管磁碟 _ 提供更高效能、延遲更低、單一節點和 HA 配對成本更低、相較於 Premium SSD 託管磁碟。</block>
   <block id="ae239537955756b1880e92d14a279360" category="list-text">如果您在建立工作環境時啟用WORM儲存、則您從BlueXP建立的每個Volume都會啟用WORM。但是您可以使用 ONTAP 系統管理員或 ONTAP CLI 來建立已停用 WORM 的磁碟區。</block>
-  <block id="c699841d655c41d53469e8578e8bd3ef" category="list-text">如果您在建立工作環境時停用 WORM 儲存、則從 BlueXP  、 ONTAP 系統管理員或 ONTAP CLI 建立的每個磁碟區都會停用 WORM 。如果您想要在Cloud Volumes ONTAP 建立期間未啟用的支援環境中啟用WORM、您必須建立支援票證、並提供NetApp支援以取得協助。</block>
   <block id="cd0293a5ac443202995d2747957a273f" category="list-text">BlueXP  設定的磁碟區屬性與其他管理工具（例如 ONTAP 系統管理員或 ONTAP CLI ）不同。</block>
   <block id="2de4b6feb53ae91459bc42bdf2b868ff" category="paragraph">有關這些屬性的信息，請參閱<block ref="c8a7e79f678b1faddb103e58db2edb75" category="inline-link-macro-rx"></block>。</block>
   <block id="70a45a83881e6b547c9c6dabf0392df4" category="paragraph">如果您選擇用於 Cloud Volumes ONTAP 的虛擬機器支援將優質 SSD v2 託管磁碟做為資料磁碟、則系統會使用 32 GiB Premium SSD v2 託管磁碟（ NVRAM ）、另一個則做為根磁碟。</block>
@@ -5359,8 +5317,6 @@
   <block id="e378925ca7c13e386e5c5d854097dc26" category="inline-link">Cloud Volumes ONTAP 注意事項</block>
   <block id="72b3ada156bb3b51f9862f1754d974d2" category="list-text"><block ref="72b3ada156bb3b51f9862f1754d974d2" category="inline-link-rx"></block></block>
   <block id="ea7b4173339bef8c2570812171d360a0" category="paragraph">您可以使用備份來重新設定 Cloud Volumes ONTAP 系統。如需組態備份的詳細資訊，請<block ref="49fe905ea86eeb386daebc5876800d6b" category="inline-link-rx"></block>參閱。</block>
-  <block id="26ab4d3fe221f0b273d79d8ce5ebc8bc" category="paragraph">購買附加授權並將其新增至 Digital Wallet 後、您可以使用 Cloud Volumes ONTAP 以每個磁碟區為基礎來啟用 ARP 。</block>
-  <block id="c728dacf8c5d7e9da86b3512e6ea5301" category="paragraph">已啟用 ARP 的磁碟區具有「學習模式」或「作用中」的指定狀態。</block>
   <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">2024 年 9 月 9 日</block>
   <block id="cdd78645b017b927a25b5449e345f823" category="section-title">WORM 和 ARP 功能不再收費</block>
   <block id="8ddfd051601ea88c75625c16c542a149" category="paragraph">BlueXP  也會<block ref="891e111023ee3cccd4407be6ddd24c21" prefix=" " category="inline-code"></block>從 NAS 資料生命期移除下列服務、並將其新增至 iSCSI 資料生命期、藉此修改資料儲存 VM 上的原則：</block>
@@ -5443,9 +5399,7 @@
   <block id="bec523fb694fd6fe80736494c1a45a30" category="cell">與 Google Cloud 服務的通訊。</block>
   <block id="958a7d50dde5e697e4e9a16ba64515e6" category="cell">Cloud Volumes ONTAP 無法與 Google Cloud 服務通訊、以在 Google Cloud 上執行特定的 BlueXP  作業。</block>
   <block id="12acb6948c0c5fe54c5651d99ff9fd04" category="list-text">移至<block ref="5003136445bb4fa028e23c93c86053e6" category="inline-link-rx"></block>、然後在「下載」區段下載所需的軟體版本。</block>
-  <block id="c3288ce29225fc4244fa01d5aef04aa3" category="paragraph">ARP 功能可與 BYOL 和市場訂閱搭配使用、適用於節點型和容量型授權、無需額外付費。請聯絡您的 NetApp 銷售代表、將 ARP 新增至您目前的授權。</block>
   <block id="5ee4faea784afb4b7750a3c91c073449" category="admonition">如果空間不足、 Cloud Volumes ONTAP 就無法移動資料、您可能會遇到效能降低的問題。任何變更都應謹慎進行。如果您不確定、請聯絡 NetApp 支援部門以取得指引。</block>
-  <block id="becb0288ca83df315765f9f31eb5847f" category="paragraph">Cloud Volumes ONTAP 必須向 NetApp 支援部門註冊、才能使用本頁所述的任何方法來升級軟體。這適用於 PAYGO 和 BYOL 。您需要<block ref="f7029dacbf10b8aa72bca74845a64729" category="inline-link-macro-rx"></block>、而 BYOL 系統則預設為註冊。</block>
   <block id="fd8831656d484b23e386115d7264f056" category="list-text">對於 HA 配對：</block>
   <block id="180b275121e0f37251fecae975bf46df" category="list-text">兩個 ST1 EBS 磁碟區用於中介執行個體、其中一個是大約 8 GiB 作為根磁碟、另一個是 4 GiB 作為資料磁碟</block>
   <block id="64b03175221d53e202f475eebaa91d75" category="list-text">每個節點中有一個 140 GiB GP3 磁碟、其中包含另一個節點的根資料複本</block>
@@ -5521,9 +5475,7 @@
   <block id="287c693dd0bc6ec48aa0fc3f4b950a9e" category="paragraph">訂閱將與您的 BlueXP  組織或帳戶解除連結、因此在建立 Cloud Volumes ONTAP 工作環境時無法再選擇。</block>
   <block id="bae74b170f7e19d783c68e9e4e5e5a70" category="paragraph">AWS 本機區域是一種基礎架構部署、其中儲存、運算、資料庫和其他精選 AWS 服務都位於大城市和產業區域附近。有了 AWS 本機區域、您就能讓 AWS 服務更接近您、進而改善工作負載的延遲、並在本機維護資料庫。在 Cloud Volumes ONTAP 上、</block>
   <block id="12132105a5861c2a904da865554d4e62" category="admonition">在標準和私有模式中使用 BlueXP  時、支援 AWS 本機區域。目前、在受限模式下使用 BlueXP  時不支援 AWS 本機區域。</block>
-  <block id="87836512100e1272a8e293d9b1584ca0" category="paragraph">Cloud Volumes ONTAP 僅支援 AWS 本機區域中的 HA 部署。以下為範例組態：</block>
   <block id="15c32962b3a74affab8eda8b723d5a9d" category="paragraph">唯一支援的磁碟類型是 GP2 。目前支援下列 EC2 執行個體類型系列、其大小為 xlarge 到 4xlarge ：</block>
-  <block id="238181028bdcb33e3ea129371a6d2545" category="paragraph">Cloud Volumes ONTAP 僅支援這些組態。在 AWS 本機區域組態中為 Cloud Volumes ONTAP 選取任何其他磁碟類型或 EC2 執行個體、可能會導致部署失敗。請參閱 AWS 文件以取得最新完整的詳細資料<block ref="a4408f4d4cfd81ced6d2ec2b8da89160" category="inline-link-macro-rx"></block>。</block>
   <block id="a02d03fc43afe508f920c7ac72a54af6" category="list-text">以隨成長付費訂閱為基礎的服務、為高可用度（ HA ）配對提供順暢的混合雲體驗。</block>
   <block id="e7c597b04ce35f0f025ccab446eee809" category="paragraph">您可以在多種不同組態中依容量付費：</block>
   <block id="53e6fd574dbf70e62183a00bd6dce317" category="paragraph">授權完全以在 Cloud Volumes ONTAP 系統中建立的 Volume 類型為基礎：</block>
@@ -5537,7 +5489,6 @@
   <block id="42a9ff8d7662759290ac08e2ee0929f4" category="list-text">超額：如果超過授權容量、就會以市場費率收取超額費用、並優先使用其他授權的可用容量。</block>
   <block id="f93da9b042a7ade0f4d86a091309ed87" category="list-text">FlexClone 和 FlexCache Volumes ： FlexClone Volume 不收費。來源和目的地 FlexCache 磁碟區被視為主要資料、並根據已配置的空間收費。</block>
   <block id="371519ace7adec1f0d1a909854d1cbec" category="list-text">HA 配對充電：對於 HA 配對、只會對節點上的已配置容量進行充電。同步鏡射至合作夥伴節點的資料不會收費。</block>
-  <block id="0099e212d78247cd7545328dc1350ae0" category="admonition">NetApp 將於短期內終止節點型授權的供應。可用性結束後、節點型授權將需要轉換成容量型授權。如需相關資訊、請<block ref="f09d1138443525e41476e551a1dde747" category="inline-link-rx"></block>參閱。</block>
   <block id="2bb8a9ed1433f0f845b92c7da5440dea" category="section-title">2024 年 10 月 25 日</block>
   <block id="dc1815932afdea52f1a4c12d73f2eed0" category="section-title">N1 系列機器無法在 BlueXP  上選擇</block>
   <block id="1bb0d11a534c8ee967cd62e4d75e3da3" category="paragraph">在 Google Cloud 中部署新的 Cloud Volumes ONTAP 執行個體時、 BlueXP  不再提供 N1 系列機器供您選擇。N1 系列機器將僅保留在舊版現有系統中、並受到支援。Cloud Volumes ONTAP 的新部署僅從 9.8 版開始支援 Google Cloud 。建議您切換至與 Cloud Volumes ONTAP 9.8 及更新版本相容的 n2 系列機器類型。不過、 N1 系列機器將可用於透過 API 執行的新部署。</block>
@@ -5548,4 +5499,151 @@
   <block id="7a73f560e215c4ff952d3384c5435ae9" category="list-text"><block ref="7a73f560e215c4ff952d3384c5435ae9" category="inline-link-rx"></block></block>
   <block id="c8eac8ecc3bb9bb52e4fa6b3d34c3c38" category="list-text"><block ref="c8eac8ecc3bb9bb52e4fa6b3d34c3c38" category="inline-link-rx"></block></block>
   <block id="448c087351c52cb72f971666e2159491" category="paragraph"><block ref="448c087351c52cb72f971666e2159491" category="inline-link-rx"></block></block>
+  <block id="059b6fdd2ea839d9327c322a4c87e168" category="doc">終止節點型授權的可用度</block>
+  <block id="73dfeef5d38f87e4c1d9e4b6417db109" category="paragraph">NetApp 已規劃終止供應（ EOA ）和終止支援（ EOS ）的 Cloud Volumes ONTAP 節點型授權。自 2024 年 11 月 11 日起，節點型授權的有限可用度已終止。節點型授權支援將於 2024 年 12 月 31 日終止。在節點型授權的 EOA 之後，您應該使用 BlueXP  授權轉換工具，轉換為容量型授權。</block>
+  <block id="412842ace3db013f5cc3f99342aac206" category="paragraph">若為年度或長期承諾， NetApp 建議您在 EOA 日期或授權到期日之前聯絡 NetApp 代表，以確保移轉的先決條件已就緒。如果您沒有 Cloud Volumes ONTAP 節點的長期合約，而且是根據隨選 PAYGO 訂閱來執行系統，請務必在 EOS 日期之前規劃您的轉換。對於長期合約和 PAYGO 訂閱，您可以使用 BlueXP  授權轉換工具進行無縫轉換。</block>
+  <block id="90df487d076cd9295a7192268b4439ee" category="inline-link">終止節點型授權的可用性</block>
+  <block id="342dcce6bda294bb4b60fc9333bcafbe" category="inline-link">將節點型授權轉換為容量型</block>
+  <block id="2293617fe352e42e5a1e5d757463cb39" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="5987d844b1ad687ea551a96a31c7c0df" category="inline-link-rx"></block></block>
+  <block id="a4b4a128b8ea43df8551a18d37b0bfcd" category="section-title">從 BlueXP  移除節點型部署</block>
+  <block id="04b144a0be31129b4ac9a0f2751271d9" category="paragraph">使用節點型授權來部署 Cloud Volumes ONTAP 系統的選項在 BlueXP  上已過時。除了少數特殊情況，您無法為任何雲端供應商使用節點型授權來部署 Cloud Volumes ONTAP 。</block>
+  <block id="11c97a8e296f1428a1d4c9a2253b1bfb" category="paragraph">NetApp 瞭解下列符合合約義務和營運需求的獨特授權要求，並將在這些情況下繼續支援節點型授權：</block>
+  <block id="57389c1aef6c1264d9ad4bbe74640b2e" category="list-text">USPS 客戶</block>
+  <block id="43b1a7bfd4243a44cf321f03e7878ffd" category="list-text">以私有模式部署</block>
+  <block id="bbef1435f544b56bbed0e1c536c2515e" category="list-text">在 AWS 中部署 Cloud Volumes ONTAP 的中國地區</block>
+  <block id="e6eb4bcca3ad358d710ea99dd5c577d1" category="list-text">如果您擁有有效且未過期的個別節點，請自行攜帶授權（ BYOL 授權）</block>
+  <block id="677ce77d69762bd9f63d8a2760e6a0c4" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block></block>
+  <block id="02077474df02850d5f691ab4c25f3b7c" category="section-title">在 Azure Blob 儲存設備上新增 Cloud Volumes ONTAP 資料的 Cold 層</block>
+  <block id="b37931f01938eae6736d1bea8fd72fed" category="paragraph">BlueXP  現在可讓您選取一個冷層，將非作用中容量層資料儲存在 Azure Blob 儲存設備上。在現有的熱和冷卻層中加入冷層，可為您提供更經濟實惠的儲存選項，並提升成本效率。</block>
+  <block id="2ede20fe3152113b3c27cd841c879ccf" category="paragraph"><block ref="2ede20fe3152113b3c27cd841c879ccf" category="inline-link-rx"></block></block>
+  <block id="7a315b4592c0ed57964da376a6b04868" category="section-title">選項可限制 Azure 儲存帳戶的公開存取</block>
+  <block id="c11ad5eeb4b3088d2c151593e9c1204e" category="paragraph">您現在可以選擇限制對 Azure 上 Cloud Volumes ONTAP 系統的儲存帳戶進行公開存取。停用存取功能後，即使在同一個 vnet 內也能保護私有 IP 位址不受洩漏，只要您需要遵守組織的安全原則即可。此選項也會停用 Cloud Volumes ONTAP 系統的資料分層功能，並同時適用於單一節點和高可用度配對。</block>
+  <block id="69e89afe4b2013c34ff51df883ddc022" category="paragraph"><block ref="9064ea2dae3c9dc76b91a834ab88d8bf" category="inline-link-rx"></block>。</block>
+  <block id="f87269f0bcffd4dd379148db58c41b11" category="section-title">部署 Cloud Volumes ONTAP 之後啟用 WORM</block>
+  <block id="8d9d085ab6acd5074907258fafcff341" category="paragraph">之前，您可以在 BlueXP  上建立 Cloud Volumes ONTAP 工作環境時啟用 WORM 儲存。現在， BlueXP  提供您在工作環境中啟用 WORM 的選項，即使在建立時未啟用 WORM 也沒問題。啟用後，您就無法停用 WORM 。</block>
+  <block id="664bf259381c1fa1513c4c79450fb0f4" category="inline-link">在 Cloud Volumes ONTAP 工作環境中啟用 WORM</block>
+  <block id="42009eda159da22132429f44bf400e6c" category="paragraph"><block ref="42009eda159da22132429f44bf400e6c" category="inline-link-rx"></block></block>
+  <block id="2db5c6d1af8e977d496e788510cbddd0" category="paragraph">您可以在建立工作環境時選取儲存類別，之後隨時變更。有關更改儲存類別的說明，請參閱<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
+  <block id="930e999bb64aeb9cc71cdd63d9f4948c" category="paragraph">如果您不打算存取容量層中的非使用中資料，您可以選擇 _Cool 儲存層，其中的非使用中資料會保留至少 30 天。您也可以選擇 _colle_ 層級，其中儲存非使用中資料的時間至少為 90 天。根據您的儲存需求和成本考量，您可以選擇最適合您需求的層級。當您將儲存層變更為 _cool 或 _cold 時，非作用中容量層資料會直接移至 Cool 或 Cold 儲存層。相較於熱層，冷冷層的儲存成本較低，但存取成本較高，因此請在變更儲存層之前先將其納入考量。請參閱<block ref="30699d9b3a005c39386e73a7c4627191" category="inline-link-rx"></block>。</block>
+  <block id="3bb51211db193484b68905ef8f68ac0f" category="paragraph">您可以在建立工作環境時選取儲存層，之後隨時變更。如需變更儲存層的詳細資訊、請<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>參閱。</block>
+  <block id="546c7b1d0701c3dcea6eb887ba9a499b" category="paragraph">您可以在建立工作環境時選取儲存層，之後隨時變更。如需變更儲存類別的詳細資訊、請<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>參閱。</block>
+  <block id="8c26cfdad94fa97c367b921f4702fcea" category="paragraph">您可以使用 HA 配對做為主動式組態，其中兩個節點都會將資料提供給用戶端，或做為主動式被動式組態，被動式節點只有在接管主動式節點的儲存設備時，才會回應資料要求。</block>
+  <block id="fa317d8412b494ed6cf39e304ca9a341" category="paragraph">AWS 中的 Cloud Volumes ONTAP 僅支援單一可用性區域中的高可用度（ HA ）模式。不支援單一節點部署。</block>
+  <block id="eb99da0ddbfd6f5a24a511ef8df7c577" category="paragraph">Cloud Volumes ONTAP 不支援 AWS 本機區域中的資料分層，雲端分層和不合格執行個體。</block>
+  <block id="19af59a268c506bb19268e318e2e9e5f" category="paragraph">以下為範例組態：</block>
+  <block id="02648096bf738946ffc4d338cb4e9d59" category="admonition">Cloud Volumes ONTAP 僅支援這些組態。在 AWS 本機區域組態中選取不支援的磁碟類型或不合格的執行個體，可能會導致部署失敗。AWS 本機區域無法使用 AWS S3 的資料分層功能，因為連線能力不足。</block>
+  <block id="54a223dbcc3dca4a58e9e5bc292e0c6b" category="paragraph">請參閱 AWS 文件以取得最新完整的詳細資料<block ref="a4408f4d4cfd81ced6d2ec2b8da89160" category="inline-link-macro-rx"></block>。</block>
+  <block id="8d4ac812d0760131bc0db9a92eb2b512" category="paragraph">每個具有節點型的 Cloud Volumes ONTAP 系統都必須擁有自己的授權（ BYOL ），而且必須安裝有效訂閱的系統授權。BlueXP可管理您的授權、並在授權到期前顯示警告、藉此簡化程序。</block>
+  <block id="2316a1561b1b51c9eb0f231cb338cf48" category="summary">熟悉容量型授權的收費，使用模式，定價與組態。</block>
+  <block id="13dba612a4f942a80cbc82c5f678d57c" category="doc">更多關於容量型授權的資訊</block>
+  <block id="24382072604813ac4ccf773eac088de7" category="paragraph">您應該熟悉容量型授權的收費與容量使用</block>
+  <block id="14f508f0826944b504efb176670357e8" category="list-text">* BYOL* ：請自帶授權（ BYOL ）。從 NetApp 購買的授權，可用於在任何雲端供應商中部署 Cloud Volumes ONTAP 。</block>
+  <block id="3c7a90227f7481790a6d7eb5b1a274ea" category="list-text">* PAYGO* ：隨用隨付（ PAYGO ）訂閱是您雲端供應商市場的每小時訂閱。</block>
+  <block id="2b0470da2a26cbbea5d95f4e261d82ee" category="paragraph">如需將節點型授權轉換為容量型授權的相關資訊，請參閱</block>
+  <block id="7af9b0ab22150a40b2c1c451de82db3c" category="section-title">定價與支援的組態</block>
+  <block id="f05f2e524280a4aaf976825a1f6748f6" category="inline-link-macro">以容量為基礎的授權費用</block>
+  <block id="6c418172eb2db3f08bae6e40862aa940" category="paragraph">如需更多資訊、請參閱 <block ref="28d08582e43bd81e1450bd514123324f" category="inline-link-macro-rx"></block>。</block>
+  <block id="a9949f1e97b05bac6285563868b6954a" category="admonition">BlueXP  備份與還原需要付費（ PAYGO ）訂閱，但使用此服務不會產生任何費用。如需設定 BlueXP  備份與還原授權的詳細資訊，請<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>參閱。</block>
+  <block id="05e7dd258874d61cb2bb985c9da9a17d" category="paragraph">NetApp 已規劃終止供應（ EOA ），並支援（ EOS ）節點型授權。在 EOA 和 EOS 之後，節點型授權將需要轉換為容量型授權。</block>
+  <block id="8c6aee7f6d39fa3bea95c2ae09851a7a" category="paragraph">如需相關資訊、請<block ref="f09d1138443525e41476e551a1dde747" category="inline-link-rx"></block>參閱。</block>
+  <block id="5b4d3df9f94e27cca9f34f152bff2940" category="paragraph">自 2024 年 11 月 11 日起，節點型授權的有限可用度已終止。節點型授權支援將於 2024 年 12 月 31 日終止。</block>
+  <block id="f61f8b3c935630ec8f0486cee8916013" category="paragraph">如果您的有效節點型合約超過 EOA 日期，您可以繼續使用授權，直到合約到期為止。合約到期後，必須轉換至容量型授權模式。如果您沒有 Cloud Volumes ONTAP 節點的長期合約，請務必在 EOS 日期之前規劃您的轉換。</block>
+  <block id="bf2b1d7970167b534d54bc96e7402716" category="paragraph">從下表中深入瞭解每種授權類型及 EOA 對其的影響：</block>
+  <block id="82060d81b7ce43c57280e879899f9a2c" category="cell">授權類型</block>
+  <block id="9278d7740d8ae06ade950cb6b0dd3e8c" category="cell">EOA 之後的影響</block>
+  <block id="614e524d2f2decbb0935ad5876d363a6" category="paragraph">透過自帶授權（ BYOL ）購買的有效節點型授權</block>
+  <block id="478c4f4681eac78a0ac305ec7be4713f" category="paragraph">授權在到期前仍有效。現有未使用的節點型授權可用於部署新的 Cloud Volumes ONTAP 系統。</block>
+  <block id="16d5ab209831029745e64e98e66ba23c" category="paragraph">透過 BYOL 購買的過期節點型授權</block>
+  <block id="d83127b1411e10b0e57743f291048e63" category="paragraph">您將無權使用此授權部署新的 Cloud Volumes ONTAP 系統。現有系統可能會繼續運作，但在 EOS 日期後，您將不會收到任何系統支援或更新。</block>
+  <block id="dddb9d06ec44b2f4783c5cbeb3b3f962" category="paragraph">使用 PAYGO 訂閱的有效節點型授權</block>
+  <block id="1992166b3e269c648d4c3627fe482fa5" category="paragraph">在 EOS 日期之後，將停止接收 NetApp 支援，直到您轉換至容量型授權為止。</block>
+  <block id="ddbff06fb221c5c1396bb37c09f6f2fb" category="paragraph-title">排除</block>
+  <block id="60d1148bddcd69c1238a0b69f45bdaa5" category="paragraph">NetApp 瞭解某些情況需要特別考量，而節點型授權的 EOA 和 EOS 不適用於下列情況：</block>
+  <block id="0fda23bdfd335df1f36c51b87bc2b780" category="paragraph">針對這些特定案例， NetApp 將提供支援，以因應合約義務和營運需求，滿足獨特的授權要求。</block>
+  <block id="913f6cd3e420105c804151f182c6938f" category="admonition">即使在這些案例中，新的節點型授權和授權續約自核准日期起，最長可有效一年。</block>
+  <block id="5be0251ff1848cd4d292e0a684e70539" category="section-title">授權轉換</block>
+  <block id="a3562fcfc4a85274195b7100a2a26d71" category="paragraph">BlueXP  可透過授權轉換工具，將節點型授權無縫轉換為容量。如需節點型授權的 EOA 相關資訊，請<block ref="1ef8ea114dcf1680f435cb8143e047b7" category="inline-link-macro-rx"></block>參閱。</block>
+  <block id="67b50b6cd5ac50e92192638dab47bddc" category="paragraph">在轉換之前，最好先熟悉兩種授權模式之間的差異。節點型授權包括每個 ONTAP 執行個體的固定容量，因此可能會限制靈活度。另一方面，容量型授權則允許跨多個執行個體共用儲存池，提供更高的靈活度，最佳化資源使用率，並降低重新分配工作負載時的財務處罰可能性。容量型充電功能可根據不斷變化的儲存需求進行無縫調整。</block>
+  <block id="9deed5641b081a08e814b22533f5376e" category="paragraph">若要瞭解如何執行此轉換，請參閱<block ref="431f655d5a9ac309b561fc62a4c619ea" category="inline-link-macro-rx"></block>。</block>
+  <block id="2840378978873ef766f1cf65e35e8874" category="admonition">不支援將系統從容量型轉換為節點型授權。</block>
+  <block id="eb6b8681b70b8bdf10f97c0999d1a166" category="paragraph">WORM 功能可與自帶授權（ BYOL ）搭配使用，並可免費訂購授權產品。請聯絡您的 NetApp 銷售代表、將 WORM 新增至您目前的授權。</block>
+  <block id="860927af902beb1428465c4ff2b73981" category="list-text">如果您在建立工作環境時停用 WORM 儲存、則從 BlueXP  、 ONTAP 系統管理員或 ONTAP CLI 建立的每個磁碟區都會停用 WORM 。</block>
+  <block id="584bce636e6a152cb14b10a9d95cc134" category="paragraph">在 BlueXP  上建立 Cloud Volumes ONTAP 工作環境時，您可以啟用 WORM 儲存。如果在建立期間未啟用 WORM ，您也可以在工作環境中啟用 WORM 。啟用後，您就無法停用 WORM 。</block>
+  <block id="1cfbcfa88923d0df6b5764e50ce3a549" category="list-text">ONTAP 9 10.1 及更新版本支援 WORM 。</block>
+  <block id="1b52e286a71c7852e84e0a121bc9874b" category="list-text">ONTAP 9 ． 11.1 及更新版本均支援備份的 WORM 。</block>
+  <block id="f3b94705a03d2506d182cf13e262ad27" category="list-text">在 Canvas 頁面上，按兩下您要啟用 WORM 的工作環境名稱。</block>
+  <block id="e2ba39c84c604d7eb0a5b7184cab7d68" category="list-text">按一下 [ 概觀 ] 索引標籤上的 [ 功能 ] 面板，然後按一下 *WORM* 旁邊的鉛筆圖示。</block>
+  <block id="b474fb933ed760adc08677bc4bc42339" category="paragraph">如果系統上已啟用 WORM ，鉛筆圖示會停用。</block>
+  <block id="fe19c26d9707943e3d7c9c5da6083944" category="list-text">在 * WORM * 頁面上，設定叢集法規遵循時鐘的保留期間。</block>
+  <block id="78e3f451c302e6f4fc3497680e508ed4" category="inline-link">ONTAP 文件：初始化法規遵循時鐘</block>
+  <block id="40a4c252d21fe44c5babb5cd38a59474" category="paragraph">如需詳細資訊、請<block ref="e2235bff328f7d7d636e45c1db9cf9c0" category="inline-link-rx"></block>參閱。</block>
+  <block id="0488bab91fb4582b53a14eb8fc2a032b" category="paragraph">您可以在「功能」面板上驗證 * WORM * 的狀態。啟用 WORM 後， SnapLock 授權會自動安裝在叢集上。您可以在 ONTAP 系統管理員上檢視 SnapLock 授權。</block>
+  <block id="b0af18cd69843e047afd09d32ac1cd7f" category="paragraph">有關說明，請參閱<block ref="03bc56e40fb58df28e53112c02ca2ae1" category="inline-link-rx"></block>。</block>
+  <block id="560c2ebf5fdf3cdbb830bad54eafda28" category="list-text">NetApp Volume Encryption （僅適用於自帶授權（ BYOL ）或已註冊的隨用隨付（ PAYGO ）系統）</block>
+  <block id="7f5d518134ff332807df54a0d0660a08" category="list-text">* 僅選取的 vnet * ：傳入流量的來源是 Cloud Volumes ONTAP 系統的 vnet 子網路範圍，以及 Connector 所在的 vnet 子網路範圍。這是建議的選項。</block>
+  <block id="cd8b82367babbe39683e8fb9f0c22ed5" category="list-text">* 所有 VNet* ：傳入流量的來源為 0.0.0.0/0 IP 範圍。</block>
+  <block id="30b4fbeeeca063d0518f937681d54cb1" category="list-text">* 停用 * ：此選項會限制公用網路存取您的儲存帳戶，並停用 Cloud Volumes ONTAP 系統的資料分層。如果您的私有 IP 位址因安全法規和原則而不應暴露在同一個 vnet 內，則建議使用此選項。</block>
+  <block id="57c6d237e15f528fad8e3f65f9a16398" category="paragraph">如果您使用的是節點型隨付（ PAYGO ）授權，您可以按一下 * 授權類型 * 旁的鉛筆圖示，選擇不同的授權和 VM 類型。</block>
+  <block id="61f61b36ca3ee8ac47bd8319d6a6da9e" category="paragraph">如果您使用的是節點式「隨用隨付」（ PAYGO ）授權，您可以選擇不同的授權和執行個體類型，方法是按一下 * 授權類型 * 旁的鉛筆圖示。</block>
+  <block id="a6ecef7da6963fbad59a3086a2850e01" category="paragraph">如果您使用的是節點型隨付（ PAYGO ）授權，您可以按一下 * 授權類型 * 旁的鉛筆圖示，選擇不同的授權和機器類型。</block>
+  <block id="ad7ec214f507336a7e17d120e074d946" category="summary">當節點型授權的可用度結束（ EOA ）之後，您應該使用 BlueXP  授權轉換工具來轉換為容量型授權。</block>
+  <block id="ede3b64e47be4458ec3b083a508317d8" category="paragraph">若為年度或長期承諾， NetApp 建議您在 EOA 日期（ 2024 年 11 月 11 日）或授權到期日之前聯絡 NetApp 代表，以確保移轉的先決條件已就緒。如果您沒有 Cloud Volumes ONTAP 節點的長期合約，而且是根據隨選隨用隨付隨用（ PAYGO ）訂閱來執行系統，那麼請務必在 2024 年 12 月 31 日支援終止（ EOS ）之前規劃您的轉換。在這兩種情況下，您都應該確保系統符合需求，然後再使用 BlueXP  授權轉換工具進行無縫轉換。</block>
+  <block id="4bedf07f0fb0e4e91062f6c20aefb983" category="paragraph">有關 EOA 和 EOS 的資訊，請參閱<block ref="7f9a8649ca2d86db235ba56502d14f92" category="inline-link-macro-rx"></block>。</block>
+  <block id="aef6fd472f817709940e55ee0509b06b" category="list-text">當您使用授權轉換工具時，會在適當的位置和線上方式，從節點型移轉至容量型授權模式，不需要移轉任何資料或配置額外的雲端資源。</block>
+  <block id="1b740ae810dbba9c533dc649a7e00e1a" category="list-text">這是一項不中斷營運的作業，不會造成服務中斷或應用程式停機。</block>
+  <block id="ae7204194871107f02073f12fcf8eef4" category="list-text">Cloud Volumes ONTAP 系統中的帳戶和應用程式資料保持不變。</block>
+  <block id="0caba03d6443607a5e6317db3c48768b" category="list-text">基礎雲端資源在轉換後仍不受影響。</block>
+  <block id="c71b87b7ddb6142065c0158af5ec7d67" category="list-text">授權轉換工具支援所有部署類型，例如單一節點，單一可用性區域（ AZ ）中的高可用度（ HA ），多個 AZ 中的 HA ，自帶授權（ BYOL ）和 PAYGO 。</block>
+  <block id="98017309484ea1c630aac29d1d5cde75" category="list-text">此工具支援所有節點型授權，做為來源，並將所有容量型授權做為目的地。例如，如果您擁有 PAYGO Standard 節點型授權，則可以將其轉換為 BYOL 容量型授權。</block>
+  <block id="d83716c2cd131d390d1534102b05cd41" category="list-text">所有雲端供應商， AWS ， Azure 和 Google Cloud 都支援此轉換。</block>
+  <block id="17b44aa5dd5a227e033b4a869774c160" category="list-text">轉換後，節點型授權的序號將由容量型格式取代。這是轉換的一部分，並反映在您的 NetApp 支援網站（ NSS ）帳戶上。</block>
+  <block id="57badbd9aeb6e5152434b70bdd22ed2e" category="list-text">當您轉換至容量型模式時，資料會繼續保留在節點型授權的相同位置。這種方法可確保資料放置不會中斷，並在整個轉換過程中遵守資料主權原則。</block>
+  <block id="185df8fc7d6cba2b3dc4ddbb241610fe" category="list-title">開始之前</block>
+  <block id="c89523d65a6a7e4c3fbcb8cbfee5d6e5" category="list-text">您應該擁有具有客戶存取權或系統管理員存取權的 NSS 帳戶。</block>
+  <block id="6f20448e7fc594c65cbf039bc1158f6e" category="list-text">您的 NSS 帳戶應以 BlueXP  使用者認證登錄。</block>
+  <block id="fe48b2f64d3e692a977f98f771bb114c" category="list-text">工作環境應連結至具有客戶存取權或系統管理員存取權的 NSS 帳戶。</block>
+  <block id="2d7b42dafac67ae8d4acec7cdad288fb" category="list-text">您應該擁有有效的容量型授權，可以是 BYOL 授權或市場訂閱。</block>
+  <block id="f45e4501bcc29fe221f7780836d48c71" category="list-text">BlueXP  帳戶應提供容量型授權。此授權可以是市場訂閱，或是 BlueXP  數位錢包中的 BYOL / 私有優惠套件。</block>
+  <block id="cbafe80857ccd6774c5a1e53cc912746" category="list-text">在選擇目的地套件之前，請先瞭解下列條件：</block>
+  <block id="a906cad1e2bd71c3fd41efc1424f282e" category="list-text">如果帳戶擁有容量型 BYOL 授權，則所選的目的地套件應與帳戶的 BYOL 容量型授權一致：</block>
+  <block id="6905efe5cff8820565676d6d40bbc083" category="list-text">當<block ref="9e8b160226c9fe22a910c782ce5076e2" prefix=" " category="inline-code"></block>選擇作為目的地套件時，帳戶應擁有 BYOL 授權及專業版套件：</block>
+  <block id="3074c4231dd896cfd0c588f36eae9ca4" category="list-text">當<block ref="4d55f77f062bf48891bd0f749c36a36d" prefix=" " category="inline-code"></block>選擇作為目的地套件時，帳戶應具有 Essentials 套件的 BYOL 授權。</block>
+  <block id="a69a8ea18d8053f3a86291dc9d373615" category="list-text">當<block ref="6e539d2ea7d82ed0e31c450e64ff8c04" prefix=" " category="inline-code"></block>選擇作為目的地套件時，帳戶應擁有 BYOL 授權，並附有最佳化套件。</block>
+  <block id="bd37a5a3b2ad6bc210a3a7eaa1a44b64" category="list-text">如果目的地套件與帳戶的 BYOL 授權可用度不符，則表示容量型授權可能不包含所選的套件。在這種情況下，您將透過市場訂閱付費。</block>
+  <block id="29de10157e38deb8ae7d4bcf417d7bca" category="list-text">如果沒有容量型 BYOL 授權，但只有市場訂閱，您應確保所選套件已包含在容量型市場訂閱中。</block>
+  <block id="2ff79b1cb99d3f2339a1ba9f8784b183" category="list-text">如果現有容量型授權中的容量不足，而且您有市場訂閱來收取額外容量使用費，您將透過市場訂閱收取額外容量的費用。</block>
+  <block id="7775102e8cdaa249c6e16d91543c875f" category="list-text">如果現有容量型授權中的容量不足，而且您沒有市場訂閱來收取額外容量使用量的費用，就無法進行轉換。您應新增市場訂閱，以收取額外容量費用，或將可用容量擴充至目前的授權。</block>
+  <block id="400c55906a66dfb0a544082037323a6b" category="list-text">如果目的地套件與帳戶的 BYOL 授權可用度不符，而且現有容量型授權中的容量不足，則您將透過市場訂閱付費。</block>
+  <block id="0e5c1be9c6aca6c1aaf08bf9ed203110" category="admonition">如果未滿足任何這些要求，則不會進行授權轉換。在特定情況下，可能會轉換授權，但無法使用。按一下資訊圖示以識別問題並採取修正行動。</block>
+  <block id="d196b764b4e42a2a99aacead075f4b58" category="list-text">在「 Canvas 」頁面上，按兩下您要修改其授權類型的工作環境名稱。</block>
+  <block id="ccf71cd219d20a210964977da3ff250e" category="list-text">按一下 [ 概觀 ] 索引標籤上的 [ 功能 ] 面板。</block>
+  <block id="498a7301ce7f11c6c87ae04fa3f52b88" category="list-text">核取 * 充電方法 * 旁的鉛筆圖示。如果系統的充電方式為<block ref="e71f388bff446d0d83b053510eafc3ce" prefix=" " category="inline-code"></block>，您可以將其轉換為依容量充電。</block>
+  <block id="1c72b9c278e1ac9dd3d0f1e9d9732d89" category="admonition">如果您的 Cloud Volumes ONTAP 系統已依容量收費，或是未滿足任何需求，則會停用此圖示。</block>
+  <block id="b168f6cc04ffcf2dda599d1ba73d94c2" category="list-text">在 * 將節點型授權轉換為容量型 * 畫面上，確認工作環境名稱和來源授權詳細資料。</block>
+  <block id="cd2d0eea05654ca89f4d05184b605a3f" category="list-text">選取要轉換現有授權的目的地套件：</block>
+  <block id="ad55f0eebc5068e31eecc1bc08fae252" category="list-text">基礎概論。預設值為<block ref="4d55f77f062bf48891bd0f749c36a36d" prefix=" " category="inline-code"></block>。</block>
+  <block id="954b5977f70cfdad6145a9a16edd2fed" category="list-text">最佳化（適用於 Azure ）</block>
+  <block id="6a9b652c3f19ffc2d3128d21e07dc641" category="list-text">最佳化（適用於 Google Cloud ）</block>
+  <block id="0913524919eac0f6e05917a28ac0868a" category="list-text">如果您擁有 BYOL 授權，您可以選取核取方塊，從 BlueXP  數位錢包轉換後刪除節點型授權。如果轉換尚未完成，即使選取此核取方塊，授權也不會從數位錢包中刪除。如果您有市場訂閱，則無法使用此選項。</block>
+  <block id="a42381ccb4c9b07d94af68aac09b97db" category="list-text">選取核取方塊以確認您瞭解變更的影響，然後按一下 * 繼續 * 。</block>
+  <block id="54173685d0a19dc27fc7d74a0b1348f0" category="paragraph">檢視新的授權序號，並驗證 BlueXP  數位錢包的變更。</block>
+  <block id="3c3004e9c8348137de8afab1e2968653" category="cell">選擇 AWS 認證資料和市場訂閱、以搭配此 Cloud Volumes ONTAP 款功能系統使用。按一下*新增訂閱*、將所選認證資料與新的AWS Marketplace訂閱建立關聯。訂閱可以是一年一度的合約、或Cloud Volumes ONTAP 是以每小時的費率支付。如果直接從 NetApp 購買授權（請自帶授權（ BYOL ）），則不需要 AWS 訂閱。<block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>。</block>
+  <block id="4aecb2a001e9ed1c57930cdd68e5a8e2" category="list-text">如果在 vnet 內停用對儲存帳戶的公開存取，您就無法在 Cloud Volumes ONTAP 系統中啟用資料分層功能。如需相關資訊、請 <block ref="cf7250ba2a63a15ad3b094d85cccecb2" category="inline-link-macro-rx"></block>參閱。</block>
+  <block id="ffee78f944ad8168ad943b188f69ad15" category="list-text">檢視套件摘要，其中會顯示您的使用容量，預先配置的總容量，以及總使用成本（ PAYGO ）容量。</block>
+  <block id="84d1a8b78e647d328dc1794599f688b4" category="list-text">_Total preconted capacity_ 是您從 NetApp 購買的總授權容量（自帶授權（ BYOL ）或 Marketplace Contract ）。</block>
+  <block id="0d4e36aae457a1001b3373de2fd510f1" category="list-text">請自帶您從 NetApp 購買的授權（ BYOL ）</block>
+  <block id="83c2a6ded9467f8048f9a53cabd2e783" category="paragraph-title">相關主題</block>
+  <block id="cb90b48918ed9cd8ea355c04c171177b" category="paragraph">連結：<block ref="7f9a8649ca2d86db235ba56502d14f92" category="inline-link-macro-rx"></block> <block ref="431f655d5a9ac309b561fc62a4c619ea" category="inline-link-macro-rx"></block></block>
+  <block id="829695792a0f96cf880394f0cc741cb2" category="paragraph">選擇本機區域是選擇性的。某些 AWS 本機區域（包括新加坡）支援 Cloud Volumes ONTAP 。AWS 中的 Cloud Volumes ONTAP 僅支援單一可用性區域中的高可用度（ HA ）模式。不支援單一節點部署。</block>
+  <block id="d5d3ecd60f97415d2a0cea0a8c702e45" category="admonition">Cloud Volumes ONTAP 不支援 AWS 本機區域中的資料分層和雲端分層。此外，不支援具有未符合 Cloud Volumes ONTAP 資格執行個體的本機區域。其中一個例子是邁阿密，因為它只有第 6 代執行個體不受支援且不合格，因此無法作為本機區域使用。</block>
+  <block id="d7a299bbe372f280000198df797460f2" category="admonition">AWS 本機區域無法使用 AWS S3 的資料分層功能，因為連線能力不足。</block>
+  <block id="f2f8375eb7b616d452f38372555c4aa8" category="paragraph">ARP 功能可與自帶授權（ BYOL ）搭配使用，並免費提供授權的市場訂閱。</block>
+  <block id="3726a55835255c4aca3d6a6c1c330738" category="paragraph">已啟用 ARP 的磁碟區具有「學習模式」或「作用中」的指定狀態。</block>
+  <block id="666b3c5243cbd568acfe4b3a0706b9ea" category="paragraph">NetApp 的支援隨附於 Cloud Volumes ONTAP 隨付隨用（ PAYGO ）系統中，但您必須先向 NetApp 註冊系統來啟動支援。</block>
+  <block id="a106b22f73b105919cf50f17420fef76" category="paragraph">所有的Azure儲存帳戶Cloud Volumes ONTAP 均使用客戶管理的金鑰進行加密。如果您想在建立儲存帳戶時加密、必須在Cloud Volumes ONTAP 建立資源時建立並提供資源ID。這適用於所有類型的部署。如果您未提供、儲存帳戶仍會加密、但BlueXP會先使用Microsoft管理的金鑰加密來建立儲存帳戶、然後再更新儲存帳戶以使用客戶管理的金鑰。</block>
+  <block id="07e88f0b5e8f468010f124459e470871" category="list-text">從 NetApp 購買的授權（自帶授權（ BYOL ））</block>
+  <block id="c1585e9c456b4e2c6743fe20780c5bff" category="paragraph">Cloud Volumes ONTAP 必須向 NetApp 支援部門註冊、才能使用本頁所述的任何方法來升級軟體。這適用於隨用隨付（ PAYGO ）和自帶授權（ BYOL ）。您需要<block ref="f7029dacbf10b8aa72bca74845a64729" category="inline-link-macro-rx"></block>、而 BYOL 系統則預設為註冊。</block>
+  <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024 年 11 月 11 日</block>
+  <block id="4eaed4ff800bc18688fff95b8dee6d1e" category="sidebar">轉換節點型授權</block>
+  <block id="b8c05ba27f3f7ff64dca585f43789e57" category="sidebar">Cloud Volumes ONTAP 中的授權</block>
 </blocks>
