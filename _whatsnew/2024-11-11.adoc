@@ -20,7 +20,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#
 
 NetApp 瞭解下列符合合約義務和營運需求的獨特授權要求，並將在這些情況下繼續支援節點型授權：
 
-* USPS 客戶
+* 美國公家機關客戶
 * 以私有模式部署
 * 在 AWS 中部署 Cloud Volumes ONTAP 的中國地區
 * 如果您擁有有效且未過期的個別節點，請自行攜帶授權（ BYOL 授權）

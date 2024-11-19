@@ -67,23 +67,28 @@ South Central US          southcentralus       (US) South Central US
 ----
 
 
-. 請從下表中檢閱對應 VM 部署類型的 SKU 名稱。
+. 請從下表中檢閱對應 Cloud Volumes ONTAP 版本和 VM 部署類型的 SKU 名稱。
 +
 當設定市場映像的 URN 時、 SKU 名稱會用作「 skuName 」變數的值。
 
 +
-例如、單一節點部署應使用「 ONTAP 雲端 byol 」 SKU 名稱。
+例如， Cloud Volumes ONTAP 9.15.0 的所有單一節點部署都應使用 `ontap_cloud_byol` SKU 名稱。
 
 +
-[cols="1,1"]
+[cols="1,1,1"]
 |===
-| VM 部署類型 | SKU 名稱 
 
 
-| 單一節點 | ONTAP 雲端 
+| * Cloud Volumes ONTAP 版本 * | * VM 部署類型 * | * SKU 名稱 * 
 
 
-| 高可用度 | ONTAP 雲端 _ byol_ha 
+| 9.15.1 和 9.16.0 | 透過 BlueXP  進行所有部署 | ONTAP 雲端 
+
+
+| 9.15.0 | 單一節點 | ONTAP 雲端 
+
+
+| 9.15.0 | 高可用度 | ONTAP 雲端 _ byol_ha 
 |===
 . ONTAP 版本和 Azure 市場映像對應完成後、即可透過 Azure Cloud Shell 或 Azure CLI 、從 Azure 市場匯出 VHD 檔案。
 
@@ -94,7 +99,7 @@ South Central US          southcentralus       (US) South Central US
 
 . 從 Azure Cloud Shell 將市場映像匯出至 vhd （ image2 、例如 9150.01000024.05090105.vhd ）、然後下載至您的本機機器（例如 Linux 機器或 Windows PC ）。
 +
-.按一下以顯示
+.檢視步驟
 [%collapsible]
 ====
 [source]
@@ -150,7 +155,7 @@ PS /home/user1> Remove-AzDisk -ResourceGroupName $diskRG -DiskName $diskName
 
 . 從本機 Linux 機器透過 Azure CLI 將市場映像匯出至 vhd 。
 +
-.按一下以顯示
+.檢視步驟
 [%collapsible]
 ====
 [source]

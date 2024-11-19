@@ -276,7 +276,7 @@ NetApp 已規劃終止供應（ EOA ），並支援（ EOS ）節點型授權。
 .排除
 NetApp 瞭解某些情況需要特別考量，而節點型授權的 EOA 和 EOS 不適用於下列情況：
 
-* USPS 客戶
+* 美國公家機關客戶
 * 以私有模式部署
 * 在 AWS 中部署 Cloud Volumes ONTAP 的中國地區
 
