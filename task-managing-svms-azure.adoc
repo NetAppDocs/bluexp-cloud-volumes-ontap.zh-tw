@@ -66,7 +66,7 @@ NOTE: 若要執行其他 NIC 相關工作、您可以在 Azure 中指派具有�
 
 === HA配對
 
-如何為HA配對分配IP位址、取決於您使用的儲存傳輸協定。
+對於高可用度（ HA ）配對，您應該存取叢集中的每個儲存 VM （ SVM ），並在 nic0 下為每個 SVM 建立對應的 IP 。如何為HA配對分配IP位址、取決於您使用的儲存傳輸協定。在 HA 模式中，使用者必須確保正確設定 IP 位址，以支援容錯移轉和備援，這對於維持儲存系統的高可用度和可靠性而言是不可或缺的。
 
 [role="tabbed-block"]
 ====
@@ -78,7 +78,7 @@ NOTE: 若要執行其他 NIC 相關工作、您可以在 Azure 中指派具有�
 
 * 從節點1存取iSCSI資料LIF的IP位址
 * 從節點2存取iSCSI資料LIF的IP位址
-* 儲存VM（SVM）管理LIF的選用IP位址
+* SVM 管理 LIF 的選用 IP 位址
 +
 此管理LIF可連線至SnapCenter 諸如VMware等管理工具。
 
@@ -111,7 +111,7 @@ NOTE: 若要執行其他 NIC 相關工作、您可以在 Azure 中指派具有�
 * 單一IP位址、可從節點2存取NAS資料LIF
 * 儲存VM（SVM）管理LIF的選用IP位址
 +
-DNS通訊需要iSCSI LIF。iSCSI LIF用於此用途、因為它不會在容錯移轉時移轉。
+即使未使用 iSCSI 傳輸協定， DNS 通訊仍需要 iSCSI 生命。iSCSI LIF用於此用途、因為它不會在容錯移轉時移轉。
 
 +
 此管理LIF可連線至SnapCenter 諸如VMware等管理工具。
@@ -434,7 +434,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 ----
 network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
-. 建立資料生命量：
+. 建立資料生命。在此步驟中，您可以使用在中分配的 IP link:task-managing-svms-azure.html#ha-pair["先前的程序"]做為資料生命週期。
 +
 .. 使用下列命令在節點1上建立iSCSI LIF。
 +
@@ -519,7 +519,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 ----
 network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
-. 建立資料生命量：
+. 建立資料生命。在此步驟中，您可以使用在中分配的 IP link:task-managing-svms-azure.html#ha-pair["先前的程序"]做為資料生命週期。
 +
 .. 使用下列命令在節點1上建立NAS LIF。
 +
@@ -535,7 +535,7 @@ network interface create -vserver <svm-name> -lif <lif-name> -service-policy def
 ----
 
 
-. 建立iSCSI LIF以提供DNS通訊：
+. 建立 iSCSI 生命負載以提供 DNS 通訊。即使未使用 iSCSI 傳輸協定， DNS 通訊仍需要 iSCSI 生命。
 +
 .. 使用下列命令在節點1上建立iSCSI LIF。
 +
@@ -629,7 +629,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 ----
 network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
-. 建立NAS資料生命量：
+. 建立 NAS 資料生命。在此步驟中，您可以使用在中分配的 IP link:task-managing-svms-azure.html#ha-pair["先前的程序"]做為資料生命週期。
 +
 .. 使用下列命令在節點1上建立NAS LIF。
 +
@@ -645,7 +645,7 @@ network interface create -vserver <svm-name> -lif <lif-name> -service-policy def
 ----
 
 
-. 建立iSCSI LIF以提供DNS通訊：
+. 建立 iSCSI 生命負載以提供 DNS 通訊。即使未使用 iSCSI 傳輸協定， DNS 通訊仍需要 iSCSI 生命。
 +
 .. 使用下列命令在節點1上建立iSCSI LIF。
 +

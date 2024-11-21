@@ -1874,7 +1874,6 @@
   <block id="3fc61f795c4036debc9bbee70495f5d3" category="list-text">如果您要建立SVM管理LIF、請重複這些步驟以建立其他IP位址。</block>
   <block id="b961dd3512f483e2a3c032644c80c59b" category="paragraph">複製您剛建立的私有IP位址。當您為新的儲存VM建立生命期時、必須指定這些IP位址。</block>
   <block id="556696d309aaf81ce29c6a76f8f8a503" category="section-title">HA配對</block>
-  <block id="8ebc8557356a6ebd39c4dd48a6f84931" category="paragraph">如何為HA配對分配IP位址、取決於您使用的儲存傳輸協定。</block>
   <block id="de6c446eec02722de82f7d7eaffa3970" category="paragraph">在您建立儲存VM並分配LIF之前、必須先將iSCSI IP位址指派給Azure中的nic0。iSCSI的IPS會指派給nic0而非負載平衡器、因為iSCSI會使用ALUA進行容錯移轉。</block>
   <block id="bd88ed594712224b8e3f79251707158b" category="paragraph">您需要建立下列IP位址：</block>
   <block id="959519864abf23eb751637cd9762312f" category="list-text">從節點1存取iSCSI資料LIF的IP位址</block>
@@ -1924,13 +1923,11 @@
   <block id="15b547deddcdfd8bf2fb3a23397e7833" category="list-text">將一個或多個集合體指派給儲存VM。</block>
   <block id="d6f0e34ef668049ec1996dc9805ae695" category="paragraph">這是必要步驟、因為新的儲存VM需要存取至少一個Aggregate、才能在儲存VM上建立磁碟區。</block>
   <block id="b41808a70de11f6ad8400c22ebe933f1" category="paragraph">如何在HA配對上建立儲存VM和LIF、取決於您使用的儲存傳輸協定。</block>
-  <block id="120f35ca25d8256725ff2b7eb89df365" category="list-text">建立資料生命量：</block>
   <block id="604199268b7709a557c60a09df0624bf" category="list-text">使用下列命令在節點1上建立iSCSI LIF。</block>
   <block id="83871791a7611e5a981ec0b38a662078" category="list-text">使用下列命令在節點2上建立iSCSI LIF。</block>
   <block id="67694021a675f2be09781b9b9c744e99" category="list-text">選用：在節點1上建立儲存VM管理LIF。</block>
   <block id="622931dd0b6724a34dfe5a4f99b9a820" category="list-text">使用下列命令在節點1上建立NAS LIF。</block>
   <block id="0cffe85429bb79552ce3607190d9dbad" category="list-text">使用下列命令在節點2上建立NAS LIF。</block>
-  <block id="6c6c472de3f0cea0f21c8e31be81490c" category="list-text">建立NAS資料生命量：</block>
   <block id="c47f9b3777f430e38cd3c0ae2055b8d1" category="list-text">規劃升級。</block>
   <block id="945e0025643b0030db4eb79effddf1e9" category="list-text">檢視系統健全狀況。</block>
   <block id="20e2eede2c5919a473004ca356d93413" category="list-text">管理效能：</block>
@@ -3829,7 +3826,6 @@
   <block id="fcf30aaa0348521d4d4752992c9db378" category="list-text">支援單一節點系統。</block>
   <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">支援直接向NetApp購買的授權。</block>
   <block id="13615a82d1149a992b363c411914d3b8" category="inline-link-macro">全球區域地圖Cloud Volumes ONTAP 、供您使用</block>
-  <block id="8a83d5aff252fbe923fc5b8ce4cab9f9" category="paragraph">DNS通訊需要iSCSI LIF。iSCSI LIF用於此用途、因為它不會在容錯移轉時移轉。</block>
   <block id="c87f63c179c59eda8579e373c6a25976" category="paragraph">您需要在負載平衡器中建立下列IP位址：</block>
   <block id="9b31eba9539b4b373752a1f9efafb8ac" category="list-text">每個VM各自的NIC 0中節點1上iSCSI LIF的一個IP位址</block>
   <block id="6f2174023153761cdb987311021eaf2b" category="list-text">僅為資料和SVM LIF建立所需的前端IP組態數目：</block>
@@ -3842,7 +3838,6 @@
   <block id="d78a1a202c691ad37ba63488112cab29" category="paragraph"><block ref="d78a1a202c691ad37ba63488112cab29" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5007d33dbe3f9e50ed8c96fc08a7443a" category="list-text">按一下您剛才建立的IP組態名稱、將指派變更為靜態、然後按一下*儲存*。</block>
   <block id="aa700fba04d3b674bf01f1887210edfe" category="list-text">輸入下列命令以存取進階模式。</block>
-  <block id="87f1ece84a21ef92f0776380600117e6" category="list-text">建立iSCSI LIF以提供DNS通訊：</block>
   <block id="b85a0d4dea04769a8ce6e0860eb4c90f" category="paragraph">HA中介器的預先定義安全性群組包括下列傳入規則。</block>
   <block id="52554fb81854d42f02280f83a1067574" category="cell">連接器的CIDR</block>
   <block id="cdbb82146d412877f64f943229bd9533" category="cell">AWS EC2執行個體上Connector的IP位址</block>
@@ -4726,7 +4721,6 @@
   <block id="13cdcbf94ff7381b25ca5784f874a9b6" category="image-alt">Cloud Volumes ONTAP 設定選項的螢幕擷取畫面、位於「設定」圖示下。</block>
   <block id="970af11c442d109ac4d016f7c57f63fb" category="paragraph">容量型授權的形式為_package_。建立 Cloud Volumes ONTAP 工作環境時、您可以根據業務需求、從多個授權套件中選擇。如果您在建立工作環境之後需要變更、您可以隨時變更套件。例如、您可以將 Essentials 套件變更為專業版套件。</block>
   <block id="58dcfad3183b701a8f1b8781a5644d09" category="inline-link">深入瞭解容量型授權套件</block>
-  <block id="3e4729f0b91cf008c10b8ab719ea9e99" category="list-text">變更收費方式並不會影響您是透過從 NetApp （ BYOL ）購買的授權或雲端供應商的市場（隨用付費）收取費用。</block>
   <block id="07456d1e170e8be27eaff1e39e1ccdf6" category="paragraph">BlueXP 一律會先嘗試根據授權收費。如果沒有可用的授權、就會根據市場訂閱收費。BYOL 不需要「轉換」即可訂閱市場、反之亦然。</block>
   <block id="d5f06dc5f98a38b5ccff1592c5d20e76" category="admonition">雖然 BlueXP 管理的產品和服務的實際使用量和計量都是以 GiB 和 TiB 計算、但是會交替使用「 GB/GiB 」和「 TB/TiB 」這兩個詞彙。這會反映在 Cloud Marketplace 清單、價格報價、上市說明及其他支援文件中</block>
   <block id="2732cf17c6f3094ab514d104cf7ecca1" category="admonition">雖然 BlueXP 管理的產品和服務的實際使用量和計量都是以 GiB 和 TiB 計算、但是會交替使用「 GB/GiB 」和「 TB/TiB 」這兩個詞彙。這會反映在 Cloud Marketplace 清單、價格報價、上市說明及其他支援文件中。</block>
@@ -5495,7 +5489,6 @@
   <block id="448c087351c52cb72f971666e2159491" category="paragraph"><block ref="448c087351c52cb72f971666e2159491" category="inline-link-rx"></block></block>
   <block id="059b6fdd2ea839d9327c322a4c87e168" category="doc">終止節點型授權的可用度</block>
   <block id="73dfeef5d38f87e4c1d9e4b6417db109" category="paragraph">NetApp 已規劃終止供應（ EOA ）和終止支援（ EOS ）的 Cloud Volumes ONTAP 節點型授權。自 2024 年 11 月 11 日起，節點型授權的有限可用度已終止。節點型授權支援將於 2024 年 12 月 31 日終止。在節點型授權的 EOA 之後，您應該使用 BlueXP  授權轉換工具，轉換為容量型授權。</block>
-  <block id="412842ace3db013f5cc3f99342aac206" category="paragraph">若為年度或長期承諾， NetApp 建議您在 EOA 日期或授權到期日之前聯絡 NetApp 代表，以確保移轉的先決條件已就緒。如果您沒有 Cloud Volumes ONTAP 節點的長期合約，而且是根據隨選 PAYGO 訂閱來執行系統，請務必在 EOS 日期之前規劃您的轉換。對於長期合約和 PAYGO 訂閱，您可以使用 BlueXP  授權轉換工具進行無縫轉換。</block>
   <block id="90df487d076cd9295a7192268b4439ee" category="inline-link">終止節點型授權的可用性</block>
   <block id="342dcce6bda294bb4b60fc9333bcafbe" category="inline-link">將節點型授權轉換為容量型</block>
   <block id="2293617fe352e42e5a1e5d757463cb39" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="5987d844b1ad687ea551a96a31c7c0df" category="inline-link-rx"></block></block>
@@ -5513,7 +5506,6 @@
   <block id="c11ad5eeb4b3088d2c151593e9c1204e" category="paragraph">您現在可以選擇限制對 Azure 上 Cloud Volumes ONTAP 系統的儲存帳戶進行公開存取。停用存取功能後，即使在同一個 vnet 內也能保護私有 IP 位址不受洩漏，只要您需要遵守組織的安全原則即可。此選項也會停用 Cloud Volumes ONTAP 系統的資料分層功能，並同時適用於單一節點和高可用度配對。</block>
   <block id="69e89afe4b2013c34ff51df883ddc022" category="paragraph"><block ref="9064ea2dae3c9dc76b91a834ab88d8bf" category="inline-link-rx"></block>。</block>
   <block id="f87269f0bcffd4dd379148db58c41b11" category="section-title">部署 Cloud Volumes ONTAP 之後啟用 WORM</block>
-  <block id="8d9d085ab6acd5074907258fafcff341" category="paragraph">之前，您可以在 BlueXP  上建立 Cloud Volumes ONTAP 工作環境時啟用 WORM 儲存。現在， BlueXP  提供您在工作環境中啟用 WORM 的選項，即使在建立時未啟用 WORM 也沒問題。啟用後，您就無法停用 WORM 。</block>
   <block id="664bf259381c1fa1513c4c79450fb0f4" category="inline-link">在 Cloud Volumes ONTAP 工作環境中啟用 WORM</block>
   <block id="42009eda159da22132429f44bf400e6c" category="paragraph"><block ref="42009eda159da22132429f44bf400e6c" category="inline-link-rx"></block></block>
   <block id="2db5c6d1af8e977d496e788510cbddd0" category="paragraph">您可以在建立工作環境時選取儲存類別，之後隨時變更。有關更改儲存類別的說明，請參閱<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
@@ -5645,8 +5637,17 @@
   <block id="d811ca86e147e8cf2239ee377f1dcd50" category="cell">* Cloud Volumes ONTAP 版本 *</block>
   <block id="a3a1c7f3820a8886078a2878a83c8362" category="cell">* VM 部署類型 *</block>
   <block id="aadb6d991e4406b990f6fca8b4c83fd6" category="cell">* SKU 名稱 *</block>
-  <block id="30076581de6d5b6ad148c87cd00ad956" category="cell">9.15.1 和 9.16.0</block>
   <block id="1da19d67e22ac2cb25b90e0604702db1" category="cell">透過 BlueXP  進行所有部署</block>
   <block id="273062411bc731be8028321277142365" category="cell">ONTAP 雲端</block>
   <block id="23364a1412324aba4675105eacf57908" category="example-title">檢視步驟</block>
+  <block id="ff98fd719f758a17955852024475db39" category="paragraph">若為年度或長期承諾， NetApp 建議您在 EOA 日期或授權到期日之前聯絡 NetApp 代表，以確保移轉的先決條件已就緒。如果您沒有 Cloud Volumes ONTAP 節點的長期合約，而且是根據隨選隨付隨用（ PAYGO ）訂閱來執行系統，請務必在 EOS 日期之前規劃您的轉換。對於長期合約和 PAYGO 訂閱，您可以使用 BlueXP  授權轉換工具進行無縫轉換。</block>
+  <block id="6ecba12db0576e8891316b6674fda716" category="paragraph">您現在可以在現有的 Cloud Volumes ONTAP 系統上使用 BlueXP  啟動一次寫入，讀取多次（ WORM ）儲存設備。此功能可讓您靈活地在工作環境中啟用 WORM ，即使在其建立期間未啟用 WORM 。一旦啟用，您就無法停用 WORM 。</block>
+  <block id="31ccaa5879eee7a69ef3c48f1004c59c" category="list-text">變更收費方式並不會影響您是透過從 NetApp （ BYOL ）購買的授權，還是從雲端供應商的市場隨用付費（ PAYGO ）訂閱中收取費用。</block>
+  <block id="deeb890dedc65f3ba1539e8c0083a08b" category="paragraph">對於高可用度（ HA ）配對，您應該存取叢集中的每個儲存 VM （ SVM ），並在 nic0 下為每個 SVM 建立對應的 IP 。如何為HA配對分配IP位址、取決於您使用的儲存傳輸協定。在 HA 模式中，使用者必須確保正確設定 IP 位址，以支援容錯移轉和備援，這對於維持儲存系統的高可用度和可靠性而言是不可或缺的。</block>
+  <block id="d40f712a330c4835a0ab9b70db06051b" category="list-text">SVM 管理 LIF 的選用 IP 位址</block>
+  <block id="534113954d7a54ea89ef88fa230b7146" category="paragraph">即使未使用 iSCSI 傳輸協定， DNS 通訊仍需要 iSCSI 生命。iSCSI LIF用於此用途、因為它不會在容錯移轉時移轉。</block>
+  <block id="779dc7c57d3ba82d3f1438a241a8770a" category="inline-link-macro">先前的程序</block>
+  <block id="7e5f8351d1e24c2cf0c0d5fbc956ea2b" category="list-text">建立資料生命。在此步驟中，您可以使用在中分配的 IP <block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block>做為資料生命週期。</block>
+  <block id="e5da8bd8aa33e128edc30f4d0c6082f4" category="list-text">建立 iSCSI 生命負載以提供 DNS 通訊。即使未使用 iSCSI 傳輸協定， DNS 通訊仍需要 iSCSI 生命。</block>
+  <block id="1ea87a95c176e342e1e8fd101628481f" category="list-text">建立 NAS 資料生命。在此步驟中，您可以使用在中分配的 IP <block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block>做為資料生命週期。</block>
 </blocks>
