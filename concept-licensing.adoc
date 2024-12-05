@@ -100,7 +100,7 @@ NetApp Cloud Volumes ONTAP 免費提供所有的支援功能（仍需支付雲�
 * 以額外成本附加任何NetApp的雲端資料服務
 
 
-如需更多資訊、請參閱 link:licensing-charging.html["以容量為基礎的授權費用"]。
+如需更多資訊、請參閱 link:concept-licensing-charging.html["更多關於容量型授權的資訊"]。
 
 
 

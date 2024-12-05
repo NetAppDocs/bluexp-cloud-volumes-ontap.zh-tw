@@ -1653,7 +1653,6 @@
   <block id="b50c0b33e57b5c9ee115739c46632fb7" category="cell">為磁碟區選取 NFS 版本： NFSv3 或 NFSv3 。</block>
   <block id="18f1f9ca3b7402c1f840aba2c56d18c7" category="cell">啟動器群組和 IQN （僅適用於 iSCSI ）</block>
   <block id="f6624758e1ac18d59af363d92430c58d" category="inline-link-macro">使用 IQN 從主機連線至 LUN</block>
-  <block id="499ff401ab7023a3297fee865d79a8f9" category="doc">在GCP中規劃VPC服務控制</block>
   <block id="51864fc98a7ac79ddec9d933162b734b" category="inline-link">深入瞭解Google Cloud VPC服務控制</block>
   <block id="1ea7fcd26fa8ab32a75247310351f611" category="paragraph">VPC服務控管可讓您控制在信任邊界之外存取Google管理的服務、封鎖來自不信任位置的資料存取、並降低未獲授權的資料傳輸風險。<block ref="a3874a083385bdd3c92e9cffcd9eea61" category="inline-link-rx"></block>。</block>
   <block id="17472965181a18d7ed0cb4275177cffe" category="section-title">NetApp服務如何與VPC服務控制通訊</block>
@@ -5526,8 +5525,6 @@
   <block id="3c7a90227f7481790a6d7eb5b1a274ea" category="list-text">* PAYGO* ：隨用隨付（ PAYGO ）訂閱是您雲端供應商市場的每小時訂閱。</block>
   <block id="2b0470da2a26cbbea5d95f4e261d82ee" category="paragraph">如需將節點型授權轉換為容量型授權的相關資訊，請參閱</block>
   <block id="7af9b0ab22150a40b2c1c451de82db3c" category="section-title">定價與支援的組態</block>
-  <block id="f05f2e524280a4aaf976825a1f6748f6" category="inline-link-macro">以容量為基礎的授權費用</block>
-  <block id="6c418172eb2db3f08bae6e40862aa940" category="paragraph">如需更多資訊、請參閱 <block ref="28d08582e43bd81e1450bd514123324f" category="inline-link-macro-rx"></block>。</block>
   <block id="a9949f1e97b05bac6285563868b6954a" category="admonition">BlueXP  備份與還原需要付費（ PAYGO ）訂閱，但使用此服務不會產生任何費用。如需設定 BlueXP  備份與還原授權的詳細資訊，請<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>參閱。</block>
   <block id="05e7dd258874d61cb2bb985c9da9a17d" category="paragraph">NetApp 已規劃終止供應（ EOA ），並支援（ EOS ）節點型授權。在 EOA 和 EOS 之後，節點型授權將需要轉換為容量型授權。</block>
   <block id="8c6aee7f6d39fa3bea95c2ae09851a7a" category="paragraph">如需相關資訊、請<block ref="f09d1138443525e41476e551a1dde747" category="inline-link-rx"></block>參閱。</block>
@@ -5650,4 +5647,6 @@
   <block id="7e5f8351d1e24c2cf0c0d5fbc956ea2b" category="list-text">建立資料生命。在此步驟中，您可以使用在中分配的 IP <block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block>做為資料生命週期。</block>
   <block id="e5da8bd8aa33e128edc30f4d0c6082f4" category="list-text">建立 iSCSI 生命負載以提供 DNS 通訊。即使未使用 iSCSI 傳輸協定， DNS 通訊仍需要 iSCSI 生命。</block>
   <block id="1ea87a95c176e342e1e8fd101628481f" category="list-text">建立 NAS 資料生命。在此步驟中，您可以使用在中分配的 IP <block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block>做為資料生命週期。</block>
+  <block id="c023c17ce97ef2fee30e2cb2aa0cd81a" category="paragraph">如需更多資訊、請參閱 <block ref="7e81f0f3d7f6d88b77289e1baaf5eecf" category="inline-link-macro-rx"></block>。</block>
+  <block id="c0131b1cf44af0fec95135e45a801bbe" category="doc">規劃 Google Cloud 中的 VPC 服務控制</block>
 </blocks>
