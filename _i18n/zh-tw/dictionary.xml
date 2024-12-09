@@ -415,9 +415,7 @@
   <block id="aec821c01e23f20e98a9438c7d2dd253" category="summary">使用Cloud Volumes ONTAP Azure Storage Service Encryption搭配Microsoft管理的金鑰、可在Azure中的支援中心自動加密資料。但您可以改用自己的加密金鑰、只要執行本頁的步驟即可。</block>
   <block id="e76c0365dfa8d6b43992d790f582e6c4" category="doc">設定Cloud Volumes ONTAP 支援使用Azure中客戶管理的金鑰</block>
   <block id="7630e1f6ebde3d280c53fd350ed9e414" category="inline-link">Azure 儲存服務加密</block>
-  <block id="4c0f1152ff8e08ad9c86fa100e8f9209" category="paragraph">資料會使用在Cloud Volumes ONTAP Azure中的功能自動加密<block ref="0fb9c094fcac1ef4db7c0b9c1e4ffdfb" category="inline-link-rx"></block> 使用Microsoft管理的金鑰。但您可以改用自己的加密金鑰、只要執行本頁的步驟即可。</block>
   <block id="56d8602584b412c6fa4268dd3cbf0ccb" category="section-title">資料加密總覽</block>
-  <block id="a9048454eade4a62fb2113428b74129f" category="paragraph">Azure中的資料會使用自動加密Cloud Volumes ONTAP<block ref="7c6c7ca9180a9433e704ac02b33a8ed3" category="inline-link-rx"></block>。預設實作使用Microsoft管理的金鑰。無需設定。</block>
   <block id="15a37269c447b60002a307d0f82d2bd4" category="paragraph">如果您想要使用客戶管理的支援服務金鑰Cloud Volumes ONTAP 搭配使用、則必須完成下列步驟：</block>
   <block id="7c198fa2e871a635fde91e3430fc340b" category="section-title">金鑰旋轉</block>
   <block id="552690dff240721c335dffa2d29b8ef8" category="paragraph">如果您建立新版的金鑰、Cloud Volumes ONTAP 則更新版本會自動使用最新的金鑰版本。</block>
@@ -1182,7 +1180,6 @@
   <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021年9月2日</block>
   <block id="d1ef4823428a4819165321552b0897ec" category="paragraph">以下是連接器3.9.10版本的變更。</block>
   <block id="e272f662e26b78ec82fb7603aa62b559" category="section-title">Azure中由客戶管理的加密金鑰</block>
-  <block id="aee0c7bd7ef514bde14e9b9748f71cdb" category="paragraph">資料會使用在Cloud Volumes ONTAP Azure中的功能自動加密<block ref="7c6c7ca9180a9433e704ac02b33a8ed3" category="inline-link-rx"></block> 使用Microsoft管理的金鑰。但您現在可以改為使用客戶管理的加密金鑰、只要完成下列步驟即可：</block>
   <block id="a89c0ff0556e15cdcfdad2e0435e60a8" category="list-text">從Azure建立金鑰保存庫、然後在該保存庫中產生金鑰。</block>
   <block id="25fb98f9fcb3127bfe7be5f0a105ca99" category="inline-link-macro">深入瞭解這些步驟</block>
   <block id="750fb0c917d909f89ff3aa09a16d9e2e" category="paragraph"><block ref="a8a8a730877a18513c7f6dc517396422" category="inline-link-macro-rx"></block>。</block>
@@ -1689,7 +1686,6 @@
   <block id="c72ccd5a97e66dfed845a067416a28fe" category="paragraph">設定支援的金鑰管理程式是唯一必要的步驟。如需設定指示、請參閱 <block ref="c1c73aa6d8632695e64032f90002d60a" category="inline-link-macro-rx"></block>。</block>
   <block id="d200c22f00ca54467dc4ad3823710388" category="inline-link">AWS 金鑰管理服務（ KMS ）</block>
   <block id="b7e9ad250523d385d7738ce667a69f9f" category="admonition">建立 Cloud Volumes ONTAP 一套系統後、您無法變更 AWS 資料加密方法。</block>
-  <block id="475072bb11f16640856f57b85d421c6c" category="paragraph">資料會使用在Cloud Volumes ONTAP Azure中的功能自動加密<block ref="7c6c7ca9180a9433e704ac02b33a8ed3" category="inline-link-rx"></block> 使用Microsoft管理的金鑰。</block>
   <block id="6eb233d9be32984c99508cdbee911e24" category="inline-link-macro">瞭解如何在Cloud Volumes ONTAP Azure中設定使用客戶管理的金鑰</block>
   <block id="7b508b9bd8a6480f631ee870efa39997" category="paragraph">您可以視需要使用自己的加密金鑰。 <block ref="e43138177d6c7f35927888032e05ad84" category="inline-link-macro-rx"></block>。</block>
   <block id="54eb23d0a40b99529340993708b372c4" category="inline-link">Google Cloud Platform 閒置資料加密</block>
@@ -5477,7 +5473,6 @@
   <block id="f93da9b042a7ade0f4d86a091309ed87" category="list-text">FlexClone 和 FlexCache Volumes ： FlexClone Volume 不收費。來源和目的地 FlexCache 磁碟區被視為主要資料、並根據已配置的空間收費。</block>
   <block id="371519ace7adec1f0d1a909854d1cbec" category="list-text">HA 配對充電：對於 HA 配對、只會對節點上的已配置容量進行充電。同步鏡射至合作夥伴節點的資料不會收費。</block>
   <block id="2bb8a9ed1433f0f845b92c7da5440dea" category="section-title">2024 年 10 月 25 日</block>
-  <block id="dc1815932afdea52f1a4c12d73f2eed0" category="section-title">N1 系列機器無法在 BlueXP  上選擇</block>
   <block id="1bb0d11a534c8ee967cd62e4d75e3da3" category="paragraph">在 Google Cloud 中部署新的 Cloud Volumes ONTAP 執行個體時、 BlueXP  不再提供 N1 系列機器供您選擇。N1 系列機器將僅保留在舊版現有系統中、並受到支援。Cloud Volumes ONTAP 的新部署僅從 9.8 版開始支援 Google Cloud 。建議您切換至與 Cloud Volumes ONTAP 9.8 及更新版本相容的 n2 系列機器類型。不過、 N1 系列機器將可用於透過 API 執行的新部署。</block>
   <block id="e55067e1e9c0716bdbc0866b4393aa68" category="paragraph"><block ref="55218e2079fe45aad8bd65bcb61a1a9f" category="inline-link-rx"></block>。</block>
   <block id="e8ae21b110baed89680dca18585c158c" category="section-title">本機區域在私有模式中支援 Amazon Web Services</block>
@@ -5649,4 +5644,12 @@
   <block id="1ea87a95c176e342e1e8fd101628481f" category="list-text">建立 NAS 資料生命。在此步驟中，您可以使用在中分配的 IP <block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block>做為資料生命週期。</block>
   <block id="c023c17ce97ef2fee30e2cb2aa0cd81a" category="paragraph">如需更多資訊、請參閱 <block ref="7e81f0f3d7f6d88b77289e1baaf5eecf" category="inline-link-macro-rx"></block>。</block>
   <block id="c0131b1cf44af0fec95135e45a801bbe" category="doc">規劃 Google Cloud 中的 VPC 服務控制</block>
+  <block id="fa055d94084c7095d6c7ec354ec44857" category="doc">更新 Google Cloud 支援的 VM 清單，以符合最佳實務做法</block>
+  <block id="497e698cad27d6346959de7394ab5df8" category="doc">更新 Azure 支援虛擬機器的清單，以符合最佳實務做法</block>
+  <block id="a295598082ec4c1c06fb5a3e2ad3e1d1" category="paragraph">在 Azure 中部署新的 Cloud Volumes ONTAP 執行個體時， DS_v2 和 ES_v3 機器系列不再適用於 BlueXP  。這些系列將僅保留在舊的現有系統中，並提供支援。Azure 僅支援 9.12.1 版的 Cloud Volumes ONTAP 新部署。建議您切換至 ES_v4 或任何其他與 Cloud Volumes ONTAP 9.12.1 及更新版本相容的系列。不過， DS_v2 和 ES_v3 系列機器將可用於透過 API 進行的新部署。</block>
+  <block id="ef57b1c89cee8819c5de2b079e4b0640" category="paragraph"><block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block></block>
+  <block id="ce26d4172bea0548b2bf56f5493c7190" category="paragraph">資料會在 Azure 的 Cloud Volumes ONTAP 上使用 Microsoft 託管金鑰自動加密<block ref="840493a517ea59018e3217960e80e550" category="inline-link-rx"></block>。</block>
+  <block id="c97a482803062120aadcb028bb25c6d1" category="paragraph">Cloud Volumes ONTAP 資料會使用在 Azure 中自動加密<block ref="840493a517ea59018e3217960e80e550" category="inline-link-rx"></block>。預設實作使用Microsoft管理的金鑰。無需設定。</block>
+  <block id="1f86b1e4048d088ce153a6f451fb30d6" category="section-title">2024 年 12 月 9 日</block>
+  <block id="c02b5fa56aae4296da253938ec788b53" category="paragraph">資料會在 Azure 的 Cloud Volumes ONTAP 上使用 Microsoft 託管金鑰自動加密<block ref="840493a517ea59018e3217960e80e550" category="inline-link-rx"></block>。但您現在可以改為使用客戶管理的加密金鑰、只要完成下列步驟即可：</block>
 </blocks>

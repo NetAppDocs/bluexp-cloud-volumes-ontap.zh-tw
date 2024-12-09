@@ -14,13 +14,13 @@ summary: 使用Cloud Volumes ONTAP Azure Storage Service Encryption搭配Microso
 
 
 [role="lead"]
-資料會使用在Cloud Volumes ONTAP Azure中的功能自動加密 https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure 儲存服務加密"] 使用Microsoft管理的金鑰。但您可以改用自己的加密金鑰、只要執行本頁的步驟即可。
+使用Cloud Volumes ONTAP Azure Storage Service Encryption搭配Microsoft管理的金鑰、可在Azure中的支援中心自動加密資料。但您可以改用自己的加密金鑰、只要執行本頁的步驟即可。
 
 
 
 == 資料加密總覽
 
-Azure中的資料會使用自動加密Cloud Volumes ONTAP https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure 儲存服務加密"^]。預設實作使用Microsoft管理的金鑰。無需設定。
+Cloud Volumes ONTAP 資料會使用在 Azure 中自動加密 https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview["Azure 儲存服務加密"^]。預設實作使用Microsoft管理的金鑰。無需設定。
 
 如果您想要使用客戶管理的支援服務金鑰Cloud Volumes ONTAP 搭配使用、則必須完成下列步驟：
 
