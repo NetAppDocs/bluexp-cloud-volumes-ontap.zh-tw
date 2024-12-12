@@ -60,13 +60,7 @@ Cloud Volumes ONTAP 支援 https://www.netapp.com/pdf.html?item=/media/17070-ds-
 
 外部金鑰管理程式支援NVE和NAE。
 
-ifdef::azure[]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-endif::gcp[]
+ifdef ：： azure[] endif： ： azure[] ifdef ：： GCP[] endif： ： GCP[]
 
 新的Aggregate在您設定外部金鑰管理程式之後、預設會啟用NetApp Aggregate Encryption（NAE）。非 NAE Aggregate 一部分的新磁碟區、預設會啟用 NetApp Volume Encryption （ NVE ）（例如、如果您有在設定外部金鑰管理程式之前建立的現有 Aggregate ）。
 

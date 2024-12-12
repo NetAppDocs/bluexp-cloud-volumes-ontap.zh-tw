@@ -22,7 +22,7 @@ summary: 瞭解 Cloud Volumes ONTAP 根據預設設定的功能可協助您設�
 
 * 在部署Cloud Volumes ONTAP 時、BlueXP會建立一個資料服務儲存VM。部分組態支援額外的儲存 VM 。 link:task-managing-svms.html["深入瞭解管理儲存 VM"]。
 +
-從BlueXP 3.9.5版本開始、系統會在初始儲存VM上啟用邏輯空間報告功能。以邏輯方式回報空間時ONTAP 、此功能會報告磁碟區空間、讓儲存效率功能所節省的所有實體空間也會報告為已使用。
+從BlueXP 3.9.5版本開始、系統會在初始儲存VM上啟用邏輯空間報告功能。以邏輯方式回報空間時ONTAP 、此功能會報告磁碟區空間、讓儲存效率功能所節省的所有實體空間也會報告為已使用。如需內嵌儲存效率功能的相關資訊，請參閱知識庫文章 https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/What_Inline_Storage_Efficiency_features_are_supported_with_CVO#["KB ： CVO 支援哪些內嵌儲存效率功能？"^]
 
 * BlueXP會自動在ONTAP 下列功能授權上安裝Cloud Volumes ONTAP 到更新版本：
 +
@@ -32,28 +32,18 @@ summary: 瞭解 Cloud Volumes ONTAP 根據預設設定的功能可協助您設�
 ** iSCSI
 ** 多租戶加密金鑰管理（MTEKM）、從Cloud Volumes ONTAP 版本號為E9.12.1 GA開始
 ** NetApp Volume Encryption （僅適用於自帶授權（ BYOL ）或已註冊的隨用隨付（ PAYGO ）系統）
-** NFS
+** NFS ifdef ：： AWS [] endif： ：： AWS [] ifdef ：： azure[] endif： ：： azure[]
+** SnapMirror
+** SnapRestore
+** SnapVault
 
 
-
-
-ifdef::aws[]
-
-endif::aws[]
-
-ifdef::azure[]
-
-endif::azure[]
-
-* SnapMirror
-* SnapRestore
-* SnapVault
+* 預設會建立多個網路介面：
 +
-** 預設會建立多個網路介面：
+** 叢集管理 LIF
+** 叢集間 LIF
 
 
-* 叢集管理 LIF
-* 叢集間 LIF
 
 
 ifdef::azure[]

@@ -18,26 +18,4 @@ summary: 支援 NetApp Volume Encryption （ NVE ）和 NetApp Aggregate Encrypt
 
 外部金鑰管理程式支援NVE和NAE。
 
-ifdef::aws[]
-
-endif::aws[]
-
-ifdef::azure[]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-endif::gcp[]
-
-ifdef::aws[]
-
-endif::aws[]
-
-ifdef::azure[]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-endif::gcp[]
+ifdef ：： AWS [] endif： ： AWS [] ifdef ：： azure[] endif： ：： azure[] ifdef ：： GCP [] endif： ：： GCP [] ifdef ：： AWS [] endiff ：：： AWS [] ifdef ：： gcp[] endif[ ：
