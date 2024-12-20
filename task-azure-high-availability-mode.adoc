@@ -14,9 +14,9 @@ summary: 應啟用 Microsoft Azure 的高可用度模式、以縮短非計畫性
 
 
 [role="lead"]
-應啟用 Microsoft Azure 的高可用度模式、以縮短非計畫性容錯移轉時間、並啟用 Cloud Volumes ONTAP 的 NFSv4 支援。
+應啟用 Microsoft Azure 的高可用度（ HA ）模式，以縮短非計畫性容錯移轉時間，並啟用 Cloud Volumes ONTAP 的 NFSv4 支援。在此模式中， Cloud Volumes ONTAP HA 節點可在 CIFS 和 NFSv4 用戶端的非計畫性容錯移轉期間，達到低（ 60 秒）的還原時間目標（ RTO ）。
 
-從發行版《S21》開始Cloud Volumes ONTAP 、我們縮短Cloud Volumes ONTAP 了在Microsoft Azure上執行的《21個HA配對》的非計畫性容錯移轉時間、並增加了對NFSv4的支援。為了讓 Cloud Volumes ONTAP 能夠使用這些增強功能、您必須在 Azure 訂閱中啟用高可用度功能。
+從 Cloud Volumes ONTAP 9.10.1 開始，我們縮短了在 Microsoft Azure 中執行的 Cloud Volumes ONTAP HA 配對的非計畫性容錯移轉時間，並增加了 NFSv4 支援。為了讓 Cloud Volumes ONTAP 能夠使用這些增強功能、您必須在 Azure 訂閱中啟用高可用度功能。
 
 當您需要在Azure訂閱中啟用此功能時、BlueXP會在必要行動訊息中提示您提供這些詳細資料。
 
@@ -24,7 +24,9 @@ summary: 應啟用 Microsoft Azure 的高可用度模式、以縮短非計畫性
 
 * 高可用度Cloud Volumes ONTAP 的不存在任何問題。此Azure功能可搭配ONTAP 使用、以減少因非計畫性容錯移轉事件而導致NFS傳輸協定的應用程式停機時間。
 * 啟用此功能對Cloud Volumes ONTAP 功能不中斷運作、不中斷對功能的支援。
-* 在您的Azure訂閱中啟用此功能、不會對其他VM造成問題。
+* 在 Azure 訂閱上啟用此功能，不會對其他 VM 造成問題。
+* Cloud Volumes ONTAP 會在 CIFS 和 NFS 用戶端上的叢集和 SVM 管理階層的容錯移轉期間，使用內部 Azure 負載平衡器。
+* 當 HA 模式啟用時， BlueXP  會每 12 小時掃描一次系統，以更新內部 Azure 負載平衡器規則。
 
 
 具備「擁有者」權限的Azure使用者可從Azure CLI啟用此功能。

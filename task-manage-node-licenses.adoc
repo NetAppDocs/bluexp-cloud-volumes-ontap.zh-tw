@@ -82,7 +82,7 @@ BlueXP 將授權新增至數位錢包。授權將被識別為未指派、直到�
 * 針對單一節點的授權Cloud Volumes ONTAP 會轉換為32 TiB資料服務授權
 
 
-轉換後的授權到期日與Cloud Volumes ONTAP 不含更新授權的到期日相同。
+轉換後的授權與 Cloud Volumes ONTAP 授權具有相同的到期日。
 
 .步驟
 . 從BlueXP導覽功能表中、選取*管理>數位錢包*。

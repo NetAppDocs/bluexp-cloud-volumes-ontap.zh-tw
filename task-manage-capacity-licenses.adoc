@@ -228,7 +228,9 @@ BlueXP改變Cloud Volumes ONTAP 了這個系統的充電方法。
 
 == 移除容量型授權
 
-如果容量型授權過期且不再使用、您可以隨時將其移除。
+如果容量型授權已過期且不再使用，則您可以隨時將其移除。
+
+若要瞭解您的 Cloud Volumes ONTAP 資料在授權到期或移除時會發生什麼情況，請參閱 https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/FAQs_on_Cloud_Volumes_ONTAP_license_expiry["此知識庫（ KB ）文章"^]。
 
 .步驟
 . 從BlueXP導覽功能表中、選取*管理>數位錢包*。

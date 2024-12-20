@@ -282,7 +282,6 @@
   <block id="2ac4966affb9011f1fb5a6ed61d6f091" category="paragraph">在 Cloud Volumes ONTAP 啟用 WORM 儲存設備之後、您必須使用 ONTAP CLI 來管理 WORM 儲存設備。如需相關指示、請參閱<block ref="19be2c027fd298807ecd24728f87bdff" category="inline-link-rx"></block>。</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
   <block id="e2d4a517cbcae1c0966d5e478d743531" category="list-text">WORM儲存在Cloud Volumes ONTAP 「受信任的儲存管理員」模式下運作。儘管WORM檔案受到保護、不會遭到竄改或修改、但即使這些磁碟區包含未過期的WORM資料、叢集管理員仍可刪除這些磁碟區。</block>
-  <block id="6d0cc0f6b100bdce8cb06276811faff9" category="list-text">除了值得信賴的儲存管理員模式之外Cloud Volumes ONTAP 、在「值得信賴的雲端管理員」模式下、WORM儲存設備也會以隱含方式運作。雲端管理員可以直接從雲端供應商移除或編輯雲端儲存設備、在WORM資料到期日前刪除。</block>
   <block id="ca010532511b0575d0c11648404720a6" category="doc">Azure 中的高可用度配對</block>
   <block id="39579c446d8c5e21ff1d2b6c3e65c086" category="section-title">HA 元件</block>
   <block id="957e0d287584ed2cb6cff5c8c76e1be1" category="list-text">Azure 標準負載平衡器</block>
@@ -1442,7 +1441,6 @@
   <block id="f591dbc4232b149ea0792178559405f9" category="list-text">上傳授權檔案。</block>
   <block id="034f6db5181ab87d962e69b9b7b5a995" category="list-text">按一下*上傳授權*。</block>
   <block id="8f79a5bc1b9725ce4036eb2d94c60de9" category="section-title">移除容量型授權</block>
-  <block id="78a946dc090d511b993ffbe9803dff06" category="paragraph">如果容量型授權過期且不再使用、您可以隨時將其移除。</block>
   <block id="40b851aafab82c78484c46169f816fd2" category="list-text">按一下「 * 移除 * 」以確認。</block>
   <block id="a1a264e616e24563d4b8f8b5795ea403" category="section-title">一般要求</block>
   <block id="3091fa13c48831b4d7d6e8b6cb4b5bb1" category="paragraph">AWS 必須符合下列要求。</block>
@@ -1958,7 +1956,6 @@
   <block id="82330159ba1b86113008185841af38f9" category="paragraph">交換授權會撤銷Cloud Volumes ONTAP 該服務的不含美元的授權、並為該服務建立相當於美元的授權：</block>
   <block id="9df8e0785445964e646ecf922e67b378" category="list-text">針對某個不符合需求的HA配對授權Cloud Volumes ONTAP 會轉換為51 TiB資料服務授權</block>
   <block id="fc9771c21d913259d9cc1605db9e67fc" category="list-text">針對單一節點的授權Cloud Volumes ONTAP 會轉換為32 TiB資料服務授權</block>
-  <block id="0f4fe815dba79cae727d101224b259f6" category="paragraph">轉換後的授權到期日與Cloud Volumes ONTAP 不含更新授權的到期日相同。</block>
   <block id="fff69e388498c7da2216c0a49587cbc8" category="list-text">按一下「* Exchange授權*」。</block>
   <block id="25abdaf706ab9bbfe1775de2626f958f" category="inline-image-macro">顯示在「未指派的授權」頁面上的Exchange授權選項快照。</block>
   <block id="59069c86e2c388bcb56b4ec04ba7c1b1" category="paragraph"><block ref="59069c86e2c388bcb56b4ec04ba7c1b1" category="inline-image-macro-rx" type="image"></block></block>
@@ -2829,7 +2826,6 @@
   <block id="d02c51c501566fb6b3f4693ca83b01ea" category="paragraph">「assume勞力arn」欄位應包含您在VPC擁有者帳戶中建立的IAM角色ARN（請參閱上述步驟3）。</block>
   <block id="4b86a9bfe35da8d5b3e1175b8664656d" category="list-text">高可用度Cloud Volumes ONTAP 的不存在任何問題。此Azure功能可搭配ONTAP 使用、以減少因非計畫性容錯移轉事件而導致NFS傳輸協定的應用程式停機時間。</block>
   <block id="74c86f2714a033254b4bc8058a066937" category="list-text">啟用此功能對Cloud Volumes ONTAP 功能不中斷運作、不中斷對功能的支援。</block>
-  <block id="7dbbac252a198b9c7c543b30ca9455a6" category="list-text">在您的Azure訂閱中啟用此功能、不會對其他VM造成問題。</block>
   <block id="3a3aee537f8eb946ce95b303a0b0cde6" category="paragraph">具備「擁有者」權限的Azure使用者可從Azure CLI啟用此功能。</block>
   <block id="dede8f1d754e5872747fd6fdd219a9da" category="inline-link">從Azure Portal存取Azure Cloud Shell</block>
   <block id="826fb3564b49a63adcbf5c36eec58144" category="list-text"><block ref="826fb3564b49a63adcbf5c36eec58144" category="inline-link-rx"></block></block>
@@ -5433,7 +5429,6 @@
   <block id="cd0f7e99403d8fa2d51f79da8490c871" category="list-text">* 授權 * ：確認有效的 FlexCache 授權可在 Cloud Volumes ONTAP 系統上取得並啟動。</block>
   <block id="d2a65c4b3d7d612fe9fcff1cd53a7468" category="summary">應啟用 Microsoft Azure 的高可用度模式、以縮短非計畫性容錯移轉時間、並啟用 Cloud Volumes ONTAP 的 NFSv4 支援。</block>
   <block id="5bc18ee7996a6b2f47f52d9c0d64c84c" category="doc">在 Azure 中啟用高可用度模式</block>
-  <block id="f9d5342a5ffe6f23e9e7c99df8a42301" category="paragraph">從發行版《S21》開始Cloud Volumes ONTAP 、我們縮短Cloud Volumes ONTAP 了在Microsoft Azure上執行的《21個HA配對》的非計畫性容錯移轉時間、並增加了對NFSv4的支援。為了讓 Cloud Volumes ONTAP 能夠使用這些增強功能、您必須在 Azure 訂閱中啟用高可用度功能。</block>
   <block id="3cad9b9a9f4d8a66f7f9dabc18c3c350" category="list-text">註冊高可用度模式功能：</block>
   <block id="55b69e64ede595e0a10eefb4d9199033" category="paragraph">Cloud Volumes ONTAP 會在佈局群組建立失敗時、在單一可用性區域（ AZ ）中容錯並回復 AWS 高可用度（ HA ）組態的新部署。如有需要、您可以設定放置群組、在建立失敗時略過復原程序、以強制成功完成部署。</block>
   <block id="43c795154e3b7bf74f7abd49f2e26e1a" category="paragraph">BlueXP  可讓您選擇 Cloud Volumes ONTAP 的寫入速度設定、但 Google Cloud 中的高可用度（ HA ）配對除外。在您選擇寫入速度之前、您應該先瞭解一般與高設定之間的差異、以及使用高速寫入速度時的風險與建議。<block ref="12222f10612c9f092ca31c9e99478649" category="inline-link-macro-rx"></block>。</block>
@@ -5561,7 +5556,6 @@
   <block id="61f61b36ca3ee8ac47bd8319d6a6da9e" category="paragraph">如果您使用的是節點式「隨用隨付」（ PAYGO ）授權，您可以選擇不同的授權和執行個體類型，方法是按一下 * 授權類型 * 旁的鉛筆圖示。</block>
   <block id="a6ecef7da6963fbad59a3086a2850e01" category="paragraph">如果您使用的是節點型隨付（ PAYGO ）授權，您可以按一下 * 授權類型 * 旁的鉛筆圖示，選擇不同的授權和機器類型。</block>
   <block id="ad7ec214f507336a7e17d120e074d946" category="summary">當節點型授權的可用度結束（ EOA ）之後，您應該使用 BlueXP  授權轉換工具來轉換為容量型授權。</block>
-  <block id="ede3b64e47be4458ec3b083a508317d8" category="paragraph">若為年度或長期承諾， NetApp 建議您在 EOA 日期（ 2024 年 11 月 11 日）或授權到期日之前聯絡 NetApp 代表，以確保移轉的先決條件已就緒。如果您沒有 Cloud Volumes ONTAP 節點的長期合約，而且是根據隨選隨用隨付隨用（ PAYGO ）訂閱來執行系統，那麼請務必在 2024 年 12 月 31 日支援終止（ EOS ）之前規劃您的轉換。在這兩種情況下，您都應該確保系統符合需求，然後再使用 BlueXP  授權轉換工具進行無縫轉換。</block>
   <block id="4bedf07f0fb0e4e91062f6c20aefb983" category="paragraph">有關 EOA 和 EOS 的資訊，請參閱<block ref="7f9a8649ca2d86db235ba56502d14f92" category="inline-link-macro-rx"></block>。</block>
   <block id="aef6fd472f817709940e55ee0509b06b" category="list-text">當您使用授權轉換工具時，會在適當的位置和線上方式，從節點型移轉至容量型授權模式，不需要移轉任何資料或配置額外的雲端資源。</block>
   <block id="1b740ae810dbba9c533dc649a7e00e1a" category="list-text">這是一項不中斷營運的作業，不會造成服務中斷或應用程式停機。</block>
@@ -5629,7 +5623,6 @@
   <block id="1da19d67e22ac2cb25b90e0604702db1" category="cell">透過 BlueXP  進行所有部署</block>
   <block id="273062411bc731be8028321277142365" category="cell">ONTAP 雲端</block>
   <block id="23364a1412324aba4675105eacf57908" category="example-title">檢視步驟</block>
-  <block id="ff98fd719f758a17955852024475db39" category="paragraph">若為年度或長期承諾， NetApp 建議您在 EOA 日期或授權到期日之前聯絡 NetApp 代表，以確保移轉的先決條件已就緒。如果您沒有 Cloud Volumes ONTAP 節點的長期合約，而且是根據隨選隨付隨用（ PAYGO ）訂閱來執行系統，請務必在 EOS 日期之前規劃您的轉換。對於長期合約和 PAYGO 訂閱，您可以使用 BlueXP  授權轉換工具進行無縫轉換。</block>
   <block id="6ecba12db0576e8891316b6674fda716" category="paragraph">您現在可以在現有的 Cloud Volumes ONTAP 系統上使用 BlueXP  啟動一次寫入，讀取多次（ WORM ）儲存設備。此功能可讓您靈活地在工作環境中啟用 WORM ，即使在其建立期間未啟用 WORM 。一旦啟用，您就無法停用 WORM 。</block>
   <block id="31ccaa5879eee7a69ef3c48f1004c59c" category="list-text">變更收費方式並不會影響您是透過從 NetApp （ BYOL ）購買的授權，還是從雲端供應商的市場隨用付費（ PAYGO ）訂閱中收取費用。</block>
   <block id="deeb890dedc65f3ba1539e8c0083a08b" category="paragraph">對於高可用度（ HA ）配對，您應該存取叢集中的每個儲存 VM （ SVM ），並在 nic0 下為每個 SVM 建立對應的 IP 。如何為HA配對分配IP位址、取決於您使用的儲存傳輸協定。在 HA 模式中，使用者必須確保正確設定 IP 位址，以支援容錯移轉和備援，這對於維持儲存系統的高可用度和可靠性而言是不可或缺的。</block>
@@ -5659,4 +5652,17 @@
   <block id="1d7416ead0f5e395552a7bea35bb1485" category="paragraph">ifdef ：： AWS [] endif： ： AWS [] ifdef ：： azure[] endif： ：： azure[] ifdef ：： GCP [] endif： ：： GCP [] ifdef ：： AWS [] endiff ：：： AWS [] ifdef ：： gcp[] endif[ ：</block>
   <block id="86402869cd4d06d1574d76517f21f563" category="paragraph">容量型授權可讓您針對Cloud Volumes ONTAP 容量的每個TiB付費。容量型授權形式為 _package_ ： Essentials ， Optimized 或 Professional 套件。</block>
   <block id="318162ad2b4d0154510a1c3fe1ca774b" category="paragraph">Essentials ， Optimized 和 Professional 套件可搭配下列使用模式使用：</block>
+  <block id="c54232d574f50dfd33c3e6ddb7fab829" category="paragraph">對於年度或長期承諾， NetApp 建議您在 EOA 日期或授權到期日之前聯絡 NetApp 代表，以確保移轉的先決條件已就緒。如果您沒有 Cloud Volumes ONTAP 節點的長期合約，而且是根據隨選隨付隨用（ PAYGO ）訂閱來執行系統，請務必在 EOS 日期之前規劃您的轉換。對於長期合約和 PAYGO 訂閱，您可以使用 BlueXP  授權轉換工具進行無縫轉換。</block>
+  <block id="4bbac1ba6da1fae98898078ee927d707" category="doc">深入瞭解容量型授權</block>
+  <block id="b9ed893da654234e8fac88c7419c277f" category="list-text">除了值得信賴的儲存管理員模式之外Cloud Volumes ONTAP 、在「值得信賴的雲端管理員」模式下、WORM儲存設備也會以隱含方式運作。雲端管理員可直接從雲端供應商移除或編輯雲端儲存設備，在 WORM 資料到期日前刪除該資料。</block>
+  <block id="b34a5fc19862373955bdfd46a3aadace" category="paragraph">應啟用 Microsoft Azure 的高可用度（ HA ）模式，以縮短非計畫性容錯移轉時間，並啟用 Cloud Volumes ONTAP 的 NFSv4 支援。在此模式中， Cloud Volumes ONTAP HA 節點可在 CIFS 和 NFSv4 用戶端的非計畫性容錯移轉期間，達到低（ 60 秒）的還原時間目標（ RTO ）。</block>
+  <block id="3cf5fe492293bbbf3d99776de821b378" category="paragraph">從 Cloud Volumes ONTAP 9.10.1 開始，我們縮短了在 Microsoft Azure 中執行的 Cloud Volumes ONTAP HA 配對的非計畫性容錯移轉時間，並增加了 NFSv4 支援。為了讓 Cloud Volumes ONTAP 能夠使用這些增強功能、您必須在 Azure 訂閱中啟用高可用度功能。</block>
+  <block id="aede641e1d7acdfda83bae4962f9cad6" category="list-text">在 Azure 訂閱上啟用此功能，不會對其他 VM 造成問題。</block>
+  <block id="61d250b56c4dbcf65efb9a23e69575b2" category="list-text">Cloud Volumes ONTAP 會在 CIFS 和 NFS 用戶端上的叢集和 SVM 管理階層的容錯移轉期間，使用內部 Azure 負載平衡器。</block>
+  <block id="c452ee32d2dd6fb7daf5d56449ab25c3" category="list-text">當 HA 模式啟用時， BlueXP  會每 12 小時掃描一次系統，以更新內部 Azure 負載平衡器規則。</block>
+  <block id="735e56a5b34e826e0792a73d3b708e4a" category="paragraph">若為年度或長期承諾， NetApp 建議您在 EOA 日期（ 2024 年 11 月 11 日）或授權到期日之前聯絡 NetApp 代表，以確保移轉的先決條件已就緒。如果您沒有 Cloud Volumes ONTAP 節點的長期合約，而且是根據隨選隨用隨付隨用（ PAYGO ）訂閱來執行系統，那麼請務必在 2024 年 12 月 31 日支援終止（ EOS ）之前規劃您的轉換。在這兩種情況下，您都應該確保系統符合需求，然後再使用 BlueXP  授權轉換工具進行無縫轉換。</block>
+  <block id="2ea847728c17221d3e25691cc360347c" category="paragraph">如果容量型授權已過期且不再使用，則您可以隨時將其移除。</block>
+  <block id="2ee1fa7be03c13720193e0dad8935652" category="inline-link">此知識庫（ KB ）文章</block>
+  <block id="6e9d07c33afe89ea437bf8c34df37d42" category="paragraph">若要瞭解您的 Cloud Volumes ONTAP 資料在授權到期或移除時會發生什麼情況，請參閱<block ref="388c9f5ba0fdf002c4eb313c08420e05" category="inline-link-rx"></block>。</block>
+  <block id="89f1c05b91f27a0ccc4736c51deee49f" category="paragraph">轉換後的授權與 Cloud Volumes ONTAP 授權具有相同的到期日。</block>
 </blocks>
