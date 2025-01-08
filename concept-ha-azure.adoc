@@ -50,6 +50,9 @@ https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-target
 
 
 
+NOTE: 從 Cloud Volumes ONTAP 9.15.0P1 開始，新的高可用度配對部署不再支援 Azure 頁面 Blobs 。如果您目前在現有的高可用度配對部署中使用 Azure 頁面 Blobs 、您可以在 Edsv4 系列 VM 和 Edsv5 系列 VM 中移轉至較新的 VM 執行個體類型。link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["深入瞭解 Azure 支援的組態"^]。
+
+
 
 === HA單一可用度區域組態與共享的託管磁碟
 

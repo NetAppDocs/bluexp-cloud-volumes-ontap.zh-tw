@@ -5665,4 +5665,8 @@
   <block id="2ee1fa7be03c13720193e0dad8935652" category="inline-link">此知識庫（ KB ）文章</block>
   <block id="6e9d07c33afe89ea437bf8c34df37d42" category="paragraph">若要瞭解您的 Cloud Volumes ONTAP 資料在授權到期或移除時會發生什麼情況，請參閱<block ref="388c9f5ba0fdf002c4eb313c08420e05" category="inline-link-rx"></block>。</block>
   <block id="89f1c05b91f27a0ccc4736c51deee49f" category="paragraph">轉換後的授權與 Cloud Volumes ONTAP 授權具有相同的到期日。</block>
+  <block id="11c433da09cca9cd7d57ed81e1cd6310" category="inline-link-macro">深入瞭解 Azure 支援的組態</block>
+  <block id="9601655a1a70b76faca1edfd7d7dff06" category="admonition">從 Cloud Volumes ONTAP 9.15.0P1 開始，新的高可用度配對部署不再支援 Azure 頁面 Blobs 。如果您目前在現有的高可用度配對部署中使用 Azure 頁面 Blobs 、您可以在 Edsv4 系列 VM 和 Edsv5 系列 VM 中移轉至較新的 VM 執行個體類型。<block ref="ecdad61fcd8abefb7dbc2e5c682b6e1d" category="inline-link-macro-rx"></block>。</block>
+  <block id="096eb93e7b28ed2b978956821258d0c8" category="list-text">從 Cloud Volumes ONTAP 9.15.0P1 開始，新的高可用度配對部署不再支援 Azure 頁面 Blobs 。如果您目前在現有的高可用度配對部署中使用 Azure 頁面 Blobs 、您可以在 Edsv4 系列 VM 和 Edsv5 系列 VM 中移轉至較新的 VM 執行個體類型。</block>
+  <block id="32fc2dbe6ce23818c00cefccab1d6097" category="paragraph"><block ref="ecdad61fcd8abefb7dbc2e5c682b6e1d" category="inline-link-macro-rx"></block>。</block>
 </blocks>
