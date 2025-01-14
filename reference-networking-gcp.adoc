@@ -221,9 +221,6 @@ Cloud Volumes ONTAP 需要外送網際網路存取、才能聯絡各種端點、
 
 
 
-| \https://keyvault-production-aks.vault.azure.net | 金鑰庫 | 用於從 Azure Key Vault 擷取用戶端秘密金鑰、以便與 S3 儲存區通訊、以處理中繼資料。Cloud Volumes ONTAP 服務會在內部使用此元件。 | 標準模式、限制模式和私有模式。 | Cloud Volumes ONTAP 服務無法使用。 
-
-
 | \https://cloudmanager.cloud.netapp.com/tenancy | 租賃 | 用於從 BlueXP  佔用擷取 Cloud Volumes ONTAP 資源、以授權資源和使用者。 | 標準和受限模式。 | Cloud Volumes ONTAP 資源和使用者未經授權。 
 
 

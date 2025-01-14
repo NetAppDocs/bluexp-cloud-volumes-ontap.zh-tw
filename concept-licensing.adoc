@@ -290,7 +290,7 @@ NOTE: 即使在這些案例中，新的節點型授權和授權續約自核准�
 
 == 授權轉換
 
-BlueXP  可透過授權轉換工具，將節點型授權無縫轉換為容量。如需節點型授權的 EOA 相關資訊，請link:/concept-licensing.html#end-of-availability-of-node-based-licenses["終止節點型授權的可用性"]參閱。
+BlueXP  可透過授權轉換工具，將節點型授權無縫轉換為容量。如需節點型授權的 EOA 相關資訊，請link:concept-licensing.html#end-of-availability-of-node-based-licenses["終止節點型授權的可用性"]參閱。
 
 在轉換之前，最好先熟悉兩種授權模式之間的差異。節點型授權包括每個 ONTAP 執行個體的固定容量，因此可能會限制靈活度。另一方面，容量型授權則允許跨多個執行個體共用儲存池，提供更高的靈活度，最佳化資源使用率，並降低重新分配工作負載時的財務處罰可能性。容量型充電功能可根據不斷變化的儲存需求進行無縫調整。
 
