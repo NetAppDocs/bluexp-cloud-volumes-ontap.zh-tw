@@ -232,5 +232,5 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deleting-working-e
 
 
 
-.相關主題
+.相關連結
 連結：link:concept-licensing.html#end-of-availability-of-node-based-licenses["終止節點型授權的可用性"] link:task-convert-node-capacity.html["將節點型授權轉換為容量型"]

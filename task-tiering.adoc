@@ -20,7 +20,7 @@ summary: 您可以將熱資料的 SSD 或 HDD 效能層與非作用中資料的�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 選擇支援的組態
 [role="quick-margin-para"]
-支援大部分的組態。如果Cloud Volumes ONTAP 您的系統執行的是最新版本、那麼您應該會很滿意。 link:task-tiering.html#configurations-that-support-data-tiering["深入瞭解"]。
+支援大部分的組態。如果您的 Cloud Volumes ONTAP 系統執行的是最新版本，那麼您可以繼續使用。link:task-tiering.html#configurations-that-support-data-tiering["深入瞭解"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 確保 Cloud Volumes ONTAP 在物件儲存設備與物件儲存設備之間建立連線
 [role="quick-margin-list"]
@@ -47,7 +47,7 @@ endif::gcp[]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 請確定您已啟用分層功能、並有一個 Aggregate
 [role="quick-margin-para"]
-必須在集合體上啟用資料分層、才能在磁碟區上啟用資料分層。您應該瞭解新磁碟區和現有磁碟區的需求。 <<Ensuring that tiering is enabled on aggregates,深入瞭解>>。
+應在 Aggregate 上啟用資料分層功能，以便在磁碟區上啟用。您應該瞭解新磁碟區和現有磁碟區的需求。<<Ensuring that tiering is enabled on aggregates,深入瞭解>>。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 建立、修改或複寫磁碟區時、請選擇分層原則
 [role="quick-margin-para"]
@@ -65,7 +65,7 @@ endif::gcp[]
 * 您不需要為容量層建立物件存放區。BlueXP能為您實現這項目標。
 * 您不需要在系統層級啟用資料分層。
 +
-在系統建立時、BlueXP會為Cold資料建立物件存放區、 <<Enabling data tiering after implementing the requirements,只要沒有連線或權限問題>>。之後、您只需要在磁碟區上啟用資料分層功能（在某些情況下、 <<Ensuring that tiering is enabled on aggregates,在 Aggregate 上>>）。
+BlueXP  會在建立系統時建立物件存放區以存放冷資料<<Enabling data tiering after implementing the requirements,只要沒有連線或權限問題>>。之後，您只需要在磁碟區上啟用資料分層<<Ensuring that tiering is enabled on aggregates,在 Aggregate 上>>功能（在某些情況下，）。
 
 
 
@@ -162,7 +162,7 @@ ifdef::azure[]
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-根據預設、權限會包含在自訂角色中。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["檢視Azure對Connector的權限"^]
+根據預設，自訂角色包含權限。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["檢視Azure對Connector的權限"^]
 
 endif::azure[]
 
@@ -212,7 +212,7 @@ NOTE: 未來的 Cloud Volumes ONTAP 版本將提供透過 BlueXP 使用者介面
 
 * * 現有磁碟區 *
 +
-如果您想要在現有磁碟區上啟用資料分層、則必須確保已在基礎 Aggregate 上啟用資料分層。如果現有的 Aggregate 上未啟用資料分層功能、則您需要使用 ONTAP 系統管理員將現有的 Aggregate 附加至物件存放區。
+若要在現有磁碟區上啟用資料分層，請確定已在基礎 Aggregate 上啟用資料分層功能。如果現有的 Aggregate 上未啟用資料分層功能、則您需要使用 ONTAP 系統管理員將現有的 Aggregate 附加至物件存放區。
 
 
 

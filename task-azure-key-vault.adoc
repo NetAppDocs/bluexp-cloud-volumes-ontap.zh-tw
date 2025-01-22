@@ -193,3 +193,8 @@ Category: kms_wrapped_key_status
 
 . 確認磁碟區已正確建立並加密。如果是的話、「-is-Encrypted」參數會顯示為「true」。「vol show -vserver _svm_name_-Fields is加密」
 
+
+.相關連結
+* link:task-set-up-azure-encryption.html["設定Cloud Volumes ONTAP 支援使用Azure中客戶管理的金鑰"]
+* https://learn.microsoft.com/en-us/azure/key-vault/general/overview["Microsoft Azure 說明文件：關於 Azure Key Vault"^]
+

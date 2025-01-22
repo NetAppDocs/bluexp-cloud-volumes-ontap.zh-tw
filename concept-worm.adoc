@@ -114,6 +114,6 @@ WORM 功能可與自帶授權（ BYOL ）搭配使用，並可免費訂購授權
 * 除了值得信賴的儲存管理員模式之外Cloud Volumes ONTAP 、在「值得信賴的雲端管理員」模式下、WORM儲存設備也會以隱含方式運作。雲端管理員可直接從雲端供應商移除或編輯雲端儲存設備，在 WORM 資料到期日前刪除該資料。
 
 
-.相關資訊
+.相關連結
 * link:reference-worm-snaplock.html["為 WORM 儲存裝置建立防竄改 Snapshot 複本"]
 

@@ -39,7 +39,7 @@ Digital Advisor 會顯示完整的庫存及軟體與硬體組態資訊。查看�
 
 
 
-.相關資訊
+.相關連結
 * https://docs.netapp.com/us-en/active-iq/["NetApp 文件：數位顧問"^]
 * https://aiq.netapp.com/custom-dashboard/search["啟動 Digital Advisor"^]
 * https://www.netapp.com/us/services/support-edge.aspx["部門服務SupportEdge"^]
