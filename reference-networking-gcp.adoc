@@ -196,15 +196,15 @@ https://cloud.google.com/vpc/docs/packet-mirroring["封包鏡射"^] 您必須在
 
 === 傳出網際網路存取
 
-Cloud Volumes ONTAP 節點需要輸出網際網路存取、才能存取各種功能的外部端點。如果這些端點在安全性要求嚴苛的環境中遭到封鎖、 Cloud Volumes ONTAP 就無法正常運作。
+Cloud Volumes ONTAP 系統需要輸出網際網路存取，才能存取各種功能的外部端點。如果這些端點在安全性要求嚴苛的環境中遭到封鎖、 Cloud Volumes ONTAP 就無法正常運作。
+
+BlueXP  Connector 也會連絡數個端點，以進行日常作業，以及 BlueXP  網路型主控台。有關 BlueXP  端點的信息，請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-3-set-up-networking["檢視 Connector 聯絡的端點"^]和 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-networking-saas-console.html["準備使用 BlueXP 主控台的網路連線"^]。
 
 
 
 ==== Cloud Volumes ONTAP 端點
 
-Cloud Volumes ONTAP 需要外送網際網路存取、才能聯絡各種端點、以進行日常作業。
-
-下列端點是 Cloud Volumes ONTAP 特有的。Connector 也會與多個端點聯絡、以進行日常作業、以及 BlueXP  網路型主控台。請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-3-set-up-networking["檢視 Connector 聯絡的端點"^] 和 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-networking-saas-console.html["準備使用 BlueXP 主控台的網路連線"^]。
+Cloud Volumes ONTAP 使用這些端點與各種服務進行通訊。
 
 [cols="5*"]
 |===

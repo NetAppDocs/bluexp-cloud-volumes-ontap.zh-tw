@@ -5288,12 +5288,9 @@
   <block id="0e3986fb787ff1e55f1d15206f8b39d9" category="paragraph">深入瞭解這些功能：</block>
   <block id="2a57c4c48ac4fed7319e97ba358228fe" category="paragraph">Google Cloud映像驗證符合增強的NetApp安全要求。已對產生映像的指令碼進行變更、以便在過程中使用專為此工作所產生的私密金鑰來簽署映像。您可以使用已簽署的 Google Cloud 摘要和公開憑證來驗證 Google Cloud 映像的完整性<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block>、您可以透過下載、以取得特定版本。</block>
   <block id="92d90815a32824fbae3b0e1cc8bbf0bf" category="inline-link">客戶公報： CPS-00589</block>
-  <block id="c4dbcb8cfcc96461b41d3911e9d893a3" category="paragraph">Cloud Volumes ONTAP 節點需要外部網際網路存取、才能聯絡下列端點進行日常作業。</block>
   <block id="760b52b586ad97b520ea1071bb2f9839" category="section-title">Cloud Volumes ONTAP 端點</block>
-  <block id="26d5c70af8a128834ad7ae9714c92190" category="paragraph">Cloud Volumes ONTAP 需要外送網際網路存取、才能聯絡各種端點、以進行日常作業。</block>
   <block id="5d17fe0f5737fcf131ca89bbb8891fd6" category="inline-link">檢視 Connector 聯絡的端點</block>
   <block id="13ba2efb4fd4a349dae9e57188cc7124" category="inline-link">準備使用 BlueXP 主控台的網路連線</block>
-  <block id="1633003ddfc1abefd1ac5659e539f81c" category="paragraph">下列端點是 Cloud Volumes ONTAP 特有的。Connector 也會與多個端點聯絡、以進行日常作業、以及 BlueXP  網路型主控台。請參閱<block ref="0a8949f1130beab385180d157118cad5" category="inline-link-rx"></block> 和<block ref="979bd9d5982d3343248cd50bd0e0a8e2" category="inline-link-rx"></block>。</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">端點</block>
   <block id="b5d798aa448124265adcb904b18f9ca3" category="cell">適用對象</block>
   <block id="2579d10862aa7770a64b058fb84ce858" category="cell">BlueXP 部署模式</block>
@@ -5665,7 +5662,6 @@
   <block id="40785b143c7b01389082916cdddfec97" category="paragraph">如果您存取資料，存取成本會較高，因此請在變更儲存類別之前先考慮這一點。<block ref="0c2470317fad27a81908b0930cf9e62d" category="inline-link-rx"></block>。</block>
   <block id="cf4245b9ee7a6fb38d76a96f7ceabbb7" category="section-title">容量型授權的可用度</block>
   <block id="e6e80588e9fe7cf89218fea44300f7ca" category="inline-link">深入瞭解連接器</block>
-  <block id="a5daa3d40ac8970760795069627b96f6" category="paragraph">Cloud Volumes ONTAP 系統的 PAYGO 和 BYOL 授權的可用性，需要 BlueXP  連接器才能正常運作。如需詳細資訊、請<block ref="f8567339606c01cec8a34e44063abbd0" category="inline-link-rx"></block>參閱。</block>
   <block id="06afa66cf6eca938a45be835a47030e1" category="list-title">相關連結</block>
   <block id="0d09904ade23c96d36078b02e246f1d8" category="list-text"><block ref="0d09904ade23c96d36078b02e246f1d8" category="inline-link-macro-rx"></block></block>
   <block id="526c6a5f29679ba9d316867c249d9130" category="inline-link">Microsoft Azure 說明文件：關於 Azure Key Vault</block>
@@ -5685,4 +5681,8 @@
   <block id="8ce366e694d5c3c3c27249c7cedf502e" category="paragraph">根據預設，自訂角色包含權限。<block ref="b7d06976ba0f29792527e383824a0357" category="inline-link-rx"></block></block>
   <block id="97cc667ec30a818b8495fe4772b6f90d" category="paragraph">若要在現有磁碟區上啟用資料分層，請確定已在基礎 Aggregate 上啟用資料分層功能。如果現有的 Aggregate 上未啟用資料分層功能、則您需要使用 ONTAP 系統管理員將現有的 Aggregate 附加至物件存放區。</block>
   <block id="6b18d3e430bd8e9cf2e82762b16ab491" category="paragraph">當您取消委任 Cloud Volumes ONTAP 工作環境時，系統不會自動刪除為環境建立的 S3 儲存區。相反地，它會保持孤立狀態，以防止任何意外的資料遺失。您可以刪除貯體中的物件，然後自行移除 S3 貯體，或保留供日後使用。請參閱<block ref="68bba29ef3429f4e3e6e1695929c5629" category="inline-link-rx"></block>。</block>
+  <block id="4d4be0bddb2eb1eb628ff206715d74e9" category="paragraph">Cloud Volumes ONTAP 系統的 PAYGO 和 BYOL 授權的可用性，需要 BlueXP  Connector 正常運作。如需詳細資訊、請<block ref="f8567339606c01cec8a34e44063abbd0" category="inline-link-rx"></block>參閱。</block>
+  <block id="70dfa56e7de1c3a338c88fe5bed4fe14" category="paragraph">Cloud Volumes ONTAP 系統需要輸出網際網路存取，才能存取各種功能的外部端點。如果這些端點在安全性要求嚴苛的環境中遭到封鎖、 Cloud Volumes ONTAP 就無法正常運作。</block>
+  <block id="6a4145e8bef527d8870a20695d55d74f" category="paragraph">BlueXP  Connector 也會連絡數個端點，以進行日常作業，以及 BlueXP  網路型主控台。有關 BlueXP  端點的信息，請參閱<block ref="0a8949f1130beab385180d157118cad5" category="inline-link-rx"></block>和<block ref="979bd9d5982d3343248cd50bd0e0a8e2" category="inline-link-rx"></block>。</block>
+  <block id="54df7aa57f75c8fe24e8c54795f38fa6" category="paragraph">Cloud Volumes ONTAP 使用這些端點與各種服務進行通訊。</block>
 </blocks>
