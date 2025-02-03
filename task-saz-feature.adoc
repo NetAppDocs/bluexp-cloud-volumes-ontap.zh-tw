@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-saz-feature.html 
-keywords: Microsoft Azure feature, HA in SAZ, single availability zone, Azure feature, Virtual Machine Scale Sets in Flexible mode 
+keywords: Microsoft Azure feature, HA in SAZ, single availability zone, Azure feature, Virtual Machine Scale Sets in Flexible mode, VMOrchestratorZonalMultiFD, VM Orchestrator, Zonal, MultiFD, Microsoft.Compute/VMOrchestratorZonalMultiFD feature 
 summary: 啟用此 Microsoft Azure 功能、即可在 SAZ 中部署 HA 。 
 ---
 = 為單一可用性區域啟用 VMOrchestratorZonalMultiFD
@@ -14,7 +14,7 @@ summary: 啟用此 Microsoft Azure 功能、即可在 SAZ 中部署 HA 。
 
 
 [role="lead"]
-若要在本機備援儲存設備（ LRS ）單一可用性區域中部署 VM 執行個體 `Microsoft.Compute/VMOrchestratorZonalMultiFD`、您應該啟動 Microsoft 功能以供訂閱之用。在 HA 模式中、此功能可協助您在相同可用性區域的個別故障網域中部署節點。
+若要在本機備援儲存設備（ LRS ）單一可用性區域（ AZ ）中部署 VM 執行個體，您應該啟動 Microsoft `Microsoft.Compute/VMOrchestratorZonalMultiFD` 訂閱功能。在高可用度（ HA ）模式中，此功能可協助您在相同可用性區域的個別容錯網域中部署節點。
 
 除非您啟動此功能、否則不會進行分區部署、而先前的 LRS 非分區部署也會生效。
 

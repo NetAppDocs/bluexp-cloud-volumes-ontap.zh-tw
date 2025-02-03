@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, cloud manager, BlueXP, digital wallet, cloud backup, cloud data sense, cloud tiering, keystone flex, keystone' 
 summary: 瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。 
 ---
-= 新功能
+= Cloud Volumes ONTAP 的新功能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

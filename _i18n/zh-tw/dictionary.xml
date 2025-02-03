@@ -1069,7 +1069,6 @@
   <block id="c165494898bc0fbf27151d6359a27936" category="doc">建立Aggregate</block>
   <block id="67ea3f429e13cb33e66f1359eb85cc04" category="list-text">在「畫版」頁面上、按兩下 Cloud Volumes ONTAP 您要管理集合體的實例名稱。</block>
   <block id="833ac412ce32368430680596235b2009" category="list-text">按一下「 * 執行 * 」、然後按一下「 * 核准並購買 * 」。</block>
-  <block id="490414e0366b091220802d406e52c076" category="doc">新功能</block>
   <block id="49644953fd4e9612a9842d17bef5e79b" category="section-title">2022年5月2日</block>
   <block id="e76164b285bb635d604e86db0ddefffb" category="paragraph">以下是3.9.18版Connector所做的變更。</block>
   <block id="44521137c9499dbef6a006058d0d9127" category="section-title">版本9.11.0 Cloud Volumes ONTAP</block>
@@ -5213,7 +5212,6 @@
   <block id="adecfde5f36fbd5be401c7db8b8d5979" category="paragraph">如需更多詳細資料<block ref="61c2f059d82ddc0e246df7b9944d49f4" category="inline-link-rx"></block>、請參閱。</block>
   <block id="a1cef748bfeca5013ccdcfd54bd3e225" category="paragraph">有關如何使用 ONTAP 系統管理器和 ONTAP CLI 啓用 ARP 的詳細信息，請參閱<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
   <block id="acdfc619ad459d4ab0532bb87b6d7fca" category="summary">啟用此 Microsoft Azure 功能、即可在 SAZ 中部署 HA 。</block>
-  <block id="12d6e3573a8a3e22461317ae16813b4a" category="paragraph">若要在本機備援儲存設備（ LRS ）單一可用性區域中部署 VM 執行個體<block ref="fdfb47698b60e554acc8cff3a6065992" prefix=" " category="inline-code"></block>、您應該啟動 Microsoft 功能以供訂閱之用。在 HA 模式中、此功能可協助您在相同可用性區域的個別故障網域中部署節點。</block>
   <block id="e290db697594a259148850f7bb013a47" category="paragraph">除非您啟動此功能、否則不會進行分區部署、而先前的 LRS 非分區部署也會生效。</block>
   <block id="492c71bc471f165a3195703edddf3149" category="paragraph">有關在單一可用性區域中部署 VM 的資訊，請參閱<block ref="c9a9063659db2ec9460653bbe2cdb792" category="inline-link-macro-rx"></block>。</block>
   <block id="c3f8ce3d677b4ec2cfbd8d1b970709ef" category="paragraph">以「擁有者」 Privileges 的使用者身分執行下列步驟：</block>
@@ -5685,4 +5683,7 @@
   <block id="70dfa56e7de1c3a338c88fe5bed4fe14" category="paragraph">Cloud Volumes ONTAP 系統需要輸出網際網路存取，才能存取各種功能的外部端點。如果這些端點在安全性要求嚴苛的環境中遭到封鎖、 Cloud Volumes ONTAP 就無法正常運作。</block>
   <block id="6a4145e8bef527d8870a20695d55d74f" category="paragraph">BlueXP  Connector 也會連絡數個端點，以進行日常作業，以及 BlueXP  網路型主控台。有關 BlueXP  端點的信息，請參閱<block ref="0a8949f1130beab385180d157118cad5" category="inline-link-rx"></block>和<block ref="979bd9d5982d3343248cd50bd0e0a8e2" category="inline-link-rx"></block>。</block>
   <block id="54df7aa57f75c8fe24e8c54795f38fa6" category="paragraph">Cloud Volumes ONTAP 使用這些端點與各種服務進行通訊。</block>
+  <block id="23507528d9eb5706668d0e76ef371e2a" category="paragraph">若要在本機備援儲存設備（ LRS ）單一可用性區域（ AZ ）中部署 VM 執行個體，您應該啟動 Microsoft<block ref="fdfb47698b60e554acc8cff3a6065992" prefix=" " category="inline-code"></block> 訂閱功能。在高可用度（ HA ）模式中，此功能可協助您在相同可用性區域的個別容錯網域中部署節點。</block>
+  <block id="9d72c2bef829db2eecf218dce9aa0f18" category="doc">Cloud Volumes ONTAP 的新功能</block>
+  <block id="8cd62eba7c68cffeab4caeac1efd39a3" category="sidebar">設定 Cloud Volumes ONTAP 以建立 AWS 放置群組</block>
 </blocks>

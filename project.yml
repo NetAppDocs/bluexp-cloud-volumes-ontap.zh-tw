@@ -56,6 +56,8 @@ sidebar:
           url: "/task-setting-up-transit-gateway.html"
         - title: 在共享子網路中部署HA配對
           url: "/task-deploy-aws-shared-vpc.html"
+        - title: 設定 Cloud Volumes ONTAP 以建立 AWS 放置群組
+          url: "/task-configure-placement-group-failure-aws.html"
         - title: AWS 的安全群組規則
           url: "/reference-security-groups.html"
       - title: 設定 AWS KMS
