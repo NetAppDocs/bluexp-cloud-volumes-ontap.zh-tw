@@ -16,7 +16,7 @@ summary: BlueXP可讓您管理磁碟區和CIFS伺服器。它也會提示您移�
 [role="lead"]
 BlueXP可讓您管理磁碟區和CIFS伺服器。它也會提示您移動磁碟區、以避免發生容量問題。
 
-您可以在 BlueXP 標準檢視或進階檢視中管理磁碟區。「標準檢視」提供一組有限的選項來修改您的磁碟區。進階檢視提供進階管理層級、例如複製、調整大小、變更反勒索軟體的設定、分析、保護和活動追蹤、以及跨階層移動磁碟區。如需相關資訊、請 link:task-administer-advanced-view.html["使用進階檢視來管理Cloud Volumes ONTAP"]參閱。
+您可以在 BlueXP  標準檢視中或透過 BlueXP  中隨附的 ONTAP 系統管理員來管理磁碟區，以進行進階磁碟區管理。「標準檢視」提供一組有限的選項來修改您的磁碟區。System Manager 提供進階管理層級，例如複製，調整大小，變更反勒索軟體，分析，保護和活動追蹤的設定，以及跨階層移動磁碟區。如需相關資訊、請 link:task-administer-advanced-view.html["使用系統管理員管理 Cloud Volumes ONTAP"]參閱。
 
 
 
@@ -126,10 +126,10 @@ NOTE: BlueXP會將磁碟區移至現有的Aggregate、該集合體使用所選�
 
 根據預設、當磁碟區空間不足時、它會自動增加至最大大小。預設值為 1 、 000 、這表示磁碟區的大小可增加至 11 倍。此值可在 Connector 的設定中設定。
 
-如果您需要調整磁碟區大小、可以從 BlueXP 的「進階檢視」進行調整。
+如果您需要調整磁碟區大小，可以從 BlueXP  的 ONTAP 系統管理員進行調整。
 
 .步驟
-. 開啟「進階檢視」、透過 ONTAP 系統管理員調整磁碟區大小。請參閱 link:task-administer-advanced-view.html#how-to-get-started["如何開始使用"]。
+. 按一下「系統管理員」檢視，即可透過 ONTAP 系統管理員調整磁碟區大小。請參閱 link:task-administer-advanced-view.html#how-to-get-started["如何開始使用"]。
 . 從左側導覽功能表中、選取 * 儲存 > 磁碟區 * 。
 . 從磁碟區清單中、找出您應該調整大小的磁碟區。
 . 按一下選項圖示 image:screenshot_gallery_options.gif["kabob圖示"]。

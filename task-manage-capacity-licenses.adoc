@@ -33,7 +33,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html[
 
 在此期間、BlueXP會自動查詢NetApp的授權服務、以取得NetApp 支援網站 與您的帳戶相關之授權的詳細資料。如果沒有錯誤、 BlueXP 會自動將授權新增至數位錢包。
 
-如果 BlueXP 無法新增授權、您必須自行手動將授權新增至數位錢包。例如、如果Connector安裝在無法存取網際網路的位置、您就必須自行新增授權。 <<將購買的授權新增至您的帳戶,瞭解如何將購買的授權新增至您的帳戶>>。
+如果 BlueXP 無法新增授權、您必須自行手動將授權新增至數位錢包。例如、如果Connector安裝在無法存取網際網路的位置、您就必須自行新增授權。 <<Add purchased licenses to your account,瞭解如何將購買的授權新增至您的帳戶>>。
 
 
 
@@ -43,41 +43,84 @@ BlueXP 數位錢包可顯示您帳戶的總使用容量、以及授權套件所�
 
 .步驟
 . 從BlueXP導覽功能表中、選取*管理>數位錢包*。
-. 在 * Cloud Volumes ONTAP * 標籤上、選取 * 容量型授權 * 。
-. 檢視套件摘要，其中會顯示您的使用容量，預先配置的總容量，以及總使用成本（ PAYGO ）容量。
+. 在 * 總覽 * 索引標籤上， Cloud Volumes ONTAP 方塊會顯示您帳戶目前的資源配置。
 +
-** _總使用容量_是Cloud Volumes ONTAP NetApp帳戶中所有供應系統的總容量。無論磁碟區內的本機、已用、已儲存或有效空間為何、充電都是根據每個磁碟區的已配置大小而計算。
-** _Total preconted capacity_ 是您從 NetApp 購買的總授權容量（自帶授權（ BYOL ）或 Marketplace Contract ）。
-** _Total PAYGO_是使用雲端市場訂閱的已配置總容量。只有當使用容量高於授權容量、或 BlueXP 數位錢包中沒有 BYOL 授權時、才會使用 PAYGO 進行收費。
-+
-以下是 BlueXP 數位錢包中 Cloud Volumes ONTAP 套件摘要的範例：
+image:screenshot_cvo_overview_digital_wallet.png["顯示 Cloud Volumes ONTAP 授權與訂閱容量摘要的螢幕擷取畫面。"]
 
 +
-image:screenshot_capacity-based-licenses.png["顯示 Cloud Volumes ONTAP 套件摘要的螢幕擷取畫面、包括總使用容量、總預先承諾容量（ BYOL 和 Marketplace Contracts ）、以及 BlueXP 數位錢包中的 PAYGO 總容量或已配置容量。"]
+** 資料服務授權 _ 是 NetApp 帳戶中所有 Cloud Volumes ONTAP 系統的已配置容量總計。無論磁碟區內的本機、已用、已儲存或有效空間為何、充電都是根據每個磁碟區的已配置大小而計算。
+** _ 年度合約 _ 是您從 NetApp 購買的總授權容量（自帶授權（ BYOL ）或市場合約）。
+** _PAYGO_ 是使用雲端市場訂閱所配置的總容量。只有當使用容量高於授權容量、或 BlueXP 數位錢包中沒有 BYOL 授權時、才會使用 PAYGO 進行收費。
 
 
-
-. 在摘要下、檢視每個授權套件的耗用容量。
-+
-** 耗用容量 _ 顯示該套件的磁碟區容量。如需特定套件的詳細資料、請將滑鼠游標移到工具提示上。
+. 選取 * 檢視 * 以查看每個授權套件的使用容量。
+. 選取 * Licenses* 索引標籤以查看您所購買之每個套件授權的詳細資料。
 +
 若要更深入瞭解Essentials套件的顯示容量、您應該熟悉充電的運作方式。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#notes-about-charging["瞭解如何為Essentials套裝方案充電"]。
 
-** _ 預先承諾容量 _ 是您從 NetApp 購買的授權容量（ BYOL 或 Marketplace 合約）。
+. 選取 * 訂閱 * 索引標籤，查看依授權使用模式所消耗的容量。此標籤同時包含 PAYGO 和年度合約授權。
 +
-*** _BYOL_ 顯示您從 NetApp 購買的此套件類型的授權容量。
-*** _Marketplace Contracts_ 顯示您購買的此套件類型的市場合約授權容量。
+您只會看到與您目前檢視的組織相關的訂閱。
 
-
-** _PAYGO_ 會依授權使用模式顯示使用容量。
+. 當您檢視訂閱的相關資訊時、您可以與表格中的詳細資料互動、如下所示：
 +
-以下是一個擁有多個授權套件的帳戶範例：
-
+** 展開一列以檢視更多詳細資料。
 +
-image:screenshot-digital-wallet-packages.png["螢幕擷取畫面顯示基本功能和專業套件的耗用容量、預先配置容量和 PAYGO 或已配置容量。"]
+image:screenshot-subscriptions-expand.png["數位電子錢包中「訂閱」索引標籤的螢幕擷取畫面、您可以在其中選取列尾端的箭頭來展開。"]
+
+** 選取image:icon-column-selector.png["表格標題結尾的加號圖示"]以選擇要在表格中顯示的欄。請注意、「字詞」和「自動更新」欄預設不會出現。「自動更新」欄僅顯示Azure合約的續約資訊。
 
 
 
+
+
+
+== 檢視套件詳細資料
+
+您可以在 Cloud Volumes ONTAP 頁面上切換至舊版模式，以檢視每個套件所使用容量的詳細資料。
+
+. 從BlueXP導覽功能表中、選取*管理>數位錢包*。
+. 在 * 總覽 * 索引標籤上， Cloud Volumes ONTAP 方塊會顯示您帳戶目前的資源配置。
+. 選取 * 檢視 * 以查看每個授權套件的已配置容量。
+. 選取 * 切換至傳統檢視 * 。
++
+image:screenshot_digital_wallet_legacy_view.png["「切換至舊版檢視」按鈕的螢幕擷取畫面"]
+
+
+
+
+
+== 變更充電方法
+
+容量型授權的形式為_package_。建立 Cloud Volumes ONTAP 工作環境時、您可以根據業務需求、從多個授權套件中選擇。如果您在建立工作環境之後需要變更、您可以隨時變更套件。例如、您可以將 Essentials 套件變更為專業版套件。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["深入瞭解容量型授權套件"^]。
+
+.關於這項工作
+* 變更收費方式並不會影響您是透過從 NetApp （ BYOL ）購買的授權，還是從雲端供應商的市場隨用付費（ PAYGO ）訂閱中收取費用。
++
+BlueXP 一律會先嘗試根據授權收費。如果沒有可用的授權、就會根據市場訂閱收費。BYOL 不需要「轉換」即可訂閱市場、反之亦然。
+
+* 如果您有來自雲端供應商市場的私人優惠或合約、改用未包含在合約中的收費方法、將會導致依BYOL（如果您向NetApp購買授權）或PAYGO收取費用。
+
+
+.步驟
+. 從BlueXP導覽功能表中、選取*管理>數位錢包*。
+. 選擇* Overview（概述）*選項卡。
+. 在 Cloud Volumes ONTAP 方塊中，選取 * 檢視 * 。
+. 選取 * 切換至傳統檢視 * 。
++
+image:screenshot_digital_wallet_legacy_view.png["「切換至舊版檢視」按鈕的螢幕擷取畫面"]
+
+. 向下捲動至 * 容量型授權 * 表格，然後選取 * 變更充電方法 * 。
++
+image:screenshot-digital-wallet-charging-method-button.png["BlueXP 數位電子錢包中 Cloud Volumes ONTAP 頁面的螢幕擷取畫面、其中變更充電方法按鈕就在表格上方。"]
+
+. 選取工作環境、選擇新的充電方法、然後確認您瞭解變更套件類型將會影響服務費用。
++
+image:screenshot-digital-wallet-charging-method.png["「變更充電方法」對話方塊的快照、可讓您為Cloud Volumes ONTAP 運作中的環境選擇新的充電方法。"]
+
+. 選擇 * 變更充電方法 * 。
 
 
 
@@ -90,7 +133,7 @@ image:screenshot-digital-wallet-usage-report.png["螢幕擷取畫面會顯示數
 
 以下報告可供下載。顯示的容量值以 TiB 為單位。
 
-* * 高階使用率 * ：此報告會清楚顯示數位錢包中「 Cloud Volumes ONTAP 套件摘要」卡的內容。其中包括下列資訊：
+* * 高階使用率 * ：本報告包含下列資訊：
 +
 ** 總使用容量
 ** 預認可容量總計
@@ -99,7 +142,7 @@ image:screenshot-digital-wallet-usage-report.png["螢幕擷取畫面會顯示數
 ** PAYGO 總容量
 
 
-* * Cloud Volumes ONTAP 套件使用 * ：此報告會清楚顯示數位錢包內的套裝卡片內容。除了最佳化的 I/O 套件外、其中包括每個套件的下列資訊：
+* * Cloud Volumes ONTAP 套件使用 * ：此報告包含每個套件的下列資訊，但最佳化 I/O 套件除外：
 +
 ** 總使用容量
 ** 預認可容量總計
@@ -108,7 +151,7 @@ image:screenshot-digital-wallet-usage-report.png["螢幕擷取畫面會顯示數
 ** PAYGO 總容量
 
 
-* * 儲存虛擬機器使用率 * ：此報告顯示如何在 Cloud Volumes ONTAP 系統和儲存虛擬機器（ SVM ）之間分解已計費的容量。此資訊無法在數位錢包的任何畫面上取得。其中包括下列資訊：
+* * 儲存虛擬機器使用率 * ：此報告顯示如何在 Cloud Volumes ONTAP 系統和儲存虛擬機器（ SVM ）之間分解已計費的容量。此資訊僅在報告中提供。其中包含下列資訊：
 +
 ** 工作環境 ID 和名稱（顯示為 UUID ）
 ** 雲端
@@ -141,99 +184,10 @@ NOTE: 此報告不包含 FlexClone Volume 、因為這些類型的磁碟區不�
 
 .步驟
 . 從BlueXP導覽功能表中、選取*管理>數位錢包*。
-. 在 * Cloud Volumes ONTAP * 標籤上、選取 * 容量型授權 * 、然後按一下 * 使用報告 * 。
+. 在 * 總覽 * 標籤上，從 Cloud Volumes ONTAP 方塊中選取 * 檢視 * 。
+. 選取 * 使用報告 * 。
 +
 使用報告會下載。
 
 . 開啟下載的檔案以存取報告。
-
-
-
-
-== 將購買的授權新增至您的帳戶
-
-如果您在 BlueXP 數位錢包中沒有看到購買的授權、則需要將授權新增至 BlueXP 、以便 Cloud Volumes ONTAP 可以使用該容量。
-
-.您需要的產品
-* 您需要提供BlueXP授權或授權檔案的序號。
-* 如果您要輸入序號、請先輸入 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["將NetApp 支援網站 您的不更新帳戶新增至藍圖XP"^]。這是獲授權可以存取序號的 NetApp 支援網站帳戶。
-
-
-.步驟
-. 從BlueXP導覽功能表中、選取*管理>數位錢包*。
-. 在* Cloud Volumes ONTAP 《*》索引標籤上、保留*容量型授權*、然後按一下*新增授權*。
-. 輸入容量型授權的序號、或上傳授權檔案。
-+
-如果您輸入序號、您也需要選擇獲授權存取序號的NetApp Support Site帳戶。
-
-. 按一下「 * 新增授權 * 」。
-
-
-
-
-== 更新容量型授權
-
-如果您購買額外容量或延長授權期限、 BlueXP 會自動更新數位錢包中的授權。您無需做任何事。
-
-不過、如果您在無法存取網際網路的位置部署了BlueXP、則需要手動更新BlueXP中的授權。
-
-.您需要的產品
-授權檔案（如果您有HA配對、則為_file_）。
-
-
-NOTE: 有關如何獲取許可證文件的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#obtain-a-system-license-file["取得系統授權檔案"^]。
-
-.步驟
-. 從BlueXP導覽功能表中、選取*管理>數位錢包*。
-. 在* Cloud Volumes ONTAP 《*》索引標籤上、按一下授權旁的動作功能表、然後選取*更新授權*。
-. 上傳授權檔案。
-. 按一下*上傳授權*。
-
-
-
-
-== 變更充電方法
-
-容量型授權的形式為_package_。建立 Cloud Volumes ONTAP 工作環境時、您可以根據業務需求、從多個授權套件中選擇。如果您在建立工作環境之後需要變更、您可以隨時變更套件。例如、您可以將 Essentials 套件變更為專業版套件。
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["深入瞭解容量型授權套件"^]。
-
-.關於這項工作
-* 變更收費方式並不會影響您是透過從 NetApp （ BYOL ）購買的授權，還是從雲端供應商的市場隨用付費（ PAYGO ）訂閱中收取費用。
-+
-BlueXP 一律會先嘗試根據授權收費。如果沒有可用的授權、就會根據市場訂閱收費。BYOL 不需要「轉換」即可訂閱市場、反之亦然。
-
-* 如果您有來自雲端供應商市場的私人優惠或合約、改用未包含在合約中的收費方法、將會導致依BYOL（如果您向NetApp購買授權）或PAYGO收取費用。
-
-
-.步驟
-. 從BlueXP導覽功能表中、選取*管理>數位錢包*。
-. 在* Cloud Volumes ONTAP 《*》索引標籤上、按一下「*變更充電方法*」。
-+
-image:screenshot-digital-wallet-charging-method-button.png["BlueXP 數位電子錢包中 Cloud Volumes ONTAP 頁面的螢幕擷取畫面、其中變更充電方法按鈕就在表格上方。"]
-
-. 選取工作環境、選擇新的充電方法、然後確認您瞭解變更套件類型將會影響服務費用。
-+
-image:screenshot-digital-wallet-charging-method.png["「變更充電方法」對話方塊的快照、可讓您為Cloud Volumes ONTAP 運作中的環境選擇新的充電方法。"]
-
-. 按一下*變更收費方法*。
-
-
-.結果
-BlueXP改變Cloud Volumes ONTAP 了這個系統的充電方法。
-
-您可能也會注意到 BlueXP 數位錢包會重新整理每個套件類型的已用容量、以因應您剛做的變更。
-
-
-
-== 移除容量型授權
-
-如果容量型授權已過期且不再使用，則您可以隨時將其移除。
-
-若要瞭解您的 Cloud Volumes ONTAP 資料在授權到期或移除時會發生什麼情況，請參閱 https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/FAQs_on_Cloud_Volumes_ONTAP_license_expiry["此知識庫（ KB ）文章"^]。
-
-.步驟
-. 從BlueXP導覽功能表中、選取*管理>數位錢包*。
-. 在* Cloud Volumes ONTAP 《*》索引標籤上、按一下授權旁的動作功能表、然後選取*移除授權*。
-. 按一下「 * 移除 * 」以確認。
 

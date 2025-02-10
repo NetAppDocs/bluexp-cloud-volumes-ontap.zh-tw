@@ -20,6 +20,39 @@ summary: 瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。
 
 
 
+== 2025 年 10 月 2 日
+
+
+
+=== 已啟用使用者驗證，可從 BlueXP  存取系統管理員
+
+身為 BlueXP  管理員，您現在可以啟動 ONTAP 使用者從 BlueXP  存取 ONTAP 系統管理員的驗證。您可以編輯 BlueXP  Connector 設定來啟用此選項。此選項適用於標準和私有模式。
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-advanced-view.html["使用系統管理員管理 Cloud Volumes ONTAP"^]。
+
+
+
+=== BlueXP  進階檢視已重新命名為系統管理員
+
+透過 ONTAP 系統管理員從 BlueXP  進階管理 Cloud Volumes ONTAP 的選項已從 * 進階檢視 * 重新命名為 * 系統管理員 * 。
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-advanced-view.html["使用系統管理員管理 Cloud Volumes ONTAP"^]。
+
+
+
+=== 介紹更簡單的 BlueXP  數位錢包管理授權的方法
+
+現在，您可以在 BlueXP  數位錢包中使用改良的導覽點，體驗 Cloud Volumes ONTAP 授權的簡化管理：
+
+* 您可以透過 *Governance > Digital Pallet > Overview / Data Service licenses * 標籤輕鬆存取 Cloud Volumes ONTAP 授權資訊。
+* 按一下「 * 總覽 * 」標籤中「 Cloud Volume ONTAP 」面板上的 * 檢視 * ，即可全面瞭解容量型授權。這項進階檢視可提供詳細的授權與訂閱資訊。
+* 如果您偏好先前的介面，可以按一下 * 切換至舊版檢視 * 按鈕，依類型檢視授權詳細資料，並修改授權的收費方法。
+
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["管理容量型授權"^]。
+
+
+
 == 2024 年 12 月 9 日
 
 

@@ -11,6 +11,7 @@ summary: 在 BlueXP 數位錢包中管理節點型授權、以確保每個 Cloud
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
+:target: _blank
 
 
 [role="lead"]
@@ -34,7 +35,9 @@ BlueXP 數位錢包頁面可讓您檢視每個 PAYGO Cloud Volumes ONTAP 系統�
 
 .步驟
 . 從BlueXP導覽功能表中、選取*管理>數位錢包*。
-. 在* Cloud Volumes ONTAP 《*》*索引標籤上、從下拉式清單中選取「*節點型授權*」。
+. 選擇* Overview（概述）*選項卡。
+. 在 Cloud Volumes ONTAP 方塊中，選取 * 檢視 * 。
+. 從下拉式清單中選取*節點型授權*。
 . 按一下* PAYGO*。
 . 請在表格中檢視每個PAYGO授權的詳細資料。
 +
@@ -57,7 +60,9 @@ image:screenshot_paygo_licenses.png["此螢幕擷取畫面顯示 BlueXP 數位�
 
 .步驟
 . 從BlueXP導覽功能表中、選取*管理>數位錢包*。
-. 在* Cloud Volumes ONTAP 《*》*索引標籤上、從下拉式清單中選取「*節點型授權*」。
+. 選擇* Overview（概述）*選項卡。
+. 在 Cloud Volumes ONTAP 方塊中，選取 * 檢視 * 。
+. 從下拉式清單中選取*節點型授權*。
 . 按一下*未指派*。
 . 按一下「*新增未指派的授權*」。
 . 輸入授權的序號或上傳授權檔案。
@@ -84,9 +89,13 @@ BlueXP 將授權新增至數位錢包。授權將被識別為未指派、直到�
 
 轉換後的授權與 Cloud Volumes ONTAP 授權具有相同的到期日。
 
+link:https://mydemo.netapp.com/player/?demoId=c96ef113-c338-4e44-9bda-81a8d252de63&showGuide=true&showGuidesToolbar=true&showHotspots=true&source=app["檢視如何交換節點型授權的逐步解說。"^]
+
 .步驟
 . 從BlueXP導覽功能表中、選取*管理>數位錢包*。
-. 在* Cloud Volumes ONTAP 《*》*索引標籤上、從下拉式清單中選取「*節點型授權*」。
+. 選擇* Overview（概述）*選項卡。
+. 在 Cloud Volumes ONTAP 方塊中，選取 * 檢視 * 。
+. 從下拉式清單中選取*節點型授權*。
 . 按一下*未指派*。
 . 按一下「* Exchange授權*」。
 +
@@ -128,7 +137,9 @@ image:screenshot-license-generator.png["螢幕擷取畫面：顯示NetApp授權�
 
 .步驟
 . 從BlueXP導覽功能表中、選取*管理>數位錢包*。
-. 在* Cloud Volumes ONTAP 《*》*索引標籤上、從下拉式清單中選取「*節點型授權*」。
+. 選擇* Overview（概述）*選項卡。
+. 在 Cloud Volumes ONTAP 方塊中，選取 * 檢視 * 。
+. 從下拉式清單中選取*節點型授權*。
 . 在「* BYOL*」標籤中、展開Cloud Volumes ONTAP 關於某個系統的詳細資料。
 . 按一下系統授權旁的動作功能表、然後選取*更新授權*。
 . 上傳授權檔案（若您有HA配對、則為檔案）。
@@ -154,7 +165,9 @@ BlueXP會更新Cloud Volumes ONTAP 整個作業系統的授權。
 
 .步驟
 . 從BlueXP導覽功能表中、選取*管理>數位錢包*。
-. 在* Cloud Volumes ONTAP 《*》*索引標籤上、從下拉式清單中選取「*節點型授權*」。
+. 選擇* Overview（概述）*選項卡。
+. 在 Cloud Volumes ONTAP 方塊中，選取 * 檢視 * 。
+. 從下拉式清單中選取*節點型授權*。
 . 在「* BYOL*」標籤中、展開Cloud Volumes ONTAP 關於某個系統的詳細資料。
 . 按一下「*新增容量授權*」。
 . 輸入序號或上傳授權檔案（如果您有HA配對、也可以輸入檔案）。
@@ -169,7 +182,9 @@ BlueXP會更新Cloud Volumes ONTAP 整個作業系統的授權。
 
 .步驟
 . 從BlueXP導覽功能表中、選取*管理>數位錢包*。
-. 在* Cloud Volumes ONTAP 《*》*索引標籤上、從下拉式清單中選取「*節點型授權*」。
+. 選擇* Overview（概述）*選項卡。
+. 在 Cloud Volumes ONTAP 方塊中，選取 * 檢視 * 。
+. 從下拉式清單中選取*節點型授權*。
 . 在「* BYOL*」標籤中、展開Cloud Volumes ONTAP 關於某個系統的詳細資料。
 . 按一下容量授權旁邊的動作功能表、然後選取*更新授權*。
 . 上傳授權檔案（若您有HA配對、則為檔案）。
@@ -184,7 +199,9 @@ BlueXP會更新Cloud Volumes ONTAP 整個作業系統的授權。
 
 .步驟
 . 從BlueXP導覽功能表中、選取*管理>數位錢包*。
-. 在* Cloud Volumes ONTAP 《*》*索引標籤上、從下拉式清單中選取「*節點型授權*」。
+. 選擇* Overview（概述）*選項卡。
+. 在 Cloud Volumes ONTAP 方塊中，選取 * 檢視 * 。
+. 從下拉式清單中選取*節點型授權*。
 . 在「* BYOL*」標籤中、展開Cloud Volumes ONTAP 關於某個系統的詳細資料。
 . 按一下容量授權旁的動作功能表、然後選取*移除授權*。
 . 按一下「*移除*」。
@@ -204,7 +221,9 @@ BlueXP會更新Cloud Volumes ONTAP 整個作業系統的授權。
 
 .步驟
 . 從BlueXP導覽功能表中、選取*管理>數位錢包*。
-. 在* Cloud Volumes ONTAP 《*》*索引標籤上、從下拉式清單中選取「*節點型授權*」。
+. 選擇* Overview（概述）*選項卡。
+. 在 Cloud Volumes ONTAP 方塊中，選取 * 檢視 * 。
+. 從下拉式清單中選取*節點型授權*。
 . 按一下* Eval*。
 . 在表格中、按一下*「轉換成BYOL授權*」以取得Cloud Volumes ONTAP 一套系統。
 . 輸入序號或上傳授權檔案。

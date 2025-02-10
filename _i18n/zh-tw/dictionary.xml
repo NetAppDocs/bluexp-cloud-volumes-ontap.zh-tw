@@ -1419,16 +1419,7 @@
   <block id="8caaaa4afae93c31b741be21eed669cc" category="inline-link-macro">深入瞭Cloud Volumes ONTAP 解不知如何取得授權</block>
   <block id="792eeb7f686f2ad37b664f6478d40bed" category="paragraph">向NetApp銷售代表購買授權後、NetApp會寄送一封電子郵件給您、附上序號和其他授權詳細資料。</block>
   <block id="ad0be4bc913a8026a3f5e42fc7656d23" category="inline-xref">瞭解如何將購買的授權新增至您的帳戶</block>
-  <block id="b2dfe525c9a6bec7392826fba889fe07" category="section-title">將購買的授權新增至您的帳戶</block>
   <block id="ea9a2b9ac34c9aab133f21aa5b67976e" category="list-text">按一下「 * 新增授權 * 」。</block>
-  <block id="5c55b043854250a04085395d6b5a3a9d" category="list-text">輸入容量型授權的序號、或上傳授權檔案。</block>
-  <block id="204d2b4625a88f2700ea6c08a4f85014" category="paragraph">如果您輸入序號、您也需要選擇獲授權存取序號的NetApp Support Site帳戶。</block>
-  <block id="89046e28df67df094886562aac624243" category="section-title">更新容量型授權</block>
-  <block id="e02250fabfba9f2d7325403663479a43" category="paragraph">授權檔案（如果您有HA配對、則為_file_）。</block>
-  <block id="f591dbc4232b149ea0792178559405f9" category="list-text">上傳授權檔案。</block>
-  <block id="034f6db5181ab87d962e69b9b7b5a995" category="list-text">按一下*上傳授權*。</block>
-  <block id="8f79a5bc1b9725ce4036eb2d94c60de9" category="section-title">移除容量型授權</block>
-  <block id="40b851aafab82c78484c46169f816fd2" category="list-text">按一下「 * 移除 * 」以確認。</block>
   <block id="a1a264e616e24563d4b8f8b5795ea403" category="section-title">一般要求</block>
   <block id="3091fa13c48831b4d7d6e8b6cb4b5bb1" category="paragraph">AWS 必須符合下列要求。</block>
   <block id="5908bdfb58aef23bebf7df36d49b9dfb" category="section-title">對節點的輸出網際網路存取 Cloud Volumes ONTAP</block>
@@ -2611,7 +2602,6 @@
   <block id="e683d2190ea99600c0a7bda058b93d36" category="paragraph">「vol create -vserver _Svm_name_-volume _volVolume _name_-Aggregate _aggr _-size _size_-state online -policy default」</block>
   <block id="652f5bb57cb09b4930d22c8b8241e77c" category="summary">利用此功能、您可以執行所有的管理命令、這是進階工作或使用CLI時的最佳選擇。Cloud Volumes ONTAP您可以使用SSH連線至CLI。</block>
   <block id="f92c0062f5f51f34505c72b0a5c9b3be" category="doc">從Cloud Volumes ONTAP CLI管理</block>
-  <block id="eb548256fe08b2a0e5f541bc56282edf" category="doc">使用進階檢視來管理Cloud Volumes ONTAP</block>
   <block id="f3c3ee89c80d32726f5f937c07631d1c" category="list-text">進階儲存管理</block>
   <block id="81988711ef6c9af40c8e8973f25c0bed" category="paragraph">管理一致性群組、共用區、qtree、配額和儲存VM。</block>
   <block id="62735a856683757bf28f1f02f97c151c" category="list-text">網路管理</block>
@@ -2626,9 +2616,7 @@
   <block id="b03c3f1292327857639de1cd1434567b" category="paragraph">下列功能不支援出現在System Manager介面中Cloud Volumes ONTAP 的部分功能：</block>
   <block id="fe925ee04a93d96abc7adb5118b5ccc3" category="list-text">階層</block>
   <block id="405e2b58413610be532a001334e7a862" category="list-text">韌體升級</block>
-  <block id="ec10c0d50369bfb68fa19c871a22d0f7" category="paragraph">不支援Cloud Volumes ONTAP 從*叢集&gt;設定*頁面自動更新韌體。</block>
   <block id="f4e1c06a7a7ddbaea4c2d3349dc0b815" category="paragraph">此外、不支援System Manager的角色型存取控制。</block>
-  <block id="7540b63d6f9cc399be4f74cff91bcaf7" category="paragraph">開啟Cloud Volumes ONTAP 一個運作環境、然後按一下「進階檢視」選項。</block>
   <block id="74d668d6c47cd0c55c4ff8f77ad621bd" category="list-text">如果出現確認訊息、請仔細閱讀、然後按一下*關閉*。</block>
   <block id="f0da217269d7f8fb37fd503f586df2ef" category="list-text">使用System Manager來管理Cloud Volumes ONTAP 功能。</block>
   <block id="9091c5cdacecb3d4082594d5d5a31855" category="section-title">協助使用System Manager</block>
@@ -2865,15 +2853,9 @@
   <block id="f327746b90761d64fda358e3ff9ce7a3" category="paragraph">此工作環境可算為三個系統：一個用於HA配對、兩個用於額外的儲存VM。</block>
   <block id="e1d61ff8b15b12854145940279164504" category="paragraph">總共有六個系統。之後您的帳戶就有額外14個系統的空間。</block>
   <block id="03021ab228ad1d1c921bbf536e2913a4" category="section-title">檢視您帳戶中的已用容量</block>
-  <block id="29f9c9781f75b695cb6c7c93910280cd" category="list-text">_總使用容量_是Cloud Volumes ONTAP NetApp帳戶中所有供應系統的總容量。無論磁碟區內的本機、已用、已儲存或有效空間為何、充電都是根據每個磁碟區的已配置大小而計算。</block>
-  <block id="ea7c202c277e5ccf92e08be29b4a64e9" category="list-text">在摘要下、檢視每個授權套件的耗用容量。</block>
   <block id="d30bc4bd5cee7ac23a1df54311d1f4b3" category="inline-link-macro">瞭解如何為Essentials套裝方案充電</block>
-  <block id="bbb170bfbf4105204b0dbe4292724d6e" category="paragraph">以下是一個擁有多個授權套件的帳戶範例：</block>
   <block id="3fe75f10a35597997861eca633c30fa7" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block></block>
   <block id="5844b24c31c1897efda5443d984702f8" category="list-text">在* Cloud Volumes ONTAP 《*》*索引標籤上、從下拉式清單中選取「*節點型授權*」。</block>
-  <block id="666ac747a8d5a1aa317496f8add413a6" category="list-text">在* Cloud Volumes ONTAP 《*》索引標籤上、保留*容量型授權*、然後按一下*新增授權*。</block>
-  <block id="ecdf6ba3b837de5910abdabc360df552" category="list-text">在* Cloud Volumes ONTAP 《*》索引標籤上、按一下授權旁的動作功能表、然後選取*更新授權*。</block>
-  <block id="5ca97f84ee577fbacf355fc75d23921d" category="list-text">在* Cloud Volumes ONTAP 《*》索引標籤上、按一下授權旁的動作功能表、然後選取*移除授權*。</block>
   <block id="8152540df51584ebf79193211a381d46" category="paragraph">現在AWS中執行9.11.0版或更新版本的全新和現有的版本不含支援的S3授權。ONTAP Cloud Volumes ONTAP</block>
   <block id="f225a4f57ea32da8b983d7bffd20b6eb" category="paragraph">Azure中執行9.9.1版或更新版本的全新及現有的支援功能系統、現在已隨附一份支援功能S3的授權。ONTAP Cloud Volumes ONTAP</block>
   <block id="21f6d246225534dc3444037c83f109c3" category="list-text">使用下列關鍵字-值配對新增「user-Private - DNS"區域設定參數、以編輯app.conf：</block>
@@ -2917,11 +2899,9 @@
   <block id="68519dd54d9e3922e66ec5b7a67c39e0" category="paragraph">當您建立Cloud Volumes ONTAP 一個運作環境時、使用者介面現在可讓您選擇是否要讓預先定義的安全性群組僅允許所選網路（建議）或所有網路內的流量。</block>
   <block id="2261cc540df38326c53234c3d2d87794" category="inline-image-macro">顯示在工作環境精靈中選取安全性群組時可用之「允許內部流量」選項的快照。</block>
   <block id="662442d32a5fd91298fcf8b6391fdf17" category="section-title">變更充電方法</block>
-  <block id="3397777d22d2d5f746157ca31f0d8460" category="list-text">在* Cloud Volumes ONTAP 《*》索引標籤上、按一下「*變更充電方法*」。</block>
   <block id="de4b4e176958ea7181911ce715504321" category="list-text">選取工作環境、選擇新的充電方法、然後確認您瞭解變更套件類型將會影響服務費用。</block>
   <block id="b0d246ceb3cd290ace3abd509e982f73" category="inline-image-macro">「變更充電方法」對話方塊的快照、可讓您為Cloud Volumes ONTAP 運作中的環境選擇新的充電方法。</block>
   <block id="6e594f7cd72195c88515a50fcfc2397e" category="paragraph"><block ref="6e594f7cd72195c88515a50fcfc2397e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5331b4ea3bd1ef32d06c003e7e8f1c3d" category="list-text">按一下*變更收費方法*。</block>
   <block id="ee738151c1f4fb3d95f9f37c55f51f67" category="cell">產生的安全性群組</block>
   <block id="736117f693040571db69267153b2d26c" category="list-text">如果您選擇*僅限VPC*、則傳入流量的來源為所選VPC的子網路範圍、以及連接器所在VPC的子網路範圍。這是建議的選項。</block>
   <block id="deb6808c65d1809351087abd4e05656f" category="list-text">如果您選擇*所有VPC*、則傳入流量的來源為0.00.0.0/0 IP範圍。</block>
@@ -3101,10 +3081,6 @@
   <block id="8be0344d53e72ba6b33ee561546d42ef" category="list-text">請使用下列BlueXP API呼叫、取得Azure訂閱中的金鑰保存清單。</block>
   <block id="d299e5b30a28fae82e447cefb2d904e4" category="list-text">使用下列BlueXP API呼叫取得資料保險箱內的金鑰清單。</block>
   <block id="44249c1d6a34da15ef3c63bcad86a7f4" category="list-text">使用Cloud Volumes ONTAP 下列BlueXP API呼叫建立一個系統。</block>
-  <block id="160caa44a14b9421593597c51ec2a7e8" category="list-text">您需要提供BlueXP授權或授權檔案的序號。</block>
-  <block id="04b14ae402c3ab4f87916eed6238424b" category="inline-link">將NetApp 支援網站 您的不更新帳戶新增至藍圖XP</block>
-  <block id="2144c137b123de98ab20d5bfa9677b33" category="paragraph">不過、如果您在無法存取網際網路的位置部署了BlueXP、則需要手動更新BlueXP中的授權。</block>
-  <block id="a3f83af733570f5c2a5b63c7087e6164" category="paragraph">BlueXP改變Cloud Volumes ONTAP 了這個系統的充電方法。</block>
   <block id="e4de6f9df9cd48ef525131de3cb21481" category="inline-link">BlueXP API</block>
   <block id="472a0e36dbfcabd612dc9f3235507590" category="summary">您可以Cloud Volumes ONTAP 在Cloud Volumes ONTAP BlueXP中建立一個運作環境、在Azure中啟動單一的一套功能完善的系統。</block>
   <block id="080f809f6133bba04d70601f68e18988" category="paragraph">您可以在Cloud Volumes ONTAP BlueXP中建立運作環境、在Azure中啟動單一節點系統或HA配對。</block>
@@ -3189,7 +3165,6 @@
   <block id="3a03e3e7da257bcd5d5826004cd5b227" category="admonition">如果多位 IAM 使用者使用相同的 AWS 帳戶、則每位使用者都需要訂閱。第一位使用者訂閱之後、 AWS Marketplace 會通知後續使用者他們已經訂閱、如下圖所示。雖然 AWS _account_ 已有訂閱、但每個 IAM 使用者都需要將自己與該訂閱建立關聯。如果您看到以下訊息、請按一下*按一下此處*連結、前往BlueXP網站並完成程序。<block ref="5176b925004072644ad0f4d50d425bc9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="08716c56b69c38a1d4f3bf5e2aa2e5c8" category="paragraph">BlueXP會啟動Cloud Volumes ONTAP 「更新HA配對」。您可以追蹤時間表的進度。</block>
   <block id="e8d7251c93bb0bbd59e5b2aca177a1a6" category="summary">如果您需要執行Cloud Volumes ONTAP 進階的支援管理功能、可以使用ONTAP 支援ONTAP 此功能的支援功能、這個功能是隨附於一個系統的管理介面。我們已將System Manager介面直接納入BlueXP、因此您不需要離開BlueXP進行進階管理。</block>
-  <block id="38ff1351e45b1e4303e79145f4bc10b4" category="paragraph">BlueXP的進階檢視可讓您存取其他管理功能：</block>
   <block id="af97eb7a8d1a683de73e48cc402e070d" category="paragraph">System Manager不支援集合管理（包括本機層級和雲端層）。您必須直接從BlueXP的「標準檢視」管理集合體。</block>
   <block id="e7b3f56c45c6705f279b059a9274225d" category="list-text">如有需要、請按一下*切換至標準檢視*、透過BlueXP返回標準管理。</block>
   <block id="0828553b7174743f116345861b5c6bc0" category="summary">您可以探索並新增Cloud Volumes ONTAP 現有的元件系統至藍圖XP。如果您部署了新的BlueXP系統、您可能會這麼做。</block>
@@ -3859,13 +3834,6 @@
   <block id="6466b41798117de76beee910171ffc8f" category="inline-image-macro">在檢視工作環境時、會在「概觀」頁面右上角的「功能」面板下顯示「機器類型」設定的螢幕擷取畫面。</block>
   <block id="65501384f1f7cf6e689e492914a698c1" category="paragraph"><block ref="65501384f1f7cf6e689e492914a698c1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f5e2fedd06abf8315436e3971f9755de" category="list-text">選擇機器類型、勾選核取方塊以確認您瞭解變更的影響、然後按一下 * 變更 * 。</block>
-  <block id="af61e314a8c2484dfcfef0afc2e5b8b9" category="list-text">耗用容量 _ 顯示該套件的磁碟區容量。如需特定套件的詳細資料、請將滑鼠游標移到工具提示上。</block>
-  <block id="cfc852810f89c13febd473e12117d828" category="list-text">_ 預先承諾容量 _ 是您從 NetApp 購買的授權容量（ BYOL 或 Marketplace 合約）。</block>
-  <block id="b35741916171a2b4d1210c1ccf6e3920" category="list-text">_BYOL_ 顯示您從 NetApp 購買的此套件類型的授權容量。</block>
-  <block id="59bdc4172870791ff34a990174b34a66" category="list-text">_Marketplace Contracts_ 顯示您購買的此套件類型的市場合約授權容量。</block>
-  <block id="e733f8e4574a8639831d6df796e6a0eb" category="list-text">_PAYGO_ 會依授權使用模式顯示使用容量。</block>
-  <block id="b0980f4f35d961e95a685e0af8bda7e4" category="inline-image-macro">螢幕擷取畫面顯示基本功能和專業套件的耗用容量、預先配置容量和 PAYGO 或已配置容量。</block>
-  <block id="71b669d4d19df676d975ef4911ded7af" category="paragraph"><block ref="71b669d4d19df676d975ef4911ded7af" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a98606dee1787dfd2471d2ef8adeb680" category="list-text">在「 Canvas 」頁面上、按兩下您要登錄的系統名稱。</block>
   <block id="24901c53838efd4b9981ed8ffd510413" category="list-text">在「概述」標籤上、按一下「功能」面板、然後按一下「 * 支援註冊 * 」旁邊的鉛筆圖示。</block>
   <block id="6200e275553fcb2d81141061804129aa" category="list-text">在 Canvas 頁面上、按兩下您設定為勒索軟體保護的系統名稱。</block>
@@ -3973,7 +3941,6 @@
   <block id="9cc2b6cdaf0b50459353a2d67c0baa80" category="section-title">縮短部署時間</block>
   <block id="66d5639668d7c3e585771304940a252b" category="paragraph">我們縮短了在Cloud Volumes ONTAP Microsoft Azure或Google Cloud中部署運作環境所需的時間（啟用正常寫入速度時）。部署時間現在平均縮短3-4分鐘。</block>
   <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">從BlueXP導覽功能表中、選取*管理&gt;數位錢包*。</block>
-  <block id="e83a5b2754cd537ac6467dc025115726" category="list-text">在 * Cloud Volumes ONTAP * 標籤上、選取 * 容量型授權 * 。</block>
   <block id="492847bcbc9ec0bd3075b612aa43e4a7" category="list-text">選取 * Keystone * 。</block>
   <block id="ece137c555d8c53c8378fee53f6273c4" category="paragraph">AKV可用於保護 <block ref="defc94716dcceab396c0509ed7db9366" category="inline-link-macro-rx"></block> 僅適用於資料SVM。</block>
   <block id="c6a56bb8eca094c529c75a2c22c92bcc" category="inline-link-macro">深入瞭解如何管理節點型授權</block>
@@ -4000,14 +3967,11 @@
   <block id="c2b73e18a5b530a547ba48a8177d13c3" category="inline-image-macro">螢幕擷取畫面會顯示數位錢包 Cloud Volumes ONTAP 容量型授權頁面、並反白顯示使用報告按鈕。</block>
   <block id="a1a4a48254cf8eb8962fbd995f5e7ea8" category="paragraph"><block ref="a1a4a48254cf8eb8962fbd995f5e7ea8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d11dcbec58d47bd13de1dcccfbd640ff" category="paragraph">以下報告可供下載。顯示的容量值以 TiB 為單位。</block>
-  <block id="ad73e4897304c80496a4f15e033cefa7" category="list-text">* 高階使用率 * ：此報告會清楚顯示數位錢包中「 Cloud Volumes ONTAP 套件摘要」卡的內容。其中包括下列資訊：</block>
   <block id="c596c9291f76a11af1aefc235c262de6" category="list-text">總使用容量</block>
   <block id="8dd7541d6c4e83402d88448119068a02" category="list-text">預認可容量總計</block>
   <block id="b01a146aed01aa8af61e034befc116ce" category="list-text">BYOL 總容量</block>
   <block id="109323142d354af9ccc7eb636b1dcbce" category="list-text">市場總合約容量</block>
   <block id="baf09c6c43fd26effd8f15e252649384" category="list-text">PAYGO 總容量</block>
-  <block id="76101a2de96d735db21249323914bc6c" category="list-text">* Cloud Volumes ONTAP 套件使用 * ：此報告會清楚顯示數位錢包內的套裝卡片內容。除了最佳化的 I/O 套件外、其中包括每個套件的下列資訊：</block>
-  <block id="c01bbdbe6721d80a74779e943243486b" category="list-text">* 儲存虛擬機器使用率 * ：此報告顯示如何在 Cloud Volumes ONTAP 系統和儲存虛擬機器（ SVM ）之間分解已計費的容量。此資訊無法在數位錢包的任何畫面上取得。其中包括下列資訊：</block>
   <block id="c8e2277ecfb1427838c488c217f99466" category="list-text">雲端</block>
   <block id="4736cd35bf5b3fe63e1b1785fb2aa664" category="list-text">NetApp 帳戶 ID</block>
   <block id="bbfa34e8af02138b821f784c8962669b" category="list-text">工作環境組態</block>
@@ -4024,7 +3988,6 @@
   <block id="fc18634852d4299cd5f8c7ad55ddefbe" category="list-text">Volume類型</block>
   <block id="3756f66a273f440893f16ee968ce3450" category="list-text">Volume 資源配置容量</block>
   <block id="8b3da2ed858ee5c956acde26c9ef7dd0" category="admonition">此報告不包含 FlexClone Volume 、因為這些類型的磁碟區不會產生費用。</block>
-  <block id="a4bad4f350632a2078a6d795984ee60f" category="list-text">在 * Cloud Volumes ONTAP * 標籤上、選取 * 容量型授權 * 、然後按一下 * 使用報告 * 。</block>
   <block id="23e918e9f1c9f1bb5769dcc236489de2" category="paragraph">使用報告會下載。</block>
   <block id="05655bb3cbd3604d6c71a1db823ad94f" category="list-text">開啟下載的檔案以存取報告。</block>
   <block id="d4772ed2ff27a5cc68cff95e8301ea7d" category="paragraph">BlueXP會自動查詢NetApp的授權服務、以取得NetApp 支援網站 與您的還原帳戶相關之授權的詳細資料。如果沒有錯誤、 BlueXP 會自動將授權新增至數位錢包。</block>
@@ -4046,17 +4009,9 @@
   <block id="472179c55c070df5bcb6f6fd708c412f" category="paragraph">在此期間、BlueXP會自動查詢NetApp的授權服務、以取得NetApp 支援網站 與您的帳戶相關之授權的詳細資料。如果沒有錯誤、 BlueXP 會自動將授權新增至數位錢包。</block>
   <block id="c713a53d9b2831d188de3225e90ebdee" category="paragraph">如果 BlueXP 無法新增授權、您必須自行手動將授權新增至數位錢包。例如、如果Connector安裝在無法存取網際網路的位置、您就必須自行新增授權。 <block ref="2b377ff52574668221716136185f8476" category="inline-xref-macro-rx"></block>。</block>
   <block id="70998cc9a7ddc4592ecb1e8fc59e0b63" category="paragraph">BlueXP 數位錢包可顯示您帳戶的總使用容量、以及授權套件所耗用的容量。這有助於瞭解您的收費方式、以及您是否需要購買額外容量。</block>
-  <block id="40e697bd547f9c2f3cb7042d204e6b9b" category="list-text">_Total PAYGO_是使用雲端市場訂閱的已配置總容量。只有當使用容量高於授權容量、或 BlueXP 數位錢包中沒有 BYOL 授權時、才會使用 PAYGO 進行收費。</block>
-  <block id="34a724e7d15854ada8926f52e44a3cdb" category="paragraph">以下是 BlueXP 數位錢包中 Cloud Volumes ONTAP 套件摘要的範例：</block>
-  <block id="ef932e9542b570b1aebe25543e12d641" category="inline-image-macro">顯示 Cloud Volumes ONTAP 套件摘要的螢幕擷取畫面、包括總使用容量、總預先承諾容量（ BYOL 和 Marketplace Contracts ）、以及 BlueXP 數位錢包中的 PAYGO 總容量或已配置容量。</block>
-  <block id="7d6ebd560dc2c66d5d0db57db21f3c2e" category="paragraph"><block ref="7d6ebd560dc2c66d5d0db57db21f3c2e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="665d621a7dca67edde62a7208c097db9" category="paragraph">如果您在 BlueXP 數位錢包中沒有看到購買的授權、則需要將授權新增至 BlueXP 、以便 Cloud Volumes ONTAP 可以使用該容量。</block>
-  <block id="2a54172f7bcef3f83da68a9aefc194ea" category="paragraph">如果您購買額外容量或延長授權期限、 BlueXP 會自動更新數位錢包中的授權。您無需做任何事。</block>
   <block id="325ef46eb3d6b63c4d60ef08cdd6176f" category="inline-image-macro">BlueXP 數位電子錢包中 Cloud Volumes ONTAP 頁面的螢幕擷取畫面、其中變更充電方法按鈕就在表格上方。</block>
   <block id="bdc5814154b1b181ca8722ef08ed8a28" category="paragraph"><block ref="bdc5814154b1b181ca8722ef08ed8a28" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d592a4e1d68c1047f1f5e39639bee6bf" category="paragraph">您可能也會注意到 BlueXP 數位錢包會重新整理每個套件類型的已用容量、以因應您剛做的變更。</block>
   <block id="078be6a9f1dfaaea5e7153ff9ec78760" category="inline-link-macro">BlueXP 分層</block>
-  <block id="fdc0e66a431a39bf7d68fad74c362d1a" category="paragraph">Cloud Volumes ONTAP 不支援 BlueXP 分層服務。建立磁碟區時、必須直接從BlueXP的標準檢視畫面設定將資料分層至物件儲存設備。</block>
   <block id="52c73bbae26b1c8362e849d7b7e0539f" category="paragraph">如果您計畫在 Cloud Volumes ONTAP 系統上使用 BlueXP 備份與還原、節點的 IAM 角色必須包含以下所示的第二個原則。</block>
   <block id="ede1cce9f240fed5ecc4264bd699cee1" category="inline-link">BlueXP 備份與還原</block>
   <block id="334457e955e851dd9304247244593287" category="summary">在 BlueXP 數位錢包中管理節點型授權、以確保每個 Cloud Volumes ONTAP 系統都擁有具有所需容量的有效授權。</block>
@@ -4143,7 +4098,6 @@
   <block id="687a1e66717978102d4e4948c08968d3" category="list-text"><block ref="687a1e66717978102d4e4948c08968d3" category="inline-link-rx"></block></block>
   <block id="25e7b507c919c21847b291c84a88ba36" category="paragraph"><block ref="73e1a6a2075a5d292111b694a644abf3" category="inline-link-rx"></block>。</block>
   <block id="b2678f2b003e23f7f5f3a7cd8451a26b" category="paragraph">若要更深入瞭解Essentials套件的顯示容量、您應該熟悉充電的運作方式。<block ref="8d04d0643798fbb69d5260f477ea213c" category="inline-link-rx"></block>。</block>
-  <block id="fa4ae0264bd8c2dfafbe1d03e4bc2b9a" category="list-text">如果您要輸入序號、請先輸入<block ref="c7616a3371ef10b7d4b9bba9548cea1f" category="inline-link-rx"></block>。這是獲授權可以存取序號的 NetApp 支援網站帳戶。</block>
   <block id="40f3baabc19d523f34effa4916ea3369" category="paragraph"><block ref="40f3baabc19d523f34effa4916ea3369" category="inline-link-rx"></block></block>
   <block id="3ef154303a849cb9a3ef576f227344aa" category="admonition">正在尋找Connector的相關資訊？<block ref="8765f98523a24e888d90a1e7217525a6" category="inline-link-rx"></block></block>
   <block id="ca874448d5833b40cafc264394d56087" category="list-text"><block ref="ca874448d5833b40cafc264394d56087" category="inline-link-rx"></block></block>
@@ -4702,7 +4656,6 @@
   <block id="6b5c2460f150173d3723de8a857a4d33" category="paragraph"><block ref="179c8a3ed717f2c4de3149f0e9edf685" category="inline-link-rx"></block>。</block>
   <block id="632ac3f99447a16bd75e4d1a0b8b691e" category="paragraph">透過 BlueXP 標準檢視、您可以根據儲存需求來管理磁碟區。您可以檢視、編輯、複製、還原及刪除磁碟區。</block>
   <block id="5f9f6fee108a1a2e24bfa11e0350dbed" category="paragraph">根據預設、當磁碟區空間不足時、它會自動增加至最大大小。預設值為 1 、 000 、這表示磁碟區的大小可增加至 11 倍。此值可在 Connector 的設定中設定。</block>
-  <block id="d83032202b952a29eb304290049be8f3" category="paragraph">如果您需要調整磁碟區大小、可以從 BlueXP 的「進階檢視」進行調整。</block>
   <block id="a6bfbc7160bd5efb8fda7e791efd9e47" category="list-text">從左側導覽功能表中、選取 * 儲存 &gt; 磁碟區 * 。</block>
   <block id="d875eee3d594951433259f6da1cc1729" category="list-text">從磁碟區清單中、找出您應該調整大小的磁碟區。</block>
   <block id="52c148109936ec0cc34f1b38fb262428" category="inline-image-macro">kabob圖示</block>
@@ -5135,7 +5088,6 @@
   <block id="06dc2fe279cba2e4225b7ea669e09ba6" category="cell">使用叢集管理 LIF 的 IP 位址、透過 HTTP 存取 ONTAP 系統管理員網頁主控台</block>
   <block id="bf56103f759b88ed509d0a67caf77918" category="cell">使用叢集管理 LIF 的 IP 位址、與連接器和 HTTPS 連線、存取 ONTAP 系統管理員網頁主控台</block>
   <block id="60c74fca932643a72ec9d1ed478cb2dd" category="paragraph">此處列出的 Cloud Volumes ONTAP 版本以外的版本不適用於新部署。如需升級的相關資訊、請<block ref="edc516954278e6b04bf6c1ef0d737956" category="inline-link-macro-rx"></block>參閱。</block>
-  <block id="6970ecbb5a5b9e280981e366be3eeca9" category="paragraph">Cloud Volumes ONTAP 9.10.0 及更新版本在標準雲端區域支援透過 ONTAP 系統管理員進行進階管理。</block>
   <block id="57330f26a1386f42b08aa33e8679785d" category="admonition">如需更多有關如何安裝 Azure CLI 的資訊<block ref="bb8fb2fba9b918c590d549f3c97582d7" category="inline-link-rx"></block>、請參閱。</block>
   <block id="bd2041168f280dc42522d734d91fff47" category="admonition">BlueXP  一次變更一個節點、方法是啟動接管並等待回饋。NetApp 的品質保證團隊在此程序中測試了寫入和讀取檔案、但在用戶端方面沒有發現任何問題。當連線變更時、在 I/O 層級上會觀察到一些重試、但應用程式層會取代 NFS/CIFS 連線的重新配線。</block>
   <block id="5a6ab212605c11d29ddee412db34c72e" category="paragraph">如需 AWS 中支援的執行個體類型清單、請<block ref="ab5d2be79e0f4831293646ade5590437" category="inline-link-macro-rx"></block>參閱。</block>
@@ -5181,13 +5133,10 @@
   <block id="6242dbff130ee0bc438bfa60a5b4de51" category="paragraph">BlueXP提供符合工作負載需求的預先設定套件、或者您也可以建立自己的組態。如果您選擇自己的組態、應該瞭解可用的選項。如需相關資訊、請 <block ref="01a63aaf870d7f59ca64d1c54c969d0e" category="inline-link-macro-rx"></block>參閱。</block>
   <block id="24ad8759d36867d6c10565f40a1bec76" category="paragraph">您可以使用 ONTAP CLI 或 ONTAP REST API 來啟用雲端 KMS 的金鑰管理。</block>
   <block id="a760d335f1fa2810727ed37789f5c213" category="paragraph">如果集合體空間不足、您可以使用 ONTAP 系統管理員將磁碟區移至其他集合體。</block>
-  <block id="5dcdcf1a61f65bad54f6365fe59bf745" category="admonition">有關如何獲取許可證文件的詳細信息，請參閱<block ref="c65aa3342130b0295e06cd938a12ad5e" category="inline-link-rx"></block>。</block>
   <block id="e9f1aeeff9edad4c09954fc2bc41a549" category="paragraph">請參閱<block ref="23da02e053be6485f9a66477404bdb14" category="inline-link-macro-rx"></block>「立即瞭解」、 Cloud Volumes ONTAP 會自動管理容量。</block>
   <block id="5b5068830882d3d6b54d331cdd743e62" category="paragraph">如需 ONTAP CLI 的說明、請參閱下列文件。</block>
-  <block id="50c08eb81cb5e62be669d25897280a98" category="paragraph">您可以在 BlueXP 標準檢視或進階檢視中管理磁碟區。「標準檢視」提供一組有限的選項來修改您的磁碟區。進階檢視提供進階管理層級、例如複製、調整大小、變更反勒索軟體的設定、分析、保護和活動追蹤、以及跨階層移動磁碟區。如需相關資訊、請 <block ref="76b22e8ed647224335daed95530df604" category="inline-link-macro-rx"></block>參閱。</block>
   <block id="d599458df3e0f94b895f769f01832128" category="paragraph">若要深入瞭解 FlexClone Volume 、請參閱<block ref="3ae98799f9586e965a749204c2b3e8f9" category="inline-link-rx"></block>。</block>
   <block id="fd64fde8786477c5abdec0eecf69b64a" category="admonition">如果您需要自訂的 Snapshot 原則、可以使用 ONTAP 系統管理員來建立它們。</block>
-  <block id="acf1ce233451b7dcbd7ac7425e4f68f9" category="list-text">開啟「進階檢視」、透過 ONTAP 系統管理員調整磁碟區大小。請參閱 <block ref="1bf7174b0a06a67edc83de5c18b2bf58" category="inline-link-macro-rx"></block>。</block>
   <block id="2d8749e6307be37df9448ccb0742d9ad" category="paragraph">調整磁碟區大小時、請務必將系統的容量限制列入考量。如<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block>需詳細資訊、請前往。</block>
   <block id="2f2fc6b0ecb632d9af7bb8a89a86493d" category="paragraph">您可以在 ONTAP 系統管理員中移動磁碟區、方法是選取磁碟區和目的地集合體、啟動磁碟區移動作業、以及選擇性地監控磁碟區移動工作。使用 System Manager 時、磁碟區移動作業會自動完成。</block>
   <block id="70a06b1108347ee5be7261c9860a3185" category="list-text">使用 ONTAP 系統管理員或 ONTAP CLI 將磁碟區移至 Aggregate 。</block>
@@ -5370,7 +5319,6 @@
   <block id="7304f4ac552bd3e3d0492d4e82a018f9" category="admonition">BlueXP  組織或帳戶管理員可從「設定」頁面修改此值。</block>
   <block id="eb2678f353ff539b66368cd255510a82" category="paragraph">BlueXP  會將 Cloud Volumes ONTAP 執行個體新增至專案或工作區。</block>
   <block id="1a5004d2fa68d798618b010b203f89db" category="list-text">在 Canvas 頁面上、選取 Cloud Volumes ONTAP 系統。</block>
-  <block id="44b7ffdcf84f31c030ae673e3b4e8e6e" category="list-text">從右側面板的 * 服務 * 下、找到 * 系統管理員 * 、然後選取 * 開啟 * 。</block>
   <block id="6b453c5a4f7ed569fc8308df07f9f55e" category="inline-link">與專案或工作區相關聯的連接器</block>
   <block id="92455adcaed0397e116713826842263e" category="list-text">您應該擁有<block ref="9ac26cef53fc939f0eabea87d0a20d0b" category="inline-link-rx"></block> .</block>
   <block id="da4a01a210193b125dfc666408271f05" category="list-text">您應該擁有<block ref="ed7feedfc897899b3fc46d7ce71fcc71" category="inline-link-rx"></block> .</block>
@@ -5566,8 +5514,6 @@
   <block id="a42381ccb4c9b07d94af68aac09b97db" category="list-text">選取核取方塊以確認您瞭解變更的影響，然後按一下 * 繼續 * 。</block>
   <block id="54173685d0a19dc27fc7d74a0b1348f0" category="paragraph">檢視新的授權序號，並驗證 BlueXP  數位錢包的變更。</block>
   <block id="4aecb2a001e9ed1c57930cdd68e5a8e2" category="list-text">如果在 vnet 內停用對儲存帳戶的公開存取，您就無法在 Cloud Volumes ONTAP 系統中啟用資料分層功能。如需相關資訊、請 <block ref="cf7250ba2a63a15ad3b094d85cccecb2" category="inline-link-macro-rx"></block>參閱。</block>
-  <block id="ffee78f944ad8168ad943b188f69ad15" category="list-text">檢視套件摘要，其中會顯示您的使用容量，預先配置的總容量，以及總使用成本（ PAYGO ）容量。</block>
-  <block id="84d1a8b78e647d328dc1794599f688b4" category="list-text">_Total preconted capacity_ 是您從 NetApp 購買的總授權容量（自帶授權（ BYOL ）或 Marketplace Contract ）。</block>
   <block id="0d4e36aae457a1001b3373de2fd510f1" category="list-text">請自帶您從 NetApp 購買的授權（ BYOL ）</block>
   <block id="cb90b48918ed9cd8ea355c04c171177b" category="paragraph">連結：<block ref="7f9a8649ca2d86db235ba56502d14f92" category="inline-link-macro-rx"></block> <block ref="431f655d5a9ac309b561fc62a4c619ea" category="inline-link-macro-rx"></block></block>
   <block id="829695792a0f96cf880394f0cc741cb2" category="paragraph">選擇本機區域是選擇性的。某些 AWS 本機區域（包括新加坡）支援 Cloud Volumes ONTAP 。AWS 中的 Cloud Volumes ONTAP 僅支援單一可用性區域中的高可用度（ HA ）模式。不支援單一節點部署。</block>
@@ -5629,9 +5575,6 @@
   <block id="61d250b56c4dbcf65efb9a23e69575b2" category="list-text">Cloud Volumes ONTAP 會在 CIFS 和 NFS 用戶端上的叢集和 SVM 管理階層的容錯移轉期間，使用內部 Azure 負載平衡器。</block>
   <block id="c452ee32d2dd6fb7daf5d56449ab25c3" category="list-text">當 HA 模式啟用時， BlueXP  會每 12 小時掃描一次系統，以更新內部 Azure 負載平衡器規則。</block>
   <block id="735e56a5b34e826e0792a73d3b708e4a" category="paragraph">若為年度或長期承諾， NetApp 建議您在 EOA 日期（ 2024 年 11 月 11 日）或授權到期日之前聯絡 NetApp 代表，以確保移轉的先決條件已就緒。如果您沒有 Cloud Volumes ONTAP 節點的長期合約，而且是根據隨選隨用隨付隨用（ PAYGO ）訂閱來執行系統，那麼請務必在 2024 年 12 月 31 日支援終止（ EOS ）之前規劃您的轉換。在這兩種情況下，您都應該確保系統符合需求，然後再使用 BlueXP  授權轉換工具進行無縫轉換。</block>
-  <block id="2ea847728c17221d3e25691cc360347c" category="paragraph">如果容量型授權已過期且不再使用，則您可以隨時將其移除。</block>
-  <block id="2ee1fa7be03c13720193e0dad8935652" category="inline-link">此知識庫（ KB ）文章</block>
-  <block id="6e9d07c33afe89ea437bf8c34df37d42" category="paragraph">若要瞭解您的 Cloud Volumes ONTAP 資料在授權到期或移除時會發生什麼情況，請參閱<block ref="388c9f5ba0fdf002c4eb313c08420e05" category="inline-link-rx"></block>。</block>
   <block id="89f1c05b91f27a0ccc4736c51deee49f" category="paragraph">轉換後的授權與 Cloud Volumes ONTAP 授權具有相同的到期日。</block>
   <block id="11c433da09cca9cd7d57ed81e1cd6310" category="inline-link-macro">深入瞭解 Azure 支援的組態</block>
   <block id="9601655a1a70b76faca1edfd7d7dff06" category="admonition">從 Cloud Volumes ONTAP 9.15.0P1 開始，新的高可用度配對部署不再支援 Azure 頁面 Blobs 。如果您目前在現有的高可用度配對部署中使用 Azure 頁面 Blobs 、您可以在 Edsv4 系列 VM 和 Edsv5 系列 VM 中移轉至較新的 VM 執行個體類型。<block ref="ecdad61fcd8abefb7dbc2e5c682b6e1d" category="inline-link-macro-rx"></block>。</block>
@@ -5686,4 +5629,76 @@
   <block id="23507528d9eb5706668d0e76ef371e2a" category="paragraph">若要在本機備援儲存設備（ LRS ）單一可用性區域（ AZ ）中部署 VM 執行個體，您應該啟動 Microsoft<block ref="fdfb47698b60e554acc8cff3a6065992" prefix=" " category="inline-code"></block> 訂閱功能。在高可用度（ HA ）模式中，此功能可協助您在相同可用性區域的個別容錯網域中部署節點。</block>
   <block id="9d72c2bef829db2eecf218dce9aa0f18" category="doc">Cloud Volumes ONTAP 的新功能</block>
   <block id="8cd62eba7c68cffeab4caeac1efd39a3" category="sidebar">設定 Cloud Volumes ONTAP 以建立 AWS 放置群組</block>
+  <block id="f196d25aadb7411a1f827c0ca0317cfb" category="doc">已啟用使用者驗證，可從 BlueXP  存取系統管理員</block>
+  <block id="7a44ab81762cf5f3e018d99190cfe8ac" category="paragraph">身為 BlueXP  管理員，您現在可以啟動 ONTAP 使用者從 BlueXP  存取 ONTAP 系統管理員的驗證。您可以編輯 BlueXP  Connector 設定來啟用此選項。此選項適用於標準和私有模式。</block>
+  <block id="850fbc77665f926253af01767262460f" category="inline-link-macro">使用系統管理員管理 Cloud Volumes ONTAP</block>
+  <block id="58250d8c5d6f1e1a4d093e353f99e712" category="paragraph"><block ref="e2de8aa0d2ccd88dfc6febee51855766" category="inline-link-macro-rx"></block>。</block>
+  <block id="0f52c9a8aa841036bf7aaae893336a9b" category="section-title">BlueXP  進階檢視已重新命名為系統管理員</block>
+  <block id="d34aa8cf529fee89c49e6c7c38dbf1e7" category="paragraph">透過 ONTAP 系統管理員從 BlueXP  進階管理 Cloud Volumes ONTAP 的選項已從 * 進階檢視 * 重新命名為 * 系統管理員 * 。</block>
+  <block id="75b76b021da36b8e8bf9678596449aa4" category="section-title">介紹更簡單的 BlueXP  數位錢包管理授權的方法</block>
+  <block id="5fbce01b2fa5bcad467f74186949bef5" category="paragraph">現在，您可以在 BlueXP  數位錢包中使用改良的導覽點，體驗 Cloud Volumes ONTAP 授權的簡化管理：</block>
+  <block id="c89199b5a7b291ade2b859c6b2e0e726" category="list-text">您可以透過 *Governance &gt; Digital Pallet &gt; Overview / Data Service licenses * 標籤輕鬆存取 Cloud Volumes ONTAP 授權資訊。</block>
+  <block id="e174e60d72b9816750ae5ea0588ea579" category="list-text">按一下「 * 總覽 * 」標籤中「 Cloud Volume ONTAP 」面板上的 * 檢視 * ，即可全面瞭解容量型授權。這項進階檢視可提供詳細的授權與訂閱資訊。</block>
+  <block id="210fb26ce941226a0e2a9726db671e8a" category="list-text">如果您偏好先前的介面，可以按一下 * 切換至舊版檢視 * 按鈕，依類型檢視授權詳細資料，並修改授權的收費方法。</block>
+  <block id="62c835233e6bcf50084b7f7f3bfe8ee0" category="paragraph"><block ref="5aa81dcb1871cc4d565005ce5abe331d" category="inline-link-macro-rx"></block>。</block>
+  <block id="bd1c6ca245a93f151a4e1d8f31ab58d7" category="paragraph">您可以執行下列管理功能：</block>
+  <block id="41c1e7f7c0e4a38357f38e56f0674a36" category="paragraph">Cloud Volumes ONTAP 9.10.0 及更新版本支援透過標準雲端區域的 ONTAP 系統管理員進行進階管理。</block>
+  <block id="4b5929aaa3b4a7fa5e44b6d9c08c635b" category="paragraph">Cloud Volumes ONTAP 不支援 BlueXP  分層服務。建立磁碟區時，您應該直接從 BlueXP  的標準檢視設定資料分層至物件儲存設備。</block>
+  <block id="b804c0c7ade9eff376226d3e8a82b055" category="paragraph">Cloud Volumes ONTAP 不支援從 * 叢集 &gt; 設定 * 頁面自動更新韌體。</block>
+  <block id="da9942a1ffd7ca2e423a96e21bc4f59e" category="section-title">設定驗證以存取 System Manager</block>
+  <block id="4aed1a655fc01f95c780a2dc68f91326" category="paragraph">身為系統管理員，您可以啟動驗證功能，讓使用者從 BlueXP  存取 ONTAP 系統管理員。您可以根據 ONTAP 使用者角色來決定適當的存取權限層級，並視需要啟用或停用驗證。如果您啟用驗證，則使用者每次從 BlueXP  存取系統管理員或重新載入頁面時，都必須輸入其 ONTAP 使用者認證，因為 BlueXP  不會在內部儲存認證。如果停用驗證，使用者可以使用 BlueXP  管理認證來存取系統管理員。</block>
+  <block id="bdebe06ba6da78f84b128a1809978137" category="admonition">此設定適用於貴組織或帳戶中的 ONTAP 使用者，無論 Cloud Volumes ONTAP 工作環境或 BlueXP  BlueXP  專案為何。</block>
+  <block id="a4b2fd11f4494dd95005c2aa74066109" category="paragraph">您必須指派 BlueXP  組織或帳戶管理員 Privileges 來修改 BlueXP  Connector 設定以進行 Cloud Volumes ONTAP 使用者驗證。</block>
+  <block id="f98b44043815b68b5ba8272fb252dafd" category="list-text">從 BlueXP 標頭中選取 * Connector* 下拉式清單。</block>
+  <block id="9cf3804bed44acd4f31054cd5804edd6" category="list-text">選取 * 管理連接器 * 。</block>
+  <block id="0bcdc7f458d923fcfd2b7bba26f0f21d" category="inline-image-macro">省略符號圖示</block>
+  <block id="791af2b019e9482f60e2b92af69586ec" category="list-text">按一下所需 Connector 的動作功能表<block ref="cee44af72030fe2d6e8daa69f11c782b" category="inline-image-macro-rx" type="image"></block>，然後選取 * 編輯 Connector* 。</block>
+  <block id="ef46255365b3e47560b36ea8589d2d00" category="list-text">在 * 強制使用者認證 * 下，選取 * 啟用 / 停用 * 核取方塊。依預設，驗證會停用。</block>
+  <block id="1c969f0ef9143d2554b1ddaa0d92382f" category="admonition">如果您將此值設為 * 啟用 * ，則會重設驗證，而且您必須修改任何現有的工作流程，以因應此變更。</block>
+  <block id="3d153083406593fbbf99c2111e803d7e" category="section-title">開始使用 System Manager</block>
+  <block id="dad2127c094fd9d82592cfc74bf6c89e" category="paragraph">您可以從 Cloud Volumes ONTAP 工作環境存取 ONTAP 系統管理員。</block>
+  <block id="9ae8ac975de3cbe33ec84aafc89196f2" category="list-text">從右側面板中，選擇 * 服務 &gt; 系統管理器 &gt; Open* 。</block>
+  <block id="46ee428f4ca4fa256185f7d45eb07bb2" category="list-text">如果出現提示，請輸入您的 ONTAP 使用者認證，然後按一下 * 登入 * 。</block>
+  <block id="058b7a725db9f3c744b585cb35b91a06" category="inline-link">ONTAP 角色，應用程式和驗證</block>
+  <block id="145515f913704aab7a4ced04df236c86" category="list-text"><block ref="145515f913704aab7a4ced04df236c86" category="inline-link-rx"></block></block>
+  <block id="4c4d0994ae2f25b384b864835b3039d5" category="inline-link">使用System Manager存取叢集</block>
+  <block id="2dbc878516331eda732cdb801ba7aaf2" category="list-text"><block ref="deb5c2c6d7a2dbd7d053366b960c1a94" category="inline-link-rx"></block>。</block>
+  <block id="a495aa39c60dc5d48d7bb146e6f7265a" category="list-text">在 * 總覽 * 索引標籤上， Cloud Volumes ONTAP 方塊會顯示您帳戶目前的資源配置。</block>
+  <block id="260fa7c60a4b141a99b00056d3d429d3" category="inline-image-macro">顯示 Cloud Volumes ONTAP 授權與訂閱容量摘要的螢幕擷取畫面。</block>
+  <block id="e0e863a6ab1f77fce34b0885510033de" category="paragraph"><block ref="e0e863a6ab1f77fce34b0885510033de" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bea623ba2f203df6f2cad1b5d6c826c6" category="list-text">資料服務授權 _ 是 NetApp 帳戶中所有 Cloud Volumes ONTAP 系統的已配置容量總計。無論磁碟區內的本機、已用、已儲存或有效空間為何、充電都是根據每個磁碟區的已配置大小而計算。</block>
+  <block id="80495a5c91b6e7cae60c8c5c750734bc" category="list-text">_ 年度合約 _ 是您從 NetApp 購買的總授權容量（自帶授權（ BYOL ）或市場合約）。</block>
+  <block id="e55807174fe6f2d9f15f9e357ee0d63e" category="list-text">_PAYGO_ 是使用雲端市場訂閱所配置的總容量。只有當使用容量高於授權容量、或 BlueXP 數位錢包中沒有 BYOL 授權時、才會使用 PAYGO 進行收費。</block>
+  <block id="d02d58b5b8770f720f9d912913a80f1a" category="list-text">選取 * 檢視 * 以查看每個授權套件的使用容量。</block>
+  <block id="a4f95858d82d890dcc9a5123e1f315e6" category="list-text">選取 * Licenses* 索引標籤以查看您所購買之每個套件授權的詳細資料。</block>
+  <block id="452cf2122664eef3e8c620ec413c8d43" category="list-text">選取 * 訂閱 * 索引標籤，查看依授權使用模式所消耗的容量。此標籤同時包含 PAYGO 和年度合約授權。</block>
+  <block id="a6fd7fff8d44ac917f29be623cc64da2" category="paragraph">您只會看到與您目前檢視的組織相關的訂閱。</block>
+  <block id="572e470335e0a6d55da05c732a01aed3" category="list-text">當您檢視訂閱的相關資訊時、您可以與表格中的詳細資料互動、如下所示：</block>
+  <block id="6a1de13d318f22872902849cd26467b4" category="list-text">展開一列以檢視更多詳細資料。</block>
+  <block id="69cda14c45037fc1c766e6b7626c706b" category="inline-image-macro">數位電子錢包中「訂閱」索引標籤的螢幕擷取畫面、您可以在其中選取列尾端的箭頭來展開。</block>
+  <block id="d6e80e5ccdacdc912b76ab91b58f6023" category="paragraph"><block ref="d6e80e5ccdacdc912b76ab91b58f6023" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="56594b7222b35921f9fe676eadf6bbdf" category="inline-image-macro">表格標題結尾的加號圖示</block>
+  <block id="2eab7ff26639a8d2e45cece515ff781f" category="list-text">選取<block ref="98b11313fea6c4106e5a3c018f0ffbc9" category="inline-image-macro-rx" type="image"></block>以選擇要在表格中顯示的欄。請注意、「字詞」和「自動更新」欄預設不會出現。「自動更新」欄僅顯示Azure合約的續約資訊。</block>
+  <block id="8ac1ecc7ceb7a49d071b4f1b71f0e176" category="section-title">檢視套件詳細資料</block>
+  <block id="f88e8fee4b6b78cbc9779b73098653b5" category="paragraph">您可以在 Cloud Volumes ONTAP 頁面上切換至舊版模式，以檢視每個套件所使用容量的詳細資料。</block>
+  <block id="4a95292c803539c8cf72591c54db0644" category="list-text">選取 * 檢視 * 以查看每個授權套件的已配置容量。</block>
+  <block id="28db6f5e86482ae58b9becef415d1abc" category="list-text">選取 * 切換至傳統檢視 * 。</block>
+  <block id="13bb1907bdca20408e78b483332beab6" category="inline-image-macro">「切換至舊版檢視」按鈕的螢幕擷取畫面</block>
+  <block id="ad8dd0162f38eb308d880b20d20ab47e" category="paragraph"><block ref="ad8dd0162f38eb308d880b20d20ab47e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2daabc6822724771970f17e8ae6a4cee" category="list-text">選擇* Overview（概述）*選項卡。</block>
+  <block id="5b37c7034b369fcc6d9b931180eef46f" category="list-text">在 Cloud Volumes ONTAP 方塊中，選取 * 檢視 * 。</block>
+  <block id="1cd5a7f8284f11c93e9f7bd64be49b8a" category="list-text">向下捲動至 * 容量型授權 * 表格，然後選取 * 變更充電方法 * 。</block>
+  <block id="08755db7952950f790eaa52809aad08e" category="list-text">選擇 * 變更充電方法 * 。</block>
+  <block id="a9bcc09a5114887c29b3f365ee72e9e5" category="list-text">* 高階使用率 * ：本報告包含下列資訊：</block>
+  <block id="4600869c8040d8603fe9dbe6d56a2b2a" category="list-text">* Cloud Volumes ONTAP 套件使用 * ：此報告包含每個套件的下列資訊，但最佳化 I/O 套件除外：</block>
+  <block id="a65d4ec7ff2941ad2ea2bc688a6dbbb3" category="list-text">* 儲存虛擬機器使用率 * ：此報告顯示如何在 Cloud Volumes ONTAP 系統和儲存虛擬機器（ SVM ）之間分解已計費的容量。此資訊僅在報告中提供。其中包含下列資訊：</block>
+  <block id="b2b74732b80350970fadfac4db3ba17e" category="list-text">在 * 總覽 * 標籤上，從 Cloud Volumes ONTAP 方塊中選取 * 檢視 * 。</block>
+  <block id="f4c2ce2a853a74c3742ccc54482c074e" category="list-text">選取 * 使用報告 * 。</block>
+  <block id="343c7ed77049523f4d99e8d4c436a330" category="list-text">從下拉式清單中選取*節點型授權*。</block>
+  <block id="e0225acc5a75bb0346dd94ed24206c81" category="inline-link-macro">檢視如何交換節點型授權的逐步解說。</block>
+  <block id="d82de0388f091aa9d43371708eb95310" category="paragraph"><block ref="b4c22b5293d3ee433dee9c4b3632dbee" category="inline-link-macro-rx"></block></block>
+  <block id="0c6dabbf194286c405de8383cf968f97" category="paragraph">您可以在 BlueXP  標準檢視中或透過 BlueXP  中隨附的 ONTAP 系統管理員來管理磁碟區，以進行進階磁碟區管理。「標準檢視」提供一組有限的選項來修改您的磁碟區。System Manager 提供進階管理層級，例如複製，調整大小，變更反勒索軟體，分析，保護和活動追蹤的設定，以及跨階層移動磁碟區。如需相關資訊、請 <block ref="7265c080dfd2e37b92d3cdc790187cc0" category="inline-link-macro-rx"></block>參閱。</block>
+  <block id="d117724162371ab94db86f4cbcd703ae" category="paragraph">如果您需要調整磁碟區大小，可以從 BlueXP  的 ONTAP 系統管理員進行調整。</block>
+  <block id="41e16b15d9c9cc44372d27b0cfe659ad" category="list-text">按一下「系統管理員」檢視，即可透過 ONTAP 系統管理員調整磁碟區大小。請參閱 <block ref="1bf7174b0a06a67edc83de5c18b2bf58" category="inline-link-macro-rx"></block>。</block>
+  <block id="c523b074da0b63e607578686184d5981" category="section-title">2025 年 10 月 2 日</block>
 </blocks>
