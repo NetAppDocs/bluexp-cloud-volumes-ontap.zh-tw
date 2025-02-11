@@ -30,7 +30,7 @@ summary: 在 Cloud Volumes ONTAP Azure 中部署時、您可以選擇符合工�
 
 == 選擇支援的地區
 
-大多數Microsoft Azure地區均支援此功能。Cloud Volumes ONTAP https://cloud.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]。
+大多數 Microsoft Azure 地區均支援 Cloud Volumes ONTAP 。 https://bluexp.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]。
 
 
 

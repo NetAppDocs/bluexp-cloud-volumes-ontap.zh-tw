@@ -1049,7 +1049,7 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解
 
 從9.10.1版開始、Cloud Volumes ONTAP 現在Azure West US 3地區支援了整套功能。
 
-https://cloud.netapp.com/cloud-volumes-global-regions["檢視Cloud Volumes ONTAP 支援區域的完整清單以供參閱"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["檢視Cloud Volumes ONTAP 支援區域的完整清單以供參閱"^]
 
 
 
@@ -1208,7 +1208,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html#chang
 * Santiago,（西南1）-僅限單一節點
 
 
-https://cloud.netapp.com/cloud-volumes-global-regions["檢視Cloud Volumes ONTAP 支援區域的完整清單以供參閱"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["檢視Cloud Volumes ONTAP 支援區域的完整清單以供參閱"^]
 
 
 

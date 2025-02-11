@@ -844,9 +844,6 @@
   <block id="fc2be74c7bf9f46e12967c2298a899ba" category="inline-link">深入瞭解NetApp客戶</block>
   <block id="72d7d9fbd92253175591abfdb19dc6a1" category="summary">在 Cloud Volumes ONTAP AWS 中部署時、您可以選擇符合工作負載需求的預先設定系統、也可以建立自己的組態。如果您選擇自己的組態、應該瞭解可用的選項。</block>
   <block id="3b61cbbfa7452cc07df9dbea0756d650" category="inline-link">檢視支援區域的完整清單</block>
-  <block id="af510d6a7a30587243cc07000a8ff59a" category="paragraph">支援大部分 AWS 地區的支援。 Cloud Volumes ONTAP<block ref="b20bc1eb7525b24c91ae87786e46adca" category="inline-link-rx"></block>。</block>
-  <block id="37c70997814f20525df54f05b63b82ef" category="inline-link">瞭解如何啟用地區</block>
-  <block id="20f4e542fc804667ca2377386269841c" category="paragraph">您必須先啟用較新的 AWS 區域、才能在這些區域中建立及管理資源。<block ref="37189395d1b647ca4eabf700b1185d58" category="inline-link-rx"></block>。</block>
   <block id="34a3fb1f13bd543905a9f22e8469763d" category="inline-link-macro">深入瞭Cloud Volumes ONTAP 解適用於此功能的授權選項</block>
   <block id="63c78fe4096c032cda667cb626771016" category="paragraph">根據您選擇的授權類型、支援多種執行個體類型。 Cloud Volumes ONTAP</block>
   <block id="d4f1750ecbae7aeb8e4608c6adadf1b3" category="inline-link">AWS支援Cloud Volumes ONTAP 的支援組態</block>
@@ -999,7 +996,6 @@
   <block id="b71ed75241f297eae2cc9775c726010d" category="list-text">在移動磁碟區時指定了 _ 分層原則 _ 選項、以變更分層原則。</block>
   <block id="95bfb9cab1e60976b25e277c0ffbcb84" category="list-text">磁碟區移動時指定了「 -generation-destination-key_ 」選項。</block>
   <block id="6d44008242ba7ea63431fdc2a35e3bfd" category="summary">在 Cloud Volumes ONTAP Azure 中部署時、您可以選擇符合工作負載需求的預先設定系統、也可以自行建立組態。如果您選擇自己的組態、應該瞭解可用的選項。</block>
-  <block id="88a397c48e684bb909af786b6f5aea86" category="paragraph">大多數Microsoft Azure地區均支援此功能。Cloud Volumes ONTAP<block ref="b20bc1eb7525b24c91ae87786e46adca" category="inline-link-rx"></block>。</block>
   <block id="00d6f59010ef5b4445142547ef7725f2" category="paragraph">根據您選擇的授權類型、支援多種 VM 類型。 Cloud Volumes ONTAP</block>
   <block id="a09c3a7be8e7dc42776a7b03793d536c" category="inline-link">Azure支援Cloud Volumes ONTAP 的支援功能組態</block>
   <block id="374b69ed8baae6c10fc401a5f23dfabf" category="paragraph"><block ref="374b69ed8baae6c10fc401a5f23dfabf" category="inline-link-rx"></block></block>
@@ -1090,7 +1086,6 @@
   <block id="986ef6cfb21ad2831a7ae053e3f0506e" category="list-text">Milan（Europe - west8）-僅限單一節點</block>
   <block id="00f803da9ac7d98ccbfd2178a95625ee" category="list-text">Santiago,（西南1）-僅限單一節點</block>
   <block id="d1ce20099e22fd96c2217da218a20a9e" category="inline-link">檢視Cloud Volumes ONTAP 支援區域的完整清單以供參閱</block>
-  <block id="efb1786cdf88244f9480e15cb039f942" category="paragraph"><block ref="efb1786cdf88244f9480e15cb039f942" category="inline-link-rx"></block></block>
   <block id="8184a89f6d67aafd228ddc002e159ce5" category="section-title">在Google Cloud中支援n2-Standard-16</block>
   <block id="86a3a073b385c5ae85e4523282be3124" category="paragraph">從Cloud Volumes ONTAP 9.10.1版開始、Google Cloud現在支援使用支援n2-Standard-16機器類型的功能。</block>
   <block id="4994b2bf1bd5c0153c9dc0077a84b5a7" category="inline-link">在Cloud Volumes ONTAP Google Cloud中檢視支援的支援功能組態</block>
@@ -1500,7 +1495,6 @@
   <block id="8baf5cc352903972240801715cac9720" category="paragraph"><block ref="8baf5cc352903972240801715cac9720" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a89897d61f59af926b4d06d06e8b2884" category="summary">部署 Cloud Volumes ONTAP 時、您可以選擇符合工作負載需求的預先設定系統、或是建立自己的組態。如果您選擇自己的組態、應該瞭解可用的選項。</block>
   <block id="70cc6814c68e3ce95f7b70c2f1ea3e9d" category="paragraph">在 Cloud Volumes ONTAP Google Cloud 中部署時、您可以選擇符合工作負載需求的預先設定系統、或是建立自己的組態。如果您選擇自己的組態、應該瞭解可用的選項。</block>
-  <block id="cdbc190f457d5caf189142ea336d2259" category="paragraph">支援大部分Google Cloud地區的支援。Cloud Volumes ONTAP<block ref="b20bc1eb7525b24c91ae87786e46adca" category="inline-link-rx"></block>。</block>
   <block id="64efea6517490623e51052b533085d96" category="paragraph">根據您選擇的授權類型、支援多種機器類型。 Cloud Volumes ONTAP</block>
   <block id="9ee8a2504ba9f03aae4b30973ea35ad4" category="inline-link">支援的GCP組態Cloud Volumes ONTAP</block>
   <block id="9402e8f13b9c1b7b1bbcad4d4c4eb4a9" category="paragraph"><block ref="9402e8f13b9c1b7b1bbcad4d4c4eb4a9" category="inline-link-rx"></block></block>
@@ -4047,7 +4041,6 @@
   <block id="62a206849a655c43470ec1fbe25e35c1" category="list-text">如果您在此工作環境中啟用 BlueXP 分類、且沒有其他工作環境使用此服務、則您必須刪除該服務的執行個體。</block>
   <block id="a69f417641ff2d2784782a6898f8f2de" category="inline-link">深入瞭解 BlueXP 分類執行個體</block>
   <block id="ae45517d4d9ba30bece696a3b49d1b3f" category="doc">管理基礎概念訂閱</block>
-  <block id="5da6315cfe65abaef2d0e00c90898ddc" category="list-text">返回 * Keystone Subscription* 檢視您的訂閱。</block>
   <block id="3d6aabe991edb10f282fd60995e725ca" category="inline-image-macro">顯示 Keystone 訂閱清單的螢幕擷取畫面。</block>
   <block id="6fd94fda3665b39867817d4700d184e8" category="paragraph"><block ref="6fd94fda3665b39867817d4700d184e8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c5889acf4592b2ce675b7e0be182268e" category="paragraph">這些限制僅適用於 BlueXP 中的 Cloud Volumes ONTAP 管理。若要檢視Cloud Volumes ONTAP 有關此功能的限制、<block ref="70a3d165b5204ef94ef3f2d7b3d098d2" category="inline-link-rx"></block></block>
@@ -4523,7 +4516,6 @@
   <block id="4bb37917188b518967d0e67a2b819327" category="paragraph">BlueXP 數位顧問儀表板可讓您監控 Keystone 訂閱使用量並產生報告。</block>
   <block id="20ea4c62f4c9e4254314fe7fbbef0319" category="inline-link">深入瞭解監控訂閱使用率</block>
   <block id="d7105dd212dc96a8b292b6b48f84916f" category="paragraph"><block ref="d7105dd212dc96a8b292b6b48f84916f" category="inline-link-rx"></block></block>
-  <block id="28ca5cda5cdef790c457097830d81ca5" category="paragraph">如果您不想再使用 Keystone Subscription with BlueXP 、您可以取消訂閱連結。請注意、您只能取消連結未附加至現有Cloud Volumes ONTAP 的訂閱內容的訂閱。</block>
   <block id="499efcb2be11e80e5bdfc003278352e3" category="section-title">2023 年 11 月 1 日</block>
   <block id="992f57af99811ae146ed6df67eccc26f" category="section-title">Google Cloud 現在支援沙烏地阿拉伯地區</block>
   <block id="9e06c986efeeff600f0b04c67d5d6354" category="paragraph">現在、 Google Cloud for Cloud Volumes ONTAP 和 Connector for Cloud Volumes ONTAP 9.12.1 GA 及更新版本均支援沙烏地阿拉伯地區。</block>
@@ -5701,4 +5693,13 @@
   <block id="d117724162371ab94db86f4cbcd703ae" category="paragraph">如果您需要調整磁碟區大小，可以從 BlueXP  的 ONTAP 系統管理員進行調整。</block>
   <block id="41e16b15d9c9cc44372d27b0cfe659ad" category="list-text">按一下「系統管理員」檢視，即可透過 ONTAP 系統管理員調整磁碟區大小。請參閱 <block ref="1bf7174b0a06a67edc83de5c18b2bf58" category="inline-link-macro-rx"></block>。</block>
   <block id="c523b074da0b63e607578686184d5981" category="section-title">2025 年 10 月 2 日</block>
+  <block id="1ce97cc664bad2b8b354b3220e6331e7" category="list-text">選取 * 基礎概念訂閱 * 。</block>
+  <block id="23698106a2d9dc1f2df20e97a71a625c" category="list-text">返回「 * 基礎概念訂閱 * 」標籤以檢視您的訂閱。</block>
+  <block id="436fa170392050162dd4653f969cf048" category="paragraph">如果您不想再使用 Keystone 訂閱搭配 BlueXP  ，您可以取消訂閱連結。請注意、您只能取消連結未附加至現有Cloud Volumes ONTAP 的訂閱內容的訂閱。</block>
+  <block id="e242baa97428f1acdd0a43c0f27ecf0e" category="paragraph">大多數 Microsoft Azure 地區均支援 Cloud Volumes ONTAP 。<block ref="0de6b81e82e22001f2c59ffd34a8aeac" category="inline-link-rx"></block>。</block>
+  <block id="c24e9fc1263121db1bb6501931efe09c" category="paragraph">大多數 Google Cloud 地區都支援 Cloud Volumes ONTAP 。<block ref="0de6b81e82e22001f2c59ffd34a8aeac" category="inline-link-rx"></block>。</block>
+  <block id="77616d628efddeba1fd424b939777229" category="paragraph">大多數 AWS 區域都支援 Cloud Volumes ONTAP 。<block ref="0de6b81e82e22001f2c59ffd34a8aeac" category="inline-link-rx"></block>。</block>
+  <block id="77ccb62da3cbac8ecfb3dcda7b4635b9" category="inline-link">AWS 文件：瞭解如何啟用區域</block>
+  <block id="fef606ad68172c64f478d929b8842876" category="paragraph">必須先啟用較新的 AWS 區域，才能在這些區域中建立和管理資源。<block ref="b7b79d9a35f355344e562154976e1f3d" category="inline-link-rx"></block>。</block>
+  <block id="c1a328cf0660e851f6654745d3aca99e" category="paragraph"><block ref="c1a328cf0660e851f6654745d3aca99e" category="inline-link-rx"></block></block>
 </blocks>

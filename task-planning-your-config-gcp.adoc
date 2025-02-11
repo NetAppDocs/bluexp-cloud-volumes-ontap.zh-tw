@@ -30,7 +30,7 @@ summary: 部署 Cloud Volumes ONTAP 時、您可以選擇符合工作負載需�
 
 == 選擇支援的地區
 
-支援大部分Google Cloud地區的支援。Cloud Volumes ONTAP https://cloud.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]。
+大多數 Google Cloud 地區都支援 Cloud Volumes ONTAP 。 https://bluexp.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]。
 
 
 

@@ -30,9 +30,9 @@ summary: 在 Cloud Volumes ONTAP AWS 中部署時、您可以選擇符合工作�
 
 == 選擇支援的地區
 
-支援大部分 AWS 地區的支援。 Cloud Volumes ONTAP https://cloud.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]。
+大多數 AWS 區域都支援 Cloud Volumes ONTAP 。 https://bluexp.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]。
 
-您必須先啟用較新的 AWS 區域、才能在這些區域中建立及管理資源。 https://docs.aws.amazon.com/general/latest/gr/rande-manage.html["瞭解如何啟用地區"^]。
+必須先啟用較新的 AWS 區域，才能在這些區域中建立和管理資源。 https://docs.aws.amazon.com/general/latest/gr/rande-manage.html["AWS 文件：瞭解如何啟用區域"^]。
 
 
 
