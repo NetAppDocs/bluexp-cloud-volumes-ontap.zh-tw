@@ -69,6 +69,6 @@ ARP 功能可與自帶授權（ BYOL ）搭配使用，並免費提供授權的�
 
 磁碟區的 ARP 組態是透過 ONTAP 系統管理員和 ONTAP CLI 執行。
 
-有關如何使用 ONTAP 系統管理器和 ONTAP CLI 啓用 ARP 的詳細信息，請參閱 https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["啟用自發勒索軟體保護"^]。
+有關如何使用 ONTAP 系統管理器和 ONTAP CLI 啓用 ARP 的詳細信息，請參閱 https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["ONTAP 文件：啟用自主勒索軟體保護"^]。
 
 image::screenshot_arp.png[螢幕擷取畫面顯示 Automware Protection 的附加授權。]

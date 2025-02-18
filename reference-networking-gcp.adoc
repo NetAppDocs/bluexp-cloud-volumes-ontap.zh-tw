@@ -245,7 +245,7 @@ NetApp支援需要外傳網際網路存取功能、才能主動監控系統健�
 
 如果您定義了Cloud Volumes ONTAP 嚴格的出站規則以供支援、那麼您也必須確保Cloud Volumes ONTAP 透過連接埠3128建立的支援_出站_連線。
 
-在您確認可以存取傳出網際網路之後、您可以測試AutoSupport 以確保能夠傳送訊息。如需相關指示、請參閱 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["文件：設定檔ONTAP AutoSupport"^]。
+在您確認可以存取傳出網際網路之後、您可以測試AutoSupport 以確保能夠傳送訊息。有關說明，請參閱 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 說明文件： Set Up AutoSupport"^]。
 
 
 TIP: 如果您使用 HA 配對、 HA 中介器不需要傳出網際網路存取。
@@ -473,7 +473,7 @@ NOTE: 來源是 Cloud Volumes ONTAP 指在整個系統上的介面（ IP 位址�
 | 叢集 | 所有流量 | 所有流量 | 一個節點上的所有 LIF | 其他節點上的所有 LIF | 叢集間通訊（ Cloud Volumes ONTAP 僅限不含 HA ） 
 
 
-| 組態備份 | HTTP | 80 | 節點管理 LIF | \http：//Wese/occm/offboxconfig <connector-IP-address> | 將組態備份傳送至Connector。 link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["深入瞭解組態備份檔案"^]。 
+| 組態備份 | HTTP | 80 | 節點管理 LIF | \http：//Wese/occm/offboxconfig <connector-IP-address> | 將組態備份傳送至 Connector 。link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["本文檔 ONTAP"^] 
 
 
 | DHCP | UDP | 68 | 節點管理 LIF | DHCP | 第一次設定的 DHCP 用戶端 

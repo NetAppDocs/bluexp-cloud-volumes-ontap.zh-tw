@@ -150,7 +150,9 @@ BlueXP提供兩種升級Cloud Volumes ONTAP 途徑：
 
 === 修補程式版本
 
-自 2024 年 1 月起、只有在 BlueXP 中、如果是三個最新版 Cloud Volumes ONTAP 的修補程式版本、才能進行修補程式升級。我們使用最新的 GA 版本來判斷在 BlueXP 中顯示的三個最新版本。例如、如果目前的 GA 版本為 9.13.1 、則 BlueXP 中會出現 9.11.1.9.13.1 的修補程式。如果您想要升級至 9.11.1 版或更低版本的修補程式版本、您需要使用手動升級程序 <<從URL提供的映像升級,下載 ONTAP 映像>>。
+自 2024 年 1 月起，只有在有三個最新版 Cloud Volumes ONTAP 的修補程式版本時， BlueXP  才會提供修補程式升級。當 RC 或 GA 版本無法部署時，有時也會有修補程式版本可供部署。
+
+我們使用最新的 GA 版本來判斷在 BlueXP 中顯示的三個最新版本。例如、如果目前的 GA 版本為 9.13.1 、則 BlueXP 中會出現 9.11.1.9.13.1 的修補程式。如果您想要升級至 9.11.1 版或更低版本的修補程式，您需要使用手動升級程序<<從URL提供的映像升級,下載 ONTAP 映像>>。
 
 根據補充程式（ P ）版本的一般規則、您可以從一個版本版本升級至目前執行版本或下一個版本的任何 P 版本。
 
@@ -227,7 +229,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-in
 
 在許多情況下、升級 HA 配對不會中斷營運、 I/O 也不會中斷。在此不中斷營運的升級程序中、會同時升級每個節點、以繼續為用戶端提供 I/O 服務。
 
-工作階段導向的通訊協定可能會在升級期間對某些區域的用戶端和應用程式造成不良影響。如需詳細資訊、 https://docs.netapp.com/us-en/ontap/upgrade/concept_considerations_for_session_oriented_protocols.html["請參閱 ONTAP 文件"^]
+工作階段導向的通訊協定可能會在升級期間對某些區域的用戶端和應用程式造成不良影響。如需詳細資訊，請參閱 https://docs.netapp.com/us-en/ontap/upgrade/concept_considerations_for_session_oriented_protocols.html["本文檔 ONTAP"^]
 
 
 
@@ -235,7 +237,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-in
 
 自動恢復必須在 Cloud Volumes ONTAP 一個「無法恢復的 HA 配對」上啟用（這是預設設定）。如果沒有、則作業將會失敗。
 
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["供應說明文件：設定自動恢復的命令 ONTAP"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["ONTAP 說明文件：設定自動恢復的命令"^]
 
 
 
@@ -289,9 +291,9 @@ image:screenshots_aggregate_details_state.png["螢幕擷取畫面：當您檢視
 
 === 確認所有的生命都在主連接埠上
 
-在升級之前、所有的生命體都必須位於主連接埠上。請參閱的 ONTAP 文件 link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["確認所有的生命都在主連接埠上"]。
+在升級之前、所有的生命體都必須位於主連接埠上。請參閱 ONTAP 文件 link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["確認所有的生命都在主連接埠上"^]。
 
-如果發生升級失敗錯誤、請參閱 link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/CVO_upgrade_fails["知識庫文章「 Cloud Volumes ONTAP 升級失敗」"]。
+如果發生升級失敗錯誤，請參閱知識庫 (KB) 文章link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/CVO_upgrade_fails["Cloud Volumes ONTAP 升級失敗"^]。
 
 
 

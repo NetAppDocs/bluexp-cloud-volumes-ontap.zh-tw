@@ -65,4 +65,4 @@ NOTE: 不含適用於功能的授權 ONTAP 。 Cloud Volumes ONTAP
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["檢視支援 Cloud Volumes ONTAP 的支援的支援功能"^]
 
-https://cloud.netapp.com/ontap-cloud["深入瞭 Cloud Volumes ONTAP 解功能"^]
+https://bluexp.netapp.com/ontap-cloud["深入瞭 Cloud Volumes ONTAP 解功能"^]

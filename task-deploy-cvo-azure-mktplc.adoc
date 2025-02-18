@@ -1,0 +1,121 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-cvo-azure-mktplc.html 
+keywords: deploy cvo marketplace, marketplace direct cvo deployment, azure marketplace 
+summary:  
+---
+= 從 Azure 市場部署 Cloud Volumes ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+從 Cloud Volumes ONTAP 9.16.1 開始，您可以使用 Azure 市場直接部署，從 Azure 市場快速輕鬆地部署 Cloud Volumes ONTAP ，並探索環境中的核心功能與功能。
+
+如需此產品的詳細資訊，請link:concept-azure-mktplace-direct.html["瞭解 Cloud Volumes ONTAP 在 BlueXP  和市場的產品"]參閱。
+
+.關於這項工作
+使用 Azure 市場直接部署部署部署的 Cloud Volumes ONTAP 執行個體具有下列屬性：
+
+* 最新的 Cloud Volumes ONTAP 版本（ 9.16.1 或更新版本）。
+* Cloud Volumes ONTAP 免費授權，限 500 GiB 的已配置容量。本授權不含 NetApp 支援，且無到期日。
+* 在單一可用性區域（ AZ ）中，以高可用度（ HA ）模式設定的兩個節點，並以預設序號提供。儲存虛擬機器（ SVM ）會部署在link:concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["靈活的協調模式"]中。
+* 依預設建立的執行個體集合體。
+* 高階 SSD v2 託管磁碟， 500 GiB 配置容量，以及一個根和一個資料磁碟。
+* 部署一台資料 SVM ，搭配 NFS ， CIFS ， iSCSI 和 NVMe / TCP 資料服務。不提供額外的 SVM 。
+* 安裝的 NFS ， CIFS （ SMB ）， iSCSI ，反勒索軟體（ ARW ）， SnapLock 和 SnapMirror 授權，與預設序號相違背。
+* https://docs.netapp.com/us-en/ontap/volumes/enable-temperature-sensitive-efficiency-concept.html["ONTAP 溫度敏感儲存效率（ TSSE ）"^]， Volume 加密和外部金鑰管理預設為啟用。
+* 不支援這些功能：
++
+** 分層FabricPool
+** 變更執行個體類型
+** 快速寫入模式
+
+
+
+
+.開始之前
+* 請確定您已訂閱有效的 Azure 市場方案。
+* 確保您符合 Azure 中的網路需求link:concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["在單一 AZ 部署 HA"]。請參閱 link:reference-networking-azure.html["為 Cloud Volumes ONTAP 設定 Azure 網路"]。
+* 您需要指派以下其中一個 Azure 角色來部署 Cloud Volumes ONTAP ：
++
+**  `contributor`具有預設權限的角色。如需詳細資訊，請 https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles["Azure 文件： Azure 內建角色"^]參閱。
+** 具有下列權限的自訂 RBAC 角色。如需詳細資訊，請 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles["Azure 文件： Azure 自訂角色"^]參閱。
++
+[]
+====
+「權限」： [{ 「動作」： [Microsoft.AAD/REGISTER/ACTION ， "Microsoft.Resources / 訂閱 / 資源群組 / 寫入 " ， "Microsoft.ClassicCompute / 虛擬機器 / 寫入 " ， "Microsoft.Compute/capacityReservationGroups/deploy/action" Microsoft.Compute/virtualMachines/extensions/write" Microsoft.Network/networkSecurityGroups/write" Microsoft.Compute/virtualMachineScaleSets/write" ， "Microsoft.ClassicCompute / 虛擬機器 / 網路介面 / 關聯網路安全群組 / 寫入資源 " ， "Microsoft.Network/virtualNetworks/write" Microsoft.Network/networkSecurityGroups/read" Microsoft.Network/virtualNetworks/subnets/read" ， "resourcenotactions/< Microsoft.Compute/virtualMachines/write" Microsoft.Network/virtualNetworks/read" Microsoft.Compute/disks/write" Microsoft.Network/virtualNetworks/subnets/write" ， "< Microsoft.Network/networkInterfaces/write" ， "validatotations/< Microsoft.Network/loadBalancers/write" ， "<
+
+====
++
+
+NOTE: 如果您已將資源提供者「 Microsoft.storage 」註冊至訂閱，則不需要此 `Microsoft.AAD/register/action`權限。如需詳細資訊，請 https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/storage["Azure 說明文件： Azure 儲存設備權限"^]參閱。
+
+
+
+
+
+.步驟
+. 從 Azure 市場網站搜尋 NetApp 產品。
+. 選擇 * NetApp Cloud Volumes ONTAP DIRECT * 。
+. 按一下 * 建立 * 以啟動部署精靈。
+. 選取計畫。* 計畫 * 清單通常會顯示 Cloud Volumes ONTAP 的最新版本。
+. 在 *Basics （基礎） * 選項卡中，提供以下詳細信息：
++
+** * 訂閱 * ：選擇訂閱。部署將會連結至訂閱號碼。
+** * 資源群組 * ：使用現有的資源群組或建立新的資源群組。資源群組有助於在單一群組中為 Cloud Volumes ONTAP 執行個體分配所有資源，例如磁碟和 SVM 。
+** * 地區 * ：選取支援在單一 AZ 中部署 Azure HA 的區域。您只會在清單上看到可用的區域。
+** * 大小 * ：為支援的 Premium SSD v2 託管磁碟選擇 SVM 大小。
+** * 分區 * ：選取您所選區域的分區。
+** * 管理密碼 * ：設定密碼。您可以使用此管理員密碼在部署後登入系統。
+** * 確認密碼 * ：重新輸入相同的密碼以進行確認。
++
+*** 在 * 網路 * 標籤中，新增虛擬網路和子網路，或從清單中選取。
++
+
+NOTE: 為了遵守 Microsoft Azure 的限制，您應該在設定新的虛擬網路時建立新的子網路。同樣地，如果您選擇現有的網路，則應該選取現有的子網路。
+
+*** 若要選取預先定義的網路安全性群組，請選取 * 是 * 。選取 * 否 * 以指派預先定義的 Azure 網路安全性群組，其中包含必要的流量規則。如需詳細資訊、請 link:reference-networking-azure.html#security-group-rules["Azure的安全性群組規則"]參閱。
+*** 在 * 進階 * 索引標籤中，確認是否已設定此部署所需的兩項 Azure 功能。請參閱link:task-saz-feature.html["為 Cloud Volumes ONTAP 單一 AZ 部署啟用 Azure 功能"]和link:task-azure-high-availability-mode.html["在 Azure 中啟用 Cloud Volumes ONTAP 的高可用度模式"]。
+*** 您可以在 *Tags* 標籤中定義資源或資源群組的名稱和值配對。
+*** 在 * 檢閱 + 建立 * 索引標籤中，檢閱詳細資料並開始部署。
+
+
+
+
+
+
+.完成後
+選取通知圖示以檢視部署進度。部署 Cloud Volumes ONTAP 之後，您可以檢視所列的 SVM 以進行作業。
+
+存取後，請使用 ONTAP 系統管理員或 ONTAP CLI ，以您設定的管理認證登入 SVM 。之後，您可以建立磁碟區， LUN 或共享區，並開始使用 Cloud Volumes ONTAP 的儲存功能。
+
+
+
+== 疑難排解
+
+直接透過 Azure 市場進行的 Cloud Volumes ONTAP 部署不含 NetApp 支援。如果在部署期間發生任何問題，您可以自行疑難排解及解決。
+
+.步驟
+. 在 Azure Marketplace 網站上，前往 * 開機診斷 > 序列記錄 * 。
+. 下載並調查序列記錄。
+. 如需疑難排解，請參閱產品文件和知識庫（ KB ）文章。
++
+** https://learn.microsoft.com/en-us/partner-center/["Azure 市場文件"]
+** https://www.netapp.com/support-and-training/documentation/["NetApp文件"]
+** https://kb.netapp.com/["NetApp 知識庫文章"]
+
+
+
+
+.相關連結
+如需建立儲存設備的詳細資訊，請參閱 ONTAP 文件：
+
+* https://docs.netapp.com/us-en/ontap/volumes/create-volume-task.html["為 NFS 建立 Volume"^]
+* https://docs.netapp.com/us-en/ontap-cli/lun-create.html["為 iSCSI 建立 LUN"^]
+* https://docs.netapp.com/us-en/ontap-cli/vserver-cifs-share-create.html["為 CIFS 建立共用"^]
+

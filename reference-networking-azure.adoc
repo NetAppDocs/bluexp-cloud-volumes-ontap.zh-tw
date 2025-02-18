@@ -92,7 +92,7 @@ Cloud Volumes ONTAP 使用這些端點與各種服務進行通訊。
 
 如果您定義了Cloud Volumes ONTAP 嚴格的傳出規則以供支援、那麼Cloud Volumes ONTAP 您也必須確保支援透過連接埠3128建立_Outbound _連線的安全性群組。
 
-在您確認可以存取傳出網際網路之後、您可以測試AutoSupport 以確保能夠傳送訊息。如需相關指示、請參閱 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["文件：設定檔ONTAP AutoSupport"^]。
+在您確認可以存取傳出網際網路之後、您可以測試AutoSupport 以確保能夠傳送訊息。有關說明，請參閱 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 說明文件： Set Up AutoSupport"^]。
 
 如果BlueXP通知您AutoSupport 無法傳送資訊、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["疑難排解AutoSupport 您的VMware組態"]。
 
@@ -449,7 +449,7 @@ NOTE: 來源是 Cloud Volumes ONTAP 指在整個系統上的介面（ IP 位址�
 | TCP | 3128 | 節點管理 LIF | 連接器 | 如果無法使用傳出的網際網路連線、請透過Connector上的Proxy伺服器傳送AutoSupport 功能介紹訊息 
 
 
-| 組態備份 | HTTP | 80 | 節點管理 LIF | \http：//Wese/occm/offboxconfig <connector-IP-address> | 將組態備份傳送至Connector。 link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["深入瞭解組態備份檔案"^]。 
+| 組態備份 | HTTP | 80 | 節點管理 LIF | \http：//Wese/occm/offboxconfig <connector-IP-address> | 將組態備份傳送至Connector。link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["本文檔 ONTAP"^]。 
 
 
 | DHCP | 68 | UDP | 節點管理 LIF | DHCP | 第一次設定的 DHCP 用戶端 

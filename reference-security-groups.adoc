@@ -222,7 +222,7 @@ NOTE: 來源是 Cloud Volumes ONTAP 指在整個系統上的介面（ IP 位址�
 | ICMP | 1. | 節點管理 LIF | HA 中介 | Keepive Alive （ Cloud Volumes ONTAP 僅限 HHA ） 
 
 
-| 組態備份 | HTTP | 80 | 節點管理 LIF | \http：//Wese/occm/offboxconfig <connector-IP-address> | 將組態備份傳送至Connector。 link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["深入瞭解組態備份檔案"^]。 
+| 組態備份 | HTTP | 80 | 節點管理 LIF | \http：//Wese/occm/offboxconfig <connector-IP-address> | 將組態備份傳送至 Connector 。link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["本文檔 ONTAP"^] 
 
 
 | DHCP | UDP | 68 | 節點管理 LIF | DHCP | 第一次設定的 DHCP 用戶端 

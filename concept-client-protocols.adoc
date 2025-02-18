@@ -42,7 +42,7 @@ SMB是Windows系統的傳統檔案存取傳輸協定。用戶端可以ONTAP 使�
 
 支援S3作為橫向擴充儲存的選項Cloud Volumes ONTAP 。S3傳輸協定支援可讓您設定S3用戶端存取儲存VM（SVM）中儲存區段內的物件。
 
-link:https://docs.netapp.com/us-en/ontap/s3-multiprotocol/index.html#how-s3-multiprotocol-works["瞭解S3多重傳輸協定的運作方式"^]。link:https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]。
+link:https://docs.netapp.com/us-en/ontap/s3-multiprotocol/index.html#how-s3-multiprotocol-works["ONTAP 文件：瞭解 S3 多重傳輸協定的運作方式"^]。link:https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP 文件：瞭解如何在 ONTAP 中設定及管理 S3 物件儲存服務"^]。
 
 
 
@@ -50,4 +50,4 @@ link:https://docs.netapp.com/us-en/ontap/s3-multiprotocol/index.html#how-s3-mult
 
 從 ONTAP 9.12.1 版開始、 NVMe TCP 支援雲端供應商。BlueXP不提供任何適用於NVMe TCP的管理功能。
 
-如需透過 ONTAP 設定 NVMe 的詳細資訊、請 https://docs.netapp.com/us-en/ontap/san-admin/configure-svm-nvme-task.html["設定NVMe的儲存VM"^]參閱。
+如需透過 ONTAP 設定 NVMe 的詳細資訊，請參閱 https://docs.netapp.com/us-en/ontap/san-admin/configure-svm-nvme-task.html["ONTAP 文件：設定 NVMe 儲存 VM"^]。

@@ -100,7 +100,7 @@ Cloud Volumes ONTAP 節點需要輸出網際網路存取、才能存取各種功
 
 如果您定義了Cloud Volumes ONTAP 嚴格的傳出規則以供支援、那麼Cloud Volumes ONTAP 您也必須確保支援透過連接埠3128建立_Outbound _連線的安全性群組。
 
-在您確認可以存取傳出網際網路之後、您可以測試AutoSupport 以確保能夠傳送訊息。如需相關指示、請參閱 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["文件：設定檔ONTAP AutoSupport"^]。
+在您確認可以存取傳出網際網路之後、您可以測試AutoSupport 以確保能夠傳送訊息。有關說明，請參閱 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 說明文件： Set Up AutoSupport"^]。
 
 如果BlueXP通知您AutoSupport 無法傳送資訊、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["疑難排解AutoSupport 您的VMware組態"]。
 

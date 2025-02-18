@@ -118,7 +118,7 @@ NOTE: 如果您將此值設為 * 啟用 * ，則會重設驗證，而且您必�
 
 == 協助使用System Manager
 
-如果您需要協助、請Cloud Volumes ONTAP 參閱《System Manager with》（搭配使用系統管理程式） https://docs.netapp.com/us-en/ontap/index.html["本文檔 ONTAP"^] 以取得逐步指示。以下是幾個可能有幫助的連結：
+如果您需要搭配 Cloud Volumes ONTAP 使用系統管理員的協助，請參閱 https://docs.netapp.com/us-en/ontap/index.html["本文檔 ONTAP"^]以取得逐步指示。以下是幾個 ONTAP 文件連結，可能有助於：
 
 * https://docs.netapp.com/us-en/ontap/ontap-security-hardening/roles-applications-authentication.html["ONTAP 角色，應用程式和驗證"^]
 * https://docs.netapp.com/us-en/ontap/system-admin/access-cluster-system-manager-browser-task.html["使用System Manager存取叢集"^]。

@@ -73,40 +73,48 @@ sidebar:
     - title: 開始使用Microsoft Azure
       flavor: azure
       entries:
-      - title: 快速入門
-        url: "/task-getting-started-azure.html"
-      - title: 規劃您的組態
-        url: "/task-planning-your-config-azure.html"
-      - title: 設定您的網路
-        url: "/reference-networking-azure.html"
-      - title: 使用您的金鑰設定加密
-        url: "/task-set-up-azure-encryption.html"
-      - title: 設定授權
-        url: "/task-set-up-licensing-azure.html"
-      - title: 啟用高可用度模式
-        url: "/task-azure-high-availability-mode.html"
-      - title: 為單一可用性區域啟用 VMOrchestratorZonalMultiFD
-        url: "/task-saz-feature.html"
-      - title: 在Cloud Volumes ONTAP Azure中推出功能
-        url: "/task-deploying-otc-azure.html"
-      - title: Azure 平台影像驗證
+      - title: 瞭解您的部署選項
+        url: "/concept-azure-mktplace-direct.html"
+      - title: 開始使用 BlueXP 
         entries:
-        - title: 總覽
-          url: "/concept-azure-image-verification.html"
-        - title: 下載 Azure Image Digest File
-          url: "/task-azure-download-digest-file.html"
-        - title: 映像匯出
-          url: "/task-azure-image-export.html"
-        - title: 檔案簽章驗證
+        - title: 快速入門
+          url: "/task-getting-started-azure.html"
+        - title: 規劃您的組態
+          url: "/task-planning-your-config-azure.html"
+        - title: 設定您的網路
+          url: "/reference-networking-azure.html"
+        - title: 使用您的金鑰設定加密
+          url: "/task-set-up-azure-encryption.html"
+        - title: 設定授權
+          url: "/task-set-up-licensing-azure.html"
+        - title: 啟用高可用度模式
+          url: "/task-azure-high-availability-mode.html"
+        - title: 為單一可用性區域啟用 VMOrchestratorZonalMultiFD
+          url: "/task-saz-feature.html"
+        - title: 在Cloud Volumes ONTAP Azure中推出功能
+          url: "/task-deploying-otc-azure.html"
+        - title: Azure 平台影像驗證
           entries:
+          - title: 總覽
+            url: "/concept-azure-image-verification.html"
+          - title: 下載 Azure Image Digest File
+            url: "/task-azure-download-digest-file.html"
+          - title: 映像匯出
+            url: "/task-azure-image-export.html"
           - title: 檔案簽章驗證
-            url: "/concept-azure-file-sig-verify.html"
-          - title: Linux 檔案簽章驗證
-            url: "/task-file-verification-linux.html"
-          - title: Mac OS 檔案簽章驗證
-            url: "/task-file-verification-mac.html"
-        - title: 其他資訊
-          url: "/reference-image-verification-links.html"
+            entries:
+            - title: 檔案簽章驗證
+              url: "/concept-azure-file-sig-verify.html"
+            - title: Linux 檔案簽章驗證
+              url: "/task-file-verification-linux.html"
+            - title: Mac OS 檔案簽章驗證
+              url: "/task-file-verification-mac.html"
+          - title: 其他資訊
+            url: "/reference-image-verification-links.html"
+      - title: 立即進入市場
+        entries:
+        - title: 從市場部署 Cloud Volumes ONTAP
+          url: "/task-deploy-cvo-azure-mktplc.html"
     - title: 開始使用Google Cloud
       flavor: gcp
       entries:
@@ -227,7 +235,7 @@ sidebar:
       - title: AWS管理
         flavor: aws
         entries:
-        - title: 變更EC2執行個體類型
+        - title: 在 AWS 中使用 EC2 執行個體
           url: "/task-change-ec2-instance.html"
         - title: 變更HA配對的路由表
           url: "/task-change-route-tables.html"

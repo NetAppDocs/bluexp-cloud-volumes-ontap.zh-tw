@@ -68,12 +68,12 @@ indexpage:
     - title: 支援的雲端區域
       url: https://bluexp.netapp.com/cloud-volumes-global-regions
     - title: 計算機
-      url: https://cloud.netapp.com/calculator-hub
+      url: https://bluexp.netapp.com/calculator-hub
   - title: 部落格社群
     links:
     - title: NetApp社群
       url: https://community.netapp.com/t5/Cloud-Volumes-ONTAP/bd-p/CloudVolumes
     - title: BlueXP網站部落格
-      url: https://cloud.netapp.com/blog/topic/cloud-volumes-ontap
+      url: https://bluexp.netapp.com/blog/topic/cloud-volumes-ontap
     - title: 雲端網路研討會
-      url: https://cloud.netapp.com/events
+      url: https://bluexp.netapp.com/events

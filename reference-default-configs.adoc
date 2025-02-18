@@ -88,7 +88,7 @@ NOTE: 根據Cloud Volumes ONTAP 雲端供應商的需求、根據預設、LIF容
 可從http://ipaddress/occm/offboxconfig/存取備份、其中_ipaddress_是Connector主機的IP位址。
 
 +
-您可以使用備份來重新設定 Cloud Volumes ONTAP 系統。如需組態備份的詳細資訊，請 https://docs.netapp.com/us-en/ontap/system-admin/config-backup-file-concept.html["本文檔 ONTAP"]參閱。
+您可以使用備份來重新設定 Cloud Volumes ONTAP 系統。如需組態備份的詳細資訊，請參閱 https://docs.netapp.com/us-en/ontap/system-admin/config-backup-file-concept.html["本文檔 ONTAP"^]。
 
 ** BlueXP  設定的磁碟區屬性與其他管理工具（例如 ONTAP 系統管理員或 ONTAP CLI ）不同。
 +

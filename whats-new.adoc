@@ -20,6 +20,20 @@ summary: 瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。
 
 
 
+== 2025 年 18 月 2 日
+
+
+
+=== 隆重介紹 Azure 市場直接部署
+
+您現在可以利用 Azure 市場直接部署，從 Azure 市場直接輕鬆快速地部署 Cloud Volumes ONTAP 。使用這種精簡的方法，您可以探索環境中 Cloud Volumes ONTAP 的核心功能，而無需設定 BlueXP  Connector ，或是符合透過 BlueXP  部署 Cloud Volumes ONTAP 所需的其他就職條件。
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-azure-mktplace-direct.html["瞭解 Azure 中的 Cloud Volumes ONTAP 部署選項"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["從 Azure 市場部署 Cloud Volumes ONTAP"^]
+
+
+
+
 == 2025 年 10 月 2 日
 
 
@@ -213,7 +227,7 @@ Edge Cache 容量型授權套件將不再適用於未來部署的 Cloud Volumes 
 
 === Azure 上 Flash Cache 的最低版本支援
 
-在 Azure 上設定 Flash Cache 所需的最低 Cloud Volumes ONTAP 版本為 9.13.1 GA 。您只能使用 ONTAP 9 。 13.1 GA 和更新版本、在適用於 Azure 的 Cloud Volumes ONTAP 系統上部署 Flash Cache 。
+在 Azure 上設定 Flash Cache 所需的最低 Cloud Volumes ONTAP 版本為 9.13.1 GA 。您只能使用 ONTAP 9.13.1 GA 和更新版本，在 Azure 的 Cloud Volumes ONTAP 系統上部署 Flash Cache 。
 
 如需支援的組態、請參閱 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Azure支援的組態"^]。
 
@@ -655,6 +669,10 @@ Azure 中的澳洲東部地區現在支援 Cloud Volumes ONTAP 9.12.1 GA 及更�
 
 == 2023 年 4 月 4 日
 
+
+
+=== 支援中國地區的 AWS
+
 從 Cloud Volumes ONTAP 9.12.1 GA 開始、 AWS 現在支援中國地區、如下所示。
 
 * 支援單一節點系統。
@@ -716,14 +734,12 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-volume
 
 
 
-=== 中國地區支援
+=== 支援 Azure 中的中國地區
 
-從推出支援中國地區的支援功能到現在起、Azure已提供下列支援Cloud Volumes ONTAP ：
+目前支援在 Azure 中部署 Cloud Volumes ONTAP 9.12.1 GA 和 9.13.0 GA 的單一節點。這些地區僅支援直接向 NetApp 購買的授權（ BYOL 授權）。
 
-* 支援中國北方3 Cloud Volumes ONTAP 。
-* 支援單一節點系統。
-* 支援直接向NetApp購買的授權。
 
+NOTE: 只有 9.12.1 GA 和 9.13.0 GA 支援在中國地區新部署 Cloud Volumes ONTAP 。您可以將這些版本升級至較新的 Cloud Volumes ONTAP 修補程式和版本。如果您想要在中國地區部署較新的 Cloud Volumes ONTAP 版本，請聯絡 NetApp 支援。
 
 如需區域供應狀況、請link:https://bluexp.netapp.com/cloud-volumes-global-regions["全球區域地圖Cloud Volumes ONTAP 、供您使用"^]參閱。
 
@@ -884,7 +900,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-9121-relnotes["深入瞭Cloud 
 
 在Google Cloud Platform中、執行9.12.1版或更新版本的全新及現有的版本不含更新版本的S3授權Cloud Volumes ONTAP ONTAP 。
 
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP 文件：瞭解如何設定及管理 S3 物件儲存服務"^]
 
 
 
@@ -906,7 +922,7 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解
 
 NDMP複本現已通過認證、可搭配Cloud Volume ONTAP 使用。
 
-有關如何配置和使用 NDMP 的信息，請參閱 https://docs.netapp.com/us-en/ontap/ndmp/index.html["NDMP組態總覽"]。
+有關如何配置和使用 NDMP 的信息，請參閱 https://docs.netapp.com/us-en/ontap/ndmp/index.html["ONTAP 文件： NDMP 組態概觀"]。
 
 
 
@@ -1008,7 +1024,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/ma
 當您透過Azure Marketplace訂閱付費時、Azure上有兩個Cloud Volumes ONTAP 全新的容量型授權套件可供使用：
 
 * *最佳化*：分別為資源配置的容量和I/O作業付費
-* *邊緣快取*：授權 https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volumes Edge快取"^]
+* * 邊緣快取 * ：授權 https://bluexp.netapp.com/cloud-volumes-edge-cache["Cloud Volumes Edge快取"^]
 
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["深入瞭解這些授權套件"]。
@@ -1041,7 +1057,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-aws-elastic-vol
 
 現在AWS中執行9.11.0版或更新版本的全新和現有的版本不含支援的S3授權。ONTAP Cloud Volumes ONTAP
 
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP 文件：瞭解如何設定及管理 S3 物件儲存服務"^]
 
 
 
@@ -1057,7 +1073,7 @@ https://bluexp.netapp.com/cloud-volumes-global-regions["檢視Cloud Volumes ONTA
 
 Azure中執行9.9.1版或更新版本的全新及現有的支援功能系統、現在已隨附一份支援功能S3的授權。ONTAP Cloud Volumes ONTAP
 
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP 文件：瞭解如何設定及管理 S3 物件儲存服務"^]
 
 
 
@@ -1255,7 +1271,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/ma
 
 入門特惠費率已經到期、現在您將需要支付使用WORM儲存設備的費用。根據WORM磁碟區的總配置容量、每小時充電一次。這適用於新的Cloud Volumes ONTAP 和現有的不全系統。
 
-https://cloud.netapp.com/pricing["瞭解WORM儲存設備的定價"^]。
+https://bluexp.netapp.com/pricing["瞭解WORM儲存設備的定價"^]。
 
 
 
