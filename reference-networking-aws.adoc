@@ -88,7 +88,7 @@ Cloud Volumes ONTAP 節點需要輸出網際網路存取、才能存取各種功
 
 支援NetApp功能的支援節點需要外傳網際網路存取功能、此功能可主動監控系統健全狀況、並將訊息傳送給NetApp技術支援部門。Cloud Volumes ONTAP AutoSupport
 
-路由和防火牆原則必須允許將 HTTP / HTTPS 流量傳送至下列端點、 Cloud Volumes ONTAP 才能讓下列端點傳送 AutoSupport 動態訊息：
+路由和防火牆原則必須允許 HTTPS 流量傳送到下列端點， Cloud Volumes ONTAP 才能傳送 AutoSupport 訊息：
 
 * \https://support.netapp.com/aods/asupmessage
 * \https://support.netapp.com/asupprod/post/1.0/postAsup

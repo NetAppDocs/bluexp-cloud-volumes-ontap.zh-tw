@@ -146,7 +146,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["�
 
 === 過度使用
 
-如果您超過BYOL容量、或授權過期、系統會根據您的市場訂閱、按每小時費率收取超額費用。
+如果您超過 BYOL 容量，或是授權過期，您將根據您的市場訂閱，以每小時費率收取超額費用。超額費用會以市場費率收取，優先使用其他授權的可用容量。
 
 
 
@@ -164,14 +164,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["�
 NOTE: 如果唯讀 /DP 磁碟區變成主要磁碟區、 BlueXP  會將其視為主要資料、而充電成本則是根據磁碟區處於讀取 / 寫入模式的時間來計算。當磁碟區再次設為唯讀 /DP 時、 BlueXP  會再次將其視為次要資料、並使用數位錢包中最符合的授權進行收費。
 
 * Essentials 次要 HA ：資料保護（ DP ）類型的磁碟區（通常是唯讀的 SnapMirror 或 SnapVault 目的地磁碟區）、是在使用兩個 ONTAP 節點的 Cloud Volumes ONTAP 系統上建立、可在不中斷資料存取的情況下互相容錯移轉。
-
-
-請注意以下幾點：
-
-* 最低費用：每個資料服務儲存 VM 至少有一個主要（讀寫）磁碟區、最低需支付 4 TiB 費用。對於 Essentials 套件、這項最低費用不適用於只有次要（資料保護）磁碟區的儲存 VM 。
-* 超額：如果超過授權容量、就會以市場費率收取超額費用、並優先使用其他授權的可用容量。
-* FlexClone 和 FlexCache Volumes ： FlexClone Volume 不收費。來源和目的地 FlexCache 磁碟區被視為主要資料、並根據已配置的空間收費。
-* HA 配對充電：對於 HA 配對、只會對節點上的已配置容量進行充電。同步鏡射至合作夥伴節點的資料不會收費。
 
 
 .BYOL

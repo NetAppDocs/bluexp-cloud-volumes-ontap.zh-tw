@@ -16,7 +16,7 @@ summary: 您可以從 Azure Marketplace 匯出 ONTAP 映像、以驗證 VHD 檔�
 [role="lead"]
 一旦 VHD 映像發佈至 Azure 雲端、該映像就不再由 NetApp 管理。而是將發佈的映像放在 Azure 市場上。Azure 對 VHD 的領先 1MB 和結尾 512B 的變更是在 Azure 市場上分段及發佈映像時發生的。若要驗證 VHD 檔案的簽章、 Azure 修改的 VHD 映像必須先從 Azure 市場匯出。
 
-.您需要的產品
+.開始之前
 您必須在系統上安裝必要的程式。
 
 * Azure CLI 已安裝、或 Azure Cloud Shell 透過 Azure 入口網站隨時可供使用。
