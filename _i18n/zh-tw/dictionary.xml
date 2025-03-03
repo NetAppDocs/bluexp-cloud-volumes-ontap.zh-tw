@@ -5827,4 +5827,5 @@
   <block id="0573433fb185b84611f18e3f6e506cd2" category="paragraph">選取通知圖示以檢視部署進度。部署 Cloud Volumes ONTAP 之後，您可以檢視所列的儲存 VM 以進行作業。</block>
   <block id="20a0bd63dc9b064c0cedc40d649eb29a" category="paragraph">存取後，請使用 ONTAP 系統管理員或 ONTAP CLI ，以您設定的管理認證登入儲存 VM 。之後，您可以建立磁碟區， LUN 或共享區，並開始使用 Cloud Volumes ONTAP 的儲存功能。</block>
   <block id="1c3093638c74eef35618192ff8049216" category="admonition">對於中國地區，只有 Cloud Volumes ONTAP 9.12.1 GA 和 9.13.0 GA 支援單一節點部署。您可以將這些版本升級至較新的 Cloud Volumes ONTAP 修補程式和版本。如果您想要在中國地區部署較新的 Cloud Volumes ONTAP 版本，請聯絡 NetApp 支援。中國地區僅支援直接向 NetApp 購買的授權，無法提供市場訂閱。</block>
+  <block id="4fbdcdf3c2d8694d5e358b3175b867da" category="section-title">2025 年 3 月 03 日</block>
 </blocks>
