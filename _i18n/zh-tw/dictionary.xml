@@ -3274,7 +3274,6 @@
   <block id="180565a7b528a090a7dccee0c22a5268" category="paragraph">如果BlueXP無法建立Azure私有連結做為特定行動的一部分、則在不使用Azure私有連結連線的情況下完成此動作。當建立新的工作環境（單一節點或HA配對）、或是HA配對上發生下列動作時、就會發生這種情況：建立新的Aggregate、新增磁碟至現有的Aggregate、或是在超過32 TiB時建立新的儲存帳戶。</block>
   <block id="55921e17a2d40b7985abb89a85ec5001" category="paragraph">如果BlueXP無法建立Azure私有連結、您可以啟用復原功能來變更此預設行為。這有助於確保您完全符合貴公司的安全法規。</block>
   <block id="3264a736059712e5a8f3a26421bbb400" category="paragraph">如果您啟用復原、則BlueXP會停止動作、並回溯作為行動一部分所建立的所有資源。</block>
-  <block id="3a293828e70d21dff60d66d4ef2d6993" category="paragraph">本頁所述的增強功能僅適用於支援Cloud Volumes ONTAP 支援管理功能的BlueXP功能。若要瞭解Cloud Volumes ONTAP 有關此功能的最新消息、請參閱<block ref="708e09e3f2783926556b9c6d77f63a27" category="inline-link-rx"></block></block>
   <block id="7a8757c8fbb4c1997c5641cf6e4a7489" category="paragraph">現在、如果Cloud Volumes ONTAP 某個不完善的系統無法傳送AutoSupport 功能介紹訊息、則BlueXP會產生通知。此通知包含可用於疑難排解網路問題的指示連結。</block>
   <block id="dd8fbb56db547f79b2c75bf3b4e493be" category="paragraph">現在、如果Cloud Volumes ONTAP 無法使用傳出的網際網路連線來傳送AutoSupport 更新訊息、則BlueXP會自動將您的還原系統設定為使用Connector做為Proxy伺服器。</block>
   <block id="d436efc1bf6c0b48388c41581e509eb2" category="paragraph">在從Cloud Volumes ONTAP 使用者介面建立運作環境時、BlueXP現在支援Amazon EBS彈性磁碟區功能。使用GP3或IO1磁碟時、預設會啟用彈性磁碟區功能。您可以根據儲存需求來選擇初始容量、Cloud Volumes ONTAP 並在部署完畢後加以修改。</block>
@@ -4862,7 +4861,6 @@
   <block id="e03d271d662bcb0fab1d9537df279ef3" category="paragraph">設定市場映像的 URN 時、此區域名稱會用作「 locName 」變數的值。</block>
   <block id="0bcd35ecf261a40cdfb4cbae00a11aa2" category="list-text">若要接收可用區域的清單、請輸入<block ref="84ed3d395e738381fb9826cd0e156c91" prefix=" " category="inline-code"></block> 命令。</block>
   <block id="30bf950af492b8ab681c83ec104628f7" category="paragraph">在下表中、區域名稱稱為「名稱」欄位。</block>
-  <block id="0abd8188de5678bc75e8b9d823375978" category="paragraph">當設定市場映像的 URN 時、 SKU 名稱會用作「 skuName 」變數的值。</block>
   <block id="b2b27ade506086d79b3e7defdb321673" category="cell">ONTAP 雲端</block>
   <block id="68593f3fae72dbec1b29acfd76c1aa17" category="cell">ONTAP 雲端 _ byol_ha</block>
   <block id="fc7898b425992521a2ae92bc34f6fa79" category="list-text">ONTAP 版本和 Azure 市場映像對應完成後、即可透過 Azure Cloud Shell 或 Azure CLI 、從 Azure 市場匯出 VHD 檔案。</block>
@@ -5052,7 +5050,6 @@
   <block id="e149ca9f0289610cb8ad6fd5b12512d8" category="admonition">高寫入速度和高傳輸單位（ MTU ） 8 、 896 位元組可透過 * 高 * 寫入速度選項取得。此外、較高的MTU為8、896、需要選擇VPC-1、VPC-2和VPC-3來進行部署。有關 VPC-1 、 VPC-2 和 VPC-3 的詳細信息，請參閱<block ref="e0d6e9ceb3d5d27a7e0dc7b744a8cf4a" category="inline-link-rx"></block>。</block>
   <block id="029f8920d36eb65c171c6c21ac843b04" category="list-text">如需新增 Google Cloud 帳戶的說明、請<block ref="434f9c6247e5841006dab0119a511de9" category="inline-link-rx"></block>參閱。</block>
   <block id="ed5e0eaead7695971d375db73537aede" category="cell">選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。如需<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block>詳細資訊、請參閱。請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。</block>
-  <block id="0aa82496785892f71f52a3f25d7a1a11" category="paragraph">如需詳細資訊、請參閱 <block ref="449d1f3dba62fd34c10497ac720687ce" category="inline-link-macro-rx"></block> 和 <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>。</block>
   <block id="0088f6e3d17619bb18cd5df63ad60315" category="list-text">如果您想要將配額套用至磁碟區、請使用 ONTAP 系統管理員或 ONTAP CLI 。</block>
   <block id="f7aba8921828d41f8e11789ea644a8f1" category="admonition">透過使用 n2-Standard-16 、 n2-Standard-32 、 n2-Standard-48 及 n2-Standard-64 執行個體類型的 * High * 寫入速度選項、可獲得高寫入速度及高傳輸單位（ MTU ） 8 、 896 位元組。此外、較高的MTU為8、896、需要選擇VPC-1、VPC-2和VPC-3來進行部署。高寫入速度和 8 、 896 的 MTU 與功能有關、無法在設定的執行個體中個別停用。有關 VPC-1 、 VPC-2 和 VPC-3 的詳細信息，請參閱<block ref="e0d6e9ceb3d5d27a7e0dc7b744a8cf4a" category="inline-link-rx"></block>。</block>
   <block id="0b53ba47db58ce07a5d3dfaac21a45f9" category="cell">選擇 * 使用 Active Directory 網域 * 來使用 Active Directory DNS 設定 NTP 伺服器。如果您需要使用不同的位址來設定 NTP 伺服器、則應該使用 API 。如需詳細資訊、請參閱<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block> 。請注意、您只能在建立CIFS伺服器時設定NTP伺服器。您建立CIFS伺服器之後、就無法進行設定。</block>
@@ -5246,11 +5243,6 @@
   <block id="180b275121e0f37251fecae975bf46df" category="list-text">兩個 ST1 EBS 磁碟區用於中介執行個體、其中一個是大約 8 GiB 作為根磁碟、另一個是 4 GiB 作為資料磁碟</block>
   <block id="64b03175221d53e202f475eebaa91d75" category="list-text">每個節點中有一個 140 GiB GP3 磁碟、其中包含另一個節點的根資料複本</block>
   <block id="8988458abbc31ee6cea74e936e77a27d" category="list-text">9.15.1 GA</block>
-  <block id="b7c282068681beff1a173d0b12dfaf26" category="paragraph">新密碼必須遵守下列規則：</block>
-  <block id="d35bb0db0465412bf87fad3c0e029c98" category="list-text">它不能包含使用者名稱</block>
-  <block id="dbc56fe1cd1e248fe5365bf788c671af" category="list-text">長度必須至少八個字元</block>
-  <block id="4737ee9042d4511943f8ea991bd211c5" category="list-text">它必須包含至少一個字母和一個數字</block>
-  <block id="3f00eb5ab0ade2cfadc9848704073f92" category="list-text">不能與最後六個密碼相同</block>
   <block id="120ae360daecd24b580b71f9f2766bbc" category="cell">9.15.1..</block>
   <block id="af4dea59253c9d0600f1101e032482c5" category="section-title">Azure 上 Flash Cache 的最低版本支援</block>
   <block id="8fc1b74aa1cb89da788e1a3b937438ab" category="inline-link">管理與 BlueXP  組織或帳戶相關的 NSS 認證</block>
@@ -5467,7 +5459,6 @@
   <block id="c1c1c782703499ca8577569137202bf1" category="list-text">請從下表中檢閱對應 Cloud Volumes ONTAP 版本和 VM 部署類型的 SKU 名稱。</block>
   <block id="90069a3873814503a767070f04f3c286" category="paragraph">例如， Cloud Volumes ONTAP 9.15.0 的所有單一節點部署都應使用<block ref="b2b27ade506086d79b3e7defdb321673" prefix=" " category="inline-code"></block> SKU 名稱。</block>
   <block id="d811ca86e147e8cf2239ee377f1dcd50" category="cell">* Cloud Volumes ONTAP 版本 *</block>
-  <block id="a3a1c7f3820a8886078a2878a83c8362" category="cell">* VM 部署類型 *</block>
   <block id="aadb6d991e4406b990f6fca8b4c83fd6" category="cell">* SKU 名稱 *</block>
   <block id="1da19d67e22ac2cb25b90e0604702db1" category="cell">透過 BlueXP  進行所有部署</block>
   <block id="273062411bc731be8028321277142365" category="cell">ONTAP 雲端</block>
@@ -5657,7 +5648,6 @@
   <block id="d001c47858581c979ac478e49c9661c4" category="cell">* 加入 *</block>
   <block id="c0245bda3ab2426b357c2f1dbac18fe4" category="cell">更短，更簡單，直接部署所需的準備工作最少</block>
   <block id="3629ee21db77809980881173196b6920" category="cell">更長的上線程序，包括安裝 BlueXP  Connector</block>
-  <block id="79bd8865b968021aedfe3ebf1eea0e3b" category="cell">完整的儲存 VM 選項。<block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block></block>
   <block id="ee998db55a5373c890946748cb8dafeb" category="cell">*授權*</block>
   <block id="2c99fb634374338e105960f8a1b01571" category="cell">免費授權</block>
   <block id="e6e0b8e1dd9ccebda94836b190cc1c77" category="cell">任何容量型授權。<block ref="4fd1dcab53132be8e410673d29b53538" category="inline-link-macro-rx"></block></block>
@@ -5801,12 +5791,10 @@
   <block id="3a02e985ca8f29995c51ae66b1b831f2" category="sidebar">開始使用 BlueXP </block>
   <block id="124dec3164ac7246452cc1456ff82f96" category="sidebar">立即進入市場</block>
   <block id="3afa4906e9f87a509c6412a260310879" category="sidebar">在 AWS 中使用 EC2 執行個體</block>
-  <block id="62c9277e75aee50ddfb792de79bd94d3" category="doc">Azure 現在支援紐西蘭北部地區</block>
   <block id="81ae8423a213b8c9bbcb79aee6ae0af8" category="paragraph">Azure 現在支援紐西蘭北部地區的單一節點和高可用度（ HA ）組態，適用於 Cloud Volumes ONTAP 9.12.1 GA 及更新版本。請注意，此區域不支援 Lsv3 執行個體類型。</block>
   <block id="b717ddfb2f9a28b7e4673751144693cc" category="paragraph">如需所有支援區域的清單，請參閱<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>。</block>
   <block id="7c2f2acb2655a9e7f8ab7f69bbd0d731" category="paragraph">NetApp 提供兩個選項，可在 Azure 上部署 Cloud Volumes ONTAP 。Cloud Volumes ONTAP 傳統上仰賴 BlueXP  來進行部署和協調。從 Cloud Volumes ONTAP 9.16.1 開始，您可以利用 Azure 市場直接部署，這是一個簡化的程序，可存取有限但功能強大的 Cloud Volumes ONTAP 功能和選項集。</block>
   <block id="89191ae1b044d97b766a182a1727fae4" category="paragraph">當您直接從 Azure 市場部署 Cloud Volumes ONTAP 時，您不需要設定 BlueXP  Connector ，也不需要符合透過 BlueXP  部署 Cloud Volumes ONTAP 所需的其他安全性和上線條件。從 Azure 市場，您只需按幾下滑鼠，就能快速部署 Cloud Volumes ONTAP ，並探索其在您環境中的核心功能與功能。</block>
-  <block id="73081e15ff5559e197b273ea471c9aeb" category="cell">* 支援的儲存虛擬機器（儲存 VM ）執行個體 *</block>
   <block id="55f3f90910bdc78c8b57d6f9c6044843" category="cell">Edsv5 和 Lsv3</block>
   <block id="94302f254b4d602be77fb6e28556ecec" category="cell">* 支援的儲存虛擬機器數量 *</block>
   <block id="212ecc3006afeac1a27b275b3e8556b8" category="cell">每個部署一個</block>
@@ -5828,4 +5816,26 @@
   <block id="20a0bd63dc9b064c0cedc40d649eb29a" category="paragraph">存取後，請使用 ONTAP 系統管理員或 ONTAP CLI ，以您設定的管理認證登入儲存 VM 。之後，您可以建立磁碟區， LUN 或共享區，並開始使用 Cloud Volumes ONTAP 的儲存功能。</block>
   <block id="1c3093638c74eef35618192ff8049216" category="admonition">對於中國地區，只有 Cloud Volumes ONTAP 9.12.1 GA 和 9.13.0 GA 支援單一節點部署。您可以將這些版本升級至較新的 Cloud Volumes ONTAP 修補程式和版本。如果您想要在中國地區部署較新的 Cloud Volumes ONTAP 版本，請聯絡 NetApp 支援。中國地區僅支援直接向 NetApp 購買的授權，無法提供市場訂閱。</block>
   <block id="4fbdcdf3c2d8694d5e358b3175b867da" category="section-title">2025 年 3 月 03 日</block>
+  <block id="e622e2ddfce6c06eca3078953e9e6186" category="doc">支援 Azure 中的紐西蘭北部地區</block>
+  <block id="5781bb449b503c5fcaefb20bfaa81cc4" category="doc">Cloud Volumes ONTAP 9.16.1 GA</block>
+  <block id="efa5e5522cbd4457ef4e551fb5d60491" category="paragraph">您現在可以使用 BlueXP  在 Azure 和 Google Cloud 中部署及管理 Cloud Volumes ONTAP 9.16.1 一般可用度版本。不過，此版本無法在 AWS 中進行部署和升級。</block>
+  <block id="df65d9be8ade62cf7505e34c307cecad" category="cell">* 支援的虛擬機器（ VM ）類型 *</block>
+  <block id="b13b643af58b125fac839de04760d5f0" category="cell">全系列 VM 類型。<block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block></block>
+  <block id="97c2102867c5b54db1b773f42a540c16" category="list-text">9.16.1 GA</block>
+  <block id="70e23d6e402d67f6f86de0aa757d7bf0" category="paragraph">SKU 名稱是在設定市場映像的 URN 時，「 skuName 」變數的值。</block>
+  <block id="4692723666baa52294f46ef51ee4ec3f" category="cell">* VM 部署方法 *</block>
+  <block id="95392acbc8522bf81166b3d44b333fca" category="cell">9.16.1 及更新版本</block>
+  <block id="e6c4c5f3851cefbfb1da8daa3aff1fb0" category="cell">透過市場直接部署方法</block>
+  <block id="8c63a56c7facb0a50c8c629b8b10d627" category="cell">ONTAP 雲端 _DIRECT</block>
+  <block id="3c0acb220a6d083f589c0e9d2c4bb5b9" category="paragraph">密碼必須遵守一些規則。新密碼：</block>
+  <block id="c3b8a6ca2fd73fcdea07816d50da5780" category="list-text">不應包含此字詞<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block></block>
+  <block id="381979ed7a4bb72f3b0208ee434d237f" category="list-text">長度必須介於 8 到 50 個字元之間</block>
+  <block id="035cd612f5f182c28849afc511825894" category="list-text">必須至少包含一個英文字母和一個數字</block>
+  <block id="823f5f4ed700cc35a2027d5df0c8706e" category="list-text">不應包含下列特殊字元：<block ref="172ce81fb34a8026a9711811fececc33" prefix=" " category="inline-code"></block></block>
+  <block id="e574fef1a46f15b3c69233f51519d7cf" category="paragraph">如需詳細資訊，請參閱<block ref="449d1f3dba62fd34c10497ac720687ce" category="inline-link-macro-rx"></block>，<block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>和<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block></block>
+  <block id="401117ae72e5a93172e8ce8c23c7676d" category="cell">9.16.1 （僅適用於 Azure 和 Google Cloud ）</block>
+  <block id="c06b363f3dfd3ad2d628083406a0a1ac" category="paragraph">本頁所述的增強功能僅適用於支援Cloud Volumes ONTAP 支援管理功能的BlueXP功能。若要瞭解 Cloud Volumes ONTAP 軟體本身的新功能<block ref="708e09e3f2783926556b9c6d77f63a27" category="inline-link-rx"></block>，請參閱。</block>
+  <block id="278edfabbac204688aa13f79c6f52497" category="section-title">2025 年 3 月 6 日</block>
+  <block id="47d2a1d0b17f45434982fc698a98f5b6" category="paragraph"><block ref="7f8bbc744b255f0b452653dcd9455a80" category="inline-link-macro-rx"></block>。</block>
+  <block id="306a75aa4b30893090d1c91c8a8b3857" category="paragraph"><block ref="fd20bae6b6edab0a62ec432b47047149" category="inline-link-macro-rx"></block>。</block>
 </blocks>

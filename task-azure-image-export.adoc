@@ -69,7 +69,7 @@ South Central US          southcentralus       (US) South Central US
 
 . 請從下表中檢閱對應 Cloud Volumes ONTAP 版本和 VM 部署類型的 SKU 名稱。
 +
-當設定市場映像的 URN 時、 SKU 名稱會用作「 skuName 」變數的值。
+SKU 名稱是在設定市場映像的 URN 時，「 skuName 」變數的值。
 
 +
 例如， Cloud Volumes ONTAP 9.15.0 的所有單一節點部署都應使用 `ontap_cloud_byol` SKU 名稱。
@@ -79,7 +79,13 @@ South Central US          southcentralus       (US) South Central US
 |===
 
 
-| * Cloud Volumes ONTAP 版本 * | * VM 部署類型 * | * SKU 名稱 * 
+| * Cloud Volumes ONTAP 版本 * | * VM 部署方法 * | * SKU 名稱 * 
+
+
+| 9.16.1 及更新版本 | 透過市場直接部署方法 | ONTAP 雲端 _DIRECT 
+
+
+| 9.16.1 及更新版本 | 透過 BlueXP  進行所有部署 | ONTAP 雲端 
 
 
 | 9.15.1.. | 透過 BlueXP  進行所有部署 | ONTAP 雲端 

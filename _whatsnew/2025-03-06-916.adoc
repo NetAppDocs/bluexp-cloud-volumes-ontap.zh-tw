@@ -1,0 +1,11 @@
+= Cloud Volumes ONTAP 9.16.1 GA
+:allow-uri-read: 
+
+
+
+
+=== Cloud Volumes ONTAP 9.16.1 GA
+
+您現在可以使用 BlueXP  在 Azure 和 Google Cloud 中部署及管理 Cloud Volumes ONTAP 9.16.1 一般可用度版本。不過，此版本無法在 AWS 中進行部署和升級。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]。

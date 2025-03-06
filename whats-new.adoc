@@ -16,7 +16,19 @@ summary: 瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。
 [role="lead"]
 瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。
 
-本頁所述的增強功能僅適用於支援Cloud Volumes ONTAP 支援管理功能的BlueXP功能。若要瞭解Cloud Volumes ONTAP 有關此功能的最新消息、請參閱 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["前往Cloud Volumes ONTAP 《發行說明》"^]
+本頁所述的增強功能僅適用於支援Cloud Volumes ONTAP 支援管理功能的BlueXP功能。若要瞭解 Cloud Volumes ONTAP 軟體本身的新功能 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["前往Cloud Volumes ONTAP 《發行說明》"^]，請參閱。
+
+
+
+== 2025 年 3 月 6 日
+
+
+
+=== Cloud Volumes ONTAP 9.16.1 GA
+
+您現在可以使用 BlueXP  在 Azure 和 Google Cloud 中部署及管理 Cloud Volumes ONTAP 9.16.1 一般可用度版本。不過，此版本無法在 AWS 中進行部署和升級。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]。
 
 
 
@@ -24,7 +36,7 @@ summary: 瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。
 
 
 
-=== Azure 現在支援紐西蘭北部地區
+=== 支援 Azure 中的紐西蘭北部地區
 
 Azure 現在支援紐西蘭北部地區的單一節點和高可用度（ HA ）組態，適用於 Cloud Volumes ONTAP 9.12.1 GA 及更新版本。請注意，此區域不支援 Lsv3 執行個體類型。
 
@@ -223,7 +235,7 @@ AWS for Cloud Volumes ONTAP 9.12.1 GA 及更新版本現在支援加拿大西部
 
 BlueXP 現在可以在 AWS 、 Azure 和 Google Cloud 中部署和管理 Cloud Volumes ONTAP 9.15.1 通用可用度版本。
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]。
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]。
 
 
 
@@ -259,7 +271,7 @@ Cloud Volumes ONTAP 不再提供雲端供應商市場的隨用隨付訂閱 30 �
 
 BlueXP 現在可以在 AWS 、 Azure 和 Google Cloud 中部署和管理 Cloud Volumes ONTAP 9.15.0 。
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]。
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9150-relnotes/["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]。
 
 
 

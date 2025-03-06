@@ -49,6 +49,9 @@ BlueXP提供兩種升級Cloud Volumes ONTAP 途徑：
 | 目前版本 | 您可以直接升級至的版本 
 
 
+| 9.15.1.. | 9.16.1 （僅適用於 Azure 和 Google Cloud ） 
+
+
 | 9.15.0 | 9.15.1.. 
 
 
