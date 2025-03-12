@@ -1,0 +1,15 @@
+= Azure 支援多個可用區域部署的新區域
+:allow-uri-read: 
+
+
+
+
+=== Azure 支援多個可用區域部署的新區域
+
+以下地區現在支援 Azure 中的 HA 多重可用性區域部署、適用於 Cloud Volumes ONTAP 9.12.1 GA 及更新版本：
+
+* 美國中部
+* 美國政府維吉尼亞州（美國政府地區 - 維吉尼亞州）
+
+
+有關所有區域的列表，請參閱 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure 下的 Global Regions Map"^]。
