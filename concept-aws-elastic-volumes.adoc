@@ -4,7 +4,7 @@ permalink: concept-aws-elastic-volumes.html
 keywords: elastic volumes, ev, ebs elastic volumes, ebs, amazon ebs, disk growth 
 summary: 支援Amazon EBS Elastic Volumes功能搭配Cloud Volumes ONTAP 使用支援的不只能提供更好的效能和額外容量、還能讓BlueXP自動視需要增加基礎磁碟容量。 
 ---
-= AWS中的彈性Volume
+= 瞭解 Cloud Volumes ONTAP 對 AWS 彈性 Volume 的支援
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

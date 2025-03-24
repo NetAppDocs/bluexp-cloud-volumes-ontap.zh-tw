@@ -4,7 +4,7 @@ permalink: task-accelerate-data-access.html
 keywords: flexcache, flexcache volumes, create a flexcache volume, provision flexcache, create flexcache volume 
 summary: 流通量是儲存磁碟區、可快取來源或來源磁碟區的NFS讀取資料。FlexCache後續讀取快取資料會加快該資料的存取速度。 
 ---
-= 利用NetApp功能加速資料存取FlexCache
+= 使用 Cloud Volumes ONTAP 系統上的 FlexCache 磁碟區加速資料存取
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

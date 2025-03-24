@@ -4,7 +4,7 @@ permalink: concept-storage.html
 keywords: storage, capacity, volumes, aggregates, raw capacity, usable capacity 
 summary: 瞭解 Cloud Volumes ONTAP 如何使用雲端儲存設備、有助於瞭解儲存成本。 
 ---
-= 磁碟與集合體
+= 用於 Cloud Volumes ONTAP 叢集的磁碟和集合體
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -45,7 +45,7 @@ EBS 儲存設備:: 在 AWS 中、 Aggregate 最多可包含 6 個大小相同的
 --
 磁碟大小上限為16 TiB。
 
-基礎EBS磁碟類型可以是一般用途SSD（GP3或gp2）、已配置的IOPS SSD（IO1）或處理量最佳化HDD（ST1）。您可以將 EBS 磁碟與 Amazon S3 配對至 link:concept-data-tiering.html["將非作用中資料分層至低成本物件儲存設備"]。
+基礎EBS磁碟類型可以是一般用途SSD（GP3或gp2）、已配置的IOPS SSD（IO1）或處理量最佳化HDD（ST1）。您可以將 EBS 磁碟與 Amazon S3 配對至link:concept-data-tiering.html["低成本物件儲存"]。
 
 
 NOTE: 使用處理量最佳化的HDD（ST1）時、不建議將資料分層至物件儲存設備。
@@ -83,7 +83,7 @@ ifdef::azure[]
 每種託管磁碟類型的磁碟大小上限為32 TiB。
 
 +
-您可以將託管磁碟與 Azure Blob 儲存設備配對至 link:concept-data-tiering.html["將非作用中資料分層至低成本物件儲存設備"]。
+您可以將受管理磁碟與 Azure Blob 儲存設備配對至link:concept-data-tiering.html["低成本物件儲存"]。
 
 
 
@@ -101,7 +101,7 @@ HA 配對:: HA配對使用兩種磁碟、以較高的成本為I/O密集型工作
 * 相關連結 *
 
 * link:task-planning-your-config-azure.html["瞭解如何在 Azure 中為您的系統選擇磁碟類型和磁碟大小"]
-* link:task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure["在Cloud Volumes ONTAP Azure中啟動一套功能完善的"]
+* link:task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure["在 Azure 中啟動 Cloud Volumes ONTAP HA 配對"]
 * https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure文件：Azure託管磁碟類型"^]
 * https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-pageblob-overview["Microsoft Azure文件：Azure網頁瀏覽總覽"^]
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["檢閱 Cloud Volumes ONTAP Azure 的儲存限制"^]
@@ -117,7 +117,7 @@ ifdef::gcp[]
 
 在Google Cloud中、Aggregate最多可包含6個大小相同的磁碟。磁碟大小上限為64 TiB。
 
-磁碟類型可以是_分區SSD持續磁碟_、_分區平衡持續磁碟_或_分區標準持續磁碟_。您可以將持續的磁碟與 Google 儲存庫配對至 link:concept-data-tiering.html["將非作用中資料分層至低成本物件儲存設備"]。
+磁碟類型可以是_分區SSD持續磁碟_、_分區平衡持續磁碟_或_分區標準持續磁碟_。您可以將持續磁碟與 Google 儲存貯體配對至link:concept-data-tiering.html["低成本物件儲存"]。
 
 * 相關連結 *
 

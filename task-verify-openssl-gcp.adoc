@@ -4,7 +4,7 @@ permalink: task-verify-openssl-gcp.html
 keywords: Google Cloud, image, VHD, signature verification, encryption, sha256, ONTAP, Cloud Volumes ONTAP,OpenSSL, 
 summary: 使用OpenSSL驗證Google Cloud下載的disk.原始 檔案是否符合摘要檔案內容。 
 ---
-= 使用OpenSSL驗證磁碟.RAW檔案和摘要檔案內容
+= 使用 Cloud Volumes ONTAP 驗證 Google Cloud 映像 disk.raw 檔案
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

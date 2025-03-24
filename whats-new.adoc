@@ -36,6 +36,18 @@ summary: 瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。
 
 
 
+== 2025 年 3 月 10 日
+
+
+
+=== 透過 Azure 中的 API 自動建立儲存 VM
+
+您現在可以使用 BlueXP  API 來為 Azure 中的 Cloud Volumes ONTAP 建立，重新命名及刪除其他資料服務儲存 VM 。如果您需要使用儲存 VM 進行管理，使用 API 可自動化儲存 VM 的建立程序，包括必要的網路介面，生命週期和管理 LIF 的組態。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azure.html["管理 Azure 中 Cloud Volumes ONTAP 的資料服務儲存 VM"^]
+
+
+
 == 2025 年 3 月 6 日
 
 
@@ -129,7 +141,7 @@ NetApp 已規劃終止供應（ EOA ）和終止支援（ EOS ）的 Cloud Volum
 
 對於年度或長期承諾， NetApp 建議您在 EOA 日期或授權到期日之前聯絡 NetApp 代表，以確保移轉的先決條件已就緒。如果您沒有 Cloud Volumes ONTAP 節點的長期合約，而且是根據隨選隨付隨用（ PAYGO ）訂閱來執行系統，請務必在 EOS 日期之前規劃您的轉換。對於長期合約和 PAYGO 訂閱，您可以使用 BlueXP  授權轉換工具進行無縫轉換。
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["終止節點型授權的可用性"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["將節點型授權轉換為容量型"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["終止節點型授權的可用性"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["將 Cloud Volumes ONTAP 節點型授權轉換為容量型授權"^]
 
 
 
@@ -225,7 +237,7 @@ WORM （一次寫入多次讀取）和 ARP （自動勒索軟體保護）的內�
 
 深入瞭解這些功能：
 
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["改善防範勒索軟體的能力"]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["啟用適用於 Cloud Volumes ONTAP 的 NetApp 勒索軟體保護解決方案"]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORM 儲存設備"]
 
 

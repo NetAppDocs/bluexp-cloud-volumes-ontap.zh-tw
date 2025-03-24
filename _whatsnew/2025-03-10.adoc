@@ -1,0 +1,11 @@
+= 透過 Azure 中的 API 自動建立儲存 VM
+:allow-uri-read: 
+
+
+
+
+=== 透過 Azure 中的 API 自動建立儲存 VM
+
+您現在可以使用 BlueXP  API 來為 Azure 中的 Cloud Volumes ONTAP 建立，重新命名及刪除其他資料服務儲存 VM 。如果您需要使用儲存 VM 進行管理，使用 API 可自動化儲存 VM 的建立程序，包括必要的網路介面，生命週期和管理 LIF 的組態。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azure.html["管理 Azure 中 Cloud Volumes ONTAP 的資料服務儲存 VM"^]

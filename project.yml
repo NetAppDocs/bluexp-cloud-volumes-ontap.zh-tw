@@ -50,7 +50,7 @@ sidebar:
         url: "/task-planning-your-config.html"
       - title: 設定您的網路
         entries:
-        - title: 網路需求
+        - title: 設定 AWS 網路
           url: "/reference-networking-aws.html"
         - title: 設定 AWS 傳輸閘道
           url: "/task-setting-up-transit-gateway.html"
@@ -109,8 +109,6 @@ sidebar:
               url: "/task-file-verification-linux.html"
             - title: Mac OS 檔案簽章驗證
               url: "/task-file-verification-mac.html"
-          - title: 其他資訊
-            url: "/reference-image-verification-links.html"
       - title: 立即進入市場
         url: "/task-deploy-cvo-azure-mktplc.html"
     - title: 開始使用Google Cloud
@@ -178,13 +176,13 @@ sidebar:
       entries:
       - title: 在BlueXP中使用儲存VM
         url: "/task-managing-svms.html"
-      - title: 在AWS中建立儲存VM
+      - title: 管理 AWS 中的儲存 VM
         flavor: aws
         url: "/task-managing-svms-aws.html"
-      - title: 在Azure中建立儲存VM
+      - title: 管理 Azure 中的儲存 VM
         flavor: azure
         url: "/task-managing-svms-azure.html"
-      - title: 在Google Cloud中建立儲存VM
+      - title: 在 Google Cloud 中管理儲存 VM
         flavor: gcp
         url: "/task-managing-svms-gcp.html"
       - title: 設定 SVM 災難恢復

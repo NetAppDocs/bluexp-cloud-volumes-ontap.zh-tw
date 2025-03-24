@@ -4,7 +4,7 @@ permalink: concept-performance.html
 keywords: performance, technical report, TR, workload, cpu 
 summary: 您可以檢閱效能結果、協助您決定 Cloud Volumes ONTAP 哪些工作負載適合 VMware 。 
 ---
-= 效能
+= 瞭解 Cloud Volumes ONTAP 工作負載的效能監控
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

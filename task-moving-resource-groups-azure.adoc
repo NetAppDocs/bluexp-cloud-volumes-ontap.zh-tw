@@ -4,7 +4,7 @@ permalink: task-moving-resource-groups-azure.html
 keywords: move resource groups, azure, remove working environment, resource groups, azure console, Azure subscriptions 
 summary: 支援Azure資源群組移動、但工作流程僅發生在Azure主控台。Cloud Volumes ONTAP 
 ---
-= 正在移動資源群組
+= 在 Azure 主控台中移動適用於 Cloud Volumes ONTAP 的 Azure 資源群組
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: task-connect-lun.html
 keywords: lun, connect lun, iscsi lun, target iqn, iqn 
 summary: 建立iSCSI磁碟區時、BlueXP會自動為您建立LUN。我們只要在每個磁碟區建立一個LUN、就能輕鬆完成工作、因此不需要管理。建立磁碟區之後、請使用 IQN 從主機連線至 LUN 。 
 ---
-= 將LUN連接至主機
+= 從主機系統連線至 Cloud Volumes ONTAP 上的 LUN
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

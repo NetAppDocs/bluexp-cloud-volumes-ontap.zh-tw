@@ -4,7 +4,7 @@ permalink: task-managing-svms-gcp.html
 keywords: storage virtual machine, vserver, svm, storage vm, supported number, number supported, create svm, create storage vm, create vserver 
 summary: 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可為您的用戶端提供儲存與資料服務。您可能知道這是 SVM 或 Vserver 。根據預設、系統會設定一個儲存 VM 、但部分組態會支援額外的儲存 VM 。 Cloud Volumes ONTAP 
 ---
-= 在Cloud Volumes ONTAP Google Cloud中建立資料服務儲存VM以供其使用
+= 在 Google Cloud 中管理 Cloud Volumes ONTAP 的資料服務儲存 VM
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -114,12 +114,12 @@ BlueXP  也會 `default-data-files`從 NAS 資料生命期移除下列服務、
 需要修改服務、因為Cloud Volumes ONTAP 這樣可確保支援功能可將iSCSI LIF用於傳出管理連線。
 
 .必要的Google Cloud權限
-Connector需要特定權限、才能建立及管理Cloud Volumes ONTAP 儲存VM、以利執行各種HA配對。所需權限包含在中 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["NetApp 提供的原則"]。
+Connector需要特定權限、才能建立及管理Cloud Volumes ONTAP 儲存VM、以利執行各種HA配對。所需的權限包含在 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["NetApp 提供的原則"^]中。
 
 .步驟
 . 使用下列API呼叫建立儲存VM：
 +
-「POST /occm/api/gcp/ha/辦公 環境/｛we_ID｝/svm/」
+`POST /gcp/ha/working-environments/{workingEnvironmentId}/svm/`
 
 +
 申請機構應包括下列項目：
@@ -146,7 +146,7 @@ BlueXP API也支援在HA配對上重新命名及刪除儲存VM。
 .步驟
 . 使用下列API呼叫重新命名儲存VM：
 +
-「PPUT /occm/API/GCP / ha /工作環境/｛we ID｝/SVM」
+`PUT /gcp/ha/working-environments/{workingEnvironmentId}/svm`
 
 +
 申請機構應包括下列項目：
@@ -170,6 +170,6 @@ BlueXP API也支援在HA配對上重新命名及刪除儲存VM。
 .步驟
 . 使用下列API呼叫來刪除儲存VM：
 +
-「刪除/occm/api/gcp/ha/工作 環境/｛we_ID｝/Svm/｛Svm_name｝」
+`DELETE /gcp/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
 

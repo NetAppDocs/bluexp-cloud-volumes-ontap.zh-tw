@@ -4,7 +4,7 @@ permalink: task-manage-aggregates.html
 keywords: aggregates, delete aggregates, add disks, view aggregates 
 summary: 新增磁碟、檢視有關集合體的資訊、以及刪除這些磁碟來管理集合體。 
 ---
-= 管理集合體
+= 管理 Cloud Volumes ONTAP 叢集的集合體
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: task-getting-started-aws-c2s.html
 keywords: commercial cloud services, c2s, secret cloud, top secret cloud, aws secret region, BlueXP 
 summary: 與標準 AWS 區域類似、您可以在 AWS Secret Cloud 和 Top Secret Cloud 環境中使用 BlueXP 來部署 Cloud Volumes ONTAP 、為您的雲端儲存設備提供企業級功能。AWS Secret Cloud 和 Top Secret Cloud 地區是美國特有的封閉區域智慧社群：本頁的指示僅適用於 AWS Secret Cloud 和 Top Secret Cloud 地區使用者。 
 ---
-= 在 AWS Secret Cloud 和 Top Secret Cloud 地區部署 Cloud Volumes ONTAP
+= 在 AWS Secret Cloud 或 AWS Top Secret Cloud 中部署 Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

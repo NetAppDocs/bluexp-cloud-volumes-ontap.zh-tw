@@ -4,7 +4,7 @@ permalink: concept-ha-google-cloud.html
 keywords: high-availability, HA, mediator, concepts, understanding, overview, takeover, giveback, rpo, rto, nondisruptive, ha pairs, node, nodes, synchronous, resync, recovery point objective, recovery time objective, failover, mount, remount, failure, data access, access, ip address, performance, gcp, gcp ha, google cloud ha, ha in google cloud 
 summary: Cloud Volumes ONTAP 高可用度組態可提供不中斷營運和容錯功能。在Google Cloud中、資料會在兩個節點之間同步鏡射。 
 ---
-= Google Cloud的高可用度配對
+= 瞭解 Google Cloud 中的 Cloud Volumes ONTAP HA 配對
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: task-aws-key-management.html
 keywords: aws, amazon, encryption, NVE, NetApp volume encryption, KMIP, kms, key manager service 
 summary: 為您的第三方金鑰管理服務使用 AWS 的金鑰管理服務。 
 ---
-= 使用 AWS 金鑰管理服務管理金鑰
+= 使用 AWS 金鑰管理服務管理 Cloud Volumes ONTAP 加密金鑰
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

@@ -4,7 +4,7 @@ permalink: task-manage-capacity-settings.html
 keywords: aggregates, delete aggregates, add disks, view aggregates 
 summary: 新增磁碟、檢視有關集合體的資訊、以及刪除這些磁碟來管理集合體。 
 ---
-= 管理Connector上的容量設定
+= 管理連接器上的 Cloud Volumes ONTAP Aggregate 容量
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

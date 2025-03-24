@@ -4,7 +4,7 @@ permalink: task-managing-svms-azure.html
 keywords: storage virtual machine, vserver, svm, storage vm, supported number, number supported 
 summary: 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可為您的用戶端提供儲存與資料服務。您可能知道這是 SVM 或 Vserver 。根據預設、系統會設定一個儲存 VM 、但部分組態會支援額外的儲存 VM 。 Cloud Volumes ONTAP 
 ---
-= 在Cloud Volumes ONTAP Azure中建立資料服務儲存VM以供其使用
+= 管理 Azure 中 Cloud Volumes ONTAP 的資料服務儲存 VM
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,706 +14,127 @@ summary: 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可�
 
 
 [role="lead"]
-儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可為您的用戶端提供儲存與資料服務。您可能知道這是 _SVM_ 或 _vserver_ 。根據預設、系統會設定一個儲存VM、但在Azure上執行時、則支援其他儲存VM。Cloud Volumes ONTAP Cloud Volumes ONTAP
+儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可為您的用戶端提供儲存與資料服務。您可能知道這是 _SVM_ 或 _vserver_ 。根據預設， Cloud Volumes ONTAP 設有一個儲存 VM ，但在 Azure 中執行 Cloud Volumes ONTAP 時，您可以建立其他儲存 VM 。
 
-若要建立額外的資料服務儲存VM、您必須在Azure中配置IP位址、然後執行ONTAP 支援功能指令、以建立儲存VM和資料LIF。
-
-
-NOTE: 若要執行其他 NIC 相關工作、您可以在 Azure 中指派具有適當權限的網路參與者角色或自訂角色。有關這些 NIC 相關權限的詳細信息，請參閱 https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface?tabs=azure-portal#permissions["Microsoft Azure 文件"^]。
+若要在 Azure 上建立及管理其他資料服務儲存 VM ，您應該使用 BlueXP  API 。這是因為 API 會自動化建立儲存 VM 和設定所需網路介面的程序。建立儲存 VM 時， BlueXP  會設定所需的 LIF 服務，以及從儲存 VM 輸出 SMB/CIFS 通訊所需的 iSCSI LIF 。
 
 
 
 == 支援的儲存 VM 數量
 
-從9.9.0版本開始、特定Cloud Volumes ONTAP 的支援功能可支援多個儲存VM。前往 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["發行說明 Cloud Volumes ONTAP"^] 驗證Cloud Volumes ONTAP 支援的儲存VM數量是否適用於您的版本的支援。
+從 Cloud Volumes ONTAP 9.0.0 開始，根據您的授權，特定組態可支援多個儲存 VM 。請參閱 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["發行說明 Cloud Volumes ONTAP"^]，確認您的 Cloud Volumes ONTAP 版本支援的儲存 VM 數量。
 
-所有其他 Cloud Volumes ONTAP 的支援功能均支援單一資料服務儲存 VM 、以及一部用於災難恢復的目的地儲存 VM 。如果來源儲存VM發生中斷、您可以啟動目的地儲存VM進行資料存取。
+早於 9.9.0 的所有 Cloud Volumes ONTAP 版本都支援一個資料服務儲存 VM ，以及一個目的地儲存 VM ，用於災難恢復。如果來源儲存VM發生中斷、您可以啟動目的地儲存VM進行資料存取。
+
+.開始之前
+Connector 需要特定權限來建立和管理 Cloud Volumes ONTAP 的儲存 VM 。所需的權限包含在 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["NetApp 提供的原則"^]中。
 
 
 
-== 在Azure中配置IP位址
+== 建立儲存VM
 
-您必須先在Azure中配置IP位址、才能建立儲存VM並分配LIF。
+根據您的組態和授權類型，您可以使用 BlueXP  API ，在單一節點系統或高可用度（ HA ）組態中建立多個儲存 VM 。
+
+.關於這項工作
+當您使用 API 建立儲存 VM ，以及設定所需的網路介面時， BlueXP  也會從 NAS 資料 LIF 移除下列服務，並將這些服務新增至用於輸出管理連線的 iSCSI 資料 LIF ，藉此修改 `default-data-files`資料儲存 VM 上的原則：
+
+* `data-fpolicy-client`
+* `management-ad-client`
+* `management-dns-client`
+* `management-ldap-client`
+* `management-nis-client`
+
 
 
 
 === 單一節點系統
 
-在您建立儲存VM並分配LIF之前、必須先將IP位址指派給Azure中的nic0。
+使用下列 API 呼叫在單一節點系統上建立儲存 VM 。
 
-您需要為資料LIF存取建立IP位址、並為儲存VM（SVM）管理LIF建立另一個選用的IP位址。此管理LIF可連線至SnapCenter 諸如VMware等管理工具。
+`POST /azure/vsa/working-environments/{workingEnvironmentId}/svm`
 
-.步驟
-. 登入Azure入口網站、然後開啟*虛擬機器*服務。
-. 按一下Cloud Volumes ONTAP 「不完整虛擬機器」的名稱。
-. 按一下*網路*。
-. 按一下nic0的網路介面名稱。
-. 在*設定*下、按一下* IP組態*。
-. 按一下「 * 新增 * 」。
-. 輸入IP組態的名稱、選取*動態*、然後按一下*確定*。
-. 按一下您剛才建立的IP組態名稱、將*指派*變更為*靜態*、然後按一下*儲存*。
-+
-最好使用靜態IP位址、因為靜態IP可確保IP位址不會變更、有助於避免不必要的應用程式中斷運作。
+申請機構應包括下列項目：
 
-
-
-如果您要建立SVM管理LIF、請重複這些步驟以建立其他IP位址。
-
-.完成後
-複製您剛建立的私有IP位址。當您為新的儲存VM建立生命期時、必須指定這些IP位址。
-
+[source, json]
+----
+{ "svmName": "myNewSvm1"
+   "svmPassword": "optional, the API takes the cluster password if not provided"
+   "mgmtLif": "optional, to create an additional management LIF, if you want to use the storage VM for management purposes"}
+----
 
 
 === HA配對
 
-對於高可用度（ HA ）配對，您應該存取叢集中的每個儲存 VM （ SVM ），並在 nic0 下為每個 SVM 建立對應的 IP 。如何為HA配對分配IP位址、取決於您使用的儲存傳輸協定。在 HA 模式中，使用者必須確保正確設定 IP 位址，以支援容錯移轉和備援，這對於維持儲存系統的高可用度和可靠性而言是不可或缺的。
+使用下列 API 呼叫，在 Azure HA 組態中建立儲存 VM ：
 
-[role="tabbed-block"]
-====
-.iSCSI
---
-在您建立儲存VM並分配LIF之前、必須先將iSCSI IP位址指派給Azure中的nic0。iSCSI的IPS會指派給nic0而非負載平衡器、因為iSCSI會使用ALUA進行容錯移轉。
+`POST /azure/ha/working-environments/{workingEnvironmentId}/svm`
 
-您需要建立下列IP位址：
+申請機構應包括下列項目：
 
-* 從節點1存取iSCSI資料LIF的IP位址
-* 從節點2存取iSCSI資料LIF的IP位址
-* SVM 管理 LIF 的選用 IP 位址
-+
-此管理LIF可連線至SnapCenter 諸如VMware等管理工具。
+[source, json]
+----
+{ "svmName": "NewSvmName"
+   "svmPassword": "optional value, the API takes the cluster password if not provided"
+   "mgmtLif": "optional value, to create an additional management LIF, if you want to use the storage VM for management purposes"}
+----
 
 
+== 在單一節點系統和 HA 配對上管理儲存 VM
 
-.步驟
-. 登入Azure入口網站、然後開啟*虛擬機器*服務。
-. 按一下Cloud Volumes ONTAP 節點1的「支援不支援虛擬機器」名稱。
-. 按一下*網路*。
-. 按一下nic0的網路介面名稱。
-. 在*設定*下、按一下* IP組態*。
-. 按一下「 * 新增 * 」。
-. 輸入IP組態的名稱、選取*動態*、然後按一下*確定*。
-. 按一下您剛才建立的IP組態名稱、將*指派*變更為*靜態*、然後按一下*儲存*。
-+
-最好使用靜態IP位址、因為靜態IP可確保IP位址不會變更、有助於避免不必要的應用程式中斷運作。
-
-. 在節點2上重複這些步驟。
-. 如果您要建立SVM管理LIF、請在節點1上重複這些步驟。
+使用 BlueXP  API ，您可以在單一節點和 HA 組態中重新命名和刪除儲存 VM 。
 
 
---
-.NFS
---
-您用於NFS的IP位址會配置在負載平衡器中、以便在發生容錯移轉事件時、IP位址可以移轉到其他節點。
 
-您需要建立下列IP位址：
+=== 重新命名儲存VM
 
-* 單一IP位址、可從節點1存取NAS資料LIF
-* 單一IP位址、可從節點2存取NAS資料LIF
-* 儲存VM（SVM）管理LIF的選用IP位址
-+
-即使未使用 iSCSI 傳輸協定， DNS 通訊仍需要 iSCSI 生命。iSCSI LIF用於此用途、因為它不會在容錯移轉時移轉。
-
-+
-此管理LIF可連線至SnapCenter 諸如VMware等管理工具。
-
-
+若要重新命名儲存 VM ，您應該提供現有儲存 VM 和新儲存 VM 的名稱做為參數。
 
 .步驟
-. 在Azure入口網站中、開啟*負載平衡器*服務。
-. 按一下HA配對的負載平衡器名稱。
-. 從節點1建立資料LIF存取的前端IP組態、從節點2存取資料LIF的前端IP組態、以及儲存VM（SVM）管理LIF的另一個選用前端IP。
+* 使用下列 API 呼叫重新命名單一節點系統上的儲存 VM ：
 +
-.. 在*設定*下、按一下*前端IP組態*。
-.. 按一下「 * 新增 * 」。
-.. 輸入前端IP的名稱、選取Cloud Volumes ONTAP 該子網路做為「靜態HA配對」、保留「*動態*」選項、並在「可用區域」中保留「*區域-備援*」選項、以確保區域故障時IP位址仍可繼續使用。
-.. 按一下「 * 儲存 * 」。
-+
-image:screenshot_azure_frontend_ip.png["在Azure入口網站中新增前端IP位址的快照、其中會選取名稱和子網路。"]
-
-.. 按一下您剛才建立的前端IP組態名稱、將*指派*變更為*靜態*、然後按一下*儲存*。
-+
-最好使用靜態IP位址、因為靜態IP可確保IP位址不會變更、有助於避免不必要的應用程式中斷運作。
-
-
-
-. 為您剛建立的每個前端IP新增健全狀況探查。
-+
-.. 在負載平衡器的*設定*下、按一下*健全狀況探查*。
-.. 按一下「 * 新增 * 」。
-.. 輸入健全狀況探針的名稱、然後輸入介於63005和65000之間的連接埠號碼。保留其他欄位的預設值。
-+
-連接埠號碼必須介於63005和65000之間。例如、如果您要建立三個健全狀況探針、可以輸入使用連接埠編號63005、63006和63007的探針。
+`PUT /azure/vsa/working-environments/{workingEnvironmentId}/svm`
 
 +
-image:screenshot_azure_health_probe.gif["在Azure入口網站中新增健全狀況探針的快照、其中會輸入名稱和連接埠。"]
+申請機構應包括下列項目：
 
-
-
-. 為每個前端IP建立新的負載平衡規則。
 +
-.. 在負載平衡器的*設定*下、按一下*負載平衡規則*。
-.. 按一下*「Add*（新增*）」、然後輸入所需資訊：
+[source, json]
+----
+{
+  "svmNewName": "NewSvmName",
+  "svmName": "OldSvmName"
+}
+----
+* 使用下列 API 呼叫重新命名 HA 組態中的儲存 VM ：
 +
-*** *名稱*：輸入規則的名稱。
-*** * IP Version *：選取* IPV*。
-*** *前端IP位址*：選取您剛建立的前端IP位址之一。
-*** * HA連接埠*：啟用此選項。
-*** *後端集區*：保留已選取的預設後端集區。
-*** *健全狀況探查*：選取您為所選前端IP所建立的健全狀況探查。
-*** *工作階段持續性*：選取*無*。
-*** *浮動IP*：選擇*已啟用*。
+`PUT /azure/ha/working-environments/{workingEnvironmentId}/svm`
+
 +
-image:screenshot_azure_lb_rule.gif["在Azure入口網站中新增負載平衡規則的快照、其中包含上述欄位。"]
+申請機構應包括下列項目：
 
-
-
-
-
-. 確認Cloud Volumes ONTAP 適用於此功能的網路安全群組規則可讓負載平衡器針對上述步驟4所建立的健全狀況探查傳送TCP探查。請注意、這是預設允許的。
-
-
---
-.中小企業
---
-用於SMB資料的IP位址會配置在負載平衡器中、以便在發生容錯移轉事件時、IP位址可以移轉到其他節點。
-
-您需要在負載平衡器中建立下列IP位址：
-
-* 單一IP位址、可從節點1存取NAS資料LIF
-* 單一IP位址、可從節點2存取NAS資料LIF
-* 每個VM各自的NIC 0中節點1上iSCSI LIF的一個IP位址
-* 節點2上iSCSI LIF的一個IP位址
 +
-DNS和SMB通訊需要iSCSI LIF。iSCSI LIF用於此用途、因為它不會在容錯移轉時移轉。
+[source, json]
+----
+{
+  "svmNewName": "NewSvmName",
+  "svmName": "OldSvmName"
+}
+----
 
-* 儲存VM（SVM）管理LIF的選用IP位址
-+
-此管理LIF可連線至SnapCenter 諸如VMware等管理工具。
 
 
+
+=== 刪除儲存VM
+
+在單一節點或 HA 組態中，如果儲存 VM 沒有任何作用中的 Volume ，您可以移除該 VM 。
 
 .步驟
-. 在Azure入口網站中、開啟*負載平衡器*服務。
-. 按一下HA配對的負載平衡器名稱。
-. 僅為資料和SVM LIF建立所需的前端IP組態數目：
+* 使用下列 API 呼叫來刪除單一節點系統上的儲存 VM ：
 +
+`DELETE /azure/vsa/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
-NOTE: 前端IP只能在每個對應SVM的NIC 0下建立。如需如何將 IP 位址新增至 SVM NIC0 的詳細資訊、請參閱「步驟 7 [ 超連結 ] 」
-
-+
-.. 在*設定*下、按一下*前端IP組態*。
-.. 按一下「 * 新增 * 」。
-.. 輸入前端IP的名稱、選取Cloud Volumes ONTAP 該子網路做為「靜態HA配對」、保留「*動態*」選項、並在「可用區域」中保留「*區域-備援*」選項、以確保區域故障時IP位址仍可繼續使用。
-.. 按一下「 * 儲存 * 」。
-+
-image:screenshot_azure_frontend_ip.png["在Azure入口網站中新增前端IP位址的快照、其中會選取名稱和子網路。"]
-
-.. 按一下您剛才建立的前端IP組態名稱、將*指派*變更為*靜態*、然後按一下*儲存*。
-+
-最好使用靜態IP位址、因為靜態IP可確保IP位址不會變更、有助於避免不必要的應用程式中斷運作。
-
-
-
-. 為您剛建立的每個前端IP新增健全狀況探查。
-+
-.. 在負載平衡器的*設定*下、按一下*健全狀況探查*。
-.. 按一下「 * 新增 * 」。
-.. 輸入健全狀況探針的名稱、然後輸入介於63005和65000之間的連接埠號碼。保留其他欄位的預設值。
-+
-連接埠號碼必須介於63005和65000之間。例如、如果您要建立三個健全狀況探針、可以輸入使用連接埠編號63005、63006和63007的探針。
-
-+
-image:screenshot_azure_health_probe.gif["在Azure入口網站中新增健全狀況探針的快照、其中會輸入名稱和連接埠。"]
-
-
-
-. 為每個前端IP建立新的負載平衡規則。
-+
-.. 在負載平衡器的*設定*下、按一下*負載平衡規則*。
-.. 按一下*「Add*（新增*）」、然後輸入所需資訊：
-+
-*** *名稱*：輸入規則的名稱。
-*** * IP Version *：選取* IPV*。
-*** *前端IP位址*：選取您剛建立的前端IP位址之一。
-*** * HA連接埠*：啟用此選項。
-*** *後端集區*：保留已選取的預設後端集區。
-*** *健全狀況探查*：選取您為所選前端IP所建立的健全狀況探查。
-*** *工作階段持續性*：選取*無*。
-*** *浮動IP*：選擇*已啟用*。
-+
-image:screenshot_azure_lb_rule.gif["在Azure入口網站中新增負載平衡規則的快照、其中包含上述欄位。"]
-
-
-
-
-
-. 確認Cloud Volumes ONTAP 適用於此功能的網路安全群組規則可讓負載平衡器針對上述步驟4所建立的健全狀況探查傳送TCP探查。請注意、這是預設允許的。
-. 對於iSCSI LIF、請新增NIC 0的IP位址。
-+
-.. 按一下Cloud Volumes ONTAP 「不完整虛擬機器」的名稱。
-.. 按一下*網路*。
-.. 按一下nic0的網路介面名稱。
-.. 在「設定」下、按一下「* IP組態*」。
-.. 按一下「 * 新增 * 」。
-+
-image:screenshot_azure_ip_config_add.png["Azure入口網站中IP組態頁面的快照"]
-
-.. 輸入IP組態的名稱、選取動態、然後按一下*確定*。
-+
-image:screenshot_azure_ip_add_config_window.png["新增IP組態視窗的快照"]
-
-.. 按一下您剛才建立的IP組態名稱、將指派變更為靜態、然後按一下*儲存*。
-
-
-
-
-
-NOTE: 最好使用靜態IP位址、因為靜態IP可確保IP位址不會變更、有助於避免不必要的應用程式中斷運作。
-
---
-====
-.完成後
-複製您剛建立的私有IP位址。當您為新的儲存VM建立生命期時、必須指定這些IP位址。
-
-
-
-== 建立儲存VM和LIF
-
-在Azure中配置IP位址之後、您可以在單一節點系統或HA配對上建立新的儲存VM。
-
-
-
-=== 單一節點系統
-
-如何在單一節點系統上建立儲存VM和LIF、取決於您使用的儲存傳輸協定。
-
-[role="tabbed-block"]
-====
-.iSCSI
---
-請依照下列步驟建立新的儲存VM、以及所需的LIF。
-
-.步驟
-. 建立儲存虛擬機器和通往儲存虛擬機器的路由。
-+
-[source, cli]
-----
-vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-name> -rootvolume-security-style unix
-----
-+
-[source, cli]
-----
-network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
-----
-. 建立資料LIF：
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
-----
-. 選用：建立儲存VM管理LIF。
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default
-----
-. 將一個或多個集合體指派給儲存VM。
-+
-[source, cli]
-----
-vserver add-aggregates -vserver svm_2 -aggregates aggr1,aggr2
-----
-+
-這是必要步驟、因為新的儲存VM需要存取至少一個Aggregate、才能在儲存VM上建立磁碟區。
-
-
-
---
-.NFS
---
-請依照下列步驟建立新的儲存VM、以及所需的LIF。
-
-.步驟
-. 建立儲存虛擬機器和通往儲存虛擬機器的路由。
-+
-[source, cli]
-----
-vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-name> -rootvolume-security-style unix
-----
-+
-[source, cli]
-----
-network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
-----
-. 建立資料LIF：
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -lif <lif-name> -service-policy default-data-files -address <nas-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
-----
-. 選用：建立儲存VM管理LIF。
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default
-----
-. 將一個或多個集合體指派給儲存VM。
-+
-[source, cli]
-----
-vserver add-aggregates -vserver svm_2 -aggregates aggr1,aggr2
-----
-+
-這是必要步驟、因為新的儲存VM需要存取至少一個Aggregate、才能在儲存VM上建立磁碟區。
-
-
-
---
-.中小企業
---
-請依照下列步驟建立新的儲存VM、以及所需的LIF。
-
-.步驟
-. 建立儲存虛擬機器和通往儲存虛擬機器的路由。
-+
-[source, cli]
-----
-vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-name> -rootvolume-security-style unix
-----
-+
-[source, cli]
-----
-network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
-----
-. 建立資料LIF：
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -lif <lif-name> -service-policy default-data-files -address <nas-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
-----
-. 選用：建立儲存VM管理LIF。
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default
-----
-. 將一個或多個集合體指派給儲存VM。
-+
-[source, cli]
-----
-vserver add-aggregates -vserver svm_2 -aggregates aggr1,aggr2
-----
-+
-這是必要步驟、因為新的儲存VM需要存取至少一個Aggregate、才能在儲存VM上建立磁碟區。
-
-
-
---
-====
-
-
-=== HA配對
-
-如何在HA配對上建立儲存VM和LIF、取決於您使用的儲存傳輸協定。
-
-[role="tabbed-block"]
-====
-.iSCSI
---
-請依照下列步驟建立新的儲存VM、以及所需的LIF。
-
-.步驟
-. 建立儲存虛擬機器和通往儲存虛擬機器的路由。
+* 使用下列 API 呼叫來刪除 HA 組態中的儲存 VM ：
 +
-[source, cli]
-----
-vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-name> -rootvolume-security-style unix
-----
-+
-[source, cli]
-----
-network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
-----
-. 建立資料生命。在此步驟中，您可以使用在中分配的 IP link:task-managing-svms-azure.html#ha-pair["先前的程序"]做為資料生命週期。
-+
-.. 使用下列命令在節點1上建立iSCSI LIF。
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
-----
-.. 使用下列命令在節點2上建立iSCSI LIF。
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node2> -data-protocol iscsi
-----
-
-
-. 選用：在節點1上建立儲存VM管理LIF。
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default
-----
-+
-此管理LIF可連線至SnapCenter 諸如VMware等管理工具。
-
-. 將一個或多個集合體指派給儲存VM。
-+
-[source, cli]
-----
-vserver add-aggregates -vserver svm_2 -aggregates aggr1,aggr2
-----
-+
-這是必要步驟、因為新的儲存VM需要存取至少一個Aggregate、才能在儲存VM上建立磁碟區。
-
-. 如果您執行Cloud Volumes ONTAP 的是版本不含更新版本的版本、請修改儲存VM的網路服務原則。
-+
-.. 輸入下列命令以存取進階模式。
-+
-[source, cli]
-----
-::> set adv -con off
-----
-+
-需要修改服務、因為Cloud Volumes ONTAP 這樣可確保支援功能可將iSCSI LIF用於傳出管理連線。
-
-+
-[source, cli]
-----
-network interface service-policy remove-service -vserver <svm-name> -policy default-data-files -service data-fpolicy-client
-network interface service-policy remove-service -vserver <svm-name> -policy default-data-files -service management-ad-client
-network interface service-policy remove-service -vserver <svm-name> -policy default-data-files -service management-dns-client
-network interface service-policy remove-service -vserver <svm-name> -policy default-data-files -service management-ldap-client
-network interface service-policy remove-service -vserver <svm-name> -policy default-data-files -service management-nis-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-blocks -service data-fpolicy-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-blocks -service management-ad-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-blocks -service management-dns-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-blocks -service management-ldap-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-blocks -service management-nis-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service data-fpolicy-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-ad-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-dns-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-ldap-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-nis-client
-----
-
-
-
-
---
-.NFS
---
-請依照下列步驟建立新的儲存VM、以及所需的LIF。
-
-.步驟
-. 建立儲存虛擬機器和通往儲存虛擬機器的路由。
-+
-[source, cli]
-----
-vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-name> -rootvolume-security-style unix
-----
-+
-[source, cli]
-----
-network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
-----
-. 建立資料生命。在此步驟中，您可以使用在中分配的 IP link:task-managing-svms-azure.html#ha-pair["先前的程序"]做為資料生命週期。
-+
-.. 使用下列命令在節點1上建立NAS LIF。
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -lif <lif-name> -service-policy default-data-files -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe1>
-----
-.. 使用下列命令在節點2上建立NAS LIF。
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -lif <lif-name> -service-policy default-data-files -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node2> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe2>
-----
-
-
-. 建立 iSCSI 生命負載以提供 DNS 通訊。即使未使用 iSCSI 傳輸協定， DNS 通訊仍需要 iSCSI 生命。
-+
-.. 使用下列命令在節點1上建立iSCSI LIF。
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
-----
-.. 使用下列命令在節點2上建立iSCSI LIF。
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node2> -data-protocol iscsi
-----
-
-
-. 選用：在節點1上建立儲存VM管理LIF。
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default -probe-port <port-number-for-azure-health-probe3>
-----
-+
-此管理LIF可連線至SnapCenter 諸如VMware等管理工具。
-
-. 選用：在節點1上建立儲存VM管理LIF。
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default -probe-port <port-number-for-azure-health-probe3>
-----
-+
-此管理LIF可連線至SnapCenter 諸如VMware等管理工具。
-
-. 將一個或多個集合體指派給儲存VM。
-+
-[source, cli]
-----
-vserver add-aggregates -vserver svm_2 -aggregates aggr1,aggr2
-----
-+
-這是必要步驟、因為新的儲存VM需要存取至少一個Aggregate、才能在儲存VM上建立磁碟區。
-
-. 如果您執行Cloud Volumes ONTAP 的是版本不含更新版本的版本、請修改儲存VM的網路服務原則。
-+
-.. 輸入下列命令以存取進階模式。
-+
-[source, cli]
-----
-::> set adv -con off
-----
-+
-需要修改服務、因為Cloud Volumes ONTAP 這樣可確保支援功能可將iSCSI LIF用於傳出管理連線。
-
-+
-[source, cli]
-----
-network interface service-policy remove-service -vserver <svm-name> -policy default-data-files -service data-fpolicy-client
-network interface service-policy remove-service -vserver <svm-name> -policy default-data-files -service management-ad-client
-network interface service-policy remove-service -vserver <svm-name> -policy default-data-files -service management-dns-client
-network interface service-policy remove-service -vserver <svm-name> -policy default-data-files -service management-ldap-client
-network interface service-policy remove-service -vserver <svm-name> -policy default-data-files -service management-nis-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-blocks -service data-fpolicy-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-blocks -service management-ad-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-blocks -service management-dns-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-blocks -service management-ldap-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-blocks -service management-nis-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service data-fpolicy-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-ad-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-dns-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-ldap-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-nis-client
-----
-
-
-
-
---
-.中小企業
---
-請依照下列步驟建立新的儲存VM、以及所需的LIF。
-
-.步驟
-. 建立儲存虛擬機器和通往儲存虛擬機器的路由。
-+
-[source, cli]
-----
-vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-name> -rootvolume-security-style unix
-----
-+
-[source, cli]
-----
-network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
-----
-. 建立 NAS 資料生命。在此步驟中，您可以使用在中分配的 IP link:task-managing-svms-azure.html#ha-pair["先前的程序"]做為資料生命週期。
-+
-.. 使用下列命令在節點1上建立NAS LIF。
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -lif <lif-name> -service-policy default-data-files -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe1>
-----
-.. 使用下列命令在節點2上建立NAS LIF。
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -lif <lif-name> -service-policy default-data-files -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node2> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe2>
-----
-
-
-. 建立 iSCSI 生命負載以提供 DNS 通訊。即使未使用 iSCSI 傳輸協定， DNS 通訊仍需要 iSCSI 生命。
-+
-.. 使用下列命令在節點1上建立iSCSI LIF。
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
-----
-.. 使用下列命令在節點2上建立iSCSI LIF。
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node2> -data-protocol iscsi
-----
-
-
-. 選用：在節點1上建立儲存VM管理LIF。
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default -probe-port <port-number-for-azure-health-probe3>
-----
-+
-此管理LIF可連線至SnapCenter 諸如VMware等管理工具。
-
-. 將一個或多個集合體指派給儲存VM。
-+
-[source, cli]
-----
-vserver add-aggregates -vserver svm_2 -aggregates aggr1,aggr2
-----
-+
-這是必要步驟、因為新的儲存VM需要存取至少一個Aggregate、才能在儲存VM上建立磁碟區。
-
-. 如果您執行Cloud Volumes ONTAP 的是版本不含更新版本的版本、請修改儲存VM的網路服務原則。
-+
-.. 輸入下列命令以存取進階模式。
-+
-[source, cli]
-----
-::> set adv -con off
-----
-+
-需要修改服務、因為Cloud Volumes ONTAP 這樣可確保支援功能可將iSCSI LIF用於傳出管理連線。
-
-+
-[source, cli]
-----
-network interface service-policy remove-service -vserver <svm-name> -policy default-data-files -service data-fpolicy-client
-network interface service-policy remove-service -vserver <svm-name> -policy default-data-files -service management-ad-client
-network interface service-policy remove-service -vserver <svm-name> -policy default-data-files -service management-dns-client
-network interface service-policy remove-service -vserver <svm-name> -policy default-data-files -service management-ldap-client
-network interface service-policy remove-service -vserver <svm-name> -policy default-data-files -service management-nis-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-blocks -service data-fpolicy-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-blocks -service management-ad-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-blocks -service management-dns-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-blocks -service management-ldap-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-blocks -service management-nis-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service data-fpolicy-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-ad-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-dns-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-ldap-client
-network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-nis-client
-----
-
-
+`DELETE /azure/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
 
---
-====
-.接下來呢？
-在HA配對上建立儲存VM之後、最好先等待12小時、再在該SVM上配置儲存設備。從發行版的《21》開始、BlueXP會以12小時的時間間隔掃描HA配對負載平衡器的設定。Cloud Volumes ONTAP如果有新的SVM、則BlueXP會啟用可縮短非計畫性容錯移轉的設定。

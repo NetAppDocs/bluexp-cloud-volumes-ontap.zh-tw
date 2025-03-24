@@ -4,7 +4,7 @@ permalink: task-convert-node-capacity.html
 keywords: license conversion, convert node-based to capacity based, by-node to by-capacity, bluexp license conversion for node based 
 summary: 當節點型授權的可用度結束（ EOA ）之後，您應該使用 BlueXP  授權轉換工具來轉換為容量型授權。 
 ---
-= 將節點型授權轉換為容量型
+= 將 Cloud Volumes ONTAP 節點型授權轉換為容量型授權
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

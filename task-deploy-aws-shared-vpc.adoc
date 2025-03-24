@@ -4,7 +4,7 @@ permalink: task-deploy-aws-shared-vpc.html
 keywords: shared vpc, aws shared vpc, vpc sharing, shared subnet, deploy shared vpc, assume role 
 summary: 從9.11.1版開始、Cloud Volumes ONTAP AWS支援搭配VPC共享功能的更新版、VPC共用功能可讓您的組織與其他AWS帳戶共用子網路。若要使用此組態、您必須設定AWS環境、然後使用API部署HA配對。 
 ---
-= 在共享子網路中部署HA配對
+= 在 AWS 共用子網路中部署 Cloud Volumes ONTAP HA 配對
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

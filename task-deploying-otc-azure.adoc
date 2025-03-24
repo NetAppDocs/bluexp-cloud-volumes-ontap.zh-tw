@@ -4,7 +4,7 @@ permalink: task-deploying-otc-azure.html
 keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create, azure, BYOL, license key, serial number, tags, azure tags, location, license, preconfigured packages, programmatic deployments, disk size, write speed, access control, volume protection, usage profile, register, CIFS share, quota, qtree, HA, HA pair, associate subscription, azure marketplace, marketplace subscription, cloud data sense, cloud backup 
 summary: 您可以Cloud Volumes ONTAP 在Cloud Volumes ONTAP BlueXP中建立一個運作環境、在Azure中啟動單一的一套功能完善的系統。 
 ---
-= 在 Cloud Volumes ONTAP Azure 中啟動
+= 在Cloud Volumes ONTAP Azure中推出功能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -49,7 +49,7 @@ link:task-set-up-licensing-azure.html["瞭解如何設定授權"^]。
 ====
 
 
-== 在Cloud Volumes ONTAP Azure中啟動單一節點的不完整系統
+== 在 Azure 中啟動單節點 Cloud Volumes ONTAP 系統
 
 如果您想要在Cloud Volumes ONTAP Azure中啟動單一節點的功能、您需要在BlueXP中建立單一節點的工作環境。
 
@@ -276,7 +276,7 @@ BlueXP部署Cloud Volumes ONTAP 了這個功能完善的系統。您可以追蹤
 
 
 
-== 在Cloud Volumes ONTAP Azure中啟動一套功能完善的
+== 在 Azure 中啟動 Cloud Volumes ONTAP HA 配對
 
 如果您想要在Cloud Volumes ONTAP Azure中啟動一套功能不均的HA配對、您必須在BlueXP中建立HA工作環境。
 

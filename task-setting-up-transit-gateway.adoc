@@ -4,7 +4,7 @@ permalink: task-setting-up-transit-gateway.html
 keywords: transit gateway, aws, amazon web services, transit gateway, floating ip, client access, nas, outside, vpc, virtual private cloud, route table 
 summary: 設定 AWS 傳輸閘道、讓 NAS 用戶端從 Cloud Volumes ONTAP 駐留的 VPC 外部存取浮動 IP 位址。這項功能非常實用、因為當發生故障時、浮動 IP 會自動在節點之間移轉。 
 ---
-= 在多個 AZs 中設定 HA 配對的 AWS 傳輸閘道
+= 為 Cloud Volumes ONTAP HA 配對設定 AWS 傳輸閘道
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

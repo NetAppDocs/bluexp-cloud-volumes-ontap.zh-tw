@@ -4,7 +4,7 @@ permalink: task-create-aggregates.html
 keywords: storage, provisioning, aggregates, provision, create, advanced allocation, creating aggregates, adding an aggregate, add an aggregate, create an aggregate 
 summary: 您可以自行建立集合體、或讓BlueXP在建立磁碟區時為您執行集合體。自行建立集合體的好處在於、您可以選擇基礎磁碟大小、以便根據所需的容量或效能來調整集合體大小。 
 ---
-= 建立Aggregate
+= 為 Cloud Volumes ONTAP 系統建立 Aggregate
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

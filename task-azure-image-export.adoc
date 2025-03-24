@@ -4,7 +4,7 @@ permalink: task-azure-image-export.html
 keywords: Azure, image, VHD, image signature file, export, marketplace, 
 summary: 您可以從 Azure Marketplace 匯出 ONTAP 映像、以驗證 VHD 檔案的簽章。 
 ---
-= 映像從 Azure Marketplace 匯出
+= 從 Azure 市場匯出適用於 Cloud Volumes ONTAP 的 VHD 映像
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: task-create-volumes.html
 keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, cloud backup 
 summary: 如果您在啟動初始Cloud Volumes ONTAP 的支援功能後需要更多儲存設備、您可以從FlexVol BlueXP建立新的支援NFS、CIFS或iSCSI的支援功能。 
 ---
-= 建立FlexVol 功能區
+= 在 Cloud Volumes ONTAP 系統上建立 FlexVol volume
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

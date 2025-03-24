@@ -4,7 +4,7 @@ permalink: task-sync-time.html
 keywords: set up, setting up, ntp, time, synch 
 summary: 指定 NTP 伺服器可同步處理網路中系統之間的時間、有助於避免時間差異所造成的問題。 
 ---
-= 使用 NTP 同步系統時間
+= 使用 NTP 伺服器同步 Cloud Volumes ONTAP 系統時間
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

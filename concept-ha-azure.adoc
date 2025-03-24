@@ -4,7 +4,7 @@ permalink: concept-ha-azure.html
 keywords: high-availability, HA, concepts, understanding, overview, takeover, giveback, rpo, rto, nondisruptive, ha pairs, node, nodes, recovery point objective, recovery time objective, nas, nfs, cifs, iscsi, mpio, alua, failover, failure, azure, shared storage, active, passive, load balancer, storage accounts, page blobs 
 summary: Cloud Volumes ONTAP 高可用度（ HA ）配對可在雲端環境發生故障時、提供企業級可靠性和持續營運。在 Azure 中、儲存設備會在兩個節點之間共享。 
 ---
-= Azure 中的高可用度配對
+= 瞭解 Azure 中的 Cloud Volumes ONTAP HA 配對
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

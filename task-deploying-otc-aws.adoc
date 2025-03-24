@@ -4,7 +4,7 @@ permalink: task-deploying-otc-aws.html
 keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create, aws, serial number, license key, byol, test instance, aws tags, tags, location, vpc, encryption, security group, aws-managed encryption, disk size, disk type, write speed, licensing, IAM role, preconfigured package, access control, volume protection, usage profile, register, CIFS share, quota, qtree, WorkingEnvironmentId, HA, high-availability, subscription, cloud data sense, cloud backup 
 summary: 您可以在 Cloud Volumes ONTAP 單一系統組態中或 AWS 中以 HA 配對的形式來啟動執行個體。 
 ---
-= 在 Cloud Volumes ONTAP AWS 中啟動
+= 在Cloud Volumes ONTAP AWS中啟動
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -45,7 +45,7 @@ link:task-set-up-licensing-aws.html["瞭解如何設定授權"^]。
 
 
 
-== 在 Cloud Volumes ONTAP AWS 中啟動單一節點的效能不整系統
+== 在 AWS 中啟動單節點 Cloud Volumes ONTAP 系統
 
 如果您想要在 AWS 中啟動 Cloud Volumes ONTAP ，您需要在 BlueXP  中建立新的工作環境。
 
@@ -288,7 +288,7 @@ BlueXP會啟動Cloud Volumes ONTAP 這個執行個體。您可以追蹤時間表
 
 
 
-== 在 Cloud Volumes ONTAP AWS 中啟動一個「叢集 HA 配對」
+== 在 AWS 中啟動 Cloud Volumes ONTAP HA 配對
 
 如果您想要在Cloud Volumes ONTAP AWS中啟動一個「叢集HA配對」、您需要在BlueXP中建立HA工作環境。
 
