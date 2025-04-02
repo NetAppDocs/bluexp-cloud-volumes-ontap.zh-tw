@@ -100,15 +100,16 @@ Azure HA 多個可用性區域、含共用託管磁碟
 
 == Cloud Volumes ONTAP 中的按鍵旋轉
 
-如果您建立新版本的金鑰， Cloud Volumes ONTAP 會自動使用最新的金鑰版本，確保資料安全無虞，無需手動更新。
+您應該在 Azure 入口網站上設定加密金鑰。如需設定金鑰和設定金鑰旋轉的相關資訊，請參閱下列 Microsoft Azure 文件主題：
 
-.步驟
-. 瀏覽至 Azure 入口網站中的金鑰資料保險箱。
-. 選取您要旋轉的按鍵。
-. 按一下 * 新版本 * 以產生金鑰的新版本。
+* https://learn.microsoft.com/en-us/azure/key-vault/keys/how-to-configure-key-rotation["在 Azure Key Vault 中設定密碼編譯金鑰自動旋轉"^]
+* https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-customer-managed-keys-powershell#set-up-an-azure-key-vault-and-diskencryptionset-with-automatic-key-rotation-preview["Azure PowerShell - 啟用客戶管理的金鑰"^]
 
 
-建立新版本後， Cloud Volumes ONTAP 會自動偵測並使用最新版本的金鑰進行加密。
+
+NOTE: 設定金鑰之後，請確定您擁有 https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption#customer-managed-keys["已在 Azure 入口網站上啟用金鑰旋轉"^]，以便 Cloud Volumes ONTAP 能夠使用新的金鑰。
+
+在建立及啟用新版金鑰時， Cloud Volumes ONTAP 會自動偵測並使用最新版的加密功能，確保您的資料安全無虞，無需手動更新。
 
 
 
