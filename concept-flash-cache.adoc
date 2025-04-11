@@ -34,7 +34,7 @@ Flash Cache支援特定Cloud Volumes ONTAP 的支援功能。檢視中支援的�
 
 ifdef::aws[]
 
-* 在 AWS 上設定 Cloud Volumes ONTAP 9.12.0 或更早版本的 Flash Cache 時、必須在所有磁碟區上停用壓縮、才能充分利用 Flash Cache 效能的改善。當您部署或升級至 Cloud Volumes ONTAP 9.12.1 或更新版本時、不需要停用壓縮。
+* 在 AWS 中設定 Cloud Volumes ONTAP 9.12.0 或更早版本的 Flash Cache 時，必須在所有磁碟區上停用壓縮，才能充分利用 Flash Cache 效能的改善。當您部署或升級至 Cloud Volumes ONTAP 9.12.1 或更新版本時、不需要停用壓縮。
 +
 從BlueXP建立磁碟區時、請選擇「無儲存效率」、或先建立磁碟區、然後再選擇「無儲存效率」 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["使用 CLI 停用資料壓縮"^]。
 

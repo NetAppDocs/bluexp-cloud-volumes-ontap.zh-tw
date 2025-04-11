@@ -16,93 +16,24 @@ summary: 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可�
 [role="lead"]
 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可為您的用戶端提供儲存與資料服務。您可能知道這是 _SVM_ 或 _vserver_ 。根據預設、系統會設定一個儲存 VM 、但部分組態會支援額外的儲存 VM 。 Cloud Volumes ONTAP
 
+若要在 Google Cloud 中建立及管理其他資料服務儲存 VM ，您應該使用 BlueXP  API 。這是因為 API 會自動化建立儲存 VM 和設定所需網路介面的程序。建立儲存 VM 時， BlueXP  會設定所需的 LIF 服務，以及從儲存 VM 輸出 SMB/CIFS 通訊所需的 iSCSI LIF 。
+
 
 
 == 支援的儲存 VM 數量
 
-從9.11.1版開始、Cloud Volumes ONTAP Google Cloud中的特定支援功能可支援多個儲存VM。前往 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["發行說明 Cloud Volumes ONTAP"^] 驗證Cloud Volumes ONTAP 支援的儲存VM數量是否適用於您的版本的支援。
+從 Cloud Volumes ONTAP 9.11.1 開始，根據您的授權，特定組態可支援多個儲存 VM 。請參閱 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["發行說明 Cloud Volumes ONTAP"^]，確認您的 Cloud Volumes ONTAP 版本支援的儲存 VM 數量。
 
-所有其他 Cloud Volumes ONTAP 的支援功能均支援單一資料服務儲存 VM 、以及一部用於災難恢復的目的地儲存 VM 。如果來源儲存VM發生中斷、您可以啟動目的地儲存VM進行資料存取。
+早於 9.11.1 的所有 Cloud Volumes ONTAP 版本都支援一個資料服務儲存 VM ，以及一個目的地儲存 VM ，用於災難恢復。如果來源儲存VM發生中斷、您可以啟動目的地儲存VM進行資料存取。
 
 
 
 == 建立儲存VM
 
-如果授權支援、您可以在單一節點系統或HA配對上建立多個儲存VM。請注意、您必須使用 BlueXP  API 在 HA 配對上建立儲存 VM 、而您可以使用 ONTAP 系統管理員或 ONTAP CLI 在單一節點系統上建立儲存 VM 。
+根據您的組態和授權類型，您可以使用 BlueXP  API ，在單一節點系統或高可用度（ HA ）組態中建立多個儲存 VM 。
 
-
-
-=== 單一節點系統
-
-這些步驟使用CLI在單一節點系統上建立新的儲存VM。建立資料LIF需要一個私有IP位址、如果您想要建立管理LIF、則需要另一個選用的私有IP位址。
-
-.步驟
-. 在Google Cloud中、移至Cloud Volumes ONTAP 「實例」、並為每個LIF新增一個IP位址至nic0。
-+
-image:screenshot-gcp-add-ip-range.png["Google Cloud主控台的螢幕快照、您可Cloud Volumes ONTAP 在其中新增IP範圍、以編輯for the network interface for the zeing。"]
-
-+
-如果您想在儲存VM上建立管理LIF、則需要一個IP位址用於資料LIF、另一個選用IP位址。
-
-+
-https://cloud.google.com/vpc/docs/configure-alias-ip-ranges#adding_alias_ip_ranges_to_an_existing_instance["Google Cloud文件：新增別名IP範圍至現有執行個體"^]
-
-. 建立儲存虛擬機器和通往儲存虛擬機器的路由。
-+
-[source, cli]
-----
-vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-name> -rootvolume-security-style unix
-----
-+
-[source, cli]
-----
-network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-gateway-server>
-----
-. 指定您在Google Cloud中新增的IP位址、以建立資料LIF。
-+
-[role="tabbed-block"]
-====
-.iSCSI
---
-[source, cli]
-----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
-----
---
-.NFS或SMB
---
-[source, cli]
-----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
-----
---
-====
-. 選用：指定您在Google Cloud中新增的IP位址、以建立儲存VM管理LIF。
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default
-----
-. 將一個或多個集合體指派給儲存VM。
-+
-[source, cli]
-----
-vserver add-aggregates -vserver <svm-name> -aggregates <aggr1,aggr2>
-----
-+
-這是必要步驟、因為新的儲存VM需要存取至少一個Aggregate、才能在儲存VM上建立磁碟區。
-
-
-
-
-
-=== HA配對
-
-您必須使用BlueXP API在Cloud Volumes ONTAP Google Cloud的某個系統上建立儲存VM。由於 BlueXP  使用必要的 LIF 服務以及輸出 SMB/CIFS 通訊所需的 iSCSI LIF 、因此需要使用 API （而非 ONTAP 系統管理員或 ONTAP CLI ）來設定儲存 VM 。
-
-請注意、BlueXP會在Google Cloud中配置所需的IP位址、並使用資料LIF來建立儲存VM、以進行SMB/NFS存取、並使用iSCSI LIF來進行傳出SMB通訊。
-
-BlueXP  也會 `default-data-files`從 NAS 資料生命期移除下列服務、並將其新增至 iSCSI 資料生命期、藉此修改資料儲存 VM 上的原則：
+.關於這項工作
+當您使用 API 建立儲存 VM ，以及設定所需的網路介面時， BlueXP  也會從 NAS 資料 LIF 移除下列服務，並將這些服務新增至用於輸出管理連線的 iSCSI 資料 LIF ，藉此修改 `default-data-files`資料儲存 VM 上的原則：
 
 * `data-fpolicy-client`
 * `management-ad-client`
@@ -111,52 +42,85 @@ BlueXP  也會 `default-data-files`從 NAS 資料生命期移除下列服務、
 * `management-nis-client`
 
 
-需要修改服務、因為Cloud Volumes ONTAP 這樣可確保支援功能可將iSCSI LIF用於傳出管理連線。
+.開始之前
+Connector 需要特定權限才能為 Cloud Volumes ONTAP HA 配對建立儲存 VM 。所需的權限包含在 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["NetApp 提供的原則"^]中。
 
-.必要的Google Cloud權限
-Connector需要特定權限、才能建立及管理Cloud Volumes ONTAP 儲存VM、以利執行各種HA配對。所需的權限包含在 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["NetApp 提供的原則"^]中。
 
-.步驟
-. 使用下列API呼叫建立儲存VM：
-+
-`POST /gcp/ha/working-environments/{workingEnvironmentId}/svm/`
 
-+
-申請機構應包括下列項目：
+=== 單一節點系統
 
-+
+使用下列 API 呼叫在單一節點系統上建立儲存 VM 。
+
+`POST /gcp/vsa/working-environments/{workingEnvironmentId}/svm`
+
+在要求主體中包含下列參數：
+
 [source, json]
 ----
-{ "svmName": "myNewSvm1" }
+{ "svmName": "NewSvmName"
+   "svmPassword": "optional value, the API takes the cluster password if not provided"
+   "mgmtLif": "optional value, to create an additional management LIF, if you want to use the storage VM for management purposes"}
 ----
 
 
+=== HA配對
+
+使用下列 API 呼叫在 HA 配對上建立儲存 VM ：
+
+`POST /gcp/ha/working-environments/{workingEnvironmentId}/svm/`
+
+在要求主體中包含下列參數：
+
+[source, json]
+----
+{ "svmName": "NewSvmName"
+   "svmPassword": "optional value, the API takes the cluster password if not provided"
+}
+----
 
 
-== 管理HA配對上的儲存VM
+== 管理儲存 VM
 
-BlueXP API也支援在HA配對上重新命名及刪除儲存VM。
+使用 BlueXP  API ，您可以在單一節點和 HA 組態中重新命名和刪除儲存 VM 。
+
+.開始之前
+Connector 需要特定權限來管理 Cloud Volumes ONTAP HA 配對的儲存 VM 。所需的權限包含在 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["NetApp 提供的原則"^]中。
 
 
 
 === 重新命名儲存VM
 
-如有需要、您可以隨時變更儲存VM的名稱。
+若要重新命名儲存 VM ，您應該提供現有儲存 VM 和新儲存 VM 的名稱做為參數。
 
 .步驟
-. 使用下列API呼叫重新命名儲存VM：
+* 使用下列 API 呼叫重新命名單一節點系統上的儲存 VM ：
 +
-`PUT /gcp/ha/working-environments/{workingEnvironmentId}/svm`
+`PUT /gcp/vsa/working-environments/{workingEnvironmentId}/svm`
 
 +
-申請機構應包括下列項目：
+在要求主體中包含下列參數：
 
 +
 [source, json]
 ----
 {
-"svmNewName": "newSvmName",
-"svmName": "oldSvmName"
+  "svmNewName": "NewSvmName",
+  "svmName": "OldSvmName"
+}
+----
+* 使用下列 API 呼叫重新命名 HA 配對上的儲存 VM ：
++
+`PUT /gcp/ha/working-environments/{workingEnvironmentId}/svm`
+
++
+在要求主體中包含下列參數：
+
++
+[source, json]
+----
+{
+  "svmNewName": "NewSvmName",
+  "svmName": "OldSvmName"
 }
 ----
 
@@ -165,10 +129,14 @@ BlueXP API也支援在HA配對上重新命名及刪除儲存VM。
 
 === 刪除儲存VM
 
-如果您不再需要儲存VM、可以從Cloud Volumes ONTAP 停止功能中刪除。
+在單一節點或 HA 組態中，如果儲存 VM 沒有任何作用中的 Volume ，您可以移除該 VM 。
 
 .步驟
-. 使用下列API呼叫來刪除儲存VM：
+* 使用下列 API 呼叫來刪除單一節點系統上的儲存 VM ：
++
+`DELETE /gcp/vsa/working-environments/{workingEnvironmentId}/svm/{svmName}`
+
+* 使用下列 API 呼叫刪除 HA 配對上的儲存 VM ：
 +
 `DELETE /gcp/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 

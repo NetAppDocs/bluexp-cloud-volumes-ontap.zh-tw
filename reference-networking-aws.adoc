@@ -67,7 +67,7 @@ Cloud Volumes ONTAP 使用這些端點與各種服務進行通訊。
 * 安全性權杖服務（ STOS ）
 * 簡易儲存服務（ S3 ）
 
-| 與 AWS 服務通訊。 | 標準和私有模式。 | Cloud Volumes ONTAP 無法與 AWS 服務通訊、無法在 AWS 上執行特定的 BlueXP  作業。 
+| 與 AWS 服務通訊。 | 標準和私有模式。 | Cloud Volumes ONTAP 無法與 AWS 服務通訊，以在 AWS 中執行特定的 BlueXP  作業。 
 
 
 | AWS 服務的確切政府端點取決於您使用的 AWS 區域。端點的後綴是 `amazonaws.com`和 `c2s.ic.gov`。	https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/model/Region.html["AWS SDK"] https://docs.aws.amazon.com/general/latest/gr/rande.html["Amazon 文件"]如需詳細資訊、請參閱和。  a| 
@@ -78,7 +78,7 @@ Cloud Volumes ONTAP 使用這些端點與各種服務進行通訊。
 * 安全性權杖服務（ STOS ）
 * 簡易儲存服務（ S3 ）
 
-| 與 AWS 服務通訊。 | 受限模式。 | Cloud Volumes ONTAP 無法與 AWS 服務通訊、無法在 AWS 上執行特定的 BlueXP  作業。 
+| 與 AWS 服務通訊。 | 受限模式。 | Cloud Volumes ONTAP 無法與 AWS 服務通訊，以在 AWS 中執行特定的 BlueXP  作業。 
 |===
 
 

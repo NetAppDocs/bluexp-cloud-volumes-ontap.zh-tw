@@ -62,19 +62,19 @@ Cloud Volumes ONTAP 使用這些端點與各種服務進行通訊。
 | https://support 。 NetApp 。 com/aods/asupmessage \https://support 。 NetApp 。 com/asupprod/post/1.0/postAsup | AutoSupport | 用於將 AutoSupport 遙測資料傳送給 NetApp 支援。 | 標準和受限模式。 | AutoSupport 資訊仍未傳送。 
 
 
-| \https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | 公共區域 | 與 Azure 服務的通訊。 | 標準模式、限制模式和私有模式。 | Cloud Volumes ONTAP 無法與 Azure 服務通訊、因此無法在 Azure 上執行特定的 BlueXP  作業。 
+| \https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | 公共區域 | 與 Azure 服務的通訊。 | 標準模式、限制模式和私有模式。 | Cloud Volumes ONTAP 無法與 Azure 服務通訊，以在 Azure 中執行特定的 BlueXP  作業。 
 
 
-| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | 中國地區 | 與 Azure 服務的通訊。 | 標準模式、限制模式和私有模式。 | Cloud Volumes ONTAP 無法與 Azure 服務通訊、因此無法在 Azure 上執行特定的 BlueXP  作業。 
+| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | 中國地區 | 與 Azure 服務的通訊。 | 標準模式、限制模式和私有模式。 | Cloud Volumes ONTAP 無法與 Azure 服務通訊，以在 Azure 中執行特定的 BlueXP  作業。 
 
 
-| \https://management.microsoftazure.de \https://login.microsoftonline.de \https://blob.core.cloudapi.de \https://core.cloudapi.de | 德國地區 | 與 Azure 服務的通訊。 | 標準模式、限制模式和私有模式。 | Cloud Volumes ONTAP 無法與 Azure 服務通訊、因此無法在 Azure 上執行特定的 BlueXP  作業。 
+| \https://management.microsoftazure.de \https://login.microsoftonline.de \https://blob.core.cloudapi.de \https://core.cloudapi.de | 德國地區 | 與 Azure 服務的通訊。 | 標準模式、限制模式和私有模式。 | Cloud Volumes ONTAP 無法與 Azure 服務通訊，以在 Azure 中執行特定的 BlueXP  作業。 
 
 
-| \https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net | 政府區域 | 與 Azure 服務的通訊。 | 標準模式、限制模式和私有模式。 | Cloud Volumes ONTAP 無法與 Azure 服務通訊、因此無法在 Azure 上執行特定的 BlueXP  作業。 
+| \https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net | 政府區域 | 與 Azure 服務的通訊。 | 標準模式、限制模式和私有模式。 | Cloud Volumes ONTAP 無法與 Azure 服務通訊，以在 Azure 中執行特定的 BlueXP  作業。 
 
 
-| \https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud | 政府 DoD 地區 | 與 Azure 服務的通訊。 | 標準模式、限制模式和私有模式。 | Cloud Volumes ONTAP 無法與 Azure 服務通訊、因此無法在 Azure 上執行特定的 BlueXP  作業。 
+| \https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud | 政府 DoD 地區 | 與 Azure 服務的通訊。 | 標準模式、限制模式和私有模式。 | Cloud Volumes ONTAP 無法與 Azure 服務通訊，以在 Azure 中執行特定的 BlueXP  作業。 
 |===
 
 

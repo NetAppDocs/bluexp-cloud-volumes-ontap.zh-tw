@@ -16,7 +16,7 @@ summary: 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可�
 [role="lead"]
 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可為您的用戶端提供儲存與資料服務。您可能知道這是 _SVM_ 或 _vserver_ 。根據預設， Cloud Volumes ONTAP 設有一個儲存 VM ，但在 Azure 中執行 Cloud Volumes ONTAP 時，您可以建立其他儲存 VM 。
 
-若要在 Azure 上建立及管理其他資料服務儲存 VM ，您應該使用 BlueXP  API 。這是因為 API 會自動化建立儲存 VM 和設定所需網路介面的程序。建立儲存 VM 時， BlueXP  會設定所需的 LIF 服務，以及從儲存 VM 輸出 SMB/CIFS 通訊所需的 iSCSI LIF 。
+若要在 Azure 中建立及管理其他資料服務儲存 VM ，您應該使用 BlueXP  API 。這是因為 API 會自動化建立儲存 VM 和設定所需網路介面的程序。建立儲存 VM 時， BlueXP  會設定所需的 LIF 服務，以及從儲存 VM 輸出 SMB/CIFS 通訊所需的 iSCSI LIF 。
 
 
 
@@ -25,9 +25,6 @@ summary: 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可�
 從 Cloud Volumes ONTAP 9.0.0 開始，根據您的授權，特定組態可支援多個儲存 VM 。請參閱 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["發行說明 Cloud Volumes ONTAP"^]，確認您的 Cloud Volumes ONTAP 版本支援的儲存 VM 數量。
 
 早於 9.9.0 的所有 Cloud Volumes ONTAP 版本都支援一個資料服務儲存 VM ，以及一個目的地儲存 VM ，用於災難恢復。如果來源儲存VM發生中斷、您可以啟動目的地儲存VM進行資料存取。
-
-.開始之前
-Connector 需要特定權限來建立和管理 Cloud Volumes ONTAP 的儲存 VM 。所需的權限包含在 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["NetApp 提供的原則"^]中。
 
 
 
@@ -45,6 +42,9 @@ Connector 需要特定權限來建立和管理 Cloud Volumes ONTAP 的儲存 VM 
 * `management-nis-client`
 
 
+.開始之前
+Connector 需要特定權限才能為 Cloud Volumes ONTAP 建立儲存 VM 。所需的權限包含在 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["NetApp 提供的原則"^]中。
+
 
 
 === 單一節點系統
@@ -53,7 +53,7 @@ Connector 需要特定權限來建立和管理 Cloud Volumes ONTAP 的儲存 VM 
 
 `POST /azure/vsa/working-environments/{workingEnvironmentId}/svm`
 
-申請機構應包括下列項目：
+在要求主體中包含下列參數：
 
 [source, json]
 ----
@@ -65,11 +65,11 @@ Connector 需要特定權限來建立和管理 Cloud Volumes ONTAP 的儲存 VM 
 
 === HA配對
 
-使用下列 API 呼叫，在 Azure HA 組態中建立儲存 VM ：
+使用下列 API 呼叫在 HA 配對上建立儲存 VM ：
 
 `POST /azure/ha/working-environments/{workingEnvironmentId}/svm`
 
-申請機構應包括下列項目：
+在要求主體中包含下列參數：
 
 [source, json]
 ----
@@ -83,6 +83,9 @@ Connector 需要特定權限來建立和管理 Cloud Volumes ONTAP 的儲存 VM 
 
 使用 BlueXP  API ，您可以在單一節點和 HA 組態中重新命名和刪除儲存 VM 。
 
+.開始之前
+Connector 需要特定權限來管理 Cloud Volumes ONTAP 的儲存 VM 。所需的權限包含在 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["NetApp 提供的原則"^]中。
+
 
 
 === 重新命名儲存VM
@@ -95,7 +98,7 @@ Connector 需要特定權限來建立和管理 Cloud Volumes ONTAP 的儲存 VM 
 `PUT /azure/vsa/working-environments/{workingEnvironmentId}/svm`
 
 +
-申請機構應包括下列項目：
+在要求主體中包含下列參數：
 
 +
 [source, json]
@@ -105,12 +108,12 @@ Connector 需要特定權限來建立和管理 Cloud Volumes ONTAP 的儲存 VM 
   "svmName": "OldSvmName"
 }
 ----
-* 使用下列 API 呼叫重新命名 HA 組態中的儲存 VM ：
+* 使用下列 API 呼叫重新命名 HA 配對上的儲存 VM ：
 +
 `PUT /azure/ha/working-environments/{workingEnvironmentId}/svm`
 
 +
-申請機構應包括下列項目：
+在要求主體中包含下列參數：
 
 +
 [source, json]
@@ -133,7 +136,7 @@ Connector 需要特定權限來建立和管理 Cloud Volumes ONTAP 的儲存 VM 
 +
 `DELETE /azure/vsa/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
-* 使用下列 API 呼叫來刪除 HA 組態中的儲存 VM ：
+* 使用下列 API 呼叫刪除 HA 配對上的儲存 VM ：
 +
 `DELETE /azure/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 

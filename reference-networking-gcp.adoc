@@ -40,7 +40,14 @@ Google Cloud必須符合下列要求。
 
 ==== 私有IP位址
 
-BlueXP會將3或4個私有IP位址分配給Google Cloud中的單一節點系統。
+對於 Google Cloud 中的單一節點系統， BlueXP  會將私有 IP 位址分配給下列項目：
+
+* 節點
+* 叢集
+* 儲存 VM
+* 資料 NAS LIF
+* 資料 iSCSI LIF
+
 
 如果Cloud Volumes ONTAP 您使用API部署了Sf2並指定下列旗標、則可以跳過儲存VM（SVM）管理LIF的建立：
 
@@ -227,7 +234,7 @@ Cloud Volumes ONTAP 使用這些端點與各種服務進行通訊。
 | https://support 。 NetApp 。 com/aods/asupmessage \https://support 。 NetApp 。 com/asupprod/post/1.0/postAsup | AutoSupport | 用於將 AutoSupport 遙測資料傳送給 NetApp 支援。 | 標準和受限模式。 | AutoSupport 資訊仍未傳送。 
 
 
-| \https://www.googleapis.com/compute/v1/projects/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects \https://compute.googleapis.com/compute/v1 | Google Cloud （商業用途）。 | 與 Google Cloud 服務的通訊。 | 標準模式、限制模式和私有模式。 | Cloud Volumes ONTAP 無法與 Google Cloud 服務通訊、以在 Google Cloud 上執行特定的 BlueXP  作業。 
+| \https://www.googleapis.com/compute/v1/projects/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects \https://compute.googleapis.com/compute/v1 | Google Cloud （商業用途）。 | 與 Google Cloud 服務的通訊。 | 標準模式、限制模式和私有模式。 | Cloud Volumes ONTAP 無法與 Google Cloud 服務通訊，以在 Google Cloud 中執行特定的 BlueXP  作業。 
 |===
 
 

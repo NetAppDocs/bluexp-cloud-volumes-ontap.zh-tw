@@ -24,7 +24,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-ad
 
 現在，您可以在 BlueXP  數位錢包中使用改良的導覽點，體驗 Cloud Volumes ONTAP 授權的簡化管理：
 
-* 您可以透過 *Governance > Digital Pallet > Overview / Data Service licenses * 標籤輕鬆存取 Cloud Volumes ONTAP 授權資訊。
+* 您可以透過 *Governance > Digital Pallet > Overview / Direct Licenses* 標籤輕鬆存取 Cloud Volumes ONTAP 授權資訊。
 * 按一下「 * 總覽 * 」標籤中「 Cloud Volume ONTAP 」面板上的 * 檢視 * ，即可全面瞭解容量型授權。這項進階檢視可提供詳細的授權與訂閱資訊。
 * 如果您偏好先前的介面，可以按一下 * 切換至舊版檢視 * 按鈕，依類型檢視授權詳細資料，並修改授權的收費方法。
 
