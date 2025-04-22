@@ -782,12 +782,9 @@
   <block id="f008ecd5469e24eee31eb4e2e4a1e23f" category="paragraph">下列授權選項適用於新客戶。</block>
   <block id="27d0a1d0fc95280fbaf78c65ff6b37fb" category="list-text">Essentials套件</block>
   <block id="08598187312665a33ac3ebb5fc060c00" category="paragraph">以下各節提供這些選項的詳細資訊。</block>
-  <block id="d7c357dcc3b8476a2eeba19c87ec383d" category="paragraph">NetApp Cloud Volumes ONTAP 免費提供所有的支援功能（仍需支付雲端供應商費用）。</block>
   <block id="24996c045717f17c4e40ebb44791b2af" category="list-text">不需要授權或合約。</block>
   <block id="cc3b16b51bb72e66b8f103fef83035d9" category="list-text">不包括NetApp的支援。</block>
   <block id="895dacd81cbc05951744c0bce981546c" category="list-text">每Cloud Volumes ONTAP 個系統的資源配置容量上限為500 GiB。</block>
-  <block id="46cb473c7acee70e9be90113f3acce9d" category="list-text">您可以在Cloud Volumes ONTAP 任何雲端供應商中、使用最多10個包含每個NetApp帳戶的Freemium產品的NetApp系統。</block>
-  <block id="2b5b1f6feb7719bc282a3518f33b1784" category="paragraph">任何其他配置容量低於500 GiB的系統、都會留在Freemium上（只要使用Freemium產品進行部署）。</block>
   <block id="68935a38790e91889cd56742a47079f3" category="paragraph">例如、您可以購買單一20 TiB授權、部署四Cloud Volumes ONTAP 個作業系統、然後將5個TiB磁碟區分配給每個系統、總共20 TiB。容量可用於Cloud Volumes ONTAP 該帳戶中部署的每個作業系統上的磁碟區。</block>
   <block id="6cc9f034206d1e740ca9a065330721b4" category="list-text">選擇Cloud Volumes ONTAP 您的需求組態：</block>
   <block id="d7a4c9387784a4f0820a7a6500b673bc" category="list-text">單一節點或HA系統</block>
@@ -2995,7 +2992,6 @@
   <block id="af97eb7a8d1a683de73e48cc402e070d" category="paragraph">System Manager不支援集合管理（包括本機層級和雲端層）。您必須直接從BlueXP的「標準檢視」管理集合體。</block>
   <block id="e7b3f56c45c6705f279b059a9274225d" category="list-text">如有需要、請按一下*切換至標準檢視*、透過BlueXP返回標準管理。</block>
   <block id="0828553b7174743f116345861b5c6bc0" category="summary">您可以探索並新增Cloud Volumes ONTAP 現有的元件系統至藍圖XP。如果您部署了新的BlueXP系統、您可能會這麼做。</block>
-  <block id="16c274138bfaf739b851a1b611d4cdb0" category="list-text">如果Cloud Volumes ONTAP 供應的資料系統容量超過500 GiB、則BlueXP會將系統轉換成Essentials套件。</block>
   <block id="2cfe7b7de2a1df6b585bf1321d37fb8a" category="inline-link">NetApp BlueXP網站</block>
   <block id="4f6ffa2529265a9e4fcff29a28a16ebe" category="paragraph">每個資料服務儲存VM至少要有一個主要（讀寫）磁碟區、至少需支付4 TiB的最低費用。如果主要磁碟區的總和低於4 TiB、則BlueXP會將4 TiB最低收費套用至該儲存VM。</block>
   <block id="3116f8acc3e396f2ab1859f3fbe8234e" category="summary">您可以從Cloud Volumes ONTAP BlueXP停止並開始執行功能、以管理雲端運算成本。</block>
@@ -5625,7 +5621,6 @@
   <block id="95b5ae6b0af18840a3741634cd325668" category="list-text">根據Cloud Volumes ONTAP 資源配置的容量、在NetApp帳戶中支付多個支援系統的費用。包括購買附加雲端資料服務的能力。如需容量型授權使用模式的詳細資訊，請<block ref="800c64ac20219346d421e96b28656701" category="inline-link-macro-rx"></block>參閱。</block>
   <block id="c3f0a05442b6c8a72739ff963cfeed7f" category="paragraph">下列容量型套件可供Cloud Volumes ONTAP 使用。如需容量型授權套件的詳細資訊，請<block ref="800c64ac20219346d421e96b28656701" category="inline-link-macro-rx"></block>參閱。</block>
   <block id="19a5330bf6f5eac370d1103981c5a834" category="inline-link-macro">最低充電量</block>
-  <block id="b0890bcc109876c5e12a5adec396926f" category="paragraph">一旦系統轉換為 Essentials 套件，即<block ref="7af77c30f2eff63b0d18155ad569ed75" category="inline-link-macro-rx"></block>適用。</block>
   <block id="f6d538cae99e0f8fa45e7e8780358583" category="paragraph">若要瞭解如何執行此轉換，請參閱<block ref="3fdaa70059ad7f9b695791d3dfebbc25" category="inline-link-macro-rx"></block>。</block>
   <block id="1a7468dd02c2c074fc65d2ee7db41483" category="doc">瞭解 Cloud Volumes ONTAP 工作負載的效能監控</block>
   <block id="554a0d7666ec33e45169ab1eed7eb037" category="doc">瞭解 Cloud Volumes ONTAP 資料加密和勒索軟體保護</block>
@@ -5801,4 +5796,9 @@
   <block id="801c0fa0d304ca22d8afec06189bcf93" category="section-title">2025 年 4 月 16 日</block>
   <block id="f0d468a1074534e3b37c7322f2e97bb1" category="section-title">2025 年 4 月 3 日</block>
   <block id="bbe4e5e3881ef8307eb1dd518412cb45" category="paragraph">Cloud Volumes ONTAP 不再提供雲端供應商市場的隨用隨付訂閱 30 天自動免費試用或評估授權。任何類型的市場訂閱（ PAYGO 或年度合約）的收費將從首次使用開始啟動、不需任何免費試用期。</block>
+  <block id="f10f9d69e12a045fa89f83322880ee7c" category="paragraph">NetApp Cloud Volumes ONTAP 免費提供所有的支援功能（仍需支付雲端供應商費用）。Freemium 套件具有下列特性：</block>
+  <block id="4e2db8f84e83acbb3ce91109a9eef20e" category="list-text">每個 NetApp 帳戶最多可搭配使用 10 個 Cloud Volumes ONTAP 系統搭配 Freemium 產品，適用於任何雲端供應商。</block>
+  <block id="84befd86706fa21112c130084b373991" category="list-text">如果 Cloud Volumes ONTAP 系統的已配置容量超過 500 GiB ， BlueXP  會將系統轉換為 Essentials 套件。</block>
+  <block id="a0f8f1341588aae4d56d3b5fb0fde3de" category="paragraph">一旦系統轉換為 Essentials 套件，即會套用至該套件<block ref="7af77c30f2eff63b0d18155ad569ed75" category="inline-link-macro-rx"></block>。</block>
+  <block id="0551862e260539a3a516b4868d9bcead" category="paragraph">已轉換為 Essentials 套件的 Cloud Volumes ONTAP 系統無法切換回 Freemium ，即使已配置的容量減至少於 500 GiB 。配置容量少於 500 GiB 的其他系統會留在 Freemium （只要使用 Freemium 產品進行部署）。</block>
 </blocks>

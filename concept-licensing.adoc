@@ -70,18 +70,18 @@ endif::gcp[]
 
 ==== Freemium
 
-NetApp Cloud Volumes ONTAP 免費提供所有的支援功能（仍需支付雲端供應商費用）。
+NetApp Cloud Volumes ONTAP 免費提供所有的支援功能（仍需支付雲端供應商費用）。Freemium 套件具有下列特性：
 
 * 不需要授權或合約。
 * 不包括NetApp的支援。
 * 每Cloud Volumes ONTAP 個系統的資源配置容量上限為500 GiB。
-* 您可以在Cloud Volumes ONTAP 任何雲端供應商中、使用最多10個包含每個NetApp帳戶的Freemium產品的NetApp系統。
-* 如果Cloud Volumes ONTAP 供應的資料系統容量超過500 GiB、則BlueXP會將系統轉換成Essentials套件。
+* 每個 NetApp 帳戶最多可搭配使用 10 個 Cloud Volumes ONTAP 系統搭配 Freemium 產品，適用於任何雲端供應商。
+* 如果 Cloud Volumes ONTAP 系統的已配置容量超過 500 GiB ， BlueXP  會將系統轉換為 Essentials 套件。
 +
-一旦系統轉換為 Essentials 套件，即link:concept-licensing-charging.html#minimum-charge["最低充電量"]適用。
+一旦系統轉換為 Essentials 套件，即會套用至該套件link:concept-licensing-charging.html#minimum-charge["最低充電量"]。
 
 +
-任何其他配置容量低於500 GiB的系統、都會留在Freemium上（只要使用Freemium產品進行部署）。
+已轉換為 Essentials 套件的 Cloud Volumes ONTAP 系統無法切換回 Freemium ，即使已配置的容量減至少於 500 GiB 。配置容量少於 500 GiB 的其他系統會留在 Freemium （只要使用 Freemium 產品進行部署）。
 
 
 
