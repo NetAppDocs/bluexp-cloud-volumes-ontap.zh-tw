@@ -1,0 +1,15 @@
+= Azure 支援的新區域
+:allow-uri-read: 
+
+
+
+
+=== Azure 支援的新區域
+
+您現在可以在以下地區的單一和多個可用性區域中部署 Cloud Volumes ONTAP 9.12.1 GA 及更新版本。這包括支援單一節點和高可用度（ HA ）部署。
+
+* 西班牙中部
+* 墨西哥中部
+
+
+有關所有區域的列表，請參閱 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure 下的 Global Regions Map"^]。

@@ -1854,14 +1854,6 @@
   <block id="9906134ee224bc081497b19c4269cc34" category="paragraph">如果額外的容量授權過期且不再使用、您可以隨時將其移除。</block>
   <block id="c320af21170d1ca43751b7580a1125f4" category="list-text">按一下容量授權旁的動作功能表、然後選取*移除授權*。</block>
   <block id="03b194a23dcb353466fbfb7acff64363" category="list-text">按一下「*移除*」。</block>
-  <block id="b38317f372e5ede5e8e7662a6abf56de" category="section-title">將試用版授權轉換為BYOL</block>
-  <block id="6f3e45030426e1b86c424d2780111d20" category="paragraph">試用版授權可提供30天的使用時間。您可以在就地升級的評估授權上套用新的BYOL授權。</block>
-  <block id="9a640fdf29d0376d44625fbe7757592a" category="list-text">對於單節點系統、重新啟動會在重新開機程序期間導致I/O中斷。</block>
-  <block id="a1b2198d5e77e52b34a9567f6e8204f9" category="list-text">對於HA配對、重新啟動會啟動接管和恢復、以繼續為用戶端提供I/O服務。</block>
-  <block id="b7c7df7a1f738eeeb402c8feafc80dba" category="list-text">按一下* Eval*。</block>
-  <block id="fcb9420dfbbc4a57ba1b1a992a71d207" category="list-text">在表格中、按一下*「轉換成BYOL授權*」以取得Cloud Volumes ONTAP 一套系統。</block>
-  <block id="e539cbd6aefe9d1fb7bc951680944206" category="list-text">輸入序號或上傳授權檔案。</block>
-  <block id="b171537681ac6ab38d6353435252c4f1" category="list-text">按一下*「轉換授權*」。</block>
   <block id="dfd4955ec9706a8b05865bd0aa3ab14f" category="summary">將冷資料自動分層至低成本的物件儲存設備、藉此降低儲存成本。</block>
   <block id="c1b0fccfdff9ac3307a1dde73fefce36" category="paragraph">將非作用中資料自動分層至低成本的物件儲存設備、藉此降低儲存成本。作用中資料仍保留在高效能 SSD 或 HDD 中、而非作用中資料則分層至低成本物件儲存設備。如此一來、您就能回收主儲存設備上的空間、並縮減二線儲存設備。</block>
   <block id="4a399275f88e7ce2505e96b9b7f521b9" category="inline-image-macro">這是一個概念性映像、顯示要傳輸到 EBS 儲存設備的熱資料、以及要傳輸到 S3 儲存設備的非作用中資料。</block>
@@ -3091,8 +3083,6 @@
   <block id="4632dee9f50d24fa16636177719f09ff" category="paragraph">BlueXP會更新Cloud Volumes ONTAP 整個作業系統的授權。</block>
   <block id="b4fb827c06226e7a2af35e533d837e28" category="paragraph">透過BlueXP右下角的聊天圖示聯絡我們、購買額外的容量授權。購買授權後、您可以將其套用Cloud Volumes ONTAP 至一套系統。</block>
   <block id="4e1651bb146bb28e944da5ff79e00342" category="paragraph">如果您延長額外容量授權的期限、則需要更新BlueXP中的授權。</block>
-  <block id="6e7fc6b7eae0415b78955003531a799e" category="paragraph">當您將試用版授權轉換為BYOL時、BlueXP會重新啟動Cloud Volumes ONTAP 該系統。</block>
-  <block id="629b6ceff1a1b74de909c5f304f623b9" category="paragraph">BlueXP開始轉換程序。此程序會自動重新啟動。Cloud Volumes ONTAP備份時、授權資訊會反映出新的授權。</block>
   <block id="b8825138f3ad417826e664b97b11f43e" category="summary">每個採用節點型BYOL的系統都必須安裝有效訂閱的系統授權。Cloud Volumes ONTAPBlueXP可管理您的授權、並在授權到期前顯示警告、藉此簡化程序。</block>
   <block id="bbb99a752c8e900f1b48a90461879503" category="paragraph">當您建立節點型BYOL系統時、BlueXP會提示您輸入授權的序號和NetApp 支援網站 您的效益帳戶。BlueXP使用帳戶從NetApp下載授權檔案、並將其安裝在Cloud Volumes ONTAP 整個作業系統上。</block>
   <block id="4c6af92d0fefe2bc8b47c8e72bf0caf5" category="inline-link">瞭解如何在NetApp 支援網站 BlueXP中新增功能不一的帳戶</block>
@@ -4785,7 +4775,6 @@
   <block id="882b50ca44d46bfb8d9502390cfeaf96" category="paragraph">Edge Cache 容量型授權套件將不再適用於未來部署的 Cloud Volumes ONTAP 。不過、您可以使用 API 來使用此功能。</block>
   <block id="2936dc7efe93e6248aca38d21b92cc62" category="paragraph">如需支援的組態、請參閱<block ref="10c1bb30d666a83202b9e687d7b06d1b" category="inline-link-rx"></block>。</block>
   <block id="bc5af032a5cd69ef4ac57b8c2cd1f1d6" category="section-title">市場訂閱的免費試用版已過時</block>
-  <block id="860dc5e7395e0f2c15a42ffdef98eca4" category="paragraph">Cloud Volumes ONTAP 不再提供雲端供應商市場的隨用隨付訂閱 30 天自動免費試用。任何類型的市場訂閱（ PAYGO 或年度合約）的收費將從首次使用開始啟動、不需任何免費試用期。</block>
   <block id="6a42c267e29187643b9edeeabe6a9d85" category="inline-link">AWS 文件：深入瞭解 AWS 的彈性 Volume</block>
   <block id="5f15094e671a035a778fece655f06e61" category="paragraph"><block ref="5f15094e671a035a778fece655f06e61" category="inline-link-rx"></block></block>
   <block id="32f75f1208336b30711f2ec6de39a1fc" category="paragraph">如需詳細資訊、請參閱 <block ref="b7c27672c14c5e155c3668c279ee7b61" category="inline-link-macro-rx"></block> 。</block>
@@ -5801,4 +5790,15 @@
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">2025 年 4 月 14 日</block>
   <block id="fdcb4cfaa6fda318a31e37ce29a14e92" category="section-title">Azure 中 Flash Cache 的最低版本支援</block>
   <block id="d05c6d51d7a4b0bd019498131ff00f16" category="paragraph">在 Azure 中設定 Flash Cache 所需的最低 Cloud Volumes ONTAP 版本為 9.13.1 GA 。您只能使用 ONTAP 9.13.1 GA 和更新版本，在 Azure 的 Cloud Volumes ONTAP 系統上部署 Flash Cache 。</block>
+  <block id="b77891a5294c25aca8a6fda943805ecf" category="doc">支援 AWS 中的 Cloud Volumes ONTAP 9.13.1 在中國地區</block>
+  <block id="3899c7c0df13a38296f1334779a1dfe7" category="paragraph">您現在可以在中國地區的 AWS 中部署 Cloud Volumes ONTAP 9.13.1 。這包括支援單一節點和高可用度（ HA ）部署。部署 Cloud Volumes ONTAP 9.13.1 之後，即可將其升級至更新版本。僅支援直接從 NetApp 購買的授權。</block>
+  <block id="abe88f95b23156cb29c433c9ebe92a00" category="inline-link">全球區域地圖Cloud Volumes ONTAP 、供您使用</block>
+  <block id="10df570a0447a18b299f516b2e8498c2" category="paragraph">如需區域供應狀況，請<block ref="f76c632bc8b9c4e032a9d48fcbfa8dc1" category="inline-link-rx"></block>參閱。</block>
+  <block id="aa3bf76b3589430467bef386eaec9486" category="doc">Azure 支援的新區域</block>
+  <block id="c1ad65632774d8f35681af3ad68ef48e" category="paragraph">您現在可以在以下地區的單一和多個可用性區域中部署 Cloud Volumes ONTAP 9.12.1 GA 及更新版本。這包括支援單一節點和高可用度（ HA ）部署。</block>
+  <block id="db0cdd3af654aa7b69312d9b6154a9de" category="list-text">西班牙中部</block>
+  <block id="ef87967149148a309569bd7d04467de6" category="list-text">墨西哥中部</block>
+  <block id="801c0fa0d304ca22d8afec06189bcf93" category="section-title">2025 年 4 月 16 日</block>
+  <block id="f0d468a1074534e3b37c7322f2e97bb1" category="section-title">2025 年 4 月 3 日</block>
+  <block id="bbe4e5e3881ef8307eb1dd518412cb45" category="paragraph">Cloud Volumes ONTAP 不再提供雲端供應商市場的隨用隨付訂閱 30 天自動免費試用或評估授權。任何類型的市場訂閱（ PAYGO 或年度合約）的收費將從首次使用開始啟動、不需任何免費試用期。</block>
 </blocks>

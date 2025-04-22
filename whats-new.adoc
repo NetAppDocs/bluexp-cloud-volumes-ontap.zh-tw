@@ -20,6 +20,22 @@ summary: 瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。
 
 
 
+== 2025 年 4 月 16 日
+
+
+
+=== Azure 支援的新區域
+
+您現在可以在以下地區的單一和多個可用性區域中部署 Cloud Volumes ONTAP 9.12.1 GA 及更新版本。這包括支援單一節點和高可用度（ HA ）部署。
+
+* 西班牙中部
+* 墨西哥中部
+
+
+有關所有區域的列表，請參閱 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure 下的 Global Regions Map"^]。
+
+
+
 == 2025 年 4 月 14 日
 
 
@@ -29,6 +45,18 @@ summary: 瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。
 您現在可以使用 BlueXP  API ，在 Google Cloud 中自動建立儲存 VM 。您已在 Cloud Volumes ONTAP 高可用度（ HA ）組態中使用此功能，現在您也可以在單一節點部署中使用此功能。透過 BlueXP  API ，您可以在 Google Cloud 環境中輕鬆建立，重新命名及刪除其他資料服務儲存 VM ，而無需手動設定所需的網路介面，生命和管理生命。這項自動化可簡化儲存 VM 的管理程序。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["在 Google Cloud 中管理 Cloud Volumes ONTAP 的資料服務儲存 VM"^]
+
+
+
+== 2025 年 4 月 3 日
+
+
+
+=== 支援 AWS 中的 Cloud Volumes ONTAP 9.13.1 在中國地區
+
+您現在可以在中國地區的 AWS 中部署 Cloud Volumes ONTAP 9.13.1 。這包括支援單一節點和高可用度（ HA ）部署。部署 Cloud Volumes ONTAP 9.13.1 之後，即可將其升級至更新版本。僅支援直接從 NetApp 購買的授權。
+
+如需區域供應狀況，請 https://bluexp.netapp.com/cloud-volumes-global-regions["全球區域地圖Cloud Volumes ONTAP 、供您使用"^]參閱。
 
 
 
@@ -311,7 +339,7 @@ Edge Cache 容量型授權套件將不再適用於未來部署的 Cloud Volumes 
 
 === 市場訂閱的免費試用版已過時
 
-Cloud Volumes ONTAP 不再提供雲端供應商市場的隨用隨付訂閱 30 天自動免費試用。任何類型的市場訂閱（ PAYGO 或年度合約）的收費將從首次使用開始啟動、不需任何免費試用期。
+Cloud Volumes ONTAP 不再提供雲端供應商市場的隨用隨付訂閱 30 天自動免費試用或評估授權。任何類型的市場訂閱（ PAYGO 或年度合約）的收費將從首次使用開始啟動、不需任何免費試用期。
 
 
 
