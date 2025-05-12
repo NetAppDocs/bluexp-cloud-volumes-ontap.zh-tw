@@ -18,6 +18,8 @@ summary: 儲存虛擬機器是 ONTAP 執行於支援內部的虛擬機器、可�
 
 若要在 Azure 中建立及管理其他資料服務儲存 VM ，您應該使用 BlueXP  API 。這是因為 API 會自動化建立儲存 VM 和設定所需網路介面的程序。建立儲存 VM 時， BlueXP  會設定所需的 LIF 服務，以及從儲存 VM 輸出 SMB/CIFS 通訊所需的 iSCSI LIF 。
 
+如需執行 Cloud Volumes ONTAP API 呼叫的相關資訊，請 https://docs.netapp.com/us-en/bluexp-automation/cm/your_api_call.html#step-1-select-the-identifie["您的第一個API呼叫"^]參閱。
+
 
 
 == 支援的儲存 VM 數量
@@ -140,4 +142,9 @@ Connector 需要特定權限來管理 Cloud Volumes ONTAP 的儲存 VM 。所需
 +
 `DELETE /azure/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
+
+
+.相關資訊
+* https://docs.netapp.com/us-en/bluexp-automation/cm/prepare.html["準備使用API"^]
+* https://docs.netapp.com/us-en/bluexp-automation/cm/workflow_processes.html#organization-of-cloud-volumes-ontap-workflows["Cloud Volumes ONTAP 工作流程"^]
 

@@ -20,6 +20,26 @@ summary: 瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能。
 
 
 
+== 2025 年 12 月 5 日
+
+
+
+=== 探索透過 BlueXP  中的 Azure 市場所進行的部署
+
+BlueXP  現在能夠探索直接透過 Azure 市場部署的 Cloud Volumes ONTAP 系統。這表示您現在可以將這些系統新增及管理為 BlueXP  中的工作環境，就像任何其他 Cloud Volumes ONTAP 系統一樣。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["從 Azure 市場部署 Cloud Volumes ONTAP"^]
+
+
+
+=== 能夠為 Azure 租戶分層資料
+
+您現在可以在由一個租戶建立 Cloud Volumes ONTAP 工作環境，並由另一個租戶建立 BlueXP  Connector 的情況下，為 Azure 租戶啟用分層。您可以使用此功能，為多個 Azure 租戶使用相同的 Connector 來分層資料。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html#requirements-to-tier-data-for-an-azure-tenant["Azure 租戶的分層資料需求"^]
+
+
+
 == 2025 年 4 月 16 日
 
 

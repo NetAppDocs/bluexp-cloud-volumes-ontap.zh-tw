@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-tiering.html 
-keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, blob tiering, container, inactive, tiering requirements, remove S3 bucket, delete S3 CVO bucket 
+keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, blob tiering, container, inactive, tiering requirements, remove S3 bucket, delete S3 CVO bucket, tenant, multi-tenant tiering 
 summary: 您可以將熱資料的 SSD 或 HDD 效能層與非作用中資料的物件儲存容量層合併、藉此降低 Cloud Volumes ONTAP VMware 的儲存成本。資料分層是 FabricPool 以不同步技術為後盾。 
 ---
 = 將非使用中的 Cloud Volumes ONTAP 資料分層至低成本物件儲存設備
@@ -47,15 +47,15 @@ endif::gcp[]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 請確定您已啟用分層功能、並有一個 Aggregate
 [role="quick-margin-para"]
-應在 Aggregate 上啟用資料分層功能，以便在磁碟區上啟用。您應該瞭解新磁碟區和現有磁碟區的需求。<<Ensuring that tiering is enabled on aggregates,深入瞭解>>。
+應在 Aggregate 上啟用資料分層功能，以便在磁碟區上啟用。您應該瞭解新磁碟區和現有磁碟區的需求。<<確保已在集合體上啟用分層,深入瞭解>>。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 建立、修改或複寫磁碟區時、請選擇分層原則
 [role="quick-margin-para"]
 在建立、修改或複寫磁碟區時、BlueXP會提示您選擇分層原則。
 
 [role="quick-margin-list"]
-* link:task-tiering.html#tiering-data-from-read-write-volumes["在讀寫磁碟區上分層資料"]
-* link:task-tiering.html#tiering-data-from-data-protection-volumes["在資料保護磁碟區上分層資料"]
+* link:task-tiering.html#tier-data-from-read-write-volumes["從讀寫磁碟區分層資料"]
+* link:task-tiering.html#tier-data-from-data-protection-volumes["將資料從資料保護磁碟區分層"]
 
 
 [NOTE]
@@ -65,7 +65,7 @@ endif::gcp[]
 * 您不需要為容量層建立物件存放區。BlueXP能為您實現這項目標。
 * 您不需要在系統層級啟用資料分層。
 +
-BlueXP  會在建立系統時建立物件存放區以存放冷資料<<Enabling data tiering after implementing the requirements,只要沒有連線或權限問題>>。之後，您只需要在磁碟區上啟用資料分層<<Ensuring that tiering is enabled on aggregates,在 Aggregate 上>>功能（在某些情況下，）。
+BlueXP  會在建立系統時建立物件存放區以存放冷資料<<在實作需求之後啟用資料分層,只要沒有連線或權限問題>>。之後，您只需要在磁碟區上啟用資料分層<<確保已在集合體上啟用分層,在 Aggregate 上>>功能（在某些情況下，）。
 
 
 
@@ -163,6 +163,17 @@ ifdef::azure[]
 "Microsoft.Network/routeTables/join/action",
 ----
 根據預設，自訂角色包含權限。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["檢視Azure對Connector的權限"^]
+
+
+
+=== Azure 租戶的分層資料需求
+
+您可以使用相同的 Connector 來分層資料，以供多個 Azure 租戶使用。若要在 Cloud Volumes ONTAP 工作環境是由一個租戶建立，而 Connector 是由另一個租戶建立的情況下，為 Azure 租戶啟用分層功能，請確定下列事項：
+
+* 您已在 BlueXP  中輸入兩個租戶的認證，以進行交叉驗證。請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["管理 BlueXP 的 Azure 認證和市場訂閱"^]。
+* 您已啟用兩個租戶之間的虛擬網路（ vnet ）對等 https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview["在 Azure 入口網站上"^]關係。這是必要項目，如此 Connector 才能存取其他租戶的儲存帳戶。
+* 您必須link:task-enabling-private-link.html#disable-azure-private-links-and-use-service-endpoints-instead["已停用 Azure 私有連結"]使用子網路服務端點。
+
 
 endif::azure[]
 

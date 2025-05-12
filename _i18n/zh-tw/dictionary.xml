@@ -628,10 +628,6 @@
   <block id="38a9b05676fb89e391483759bf502908" category="inline-link-macro">資料分層總覽</block>
   <block id="10647b0244486006c8ce3cf5b113d377" category="paragraph">若要設定資料分層、您需要執行下列動作：</block>
   <block id="dfa5ec33cd56c8ec3ba7043cbe7164b5" category="list-text">對於 AWS 、您需要 VPC 端點對 S3 。 <block ref="8bf18368a4d50e7d264c6ce0821cc35b" category="inline-xref-macro-rx"></block>。</block>
-  <block id="aee34f99cc65679272b711e8a3804b3b" category="inline-link-macro">在讀寫磁碟區上分層資料</block>
-  <block id="59f1865977a1fed250ee8180ffd1190d" category="list-text"><block ref="59f1865977a1fed250ee8180ffd1190d" category="inline-link-macro-rx"></block></block>
-  <block id="68b232a5b5a5835d87a14af682e15920" category="inline-link-macro">在資料保護磁碟區上分層資料</block>
-  <block id="636600dd8361a686945e40209210c08d" category="list-text"><block ref="636600dd8361a686945e40209210c08d" category="inline-link-macro-rx"></block></block>
   <block id="f0748d2b3c79aade269f96a17e18f4fe" category="admonition-title">什麼是資料分層不需要的？ #8217 ？</block>
   <block id="e0100d926b1dfa84ed63e121de10aa0a" category="list-text">您不需要安裝功能授權、就能進行資料分層。</block>
   <block id="5f374bdc53d71d737ae05bfa630d37cd" category="list-text">您不需要在系統層級啟用資料分層。</block>
@@ -2115,11 +2111,8 @@
   <block id="ddf67437a4757d7231aaedf4fdf85f02" category="paragraph">您必須知道 Cloud Volumes ONTAP 該密碼才能使用此功能。</block>
   <block id="43cb57ab397bde4904e6f6c54a89b866" category="list-text">在「畫版」頁面上、按一下「 * 新增工作環境 * 」。</block>
   <block id="7ddebea315b9d1858be75da96da551bf" category="list-text">選取系統所在的雲端供應商。</block>
-  <block id="4dbaad4c9dc389d54a40700cf043efae" category="list-text">選擇 Cloud Volumes ONTAP 哪種類型的系統。</block>
   <block id="e5274090bc4227c2e22055ba915c593c" category="list-text">按一下連結以探索現有系統。</block>
   <block id="40017add8025d214a0f7daaa7b0901e1" category="inline-image-macro">顯示連結以探索現有 Cloud Volumes ONTAP 的一套系統的螢幕快照。</block>
-  <block id="ff41b305e511b8485cd86e974b8b33c3" category="list-text">在「區域」頁面上、選擇執行個體所在的區域、然後選取執行個體。</block>
-  <block id="3e46ae3398c8487fda843885c6277e38" category="list-text">在「認證資料」頁面上、輸入 Cloud Volumes ONTAP for the fu位 管理員使用者的密碼、然後按一下「 * 執行 * 」。</block>
   <block id="5ac123f6eee32c0fe88eeab92338a1a4" category="summary">流通量是儲存磁碟區、可快取來源或來源磁碟區的NFS讀取資料。FlexCache後續讀取快取資料會加快該資料的存取速度。</block>
   <block id="90c624683582774042156c98858d14dc" category="paragraph">您可以使用 FlexCache 功能區來加速資料存取、或卸載大量存取磁碟區的流量。由於資料無需存取來源磁碟區、因此能夠直接提供服務、因此在用戶端需要重複存取相同資料時、支援使用者更能提升效能。 FlexCache適用於讀取密集的系統工作負載的資料量。 FlexCache</block>
   <block id="29e15f4a6477b08e72892d33f28001ce" category="inline-link">《資料存取能力快速指南》的《支援資料量》（英文） FlexCache</block>
@@ -5306,8 +5299,6 @@
   <block id="d036b4a2aa80729ab508e1851458f506" category="cell">選擇 AWS 認證資料和市場訂閱、以搭配此 Cloud Volumes ONTAP 款功能系統使用。按一下*新增訂閱*、將所選認證資料與新的AWS Marketplace訂閱建立關聯。訂閱可以是一年一度的合約、或Cloud Volumes ONTAP 是以每小時的費率支付。如果您直接向 NetApp 購買授權（請自帶授權（ BYOL ）），則不需要 AWS 訂閱。<block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>。</block>
   <block id="fc687f57dc8188e5dad217858c078354" category="section-title">Cloud Volumes ONTAP 中的按鍵旋轉</block>
   <block id="d2a95dd3692cce58be8541add2bc6897" category="paragraph">支援大部分的組態。如果您的 Cloud Volumes ONTAP 系統執行的是最新版本，那麼您可以繼續使用。<block ref="f2e6a88e181ee9519c72412b23fc6e17" category="inline-link-macro-rx"></block>。</block>
-  <block id="1a59c4cde0b6364677026791f943ea0f" category="paragraph">應在 Aggregate 上啟用資料分層功能，以便在磁碟區上啟用。您應該瞭解新磁碟區和現有磁碟區的需求。<block ref="7beee552935977f4dc8f9885d22b65a0" category="inline-xref-macro-rx"></block>。</block>
-  <block id="c64796eb83e1bb434daed77e0937d1b4" category="paragraph">BlueXP  會在建立系統時建立物件存放區以存放冷資料<block ref="dbb78a2cc39acf14e084217f8235322a" category="inline-xref-macro-rx"></block>。之後，您只需要在磁碟區上啟用資料分層<block ref="7f499208f2ff911432bf2cd70bde52dd" category="inline-xref-macro-rx"></block>功能（在某些情況下，）。</block>
   <block id="8ce366e694d5c3c3c27249c7cedf502e" category="paragraph">根據預設，自訂角色包含權限。<block ref="b7d06976ba0f29792527e383824a0357" category="inline-link-rx"></block></block>
   <block id="97cc667ec30a818b8495fe4772b6f90d" category="paragraph">若要在現有磁碟區上啟用資料分層，請確定已在基礎 Aggregate 上啟用資料分層功能。如果現有的 Aggregate 上未啟用資料分層功能、則您需要使用 ONTAP 系統管理員將現有的 Aggregate 附加至物件存放區。</block>
   <block id="6b18d3e430bd8e9cf2e82762b16ab491" category="paragraph">當您取消委任 Cloud Volumes ONTAP 工作環境時，系統不會自動刪除為環境建立的 S3 儲存區。相反地，它會保持孤立狀態，以防止任何意外的資料遺失。您可以刪除貯體中的物件，然後自行移除 S3 貯體，或保留供日後使用。請參閱<block ref="68bba29ef3429f4e3e6e1695929c5629" category="inline-link-rx"></block>。</block>
@@ -5369,7 +5360,6 @@
   <block id="8ac1ecc7ceb7a49d071b4f1b71f0e176" category="section-title">檢視套件詳細資料</block>
   <block id="f88e8fee4b6b78cbc9779b73098653b5" category="paragraph">您可以在 Cloud Volumes ONTAP 頁面上切換至舊版模式，以檢視每個套件所使用容量的詳細資料。</block>
   <block id="4a95292c803539c8cf72591c54db0644" category="list-text">選取 * 檢視 * 以查看每個授權套件的已配置容量。</block>
-  <block id="28db6f5e86482ae58b9becef415d1abc" category="list-text">選取 * 切換至傳統檢視 * 。</block>
   <block id="13bb1907bdca20408e78b483332beab6" category="inline-image-macro">「切換至舊版檢視」按鈕的螢幕擷取畫面</block>
   <block id="ad8dd0162f38eb308d880b20d20ab47e" category="paragraph"><block ref="ad8dd0162f38eb308d880b20d20ab47e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2daabc6822724771970f17e8ae6a4cee" category="list-text">選擇* Overview（概述）*選項卡。</block>
@@ -5401,7 +5391,6 @@
   <block id="29a97b99a51928e5b93f84b989f0c2a0" category="list-text"><block ref="29a97b99a51928e5b93f84b989f0c2a0" category="inline-link-rx"></block></block>
   <block id="e94250a733abb8fd0b0ca35ccdcc534f" category="inline-link">從 Azure 市場部署 Cloud Volumes ONTAP</block>
   <block id="2f3a59a024a5fa5e6d9049c44506f8b0" category="list-text"><block ref="2f3a59a024a5fa5e6d9049c44506f8b0" category="inline-link-rx"></block></block>
-  <block id="7f307020214b0601581a2750d70801ff" category="paragraph">以下是兩個選項的功能比較：</block>
   <block id="e380306ab83464e152f5fd1b794098b0" category="cell">Azure 市場</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="cell">藍圖</block>
   <block id="d001c47858581c979ac478e49c9661c4" category="cell">* 加入 *</block>
@@ -5466,7 +5455,6 @@
   <block id="f0bf9f15eadaf8491da2934af661a352" category="paragraph">您可以使用 CLI 設定 EMS 。有關說明，請參閱<block ref="f10f254becd5d3115751852411e7271e" category="inline-link-rx"></block>。</block>
   <block id="530e18594ace7f1432d409c00afc2454" category="inline-link-macro">瞭解 Cloud Volumes ONTAP 在 BlueXP  和市場的產品</block>
   <block id="c6291eec01d7eef87347f05c5b6cc5e0" category="paragraph">如需此產品的詳細資訊，請<block ref="1d59ccb0a322b44874ad6d716be992b6" category="inline-link-macro-rx"></block>參閱。</block>
-  <block id="b11556db62f78035a974fcf2af350b0c" category="paragraph">使用 Azure 市場直接部署部署部署的 Cloud Volumes ONTAP 執行個體具有下列屬性：</block>
   <block id="307fba28eaa68023634ac12efe78443d" category="list-text">最新的 Cloud Volumes ONTAP 版本（ 9.16.1 或更新版本）。</block>
   <block id="87449344416c32f88eeb38f3bd00e092" category="list-text">Cloud Volumes ONTAP 免費授權，限 500 GiB 的已配置容量。本授權不含 NetApp 支援，且無到期日。</block>
   <block id="152058aae87c0f08791efa9a9cbd8167" category="inline-link-macro">靈活的協調模式</block>
@@ -5474,7 +5462,6 @@
   <block id="c612116a8947c7a85f4c8fb5064a1e13" category="list-text">高階 SSD v2 託管磁碟， 500 GiB 配置容量，以及一個根和一個資料磁碟。</block>
   <block id="e028eb7a88e0ab56d3961355b9bc2c4b" category="list-text">不支援這些功能：</block>
   <block id="47f64097ec44c9f18f4025941f2e4436" category="list-text">分層FabricPool</block>
-  <block id="4bfa0affcddbe689db2e9788d1cf9ade" category="list-text">變更執行個體類型</block>
   <block id="b578dbfdde2bda79f859ef35aa53672e" category="list-text">快速寫入模式</block>
   <block id="cea379dc708683105165e44b4cd1a6aa" category="list-text">請確定您已訂閱有效的 Azure 市場方案。</block>
   <block id="a01bb8da3018252a01366ddb6767e8a3" category="inline-link-macro">在單一 AZ 部署 HA</block>
@@ -5507,7 +5494,6 @@
   <block id="b445825d2f2ddce17b30d5dbc127bb53" category="list-text">在 * 進階 * 索引標籤中，確認是否已設定此部署所需的兩項 Azure 功能。請參閱<block ref="47d2b322282e9494b913fdbd50384f10" category="inline-link-macro-rx"></block>和<block ref="a99c16252f5b965dd7864967fa4d6812" category="inline-link-macro-rx"></block>。</block>
   <block id="f7dce7f10f1f8cc2b434e0510f469742" category="list-text">您可以在 *Tags* 標籤中定義資源或資源群組的名稱和值配對。</block>
   <block id="e5c4df6a4568a2a580b8a3e5b40577b6" category="list-text">在 * 檢閱 + 建立 * 索引標籤中，檢閱詳細資料並開始部署。</block>
-  <block id="5a8751283cd95032ddf0ec56f5bb1224" category="paragraph">直接透過 Azure 市場進行的 Cloud Volumes ONTAP 部署不含 NetApp 支援。如果在部署期間發生任何問題，您可以自行疑難排解及解決。</block>
   <block id="e9ad8cb2d3f7ad7951cb5e2ccdf98fcc" category="list-text">在 Azure Marketplace 網站上，前往 * 開機診斷 &gt; 序列記錄 * 。</block>
   <block id="3473bcdf09ad8e881f1d60433d0651a8" category="list-text">下載並調查序列記錄。</block>
   <block id="7afbb0eb51f3278f46cb4b6d919cf956" category="list-text">如需疑難排解，請參閱產品文件和知識庫（ KB ）文章。</block>
@@ -5553,22 +5539,17 @@
   <block id="b717ddfb2f9a28b7e4673751144693cc" category="paragraph">如需所有支援區域的清單，請參閱<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>。</block>
   <block id="7c2f2acb2655a9e7f8ab7f69bbd0d731" category="paragraph">NetApp 提供兩個選項，可在 Azure 上部署 Cloud Volumes ONTAP 。Cloud Volumes ONTAP 傳統上仰賴 BlueXP  來進行部署和協調。從 Cloud Volumes ONTAP 9.16.1 開始，您可以利用 Azure 市場直接部署，這是一個簡化的程序，可存取有限但功能強大的 Cloud Volumes ONTAP 功能和選項集。</block>
   <block id="89191ae1b044d97b766a182a1727fae4" category="paragraph">當您直接從 Azure 市場部署 Cloud Volumes ONTAP 時，您不需要設定 BlueXP  Connector ，也不需要符合透過 BlueXP  部署 Cloud Volumes ONTAP 所需的其他安全性和上線條件。從 Azure 市場，您只需按幾下滑鼠，就能快速部署 Cloud Volumes ONTAP ，並探索其在您環境中的核心功能與功能。</block>
-  <block id="55f3f90910bdc78c8b57d6f9c6044843" category="cell">Edsv5 和 Lsv3</block>
   <block id="94302f254b4d602be77fb6e28556ecec" category="cell">* 支援的儲存虛擬機器數量 *</block>
   <block id="212ecc3006afeac1a27b275b3e8556b8" category="cell">每個部署一個</block>
   <block id="e3e6a1af04ec174dc41385d29bdd8865" category="cell">根據您的組態，提供多個儲存 VM 。<block ref="85b54da0356d83997931fab8f38013e5" category="inline-link-macro-rx"></block></block>
-  <block id="ebd233c7db02fa141c56a433554bbe06" category="paragraph">未來 BlueXP  Connector 將能夠識別透過 Azure 市場直接部署所進行的部署。這可讓您充分利用 BlueXP  所提供的增強功能。</block>
   <block id="dcfe8b86806ea8eca7c3c29e1d2f915c" category="paragraph">如果您超過 BYOL 容量，或是授權過期，您將根據您的市場訂閱，以每小時費率收取超額費用。超額費用會以市場費率收取，優先使用其他授權的可用容量。</block>
   <block id="8683a88ed22af0c318a9eb6a4fb30537" category="paragraph">路由和防火牆原則必須允許 HTTPS 流量傳送到下列端點， Cloud Volumes ONTAP 才能傳送 AutoSupport 訊息：</block>
   <block id="d5788def9bc230ba887427df9594dd27" category="cell"><block ref="d5788def9bc230ba887427df9594dd27" category="inline-link-rx"></block></block>
   <block id="b1905fad16d0cb92c82e293f1516f810" category="cell">使用客戶管理金鑰（ CMK ）時，用於從 Azure Key Vault 擷取用戶端機密金鑰。</block>
-  <block id="c01c238e45c56b0625dc393a96942f4a" category="paragraph">從 Cloud Volumes ONTAP 9.16.1 開始，您可以使用 Azure 市場直接部署來快速輕鬆地部署 Cloud Volumes ONTAP 。從 Azure 市場，您只需按幾下滑鼠，就能快速部署 Cloud Volumes ONTAP ，並探索其在您環境中的核心功能與功能。</block>
   <block id="35acff494427083599ef0a6b5f200d8d" category="list-text">在單一可用性區域（ AZ ）中，以高可用度（ HA ）模式設定的兩個節點，並以預設序號提供。儲存虛擬機器（儲存 VM ）會部署在<block ref="76b8e7a3e49d5a96c336355428b9cbdd" category="inline-link-macro-rx"></block>中。</block>
   <block id="b7c4cebe2d8448d4f2e4b92843f79d47" category="list-text">部署一個資料儲存 VM ，搭配 NFS ， CIFS ， iSCSI 和 NVMe / TCP 資料服務。您無法新增任何額外的資料儲存 VM 。</block>
-  <block id="5d98b60eeef8b1f07d860cd9f9341d93" category="list-text">安裝適用於 NFS ， CIFS （ SMB ）， iSCSI ，反勒索軟體（ ARW ）， SnapLock 和 SnapMirror 的授權。</block>
   <block id="5679d39cc8e25e0711af5b5bd3de1661" category="inline-link">ONTAP 溫度敏感儲存效率（ TSSE ）</block>
   <block id="6567e2b7c35d280cea9f3ce8b354c3ae" category="list-text"><block ref="bf02a27a555eff9ad7fe3308b8b66545" category="inline-link-rx"></block>， Volume 加密和外部金鑰管理預設為啟用。</block>
-  <block id="5858787d64dc0052d6813b6039e8ad5a" category="list-text">* 資源群組 * ：使用現有的資源群組或建立新的資源群組。資源群組有助於在單一群組中為 Cloud Volumes ONTAP 執行個體分配所有資源，例如磁碟和儲存 VM 。</block>
   <block id="00185d9967c9ce9bd7de3a2330aea4ed" category="list-text">* 大小 * ：為支援的 Premium SSD v2 託管磁碟選擇儲存 VM 大小。</block>
   <block id="0573433fb185b84611f18e3f6e506cd2" category="paragraph">選取通知圖示以檢視部署進度。部署 Cloud Volumes ONTAP 之後，您可以檢視所列的儲存 VM 以進行作業。</block>
   <block id="20a0bd63dc9b064c0cedc40d649eb29a" category="paragraph">存取後，請使用 ONTAP 系統管理員或 ONTAP CLI ，以您設定的管理認證登入儲存 VM 。之後，您可以建立磁碟區， LUN 或共享區，並開始使用 Cloud Volumes ONTAP 的儲存功能。</block>
@@ -5801,4 +5782,72 @@
   <block id="84befd86706fa21112c130084b373991" category="list-text">如果 Cloud Volumes ONTAP 系統的已配置容量超過 500 GiB ， BlueXP  會將系統轉換為 Essentials 套件。</block>
   <block id="a0f8f1341588aae4d56d3b5fb0fde3de" category="paragraph">一旦系統轉換為 Essentials 套件，即會套用至該套件<block ref="7af77c30f2eff63b0d18155ad569ed75" category="inline-link-macro-rx"></block>。</block>
   <block id="0551862e260539a3a516b4868d9bcead" category="paragraph">已轉換為 Essentials 套件的 Cloud Volumes ONTAP 系統無法切換回 Freemium ，即使已配置的容量減至少於 500 GiB 。配置容量少於 500 GiB 的其他系統會留在 Freemium （只要使用 Freemium 產品進行部署）。</block>
+  <block id="462848e89fbcd7fc117ed7c36b47f6f3" category="doc">探索透過 BlueXP  中的 Azure 市場所進行的部署</block>
+  <block id="cb52ca43108f98673f7dcc6c4bc528f6" category="paragraph">BlueXP  現在能夠探索直接透過 Azure 市場部署的 Cloud Volumes ONTAP 系統。這表示您現在可以將這些系統新增及管理為 BlueXP  中的工作環境，就像任何其他 Cloud Volumes ONTAP 系統一樣。</block>
+  <block id="d2e69d0efb90eba181fe1aff16489eba" category="section-title">能夠為 Azure 租戶分層資料</block>
+  <block id="6a86c1cc6c3338bb337a5e643e80da8e" category="paragraph">您現在可以在由一個租戶建立 Cloud Volumes ONTAP 工作環境，並由另一個租戶建立 BlueXP  Connector 的情況下，為 Azure 租戶啟用分層。您可以使用此功能，為多個 Azure 租戶使用相同的 Connector 來分層資料。</block>
+  <block id="879e91c0a0fa09577c58d0330291ff06" category="inline-link">Azure 租戶的分層資料需求</block>
+  <block id="215678b43321c729a07cabb64971f83c" category="paragraph"><block ref="215678b43321c729a07cabb64971f83c" category="inline-link-rx"></block></block>
+  <block id="b8177b5e9e7ab48db3ab8624b3c82510" category="inline-link-macro">探索 BlueXP  中部署的系統</block>
+  <block id="b2c6aab3a91ad13c906bdd0aa040d62a" category="paragraph">在 Azure 市場完成部署後，您可以在 BlueXP  中探索這些系統。探索之後，您可以將它們當作工作環境來管理，並充分利用所有 BlueXP  功能。請參閱 <block ref="2692dc6f425f7eb6cb61608c1e797cfb" category="inline-link-macro-rx"></block>。</block>
+  <block id="73c413c9be642ae1dcba807da01ed9c1" category="paragraph">以下是這兩個選項的功能比較。請注意，透過 Azure 市場部署的獨立執行個體功能，在 BlueXP  中發現時會有所變更。</block>
+  <block id="47c593846f1ae327489596a5d77c3318" category="paragraph">EDS _v5 和 LS_v3 執行個體類型</block>
+  <block id="d7a49ef829fbbc11240852920fc128b9" category="admonition">Azure 市場對於 HA 組態支援 L8s_v3 執行個體類型，但 BlueXP  不支援。BlueXP  在探索期間無法正確偵測到。</block>
+  <block id="988061bf5cc6bb2a04fa1a44abd369a1" category="list-text">選擇要新增的 Cloud Volumes ONTAP 系統類型。</block>
+  <block id="8f366f7a602a0b428202bf1bf7b932d8" category="list-text">在「區域」頁面上，選取區域。您可以看到在所選區域中執行的系統。</block>
+  <block id="33baa2d44b32218796e0d2c00f3253ca" category="admonition">Cloud Volumes ONTAP 系統在此頁面上以執行個體表示。從清單中，您只能選取已註冊目前帳戶的執行個體。</block>
+  <block id="412c51eb308e137bf6912197df3e6619" category="list-text">在「認證」頁面上，輸入 Cloud Volumes ONTAP 管理員使用者的密碼，然後選取 * 執行 * 。</block>
+  <block id="116506219a3191e0250a50c5119faeae" category="paragraph">您可以使用 Azure 市場直接部署來快速輕鬆地部署 Cloud Volumes ONTAP 。從 Azure 市場，您只需按幾下滑鼠，就能快速部署 Cloud Volumes ONTAP ，並探索其在您環境中的核心功能與功能。</block>
+  <block id="253341483cd63749b04822d085425cdb" category="paragraph">使用 Azure 市場直接部署部署部署的 Cloud Volumes ONTAP 系統具有這些屬性。請注意，透過 Azure 市場部署的獨立執行個體功能，在 BlueXP  中發現時會有所變更。</block>
+  <block id="c371e3295c1fe369b51a7f03057bb1ff" category="list-text">安裝適用於 NFS ， CIFS （ SMB ）， iSCSI ，自主勒索軟體保護（ ARP ）， SnapLock 和 SnapMirror 的授權。</block>
+  <block id="39a42abacdd9ed9f78332fb060b29196" category="list-text">變更儲存 VM 類型</block>
+  <block id="6ca8c21e063b8a9f54945a09bc94392b" category="list-text">* 資源群組 * ：使用現有的資源群組或建立新的資源群組。資源群組有助於在單一群組中為 Cloud Volumes ONTAP 系統分配所有資源，例如磁碟和儲存 VM 。</block>
+  <block id="d4e7a9bbdf268719d1e4887b0bb7a121" category="section-title">疑難排解部署問題</block>
+  <block id="0f14cbd67da8e5fe806dd5ee58c8ae05" category="paragraph">直接透過 Azure 市場部署的 Cloud Volumes ONTAP 系統不支援 NetApp 。如果在部署期間發生任何問題，您可以自行疑難排解及解決。</block>
+  <block id="5853a7bc6feb49b52df56b19734e5c46" category="paragraph">您可以探索使用 Azure 市場直接部署部署的 Cloud Volumes ONTAP 系統，並將其管理為 BlueXP  中的工作環境。BlueXP  Connector 會探索這些系統，將它們新增為工作環境，套用必要的 BlueXP  授權，並解除鎖定這些系統的 BlueXP  完整功能。單一 AZ 的原始 HA 組態會保留使用 PSSD v2 託管磁碟，系統會登錄到與原始部署相同的 Azure 訂閱和資源群組。</block>
+  <block id="197f738c81633c036a750af935f18fc0" category="paragraph">在探索使用 Azure 市場直接部署部署的 Cloud Volumes ONTAP 系統時， BlueXP  Connector 會執行下列工作：</block>
+  <block id="9fb326c55818aec17fb7e0bd43bfac40" category="inline-link-macro">Freemium 授權</block>
+  <block id="b8967b77fd138bba59ac3f95d424502d" category="list-text">將發現的系統的免費許可證替換爲基於容量<block ref="1b26e9041eb43ecd32ea6f7717f721cc" category="inline-link-macro-rx"></block>的常規許可證。</block>
+  <block id="e6a7e2dad22077c8f6fd9c02b2bb3275" category="list-text">保留已部署系統的現有功能，並新增 BlueXP  的額外功能，例如資料保護，資料管理和安全功能。</block>
+  <block id="e03db57a713d542b2432144bfa87b4b2" category="list-text">以 NFS ， CIFS （ SMB ）， iSCSI ， ARP ， SnapLock 和 SnapMirror 的新 ONTAP 授權取代節點上已安裝的授權。</block>
+  <block id="b205669c4feab7b39e4b229e8081df7b" category="list-text">將一般節點序號轉換為唯一的序號。</block>
+  <block id="0051bea57d52f8c8fa6526e7efbc7b5a" category="list-text">視需要在資源上指派新的系統標籤。</block>
+  <block id="eb87da5ab34a584d9373204798372f8e" category="list-text">將執行個體的動態 IP 位址轉換為靜態 IP 位址。</block>
+  <block id="3de20c48538543f17e86d7e404227ede" category="inline-link-macro">一次寫入多讀取</block>
+  <block id="94f0a5762c991a969c809c05b60a6028" category="list-text">在部署的系統上啟用<block ref="67b0910e9f44565262399301e6abc67a" category="inline-link-macro-rx"></block>，<block ref="6558b41b077a2f06a7af4b7c637d847b" category="inline-link-macro-rx"></block>和<block ref="25ed136bd8cc4d5669146bf442017a5b" category="inline-link-macro-rx"></block>（ WORM ）儲存設備的功能。您可以在需要時從 BlueXP  主控台啟動這些功能。</block>
+  <block id="b4f0b14a7c03bd1408d6f962ce6f783f" category="list-text">將執行個體登錄至用於探索這些執行個體的 NSS 帳戶。</block>
+  <block id="9ea9c6e19b1b679ebc8489e1abbcca81" category="inline-link-macro">自動和手動模式</block>
+  <block id="cafedbc12625c51784900844db248af7" category="list-text">為探索到的系統啟用中的容量管理功能<block ref="a953b070790e096be6f09488828337e6" category="inline-link-macro-rx"></block>。</block>
+  <block id="9a907982d0ec72433154968c4f37505e" category="paragraph">確保 Azure 市場的部署已完成。BlueXP  Connector 只有在部署完成且可供探索時，才能探索系統。</block>
+  <block id="60fc07059cb7041923e12e08ca950393" category="admonition">Azure 市場直接部署支援 L8s_v3 執行個體類型。不過， BlueXP  不支援 HA 組態的此執行個體類型，而且在探索期間無法正確偵測。</block>
+  <block id="5074efba5aea5ce50888675e00a7b9a5" category="paragraph">在 BlueXP  中，您可以依照標準程序來探索現有的系統。請參閱 <block ref="f425b68573921e015280a6ac0f002e09" category="inline-link-macro-rx"></block>。</block>
+  <block id="fd11d45aadcd4e9407d5c24aab385e8f" category="inline-link-macro">擴充 Aggregate</block>
+  <block id="cfac425cd6b9dce2e8b747e094c6e8b2" category="inline-link-macro">新增磁碟區</block>
+  <block id="fd3876691774db6bf48c14e9ff5948b8" category="inline-link-macro">配置額外的儲存 VM</block>
+  <block id="1e74f2fbe4da4592550efa5f4d520f74" category="inline-link-macro">變更執行個體類型</block>
+  <block id="499d99954d9f13bddbe35ebe14563dfd" category="paragraph">探索完成後，您可以在 BlueXP  中檢視列為工作環境的系統。您可以執行各種管理工作，例如<block ref="692345b91af3925a7dacff132216aee5" category="inline-link-macro-rx"></block>，，<block ref="552a9fc516a651107d84387afb87042a" category="inline-link-macro-rx"></block> <block ref="1a42966167dfad1265c010627e37968a" category="inline-link-macro-rx"></block>和<block ref="eb1ea84de5380eb172e1cc94df12c4b9" category="inline-link-macro-rx"></block>。</block>
+  <block id="40d1f3228e91a00383279859612f7ba5" category="list-text">選取 * 切換至進階檢視 * 。</block>
+  <block id="3df898a44cd4e747f0651fff3683bca8" category="inline-image-macro">切換至進階檢視按鈕的螢幕擷取畫面</block>
+  <block id="d4de4fdd26abe13af932d9682aa962d4" category="paragraph"><block ref="d4de4fdd26abe13af932d9682aa962d4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cf5e0e2d5e3b97433dcea18ed2c97b91" category="list-text">檢視您要查看的套件詳細資料。</block>
+  <block id="f651647ac9ca970bf81f92917731dcbb" category="inline-image-macro">切換至標準檢視按鈕的螢幕擷取畫面</block>
+  <block id="20dbfe4510a959e2d164802031656e83" category="paragraph"><block ref="20dbfe4510a959e2d164802031656e83" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="88e25761f6eadcead9ced5f76a00e95c" category="inline-link">您的第一個API呼叫</block>
+  <block id="f202ccbb3aeb33fd421a86b48b8333ba" category="paragraph">如需執行 Cloud Volumes ONTAP API 呼叫的相關資訊，請<block ref="223f03c05da3694b6a47cd85e6e8e71c" category="inline-link-rx"></block>參閱。</block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="list-title">相關資訊</block>
+  <block id="d479672b01dca22d03aa5bad6a750d48" category="list-text"><block ref="d479672b01dca22d03aa5bad6a750d48" category="inline-link-rx"></block></block>
+  <block id="0eb40db454a66675902469f652e4d2d5" category="inline-link">Cloud Volumes ONTAP 工作流程</block>
+  <block id="ac4cd5013e2e9859937e78450b25c8d9" category="list-text"><block ref="ac4cd5013e2e9859937e78450b25c8d9" category="inline-link-rx"></block></block>
+  <block id="a780a65710131e9230824a56b9b8810b" category="paragraph">應在 Aggregate 上啟用資料分層功能，以便在磁碟區上啟用。您應該瞭解新磁碟區和現有磁碟區的需求。<block ref="aab0ed247945a985fc246df220514431" category="inline-xref-macro-rx"></block>。</block>
+  <block id="0b62bc8ec3e3c99207707d34c04bf762" category="list-text"><block ref="0b62bc8ec3e3c99207707d34c04bf762" category="inline-link-macro-rx"></block></block>
+  <block id="feeb4931d6047ef8e401159d1c8fda09" category="list-text"><block ref="feeb4931d6047ef8e401159d1c8fda09" category="inline-link-macro-rx"></block></block>
+  <block id="b2f263166e90b59fbacbe6b5ead0ba84" category="paragraph">BlueXP  會在建立系統時建立物件存放區以存放冷資料<block ref="2bc42c273736fc8d1c1cbc5e39b01160" category="inline-xref-macro-rx"></block>。之後，您只需要在磁碟區上啟用資料分層<block ref="20c714206be4f432619a9d0394b388bc" category="inline-xref-macro-rx"></block>功能（在某些情況下，）。</block>
+  <block id="fdcb7ccb26d6b4864ac844c920b0f5d5" category="paragraph">您可以使用相同的 Connector 來分層資料，以供多個 Azure 租戶使用。若要在 Cloud Volumes ONTAP 工作環境是由一個租戶建立，而 Connector 是由另一個租戶建立的情況下，為 Azure 租戶啟用分層功能，請確定下列事項：</block>
+  <block id="0b3b411ceb545e69a73eeeea9e0f4812" category="inline-link">管理 BlueXP 的 Azure 認證和市場訂閱</block>
+  <block id="ef83b75206a21def8410676276978aac" category="list-text">您已在 BlueXP  中輸入兩個租戶的認證，以進行交叉驗證。請參閱<block ref="6ee6fc101b8550f56fdf56dce6277e28" category="inline-link-rx"></block>。</block>
+  <block id="c307dc26cbb58ad7fba2664c17cb4d16" category="inline-link">在 Azure 入口網站上</block>
+  <block id="953bd3af818813e12a62ff4db4f175eb" category="list-text">您已啟用兩個租戶之間的虛擬網路（ vnet ）對等<block ref="2f75b24d24389585ccc23662dba8f117" category="inline-link-rx"></block>關係。這是必要項目，如此 Connector 才能存取其他租戶的儲存帳戶。</block>
+  <block id="5dc4c869682b55bd825dbd766c5a91c6" category="inline-link-macro">已停用 Azure 私有連結</block>
+  <block id="56942c64ec21bc5186a25c20b4c9231e" category="list-text">您必須<block ref="d1486d850c17a7ded1dee71bca015a76" category="inline-link-macro-rx"></block>使用子網路服務端點。</block>
+  <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">2025 年 12 月 5 日</block>
 </blocks>
