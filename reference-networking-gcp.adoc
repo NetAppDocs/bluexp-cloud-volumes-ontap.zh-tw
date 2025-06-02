@@ -407,7 +407,7 @@ TIP: 正在尋找Connector的相關資訊？ https://docs.netapp.com/us-en/bluex
 如果您需要嚴格的傳出流量規則、可以使用下列資訊、僅開啟 Cloud Volumes ONTAP 那些由真人進行傳出通訊所需的連接埠。
 
 
-NOTE: 來源是 Cloud Volumes ONTAP 指在整個系統上的介面（ IP 位址）。
+NOTE: 來源是 Cloud Volumes ONTAP 系統的介面（IP 位址）。
 
 [cols="10,10,6,20,20,34"]
 |===

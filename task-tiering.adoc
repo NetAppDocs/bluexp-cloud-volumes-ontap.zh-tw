@@ -82,12 +82,13 @@ ifdef::aws[]
 
 === AWS支援
 
-* AWS支援資料分層功能、從Cloud Volumes ONTAP 功能表9.2開始。
+* 從 Cloud Volumes ONTAP 9.2 開始，AWS 支援資料分層。
 * 效能層可以是通用SSD（GP3或gp2）或已配置的IOPS SSD（IO1）。
 +
 
-NOTE: 使用處理量最佳化的HDD（ST1）時、不建議將資料分層至物件儲存設備。
+NOTE: 使用吞吐量最佳化 HDD (st1) 時，我們不建議將資料分層到物件儲存。
 
+* 非活動資料分層儲存到 Amazon S3 儲存桶。不支援分層到其他提供者。
 
 
 endif::aws[]
@@ -105,6 +106,7 @@ ifdef::azure[]
 
 
 * 效能層可以是優質SSD託管磁碟、標準SSD託管磁碟或標準HDD託管磁碟。
+* 非活動資料分層到 Microsoft Azure Blob。不支援分層到其他提供者。
 
 
 endif::azure[]
@@ -115,8 +117,9 @@ ifdef::gcp[]
 
 === 支援Google Cloud
 
-* Google Cloud支援資料分層功能、從Cloud Volumes ONTAP 推出的功能僅支援32個9.6個。
+* 從 Cloud Volumes ONTAP 9.6 開始，Google Cloud 支援資料分層。
 * 效能層可以是SSD持續磁碟、平衡持續磁碟或標準持續磁碟。
+* 非活動資料分層儲存到 Google Cloud Storage。不支援分層到其他提供者。
 
 
 endif::gcp[]

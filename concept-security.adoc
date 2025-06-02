@@ -52,17 +52,40 @@ endif::gcp[]
 
 === NetApp 加密解決方案（ NVE 和 NAE ）
 
-Cloud Volumes ONTAP 支援 https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NetApp Volume Encryption（NVE）與NetApp Aggregate Encryption（NAE）"^]。NVE 和 NAE 是軟體型解決方案、可對磁碟區進行（ FIPS ） 140-2 相容的閒置資料加密。NVE 和 NAE 都使用 AES 256 位元加密。
+Cloud Volumes ONTAP 支援 https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NetApp Volume Encryption（NVE）與NetApp Aggregate Encryption（NAE）"^]。NVE 和 NAE 是基於軟體的解決方案，可實現符合 (FIPS) 140-2 標準的磁碟區靜態資料加密。NVE 和 NAE 都使用 AES 256 位元加密。
 
 * NVE 一次加密閒置的資料一個磁碟區。每個資料磁碟區都有其專屬的加密金鑰。
 * Nae 是 NVE 的延伸、它會加密每個磁碟區的資料、而且磁碟區會在整個集合體之間共用金鑰。Nae 也允許對集合體中所有磁碟區的通用區塊進行重複資料刪除。
 
 
-外部金鑰管理程式支援NVE和NAE。
+Cloud Volumes ONTAP 透過 AWS、Azure 和 Google Cloud 提供的外部金鑰管理服務 (EKM) 支援 NVE 和 NAE，包含第三方解決方案，例如 Fortanix。與 ONTAP 不同，對於 Cloud Volumes ONTAP，加密金鑰是在雲端提供者端產生的，而不是在 ONTAP 中產生的。
 
-ifdef ：： azure[] endif： ： azure[] ifdef ：： GCP[] endif： ： GCP[]
+Cloud Volumes ONTAP 使用 ONTAP 使用的標準金鑰管理互通性協定 (KMIP) 服務。有關支援服務的更多信息，請參閱 https://imt.netapp.com/imt/#welcome["互通性對照表工具"^] 。
 
-新的Aggregate在您設定外部金鑰管理程式之後、預設會啟用NetApp Aggregate Encryption（NAE）。非 NAE Aggregate 一部分的新磁碟區、預設會啟用 NetApp Volume Encryption （ NVE ）（例如、如果您有在設定外部金鑰管理程式之前建立的現有 Aggregate ）。
+如果您使用 NVE，則可以選擇使用雲端提供者的金鑰保管庫來保護 ONTAP 加密金鑰：
+
+ifdef::aws[]
+
+* AWS 金鑰管理服務（ KMS ）
+
+
+endif::aws[]
+
+ifdef::azure[]
+
+* Azure Key Vault（AKV）
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* Google Cloud金鑰管理服務
+
+
+endif::gcp[]
+
+新的Aggregate在您設定外部金鑰管理程式之後、預設會啟用NetApp Aggregate Encryption（NAE）。不屬於 NAE 聚合的新磁碟區預設啟用 NVE（例如，如果您有在設定外部金鑰管理員之前建立的現有聚合）。
 
 設定支援的金鑰管理程式是唯一必要的步驟。如需設定說明link:task-encrypting-volumes.html["使用 NetApp 加密解決方案加密磁碟區"]，請參閱。
 
