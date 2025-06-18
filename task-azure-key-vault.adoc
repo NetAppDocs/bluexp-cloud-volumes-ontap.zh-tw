@@ -179,7 +179,7 @@ Category: kms_wrapped_key_status
 3 entries were displayed.
 ----
 +
-如果是 `service_reachability` 狀態不是 `OK`、SVM無法以所有必要的連線和權限來連線至Azure Key Vault服務。請確保您的Azure網路原則和路由不會封鎖您的私有vNet、使其無法到達Azure KeyVault Public端點。如果有、請考慮使用Azure私有端點、從vNet內存取金鑰庫。您可能還需要在SVM上新增靜態主機項目、以解析端點的私有IP位址。
+如果 `service_reachability`狀態不是 `OK` ，SVM 無法使用所有必要的連線和權限存取 Azure Key Vault 服務。請確保 Azure 網路策略和路由不會阻止專用 vNet 存取 Azure Key Vault 公用終端點。如果有、請考慮使用Azure私有端點、從vNet內存取金鑰庫。您可能還需要在SVM上新增靜態主機項目、以解析端點的私有IP位址。
 
 +
 。 `kms_wrapped_key_status` 將會報告 `UNKNOWN` 初始組態時。其狀態將變更為 `OK` 加密第一個磁碟區之後。
@@ -192,9 +192,12 @@ Category: kms_wrapped_key_status
 如果設定正確、Cloud Volumes ONTAP 則會自動建立Volume並啟用Volume加密。
 
 . 確認磁碟區已正確建立並加密。如果是的話、「-is-Encrypted」參數會顯示為「true」。「vol show -vserver _svm_name_-Fields is加密」
+. 可選：如果要更新 Azure Key Vault 驗證憑證上的憑證，請使用下列命令： 
+`security key-manager external azure update-credentials -vserver v1 -authentication-method certificate`
 
 
 .相關連結
 * link:task-set-up-azure-encryption.html["設定Cloud Volumes ONTAP 支援使用Azure中客戶管理的金鑰"]
 * https://learn.microsoft.com/en-us/azure/key-vault/general/overview["Microsoft Azure 說明文件：關於 Azure Key Vault"^]
+* https://docs.netapp.com/us-en/ontap-cli/index.html["ONTAP 指令參考指南"^]
 

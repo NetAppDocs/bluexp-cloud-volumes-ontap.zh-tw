@@ -92,14 +92,14 @@ NOTE: 這是您為BlueXP設定的服務帳戶、 link:https://docs.netapp.com/us
 
 按一下 * 「新增訂閱」 * 、將選取的認證資料與訂閱建立關聯。
 
-若要建立隨用隨付Cloud Volumes ONTAP 功能的功能性支援系統、您需要從Cloud Volumes ONTAP Google Cloud Marketplace選擇與訂閱功能相關的Google Cloud專案。
+若要建立按使用量付費的 Cloud Volumes ONTAP 系統，您需要從 Google Cloud 市場中選擇與 Cloud Volumes ONTAP 訂閱相關聯的 Google Cloud 專案。
 
 |===
 +
-下列影片說明如何將隨用隨付服務市場訂閱關聯至Google Cloud專案。或者、請依照中的步驟訂閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["將Marketplace訂閱與Google Cloud認證建立關聯"^] 區段。
+以下影片示範如何將按需付費的市場訂閱與您的 Google Cloud 專案關聯。或者，您也可以按照位於 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["將Marketplace訂閱與Google Cloud認證建立關聯"^]部分。
 
 +
-.從 Google Cloud Marketplace 訂閱 BlueXP
+.從 Google Cloud 市集訂閱 BlueXP
 video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 . * 服務 * ：選取您要在此系統上使用的服務。若要選取 BlueXP 備份與還原、或使用 BlueXP 分層、您必須在步驟 3 中指定服務帳戶。
 +
@@ -332,10 +332,10 @@ NOTE: 這是您為BlueXP設定的服務帳戶、 link:https://docs.netapp.com/us
 
 |===
 +
-下列影片說明如何將隨用隨付服務市場訂閱關聯至Google Cloud專案。  或者、請依照中的步驟訂閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["將Marketplace訂閱與Google Cloud認證建立關聯"^] 區段。
+以下影片示範如何將按需付費的市場訂閱與您的 Google Cloud 專案關聯。或者，您也可以按照位於 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["將市場訂閱與 Google Cloud 憑證關聯"^]部分。
 
 +
-.從 Google Cloud Marketplace 訂閱 BlueXP
+.從 Google Cloud 市集訂閱 BlueXP
 video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 . * 服務 * ：選取您要在此系統上使用的服務。若要選取 BlueXP 備份與還原、或使用 BlueXP 分層、您必須在步驟 3 中指定服務帳戶。
 +

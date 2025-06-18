@@ -4,7 +4,7 @@ permalink: concept-azure-image-verification.html
 keywords: Azure, image, VHD, image signature file, 
 summary: 驗證 Azure VHD 映像檔案簽章檔案。 
 ---
-= 適用於 Cloud Volumes ONTAP 的 Azure Marketplace 映像驗證
+= 針對 Cloud Volumes ONTAP 的 Azure Marketplace 映像驗證
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,20 +14,20 @@ summary: 驗證 Azure VHD 映像檔案簽章檔案。
 
 
 [role="lead"]
-Azure 影像驗證符合增強的 NetApp 安全要求。雖然驗證映像檔案是一項簡單的程序、但 Azure 映像簽章驗證確實需要特別的資料、才能將其傳送至知名的 Azure VHD 映像檔、因為 Azure 市場已進行了一次替代。
+Azure 影像驗證符合增強的 NetApp 安全要求。驗證鏡像檔的過程很簡單。但是，Azure 鏡像簽章驗證需要特別注意 Azure VHD 映像文件，因為它在 Azure 市場中已修改過。
 
 
-NOTE: Cloud Volumes ONTAP 軟體 9.15.0 版或更新版本支援 Azure 影像驗證。
+NOTE: Cloud Volumes ONTAP 9.15.0 及更高版本支援 Azure 映像驗證。
 
 
 
 == Azure 對已發佈 VHD 檔案的變更
 
-Azure 修改了領先業界的 1MB （ 1048576 位元組）和結束 512 位元組 VHD 檔案。NetApp 映像簽署會略過前導的 1MB 並結束 512 個位元組、然後簽署剩餘的 VHD 映像部分。
+Azure 修改了 VHD 檔案開頭的 1 MB（1048576 位元組）和結尾的 512 位元組。 NetApp對剩餘的 VHD 檔案進行了簽名。
 
 image:screenshot_azure_vhd_10gb.png["顯示 Azure 10GB VHD 檔案交替的映像"]
 
-例如、上圖顯示大小為 10GB 的 VHD 檔案。但 NetApp 簽署部分會以綠色標示、大小為 10GB - 1MB - 512B 。
+範例中的 VHD 檔案大小為 10GB。 NetApp簽署的部分標示為綠色（10 GB - 1 MB - 512 位元組）。
 
 .相關連結
 * https://pagefault.blog/2019/04/22/how-to-sign-and-verify-using-openssl/["網頁故障部落格：如何使用 OpenSSL 簽署及驗證"^]

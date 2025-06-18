@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-file-verification-linux.html 
 keywords: Azure, image, VHD, file signature verification, encryption, sha256, ONTAP, Cloud Volumes, CLI, Linux 
-summary: 在 Linux 上、透過 Cloud Volumes ONTAP 影像摘要檔案工具驗證匯出的 VHD 檔案簽章 
+summary: 透過 Linux 上的 Cloud Volumes ONTAP 映像摘要檔案工具驗證匯出的 VHD 檔案簽名 
 ---
 = 驗證適用於 Linux 上 Cloud Volumes ONTAP 的 Azure 市場映像簽名
 :hardbreaks:
@@ -14,38 +14,34 @@ summary: 在 Linux 上、透過 Cloud Volumes ONTAP 影像摘要檔案工具驗�
 
 
 [role="lead"]
-您可以依照下列步驟驗證匯出的 VHD 檔案簽章適用於 Linux 。
+在 Linux 上驗證匯出的 VHD 檔案簽章包括驗證信任鏈、編輯檔案和驗證簽章。
 
 .步驟
-. 從下載 Azure Image Digest 檔案 https://mysupport.netapp.com/site/["NetApp 支援網站"^] 然後擷取摘要檔案（ .SIG ）、公開金鑰憑證檔案（ .pem ）和鏈結憑證檔案（ .pem ）。
+. 從下載 Azure 映像檔 https://mysupport.netapp.com/site/["NetApp 支援網站"^]並提取摘要（.sig）文件、公鑰證書（.pem）文件和鏈證書（.pem）文件。
 +
-請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["下載 Azure Image Digest File"^] 以取得更多資訊。
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["下載 Azure 映像摘要文件"^] 。
 
 . 驗證信任鏈結。
 +
-[listing]
+[source, cli]
 ----
 % openssl verify -CAfile Certificate-Chain-9.15.0P1_azure.pem Certificate-9.15.0P1_azure.pem
 Certificate-9.15.0P1_azure.pem: OK
 ----
-. 移除前導的 1MB （ 1048576 位元組）、並結束 512 位元組的 VHD 檔案。
+. 刪除 VHD 檔案開頭的 1 MB（1,048,576 位元組）和結尾的 512 位元組。使用 `tail` ， 這 `-c +K`選項從檔案的第 K 個位元組開始產生位元組。因此，它將 1048577 傳遞給 `tail -c` 。
 +
-如果使用「 tail 」、選項「 -c +K 」會以指定檔案的 KTH 位元組開始輸出位元組。因此、 1048577 會傳送至 'tail -c 。
-
-+
-[listing]
+[source, cli]
 ----
 % tail -c +1048577 ./9150.01000024.05090105.vhd > ./sign.tmp.tail
 % head -c -512 ./sign.tmp.tail > sign.tmp
 % rm ./sign.tmp.tail
 ----
-. 使用 openssl 從憑證擷取公開金鑰、並使用簽章檔案和公開金鑰驗證等量分佈的檔案（ sign.tmp ）。
+. 使用 OpenSSL 從憑證中提取公鑰，並使用簽署檔案和公鑰驗證剝離的檔案（sign.tmp）。
 +
-如果輸入檔通過驗證、則會顯示命令
-" 驗證正常 " 。否則將顯示「驗證失敗」。
+命令提示字元根據驗證結果顯示指示成功或失敗的訊息。
 
 +
-[listing]
+[source, cli]
 ----
 % openssl x509 -pubkey -noout -in ./Certificate-9.15.0P1_azure.pem > ./Code-Sign-Cert-Public-key.pub
 
@@ -57,7 +53,7 @@ Verification Failure
 ----
 . 清理工作區。
 +
-[listing]
+[source, cli]
 ----
 % rm ./9150.01000024.05090105.vhd ./sign.tmp
 % rm *.sig *.pub *.pem

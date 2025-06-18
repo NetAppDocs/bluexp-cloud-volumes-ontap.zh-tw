@@ -76,21 +76,17 @@ link:task-set-up-licensing-aws.html["瞭解如何設定授權"^]。
 | 使用者名稱和密碼 | 這些是Cloud Volumes ONTAP 適用於整個叢集管理員帳戶的認證資料。您可以使用這些認證、透過 ONTAP 系統管理員或 ONTAP CLI 連線至 Cloud Volumes ONTAP 。保留預設的_admin_使用者名稱、或將其變更為自訂使用者名稱。 
 
 
-| 編輯認證資料 | 選擇與您要部署此系統之帳戶相關的AWS認證資料。您也可以將AWS Marketplace訂閱與此Cloud Volumes ONTAP 款作業系統建立關聯。
-
-按一下*新增訂閱*、將所選認證資料與新的AWS Marketplace訂閱建立關聯。訂閱可以是一年一度的合約、或Cloud Volumes ONTAP 是以每小時的費率支付。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["瞭解如何將額外的AWS認證資料新增至BlueXP"^]。 
+| 編輯認證資料 | 選擇與您要部署此系統之帳戶相關的AWS認證資料。您也可以將 AWS 市場訂閱關聯到此 Cloud Volumes ONTAP 系統。按一下「新增訂閱」將選定的憑證與新的 AWS 市場訂閱關聯。訂閱可以是一年一度的合約、或Cloud Volumes ONTAP 是以每小時的費率支付。https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["瞭解如何將額外的AWS認證資料新增至BlueXP"^]。 
 |===
 +
-下列影片說明如何將隨用隨付服務市場訂閱與 AWS 認證資料建立關聯：
+以下影片顯示如何將按使用量付費的市場訂閱與您的 AWS 憑證關聯：
 
 +
-.從 AWS Marketplace 訂閱 BlueXP
+.從 AWS 市場訂閱 BlueXP
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 +
 
-TIP: 如果多位 IAM 使用者使用相同的 AWS 帳戶、則每位使用者都需要訂閱。第一位使用者訂閱之後、 AWS Marketplace 會通知後續使用者他們已經訂閱、如下圖所示。雖然 AWS _account_ 已有訂閱、但每個 IAM 使用者都需要將自己與該訂閱建立關聯。如果您看到以下訊息、請按一下*按一下此處*連結、前往BlueXP網站並完成程序。image:screenshot_aws_marketplace.gif["當Cloud Volumes ONTAP AWS帳戶已訂閱、但特定IAM使用者可能沒有訂閱時、會顯示用於更新的BlueXP訂閱頁面的快照。"]
+TIP: 如果多位 IAM 使用者使用相同的 AWS 帳戶、則每位使用者都需要訂閱。首位用戶訂閱後，AWS 市場會通知後續用戶已訂閱，如下圖所示。雖然 AWS _account_ 已有訂閱、但每個 IAM 使用者都需要將自己與該訂閱建立關聯。如果您看到以下訊息，請點擊「點擊此處」連結前往 BlueXP 網站並完成訂閱流程。 image:screenshot_aws_marketplace.gif["當Cloud Volumes ONTAP AWS帳戶已訂閱、但特定IAM使用者可能沒有訂閱時、會顯示用於更新的BlueXP訂閱頁面的快照。"]
 
 . * 服務 * ：啟用或停用 Cloud Volumes ONTAP 您不想搭配使用的個別服務。
 +
@@ -146,7 +142,7 @@ link:concept-security.html#encryption-of-data-at-rest["深入瞭解支援的加�
 ** link:task-set-up-licensing-aws.html["瞭解如何設定授權"^]。
 
 
-. *《*》（僅限AWS Marketplace年度合約）：請檢閱預設組態、然後按一下*「Continue」（繼續）*或按一下*「Change Configuration」（變更組態）*以選取您自己的組態。Cloud Volumes ONTAP
+. *Cloud Volumes ONTAP 配置*（僅限年度 AWS 市場合約）：查看預設配置並點擊*繼續*或點擊*更改配置*以選擇您自己的配置。
 +
 如果您保留預設組態、則只需指定一個Volume、然後檢閱並核准組態。
 
@@ -330,17 +326,17 @@ BlueXP會啟動Cloud Volumes ONTAP 這個執行個體。您可以追蹤時間表
 | 使用者名稱和密碼 | 這些是Cloud Volumes ONTAP 適用於整個叢集管理員帳戶的認證資料。您可以使用這些認證、透過 ONTAP 系統管理員或 ONTAP CLI 連線至 Cloud Volumes ONTAP 。保留預設的_admin_使用者名稱、或將其變更為自訂使用者名稱。 
 
 
-| 編輯認證資料 | 選擇 AWS 認證資料和市場訂閱、以搭配此 Cloud Volumes ONTAP 款功能系統使用。按一下*新增訂閱*、將所選認證資料與新的AWS Marketplace訂閱建立關聯。訂閱可以是一年一度的合約、或Cloud Volumes ONTAP 是以每小時的費率支付。如果您直接向 NetApp 購買授權（請自帶授權（ BYOL ）），則不需要 AWS 訂閱。https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["瞭解如何將額外的AWS認證資料新增至BlueXP"^]。 
+| 編輯認證資料 | 選擇 AWS 認證資料和市場訂閱、以搭配此 Cloud Volumes ONTAP 款功能系統使用。按一下「新增訂閱」將選定的憑證與新的 AWS 市場訂閱關聯。訂閱可以是一年一度的合約、或Cloud Volumes ONTAP 是以每小時的費率支付。如果您直接向 NetApp 購買授權（請自帶授權（ BYOL ）），則不需要 AWS 訂閱。https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["瞭解如何將額外的AWS認證資料新增至BlueXP"^]。 
 |===
 +
-下列影片說明如何將隨用隨付服務市場訂閱與 AWS 認證資料建立關聯：
+以下影片顯示如何將按使用量付費的市場訂閱與您的 AWS 憑證關聯：
 
 +
-.從 AWS Marketplace 訂閱 BlueXP
+.從 AWS 市場訂閱 BlueXP
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 +
 
-TIP: 如果多位 IAM 使用者使用相同的 AWS 帳戶、則每位使用者都需要訂閱。第一位使用者訂閱之後、 AWS Marketplace 會通知後續使用者他們已經訂閱、如下圖所示。雖然 AWS _account_ 已有訂閱、但每個 IAM 使用者都需要將自己與該訂閱建立關聯。如果您看到以下訊息、請按一下*按一下此處*連結、前往BlueXP網站並完成程序。image:screenshot_aws_marketplace.gif["當Cloud Volumes ONTAP AWS帳戶已訂閱、但特定IAM使用者可能沒有訂閱時、會顯示用於更新的BlueXP訂閱頁面的快照。"]
+TIP: 如果多位 IAM 使用者使用相同的 AWS 帳戶、則每位使用者都需要訂閱。首位用戶訂閱後，AWS 市場會通知後續用戶已訂閱，如下圖所示。雖然 AWS _account_ 已有訂閱、但每個 IAM 使用者都需要將自己與該訂閱建立關聯。如果您看到以下訊息，請點擊「點擊此處」連結前往 BlueXP 網站並完成訂閱流程。 image:screenshot_aws_marketplace.gif["當Cloud Volumes ONTAP AWS帳戶已訂閱、但特定IAM使用者可能沒有訂閱時、會顯示用於更新的BlueXP訂閱頁面的快照。"]
 
 . * 服務 * ：讓服務保持啟用或停用您不想搭配 Cloud Volumes ONTAP 此作業系統使用的個別服務。
 +

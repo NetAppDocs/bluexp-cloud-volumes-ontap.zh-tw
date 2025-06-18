@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-gcp-verify-signed-image.html 
 keywords: Google Cloud, image, disk.raw, file signature verification, encryption,ONTAP, Cloud Volumes, OpenSSL, sha256, 
-summary: 透過Cloud Volumes ONTAP 「鏡射影像摘要檔案」工具驗證匯出的Google Cloud影像檔案簽名。 
+summary: 透過 Cloud Volumes ONTAP 映像摘要檔案工具驗證匯出的 Google Cloud 映像檔簽章。 
 ---
 = Cloud Volumes ONTAP 的 Google Cloud 影像簽名驗證
 :hardbreaks:

@@ -42,7 +42,7 @@ NOTE: 若未取得授權、則無法使用授權功能。
 容量型授權的形式為_package_。當您部署Cloud Volumes ONTAP 一套解決方案時、您可以根據業務需求、從多個授權套件中進行選擇。
 
 
-NOTE: 雖然 BlueXP 管理的產品和服務的實際使用量和計量都是以 GiB 和 TiB 計算、但是會交替使用「 GB/GiB 」和「 TB/TiB 」這兩個詞彙。這會反映在 Cloud Marketplace 清單、價格報價、上市說明及其他支援文件中。
+NOTE: 雖然 BlueXP 管理的產品和服務的實際使用量和計量都是以 GiB 和 TiB 計算、但是會交替使用「 GB/GiB 」和「 TB/TiB 」這兩個詞彙。這反映在雲端市場列表、價格報價、列表描述和其他支援文件中。
 
 
 
@@ -115,14 +115,14 @@ NetApp Cloud Volumes ONTAP 免費提供所有的支援功能（仍需支付雲�
 
 ifdef::azure[]
 
-* 您可在Azure Marketplace以隨用隨付方案或年度合約形式取得
+* 在 Azure 市場上可以按使用量付費或按年合約形式購買
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-* 可在Google Cloud Marketplace以隨用隨付方案或年度合約形式提供
+* 可在 Google Cloud 市場中以按使用量付費或年度合約的形式購買
 
 
 endif::gcp[]
