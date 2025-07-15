@@ -32,9 +32,6 @@ NetApp 提供兩個選項，可在 Azure 上部署 Cloud Volumes ONTAP 。Cloud 
 
 | * 支援的虛擬機器（ VM ）類型 *  a| 
 EDS _v5 和 LS_v3 執行個體類型
-
-
-NOTE: Azure 市場對於 HA 組態支援 L8s_v3 執行個體類型，但 BlueXP  不支援。BlueXP  在探索期間無法正確偵測到。
 | 全系列 VM 類型。https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure支援的組態"^] 
 
 

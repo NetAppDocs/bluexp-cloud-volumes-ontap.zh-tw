@@ -34,6 +34,9 @@ summary: 可主動監控系統健全狀況、並傳送訊息給NetApp技術支�
 
 如果您定義了Cloud Volumes ONTAP 嚴格的傳出規則以供支援、那麼Cloud Volumes ONTAP 您也必須確保支援透過連接埠3128建立_Outbound _連線的安全性群組。
 
+
+TIP: 如果您使用 HA 配對、 HA 中介器不需要傳出網際網路存取。
+
 在您確認可以存取傳出網際網路之後、您可以測試AutoSupport 以確保能夠傳送訊息。有關說明，請參閱 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 說明文件： Set Up AutoSupport"^]。
 
 

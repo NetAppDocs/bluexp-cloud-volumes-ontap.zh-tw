@@ -82,35 +82,23 @@ Cloud Volumes ONTAP 使用這些端點與各種服務進行通訊。
 |===
 
 
-==== NetApp AutoSupport 的輸出網際網路存取
-
-Cloud Volumes ONTAP 節點需要輸出網際網路存取、才能存取各種功能的外部端點。如果這些端點在安全性要求嚴苛的環境中遭到封鎖、 Cloud Volumes ONTAP 就無法正常運作。
-
-支援NetApp功能的支援節點需要外傳網際網路存取功能、此功能可主動監控系統健全狀況、並將訊息傳送給NetApp技術支援部門。Cloud Volumes ONTAP AutoSupport
-
-路由和防火牆原則必須允許 HTTPS 流量傳送到下列端點， Cloud Volumes ONTAP 才能傳送 AutoSupport 訊息：
-
-* \https://support.netapp.com/aods/asupmessage
-* \https://support.netapp.com/asupprod/post/1.0/postAsup
-
-
-如果您有 NAT 執行個體、則必須定義傳入安全性群組規則、以允許 HTTPS 流量從私有子網路傳入網際網路。
-
-如果傳出的網際網路連線無法傳送AutoSupport 功能性訊息、則BlueXP會自動將Cloud Volumes ONTAP 您的功能性更新系統設定為使用Connector做為Proxy伺服器。唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。
-
-如果您定義了Cloud Volumes ONTAP 嚴格的傳出規則以供支援、那麼Cloud Volumes ONTAP 您也必須確保支援透過連接埠3128建立_Outbound _連線的安全性群組。
-
-在您確認可以存取傳出網際網路之後、您可以測試AutoSupport 以確保能夠傳送訊息。有關說明，請參閱 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 說明文件： Set Up AutoSupport"^]。
-
-如果BlueXP通知您AutoSupport 無法傳送資訊、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["疑難排解AutoSupport 您的VMware組態"]。
-
-
-
 === HA 中介器的傳出網際網路存取
 
 HA 中介執行個體必須具有 AWS EC2 服務的傳出連線、才能協助進行儲存容錯移轉。若要提供連線、您可以新增公用 IP 位址、指定 Proxy 伺服器或使用手動選項。
 
 手動選項可以是從目標子網路到 AWS EC2 服務的 NAT 閘道或介面 VPC 端點。如需 VPC 端點的詳細資訊、請 http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-interface.html["AWS 文件：介面 VPC 端點（ AWS Private Link ）"^]參閱。
+
+
+
+=== 支援連接器代理程式的網路配置
+
+您可以使用為BlueXP Connector 設定的代理伺服器來啟用從Cloud Volumes ONTAP 的出站網路存取。 BlueXPBlueXP兩種類型的代理：
+
+* *明確代理*：來自Cloud Volumes ONTAP 的出站流量使用在 Connector 代理程式設定期間指定的代理伺服器的 HTTP 位址。 Connector管理員可能還配置了使用者憑證和根 CA 憑證以進行額外的驗證。如果明確代理程式有可用的根 CA 證書，請確保使用以下方式取得相同的憑證並將其上傳到您的Cloud Volumes ONTAP工作環境：  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI：安全性憑證安裝"^]命令。
+* *透明代理*：網路設定為自動透過 Connector 代理程式路由來自Cloud Volumes ONTAP 的出站流量。設定透明代理程式時，Connector 管理員只需提供用於從Cloud Volumes ONTAP連接的根 CA 證書，而無需提供代理伺服器的 HTTP 位址。請確保使用以下方式取得相同的根 CA 憑證並將其上傳到您的Cloud Volumes ONTAP工作環境：  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI：安全性憑證安裝"^]命令。
+
+
+有關為BlueXP Connector 配置代理伺服器的信息，請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["設定連接器以使用Proxy伺服器"^] 。
 
 
 
@@ -162,10 +150,6 @@ HA配對所需的私有IP位址數目取決於您選擇的部署模式。部署�
 
 下表提供與每個私有IP位址相關聯的LIF詳細資料。
 
-
-
-===== HA配對的生命週數、在單一AZ中
-
 [cols="20,20,20,40"]
 |===
 | LIF | 介面 | 節點 | 目的 
@@ -197,10 +181,6 @@ HA配對所需的私有IP位址數目取決於您選擇的部署模式。部署�
 
 | 中介者 | eth0 | 中介者 | 節點與中介器之間的通訊通道、可協助進行儲存接管與恢復程序。 
 |===
-
-
-===== 多個AZs中HA配對的LIF
-
 [cols="20,20,20,40"]
 |===
 | LIF | 介面 | 節點 | 目的 
@@ -343,4 +323,9 @@ image:diagram_ha_networking.png["概念性影像、顯示 Cloud Volumes ONTAP �
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["檢視連接器的網路需求"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWS中的安全群組規則"^]
+
+
+.相關主題
+* link:task-verify-autosupport.html["驗證 Cloud Volumes ONTAP 的 AutoSupport 設定"]
+* https://docs.netapp.com/us-en/ontap/networking/ontap_internal_ports.html["瞭解 ONTAP 內部連接埠"^]。
 

@@ -238,29 +238,6 @@ Cloud Volumes ONTAP 使用這些端點與各種服務進行通訊。
 |===
 
 
-==== NetApp AutoSupport 的輸出網際網路存取
-
-NetApp支援需要外傳網際網路存取功能、才能主動監控系統健全狀況、並將訊息傳送給NetApp技術支援部門。Cloud Volumes ONTAP AutoSupport
-
-路由和防火牆原則必須允許 HTTPS 流量傳送到下列端點， Cloud Volumes ONTAP 才能傳送 AutoSupport 訊息：
-
-* \https://support.netapp.com/aods/asupmessage
-* \https://support.netapp.com/asupprod/post/1.0/postAsup
-
-
-如果傳出的網際網路連線無法傳送AutoSupport 功能性訊息、則BlueXP會自動將Cloud Volumes ONTAP 您的功能性更新系統設定為使用Connector做為Proxy伺服器。唯一的需求是確保連接器的防火牆允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。
-
-如果您定義了Cloud Volumes ONTAP 嚴格的出站規則以供支援、那麼您也必須確保Cloud Volumes ONTAP 透過連接埠3128建立的支援_出站_連線。
-
-在您確認可以存取傳出網際網路之後、您可以測試AutoSupport 以確保能夠傳送訊息。有關說明，請參閱 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 說明文件： Set Up AutoSupport"^]。
-
-
-TIP: 如果您使用 HA 配對、 HA 中介器不需要傳出網際網路存取。
-
-如果BlueXP通知您AutoSupport 無法傳送資訊、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["疑難排解AutoSupport 您的VMware組態"]。
-
-
-
 === 連線 ONTAP 至其他網路中的不二系統
 
 若要在Cloud Volumes ONTAP Google Cloud中的某個支援中心系統與ONTAP 其他網路中的支援中心系統之間複寫資料、您必須在VPC與其他網路（例如公司網路）之間建立VPN連線。
@@ -381,10 +358,7 @@ TIP: 正在尋找Connector的相關資訊？ https://docs.netapp.com/us-en/bluex
 
 預先定義 Cloud Volumes ONTAP 的 Security Group for the 旅行團會開啟所有的傳出流量。如果可以接受、請遵循基本的傳出規則。如果您需要更嚴格的規則、請使用進階的傳出規則。
 
-
-
-===== 基本傳出規則
-
+.基本傳出規則
 適用於此功能的預先定義安全性群組 Cloud Volumes ONTAP 包括下列傳出規則。
 
 [cols="20,20,60"]
@@ -400,11 +374,8 @@ TIP: 正在尋找Connector的相關資訊？ https://docs.netapp.com/us-en/bluex
 
 | 所有的 udp | 全部 | 所有傳出流量 
 |===
-
-
-===== 進階傳出規則
-
-如果您需要嚴格的傳出流量規則、可以使用下列資訊、僅開啟 Cloud Volumes ONTAP 那些由真人進行傳出通訊所需的連接埠。
+.進階傳出規則
+如果您需要嚴格的傳出流量規則、可以使用下列資訊、僅開啟 Cloud Volumes ONTAP 那些由真人進行傳出通訊所需的連接埠。Cloud Volumes ONTAP叢集使用下列連接埠來調節節點流量。
 
 
 NOTE: 來源是 Cloud Volumes ONTAP 系統的介面（IP 位址）。
@@ -477,9 +448,6 @@ NOTE: 來源是 Cloud Volumes ONTAP 系統的介面（IP 位址）。
 | TCP | 3128 | 節點管理 LIF | 連接器 | 如果無法使用傳出的網際網路連線、請透過Connector上的Proxy伺服器傳送AutoSupport 功能介紹訊息 
 
 
-| 叢集 | 所有流量 | 所有流量 | 一個節點上的所有 LIF | 其他節點上的所有 LIF | 叢集間通訊（ Cloud Volumes ONTAP 僅限不含 HA ） 
-
-
 | 組態備份 | HTTP | 80 | 節點管理 LIF | \http：//Wese/occm/offboxconfig <connector-IP-address> | 將組態備份傳送至 Connector 。link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["本文檔 ONTAP"^] 
 
 
@@ -539,4 +507,29 @@ NOTE: 若要為新的Google Cloud HA配對部署啟用高速寫入速度、VPC-1
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["檢視連接器的網路需求"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Google Cloud中的防火牆規則"^]
+
+
+
+
+=== 支援連接器代理程式的網路配置
+
+您可以使用為BlueXP Connector 設定的代理伺服器來啟用從Cloud Volumes ONTAP 的出站網路存取。 BlueXPBlueXP兩種類型的代理：
+
+* *明確代理*：來自Cloud Volumes ONTAP 的出站流量使用在 Connector 代理程式設定期間指定的代理伺服器的 HTTP 位址。 Connector管理員可能還配置了使用者憑證和根 CA 憑證以進行額外的驗證。如果明確代理程式有可用的根 CA 證書，請確保使用以下方式取得相同的憑證並將其上傳到您的Cloud Volumes ONTAP工作環境：  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI：安全性憑證安裝"^]命令。
+* *透明代理*：網路設定為自動透過 Connector 代理程式路由來自Cloud Volumes ONTAP 的出站流量。設定透明代理程式時，Connector 管理員只需提供用於從Cloud Volumes ONTAP連接的根 CA 證書，而無需提供代理伺服器的 HTTP 位址。請確保使用以下方式取得相同的根 CA 憑證並將其上傳到您的Cloud Volumes ONTAP工作環境：  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI：安全性憑證安裝"^]命令。
+
+
+有關為BlueXP Connector 配置代理伺服器的信息，請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["設定連接器以使用Proxy伺服器"^] 。
+
+.在 Google Cloud 中為Cloud Volumes ONTAP設定網路標籤
+在 Connector 透明代理程式配置期間，Connector 管理員會為 Google Cloud 新增網路標記。您需要為Cloud Volumes ONTAP配置取得並手動新增相同的網路標記。此標記是代理伺服器正常運作所必需的。
+
+. 在 Google Cloud 控制台中，找到您的Cloud Volumes ONTAP工作環境。
+. 前往*詳細資料>網路>網路標籤*。
+. 新增用於連接器的標籤並儲存配置。
+
+
+.相關主題
+* link:task-verify-autosupport.html["驗證 Cloud Volumes ONTAP 的 AutoSupport 設定"]
+* https://docs.netapp.com/us-en/ontap/networking/ontap_internal_ports.html["瞭解 ONTAP 內部連接埠"^]。
 

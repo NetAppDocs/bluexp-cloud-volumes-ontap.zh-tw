@@ -102,7 +102,7 @@ link:task-manage-capacity-licenses.html["瞭解如何變更充電方法"]。
 
 == 最大系統數
 
-透過容量型授權、Cloud Volumes ONTAP 每個NetApp帳戶最多可有20個不限數量的不二元系統。_system_是Cloud Volumes ONTAP 一個EsireHA配對、Cloud Volumes ONTAP 一個僅供支援的節點系統、或是您所建立的任何其他儲存VM。預設的儲存VM不會計入限制。此限制適用於所有授權模式。
+使用基於容量的許可，每個BlueXP帳戶的Cloud Volumes ONTAP系統的最大數量限制為 24 個。_system_是Cloud Volumes ONTAP 一個EsireHA配對、Cloud Volumes ONTAP 一個僅供支援的節點系統、或是您所建立的任何其他儲存VM。預設的儲存VM不會計入限制。此限制適用於所有授權模式。
 
 例如、假設您有三種工作環境：
 
@@ -122,9 +122,11 @@ link:task-manage-capacity-licenses.html["瞭解如何變更充電方法"]。
 
 總共有六個系統。之後您的帳戶就有額外14個系統的空間。
 
-如果您的大型部署需要20個以上的系統、請聯絡您的客戶代表或銷售團隊。
+如果您的大型部署需要24個以上的系統、請聯絡您的客戶代表或銷售團隊。
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["深入瞭解NetApp客戶"^]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["了解有關BlueXP帳戶的更多信息"^]。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["了解 AWS、Azure 和 Google Cloud 的儲存限制"^]。
 
 
 

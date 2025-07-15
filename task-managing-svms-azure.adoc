@@ -147,4 +147,6 @@ Connector 需要特定權限來管理 Cloud Volumes ONTAP 的儲存 VM 。所需
 .相關資訊
 * https://docs.netapp.com/us-en/bluexp-automation/cm/prepare.html["準備使用API"^]
 * https://docs.netapp.com/us-en/bluexp-automation/cm/workflow_processes.html#organization-of-cloud-volumes-ontap-workflows["Cloud Volumes ONTAP 工作流程"^]
+* https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html#get-the-connector-identifier["取得所需的標識符"^]
+* https://docs.netapp.com/us-en/bluexp-automation/platform/use_rest_apis.html["使用BlueXP REST API"^]
 

@@ -816,7 +816,6 @@
   <block id="cf2d2d8d3f12faf0a0924f5c5c89598b" category="list-text">NetApp授權您的帳戶之後、 <block ref="92e1d32055031f48c102a52373394710" category="inline-link-macro-rx"></block>。</block>
   <block id="a2f6a3e98ea1849ed1ab07d821bf6a18" category="section-title">節點型授權</block>
   <block id="170d227d215fb560bb4c8ad4e345183a" category="section-title">最大系統數</block>
-  <block id="fc2be74c7bf9f46e12967c2298a899ba" category="inline-link">深入瞭解NetApp客戶</block>
   <block id="72d7d9fbd92253175591abfdb19dc6a1" category="summary">在 Cloud Volumes ONTAP AWS 中部署時、您可以選擇符合工作負載需求的預先設定系統、也可以建立自己的組態。如果您選擇自己的組態、應該瞭解可用的選項。</block>
   <block id="3b61cbbfa7452cc07df9dbea0756d650" category="inline-link">檢視支援區域的完整清單</block>
   <block id="34a3fb1f13bd543905a9f22e8469763d" category="inline-link-macro">深入瞭Cloud Volumes ONTAP 解適用於此功能的授權選項</block>
@@ -1392,7 +1391,6 @@
   <block id="ea9a2b9ac34c9aab133f21aa5b67976e" category="list-text">按一下「 * 新增授權 * 」。</block>
   <block id="a1a264e616e24563d4b8f8b5795ea403" category="section-title">一般要求</block>
   <block id="5908bdfb58aef23bebf7df36d49b9dfb" category="section-title">對節點的輸出網際網路存取 Cloud Volumes ONTAP</block>
-  <block id="478c1991e02e68a88a4f2e550c670a76" category="paragraph">如果您有 NAT 執行個體、則必須定義傳入安全性群組規則、以允許 HTTPS 流量從私有子網路傳入網際網路。</block>
   <block id="06606cd8200a61c1bae33d7388ecad3e" category="section-title">HA 中介器的傳出網際網路存取</block>
   <block id="af02a1d35914a788c9da7b1c26185fae" category="paragraph">HA 中介執行個體必須具有 AWS EC2 服務的傳出連線、才能協助進行儲存容錯移轉。若要提供連線、您可以新增公用 IP 位址、指定 Proxy 伺服器或使用手動選項。</block>
   <block id="cbdf0e4a6b992dae978b69b70468f5fe" category="inline-link">AWS 文件：介面 VPC 端點（ AWS Private Link ）</block>
@@ -1406,7 +1404,6 @@
   <block id="df47a11ce6c17c82716b888fb22a8fdc" category="paragraph"><block ref="df47a11ce6c17c82716b888fb22a8fdc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="311bb2a509cb1b719973430da8bab55f" category="paragraph">HA配對所需的私有IP位址數目取決於您選擇的部署模式。部署在_onle_ AWS可用區域（AZ）中的HA配對需要15個私有IP位址、而部署在_multi__ AZs中的HA配對則需要13個私有IP位址。</block>
   <block id="6a83d00b38d76ec3a04d16028380b9d0" category="paragraph">下表提供與每個私有IP位址相關聯的LIF詳細資料。</block>
-  <block id="4c74b0fad0ec0a36e66d7dbfda717515" category="section-title">HA配對的生命週數、在單一AZ中</block>
   <block id="95416f2c916dabe21f738406546ebc53" category="cell">LIF</block>
   <block id="3c1aac82863ed9e5a9aca8ce687f711d" category="cell">介面</block>
   <block id="6c3a6944a808a7c0bbb6788dbec54a9f" category="cell">節點</block>
@@ -1432,7 +1429,6 @@
   <block id="1c3ef30d8bdb6fe749451eacaebaf7c4" category="cell">eth3</block>
   <block id="e63d2e05b66ab370cc2baaae9d2dcfe9" category="cell">RAID SyncMirror 支援iSCSI流量、以及兩Cloud Volumes ONTAP 個支援節點與中介器之間的通訊。</block>
   <block id="af90726bf48cd763b5fb4e961da15871" category="cell">節點與中介器之間的通訊通道、可協助進行儲存接管與恢復程序。</block>
-  <block id="bff3c591c699ca31f730e1f2040baf4f" category="section-title">多個AZs中HA配對的LIF</block>
   <block id="ab89f6727a41ad22707663146b9002d8" category="admonition">部署在多個可用度區域時、會與多個生命區建立關聯 <block ref="c1f676036d5f93c88159c13cc04402fb" category="inline-link-macro-rx"></block>、不計入AWS私有IP限制。</block>
   <block id="a83fb1ff36ceed286841d6eef8f99b92" category="section-title">資料分層連線</block>
   <block id="5cde4cca9b7e853dbf42e3287b5a1a5a" category="section-title">連線ONTAP 至功能鏈接</block>
@@ -2675,8 +2671,6 @@
   <block id="21f6d246225534dc3444037c83f109c3" category="list-text">使用下列關鍵字-值配對新增「user-Private - DNS"區域設定參數、以編輯app.conf：</block>
   <block id="b5544a18e847192d0e5a82658b3e0f92" category="paragraph">此參數應與「system-id」輸入的層級相同、如下所示：</block>
   <block id="ff9fcf498a74a638ff2a01da3cae4468" category="paragraph">請注意、只有當私有DNS區域的訂閱與Connector不同時、才需要訂購關鍵字。</block>
-  <block id="34010f1e0d61721ccadb44d47c32e547" category="paragraph">透過容量型授權、Cloud Volumes ONTAP 每個NetApp帳戶最多可有20個不限數量的不二元系統。_system_是Cloud Volumes ONTAP 一個EsireHA配對、Cloud Volumes ONTAP 一個僅供支援的節點系統、或是您所建立的任何其他儲存VM。預設的儲存VM不會計入限制。此限制適用於所有授權模式。</block>
-  <block id="b4c7b5de587c69b61237e13a2d37bbf1" category="paragraph">如果您的大型部署需要20個以上的系統、請聯絡您的客戶代表或銷售團隊。</block>
   <block id="3bc8827b2b8b4b47a25fb21994526d52" category="paragraph">如果資料因高速寫入而遺失、事件管理系統（EMS）會報告下列兩個事件：</block>
   <block id="7cd42532925d5e610a9d3694b57652da" category="list-text">零點9.8到9.10.1 Cloud Volumes ONTAP</block>
   <block id="deae9d093dee266b166a3693474231a9" category="paragraph">發生這種情況時Cloud Volumes ONTAP 、無需使用者介入、即可啟動及繼續提供資料。</block>
@@ -2737,8 +2731,6 @@
   <block id="de908965dc022756e01253bb2ab070dc" category="list-text">*連線能力*：選擇新的或現有的資源群組、然後選擇是使用預先定義的安全性群組、還是使用自己的。</block>
   <block id="c62cb6ffba40dfccd9137c53e13ffa06" category="list-text">如果您選擇*選取的vnet only *、則傳入流量的來源是所選vnet的子網路範圍、以及連接器所在vnet的子網路範圍。這是建議的選項。</block>
   <block id="af5480ae1c406371c200cbecf7ae3ae3" category="list-text">如果您選擇*所有VNet*、則傳入流量的來源為0.00.0.0/0 IP範圍。</block>
-  <block id="99ac8cc27f368522d020a76c65551219" category="list-text">NetApp支援需要外傳網際網路存取功能、才能主動監控系統健全狀況、並將訊息傳送給NetApp技術支援部門。Cloud Volumes ONTAP AutoSupport</block>
-  <block id="20df81b10ec53f3723942b914b6125f2" category="paragraph">如果您定義了Cloud Volumes ONTAP 嚴格的出站規則以供支援、那麼您也必須確保Cloud Volumes ONTAP 透過連接埠3128建立的支援_出站_連線。</block>
   <block id="72d5371b4a8014dbf2df076044553ab6" category="paragraph">建立工作環境時、您可以在部署期間選擇預先定義防火牆原則的來源篩選器：</block>
   <block id="6cf46adb3fb6177f186428a0cac9190b" category="cell">如果無法使用傳出的網際網路連線、請透過Connector上的Proxy伺服器傳送AutoSupport 功能介紹訊息</block>
   <block id="84d78cb2b5253a0b7912f4b35a0a5276" category="list-text">從取得軟體映像<block ref="66da4490d1acc2c130b3158cd12dade2" category="inline-link-rx"></block>。</block>
@@ -2755,7 +2747,6 @@
   <block id="deec4375ad9dbb52932d049564b46c2c" category="paragraph"><block ref="deec4375ad9dbb52932d049564b46c2c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="59d7031e8dd126031d49f14da3eb9662" category="inline-image-macro">顯示Cloud Volume HA配對和組態所需的四個VPC的概念映像。</block>
   <block id="5f244177e38ddb1ab2243352007aaca2" category="paragraph"><block ref="5f244177e38ddb1ab2243352007aaca2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2963bb3da6cd2f26e6b000d48fda5b9c" category="inline-link-macro">疑難排解AutoSupport 您的VMware組態</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
   <block id="440be74a67502f9c3d55890782329328" category="paragraph">以下是3.9.22版Connector的變更。</block>
   <block id="83bad7a989a8ab61893e9cfb7497cefd" category="section-title">數位錢包增強功能</block>
@@ -2874,7 +2865,6 @@
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">您目前正在檢視的BlueXP文件。</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*服務*：選取問題相關的服務。例如、特定於服務工作流程或功能的技術支援問題的BlueXP。</block>
   <block id="442a1ebc0b1897741c68b149d0cff869" category="paragraph">透過BlueXP使用此服務不需付費。</block>
-  <block id="c88f764485548292578f2128d1953adc" category="paragraph">如果BlueXP通知您AutoSupport 無法傳送資訊、 <block ref="b6432223d87858d9cd4e446578247e88" category="inline-link-macro-rx"></block>。</block>
   <block id="a972bcad179af301a93e1049da5fbbbb" category="paragraph">請注意、BlueXP會在HA配對上建立SVM管理LIF、但不會在Azure中的單一節點系統上建立。</block>
   <block id="6065260b6e2ca957f806162cf33800f6" category="paragraph">您也可以視業務需求而停用「私有連結」連線。如果您停用連結、則BlueXP會設定Cloud Volumes ONTAP 使用服務端點的功能。</block>
   <block id="2a37f0bf23209f41128e5c28160ecd0b" category="paragraph">如果您嘗試在Cloud Volumes ONTAP Azure資源群組中部署第二個「鏈接HA配對」、則BlueXP會遇到連線問題。</block>
@@ -2951,7 +2941,6 @@
   <block id="36cbcccdf7bf57aac5bc0aaa01526fb1" category="list-text">BlueXP會自動建立四個Google Cloud內部負載平衡器（TCP/IP）、以管理Cloud Volumes ONTAP 傳入至該HA配對的流量。您不需要在結束時進行任何設定我們將此列為一項要求、只是告知您網路流量、並減輕任何安全顧慮。</block>
   <block id="0d5b8e06664cffcf9f498e7821c89481" category="list-text">您可以跨多個區域或單一區域部署HA組態、確保資料的高可用度。建立HA配對時、BlueXP會提示您選擇多個區域或單一區域。</block>
   <block id="44b028753f7a7976b8be9d11b1afed32" category="paragraph">在建立HA配對時、BlueXP會提示您選擇四個VPC：</block>
-  <block id="c44db905496bb7220714be5427afb035" category="paragraph">如果傳出的網際網路連線無法傳送AutoSupport 功能性訊息、則BlueXP會自動將Cloud Volumes ONTAP 您的功能性更新系統設定為使用Connector做為Proxy伺服器。唯一的需求是確保連接器的防火牆允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
   <block id="639c4a9b76126cf4712751dee5546383" category="paragraph">同時、BlueXP針對VPC-1、VPC-2和VPC-3中的執行個體所建立的預先定義防火牆規則、可透過_all_傳輸協定和連接埠進行入侵通訊。這些規則可在HA節點之間進行通訊。</block>
   <block id="3ef69cb41da937aa60ab5fbab53eb42a" category="list-text">升級Cloud Volumes ONTAP 時、BlueXP也會視需要更新中介執行個體。</block>
   <block id="5d345d14f8662bfe45d8562fba90c487" category="list-text">當Cloud Volumes ONTAP 您從BlueXP建立一套功能不全的HA配對時、系統會提示您提供一個用於中介執行個體的金鑰配對。您可以使用該金鑰配對來進行SSH存取<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> 使用者：</block>
@@ -3879,7 +3868,6 @@
   <block id="9f7853ed9e8e024ede0e0d721f07b3c2" category="admonition">如果您使用的Azure帳戶具有<block ref="20fa32895c3c822e36a026ce606da187" category="inline-link-rx"></block>、在Cloud Volumes ONTAP 部署失敗或刪除的情況下、BlueXP會從資源群組移除一些不必要的資源。</block>
   <block id="dae0654f47d0d65003246da7fea41da1" category="paragraph"><block ref="a003b98e4140542975c2369f893345c7" category="inline-link-rx"></block>。</block>
   <block id="d001c1747f716a5e10d9eb65615cb9a2" category="paragraph">使用指定NTP伺服器<block ref="fd174c6a4d787b14119b835ff87e9043" category="inline-link-rx"></block> 或從使用者介面進行 <block ref="f63e013edf4f3da2f43cd797b99d909b" category="inline-link-macro-rx"></block>。</block>
-  <block id="7857d697f7e51708dc956bda0f1f5fc6" category="paragraph"><block ref="9401756ef4e22d0aa08f72bacfe691f1" category="inline-link-rx"></block>。</block>
   <block id="dd7ce3b5b8314dfd863defca8a331361" category="admonition">您可以從「設定」&gt;「認證」頁面管理Azure Marketplace與Azure帳戶相關的訂閱。<block ref="f5a767d443b85b73e48a343532c1468a" category="inline-link-rx"></block></block>
   <block id="d0922b1e87a764a73d3cfca142d88a3e" category="paragraph"><block ref="43cde999a8a50b7abff143c352cabd37" category="inline-link-rx"></block>。</block>
   <block id="15620bf0529e3d68b9f6b01095e269d3" category="paragraph"><block ref="15620bf0529e3d68b9f6b01095e269d3" category="inline-image-macro-rx" type="image"></block></block>
@@ -4900,8 +4888,6 @@
   <block id="ca6c1b8dd23dea0cefa49ccce01e7bf6" category="inline-link">Amazon 文件</block>
   <block id="6ac9d9128a75fd3ed101cf091ff7b6cd" category="cell">AWS 服務的確切政府端點取決於您使用的 AWS 區域。端點的後綴是<block ref="3441ddb447d90616fe905a033c8acc75" prefix=" " category="inline-code"></block>和<block ref="9418634abcbc8743a13685b8ac2ee79b" prefix=" " category="inline-code"></block>。<block ref="a5c675e1d96015bd51012d29ec2a093b" category="inline-link-rx"></block><block ref="681746188c4b856bd684247ebb305be7" category="inline-link-rx"></block>如需詳細資訊、請參閱和。</block>
   <block id="f01dcf4246a1f130eae10e4fb90b9fed" category="cell">受限模式。</block>
-  <block id="dab36868c1a7d7f560e209ac6adf5a57" category="section-title">NetApp AutoSupport 的輸出網際網路存取</block>
-  <block id="12fd9367eea1001986ee9a0f050035dd" category="paragraph">Cloud Volumes ONTAP 節點需要輸出網際網路存取、才能存取各種功能的外部端點。如果這些端點在安全性要求嚴苛的環境中遭到封鎖、 Cloud Volumes ONTAP 就無法正常運作。</block>
   <block id="6486582264c3651aad9b7bb2237218eb" category="cell">如果無法取得、則會產生影響</block>
   <block id="7dfb843f052469a3cc66d13554feb0f4" category="cell">\https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net</block>
   <block id="347be217cfefaa7b87992105cf67635d" category="cell">公共區域</block>
@@ -5683,7 +5669,6 @@
   <block id="b2c6aab3a91ad13c906bdd0aa040d62a" category="paragraph">在 Azure 市場完成部署後，您可以在 BlueXP  中探索這些系統。探索之後，您可以將它們當作工作環境來管理，並充分利用所有 BlueXP  功能。請參閱 <block ref="2692dc6f425f7eb6cb61608c1e797cfb" category="inline-link-macro-rx"></block>。</block>
   <block id="73c413c9be642ae1dcba807da01ed9c1" category="paragraph">以下是這兩個選項的功能比較。請注意，透過 Azure 市場部署的獨立執行個體功能，在 BlueXP  中發現時會有所變更。</block>
   <block id="47c593846f1ae327489596a5d77c3318" category="paragraph">EDS _v5 和 LS_v3 執行個體類型</block>
-  <block id="d7a49ef829fbbc11240852920fc128b9" category="admonition">Azure 市場對於 HA 組態支援 L8s_v3 執行個體類型，但 BlueXP  不支援。BlueXP  在探索期間無法正確偵測到。</block>
   <block id="988061bf5cc6bb2a04fa1a44abd369a1" category="list-text">選擇要新增的 Cloud Volumes ONTAP 系統類型。</block>
   <block id="8f366f7a602a0b428202bf1bf7b932d8" category="list-text">在「區域」頁面上，選取區域。您可以看到在所選區域中執行的系統。</block>
   <block id="33baa2d44b32218796e0d2c00f3253ca" category="admonition">Cloud Volumes ONTAP 系統在此頁面上以執行個體表示。從清單中，您只能選取已註冊目前帳戶的執行個體。</block>
@@ -5710,7 +5695,6 @@
   <block id="9ea9c6e19b1b679ebc8489e1abbcca81" category="inline-link-macro">自動和手動模式</block>
   <block id="cafedbc12625c51784900844db248af7" category="list-text">為探索到的系統啟用中的容量管理功能<block ref="a953b070790e096be6f09488828337e6" category="inline-link-macro-rx"></block>。</block>
   <block id="9a907982d0ec72433154968c4f37505e" category="paragraph">確保 Azure 市場的部署已完成。BlueXP  Connector 只有在部署完成且可供探索時，才能探索系統。</block>
-  <block id="60fc07059cb7041923e12e08ca950393" category="admonition">Azure 市場直接部署支援 L8s_v3 執行個體類型。不過， BlueXP  不支援 HA 組態的此執行個體類型，而且在探索期間無法正確偵測。</block>
   <block id="5074efba5aea5ce50888675e00a7b9a5" category="paragraph">在 BlueXP  中，您可以依照標準程序來探索現有的系統。請參閱 <block ref="f425b68573921e015280a6ac0f002e09" category="inline-link-macro-rx"></block>。</block>
   <block id="fd11d45aadcd4e9407d5c24aab385e8f" category="inline-link-macro">擴充 Aggregate</block>
   <block id="cfac425cd6b9dce2e8b747e094c6e8b2" category="inline-link-macro">新增磁碟區</block>
@@ -5866,4 +5850,43 @@
   <block id="6505562134574bd5ec457f8041b5b41b" category="paragraph">如需設定金鑰和設定金鑰旋轉的相關資訊，請參閱下列 Microsoft Azure 文件主題：</block>
   <block id="f630598948a04f18a70fded14127468d" category="inline-link">_啟用自動旋轉_</block>
   <block id="57d9892a3d271d27b26e51e3f7d04d90" category="admonition">配置金鑰後，請確保已選擇<block ref="864eb32f5dc808f575a1395e038bf9e3" category="inline-link-rx"></block> ，以便 Cloud Volumes ONTAP 可以在舊金鑰過期時使用新金鑰。如果您未在 Azure 入口網站上啟用此選項，Cloud Volumes ONTAP 將無法自動偵測新金鑰，這可能會導致儲存配置出現問題。</block>
+  <block id="243dc35e4fca799b66ae2ac81899769f" category="doc">支援連接器代理程式的網路配置</block>
+  <block id="2ed774d054bc1507c4959d0ac6b89ef7" category="paragraph">您可以使用為BlueXP Connector 設定的代理伺服器來啟用從Cloud Volumes ONTAP 的出站網路存取。 BlueXPBlueXP兩種類型的代理：</block>
+  <block id="7ca7b5499afab82dcf3ebcea7fd1545b" category="inline-link">ONTAP CLI：安全性憑證安裝</block>
+  <block id="1254bb04420b69b7e6ab73440264457c" category="list-text">*明確代理*：來自Cloud Volumes ONTAP 的出站流量使用在 Connector 代理程式設定期間指定的代理伺服器的 HTTP 位址。 Connector管理員可能還配置了使用者憑證和根 CA 憑證以進行額外的驗證。如果明確代理程式有可用的根 CA 證書，請確保使用以下方式取得相同的憑證並將其上傳到您的Cloud Volumes ONTAP工作環境： <block ref="7870ceedff13ac103bbff22d8c968db3" category="inline-link-rx"></block>命令。</block>
+  <block id="1a6fb037dcd2648eb2f354c86c3419b9" category="list-text">*透明代理*：網路設定為自動透過 Connector 代理程式路由來自Cloud Volumes ONTAP 的出站流量。設定透明代理程式時，Connector 管理員只需提供用於從Cloud Volumes ONTAP連接的根 CA 證書，而無需提供代理伺服器的 HTTP 位址。請確保使用以下方式取得相同的根 CA 憑證並將其上傳到您的Cloud Volumes ONTAP工作環境： <block ref="7870ceedff13ac103bbff22d8c968db3" category="inline-link-rx"></block>命令。</block>
+  <block id="146adb7944757e88795676b780c31811" category="inline-link">設定連接器以使用Proxy伺服器</block>
+  <block id="b55415a76ebbca1e69a9b11bc903f49f" category="paragraph">有關為BlueXP Connector 配置代理伺服器的信息，請參閱<block ref="4d83a369cd8d5456206d71335578eaaa" category="inline-link-rx"></block> 。</block>
+  <block id="0a1a38d9120e0fab1c0df30a212aec1e" category="doc">支援透明代理</block>
+  <block id="374dae6d0dc6a44c6fd0b2460130a97c" category="paragraph">除了現有的明確代理連線之外， BlueXP現在還支援透明代理伺服器。建立或修改BlueXP連接器時，您可以設定透明代理伺服器，以安全地管理往返Cloud Volumes ONTAP 的網路流量。</block>
+  <block id="5a7b8246539d23392a5e05eac48af71a" category="paragraph">有關在Cloud Volumes ONTAP中使用代理伺服器的更多信息，請參閱：</block>
+  <block id="962f31c6077b2508ca34a7930c9c7dc0" category="inline-link">用於支援 AWS 中的連接器代理程式的網路配置</block>
+  <block id="5a2dfec708ec872c65198946ceb515a6" category="list-text"><block ref="5a2dfec708ec872c65198946ceb515a6" category="inline-link-rx"></block></block>
+  <block id="0a2e015f172d6cd890b0fc1f8d2f6f85" category="inline-link">用於支援 Azure 中的連接器代理程式的網路配置</block>
+  <block id="d447db0a36245dbd7a8d6b7062f9c674" category="list-text"><block ref="d447db0a36245dbd7a8d6b7062f9c674" category="inline-link-rx"></block></block>
+  <block id="8f535228ace6ee4ad083884380e57ed0" category="inline-link">用於支援 Google Cloud 中的連接器代理程式的網路配置</block>
+  <block id="ab7d0c86c98ea6501e61aa06f71b65de" category="list-text"><block ref="ab7d0c86c98ea6501e61aa06f71b65de" category="inline-link-rx"></block></block>
+  <block id="cda7c1b179968a5c9f823fe41b03f086" category="section-title">Azure 中的Cloud Volumes ONTAP支援新的 VM 類型</block>
+  <block id="84e0dab4374dc2dde153fe0a05e4184c" category="paragraph">從Cloud Volumes ONTAP 9.13.1 開始，L8s_v3 作為 Azure 單一和多個可用區域中的 VM 類型受到支持，適用於新的和現有的高可用性 (HA) 對部署。</block>
+  <block id="1dd216b5b85ac7f18d8b638535da234b" category="paragraph">如需詳細資訊、請 <block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block>參閱。</block>
+  <block id="6b6ed9e27c4ab07a9fd2f83451add7bb" category="paragraph">使用基於容量的許可，每個BlueXP帳戶的Cloud Volumes ONTAP系統的最大數量限制為 24 個。_system_是Cloud Volumes ONTAP 一個EsireHA配對、Cloud Volumes ONTAP 一個僅供支援的節點系統、或是您所建立的任何其他儲存VM。預設的儲存VM不會計入限制。此限制適用於所有授權模式。</block>
+  <block id="2357265e1fb763337b05d3b30d1a7528" category="paragraph">如果您的大型部署需要24個以上的系統、請聯絡您的客戶代表或銷售團隊。</block>
+  <block id="57bc385e23757f5fc39808d222aec1e0" category="inline-link">了解有關BlueXP帳戶的更多信息</block>
+  <block id="ac2daaf676b64d5dca9c5dae497efe69" category="paragraph"><block ref="18293813bf5d781cb98550ea0d672f19" category="inline-link-rx"></block>。</block>
+  <block id="a0aa07133f0223d64ee6522e4e293e43" category="inline-link">了解 AWS、Azure 和 Google Cloud 的儲存限制</block>
+  <block id="9f909224987b48cbe22536ad43c7ca22" category="paragraph"><block ref="1d60a77806a2b83c9b2383a4fa2b7908" category="inline-link-rx"></block>。</block>
+  <block id="9d7e0542459b60f98e1d8529e2c87e4e" category="list-title">相關主題</block>
+  <block id="af116ecf0d8a28877e0e0fab17786c9e" category="list-text"><block ref="af116ecf0d8a28877e0e0fab17786c9e" category="inline-link-macro-rx"></block></block>
+  <block id="2026723e7fcdf41513a924f34d9e927e" category="list-text"><block ref="0c062311f918f6a3e877cd35d87ca817" category="inline-link-rx"></block>。</block>
+  <block id="06332379d0475f8dc057549603de79fd" category="paragraph">如果您需要嚴格的傳出流量規則、可以使用下列資訊、僅開啟 Cloud Volumes ONTAP 那些由真人進行傳出通訊所需的連接埠。Cloud Volumes ONTAP叢集使用下列連接埠來調節節點流量。</block>
+  <block id="07bb5df713985e089cc7b42eb0e0f7fa" category="paragraph-title">在 Google Cloud 中為Cloud Volumes ONTAP設定網路標籤</block>
+  <block id="7e38553c8b62bb30a1badf50692c90f4" category="paragraph">在 Connector 透明代理程式配置期間，Connector 管理員會為 Google Cloud 新增網路標記。您需要為Cloud Volumes ONTAP配置取得並手動新增相同的網路標記。此標記是代理伺服器正常運作所必需的。</block>
+  <block id="addabcadb17b86bb5a3143f4c25ab463" category="list-text">在 Google Cloud 控制台中，找到您的Cloud Volumes ONTAP工作環境。</block>
+  <block id="c54cc2a3649745490397c1485da258bc" category="list-text">前往*詳細資料&gt;網路&gt;網路標籤*。</block>
+  <block id="d2de2f20c3fb9912c1f57c49209e01ee" category="list-text">新增用於連接器的標籤並儲存配置。</block>
+  <block id="ea2e1db5ab46de0f54f5bd6eb1d8a423" category="inline-link">取得所需的標識符</block>
+  <block id="d82215de3d8a672c3ff8f734f2d49175" category="list-text"><block ref="d82215de3d8a672c3ff8f734f2d49175" category="inline-link-rx"></block></block>
+  <block id="646a7d74ffd7db2bf6c623751ea66299" category="inline-link">使用BlueXP REST API</block>
+  <block id="1f41c0bf5c8ffc7560d3000ed0d0cd1c" category="list-text"><block ref="1f41c0bf5c8ffc7560d3000ed0d0cd1c" category="inline-link-rx"></block></block>
+  <block id="f2673d4a3fe0162a501d43f5168ae950" category="section-title">2025 年 14 月 7 日</block>
 </blocks>
