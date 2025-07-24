@@ -14,43 +14,31 @@ summary: 如果您需要執行Cloud Volumes ONTAP 進階的支援管理功能、
 
 
 [role="lead"]
-如果您需要執行Cloud Volumes ONTAP 進階的支援管理功能、可以使用ONTAP 支援ONTAP 此功能的支援功能、這個功能是隨附於一個系統的管理介面。我們已將System Manager介面直接納入BlueXP、因此您不需要離開BlueXP進行進階管理。
+Cloud Volumes ONTAP中的高階儲存管理功能可透過ONTAP系統管理器 ( ONTAP System Manager) 使用，它是ONTAP系統提供的管理介面。您可以直接從BlueXP存取系統管理員。
 
 
 
 == 功能
 
-您可以執行下列管理功能：
+您可以使用BlueXP中的ONTAP系統管理器執行各種儲存管理功能。以下列表包含其中一些功能，但並不詳盡：
 
-* 進階儲存管理
-+
-管理一致性群組、共用區、qtree、配額和儲存VM。
-
-* 網路管理
-+
-管理IPspace、網路介面、連接埠集和乙太網路連接埠。
-
-* 活動與工作
-+
-檢視事件記錄、系統警示、工作和稽核記錄。
-
-* 進階資料保護
-+
-保護儲存VM、LUN及一致性群組。
-
-* 主機管理
-+
-設定SAN啟動器群組和NFS用戶端。
-
+* 進階儲存管理：管理一致性群組、共用、qtree、配額和儲存虛擬機器。
+* 成交量變動： link:task-manage-volumes.html#move-a-volume["將磁碟區移動到不同的聚合。"]
+* 網路管理：管理 IP 空間、網路介面、連接埠集和乙太網路連接埠。
+* 管理FlexGroup磁碟區：您只能透過系統管理員建立和管理FlexGroup磁碟區。 BlueXP不支援創建BlueXPFlexGroup。
+* 事件和作業：查看事件日誌、系統警報、作業和稽核日誌。
+* 進階資料保護：保護儲存虛擬機器、LUN 和一致性群組。
+* 主機管理：設定 SAN 啟動器群組和 NFS 用戶端。
+* S3 物件儲存管理： Cloud Volumes ONTAP中的 S3 儲存管理功能僅在 System Manager 中可用，而在BlueXP中不可用。
 
 
 
 
 == 支援的組態
 
-Cloud Volumes ONTAP 9.10.0 及更新版本支援透過標準雲端區域的 ONTAP 系統管理員進行進階管理。
+* 標準雲端區域中的Cloud Volumes ONTAP 9.10.0 及更高版本可透過ONTAP System Manager 進行進階儲存管理。
+* 不支援在GovCloud區域或沒有外傳網際網路存取的區域整合System Manager。
 
-不支援在GovCloud區域或沒有外傳網際網路存取的區域整合System Manager。
 
 
 
@@ -58,21 +46,11 @@ Cloud Volumes ONTAP 9.10.0 及更新版本支援透過標準雲端區域的 ONTA
 
 下列功能不支援出現在System Manager介面中Cloud Volumes ONTAP 的部分功能：
 
-* BlueXP 分層
-+
-Cloud Volumes ONTAP 不支援 BlueXP  分層服務。建立磁碟區時，您應該直接從 BlueXP  的標準檢視設定資料分層至物件儲存設備。
+* BlueXP tiering： Cloud Volumes ONTAP不支援BlueXP tiering服務。您應該在建立磁碟區時直接從 BlueXP 的標準視圖設定資料到物件儲存的分層。
+* 層級：系統管理員不支援聚合管理（包括本機層級和雲端層級）。您必須直接從 BlueXP 的標準視圖管理聚合。
+* 韌體升級： Cloud Volumes ONTAP不支援從 *Cluster > Settings* 頁面自動更新韌體。
+* 基於角色的存取控制：系統管理員不支援基於角色的存取控制。
 
-* 階層
-+
-System Manager不支援集合管理（包括本機層級和雲端層）。您必須直接從BlueXP的「標準檢視」管理集合體。
-
-* 韌體升級
-+
-Cloud Volumes ONTAP 不支援從 * 叢集 > 設定 * 頁面自動更新韌體。
-
-
-
-此外、不支援System Manager的角色型存取控制。
 
 
 

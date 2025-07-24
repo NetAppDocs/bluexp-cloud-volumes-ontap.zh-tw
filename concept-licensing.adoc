@@ -155,6 +155,9 @@ NOTE: BlueXP  備份與還原需要付費（ PAYGO ）訂閱，但使用此服�
 Cloud Volumes ONTAP 系統的 PAYGO 和 BYOL 授權的可用性，需要 BlueXP  Connector 正常運作。如需詳細資訊、請 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#impact-on-cloud-volumes-ontap["深入瞭解連接器"^]參閱。
 
 
+NOTE: NetApp已限制 BYOL 授權的購買、延期和續訂。有關更多信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Cloud Volumes ONTAPP的 BYOL 授權可用性受限"^] 。
+
+
 
 === 如何開始使用
 

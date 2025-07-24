@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-manage-node-licenses.html 
-keywords: license, licensing, install, updating license, system license, add system license, adding a system license, byol license, add byol license, update byol license, nlf, license generator, extra, by-node, digital wallet, cloud backup, cloud data sense, cloud tiering 
+keywords: license, licensing, install, updating license, system license, add system license, adding a system license,  update byol license, nlf, license generator, extra, by-node, digital wallet, cloud backup, cloud data sense, cloud tiering 
 summary: 在 BlueXP 數位錢包中管理節點型授權、以確保每個 Cloud Volumes ONTAP 系統都擁有具有所需容量的有效授權。 
 ---
 = 管理 Cloud Volumes ONTAP 的節點型授權
@@ -51,6 +51,9 @@ image:screenshot_paygo_licenses.png["此螢幕擷取畫面顯示 BlueXP 數位�
 == 管理 BYOL 授權
 
 透過新增及移除系統授權與額外容量授權、來管理您直接向NetApp購買的授權。
+
+
+NOTE: NetApp已限制 BYOL 授權的購買、延期和續訂。有關更多信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Cloud Volumes ONTAP的 BYOL 授權可用性受限"^] 。
 
 
 
@@ -131,9 +134,7 @@ image:screenshot-license-generator.png["螢幕擷取畫面：顯示NetApp授權�
 
 === 更新系統授權
 
-當您透過聯絡NetApp代表續約BYOL訂閱時、BlueXP會自動從NetApp取得新授權、並將其安裝在Cloud Volumes ONTAP 該系統上。
-
-如果BlueXP無法透過安全的網際網路連線存取授權檔案、您可以自行取得檔案、然後手動將檔案上傳至BluXP。
+當您聯絡NetApp代表續訂 BYOL 訂閱時， BlueXP會自動從NetApp取得新的許可證，並將其安裝在Cloud Volumes ONTAP系統上。如果BlueXP無法透過安全的網路連線存取許可證文件，您可以自行取得該文件，然後手動上傳到BlueXP。
 
 .步驟
 . 從BlueXP導覽功能表中、選取*管理>數位錢包*。

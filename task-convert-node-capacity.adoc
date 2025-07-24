@@ -26,7 +26,7 @@ summary: 當節點型授權的可用度結束（ EOA ）之後，您應該使用
 * Cloud Volumes ONTAP 系統中的帳戶和應用程式資料保持不變。
 * 基礎雲端資源在轉換後仍不受影響。
 * 授權轉換工具支援所有部署類型，例如單一節點，單一可用性區域（ AZ ）中的高可用度（ HA ），多個 AZ 中的 HA ，自帶授權（ BYOL ）和 PAYGO 。
-* 此工具支援所有節點型授權，做為來源，並將所有容量型授權做為目的地。例如，如果您擁有 PAYGO Standard 節點型授權，則可以將其轉換為 BYOL 容量型授權。
+* 該工具支援所有基於節點的許可證作為來源，以及所有基於容量的許可證作為目標。例如，如果您擁有基於節點的 PAYGO 標準許可證，則可以將其轉換為透過市場購買的任何基於容量的許可證。 NetAppNetApp限制 BYOL 授權的購買、延期和續約。有關更多信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Cloud Volumes ONTAP的 BYOL 授權可用性受限"^] 。
 * 所有雲端供應商， AWS ， Azure 和 Google Cloud 都支援此轉換。
 * 轉換後，節點型授權的序號將由容量型格式取代。這是轉換的一部分，並反映在您的 NetApp 支援網站（ NSS ）帳戶上。
 * 當您轉換至容量型模式時，資料會繼續保留在節點型授權的相同位置。這種方法可確保資料放置不會中斷，並在整個轉換過程中遵守資料主權原則。

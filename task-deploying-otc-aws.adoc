@@ -326,7 +326,7 @@ BlueXP會啟動Cloud Volumes ONTAP 這個執行個體。您可以追蹤時間表
 | 使用者名稱和密碼 | 這些是Cloud Volumes ONTAP 適用於整個叢集管理員帳戶的認證資料。您可以使用這些認證、透過 ONTAP 系統管理員或 ONTAP CLI 連線至 Cloud Volumes ONTAP 。保留預設的_admin_使用者名稱、或將其變更為自訂使用者名稱。 
 
 
-| 編輯認證資料 | 選擇 AWS 認證資料和市場訂閱、以搭配此 Cloud Volumes ONTAP 款功能系統使用。按一下「新增訂閱」將選定的憑證與新的 AWS 市場訂閱關聯。訂閱可以是一年一度的合約、或Cloud Volumes ONTAP 是以每小時的費率支付。如果您直接向 NetApp 購買授權（請自帶授權（ BYOL ）），則不需要 AWS 訂閱。https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["瞭解如何將額外的AWS認證資料新增至BlueXP"^]。 
+| 編輯認證資料 | 選擇要用於此Cloud Volumes ONTAP系統的 AWS 憑證和市場訂閱。點擊「新增訂閱」將所選憑證與新的 AWS 市場訂閱關聯。訂閱可以是年度合同，也可以是按小時付費的Cloud Volumes ONTAP 。如果您直接從NetApp購買了授權（自帶授權 (BYOL)），則無需 AWS 訂閱。 NetApp已限制 BYOL 授權的購買、延期和續約。有關更多信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Cloud Volumes ONTAP的 BYOL 授權可用性受限"^] 。https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["瞭解如何將額外的AWS認證資料新增至BlueXP"^] 。 
 |===
 +
 以下影片顯示如何將按使用量付費的市場訂閱與您的 AWS 憑證關聯：

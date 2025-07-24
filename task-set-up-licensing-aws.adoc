@@ -66,6 +66,8 @@ link:concept-licensing.html["深入瞭解容量型授權"]。
 
 事先向NetApp購買授權（BYOL）、即可在Cloud Volumes ONTAP 任何雲端供應商部署支援系統。
 
+NetApp已限制 BYOL 授權的購買、延期和續訂。有關更多信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Cloud Volumes ONTAP的 BYOL 授權可用性受限"^] 。
+
 .步驟
 . https://bluexp.netapp.com/contact-cds["請聯絡NetApp銷售人員以取得授權"^]
 . https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["將NetApp 支援網站 您的不更新帳戶新增至藍圖XP"^]

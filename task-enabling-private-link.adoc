@@ -86,27 +86,20 @@ NOTE: 如果連接器和Cloud Volumes ONTAP 物件系統部署在不同的VNets�
 
 .步驟
 . SSH 連接至 Connector 主機並登入。
-. 瀏覽至下列目錄：/opp/application/netapp/cloudmanager/docker_occm/data
-. 使用下列關鍵字-值配對新增「user-Private - DNS"區域設定參數、以編輯app.conf：
+. 導航至 `/opt/application/netapp/cloudmanager/docker_occm/data`目錄。
+. 編輯 `app.conf`透過添加 `user-private-dns-zone-settings`具有以下關鍵字-值對的參數：
 +
-....
-"user-private-dns-zone-settings" : {
-   "resource-group" : "<resource group name of the DNS zone>",
-   "subscription" : "<subscription ID>",
-   "use-existing" : true,
-   "create-private-dns-zone-link" : true
-}
-....
+[source, cli]
+----
+ "user-private-dns-zone-settings" : {
+    "resource-group" : "<resource group name of the DNS zone>",
+    "subscription" : "<subscription ID>",
+    "use-existing" : true,
+    "create-private-dns-zone-link" : true
+ }
+----
 +
-此參數應與「system-id」輸入的層級相同、如下所示：
-
-+
-....
-"system-id" : "<system ID>",
-"user-private-dns-zone-settings" : {
-....
-+
-請注意、只有當私有DNS區域的訂閱與Connector不同時、才需要訂購關鍵字。
+這 `subscription`只有當私有 DNS 區域與連接器的訂閱不同時，才需要關鍵字。
 
 . 儲存檔案並登出 Connector 。
 +

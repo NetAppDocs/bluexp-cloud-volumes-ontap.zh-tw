@@ -23,6 +23,10 @@ summary: 熟悉容量型授權的收費，使用模式，定價與組態。
 下列消費模式提供容量型授權套件：
 
 * * BYOL* ：請自帶授權（ BYOL ）。從 NetApp 購買的授權，可用於在任何雲端供應商中部署 Cloud Volumes ONTAP 。
++
+
+NOTE: NetApp已限制 BYOL 授權的購買、延期和續訂。有關更多信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Cloud Volumes ONTAP的 BYOL 授權可用性受限"^] 。
+
 
 
 ifdef::azure[]
@@ -37,7 +41,7 @@ endif::azure[]
 
 請注意下列事項：
 
-* 如果您向NetApp（BYOL）購買授權、也必須向雲端供應商的市場訂閱PAYGO產品。
+* 如果您從NetApp購買了 BYOL 許可證，則還需要從雲端供應商的雲端市場訂閱 PAYGO 產品。 NetApp已限制 BYOL 授權。當您的 BYOL 授權到期時，您需要將其替換為雲端市場訂閱。
 +
 您的授權一律會先收取費用、但在下列情況下、您將會從市場的每小時費率中收取費用：
 
@@ -47,7 +51,7 @@ endif::azure[]
 
 
 * 如果您有市場的年度合約、Cloud Volumes ONTAP 您所部署的_all_系統將根據該合約付費。您無法與BYOL混搭一年一度的市場合約。
-* 中國地區僅支援具有BYOL的單一節點系統。
+* 中國區域僅支援支援 BYOL 的單節點系統。中國區域部署不受 BYOL 授權限制。
 
 
 
@@ -148,7 +152,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["了解 AW
 
 === 過度使用
 
-如果您超過 BYOL 容量，或是授權過期，您將根據您的市場訂閱，以每小時費率收取超額費用。超額費用會以市場費率收取，優先使用其他授權的可用容量。
+如果您超出了 BYOL 容量，我們將根據您的市場訂閱按小時費率向您收取超額費用。超額部分將按市場費率收費，並優先使用其他許可證中的可用容量。如果您的 BYOL 授權到期，您需要透過雲端市場過渡到基於容量的授權模式。
 
 
 
