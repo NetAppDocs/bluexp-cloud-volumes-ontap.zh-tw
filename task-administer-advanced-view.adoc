@@ -50,6 +50,7 @@ Cloud Volumes ONTAP中的高階儲存管理功能可透過ONTAP系統管理器 (
 * 層級：系統管理員不支援聚合管理（包括本機層級和雲端層級）。您必須直接從 BlueXP 的標準視圖管理聚合。
 * 韌體升級： Cloud Volumes ONTAP不支援從 *Cluster > Settings* 頁面自動更新韌體。
 * 基於角色的存取控制：系統管理員不支援基於角色的存取控制。
+* SMB 持續可用性 (CA)： Cloud Volumes ONTAP不支援 https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/What_are_SMB_Continuous_Availability_CA_Shares["持續可用的 SMB 共享"^]實現無中斷運作。
 
 
 
@@ -103,4 +104,5 @@ NOTE: 如果您將此值設為 * 啟用 * ，則會重設驗證，而且您必�
 * https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html["Volume與LUN管理"^]
 * https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html["網路管理"^]
 * https://docs.netapp.com/us-en/ontap/concept_dp_overview.html["資料保護"^]
+* https://docs.netapp.com/us-en/ontap/smb-hyper-v-sql/create-continuously-available-shares-task.html["建立持續可用的 SMB 共享"^]
 
