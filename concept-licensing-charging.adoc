@@ -31,8 +31,6 @@ NOTE: NetApp已限制 BYOL 授權的購買、延期和續訂。有關更多信�
 
 ifdef::azure[]
 
-+ 請注意、 BYOL 並未提供最佳化套件。
-
 endif::azure[]
 
 * * PAYGO* ：隨用隨付（ PAYGO ）訂閱是您雲端供應商市場的每小時訂閱。
@@ -146,7 +144,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["了解 AW
 
 如果您尚未配置任何磁碟區、則不適用最低收費。
 
-對於 Essentials 套件、 4 TiB 最低容量費用不適用於僅包含次要（資料保護）磁碟區的儲存 VM 。例如、如果您的儲存虛擬機器擁有1個二線資料的TiB、則只需支付1個TiB的資料費用。對於所有其他非 Essentials 套件類型（最佳化版和專業版）、無論 Volume 類型為何、都適用 4 TiB 的最低容量充電。
+對於 Essentials 包，4 TiB 最低容量費用不適用於僅包含輔助（資料保護）磁碟區的儲存虛擬機器。例如，如果您有一個包含 1 TiB 二級資料的儲存虛擬機，那麼您只需為該 1 TiB 資料付費。對於專業套餐類型，無論卷類型如何，最低容量收費均為 4 TiB。
 
 
 

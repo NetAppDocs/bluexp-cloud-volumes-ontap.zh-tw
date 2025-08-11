@@ -2695,9 +2695,6 @@
   <block id="0982661f22694d2c8b62e37a8cbea7d6" category="list-text">兩個標準持續磁碟、每個10 GiB</block>
   <block id="6ebde9b80ea03f71d125a635cb158add" category="cell">產生的原則</block>
   <block id="0b392f872171569e5244ad16ea2616d4" category="cell">使用現有的</block>
-  <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="section-title">最佳化</block>
-  <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">單獨支付已配置的容量和I/O作業費用。</block>
-  <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">單一節點或HA Cloud Volumes ONTAP</block>
   <block id="69ab7c49a4285d04bdc7e75b51a4a476" category="section-title">變更套件</block>
   <block id="5bdd4028830bea76f4939d67baa460ff" category="paragraph">部署完成後、您可以變更Cloud Volumes ONTAP 使用容量型授權的一套功能、以利執行一套功能。例如、如果您部署Cloud Volumes ONTAP 的是含有Essentials套件的功能完善的系統、則當您的業務需求改變時、可以將其變更為Professional套件。</block>
   <block id="ec3e25d80cfc0e5561493729eadecef7" category="paragraph"><block ref="ea19fa0e06a6047bcaabb9af62b066c3" category="inline-link-macro-rx"></block>。</block>
@@ -3749,7 +3746,6 @@
   <block id="de33988c687dff633cec70e80a05f959" category="paragraph">Keystone Subscription 是一項以隨成長付費訂閱為基礎的服務、可為偏好使用 OpEx 消費模式、而不選擇前期資本支出或租賃模式的使用者、提供順暢的混合雲體驗。</block>
   <block id="8765b8141289c553bb6583d305152f50" category="paragraph">您可以從 BlueXP 部署的所有新版 Cloud Volumes ONTAP 都支援 Keystone 訂閱。</block>
   <block id="47e98d8abdf6a91192cff6466b616ce4" category="inline-link-macro">瞭解如何開始使用 BlueXP 中的 Keystone 訂閱</block>
-  <block id="e0277b8d41546d47637400507bf0f9f5" category="paragraph">當您刪除工作環境時、其他服務所管理的資源、例如 BlueXP 備份和還原的備份、以及 BlueXP 分類的執行個體、都不會被刪除。您必須自行手動刪除。如果您沒有、您將繼續收取這些資源的費用。</block>
   <block id="6994b2fbca796c979abed69e3bd6275c" category="paragraph">BlueXP 備份與還原在設計上不受 Cloud Volumes ONTAP 的保護。BlueXP 備份與還原不會在您刪除 Cloud Volumes ONTAP 系統時自動刪除備份、而且在刪除系統之後、 UI 目前不支援刪除備份。</block>
   <block id="62a206849a655c43470ec1fbe25e35c1" category="list-text">如果您在此工作環境中啟用 BlueXP 分類、且沒有其他工作環境使用此服務、則您必須刪除該服務的執行個體。</block>
   <block id="a69f417641ff2d2784782a6898f8f2de" category="inline-link">深入瞭解 BlueXP 分類執行個體</block>
@@ -4215,8 +4211,6 @@
   <block id="9e06c986efeeff600f0b04c67d5d6354" category="paragraph">現在、 Google Cloud for Cloud Volumes ONTAP 和 Connector for Cloud Volumes ONTAP 9.12.1 GA 及更新版本均支援沙烏地阿拉伯地區。</block>
   <block id="2bc724993144e8002899059117620062" category="inline-link">Google Cloud 下的全球區域地圖</block>
   <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">Azure 中的下列區域現在支援 Cloud Volumes ONTAP 9.12.1 GA 及更新版本的高可用度多重可用度區域部署：</block>
-  <block id="0679d11689909adae41f54cfc8c6ef53" category="list-text">充電是以兩個成本元件為基礎：儲存與使用（ I/O ）。</block>
-  <block id="992a45bae33fb9769eb5bc8c6317149c" category="paragraph">與資料複寫（ SnapMirror ）、備份（ SnapVault ）或 NDMP 相關的 I/O 將不會收取費用。</block>
   <block id="0b8c1e660d75aa2bec12f002f097dcab" category="list-title">HA 可與多個可用性區域中的共享託管磁碟配對</block>
   <block id="a710c8d7ee654ea3241f1b07f9f7de05" category="list-text"><block ref="de989a17a1629831650b134e00461edd" category="inline-xref-macro-rx"></block></block>
   <block id="6d09b3b7b0c828e4faaa038218afc509" category="section-title">確認所有的生命都在主連接埠上</block>
@@ -4620,8 +4614,6 @@
   <block id="9a06593a786548bb3b7320df7c76e7f1" category="paragraph">K8s 標籤在先前版本中已過時、現在已移除。</block>
   <block id="526b16be728da42dd3eb25f5c378e218" category="list-text">Nae 無法使用 AKV 。Nae 需要外部支援的 KMIP 伺服器。</block>
   <block id="70004026f1ac6c7f08784ebf0a55c142" category="list-text">Cloud Volumes ONTAP 節點每 15 分鐘輪詢一次 AKV 、以確認可存取性和金鑰可用度。此輪詢期間不可設定、在輪詢嘗試連續四次失敗（總計 1 小時）後、磁碟區會離線。</block>
-  <block id="f21def4319b19574f5ca7ab45389822b" category="paragraph">+ 請注意、 BYOL 並未提供最佳化套件。</block>
-  <block id="e2299e8e355a9b503858d1f8d800ccaa" category="paragraph">對於 Essentials 套件、 4 TiB 最低容量費用不適用於僅包含次要（資料保護）磁碟區的儲存 VM 。例如、如果您的儲存虛擬機器擁有1個二線資料的TiB、則只需支付1個TiB的資料費用。對於所有其他非 Essentials 套件類型（最佳化版和專業版）、無論 Volume 類型為何、都適用 4 TiB 的最低容量充電。</block>
   <block id="ea4ba4158f6b2b895b0418072f2ba06d" category="paragraph">節點型授權是前一代的授權模式、可讓您依Cloud Volumes ONTAP 節點授權使用。此授權模式不適用於新客戶。副節點充電已由上述的副容量充電方法取代。</block>
   <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">2024 年 8 月 8 日</block>
   <block id="e84c1e70dc9a2186ec21e22a3e9cbda0" category="section-title">Edge Cache 授權套件已過時</block>
@@ -4993,7 +4985,6 @@
   <block id="a9949f1e97b05bac6285563868b6954a" category="admonition">BlueXP  備份與還原需要付費（ PAYGO ）訂閱，但使用此服務不會產生任何費用。如需設定 BlueXP  備份與還原授權的詳細資訊，請<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>參閱。</block>
   <block id="05e7dd258874d61cb2bb985c9da9a17d" category="paragraph">NetApp 已規劃終止供應（ EOA ），並支援（ EOS ）節點型授權。在 EOA 和 EOS 之後，節點型授權將需要轉換為容量型授權。</block>
   <block id="8c6aee7f6d39fa3bea95c2ae09851a7a" category="paragraph">如需相關資訊、請<block ref="f09d1138443525e41476e551a1dde747" category="inline-link-rx"></block>參閱。</block>
-  <block id="5b4d3df9f94e27cca9f34f152bff2940" category="paragraph">自 2024 年 11 月 11 日起，節點型授權的有限可用度已終止。節點型授權支援將於 2024 年 12 月 31 日終止。</block>
   <block id="f61f8b3c935630ec8f0486cee8916013" category="paragraph">如果您的有效節點型合約超過 EOA 日期，您可以繼續使用授權，直到合約到期為止。合約到期後，必須轉換至容量型授權模式。如果您沒有 Cloud Volumes ONTAP 節點的長期合約，請務必在 EOS 日期之前規劃您的轉換。</block>
   <block id="bf2b1d7970167b534d54bc96e7402716" category="paragraph">從下表中深入瞭解每種授權類型及 EOA 對其的影響：</block>
   <block id="82060d81b7ce43c57280e879899f9a2c" category="cell">授權類型</block>
@@ -5049,7 +5040,6 @@
   <block id="a906cad1e2bd71c3fd41efc1424f282e" category="list-text">如果帳戶擁有容量型 BYOL 授權，則所選的目的地套件應與帳戶的 BYOL 容量型授權一致：</block>
   <block id="6905efe5cff8820565676d6d40bbc083" category="list-text">當<block ref="9e8b160226c9fe22a910c782ce5076e2" prefix=" " category="inline-code"></block>選擇作為目的地套件時，帳戶應擁有 BYOL 授權及專業版套件：</block>
   <block id="3074c4231dd896cfd0c588f36eae9ca4" category="list-text">當<block ref="4d55f77f062bf48891bd0f749c36a36d" prefix=" " category="inline-code"></block>選擇作為目的地套件時，帳戶應具有 Essentials 套件的 BYOL 授權。</block>
-  <block id="a69a8ea18d8053f3a86291dc9d373615" category="list-text">當<block ref="6e539d2ea7d82ed0e31c450e64ff8c04" prefix=" " category="inline-code"></block>選擇作為目的地套件時，帳戶應擁有 BYOL 授權，並附有最佳化套件。</block>
   <block id="bd37a5a3b2ad6bc210a3a7eaa1a44b64" category="list-text">如果目的地套件與帳戶的 BYOL 授權可用度不符，則表示容量型授權可能不包含所選的套件。在這種情況下，您將透過市場訂閱付費。</block>
   <block id="29de10157e38deb8ae7d4bcf417d7bca" category="list-text">如果沒有容量型 BYOL 授權，但只有市場訂閱，您應確保所選套件已包含在容量型市場訂閱中。</block>
   <block id="2ff79b1cb99d3f2339a1ba9f8784b183" category="list-text">如果現有容量型授權中的容量不足，而且您有市場訂閱來收取額外容量使用費，您將透過市場訂閱收取額外容量的費用。</block>
@@ -5063,8 +5053,6 @@
   <block id="b168f6cc04ffcf2dda599d1ba73d94c2" category="list-text">在 * 將節點型授權轉換為容量型 * 畫面上，確認工作環境名稱和來源授權詳細資料。</block>
   <block id="cd2d0eea05654ca89f4d05184b605a3f" category="list-text">選取要轉換現有授權的目的地套件：</block>
   <block id="ad55f0eebc5068e31eecc1bc08fae252" category="list-text">基礎概論。預設值為<block ref="4d55f77f062bf48891bd0f749c36a36d" prefix=" " category="inline-code"></block>。</block>
-  <block id="954b5977f70cfdad6145a9a16edd2fed" category="list-text">最佳化（適用於 Azure ）</block>
-  <block id="6a9b652c3f19ffc2d3128d21e07dc641" category="list-text">最佳化（適用於 Google Cloud ）</block>
   <block id="0913524919eac0f6e05917a28ac0868a" category="list-text">如果您擁有 BYOL 授權，您可以選取核取方塊，從 BlueXP  數位錢包轉換後刪除節點型授權。如果轉換尚未完成，即使選取此核取方塊，授權也不會從數位錢包中刪除。如果您有市場訂閱，則無法使用此選項。</block>
   <block id="a42381ccb4c9b07d94af68aac09b97db" category="list-text">選取核取方塊以確認您瞭解變更的影響，然後按一下 * 繼續 * 。</block>
   <block id="54173685d0a19dc27fc7d74a0b1348f0" category="paragraph">檢視新的授權序號，並驗證 BlueXP  數位錢包的變更。</block>
@@ -5106,8 +5094,6 @@
   <block id="ee7f44a3ee50a804694c28101731c80b" category="paragraph">如需詳細資訊，請參閱<block ref="24fc9da0f00ff5ec38c6b3fffe9cc77c" category="inline-link-macro-rx"></block>，<block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>和<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block></block>
   <block id="9b5ca9f023a445b9980873fe985b03c2" category="paragraph">如需詳細資訊，請參閱<block ref="b12f776b16b59fa8d20c1c83946e77ac" category="inline-link-macro-rx"></block>，<block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>和<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block></block>
   <block id="1d7416ead0f5e395552a7bea35bb1485" category="paragraph">ifdef ：： AWS [] endif： ： AWS [] ifdef ：： azure[] endif： ：： azure[] ifdef ：： GCP [] endif： ：： GCP [] ifdef ：： AWS [] endiff ：：： AWS [] ifdef ：： gcp[] endif[ ：</block>
-  <block id="86402869cd4d06d1574d76517f21f563" category="paragraph">容量型授權可讓您針對Cloud Volumes ONTAP 容量的每個TiB付費。容量型授權形式為 _package_ ： Essentials ， Optimized 或 Professional 套件。</block>
-  <block id="318162ad2b4d0154510a1c3fe1ca774b" category="paragraph">Essentials ， Optimized 和 Professional 套件可搭配下列使用模式使用：</block>
   <block id="c54232d574f50dfd33c3e6ddb7fab829" category="paragraph">對於年度或長期承諾， NetApp 建議您在 EOA 日期或授權到期日之前聯絡 NetApp 代表，以確保移轉的先決條件已就緒。如果您沒有 Cloud Volumes ONTAP 節點的長期合約，而且是根據隨選隨付隨用（ PAYGO ）訂閱來執行系統，請務必在 EOS 日期之前規劃您的轉換。對於長期合約和 PAYGO 訂閱，您可以使用 BlueXP  授權轉換工具進行無縫轉換。</block>
   <block id="4bbac1ba6da1fae98898078ee927d707" category="doc">深入瞭解容量型授權</block>
   <block id="b9ed893da654234e8fac88c7419c277f" category="list-text">除了值得信賴的儲存管理員模式之外Cloud Volumes ONTAP 、在「值得信賴的雲端管理員」模式下、WORM儲存設備也會以隱含方式運作。雲端管理員可直接從雲端供應商移除或編輯雲端儲存設備，在 WORM 資料到期日前刪除該資料。</block>
@@ -5215,7 +5201,6 @@
   <block id="2daabc6822724771970f17e8ae6a4cee" category="list-text">選擇* Overview（概述）*選項卡。</block>
   <block id="5b37c7034b369fcc6d9b931180eef46f" category="list-text">在 Cloud Volumes ONTAP 方塊中，選取 * 檢視 * 。</block>
   <block id="a9bcc09a5114887c29b3f365ee72e9e5" category="list-text">* 高階使用率 * ：本報告包含下列資訊：</block>
-  <block id="4600869c8040d8603fe9dbe6d56a2b2a" category="list-text">* Cloud Volumes ONTAP 套件使用 * ：此報告包含每個套件的下列資訊，但最佳化 I/O 套件除外：</block>
   <block id="a65d4ec7ff2941ad2ea2bc688a6dbbb3" category="list-text">* 儲存虛擬機器使用率 * ：此報告顯示如何在 Cloud Volumes ONTAP 系統和儲存虛擬機器（ SVM ）之間分解已計費的容量。此資訊僅在報告中提供。其中包含下列資訊：</block>
   <block id="b2b74732b80350970fadfac4db3ba17e" category="list-text">在 * 總覽 * 標籤上，從 Cloud Volumes ONTAP 方塊中選取 * 檢視 * 。</block>
   <block id="f4c2ce2a853a74c3742ccc54482c074e" category="list-text">選取 * 使用報告 * 。</block>
@@ -5280,7 +5265,6 @@
   <block id="0beeb4ae08209eddf791d03de9fcf654" category="paragraph"><block ref="47bbca2f135630a58718ba92e2c739ed" category="inline-link-macro-rx"></block>。<block ref="3c369a9b68ac3984a3598ff92fe5ee61" category="inline-link-macro-rx"></block>。</block>
   <block id="0c4ab7dbbb0c4e5098fca90084a314bb" category="inline-link">ONTAP 文件：設定 NVMe 儲存 VM</block>
   <block id="86658a348e09419591c8b4b3fa13e84e" category="paragraph">如需透過 ONTAP 設定 NVMe 的詳細資訊，請參閱<block ref="0585d9dca18b467d388c2056c53b835d" category="inline-link-rx"></block>。</block>
-  <block id="52906f1209df0124eec881e5eb61417c" category="paragraph">有關定價的詳細信息，請訪問<block ref="e895de279f6fc60faafa4c289938d19f" category="inline-link-rx"></block>。</block>
   <block id="28c15f6c1c01609f6c18ebd86b65b462" category="paragraph"><block ref="28c15f6c1c01609f6c18ebd86b65b462" category="inline-link-rx"></block></block>
   <block id="49e35df1608bc4ec8dda47be9031b77e" category="inline-link">SnapLock 上的 ONTAP 文件</block>
   <block id="a30d432611fbd01e1559279ca4b99466" category="paragraph">在 Cloud Volumes ONTAP 啟用 WORM 儲存設備之後、您必須使用 ONTAP CLI 來管理 WORM 儲存設備。有關說明，請參閱<block ref="4043230af2751621c7cbfb902f557f9b" category="inline-link-rx"></block>。</block>
@@ -5625,10 +5609,6 @@
   <block id="0551862e260539a3a516b4868d9bcead" category="paragraph">已轉換為 Essentials 套件的 Cloud Volumes ONTAP 系統無法切換回 Freemium ，即使已配置的容量減至少於 500 GiB 。配置容量少於 500 GiB 的其他系統會留在 Freemium （只要使用 Freemium 產品進行部署）。</block>
   <block id="462848e89fbcd7fc117ed7c36b47f6f3" category="doc">探索透過 BlueXP  中的 Azure 市場所進行的部署</block>
   <block id="cb52ca43108f98673f7dcc6c4bc528f6" category="paragraph">BlueXP  現在能夠探索直接透過 Azure 市場部署的 Cloud Volumes ONTAP 系統。這表示您現在可以將這些系統新增及管理為 BlueXP  中的工作環境，就像任何其他 Cloud Volumes ONTAP 系統一樣。</block>
-  <block id="d2e69d0efb90eba181fe1aff16489eba" category="section-title">能夠為 Azure 租戶分層資料</block>
-  <block id="6a86c1cc6c3338bb337a5e643e80da8e" category="paragraph">您現在可以在由一個租戶建立 Cloud Volumes ONTAP 工作環境，並由另一個租戶建立 BlueXP  Connector 的情況下，為 Azure 租戶啟用分層。您可以使用此功能，為多個 Azure 租戶使用相同的 Connector 來分層資料。</block>
-  <block id="879e91c0a0fa09577c58d0330291ff06" category="inline-link">Azure 租戶的分層資料需求</block>
-  <block id="215678b43321c729a07cabb64971f83c" category="paragraph"><block ref="215678b43321c729a07cabb64971f83c" category="inline-link-rx"></block></block>
   <block id="b8177b5e9e7ab48db3ab8624b3c82510" category="inline-link-macro">探索 BlueXP  中部署的系統</block>
   <block id="b2c6aab3a91ad13c906bdd0aa040d62a" category="paragraph">在 Azure 市場完成部署後，您可以在 BlueXP  中探索這些系統。探索之後，您可以將它們當作工作環境來管理，並充分利用所有 BlueXP  功能。請參閱 <block ref="2692dc6f425f7eb6cb61608c1e797cfb" category="inline-link-macro-rx"></block>。</block>
   <block id="73c413c9be642ae1dcba807da01ed9c1" category="paragraph">以下是這兩個選項的功能比較。請注意，透過 Azure 市場部署的獨立執行個體功能，在 BlueXP  中發現時會有所變更。</block>
@@ -5732,8 +5712,6 @@
   <block id="2449165dac49eeffc4339a03758e395d" category="paragraph">範例中的 VHD 檔案大小為 10GB。 NetApp簽署的部分標示為綠色（10 GB - 1 MB - 512 位元組）。</block>
   <block id="b844697174ebc8c2c2eaadf0ae1954ea" category="summary">透過 Cloud Volumes ONTAP 映像摘要檔案工具驗證匯出的 Google Cloud 映像檔簽章。</block>
   <block id="916ff508220cd0f9544ff8e1a1538bc5" category="admonition">雖然 BlueXP 管理的產品和服務的實際使用量和計量都是以 GiB 和 TiB 計算、但是會交替使用「 GB/GiB 」和「 TB/TiB 」這兩個詞彙。這反映在雲端市場列表、價格報價、列表描述和其他支援文件中。</block>
-  <block id="1718fe47f5ecc10fa0621d52cd8fcb44" category="list-text">在 Azure 市場上可以按使用量付費或按年合約形式購買</block>
-  <block id="2def4bff61cd7bfa9062cc47d2c7968d" category="list-text">可在 Google Cloud 市場中以按使用量付費或年度合約的形式購買</block>
   <block id="b510d73bf4b9be5f22afae8b4d44a0c8" category="summary">您可以從 NetApp 支援網站下載 Azure 映像摘要檔案。</block>
   <block id="6638f6b622b4f4b4d37c4f1a1fe019bb" category="doc">下載適用於 Cloud Volumes ONTAP 的 Azure 映像文件</block>
   <block id="8092c5aca0172beb3a5b74f7c0b1d012" category="paragraph">您可以從<block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block> 。</block>
@@ -5899,4 +5877,24 @@
   <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">NetApp以多種方式為BlueXP及其雲端服務提供支援。我們提供全天候 (24/7) 的大量免費自助支援選項，例如知識庫 (KB) 文章和社群論壇。您的支援註冊包含透過網路工單取得的遠端技術支援。</block>
   <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">螢幕截圖顯示了帳戶序號、綠色複選框和文字「已註冊支援」。</block>
   <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9def883103b7b964dcbb0993e3f8a065" category="doc">優化許可證的可用性終止</block>
+  <block id="cf4dd05cf065c9ae01bc836c5033bb63" category="paragraph">從 2025 年 8 月 11 日開始， Cloud Volumes ONTAP Optimized 授權將被棄用，並且將不再可在 Azure 和 Google Cloud 市場中以即用即付 (PAYGO) 訂閱的方式購買或續訂。如果您擁有現有的包含優化許可證的年度合同，則可以繼續使用該許可證，直到合約結束。當您的優化授權到期時，您可以選擇Cloud Volumes ONTAP Essentials 或 Professional 授權。</block>
+  <block id="4e106c84c3dd2cbdc5b24d055fe09562" category="paragraph">但是，可以透過 API 新增或更新優化許可證。</block>
+  <block id="2b8e43c95c1d15bc0824064c3dc0f993" category="paragraph">有關許可包的信息，請參閱<block ref="4b2776d787a70224c2441f63d3888380" category="inline-link-rx"></block>。</block>
+  <block id="ed1f600d01a229b43b3196dd2f2e48ca" category="inline-link">管理基於容量的許可</block>
+  <block id="1d4a9a37e700957e9d79664f032cf5ec" category="paragraph">有關切換到不同充電方式的信息，請參閱<block ref="eeeecd1116eaf4db26e064552c04366d" category="inline-link-rx"></block>。</block>
+  <block id="bde173c4d202e7128f1f4d5ccf94c5d3" category="paragraph">有關定價的詳細信息，請訪問<block ref="e895de279f6fc60faafa4c289938d19f" category="inline-link-rx"></block>。</block>
+  <block id="c8801b0c6482a893a4d0f8e56ed92a42" category="paragraph">對於 Essentials 包，4 TiB 最低容量費用不適用於僅包含輔助（資料保護）磁碟區的儲存虛擬機器。例如，如果您有一個包含 1 TiB 二級資料的儲存虛擬機，那麼您只需為該 1 TiB 資料付費。對於專業套餐類型，無論卷類型如何，最低容量收費均為 4 TiB。</block>
+  <block id="c6a7496d4215672f20a5c16d5d50154c" category="paragraph">從 2024 年 11 月 11 日起，基於節點的許可證的有限可用性已終止。基於節點的授權支援將於 2024 年 12 月 31 日結束。</block>
+  <block id="64561f2ec1b6edafb724a07913dbf5b1" category="section-title">不同超標量中的定價</block>
+  <block id="02bba40b2a75e6e8a972bfca5857188e" category="paragraph">有關定價的詳細信息，請訪問<block ref="e895de279f6fc60faafa4c289938d19f" category="inline-link-rx"></block>。</block>
+  <block id="26592e143987ab40aba1ac379c886b8d" category="paragraph">有關特定超標量中的私人優惠的信息，請寫信至：</block>
+  <block id="02aa25b6391acbf0686328f16ae332fb" category="list-text">AWS - awspo@netapp.com</block>
+  <block id="85c059aa21da31379ed4d7db9071d482" category="list-text">Azure - azurepo@netapp.com</block>
+  <block id="cd1e3346ba31e1b5b50a5b69c256dee8" category="list-text">Google Cloud - gcppo@netapp.com</block>
+  <block id="518654c5190961c2a1fa6b07f225daff" category="admonition">刪除工作環境時，不會刪除其他資源，例如BlueXP backup and recovery管理的備份以及BlueXP classification的實例。您需要手動刪除它們。如果您不這樣做，那麼您將繼續為這些資源支付費用。</block>
+  <block id="3b62a4d8285fe12b7beba942744aeb3a" category="admonition">BlueXP backup and recovery僅對Cloud Volumes ONTAP Professional 授權免費。此免費福利不適用於已刪除的環境。如果Cloud Volumes ONTAP環境的備份副本保留在BlueXP backup and recovery實例中，則您將需要為備份副本付費，直到它們被刪除為止。</block>
+  <block id="219fa750a13ad456df1d25524d9f6ad9" category="list-text">* Cloud Volumes ONTAP軟體包使用情況*：此報告包含每個軟體包的以下資訊：</block>
+  <block id="cfba7e7177c8f36e5c073175ecdcec93" category="paragraph">基於容量的許可使您能夠按 TiB 容量支付Cloud Volumes ONTAP費用。基於容量的許可以_包_的形式提供：Essentials 或 Professional 包。</block>
+  <block id="b9d888f58b09c4007db0247286e392b5" category="section-title">2025年8月11日</block>
 </blocks>

@@ -44,7 +44,6 @@ summary: 當節點型授權的可用度結束（ EOA ）之後，您應該使用
 +
 *** 當 `Professional`選擇作為目的地套件時，帳戶應擁有 BYOL 授權及專業版套件：
 *** 當 `Essentials`選擇作為目的地套件時，帳戶應具有 Essentials 套件的 BYOL 授權。
-*** 當 `Optimized`選擇作為目的地套件時，帳戶應擁有 BYOL 授權，並附有最佳化套件。
 
 
 ** 如果目的地套件與帳戶的 BYOL 授權可用度不符，則表示容量型授權可能不包含所選的套件。在這種情況下，您將透過市場訂閱付費。
@@ -74,25 +73,22 @@ TIP: 如果您的 Cloud Volumes ONTAP 系統已依容量收費，或是未滿足
 ** 專業人員
 
 
-
-
-ifdef::azure[]
-
-* 最佳化（適用於 Azure ）
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
-* 最佳化（適用於 Google Cloud ）
-
-
-endif::gcp[]
-
 . 如果您擁有 BYOL 授權，您可以選取核取方塊，從 BlueXP  數位錢包轉換後刪除節點型授權。如果轉換尚未完成，即使選取此核取方塊，授權也不會從數位錢包中刪除。如果您有市場訂閱，則無法使用此選項。
 . 選取核取方塊以確認您瞭解變更的影響，然後按一下 * 繼續 * 。
 
 
 .完成後
 檢視新的授權序號，並驗證 BlueXP  數位錢包的變更。
+
+
+
+== 不同超標量中的定價
+
+有關定價的詳細信息，請訪問 https://bluexp.netapp.com/pricing/["NetApp BlueXP網站"^]。
+
+有關特定超標量中的私人優惠的信息，請寫信至：
+
+* AWS - awspo@netapp.com
+* Azure - azurepo@netapp.com
+* Google Cloud - gcppo@netapp.com
+
