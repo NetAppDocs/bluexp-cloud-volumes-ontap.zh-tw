@@ -8,7 +8,7 @@ summary: 為您的第三方金鑰管理服務使用 AWS 的金鑰管理服務。
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

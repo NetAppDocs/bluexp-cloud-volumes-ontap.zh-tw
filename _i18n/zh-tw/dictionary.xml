@@ -480,7 +480,6 @@
   <block id="57cbefe39109ab51b31e818f9ce6d9c4" category="list-text">刪除Cloud Volumes ONTAP 這個作業環境。</block>
   <block id="deacec910b77251dad4f11490aa93221" category="list-text">在「畫版」頁面上、按兩下Cloud Volumes ONTAP 您要刪除的「紙張工作環境」名稱。</block>
   <block id="4a9ee4aa88ebf38223ea447fe291d222" category="inline-image-macro">顯示包含「刪除」動作之工作環境中可用功能表的快照。</block>
-  <block id="7d73be13421466d5cf5d832329f74c79" category="paragraph">刪除工作環境最多可能需要 5 分鐘。</block>
   <block id="96b6d7d9126b9ae9264c568037532584" category="summary">瞭解 Cloud Volumes ONTAP 如何使用雲端儲存設備、有助於瞭解儲存成本。</block>
   <block id="4a2a51b2a8cfd502b2d8ec4b5b09a0b3" category="doc">磁碟與集合體</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="section-title">總覽</block>
@@ -1912,7 +1911,6 @@
   <block id="2d51420db26e68ce07b81103e73ac40f" category="list-text">應用程式一致性</block>
   <block id="39cc8f8f6f1d13bb434a4ddc5d57b61b" category="paragraph">使用 NetApp SnapCenter 功能確保 NetApp Snapshot 複本的一致性。</block>
   <block id="b130d62b437f2a119198feb1466a4c3b" category="inline-link">深入瞭SnapCenter 解功能</block>
-  <block id="17f0fae3c5e44f9a095562194f423343" category="paragraph"><block ref="17f0fae3c5e44f9a095562194f423343" category="inline-link-rx"></block></block>
   <block id="4c5d94eb4dc4bff93f6a96a08ab7b244" category="list-text">資料安全</block>
   <block id="7bf338973426a289a345974f4910386c" category="list-text">隱私權法規遵循控管</block>
   <block id="81a04b1e875d3a2de5542007c35718a3" category="admonition">不含適用於功能的授權 ONTAP 。 Cloud Volumes ONTAP</block>
@@ -3585,7 +3583,6 @@
   <block id="78cffa6560689ac98432ba58e17e78ff" category="inline-image-macro">螢幕擷取畫面、顯示可用於變更磁碟區分層原則的選項。</block>
   <block id="e0e0725f5ef956857b33c008a39af157" category="paragraph"><block ref="e0e0725f5ef956857b33c008a39af157" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec8e04c7758ae04f1375383b387929a1" category="paragraph"><block ref="ec8e04c7758ae04f1375383b387929a1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e46b959133eadbb0d00ac0a308843f30" category="list-text">在刪除工作環境視窗下、輸入工作環境的名稱、然後按一下 * 刪除 * 。</block>
   <block id="c4bd89564dafc82c9b2027b549fa45f2" category="list-text">在工作環境中、按一下 * Volumes （磁碟區） * 標籤。</block>
   <block id="31fe088c17d984a78f5027d2b8428e18" category="list-text">在 Volumes （磁碟區）索引標籤上、瀏覽至所需的磁碟區標題、然後按一下 * Manage Volumes （管理磁碟區） * 以存取 Manage Volumes （管理磁碟區）右側面板。</block>
   <block id="2142690a2d1ae8bd820983b7911914d5" category="list-text">按一下 * 目標 IQN* 。</block>
@@ -5413,7 +5410,6 @@
   <block id="cded3209819889817786a4170eb0e49c" category="inline-link">啟用適用於 Cloud Volumes ONTAP 的 NetApp 勒索軟體保護解決方案</block>
   <block id="d2675df83ff2fbafe199fb06a1fd5d56" category="list-text"><block ref="d2675df83ff2fbafe199fb06a1fd5d56" category="inline-link-rx"></block></block>
   <block id="c2e10e9222f5db93eded2cefa02c0ef5" category="inline-link">將 Cloud Volumes ONTAP 節點型授權轉換為容量型授權</block>
-  <block id="0fc6c6e7c7c886fe493ee21e8e7be67d" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="b3c563b157608d2aec77c4e8d2c32e61" category="inline-link-rx"></block></block>
   <block id="322a339b221056f32120ffd18077d44d" category="doc">透過 Azure 中的 API 自動建立儲存 VM</block>
   <block id="aa1c2167957b1092da7e43e77867748c" category="paragraph">您現在可以使用 BlueXP  API 來為 Azure 中的 Cloud Volumes ONTAP 建立，重新命名及刪除其他資料服務儲存 VM 。如果您需要使用儲存 VM 進行管理，使用 API 可自動化儲存 VM 的建立程序，包括必要的網路介面，生命週期和管理 LIF 的組態。</block>
   <block id="4a688a36b1b8761ed6587867f87a2cc3" category="inline-link">管理 Azure 中 Cloud Volumes ONTAP 的資料服務儲存 VM</block>
@@ -5879,7 +5875,6 @@
   <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9def883103b7b964dcbb0993e3f8a065" category="doc">優化許可證的可用性終止</block>
   <block id="cf4dd05cf065c9ae01bc836c5033bb63" category="paragraph">從 2025 年 8 月 11 日開始， Cloud Volumes ONTAP Optimized 授權將被棄用，並且將不再可在 Azure 和 Google Cloud 市場中以即用即付 (PAYGO) 訂閱的方式購買或續訂。如果您擁有現有的包含優化許可證的年度合同，則可以繼續使用該許可證，直到合約結束。當您的優化授權到期時，您可以選擇Cloud Volumes ONTAP Essentials 或 Professional 授權。</block>
-  <block id="4e106c84c3dd2cbdc5b24d055fe09562" category="paragraph">但是，可以透過 API 新增或更新優化許可證。</block>
   <block id="2b8e43c95c1d15bc0824064c3dc0f993" category="paragraph">有關許可包的信息，請參閱<block ref="4b2776d787a70224c2441f63d3888380" category="inline-link-rx"></block>。</block>
   <block id="ed1f600d01a229b43b3196dd2f2e48ca" category="inline-link">管理基於容量的許可</block>
   <block id="1d4a9a37e700957e9d79664f032cf5ec" category="paragraph">有關切換到不同充電方式的信息，請參閱<block ref="eeeecd1116eaf4db26e064552c04366d" category="inline-link-rx"></block>。</block>
@@ -5897,4 +5892,9 @@
   <block id="219fa750a13ad456df1d25524d9f6ad9" category="list-text">* Cloud Volumes ONTAP軟體包使用情況*：此報告包含每個軟體包的以下資訊：</block>
   <block id="cfba7e7177c8f36e5c073175ecdcec93" category="paragraph">基於容量的許可使您能夠按 TiB 容量支付Cloud Volumes ONTAP費用。基於容量的許可以_包_的形式提供：Essentials 或 Professional 包。</block>
   <block id="b9d888f58b09c4007db0247286e392b5" category="section-title">2025年8月11日</block>
+  <block id="d7541fdf3e0094adec62a7042b5512d9" category="inline-link">將Cloud Volumes ONTAP基於節點的許可證轉換為基於容量的許可證</block>
+  <block id="249c33a7057b26f2c17f912ee1675174" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="c718c65e9665241afe238019ab334376" category="inline-link-rx"></block></block>
+  <block id="09027718866a8a3a2edb0bb0eb53c926" category="paragraph">但是，可以透過 API 新增或更新優化許可證。</block>
+  <block id="064c8585f26a6a9766e55da306b39425" category="paragraph"><block ref="064c8585f26a6a9766e55da306b39425" category="inline-link-rx"></block></block>
+  <block id="42f21a40b3b95c1fc1fe699b458d9f4f" category="list-text">在「刪除工作環境」視窗下，輸入工作環境的名稱，然後按一下「*刪除*」。刪除工作環境可能需要最多五分鐘。</block>
 </blocks>

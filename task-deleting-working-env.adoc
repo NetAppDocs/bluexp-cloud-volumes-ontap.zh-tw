@@ -39,10 +39,7 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 +
 image:screenshot_settings_delete.png["顯示包含「刪除」動作之工作環境中可用功能表的快照。"]
 
-.. 在刪除工作環境視窗下、輸入工作環境的名稱、然後按一下 * 刪除 * 。
-+
-刪除工作環境最多可能需要 5 分鐘。
-
+.. 在「刪除工作環境」視窗下，輸入工作環境的名稱，然後按一下「*刪除*」。刪除工作環境可能需要最多五分鐘。
 
 
 

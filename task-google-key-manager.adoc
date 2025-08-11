@@ -8,7 +8,7 @@ summary: 利用 Google 的金鑰管理服務來提供第三方金鑰管理服務
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
