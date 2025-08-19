@@ -43,10 +43,9 @@ summary: 在 Cloud Volumes ONTAP AWS 中部署時、您可以選擇符合工作�
 
 NOTE: Cloud Volumes ONTAP 不支援 AWS 本機區域中的資料分層和雲端分層。此外，不支援具有未符合 Cloud Volumes ONTAP 資格執行個體的本機區域。其中一個例子是邁阿密，因為它只有第 6 代執行個體不受支援且不合格，因此無法作為本機區域使用。
 
-link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["檢視本機區域的完整清單"^]。
-您必須先啟用本機區域、才能在這些區域中建立和管理資源。
+link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["AWS 文件：查看本地區域的完整列表"^] 。必須先啟用本地區域，然後才能在這些區域中建立和管理資源。
 
-link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["瞭解如何啟用本機區域"^]。
+link:https://docs.aws.amazon.com/local-zones/latest/ug/getting-started.html["AWS 文件：AWS 本機區域入門"^] 。
 
 
 
@@ -78,7 +77,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.
 * 如果您的應用程式大多讀取、請選擇具有足夠 RAM 的系統。
 +
 ** https://aws.amazon.com/ec2/instance-types/["AWS 文件： Amazon EC2 執行個體類型"^]
-** https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html["AWS 文件： Amazon EBS 最佳化執行個體"^]
+** https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html["AWS 文件：Amazon EBS 優化實例"^]
 
 
 
@@ -89,7 +88,7 @@ EBS 磁碟類型:: EBS磁碟類型之間的差異較高、如下所示。若要�
 --
 * _通用SSD（GP3）_磁碟是成本最低的SSD、可在各種工作負載的成本與效能之間取得平衡。效能是以IOPS和處理量來定義。支援GP3磁碟Cloud Volumes ONTAP 的版本可搭配使用。9.7及更新版本。
 +
-當您選取GP3磁碟時、BlueXP會填入預設的IOPS和處理量值、這些值會根據選取的磁碟大小提供相當於gp2磁碟的效能。您可以提高價值、以更高的成本獲得更好的效能、但我們不支援較低的值、因為這樣可能導致效能低落。簡而言之、請保留預設值或增加預設值。請勿降低。 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["深入瞭解GP3磁碟及其效能"^]。
+當您選擇 gp3 磁碟時， BlueXP會填寫預設 IOPS 和吞吐量值，這些值會根據所選磁碟大小提供與 gp2 磁碟相當的效能。您可以增加這些值以更高的成本獲得更好的效能，但我們不支援較低的值，因為這會導致效能下降。簡而言之，堅持預設值或增加它們。不要降低它們。 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["AWS 文件：了解有關 gp3 磁碟及其效能的更多信息"^] 。
 
 +
 請注意Cloud Volumes ONTAP 、此功能可搭配GP3磁碟支援Amazon EBS彈性磁碟區功能。 link:concept-aws-elastic-volumes.html["深入瞭解彈性磁碟區支援"]。

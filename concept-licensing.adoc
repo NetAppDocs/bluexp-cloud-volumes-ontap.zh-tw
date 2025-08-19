@@ -176,7 +176,14 @@ HA 配對支援 Keystone 訂閱。目前單一節點系統不支援此授權選�
 
 === 容量限制
 
-每Cloud Volumes ONTAP 個個別的支援透過磁碟和分層至物件儲存設備、最多可支援2個PIB容量。
+在基於容量的許可模型中，每個Cloud Volumes ONTAP系統都支援分層到物件存儲，並且總分層容量可以擴展到雲端提供者的存儲桶限制。雖然許可證沒有施加容量限制，但遵循 https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["FabricPool最佳實踐"^]確保在配置和管理分層時實現最佳效能、可靠性和成本效率。
+
+有關每個雲端提供者的容量限制的信息，請參閱其文檔：
+
+* https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html["AWS文件"^]
+* https://learn.microsoft.com/en-us/azure/storage/common/scalability-targets-standard-account["託管磁碟的 Azure 文件"^]和 https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets["Azure Blob 儲存體文檔"^]
+* https://cloud.google.com/storage/docs/buckets["Google Cloud 文件"^]
+
 
 
 

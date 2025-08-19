@@ -126,7 +126,7 @@ image:diagram_takeover_giveback.png["概念性影像、顯示 Cloud Volumes ONTA
 在單一可用性區域（ AZ ）中部署 HA 組態、可確保執行 Cloud Volumes ONTAP 節點的執行個體發生故障時、資料的高可用度。所有資料均可從 VPC 外部原生存取。
 
 
-NOTE: BlueXP會建立一個 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS 分散配置群組"^] 然後啟動該放置群組中的兩個 HA 節點。放置群組可將執行個體分散到不同的基礎硬體、藉此降低同時發生故障的風險。此功能可從運算角度而非磁碟故障角度改善備援。
+NOTE: BlueXP創建 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS 文件：AWS 分佈置放群組"^]並啟動該放置組中的兩個 HA 節點。放置組透過將實例分佈在不同的底層硬體上來降低同時發生故障的風險。此功能從計算角度而不是從磁碟故障角度提高了冗餘度。
 
 
 
@@ -200,7 +200,7 @@ Cloud Volumes ONTAP 不支援 AWS 本機區域中的資料分層，雲端分層�
 
 NOTE: Cloud Volumes ONTAP 僅支援這些組態。在 AWS 本機區域組態中選取不支援的磁碟類型或不合格的執行個體，可能會導致部署失敗。AWS 本機區域無法使用 AWS S3 的資料分層功能，因為連線能力不足。
 
-請參閱 AWS 文件以取得最新完整的詳細資料link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["本機區域中的 EC2 執行個體類型"^]。
+有關最新和完整的詳細信息，請參閱 AWS 文檔link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["AWS 文件：本地區域中的 EC2 執行個體類型"^]。
 
 
 

@@ -69,7 +69,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html#ena
 
 當用戶端與Cloud Volumes ONTAP S時 位於相同的vnet內、在連接VNets的對等網路內、或在使用私有VPN或ExpressRoute連線至vnet的內部部署網路中、用戶端存取會透過私有連結進行。
 
-以下範例顯示用戶端透過私有連結從同一個Vnet存取、以及從內部網路存取具有私有VPN或ExpressRoute連線的權限。
+以下範例展示了用戶端如何透過專用連結從同一 VNet 內部以及從具有專用 VPN 或 ExpressRoute 連接的本機網路存取。
 
 image:diagram_azure_private_link.png["概念性影像、顯示資料存取功能可透過Cloud Volumes ONTAP 私有端點和私有連結存取至功能性的資料、並可存取儲存帳戶。"]
 

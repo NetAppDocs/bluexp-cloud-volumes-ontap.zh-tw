@@ -70,7 +70,7 @@ Cloud Volumes ONTAP 使用這些端點與各種服務進行通訊。
 | 與 AWS 服務通訊。 | 標準和私有模式。 | Cloud Volumes ONTAP 無法與 AWS 服務通訊，以在 AWS 中執行特定的 BlueXP  作業。 
 
 
-| AWS 服務的確切政府端點取決於您使用的 AWS 區域。端點的後綴是 `amazonaws.com`和 `c2s.ic.gov`。	https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/model/Region.html["AWS SDK"] https://docs.aws.amazon.com/general/latest/gr/rande.html["Amazon 文件"]如需詳細資訊、請參閱和。  a| 
+| AWS 服務的特定政府端點取決於您使用的 AWS 區域。端點後綴為 `amazonaws.com`和 `c2s.ic.gov`。參考	https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/model/Region.html["AWS SDK"^]和 https://docs.aws.amazon.com/general/latest/gr/rande.html["AWS 文件"^]了解更多。  a| 
 * CloudForation
 * 彈性運算雲端（ EC2 ）
 * 身分識別與存取管理（ IAM ）
