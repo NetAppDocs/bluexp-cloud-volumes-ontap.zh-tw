@@ -63,22 +63,28 @@ South Central US          southcentralus       (US) South Central US
 |===
 
 
-| * Cloud Volumes ONTAP 版本 * | * VM 部署方法 * | * SKU 名稱 * 
+| * Cloud Volumes ONTAP 版本 * | *透過虛擬機器部署* | * SKU 名稱 * 
 
 
-| 9.16.1 及更新版本 | 透過市場直接部署方法 | ONTAP 雲端 _DIRECT 
+| 9.17.1 及更高版本 | Azure 市場 | ontap_cloud_direct_gen2 
 
 
-| 9.16.1 及更新版本 | 透過 BlueXP  進行所有部署 | ONTAP 雲端 
+| 9.17.1 及更高版本 | 藍圖 | ontap_cloud_gen2 
 
 
-| 9.15.1.. | 透過 BlueXP  進行所有部署 | ONTAP 雲端 
+| 9.16.1 | Azure 市場 | ONTAP 雲端 _DIRECT 
 
 
-| 9.15.0 | 單一節點 | ONTAP 雲端 
+| 9.16.1 | 藍圖 | ONTAP 雲端 
 
 
-| 9.15.0 | 高可用度 | ONTAP 雲端 _ byol_ha 
+| 9.15.1.. | 藍圖 | ONTAP 雲端 
+
+
+| 9.15.0 | BlueXP，單節點部署 | ONTAP 雲端 
+
+
+| 9.15.0 | BlueXP，高可用性（HA）部署 | ONTAP 雲端 _ byol_ha 
 |===
 . 對應 ONTAP 版本和 Azure 市場映像後，使用 Azure Cloud Shell 或 Azure CLI 從 Azure 市場匯出 VHD 檔案。
 
