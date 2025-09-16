@@ -5563,7 +5563,6 @@
   <block id="fdcb4cfaa6fda318a31e37ce29a14e92" category="section-title">Azure 中 Flash Cache 的最低版本支援</block>
   <block id="d05c6d51d7a4b0bd019498131ff00f16" category="paragraph">在 Azure 中設定 Flash Cache 所需的最低 Cloud Volumes ONTAP 版本為 9.13.1 GA 。您只能使用 ONTAP 9.13.1 GA 和更新版本，在 Azure 的 Cloud Volumes ONTAP 系統上部署 Flash Cache 。</block>
   <block id="b77891a5294c25aca8a6fda943805ecf" category="doc">支援 AWS 中的 Cloud Volumes ONTAP 9.13.1 在中國地區</block>
-  <block id="3899c7c0df13a38296f1334779a1dfe7" category="paragraph">您現在可以在中國地區的 AWS 中部署 Cloud Volumes ONTAP 9.13.1 。這包括支援單一節點和高可用度（ HA ）部署。部署 Cloud Volumes ONTAP 9.13.1 之後，即可將其升級至更新版本。僅支援直接從 NetApp 購買的授權。</block>
   <block id="abe88f95b23156cb29c433c9ebe92a00" category="inline-link">全球區域地圖Cloud Volumes ONTAP 、供您使用</block>
   <block id="10df570a0447a18b299f516b2e8498c2" category="paragraph">如需區域供應狀況，請<block ref="f76c632bc8b9c4e032a9d48fcbfa8dc1" category="inline-link-rx"></block>參閱。</block>
   <block id="aa3bf76b3589430467bef386eaec9486" category="doc">Azure 支援的新區域</block>
@@ -5913,4 +5912,5 @@
   <block id="eeea8782a887558399361aec836b75d0" category="cell">BlueXP，高可用性（HA）部署</block>
   <block id="36991a14fecff3acb300e7240e20124a" category="cell">9.17.1（僅適用於 Azure 和 Google Cloud）</block>
   <block id="ba3c0cba3a3d15ce8426fc737476a59c" category="section-title">2025年9月4日</block>
+  <block id="a3f77d8413628b40c09a649cd79a6e02" category="paragraph">現在您可以在中國區域的 AWS 中部署Cloud Volumes ONTAP 9.13.1。這包括對單節點和高可用性 (HA) 部署的支援。僅支援直接從NetApp購買的授權。</block>
 </blocks>
